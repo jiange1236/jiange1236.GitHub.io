@@ -1,6 +1,15 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
+  { text: '主页', link: '/' , icon: "home"},
+  { text: '项目', link: '/home' ,icon:"generic" },
+  { text: '工作', link: '/work/' ,icon:"workingDirectory" },
+  { text: '学习', link: '/study/' ,icon:"study"},
+  { text: '电脑相关', link: '/tech/' ,icon:"computer"},
+  { text: '摄影', link: '/photo/' ,icon:"actions"},
+  { text: '理财', link: '/finance/' ,icon:"rank"},
+  { text: '其他', link: '/others/' ,icon:"others"},
+  /*
   "/",
   "/home",
   { text: "使用指南", icon: "creative", link: "/guide/" },
@@ -48,5 +57,6 @@ export default navbar([
     text: "主题文档",
     icon: "note",
     link: "https://vuepress-theme-hope.github.io/v2/zh/",
-  },
+  }, 
+  */
 ]);

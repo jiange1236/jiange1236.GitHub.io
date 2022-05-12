@@ -7,6 +7,7 @@ export default defineUserConfig({
   description: "土木僧的Blog",
 
   base: "/",
+  dest: "./dist",
 
   head: [
     [
