@@ -9,6 +9,8 @@ export default navbar([
   { text: '摄影', link: '/photo/' ,icon:"actions"},
   { text: '理财', link: '/finance/' ,icon:"rank"},
   { text: '其他', link: '/others/' ,icon:"others"},
+  { text: 'DownGit', link: 'https://github.jiange1236.workers.dev/' ,icon:"github"},
+  { text: 'Proxy', link: 'https://proxy.jiange1236.workers.dev/' ,icon:"proxy"},
   /*
   "/",
   "/home",

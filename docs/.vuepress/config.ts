@@ -1,7 +1,7 @@
-import { defineUserConfig } from "vuepress";
+import { defineHopeConfig } from "vuepress-theme-hope";
 import theme from "./theme";
 
-export default defineUserConfig({
+export default defineHopeConfig({
   lang: "zh-CN",
   title: "Zeblog",
   description: "土木僧的Blog",
@@ -20,4 +20,19 @@ export default defineUserConfig({
   ],
 
   theme,
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        hotKeys: ['s', '/'],
+        maxSuggestions: 12,//指定搜索结果的最大条数
+        locales: {
+          '/': {
+            placeholder: '搜索',
+          }
+        },
+      },
+      
+    ],
+  ],
 });

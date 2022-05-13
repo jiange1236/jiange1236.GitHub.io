@@ -10,6 +10,7 @@ author: Ms.Hope
 # 设置写作时间
 date: 2020-01-01
 # 一个页面可以有多个分类
+isOriginal: true
 category:
   - 使用指南
 # 一个页面可以有多个标签

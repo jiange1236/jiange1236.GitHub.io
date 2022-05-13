@@ -1,8 +1,8 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import { defineThemeConfig } from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 
-export default hopeTheme({
+export default defineThemeConfig({
   hostname: "https://zeblog.ml",
 
   author: {
@@ -30,6 +30,7 @@ export default hopeTheme({
 	"/study/": "structure",
 	"/tech/": "structure",
 	"/work/": "structure",
+	"/others/": "structure",
     // fallback
     "/": [
     "" /* / */,
@@ -109,10 +110,11 @@ export default hopeTheme({
        * Using giscus
        */
       type: "giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "jiange1236/jiange1236.GitHub.io",
+      repoId: "R_kgDOHLemeQ",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDOHLemec4CPFA-",
+	  mapping: "title",
 
       /**
        * Using twikoo

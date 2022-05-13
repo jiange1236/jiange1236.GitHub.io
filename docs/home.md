@@ -1,16 +1,16 @@
 ---
 home: true
 icon: home
-title: 项目主页
+title: 项目
 heroImage: /logo.png
-heroText: 项目名称
-tagline: 你可以在这里放置或是整个项目的描述。
+heroText: Zeblog
+tagline: 个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。
 actions:
   - text: 使用指南 💡
     link: /guide/
 
-  - text: 博客主页 🏠
-    link: /
+  - text: 个人简介 🏠
+    link: /intro.html
     type: secondary
 
 features:
@@ -98,6 +98,6 @@ features:
     icon: more
     details: 包括图标支持、全屏按钮、返回顶部按钮等
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/
-copyright: false
-footer: MIT Licensed | Copyright © 2019-present Mr.Hope
+
+footer: 不忘初心，方得始终
 ---

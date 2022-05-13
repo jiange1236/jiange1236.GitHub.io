@@ -1,6 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar([
+  /* 
   "/",
   "/home",
   "/slide",
@@ -42,5 +43,6 @@ export default sidebar([
         ],
       },
     ],
-  },
+  }, 
+  */
 ]);
