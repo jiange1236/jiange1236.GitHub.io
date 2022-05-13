@@ -1,6 +1,6 @@
 import { defineHopeConfig } from "vuepress-theme-hope";
 import themeConfig from "./themeConfig";
-import alias from "@rollup/plugin-alias";
+import alias from '@rollup/plugin-alias';
 
 export default defineHopeConfig({
   base: "/",
@@ -28,9 +28,6 @@ export default defineHopeConfig({
   themeConfig,
   plugins: [
     [
-	  alias(),vue()
-	],
-    [
       '@vuepress/plugin-search',
       {
         hotKeys: ['s', '/'],
@@ -41,12 +38,6 @@ export default defineHopeConfig({
           }
         },
       },
-      
-    ],
-  ],
-  resolve: [
-    alias: [
-      "/@": path.resolve(__dirname, "./src"),
     ],
   ],
 });
