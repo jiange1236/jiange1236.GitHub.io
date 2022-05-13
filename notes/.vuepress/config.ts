@@ -1,6 +1,5 @@
 import { defineHopeConfig } from "vuepress-theme-hope";
 import themeConfig from "./themeConfig";
-import alias from '@rollup/plugin-alias';
 
 export default defineHopeConfig({
   base: "/",
