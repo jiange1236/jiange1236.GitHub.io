@@ -4,7 +4,7 @@
 
 工作目录，点击“应用”
 
-![](Sausage.assets/clipboard.png)
+![](./Sausage.assets/clipboard.png)
 
 **2、检查模型**
 
