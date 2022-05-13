@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://zeblog.ml/sitemap.xml
+Sitemap: https://xlc520.github.io/sitemap.xml
