@@ -3,21 +3,21 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default defineThemeConfig({
-  hostname: "https://xlc520.github.io",
+  hostname: "https://jiange1236.github.io",
 
   author: {
-    name: "xlc520",
-    url: "https://xlc520.github.io",
+    name: "zine",
+    url: "https://jiange1236.github.io",
   },
 
   iconPrefix: "iconfont icon-",
 
   logo: "/logo.svg",
 
-  repo: "https://github.com/xlc520/xlc520.github.io",
+  repo: "https://github.com/jiange1236/jiange1236.github.io",
 
   docsDir: "notes",
-  docsRepo: "https://github.com/xlc520/xlc520.github.io",
+  docsRepo: "https://github.com/jiange1236/jiange1236.github.io",
   docsBranch: "master",
   // navbar
   navbar: navbar,
@@ -25,72 +25,66 @@ export default defineThemeConfig({
   // sidebar
   //sidebar: sidebar,
   sidebar: {
-    "/study/": "structure",
-    "/dev/": "structure",
-    "/linux/": "structure",
-    "/script/": "structure",
-    "/tools/": "structure",
-    "/source_code/": "structure",
-    "/git/": "structure",
-    "/daily/": "structure",
-    "/pc/": "structure",
-    "/article/": "structure",
-    "/other/": "structure",
+    "/finance/": "structure",
+	"/fun/": "structure",
+	"/photo/": "structure",
+	"/study/": "structure",
+	"/tech/": "structure",
+	"/work/": "structure",
+	"/others/": "structure",
     // fallback
     "/": [
-      "" /* / */,
+    "" /* / */,
     ],
   },
 
-  footer: "两情若是久长时，又岂在朝朝暮暮",
+  footer: "不忘初心，方得始终",
 
   displayFooter: true,
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime","Word"],
 
   blog: {
-    avatar: "https://avatars.githubusercontent.com/u/56480807?v=4",
-    description: "山有木兮木有枝,心悦君兮君不知",
+    description: "小小土木僧",
     intro: "/intro.html",
-    sidebarDisplay: "mobile",
-    articlePerPage: 10,//每页的文章数量
-    articleInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime","Word"],
+	roundAvatar: true,
+	sidebarDisplay: "mobile",
+	articlePerPage: 10,//每页的文章数量
+	articleInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime","Word"],
     medias: {
-      Github: "https://github.com/xlc520",
-		  Gitee: "https://gitee.com/xulch",
-      Baidu: "https://baidu.com",
-      Email: "xulinch@88.com",
-      // Baidu: "https://example.com",
-      // Bitbucket: "https://example.com",
-      // Dingding: "https://example.com",
-      // Discord: "https://example.com",
-      // Dribbble: "https://example.com",
-      // Email: "https://example.com",
-      // Evernote: "https://example.com",
-      // Facebook: "https://example.com",
-      // Flipboard: "https://example.com",
-      // Gitee: "https://example.com",
-      // GitHub: "https://example.com",
-      // Gitlab: "https://example.com",
-      // Gmail: "https://example.com",
-      // Instagram: "https://example.com",
-      // Lines: "https://example.com",
-      // Linkedin: "https://example.com",
-      // Pinterest: "https://example.com",
-      // Pocket: "https://example.com",
-      // QQ: "https://example.com",
-      // Qzone: "https://example.com",
-      // Reddit: "https://example.com",
-      // Rss: "https://example.com",
-      // Steam: "https://example.com",
-      // Twitter: "https://example.com",
-      // Wechat: "https://example.com",
-      // Weibo: "https://example.com",
-      // Whatsapp: "https://example.com",
-      // Youtube: "https://example.com",
-      // Zhihu: "https://example.com",
+      Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
+//      Bitbucket: "https://example.com",
+//      Dingding: "https://example.com",
+//      Discord: "https://example.com",
+//      Dribbble: "https://example.com",
+      Email: "mailto:183465355@qq.com",
+//      Evernote: "https://example.com",
+      Facebook: "https://example.com",
+//      Flipboard: "https://example.com",
+      Gitee: "https://gitee.com/jiange1236",
+      GitHub: "https://github.com/jiange1236",
+//      Gitlab: "https://example.com",
+//      Gmail: "https://example.com",
+//      Instagram: "https://example.com",
+//      Lines: "https://example.com",
+//      Linkedin: "https://example.com",
+//      Pinterest: "https://example.com",
+//      Pocket: "https://example.com",
+//      QQ: "https://qq.com",
+//      Qzone: "https://example.com",
+//      Reddit: "https://example.com",
+//      Rss: "https://example.com",
+//      Steam: "https://example.com",
+      Twitter: "https://twitter.com/zhouzijian1236",
+//      Wechat: "https://example.com",
+      Weibo: "https://weibo.com/u/1873128010",
+//      Whatsapp: "https://example.com",
+//      Youtube: "https://example.com",
+      Zhihu: "https://www.zhihu.com/people/zhouzijian",
     },
+	timeline: "昨日不在"
   },
+
   pwa:{
     cachePic: true,
     cacheHTML: true,
@@ -111,14 +105,29 @@ export default defineThemeConfig({
     copyCode: {"showInMobile": true,duration: 2000},
 
     // 你也可以使用 Waline
-    comment: false,
-    // comment: {
-    //   type: "giscus",
-    //   repo: "xlc520/xlc520.github.io",
-    //   repoId: "R_kgDOG_Pt2A",
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
-    // },
+    comment: {
+      /**
+       * Using giscus
+       */
+      type: "giscus",
+      repo: "jiange1236/jiange1236.GitHub.io",
+      repoId: "R_kgDOHLemeQ",
+      category: "Announcements",
+      categoryId: "DIC_kwDOHLemec4CPFA-",
+	  mapping: "title",
+
+      /**
+       * Using twikoo
+       */
+      // type: "twikoo",
+      // envId: "https://twikoo.ccknbc.vercel.app",
+
+      /**
+       * Using Waline
+       */
+      // type: "waline",
+      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+    },
 
     mdEnhance: {
       enableAll: true,
