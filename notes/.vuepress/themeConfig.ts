@@ -35,7 +35,7 @@ export default defineThemeConfig({
     // fallback
     "/": [
       "" /* / */,
-	  "home"
+	  "home" /* /intro.html */,
       "intro" /* /about.html */,
     ],
   },
