@@ -1,8 +1,8 @@
 ---
 index: 0
-title: study
+title: 学习
 date: 2022-05-13
-description: study分类
+description: 学习分类
 category:
   - 学习
 tag:

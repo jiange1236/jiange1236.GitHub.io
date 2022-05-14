@@ -1,8 +1,8 @@
 ---
 index: 0
-title: others
+title: 其它
 date: 2022-05-13
-description: others分类
+description: 其它分类
 category:
   - 其它
 tag:

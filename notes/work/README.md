@@ -1,8 +1,8 @@
 ---
 index: 0
-title: work
+title: 工作
 date: 2022-05-13
-description: work分类
+description: 工作分类
 category:
   - 工作
 tag:

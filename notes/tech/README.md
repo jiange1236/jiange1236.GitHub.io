@@ -1,8 +1,8 @@
 ---
 index: 0
-title: tech
+title: 计算机
 date: 2022-05-13
-description: tech分类
+description: 计算机分类
 category:
   - 计算机
 tag:

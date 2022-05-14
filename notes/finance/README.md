@@ -1,8 +1,8 @@
 ---
 index: 0
-title: finance
+title: 理财
 date: 2022-05-13
-description: finance分类
+description: 理财分类
 category:
   - 理财
 tag:
