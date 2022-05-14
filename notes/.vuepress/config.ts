@@ -30,11 +30,13 @@ export default defineHopeConfig({
 	  level: [1,3],
 	},
   },
-  
+
+/*  
   themeConfig,
   extendsMarkdown: (md) => {
     md.use(decodeURL)
   },
+*/
   plugins: [
     [
       '@vuepress/plugin-search',
