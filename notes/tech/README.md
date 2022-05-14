@@ -1,7 +1,6 @@
 ---
 index: 0
 title: 计算机
-date: 2022-05-13
 description: 计算机分类
 category:
   - 计算机

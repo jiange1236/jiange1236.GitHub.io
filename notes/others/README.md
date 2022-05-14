@@ -1,7 +1,6 @@
 ---
 index: 0
 title: 其它
-date: 2022-05-13
 description: 其它分类
 category:
   - 其它

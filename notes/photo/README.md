@@ -1,7 +1,6 @@
 ---
 index: 0
 title: 摄影
-date: 2022-05-13
 description: 摄影分类
 category:
   - 摄影

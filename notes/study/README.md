@@ -1,7 +1,6 @@
 ---
 index: 0
 title: 学习
-date: 2022-05-13
 description: 学习分类
 category:
   - 学习
