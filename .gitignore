@@ -22,6 +22,11 @@ dist
 # Coverage Files
 coverage/
 
-筑友项目
+筑友项目/
 
-天华项目
+天华项目/
+
+*.key
+*.key.pub
+*.ppk
+key/
