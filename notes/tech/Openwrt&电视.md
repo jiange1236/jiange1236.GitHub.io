@@ -200,7 +200,7 @@ tls:
 filters:
 - enabled: false
   url: http://sub.adtchrome.com/adt-chinalist-easylist.txt
-  name: 广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护
+  name: 广告终结者使用的拦截规则，基于ChinaList&EasyList修正维护
   id: 139789181
 - enabled: false
   url: https://easylist-downloads.adblockplus.org/easylist.txt
