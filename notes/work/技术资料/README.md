@@ -1,12 +1,12 @@
 ---
 index: 0
-title: finance
+title: 技术资料
 date: 2022-05-13
-description: finance分类
+description: 技术资料分类
 category:
-  - 理财
+  - 工作
 tag:
-  - 理财
+  - 工作
 article: true
 timeline: true
 ---
