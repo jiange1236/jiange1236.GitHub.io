@@ -24,7 +24,14 @@ export default defineHopeConfig({
     },
   },
 
+  markdown: {
+    extractHeaders: {
+	  level: [1,3],
+	},
+  },
+
   themeConfig,
+
   plugins: [
     [
       '@vuepress/plugin-search',
