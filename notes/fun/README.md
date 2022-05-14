@@ -1,12 +1,12 @@
 ---
 index: 0
-title: others
+title: fun
 date: 2022-05-13
-description: others分类
+description: fun分类
 category:
-  - 其它
+  - 娱乐
 tag:
-  - 其它
+  - 娱乐
 article: true
 timeline: true
 ---

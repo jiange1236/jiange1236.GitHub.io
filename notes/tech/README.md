@@ -1,12 +1,12 @@
 ---
 index: 0
-title: others
+title: tech
 date: 2022-05-13
-description: others分类
+description: tech分类
 category:
-  - 其它
+  - 计算机
 tag:
-  - 其它
+  - 计算机
 article: true
 timeline: true
 ---

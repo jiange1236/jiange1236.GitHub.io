@@ -1,12 +1,12 @@
 ---
 index: 0
-title: others
+title: photo
 date: 2022-05-13
-description: others分类
+description: photo分类
 category:
-  - 其它
+  - 摄影
 tag:
-  - 其它
+  - 摄影
 article: true
 timeline: true
 ---

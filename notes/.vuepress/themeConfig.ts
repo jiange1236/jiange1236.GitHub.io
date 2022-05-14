@@ -18,7 +18,7 @@ export default defineThemeConfig({
 
   docsDir: "notes",
   docsRepo: "https://github.com/jiange1236/jiange1236.github.io",
-  docsBranch: "master",
+  docsBranch: "main",
   // navbar
   navbar: navbar,
 
@@ -27,14 +27,14 @@ export default defineThemeConfig({
   sidebar: {
     "/finance/": "structure",
 	"/fun/": "structure",
+	"/others/": "structure",
 	"/photo/": "structure",
 	"/study/": "structure",
 	"/tech/": "structure",
 	"/work/": "structure",
-	"/others/": "structure",
     // fallback
     "/": [
-    "" /* / */,
+      "" /* / */,
     ],
   },
 

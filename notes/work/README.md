@@ -1,12 +1,12 @@
 ---
 index: 0
-title: others
+title: work
 date: 2022-05-13
-description: others分类
+description: work分类
 category:
-  - 其它
+  - 工作
 tag:
-  - 其它
+  - 工作
 article: true
 timeline: true
 ---

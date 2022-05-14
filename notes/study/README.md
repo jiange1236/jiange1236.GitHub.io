@@ -1,14 +1,14 @@
 ---
-index: 0
-title: others
-date: 2022-05-13
-description: others分类
-category:
-  - 其它
-tag:
-  - 其它
+author: xlc520
+title: study
+description: study分类
+date: 2022-02-05
+category: 学习
+tag: 学习
 article: true
 timeline: true
+icon: date
+password: 
 ---
 
 

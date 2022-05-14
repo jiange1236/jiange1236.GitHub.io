@@ -3,8 +3,8 @@ home: true
 layout: Blog
 icon: home
 title: 主页
-# heroImage: /logo.svg
-heroText: StudyNote
+heroImage: /blog.png
+heroText: Zeblog
 heroFullScreen: true
 bgImage: https://api.btstu.cn/sjbz/api.php?lx=suiji&format=images
 tagline: <p>昨夜西风凋碧树，独上高楼，望尽天涯路。</p><p>衣带渐宽终不悔，为伊消得人憔悴。</p> <p>众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。</p>

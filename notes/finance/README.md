@@ -1,12 +1,12 @@
 ---
 index: 0
-title: others
+title: finance
 date: 2022-05-13
-description: others分类
+description: finance分类
 category:
-  - 其它
+  - 理财
 tag:
-  - 其它
+  - 理财
 article: true
 timeline: true
 ---
