@@ -32,9 +32,9 @@ https://www.right.com.cn/forum/thread-4034918-1-1.html
 
 
 
-![image-20211218115620639](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218115620639.png)
+![image-20211218115620639](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218115620639.png)
 
-![image-20211218115655439](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218115655439.png)
+![image-20211218115655439](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218115655439.png)
 
 ## 广告规则
 
@@ -64,7 +64,7 @@ https://anti-ad.net/easylist.txt
 
 https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 
-![image-20211218114841912](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218114841912.png)
+![image-20211218114841912](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218114841912.png)
 
 ## passwall
 
@@ -86,7 +86,7 @@ trojan-go://1992919@2606:4700:83b9:700d:c277:9911:6ad2:31fc:443/?sni=zecdn.gq&ty
 
 ## adh
 
-![image-20211218114940424](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218114940424.png)
+![image-20211218114940424](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-20211218114940424.png)
 
 ```
 bind_host: 0.0.0.0
@@ -433,25 +433,25 @@ https://gitee.com/xiaominglei001/forMarkdown/raw/master/FireShot Capture 044 - 2
 
 目前我的：e4da7455b20b4ea6
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
 
 三行举例：应该每个networkID其z开头的这串字母是固定的
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
 
-![img](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
+![img](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
 
 要连openwrt里的SSH最好用putty或者shell，不要用访问openwrt网页然后用其网页里的TTYD访问其SSH的方式，因为很可能访问不到。
 
@@ -481,19 +481,19 @@ cd /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/ddnsto/open
 
 ![image-2021022400000003](https://doc.linkease.com/assets/img/image-2021022400000003.536613b5.png)
 
-![image-2021022400000004](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-2021022400000004.13ea60fa.png)
+![image-2021022400000004](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-2021022400000004.13ea60fa.png)
 
 或者putty、MobaXterm等软件登陆SSH，输入任一上述命令，会自动安装完成。
 
 ![image-2021022400000005](https://doc.linkease.com/assets/img/image-2021022400000005.6379d721.png)
 
-![image-2021022400000006](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-2021022400000006.d94bda31.png)
+![image-2021022400000006](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-2021022400000006.d94bda31.png)
 
 ![image-2021022400000007](https://doc.linkease.com/assets/img/image-2021022400000007.90bb45d5.png)
 
 然后找到DDNS.to内网穿透，启用并设置token。
 
-![image-2021022400000008](Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-2021022400000008.c70860e9.png)
+![image-2021022400000008](./Openwrt%20&%20%E7%94%B5%E8%A7%86.assets/image-2021022400000008.c70860e9.png)
 
 **Openwrt 常见问题解决思路**
 

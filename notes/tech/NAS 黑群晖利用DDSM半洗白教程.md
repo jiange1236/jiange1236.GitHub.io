@@ -36,43 +36,43 @@ https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_acc
 
 在套件中心，选择Docker ，并点击“安装套件”。
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B3D.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B3D.jpg) 
 
 左侧点击“DSM”，并点击“新增”。
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B3E.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B3E.jpg) 
 
 如下三张图，不用自定义更改，全部点击“下一步”。
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B3F.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B3F.jpg) 
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B40.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B40.jpg) 
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B50.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B50.jpg) 
 
 然后我们选择“手动上传”，点击“立即下载”就会把DDSM需要的系统固件直接下载到本地（根据你群晖的系统型号不同，下载的DDSM固件版本也不一样），然后点击浏览，选择刚刚下载好的文件。然后点击“下一步”就可以啦。
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B51.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B51.jpg) 
 
 接下来，我们点击应用。
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B52.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B52.jpg) 
 
 如下图所示，DDSM1这个容器已经在运行啦。并且可以看到根据DHCP分配的IP地址。这个IP地址就是我们所谓的“小群晖”的地址。
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B53.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B53.jpg) 
 
 **二、提取序列号及MAC地址**
 
 **方法一：直接通过Synology Assistant扫描局域网络，即可看到“小群晖”的序列号及MAC地址**
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B54.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B54.jpg) 
 
 **方法二：访问192.168.1.157 配置用户名、密码，然后进入系统之后，在信息中心中也可以看到序列号及MAC地址**
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B55.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B55.jpg) 
 
-![img](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B56.jpg) 
+![img](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/wps6B56.jpg) 
 
 **三、替换引导盘中的SN及MAC**
 
@@ -234,7 +234,7 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/s1oz/embyoneke
 
 打开[阿里云盘](https://www.aliyundrive.com/)的官网 登录后按F12 进入找到tokan里面的refresh_token复制存着备用
 
-![](NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/6199d08327.png)
+![](./NAS%20%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/6199d08327.png)
 
 # NAS CPU
 
