@@ -1,6 +1,6 @@
 import { defineHopeConfig } from "vuepress-theme-hope";
 import themeConfig from "./themeConfig";
-import { decodeURL } from "./decode-url";
+//import { decodeURL } from "./decode-url";
 
 export default defineHopeConfig({
   base: "/",
