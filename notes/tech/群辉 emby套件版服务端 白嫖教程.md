@@ -6,7 +6,7 @@
 
 **1. 打开Web Station如图所示新建虚拟主机**
 
-![](./%E7%BE%A4%E8%BE%89%20emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%20%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.assets/clipboard.png)
+![](./%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%20%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.assets/clipboard.png)
 
 **2. 证书下载地址**
 
@@ -19,7 +19,7 @@ https:*//raw.githubusercontent.com/s1oz/embyonekey/master/mb3admin.com.cert.pem*
 
 - 两个文件都需要下载下来！
 
-![](./%E7%BE%A4%E8%BE%89%20emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%20%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.assets/clipboard-16377215057034.png)
+![](./%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%20%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.assets/clipboard-16377215057034.png)
 
 保存后在配置中将mb3admin.com的证书设置为刚导入的的证书
 
@@ -69,6 +69,6 @@ https:*//raw.githubusercontent.com/s1oz/embyonekey/master/guomi.cer*
 
 Windows请安装此目录下
 
-![](./%E7%BE%A4%E8%BE%89%20emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%20%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.assets/clipboard-16377216143937.png)
+![](./%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%20%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.assets/clipboard-16377216143937.png)
 
 IOS需要安装后在设置--通用--关于手机--证书信任设置中把证书信任
