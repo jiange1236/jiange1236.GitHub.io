@@ -1,6 +1,7 @@
 ---
 index: 0
 title: 技术资料
+date: 2022-05-13
 description: 技术资料分类
 category:
   - 工作
