@@ -37,7 +37,7 @@ export default defineHopeConfig({
       '@vuepress/plugin-search',
       {
         hotKeys: ['s', '/'],
-        maxSuggestions: 15,//指定搜索结果的最大条数
+        maxSuggestions: 12,//指定搜索结果的最大条数
         locales: {
           '/': {
             placeholder: '搜索',

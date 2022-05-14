@@ -1,13 +1,13 @@
 ---
-index: 0
+sticky: true
 title: 计算机
 description: 计算机分类
 category:
   - 计算机
 tag:
   - 计算机
-article: true
-timeline: true
+article: false
+timeline: false
 ---
 
 

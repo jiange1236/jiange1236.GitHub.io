@@ -6,7 +6,7 @@ export default defineThemeConfig({
   hostname: "https://jiange1236.github.io",
 
   author: {
-    name: "zine",
+    name: "Zine",
     url: "https://jiange1236.github.io",
   },
 

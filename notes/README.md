@@ -61,5 +61,5 @@ project:
 #     details: 为你的文章添加日期、标签和分类，即可自动生成文章、分类、标签与时间轴列表
 #     link: /zh/guide/blog/intro/
 
-footer: 两情若是久长时，又岂在朝朝暮暮
+footer: 不忘初心，方得始终
 ---

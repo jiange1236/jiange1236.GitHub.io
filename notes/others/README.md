@@ -1,13 +1,13 @@
 ---
-index: 0
+sticky: true
 title: 其它
 description: 其它分类
 category:
   - 其它
 tag:
   - 其它
-article: true
-timeline: true
+article: false
+timeline: false
 ---
 
 

@@ -1,13 +1,13 @@
 ---
-index: 0
+sticky: true
 title: 理财
 description: 理财分类
 category:
   - 理财
 tag:
   - 理财
-article: true
-timeline: true
+article: false
+timeline: false
 ---
 
 

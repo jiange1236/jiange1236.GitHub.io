@@ -1,13 +1,13 @@
 ---
-index: 0
+sticky: true
 title: 工作
 description: 工作分类
 category:
   - 工作
 tag:
   - 工作
-article: true
-timeline: true
+article: false
+timeline: false
 ---
 
 

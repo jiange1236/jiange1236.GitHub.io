@@ -1,13 +1,13 @@
 ---
-index: 0
+sticky: true
 title: 学习
 description: 学习分类
 category:
   - 学习
 tag:
   - 学习
-article: true
-timeline: true
+article: false
+timeline: false
 ---
 
 

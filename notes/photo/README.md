@@ -1,13 +1,13 @@
 ---
-index: 0
+sticky: true
 title: 摄影
 description: 摄影分类
 category:
   - 摄影
 tag:
   - 摄影
-article: true
-timeline: true
+article: false
+timeline: false
 ---
 
 
