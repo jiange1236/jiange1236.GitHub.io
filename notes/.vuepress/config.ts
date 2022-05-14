@@ -1,6 +1,5 @@
 import { defineHopeConfig } from "vuepress-theme-hope";
 import themeConfig from "./themeConfig";
-//import { decodeURL } from "./decode-url";
 
 export default defineHopeConfig({
   base: "/",
@@ -25,17 +24,7 @@ export default defineHopeConfig({
     },
   },
 
-  markdown:{
-    extractHeaders:{
-	  level: [1,3],
-	},
-  },
-
-/*   themeConfig,
-  extendsMarkdown: (md) => {
-    md.use(decodeURL)
-  }, */
-
+  themeConfig,
   plugins: [
     [
       '@vuepress/plugin-search',
