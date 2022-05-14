@@ -1,12 +1,12 @@
 ---
 index: 0
-title: study
+title: photo
 date: 2022-05-13
-description: study分类
+description: photo分类
 category:
-  - 学习
+  - 摄影
 tag:
-  - 学习
+  - 摄影
 article: true
 timeline: true
 ---

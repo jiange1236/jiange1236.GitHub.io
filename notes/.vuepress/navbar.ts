@@ -12,6 +12,8 @@ export default defineNavbarConfig([
   { text: '其它', link: '/others/' ,icon:"others"},
   { text: 'DownGit', link: 'https://github.jiange1236.workers.dev/' ,icon:"github"},
   { text: 'Proxy', link: 'https://proxy.jiange1236.workers.dev/' ,icon:"proxy"},
+  { text: 'Netlify镜像', link: 'https://zeblog.netlify.app/' ,icon:"proxy"},
+  { text: 'Vercel镜像', link: 'https://proxy.jiange1236.workers.dev/' ,icon:"proxy"},  
   // "/",
   // "/home",
   // { text: "使用指南", icon: "creative", link: "/guide/" },

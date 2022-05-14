@@ -1,12 +1,12 @@
 ---
 index: 0
-title: study
+title: finance
 date: 2022-05-13
-description: study分类
+description: finance分类
 category:
-  - 学习
+  - 理财
 tag:
-  - 学习
+  - 理财
 article: true
 timeline: true
 ---

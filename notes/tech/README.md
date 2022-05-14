@@ -1,12 +1,12 @@
 ---
 index: 0
-title: study
+title: tech
 date: 2022-05-13
-description: study分类
+description: tech分类
 category:
-  - 学习
+  - 计算机
 tag:
-  - 学习
+  - 计算机
 article: true
 timeline: true
 ---
