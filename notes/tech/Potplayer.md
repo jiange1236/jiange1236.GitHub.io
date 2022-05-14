@@ -30,69 +30,69 @@ Potplayer 是高清影视常用的播放器，界面简洁，功能齐全，比 
 
 N 卡用户打开 Nvidia 驱动面板，将红框中的动态范围参数调整至完全，蓝框的输出颜色深度调到10bpc或者8bpc（取决于显示器支持），如下图
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/9555B2C6BBC9445390E1282A1A169397.png)
+![](./Potplayer.assets/9555B2C6BBC9445390E1282A1A169397.png)
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/90204311E1A9460B8AF391882EA14236.png)
+![](./Potplayer.assets/90204311E1A9460B8AF391882EA14236.png)
 
 Intel 核显用户，将量化范围设为全范围：
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/9B4B6805377B455CA36D8306653073B8.png)
+![](./Potplayer.assets/9B4B6805377B455CA36D8306653073B8.png)
 
 AMD 显卡：新版设置界面，选择 Full RGB：
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/DC8652FD9B2046E28D1D3170D736EEFE.png)
+![](./Potplayer.assets/DC8652FD9B2046E28D1D3170D736EEFE.png)
 
 CCC 旧版界面，同样选择 Full RGB：
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/A40C8848A57A4909BB4EA30CF20E70FD.png)
+![](./Potplayer.assets/A40C8848A57A4909BB4EA30CF20E70FD.png)
 
 **2、PotPlayer 选项设置。**
 
 我们先用 PotPlayer 随便打开一个视频，按一下 Tab 键，调出 Potplayer 自带的 OSD 菜单，如下图。这是 Potplayer 的默认方案，读作 “a piece of shit”。接下来我们要调教它，关掉各种渣渣内置滤镜，以我们准备的各种外置滤镜代替之。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/BC07827C903D4BD6A2FC43014B7E28C0.png)
+![](./Potplayer.assets/BC07827C903D4BD6A2FC43014B7E28C0.png)
 
 **蓝色框中的 Pot 内置解码器，我们要用 LavFilters 代替；红色框中的视频渲染器，简称 EVR，是Windows 充话费送的渣渣，几乎所有名字中带有“影音”二字的垃圾播放器用的都是它；橙色框中的部分，是 Pot 内置的视频处理滤镜弄出来的，不知道它怎么 PS 画面的，故需要消灭之。**
 
 **（1）在播放界面点击鼠标右键-选项-播放，打开设置界面，开始调教 Pot 的进度条**，将红框中的部分调整至如下图，其他选项也可参照图中改动。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/EC9CA9AC88B44011ABAE9C35EFDA79DB.png)
+![](./Potplayer.assets/EC9CA9AC88B44011ABAE9C35EFDA79DB.png)
 
 **（2）切至滤镜选项卡，关闭 Pot 内置滤镜（最重要），**防止 Pot 对视频进行瞎处理，操作如下图。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/C3759C143EDE4800AA804CCF17A73322.png)
+![](./Potplayer.assets/C3759C143EDE4800AA804CCF17A73322.png)
 
 **如果没有关闭 Potplayer 内置图像滤镜，数据在传递给 madVR 前已经从 10-bit 砍成 8-bit 损失精度，madVR 内部再怎么精度高也是白搭。这一点 VCB-Studio 的旧版 PotPlayer 教程中最大的遗漏，它直接导致这篇新教程的出现。**
 
 **（3）展开滤镜选项卡，点击 源滤镜/分离器 分支，开始载入外挂 LavFilters。**点击红框中的按键，管理滤镜和解码器。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/0BF5650A4C954E48B7FBFA22B3646467.png)
+![](./Potplayer.assets/0BF5650A4C954E48B7FBFA22B3646467.png)
 
 点击下图红框中的搜索后添加，左边蓝框会出现一堆解码器；点击确定，加载 LavFilters 完成。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/A869C381383344CDB9D226CADDF75278.png)
+![](./Potplayer.assets/A869C381383344CDB9D226CADDF75278.png)
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/F0926CFCD9B6409888CCA53372B0A0AB.png)
+![](./Potplayer.assets/F0926CFCD9B6409888CCA53372B0A0AB.png)
 
 点击确定后上图界面关闭，自动回到**源滤镜/分离器**选项卡。带*的选项都是外挂的滤镜/解码器。将红框中的所有选项都换成 Lav Splitter Source；无法切换为 Lav 的就保持原状，参考下图
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/3B0DE4F471424E2CB4CC9C95787CACE2.png)
+![](./Potplayer.assets/3B0DE4F471424E2CB4CC9C95787CACE2.png)
 
 接下来，**视频解码器和音频解码器**也如法炮制，所有能换成 Lav 的项目全部换成 Lav。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/68EDAFDBF8C0469B9EA117E767032A05.png)
+![](./Potplayer.assets/68EDAFDBF8C0469B9EA117E767032A05.png)
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/2B23687DEE0E41F29A3AA3459067D82F.png)
+![](./Potplayer.assets/2B23687DEE0E41F29A3AA3459067D82F.png)
 
 下一步，**个人滤镜优先权**，**添加字幕插件 xy-vsFilter（即 DirectVobSub，通用） 或 xy-SubFilter（madVR专用）。以前者为例，**操作如图。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/9C40B1985D2C4CC882E81DADF502E88E.png)
+![](./Potplayer.assets/9C40B1985D2C4CC882E81DADF502E88E.png)
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/EDDC2DE36C754C9385A3A6337E3A338C.png)
+![](./Potplayer.assets/EDDC2DE36C754C9385A3A6337E3A338C.png)
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/555BB78C643A4DEEBD507E6C58C1119D.png)
+![](./Potplayer.assets/555BB78C643A4DEEBD507E6C58C1119D.png)
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/AC1572B5024147DBB9B5BB2E670E478D.png)
+![](./Potplayer.assets/AC1572B5024147DBB9B5BB2E670E478D.png)
 
 **优先级设置上，DirectVobSub (auto-loading version) 设为强制使用，负责外挂字幕；DirectVobSub 设为按优先级使用，负责内挂字幕。**
 
@@ -106,7 +106,7 @@ CCC 旧版界面，同样选择 Full RGB：
 
 **（4）切换至视频选项卡，设置默认视频渲染器，选择 madVR。**
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/87C3363D5DC04B4685E2B44B82809C94.png)
+![](./Potplayer.assets/87C3363D5DC04B4685E2B44B82809C94.png)
 
 madVR 的全称是 madshi Video Renderer，是 Windows 平台最强视频渲染器，调教得当的话效果媲美顶级蓝光机，当然消耗也不小。
 
@@ -114,13 +114,13 @@ madVR 的全称是 madshi Video Renderer，是 Windows 平台最强视频渲染�
 
 **（5）切换至 色系/属性 选项卡，设置 YCbCr<->RGB 规则，设为自动选择**，如图。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/F3FF713C50D240E092814E07DFE15EE2.png)
+![](./Potplayer.assets/F3FF713C50D240E092814E07DFE15EE2.png)
 
 **（6）音频渲染器设置**，根据一些文档叙述，[WSAPI](https://msdn.microsoft.com/en-us/library/windows/desktop/dd371455(v=vs.85).aspx)渲染器比 Default Direct SoundDevice 效果好，具有程序独占，抗干扰，延迟低的优点；**建议关闭规格化**，避免 Pot 擅自改变音量。操作方式如下：
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/C3C97A3C1DB14909A5958D9A74781C81.png)
+![](./Potplayer.assets/C3C97A3C1DB14909A5958D9A74781C81.png)
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/1DBCA7198BDB42F1B3FB2B83FFCF8072.png)
+![](./Potplayer.assets/1DBCA7198BDB42F1B3FB2B83FFCF8072.png)
 
 **做完这一步，Potplayer 设置就完成了，记得点击应用和确定按钮，不然就白忙活了。**
 
@@ -130,17 +130,17 @@ madVR 的全称是 madshi Video Renderer，是 Windows 平台最强视频渲染�
 
 随便打开一个视频，在播放界面点击右键-属性，打开此界面。点击橙色框就能进入视频/音频解码器设置界面。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/AB876390230A4ABF87B8CDBCCE491AFE.png)
+![](./Potplayer.assets/AB876390230A4ABF87B8CDBCCE491AFE.png)
 
 **（1）视频解码器 LAV Video Decoder 设置。LAV 的设置分为两套方案，A 方案应搭配 madVR 使用，B 方案搭配默认的 EVR(CP) 使用。**
 
 **A：**如果使用 **madVR**，橙色框中的 Output Format 勾选除了 AYUV 以外的所有选项；RGB Output Level选 PC；Dither Mode 选 Random。LAV 默认设置就是如此，如图所示。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/D707C6EEAC1148EA9DD8BAA7021BD5A5.png)
+![](./Potplayer.assets/D707C6EEAC1148EA9DD8BAA7021BD5A5.png)
 
 **B：**如果使用 **EVR**（自动选择），橙色框中的 Output Format 只勾选 RGB24 和 RGB32 选项，RGB48 可选可不选；其他同上。（仅供需要省电或显卡性能不足者使用）
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/C963B77850C946DBA1091F9F4BF0BA6D.png)
+![](./Potplayer.assets/C963B77850C946DBA1091F9F4BF0BA6D.png)
 
 为什么 madVR 和 EVR 勾选方式不同？
 
@@ -158,33 +158,33 @@ N 卡 GTX 950 / GTX 960 / GTX 1000 全系列、A 卡 4 系 5 系全系列以及 
 
 **CPU 软解 + madVR 示范，**注意绿框中的 Active Decoder 和红框中的输出：
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/344253B2750A40278D8DDE732447EB41.jpeg)
+![](./Potplayer.assets/344253B2750A40278D8DDE732447EB41.jpeg)
 
 **蓝色和绿色框中是解码器选项，如果使用 CPU 软解，则选择 None；如果使用显卡 GPU 进行硬解，则选择 DXVA2 (copy-back) 或 D3d11 或 DXVA2 (native)，A/N 都可用，前者兼容性更好，后者更节省 CPU；如果使用英特尔核显，则选用 Intel QuickSync；NVIDIA CUVID 是 N 卡专用硬解方式，基本用不上。**
 
 **DVXA2 (native)硬解 + madVR 示范：**
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/0A96029C316F40CFAFE115EF7A2355AB.jpeg)
+![](./Potplayer.assets/0A96029C316F40CFAFE115EF7A2355AB.jpeg)
 
 红框中显示 dxva，实际上输出依然是 P010，**橙框中的 Active Decoder 为 dxva2n，OK 表明显卡支持此硬解方式**。DXVA2 (copy-back) 和其他硬解方式都类似。
 
 **（3）音频解码器 LAV Audio Decoder 设置。**仅有一项需要调整，勾选 **Enable Mixing**。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/3CFBC3BE169A4BC584E49A9118E5B27E.png)
+![](./Potplayer.assets/3CFBC3BE169A4BC584E49A9118E5B27E.png)
 
 由于绝大部分人都使用双声道设备，所以遇到 5.1 声道音轨时，只有左/右两声道会被耳机/音响接收，其他声道都被直接丢弃了。所以，一般来说我们应让 LAV 把多声道混流成双声道（Stereo）再输出；玩多声道音响的土豪请随意。
 
 **（4）字幕处理，**我们已经在上面设置好了 xy-vsfilter 或 xy-Subfilter 字幕插件，所以要**关闭 Pot 内置渣渣字幕插件**，否则就会出现两行字幕的奇观，右键-字幕-取消勾选显示字幕，如图。**字幕应该跟视频放在同一目录下，且与视频文件同名，会被自动加载，字幕由 DirectVobSub 或 xy-SubFilter 控制，而非 Potplayer。**
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/220410081D3D49E4A9881666E1CAEB6D.jpeg)
+![](./Potplayer.assets/220410081D3D49E4A9881666E1CAEB6D.jpeg)
 
 **（5）切换多字幕轨/多视频/多音轨**，使用右下角的**任务栏里 LAV 和字幕插件 DirectVobSub 或 xy-SubFilter** 的图标。很多观众都不知道 **VCB-Studio 以及其他压制组制作的 BD 往往含多条音轨**，比如文件名中含 2flac、flac_aac、FLACX2 等字眼的 mkv，以及外挂 mka。这意味着视频带有多音轨，可能是 5.1，也可能是声优或是 staff 评论音轨，可以切换着使用。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/66506CA2E158458C80A6A6BCA50B15FB.jpeg)
+![](./Potplayer.assets/66506CA2E158458C80A6A6BCA50B15FB.jpeg)
 
 **切换音轨也可以直接点击右键-声音-选择声音来实现，进行切换**；视频轨同理，不过多音轨很常见，而多视频轨几乎见不到。
 
-![](./%5BVCB-Studio%20%E7%A7%91%E6%99%AE%E6%95%99%E7%A8%8B%202.2%5D%20%E5%9F%BA%E4%BA%8E%20PotPlayer%20%E5%92%8C%20madVR%20%E7%9A%84%E6%92%AD%E6%94%BE%E5%99%A8%E6%95%99%E7%A8%8B%EF%BC%88%E5%B7%B2%E6%9B%B4%E6%96%B0%20XySubFilter%EF%BC%89%20%20VCB-St.assets/2314198A671B42CDAA13316ABE0AB5EE.jpeg)
+![](./Potplayer.assets/2314198A671B42CDAA13316ABE0AB5EE.jpeg)
 
 # madVR 调教篇
 
