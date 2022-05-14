@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: Clash - V2ray订阅
 description: Clash - V2ray订阅
 date: 2022-01-19

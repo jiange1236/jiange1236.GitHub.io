@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: Openssl一键自签证书
 description: Openssl一键自签证书
 date: 2022-01-18

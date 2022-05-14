@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: Nginx安装Web应用防火墙
 description: Nginx安装Web应用防火墙
 date: 2022-01-15
@@ -121,6 +121,6 @@ ngx_lua_waf安装到此结束。
 
 ### 4. ngx_lua_waf效果图
 
-![ngx_lua_waf waf(web应用防火墙)](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/ngcb15.jpg)
-![ngx_lua_waf waf(web应用防火墙)](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/ngcb15-16419157753881.jpg)
+![ngx_lua_waf waf(web应用防火墙)](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/ngcb15.jpg)
+![ngx_lua_waf waf(web应用防火墙)](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/ngcb15-16419157753881.jpg)
 

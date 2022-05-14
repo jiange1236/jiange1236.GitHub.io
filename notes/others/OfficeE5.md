@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: 微软Office 365 E5 开发人员计划
 description: 申请加入微软Office 365 E5 开发人员计划
 date: 2022-01-17
@@ -26,19 +26,19 @@ Office开发人员中心链接：[https://developer.microsoft.com/zh-cn/office/d
 
 打开链接就是大大的 **立即加入** 几个大字 （注：此过程也许国内网络访问并不友好）
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_01.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_01.jpg)
 
 点 **立即加入** 就弹出填写信息的界面，如果你没有登录账号，就会让你登录。
 
 填写信息正常填即可
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_02.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_02.jpg)
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_03.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_03.jpg)
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_04.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_04.jpg)
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_05.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_05.jpg)
 
 到这里就OK了，可以订阅我们需要的 **E5** 了
 
@@ -48,13 +48,13 @@ Office开发人员中心链接：[https://developer.microsoft.com/zh-cn/office/d
 
 账号是一个邮箱的形式，用户名可以随意，域需要唯一
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_06.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_06.jpg)
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_07.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_07.jpg)
 
 填好后点 **继续** 就完成了，成功订阅了E5。
 
-![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/xlc520/MyImage/MdImg/officee5_08.jpg)
+![【记录】申请加入 微软Office 365 E5 开发人员计划](https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/officee5_08.jpg)
 
 # 管理E5订阅
 

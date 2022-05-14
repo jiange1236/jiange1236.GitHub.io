@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: 浏览器UA
 description: 浏览器UA
 date: 2022-02-11

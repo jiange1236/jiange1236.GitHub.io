@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: generate_204 测速地址
 description: generate_204 测速地址
 date: 2022-04-02

@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: python安装源
 description: python安装源
 date: 2022-01-19

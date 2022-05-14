@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: Bing必应API
 description: Bing必应壁纸API
 date: 2022-02-18

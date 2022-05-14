@@ -1,5 +1,5 @@
 ---
-author: xlc520
+author: jiange1236
 title: 蓝奏云安卓APP合集
 description: 蓝奏云安卓APP合集
 date: 2022-03-06
