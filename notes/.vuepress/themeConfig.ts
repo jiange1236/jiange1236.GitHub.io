@@ -12,7 +12,7 @@ export default defineThemeConfig({
 
   iconPrefix: "iconfont icon-",
 
-  logo: "/logo.svg",
+  logo: "/blog.png",
 
   repo: "https://github.com/jiange1236/jiange1236.github.io",
 
@@ -35,6 +35,8 @@ export default defineThemeConfig({
     // fallback
     "/": [
       "" /* / */,
+	  "home"
+      "intro" /* /about.html */,
     ],
   },
 
