@@ -25,16 +25,16 @@ export default defineHopeConfig({
     },
   },
 
-  // markdown:{
-  //   extractHeaders:{
-	//   level: [1,3],
-	// },
-  // },
+  markdown:{
+    extractHeaders:{
+	  level: [1,3],
+	},
+  },
 
-  themeConfig,
+/*   themeConfig,
   extendsMarkdown: (md) => {
     md.use(decodeURL)
-  },
+  }, */
 
   plugins: [
     [
