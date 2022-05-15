@@ -237,12 +237,6 @@ Follow these simple steps to start using Flatpak
 
    To complete setup, restart your system. Now all you have to do is [install some apps](https://flathub.org/)!
    
-   ## 硬链接
-   
-   ```
-   mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work
-   ```
-   
    
 
 # Ubuntu
