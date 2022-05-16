@@ -6,10 +6,16 @@
 mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work
 ```
 
+<!-- vi /etc/fstab -->
+
+```
+/data/home/zhou/Nutstore\040Files/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work none defaults,bind 0 0
+```
+
 **Windows**
 
 ```
-mklink /J F:\Blog F:\我的坚果云
+mklink /J F:\Blog\jiange1236.GitHub.io\notes\work F:\我的坚果云\工作
 ```
 
 # Git

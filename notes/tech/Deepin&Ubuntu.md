@@ -237,7 +237,21 @@ Follow these simple steps to start using Flatpak
 
    To complete setup, restart your system. Now all you have to do is [install some apps](https://flathub.org/)!
    
-   
+## Fstab
+
+```
+vi /etc/fstab
+```
+
+**路径名有空格**
+
+如果挂载的路径中有空格，可以使用 "\040" 转义字符来表示空格（以三位八进制数来进行表示）
+
+```
+/etc/fstab
+UUID=47FA-4071     /home/username/Camera\040Pictures   vfat  defaults,noatime      0  2
+/dev/sda7          /media/100\040GB\040(Storage)       ext4  defaults,noatime,user  0  0
+```
 
 # Ubuntu
 
