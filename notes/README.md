@@ -12,12 +12,12 @@ projects:
   - name: 工作笔记
     desc: 土木工程设计/工程笔记
     link: /work/
-    icon: "workingDirectory"
+    icon: project
 
   - name: 学习笔记
     desc: 个人学习的笔记
     link: /study/
-    icon: "study"
+    icon: book
 
 footer: 不忘初心，方得始终
 ---
