@@ -1,3 +1,14 @@
+---
+title: Sausage
+date: 2022-05-13
+category:
+  - 学习
+tag:
+  - 学习
+  - Sausage
+article: true
+---
+
 **1、 打开软件 PKPM**
 
 如图 8-3 所示，选择“ SAUSAGE”项，设置当前

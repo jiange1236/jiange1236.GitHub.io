@@ -1,14 +1,11 @@
 ---
-index: 0
 title: 【技术周刊】通用规范与现行规范的对比
 date: 2022-01-21
-description: work分类
 category:
   - 工作
 tag:
   - 工作
 article: true
-timeline: true
 source: https://mp.weixin.qq.com/s/Kiq2_c4ISDel4X_qosJFwg
 ---
 

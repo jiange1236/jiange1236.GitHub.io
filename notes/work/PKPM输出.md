@@ -1,3 +1,16 @@
+---
+index: 6
+title: PKPM输出
+date: 2022-05-13
+isOriginal: true
+category:
+  - 工作
+tag:
+  - 工作
+  - PKPM
+article: true
+---
+
 [TOC]
 
 # 应送审的技术资料

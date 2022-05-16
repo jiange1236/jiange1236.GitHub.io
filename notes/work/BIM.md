@@ -1,3 +1,15 @@
+---
+title: BIM
+date: 2022-05-13
+isOriginal: true
+category:
+  - 工作
+tag:
+  - 工作
+  - BIM
+article: true
+---
+
 ①可视化 不同工期展示
 
 ②标准化 品牌形成

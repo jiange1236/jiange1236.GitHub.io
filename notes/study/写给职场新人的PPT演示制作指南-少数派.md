@@ -1,6 +1,11 @@
 ---
-created: 2022-01-24
-tags: [幻灯片]
+title: 写给职场新人的 PPT 演示制作指南 - 少数派
+date: 2020-01-24
+category:
+  - 学习
+tag:
+  - 学习
+article: true
 source: https://sspai.com/post/60859
 ---
 
