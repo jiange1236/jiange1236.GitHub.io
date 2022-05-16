@@ -99,5 +99,4 @@ features:
     details: 包括图标支持、全屏按钮、返回顶部按钮等
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/
 
-footer: 不忘初心，方得始终
 ---

@@ -2,6 +2,7 @@
 home: true
 title: Zine 介绍
 icon: people
+heroImage: /blog.png
 tag:
   - 个人介绍
 timeline: false
@@ -9,7 +10,7 @@ star: true
 ---
 
 
-# Zine 介绍
+# Zine
 
 ---
 
@@ -33,4 +34,4 @@ star: true
 
 ## 联系方式
 
-你可以通过邮箱 183465355@qq.com 发函。
+你可以通过邮箱 mailto:183465355@qq.com 发函。
