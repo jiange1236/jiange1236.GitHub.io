@@ -35,8 +35,8 @@ export default defineThemeConfig({
     // fallback
     "/": [
       "" /* / */,
-	  "home" /* /intro.html */,
-      "intro" /* /about.html */,
+	  "home" /* /home.html */,
+      "intro" /* /intro.html */,
     ],
   },
 
@@ -47,7 +47,7 @@ export default defineThemeConfig({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime","Word"],
 
   blog: {
-    description: "小小土木僧",
+    description: "一级注册结构工程师 | 《时代周刊》2006年度风云人物",
     intro: "/intro.html",
 	roundAvatar: true,
 	sidebarDisplay: "mobile",
