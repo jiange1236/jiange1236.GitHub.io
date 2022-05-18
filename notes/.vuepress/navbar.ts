@@ -12,8 +12,16 @@ export default defineNavbarConfig([
   { text: '其它', link: '/others/' ,icon:"others"},
   { text: 'DownGit', link: 'https://github.jiange1236.workers.dev/' ,icon:"github"},
   { text: 'Proxy', link: 'https://proxy.jiange1236.workers.dev/' ,icon:"proxy"},
-  { text: 'Netlify镜像', link: 'https://zeblog.netlify.app/' ,icon:"proxy"},
-  { text: 'Vercel镜像', link: 'http://zeblog.vercel.app/' ,icon:"proxy"},  
+  {
+	    text: "镜像",
+		icon: "edit",
+		children: [
+			{ text: 'Netflify', link: 'https://zeblog.netlify.app/' ,icon:"speed"},
+			{ text: 'Vercel', link: 'http://zeblog.vercel.app/' ,icon:"speed"},
+			{ text: 'Cloudflare', link: 'https://zeblog.pages.dev/' ,icon:"speed"},
+		],
+  },
+  
   // "/",
   // "/home",
   // { text: "使用指南", icon: "creative", link: "/guide/" },
