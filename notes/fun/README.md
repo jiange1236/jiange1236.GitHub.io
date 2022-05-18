@@ -1,11 +1,11 @@
 ---
 sticky: true
-title: 摄影
-description: 摄影分类
+title: 娱乐
+description: 娱乐分类
 category:
-  - 摄影
+  - 娱乐
 tag:
-  - 摄影
+  - 娱乐
 article: false
 timeline: false
 ---
