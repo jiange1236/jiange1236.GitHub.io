@@ -9,17 +9,23 @@ export default defineNavbarConfig([
   { text: '娱乐', link: '/fun/' ,icon:"launch"},  
   { text: '摄影', link: '/photo/' ,icon:"actions"},
   { text: '理财', link: '/finance/' ,icon:"rank"},
-  { text: '其它', link: '/others/' ,icon:"others"},
-  { text: 'DownGit', link: 'https://github.jiange1236.workers.dev/' ,icon:"github"},
-  { text: 'Proxy', link: 'https://proxy.jiange1236.workers.dev/' ,icon:"proxy"},
+  { 
+    text: '其它', 
+	link: '/others/' ,
+	icon:"others",
+	children: [
+		{ text: 'DownGit', link: 'https://github.jiange1236.workers.dev/' ,icon:"github"},
+		{ text: 'Proxy', link: 'https://proxy.jiange1236.workers.dev/' ,icon:"proxy"},
+	],
+  },
   {
-	    text: "镜像",
-		icon: "edit",
-		children: [
-			{ text: 'Netflify', link: 'https://zeblog.netlify.app/' ,icon:"speed"},
-			{ text: 'Vercel', link: 'http://zeblog.vercel.app/' ,icon:"speed"},
-			{ text: 'Cloudflare', link: 'https://zeblog.pages.dev/' ,icon:"speed"},
-		],
+	text: "镜像",
+	icon: "speed",
+	children: [
+		{ text: 'Netflify', link: 'https://zeblog.netlify.app/' },
+		{ text: 'Vercel', link: 'http://zeblog.vercel.app/' },
+		{ text: 'Cloudflare', link: 'https://zeblog.pages.dev/' },
+	],
   },
   
   // "/",
