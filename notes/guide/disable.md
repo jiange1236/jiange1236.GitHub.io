@@ -1,15 +1,12 @@
 ---
-index: 3
 title: 组件禁用
 icon: config
 category:
   - 使用指南
 tag:
   - 禁用
-
 navbar: false
 sidebar: false
-
 breadcrumb: false
 pageInfo: false
 contributors: false
@@ -19,7 +16,6 @@ prev: false
 next: false
 comment: false
 footer: false
-
 backtotop: false
 ---
 
