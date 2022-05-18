@@ -1,3 +1,14 @@
+---
+title: Crossin的编程教室 - Python 新手引导
+date: 2022-05-13
+category:
+  - 学习
+tag:
+  - 学习
+  - Python
+article: true
+---
+
 [**更多资源请点击【Crossin的编程教室】**](http://crossincode.com/home/)
 
 **Python 新手引导** 
