@@ -10,7 +10,7 @@ export default defineHopeConfig({
     [
       "script",
 	  {
-		  src: "https://kit.fontawesome.com/ca37c296c5.js",
+		  src: "https://kit.fontawesome.com/3351cccded.js",
 		  crossorigin: "anonymous",
 	  },
     ],
