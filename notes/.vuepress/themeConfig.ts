@@ -10,7 +10,7 @@ export default defineThemeConfig({
     url: "https://jiange1236.github.io",
   },
 
-  iconPrefix: "iconfont icon-",
+  iconPrefix: "fas fa-",
 
   logo: "/blog.png",
 

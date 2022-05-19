@@ -6,6 +6,7 @@ export default defineHopeConfig({
 
   dest: "./dist",
 
+/*
   head: [
     [
       "link",
@@ -15,7 +16,7 @@ export default defineHopeConfig({
       },
     ],
   ],
-
+*/
   locales: {
     "/": {
       lang: "zh-CN",
