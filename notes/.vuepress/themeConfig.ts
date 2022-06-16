@@ -1,4 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import navbar from "./navbar";
+import sidebar from "./sidebar";
 
 export default hopeTheme({
   hostname: "https://jiange1236.github.io",
@@ -7,8 +9,9 @@ export default hopeTheme({
     name: "Zine",
     url: "https://jiange1236.github.io",
   },
-
+  
   iconAssets: "fontawesome",
+  iconPrefix: "fas fa-",
 
   logo: "/blog.png",
 
@@ -17,38 +20,11 @@ export default hopeTheme({
   docsDir: "notes",
   docsRepo: "https://github.com/jiange1236/jiange1236.github.io",
   docsBranch: "main",
-  
   // navbar
-  navbar: [
-	  { text: '主页', link: '/' , icon: "house"},
-	  { text: '项目', link: '/home' ,icon:"list-check" },
-	  { text: '工作', link: '/work/' ,icon:"briefcase" },
-	  { text: '学习', link: '/study/' ,icon:"book-open"},
-	  { text: '计算机', link: '/tech/' ,icon:"desktop"},
-	  { text: '娱乐', link: '/fun/' ,icon:"dice"},  
-	  { text: '摄影', link: '/photo/' ,icon:"camera"},
-	  { text: '理财', link: '/finance/' ,icon:"chart-line"},
-	  { text: '其它', link: '/others/' ,icon:"bolt"},
-	  {
-		  text: "镜像",
-		  icon: "cube",
-		  children: [
-    		  { text: 'DownGit', link: 'https://github.jiange1236.workers.dev/' ,icon:"github"},
-			  { text: 'Proxy', link: 'https://proxy.jiange1236.workers.dev/' ,icon:"archway"},
-			  { 
-    			  text:'本站镜像',
-				  icon:"network",
-				  children: [
-    				  { text: 'Netflify', link: 'https://zeblog.netlify.app/' },
-					  { text: 'Vercel', link: 'http://zeblog.vercel.app/' },
-					  { text: 'Cloudflare', link: 'https://zeblog.pages.dev/' },
-				  ],
-			  },
-		  ],
-	  },
-  ],
+  navbar: navbar,
 
   // sidebar
+  //sidebar: sidebar,
   sidebar: {
     "/finance/": "structure",
 	"/fun/": "structure",
@@ -69,15 +45,12 @@ export default hopeTheme({
 
   displayFooter: true,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime","Word"],
+  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word"],
 
   blog: {
     description: "一级注册结构工程师 | 《时代周刊》2006年度风云人物",
     intro: "/intro.html",
 	roundAvatar: true,
-	sidebarDisplay: "mobile",
-	articlePerPage: 10,//每页的文章数量
-	articleInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime","Word"],
     medias: {
       Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
 //      Bitbucket: "https://example.com",
@@ -109,26 +82,12 @@ export default hopeTheme({
 //      Youtube: "https://example.com",
       Zhihu: "https://www.zhihu.com/people/zhouzijian",
     },
-	timeline: "昨日不在"
   },
 
-  encrypt: {
-    config: {
-      //"/guide/encrypt.html": ["1234"],
-    },
-  },
   // seo:true,
   plugins: {
-    pwa: {
-		cachePic: true,
-		cacheHTML: true,
-		update: "available",
-	},
-	
-    blog: {
-      autoExcerpt: true,//是否为每个页面生成摘录
-    },
-    copyCode: {"showInMobile": true,duration: 2000},
+	  
+    blog: true,
 
     // 你也可以使用 Waline
     comment: {
@@ -155,9 +114,151 @@ export default hopeTheme({
       // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     },
 
+    feed: {
+      atom: true,
+      json: true,
+      rss: true,
+    },
+	
     mdEnhance: {
+      align: true,
       codetabs: true,
-      mermaid: true,
+      demo: true,
+      flowchart: true,
+      footnote: true,
+      imageMark: true,
+      presentation: true,
+      sub: true,
+      sup: true,
+      tex: true,
+      vpre: true,
+    },
+	
+    pwa: {
+      favicon: "/favicon.ico",
+      themeColor: "#5c92d1",
+      cacheHTML: false,
+      maxSize: 3072,
+      apple: {
+        icon: "/assets/icon/apple-touch-icon.png",
+        statusBarColor: "white",
+      },
+      msTile: {
+        image: "/assets/icon/ms-icon-144.png",
+        color: "#ffffff",
+      },
+      manifest: {
+        name: "Mr.Hope 的个人博客",
+        short_name: "Mr.Hope Blog",
+        description: "Mr.Hope 的个人博客",
+        theme_color: "#5c92d1",
+        icons: [
+          {
+            src: "/assets/icon/chrome-192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-mask-192.png",
+            sizes: "192x192",
+            purpose: "maskable",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-mask-512.png",
+            sizes: "512x512",
+            purpose: "maskable",
+            type: "image/png",
+          },
+        ],
+        shortcuts: [
+          {
+            name: "分类",
+            short_name: "分类",
+            icons: [
+              {
+                src: "/assets/icon/category-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/category-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
+            url: "/category/",
+            description: "文章分类分组",
+          },
+          {
+            name: "标签",
+            short_name: "标签",
+            icons: [
+              {
+                src: "/assets/icon/tag-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/tag-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
+            url: "/tag/",
+            description: "文章标签分组",
+          },
+          {
+            name: "时间线",
+            short_name: "时间线",
+            icons: [
+              {
+                src: "/assets/icon/timeline-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/timeline-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
+            url: "/timeline/",
+            description: "时间线文章列表",
+          },
+          {
+            name: "个人介绍",
+            short_name: "个人介绍",
+            icons: [
+              {
+                src: "/assets/icon/about-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+              {
+                src: "/assets/icon/about-monochrome.png",
+                sizes: "192x192",
+                purpose: "monochrome",
+                type: "image/png",
+              },
+            ],
+            url: "/intro.html",
+            description: "个人介绍",
+          },
+        ],
+      },
     },
   },
-});
+});	
