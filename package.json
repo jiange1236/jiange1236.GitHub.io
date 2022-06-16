@@ -20,7 +20,6 @@
     "@vuepress/client": "2.0.0-beta.48",
     "@vuepress/plugin-docsearch": "2.0.0-beta.48",
     "@vuepress/utils": "2.0.0-beta.48",
-    "vuepress-shared": "workspace:*",
     "vuepress-vite": "2.0.0-beta.48",
     "vuepress-webpack": "2.0.0-beta.48"
   }
