@@ -1,31 +1,43 @@
-import { defineUserConfig } from "@vuepress/cli";
+import { defineUserConfig } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-import { path } from "@vuepress/utils";
-import { addViteOptimizeDepsInclude } from "vuepress-shared";
 import hopeTheme from "./themeConfig";
 
 export default defineUserConfig({
+  lang: "zh-CN",
+  title: "Zeblog",
+  description: "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
+
   base: "/",
 
   dest: "./dist",
 
   head: [
+    // 百度统计
     [
-      "script",
-	  {
-		  src: "https://kit.fontawesome.com/3351cccded.js",
-		  crossorigin: "anonymous",
-	  },
+      "script",{},
+      `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?693cdb2d667aab780839e42aa16f4420";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `
+    ],
+	
+    // 解决403错误
+    ["meta", { name: "referrer", content: "no-referrer" }],
+	
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css",
+      },
     ],
   ],
 
-  locales: {
-    "/": {
-      lang: "zh-CN",
-      title: "Zeblog",
-      description: "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
-    },
-  },
 
   markdown: {
     extractHeaders: {
@@ -42,12 +54,5 @@ export default defineUserConfig({
       indexName: "zeml",
     }),
   ],
-  
-  alias: {
-    "@theme-hope/components/HomeHero": path.resolve(
-      __dirname,
-      "./components/HopeHero"
-    ),
-  },
   
 });
