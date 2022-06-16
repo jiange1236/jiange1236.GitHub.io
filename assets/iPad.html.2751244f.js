@@ -1,0 +1,1 @@
+const e={key:"v-98d1ee74",path:"/fun/iPad.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1652837412e3,contributors:[{name:"jiange1236",email:"183465355@qq.com",commits:1}]},filePathRelative:"fun/iPad.md"};export{e as data};

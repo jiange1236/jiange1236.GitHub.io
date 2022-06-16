@@ -1,0 +1,1 @@
+const t={key:"v-e37972d0",path:"/work/BIM.html",title:"BIM",lang:"zh-CN",frontmatter:{title:"BIM",date:"2022-05-13T00:00:00.000Z",isOriginal:!0,category:["\u5DE5\u4F5C"],tag:["\u5DE5\u4F5C","BIM"],article:!0},excerpt:"",headers:[],git:{updatedTime:1652668031e3,contributors:[{name:"jiange1236",email:"183465355@qq.com",commits:4}]},filePathRelative:"work/BIM.md"};export{t as data};

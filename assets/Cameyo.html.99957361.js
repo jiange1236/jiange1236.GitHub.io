@@ -1,0 +1,1 @@
+const e={key:"v-35b7c9a6",path:"/tech/Cameyo.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1652545162e3,contributors:[{name:"jiange1236",email:"183465355@qq.com",commits:3}]},filePathRelative:"tech/Cameyo.md"};export{e as data};

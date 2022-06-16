@@ -1,0 +1,1 @@
+const t={key:"v-0a2c34a8",path:"/tech/Ublock%20Origin.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1652543953e3,contributors:[{name:"jiange1236",email:"183465355@qq.com",commits:1}]},filePathRelative:"tech/Ublock Origin.md"};export{t as data};
