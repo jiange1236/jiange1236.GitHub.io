@@ -1,8 +1,8 @@
-import { defineThemeConfig } from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 
-export default defineThemeConfig({
+export default hopeTheme({
   hostname: "https://jiange1236.github.io",
 
   author: {
@@ -87,7 +87,7 @@ export default defineThemeConfig({
 	timeline: "昨日不在"
   },
 
-  pwa:{
+  plugins.pwa:{
     cachePic: true,
     cacheHTML: true,
     update: "available",
