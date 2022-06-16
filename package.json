@@ -10,11 +10,11 @@
   },
   "devDependencies": {
     "vuepress": "2.0.0-beta.39",
-    "vuepress-theme-hope": "2.0.0-beta.45"
+    "vuepress-theme-hope": "2.0.0-beta.45",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.48"
   },
   "dependencies": {
     "minimist": "1.2.6",
-    "node-forge": "^1.3.0",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.48"
+    "node-forge": "^1.3.0"
   }
 }
