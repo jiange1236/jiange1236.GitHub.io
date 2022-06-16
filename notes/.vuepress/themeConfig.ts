@@ -10,8 +10,8 @@ export default hopeTheme({
     url: "https://jiange1236.github.io",
   },
   
-//  iconPrefix: "fas fa-",
-  iconPrefix: "iconfont icon-",
+  iconAssets: "fontawesome",
+  iconPrefix: "fas fa-",
 
   logo: "/blog.png",
 
