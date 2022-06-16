@@ -4,7 +4,7 @@ import { path } from "@vuepress/utils";
 import { addViteOptimizeDepsInclude } from "vuepress-shared";
 import hopeTheme from "./themeConfig";
 
-export default defineHopeConfig({
+export default defineUserConfig({
   base: "/",
 
   dest: "./dist",
