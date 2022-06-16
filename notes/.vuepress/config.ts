@@ -42,4 +42,12 @@ export default defineUserConfig({
       indexName: "zeml",
     }),
   ],
+  
+  alias: {
+    "@theme-hope/components/HomeHero": path.resolve(
+      __dirname,
+      "./components/HopeHero"
+    ),
+  },
+  
 });

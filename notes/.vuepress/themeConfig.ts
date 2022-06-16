@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://jiange1236.github.io",
   },
 
-  iconPrefix: "fas fa-",
+  iconAssets: "fontawesome",
 
   logo: "/blog.png",
 
@@ -131,18 +131,8 @@ export default hopeTheme({
     },
 
     mdEnhance: {
-      enableAll: true,
-      // gfm: true,//是否支持完整的 GFM 语法
-      // codegroup: true,//是否启用代码组
-      // align: true,//是否启用自定义对齐格式支持
-      // sup: true,//是否启用上角标格式支持
-      // sub: true,//是否启用下角标格式支持
-      // footnote: true,//是否启用脚注格式支持
-      // lazyLoad: true,//是否使用原生方式懒加载页面图片
-      // mark: true,//是否启用标记格式支持
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      codetabs: true,
+      mermaid: true,
     },
   },
 });
