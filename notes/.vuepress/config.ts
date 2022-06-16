@@ -1,5 +1,5 @@
 import { defineHopeConfig } from "vuepress-theme-hope";
-import themeConfig from "./themeConfig";
+import hopeTheme from "./themeConfig";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 export default defineHopeConfig({
