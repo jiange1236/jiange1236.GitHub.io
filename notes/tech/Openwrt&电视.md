@@ -660,45 +660,15 @@ luci-app-advanced_1.20-26_all
 
 # 猫影视
 
-1. http://gg.gg/mtv111
+https://gitea.com/AYOM/zhou/
 
-   http://www.nihaogege.com/cat/yl.js
+https://gitea.com/wuzang/mm
 
-1. https://tool.wotianna.com/mysjk.json
+https://us-oss.9t.ee/Cat/api.html
 
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/tool.wotianna.com-mysjk.json
+源：
 
-2. http://c1n.cn/mao
-
-3. https://c1n.cn/cat
-
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/litecucumber.coding.net-p-cat-d-config-git-raw-master-main.json
-
-4. https://c1n.cn/2
-
-   https://sharertv.coding.net/p/mao/d/mao/git/raw/master/mao.json
-
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/sharertv.coding.net-p-mao-d-mao-git-raw-master-mao.json
-
-5. https://wds.ecsxs.com/213821.json
-
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/wds.ecsxs.com-213821.json
-
-6. https://wds.ecsxs.com/212010.json
-
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/wds.ecsxs.com-212010.json
-
-7. \* https://wds.ecsxs.com/213313.json
-
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/wds.ecsxs.com-213313.json
-
-8. http://gg.gg/cccxxx
-
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/gg.gg-cccxxx.json
-
-9. https://cdn.jsdelivr.net/gh/fj365/CMP4@master/m.json
-
-   https://cdn.jsdelivr.net/gh/jiange1236/miTVhosts-for-adh@master/CatVodTVSpider/github.com-fj365-CMP4-master-m.json
+http://fj365.ml/m.json
 
 emotn分享码
 
