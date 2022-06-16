@@ -87,12 +87,6 @@ export default hopeTheme({
 	timeline: "昨日不在"
   },
 
-  plugins.pwa:{
-    cachePic: true,
-    cacheHTML: true,
-    update: "available",
-  },
-
   encrypt: {
     config: {
       //"/guide/encrypt.html": ["1234"],
@@ -100,7 +94,12 @@ export default hopeTheme({
   },
   // seo:true,
   plugins: {
-    
+    pwa: {
+		cachePic: true,
+		cacheHTML: true,
+		update: "available",
+	},
+	
     blog: {
       autoExcerpt: true,//是否为每个页面生成摘录
     },
