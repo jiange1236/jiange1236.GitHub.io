@@ -1,5 +1,2 @@
-
 User-agent:*
 Disallow:
-
-Sitemap: https://jiange1236.github.io/sitemap.xml
