@@ -1,1 +1,0 @@
-const t={key:"v-2ad8bdb6",path:"/fun/%E7%8B%BC%E4%BA%BA%E6%9D%80.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1652837412e3,contributors:[{name:"jiange1236",email:"183465355@qq.com",commits:1}]},filePathRelative:"fun/\u72FC\u4EBA\u6740.md"};export{t as data};

@@ -1,1 +1,0 @@
-const t={key:"v-36bd11b6",path:"/tech/Github.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:3,title:"Github RAW \u52A0\u901F\u670D\u52A1",slug:"github-raw-\u52A0\u901F\u670D\u52A1",children:[]}],git:{updatedTime:1655341742e3,contributors:[{name:"jiange1236",email:"183465355@qq.com",commits:1}]},filePathRelative:"tech/Github.md"};export{t as data};
