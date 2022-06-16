@@ -6,7 +6,7 @@ title: 主页
 heroImage: /blog.png
 heroText: Zeblog
 heroFullScreen: true
-bgImage: https://api.btstu.cn/sjbz/api.php?lx=suiji&format=images
+bgImage: https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images
 tagline: 不忘初心，方得始终
 projects:
   - name: 工作笔记

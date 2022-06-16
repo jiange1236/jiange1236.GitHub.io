@@ -1,7 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-  { text: "主页", link: "/", icon: "house"},
+  { text: "主页", link: "/", icon: "home"},
   { text: "项目", link: "/home", icon:"list-check" },
   { text: "工作", link: "/work/", icon:"briefcase" },
   { text: "学习", link: "/study/", icon:"book-open"},

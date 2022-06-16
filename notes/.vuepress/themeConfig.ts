@@ -10,8 +10,8 @@ export default hopeTheme({
     url: "https://jiange1236.github.io",
   },
   
-  iconAssets: "fontawesome",
-  iconPrefix: "fas fa-",
+//  iconPrefix: "fas fa-",
+  iconPrefix: "iconfont icon-",
 
   logo: "/blog.png",
 
@@ -49,11 +49,13 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word"],
 
   blog: {
+    avatar: "https://avatars.githubusercontent.com/u/1384621?s=96&v=4",
     description: "一级注册结构工程师 | 《时代周刊》2006年度风云人物",
     intro: "/intro.html",
 	roundAvatar: true,
     sidebarDisplay: "mobile",
-    articlePerPage: 10,//每页的文章数量	
+    articlePerPage: 10,//每页的文章数量
+	articleInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word"],
     medias: {
       Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
 //      Bitbucket: "https://example.com",
@@ -103,6 +105,7 @@ export default hopeTheme({
       cachePic:true,
       update:"available",
     },
+    copyCode: {"showInMobile": true,duration: 2000},
     // 你也可以使用 Waline
     comment: {
       /**
@@ -115,17 +118,6 @@ export default hopeTheme({
       categoryId: "DIC_kwDOHLemec4CPFA-",
 	  mapping: "title",
 
-      /**
-       * Using twikoo
-       */
-      // type: "twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-
-      /**
-       * Using Waline
-       */
-      // type: "waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     },
 
     feed: {
@@ -135,17 +127,18 @@ export default hopeTheme({
     },
 	
     mdEnhance: {
-      align: true,
-      codetabs: true,
-      demo: true,
-      flowchart: true,
-      footnote: true,
-      imageMark: true,
-      presentation: true,
-      sub: true,
-      sup: true,
-      tex: true,
-      vpre: true,
+      enableAll: true,
+      // gfm: true,//是否支持完整的 GFM 语法
+      // codegroup: true,//是否启用代码组
+      // align: true,//是否启用自定义对齐格式支持
+      // sup: true,//是否启用上角标格式支持
+      // sub: true,//是否启用下角标格式支持
+      // footnote: true,//是否启用脚注格式支持
+      // lazyLoad: true,//是否使用原生方式懒加载页面图片
+      // mark: true,//是否启用标记格式支持
+      presentation: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+      },
     },
   },
-});	
+});
