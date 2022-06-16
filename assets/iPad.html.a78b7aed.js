@@ -1,1 +1,0 @@
-import{_ as o,o as t,c as _,b as e}from"./app.c1602a9a.js";const s={},c=e("p",null,"Bioshock\uFF08\u751F\u5316\u5947\u5175\uFF09",-1),n=e("p",null,"\u5E7D\u6D6E\uFF1A\u672A\u77E5\u654C\u4EBA",-1),l=e("p",null,"Vainglory\u7F51\u9645\u76F4\u901A\u8F66",-1),a=[c,n,l];function r(i,d){return t(),_("div",null,a)}var u=o(s,[["render",r],["__file","iPad.html.vue"]]);export{u as default};
