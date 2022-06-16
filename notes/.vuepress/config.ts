@@ -1,6 +1,8 @@
-import { defineHopeConfig } from "vuepress-theme-hope";
-import hopeTheme from "./themeConfig";
+import { defineUserConfig } from "@vuepress/cli";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { path } from "@vuepress/utils";
+import { addViteOptimizeDepsInclude } from "vuepress-shared";
+import hopeTheme from "./themeConfig";
 
 export default defineHopeConfig({
   base: "/",
