@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 
-export default hopeTheme({
+export default themeConfig({
   hostname: "https://jiange1236.github.io",
 
   author: {
