@@ -20,9 +20,11 @@ export default navbar([
 			text:"本站镜像",
 			icon:"network",
 			children: [
+				{ text: "Cloudflare", link: "https://zeblog.pages.dev/" },
 				{ text: "Netflify", link: "https://zeblog.netlify.app/" },
 				{ text: "Vercel", link: "http://zeblog.vercel.app/" },
-				{ text: "Cloudflare", link: "https://zeblog.pages.dev/" },
+				{ text: "Heroku", link: "https://zineblog.herokuapp.com/" },
+				{ text: "TCloud", link: "https://zeblog-5g8cvgsd8faacd02-1251974090.tcloudbaseapp.com/" },		
 			],
 		},
 	],
