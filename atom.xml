@@ -3,7 +3,7 @@
   <id>https://jiange1236.github.io/</id>
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
-  <updated>2022-06-16T07:36:24.625Z</updated>
+  <updated>2022-06-17T01:18:58.137Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -10889,7 +10889,7 @@ decompyle3 xx.pyc > xx.py
     <title type="html">Openwrt</title>
     <id>https://jiange1236.github.io/tech/Openwrt&amp;%E7%94%B5%E8%A7%86.html</id>
     <link href="https://jiange1236.github.io/tech/Openwrt&amp;%E7%94%B5%E8%A7%86.html"/>
-    <updated>2022-06-16T01:09:02.000Z</updated>
+    <updated>2022-06-17T01:17:24.000Z</updated>
     <content type="html"><![CDATA[<p>[toc]</p>
 <h1 id="openwrt" tabindex="-1"> Openwrt</h1>
 <h2 id="r2s" tabindex="-1"> R2S</h2>
@@ -11603,6 +11603,7 @@ plugin:
 <p>40:31:3C:BD:FC:02-Mi.Lamp</p>
 <p>50:EC:50:91:94:4F-Mi.Plug-desk</p>
 <p>5c:02:14:b1:b5:d6-Mi.WiFi</p>
+<p>04:cf:8c:19:65:4d-Mi.Air-Child</p>
 <p>50:2D:BB:06:E9:75-Midea.Washer</p>
 <p>38:D2:CA:DC:B8:04-Tmall.Genie</p>
 <p>A4:02:B9:DE:46:71-Ze.Lap</p>
