@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 17 Jun 2022 02:41:11 GMT</pubDate>
-    <lastBuildDate>Fri, 17 Jun 2022 02:41:11 GMT</lastBuildDate>
+    <pubDate>Tue, 21 Jun 2022 14:42:30 GMT</pubDate>
+    <lastBuildDate>Tue, 21 Jun 2022 14:42:30 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>工作</category>
@@ -16,12 +16,38 @@
     <category>使用指南</category>
     <category>other</category>
     <item>
-      <title>长沙市房屋安全管理条例</title>
+      <title>检测鉴定</title>
       <link>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</link>
       <guid>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</guid>
-      <source url="https://jiange1236.github.io/rss.xml">长沙市房屋安全管理条例</source>
-      <pubDate>Thu, 16 Jun 2022 01:09:02 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="长沙市房屋安全管理条例" tabindex="-1"> 长沙市房屋安全管理条例</h1>
+      <source url="https://jiange1236.github.io/rss.xml">检测鉴定</source>
+      <category>工作</category>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="检测、鉴定依据" tabindex="-1"> 检测、鉴定依据</h1>
+<h2 id="检测依据" tabindex="-1"> 检测依据</h2>
+<p><strong>通用部分</strong></p>
+<p>《建筑结构检测技术标准》GB/T 50344-2019；</p>
+<p>《建筑变形测量规范》JGJ 8-2016；</p>
+<p><strong>砌体结构</strong></p>
+<p>《砌体工程现场检测技术标准》GB/T 50315-2011；</p>
+<p>《砌体结构工程施工质量验收规范》GB 50203-2011；</p>
+<p><strong>混凝土结构</strong></p>
+<p>《回弹法检测混凝土抗压强度技术规程》JGJ/T 23-2011；</p>
+<p>《混凝土中钢筋检测技术标准》JGJ/T 152-2019；</p>
+<h2 id="鉴定依据" tabindex="-1"> 鉴定依据</h2>
+<p><strong>通用部分</strong></p>
+<p>《工程结构通用规范》GB 55001-2021；</p>
+<p>《建筑结构荷载规范》GB 50009-2012；</p>
+<p>《建筑地基基础设计规范》GB 50007-2011；</p>
+<p>《危险房屋鉴定标准》JGJ 125-2016；</p>
+<p><strong>砌体结构</strong></p>
+<p>《砌体结构通用规范》GB 55007-2021；</p>
+<p>《砌体结构设计规范》GB 50003-2011；</p>
+<p>《砌体结构工程施工质量验收规范》GB 50203-2011；</p>
+<p><strong>混凝土结构</strong></p>
+<p>《混凝土结构通用规范》GB 55008-2021；</p>
+<p>《混凝土结构设计规范》GB 50010-2010（2015年版）；</p>
+<p>《混凝土结构工程施工质量验收规范》GB 50204-2015；</p>
+<h1 id="长沙市房屋安全管理条例" tabindex="-1"> 长沙市房屋安全管理条例</h1>
 <h2 id="主体结构" tabindex="-1"> 主体结构</h2>
 <p><strong>第十一条 房屋安全使用责任人不得擅自实施下列影响房屋安全的行为：</strong></p>
 <p>（一）拆改房屋承重梁、柱、板和基础结构；</p>
@@ -4051,7 +4077,7 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 </tr>
 <tr>
 <td>乙、丙、丁类</td>
-<td>7</td>
+<td>6</td>
 <td>7</td>
 <td>8</td>
 <td>9</td>
@@ -8667,6 +8693,9 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 <p>8.5.13：对于桩基础时，甲级均要进行沉降验算。条件差的乙级要进行沉降验算。该条的第2点桩基沉降不得超过建筑物的沉降允许值，并应符合本规范表5.3.4的规定。</p>
 <p>8.5.6 条文解释：为保证桩基设计的可靠性，规定除设计等级为丙级的建筑物外，单桩竖向承载力特征值应采用竖向静载试验确定。设计等级为丙级的建筑物可根据静力触探或标准贯入试验方法确定单桩竖向承载力特征值。</p>
 <p><img src="@source/work/4基础.assets/clipboard.png" alt="" loading="lazy"></p>
+<h1 id="基础最小埋深" tabindex="-1"> 基础最小埋深</h1>
+<p>地5.1.4：在抗震设防区，除岩石地基外，天然地基上的箱形和筏形基础其埋置深度不宜小于建筑物高度的1/15；桩箱或桩筏基础的埋置深度(不计桩长)不宜小于建筑物高度的1/18。</p>
+<p>高</p>
 <h1 id="覆土荷载" tabindex="-1"> 覆土荷载</h1>
 <p>筏板基础：在布置时，单独输入荷载值</p>
 <p>非筏板基础（独基、桩承台、条基）：按 覆土重=（覆土厚度-基础厚度）X覆土重度，在总参数中定义</p>
