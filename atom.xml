@@ -3,10 +3,11 @@
   <id>https://jiange1236.github.io/</id>
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
-  <updated>2022-08-25T01:46:41.330Z</updated>
+  <updated>2022-09-19T12:24:19.941Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
+  <category term="计算机"/>
   <category term="工作"/>
   <category term="学习"/>
   <category term="理财"/>
@@ -22,10 +23,166 @@
     <name>jiange1236</name>
   </contributor>
   <entry>
+    <title type="html">OpenWRT 分流DNS的设置</title>
+    <id>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</id>
+    <link href="https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html"/>
+    <updated>2022-09-19T12:22:01.000Z</updated>
+    <content type="html"><![CDATA[<p>目前还是有许多人喜欢设置DNS，虽然会浪费一些转发性能，但如果明白其中的链路关系，合理设置后，还是能起到不错的效果的。同时也把正确的设置方式告诉大家。</p>
+<p>此教程基于当前路由是主路由，如果是旁路由虽差不多，但有一些差异，需要格外注意。</p>
+<p>同时请注意，删除你电脑，手机上的DNS（不要设置任何DNS）</p>
+<h2 id="注意事项" tabindex="-1"> 注意事项</h2>
+<p>建议小白用户使用 Clash 更稳定且方便 此教程仅针对有特殊需求的用户</p>
+<h2 id="涉及到的组件" tabindex="-1"> 涉及到的组件</h2>
+<ul>
+<li>Passwall</li>
+<li>AdGuard Home（可选）</li>
+<li>Dnsmasq （无需进行任何设置）</li>
+<li>SmartDNS （分流+主DNS服务器）</li>
+</ul>
+<h2 id="adguard-home-可选" tabindex="-1"> AdGuard Home（可选）</h2>
+<p>主要是起到记录的作用，对需要查看记录的同学有帮助，至于DNS广告屏蔽，虽然有用但会误伤，慎重选择。
+同时由于记录文件较大，请一定要注意<code>把记录时间改小，或者设置到有足够空间的目录中，否则会导致时间久了将磁盘撑满</code></p>
+<ul>
+<li>配置上游DNS为127.0.0.1</li>
+<li>设置重定向53端口到AdGuardHome，如果使用了lean大佬的固件，请在防火墙，自定义规则中删除添加的两条53端口重定向规则（大部分人都使用了lean的固件）</li>
+</ul>
+<p>注意：设置了重定向后，所有DNS结果都将应答非权威记录，如果不了解DNS协议请无视，这条并不会影响什么。</p>
+<h2 id="smartdns" tabindex="-1"> SmartDNS</h2>
+<p>主要用于分流和DNS查询，国外走 Cloudflare DNS ove TLS/HTTPS ，国内延迟优先（但可能影响P2P下载，实测实际还好）。</p>
+<ul>
+<li>
+<p>启用第一组服务器，选择作为dnsmasq上游，其余默认配置即可。</p>
+</li>
+<li>
+<p>启用第二组服务器，端口7913，跳过测速，跳过Nameserver规则（非常重要，否则会死循环），跳过双栈优选，跳过cache，其余设置保持默认。</p>
+</li>
+<li>
+<p>配置上游服务器，</p>
+<div><pre><code>部分设置要填写后点编辑才能看到
+</code></pre><div aria-hidden="true"><div></div></div></div><p>。</p>
+<ul>
+<li>国内上游填写你的运营商，额外填写一些国内常用的，例如阿里云，DNSPod等等，可以参考文末的配置，分组信息填写cn。</li>
+<li>国外上游填写1.1.1.1端口853，协议填写tls，分组信息填写passwall，额外的服务参数填写 -exclude-default-group</li>
+</ul>
+</li>
+</ul>
+<h2 id="passwall" tabindex="-1"> Passwall</h2>
+<ul>
+<li>DNS分流 smartdns</li>
+<li>国内分组名 cn</li>
+<li>过滤模式 通过UDP请求DNS 127.0.0.1:7913</li>
+</ul>
+<h2 id="dnsmasq" tabindex="-1"> Dnsmasq</h2>
+<p>无需任何设置，如果有设置请改回，除了上游服务器是127.0.0.1:6053。</p>
+<h2 id="一些配置" tabindex="-1"> 一些配置</h2>
+<p>smartdns 部分直接 vim 编辑 /etc/config/smartdns 照抄即可，无需手动设置，配置完记得界面上点击保存应用，或者uci命令刷新配置，我里面有杭州电信的DNS服务器，不是杭州的记得自己改掉，否则可能有负面效果。</p>
+<div><pre><code>config smartdns
+	option server_name 'smartdns'
+	option port '6053'
+	option tcp_server '1'
+	option seconddns_tcp_server '1'
+	option coredump '0'
+	option seconddns_server_group 'passwall'
+	option seconddns_no_speed_check '1'
+	option seconddns_no_dualstack_selection '1'
+	option prefetch_domain '1'
+	option ipv6_server '0'
+	option force_aaaa_soa '1'
+	option dualstack_ip_selection '1'
+	option serve_expired '1'
+	option redirect 'dnsmasq-upstream'
+	option rr_ttl_min '300'
+	option seconddns_port '7913'
+	option seconddns_enabled '1'
+	option seconddns_no_rule_nameserver '1'
+	option seconddns_no_rule_addr '0'
+	option seconddns_no_rule_soa '0'
+	option seconddns_no_rule_ipset '0'
+	option cache_size '300'
+	option seconddns_no_cache '1'
+	option enabled '1'
+	list old_redirect 'dnsmasq-upstream'
+	list old_port '6053'
+	list old_enabled '1'
+
+config server
+	option name 'aliyun'
+	option ip '223.5.5.5'
+	option port '53'
+	option type 'udp'
+	option blacklist_ip '0'
+	option server_group 'cn'
+	option enabled '1'
+
+config server
+	option name '114'
+	option ip '114.114.114.114'
+	option port '53'
+	option type 'udp'
+	option blacklist_ip '0'
+	option server_group 'cn'
+	option enabled '1'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '电信'
+	option ip '202.101.172.35'
+	option port '53'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '电信'
+	option ip '202.101.172.47'
+	option port '53'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option type 'udp'
+	option port '53'
+	option name 'DNSPod'
+	option ip '119.29.29.29'
+	option blacklist_ip '0'
+	option server_group 'cn'
+	option enabled '1'
+
+config server
+	option enabled '1'
+	option name 'cloud'
+	option ip '1.1.1.1'
+	option port '853'
+	option type 'tls'
+	option server_group 'passwall'
+	option blacklist_ip '0'
+	option addition_arg ' -exclude-default-group'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'CNNIC SDNS'
+	option ip '1.2.4.8'
+	option port '53'
+	option server_group 'cn'
+	option blacklist_ip '0'
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="如何验证" tabindex="-1"> 如何验证？</h2>
+<p>登录路由器 使用 dig 或者 nslookup 检查下各端口的DNS以及分流情况</p>
+<div><pre><code>nslookup www.taobao.com 127.0.0.1:7913 返回的是节点对应淘宝最快的IP
+nslookup www.taobao.com 127.0.0.1:6053 返回的是国内最快的IP
+nslookup www.taobao.com 应该是国内
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p>注：如果手动查询规则列表内的域名，使用端口6053，然后匹配规则，转发给7913，然后被缓存住。（国外因为跳过测速，所以多个域名是正确的）</p>
+]]></content>
+    <category term="计算机" scheme=""/>
+    <published>2022-09-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="html">检测鉴定</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html"/>
-    <updated>2022-08-25T01:43:27.000Z</updated>
+    <updated>2022-09-19T12:22:01.000Z</updated>
     <content type="html"><![CDATA[<h1 id="检测、鉴定依据" tabindex="-1"> 检测、鉴定依据</h1>
 <h2 id="检测依据" tabindex="-1"> 检测依据</h2>
 <p><strong>通用部分</strong></p>
@@ -157,6 +314,13 @@
 四、底框房屋，底部框架部分应明确标识框架柱，框架梁位置，形成完整水平受力结构
 五、轴线轴号能合理表现建筑物的开间、纵深。隔墙也应有与其对应的轴线轴号（木制隔墙、石膏板隔墙除外）隔墙如无轴线，宜标注轴线距。
 六、实墙采用双实线绘制，区分12隔墙和24墙，柱采用封闭矩形填黑绘制，梁采用双虚线或加粗单虚线绘制，门洞采用墙体打断留空表示，窗洞口采用封闭矩形加斜线填充绘制，挑板（空调板）采用封闭矩形绘制。</p>
+<h1 id="现场评估要求" tabindex="-1"> 现场评估要求</h1>
+<p>1、经营性房屋：四层及以上房屋、改扩建房屋、加层（含顶棚）房屋均列入鉴定项目
+2、地基有明显沉降、裂缝的，房屋承重墙有明显裂缝的按照表格判断相应C、D级
+3、客厅等大跨度房间 上层相同位置有较多承重墙，且客厅天花板有明显裂缝的判断C级
+4、空斗墙根据业主反馈或无装修墙面进行判断C级
+5、底框结构层高按实测量，根据表格判断相应级别
+6、Bp级房屋也要记录其判断标准和原因，较小裂缝位置，并按远景近景各一张图片拍照存档</p>
 <h1 id="检测结果" tabindex="-1"> 检测结果</h1>
 <h2 id="房屋整体倾斜检测" tabindex="-1"> 房屋整体倾斜检测</h2>
 <p><strong>《建筑地基基础设计规范》GB 50007-2011</strong></p>
@@ -218,6 +382,8 @@
 <p>经现场调查，该房屋室外台阶局区域有开裂现象，但与主体结构之间无明显相对位移。</p>
 <p>经现场检查，未发现有因地基变形和基础不均匀沉降而引起的上部结构构件开裂损坏，但室外地面有轻微沉降等现象。由倾斜观测结果得知，该房屋所抽检各竖向构件的倾斜率均满足标准限值要求。
 故该房屋地基评定为非危险Bu级。</p>
+<h2 id="钢结构涂层" tabindex="-1"> 钢结构涂层</h2>
+<p>室外应为150μm，室内应为125μm，其允许偏差为-25μm</p>
 <h1 id="现场检测注意事项" tabindex="-1"> 现场检测注意事项</h1>
 <ol>
 <li>同一面房屋尽量使用一张照片，采用手机的全景模式拍摄，自动合成成一张图</li>
@@ -258,8 +424,6 @@
 <p>后续使用年限50年的建筑(简称C类建筑)，应按现行国家标准《建筑抗震设计规范》GB 50011的要求进行抗震鉴定。</p>
 </li>
 </ol>
-<h6 id="抗震设防烈度" tabindex="-1"> 抗震设防烈度</h6>
-<p><img src="@source/work/检测鉴定.assets/image-20220819175132658.png" alt="image-20220819175132658" loading="lazy"></p>
 <h1 id="长沙市房屋安全管理条例" tabindex="-1"> 长沙市房屋安全管理条例</h1>
 <h2 id="主体结构" tabindex="-1"> 主体结构</h2>
 <p><strong>第十一条 房屋安全使用责任人不得擅自实施下列影响房屋安全的行为：</strong></p>
@@ -26174,51 +26338,6 @@ APKInstaller： <a href="https://www.coolapk.com/feed/30857122?shareKey=OTAzN2Jm
       <name>jiange1236</name>
     </contributor>
     <published>2022-02-12T00:00:00.000Z</published>
-    <rights>Copyright by jiange1236</rights>
-  </entry>
-  <entry>
-    <title type="html">浏览器UA</title>
-    <id>https://jiange1236.github.io/others/%E6%B5%8F%E8%A7%88%E5%99%A8UA.html</id>
-    <link href="https://jiange1236.github.io/others/%E6%B5%8F%E8%A7%88%E5%99%A8UA.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
-    <summary type="html">浏览器UA</summary>
-    <content type="html"><![CDATA[<h1 id="浏览器ua" tabindex="-1"> 浏览器UA</h1>
-<p>百度+简单搜索+苹果+微信+夸克+QQ浏览器+Uc浏览器+微博,(带自动翻页)----（自用）</p>
-<blockquote>
-<p>有<code>MicroMessenger/8.0.16.2640(0x28001037) </code>有会导致CSDN打开跳微信登陆</p>
-</blockquote>
-<p>更新：2022年4月14日09:11:07
-百度+简单搜索+csdn+zhihu</p>
-<div><pre><code>Mozilla/5.0 (Linux; Android 11; zh-cn; Redmi K30 5G Build/RKQ1.200826.002; wv lite baiduboxapp) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.80 Mobile Safari/537.36 SearchCraft/3.9.2 T7/13.3 SP-engine/2.41.0 baiduboxapp/ (Baidu; P1 11) CSDNApp/5.3.0(Android)wToken/0.0.1 com.zhihu.android/Futureve/8.14.0
-</code></pre><div aria-hidden="true"><div></div></div></div><p>Mozilla/5.0 (Linux; Android 11; zh-cn; Redmi K30 5G Build/RKQ1.200826.002; wv lite baiduboxapp) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.80 Mobile Safari/537.36 SearchCraft/3.9.2 T7/13.3 SP-engine/2.41.0 baiduboxapp/ (Baidu; P1 11) MQQBrowser/26 Quark/4.5.5.155 UCBrowser/13.0.0.1080 Redmi K30 5G_11_weibo_12.2.1_android MMWEBID/999 Process/toolsmp WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64</p>
-<p>苹果+百度+简单搜索+夸克+微信，（带自动翻页）</p>
-<p>Mozilla/5.0 (Linux; Android 12.0.1; zh-cn; Pixel 6 Pro; wv lite baiduboxapp) baiduboxapp/ AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.46 Mobile Safari/537.36 SearchCraft/3.7.0 (Baidu; P1 9) Quark/4.5.5.155 MMWEBID/4268 MicroMessenger/8.0.16.2640(0x28001037) Process/toolsmp WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64</p>
-<p>百度App</p>
-<p>Mozilla/5.0 (Linux; Android 11; Redmi K30 5G Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/13.3 SP-engine/2.41.0 baiduboxapp/13.3.0.11 (Baidu; P1 11) NABar/1.0</p>
-<p>Mozilla/5.0 (Linux; Android 11; Redmi K30 5G Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.89 Mobile Safari/537.36 T7/13.3 light/1.0 SP-engine/2.41.0 baiduboxapp/13.3.0.11 (Baidu; P1 11)</p>
-<p>Mozilla/5.0 (Linux; Android 11; Redmi k40 Build/QKQ1.191222.002) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.203 mobile Safari/537.36baiduboxapp/3.2.5.10 SearchCraft/2.8.2 (Baidu; P1 10)</p>
-<p>QQ浏览器
-Mozilla/5.0 (Linux; U; Android 11; zh-cn; Redmi K40 Pro Build/QKQ1.200114.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/11.0 Mobile Safari/537.36 COVC/045429</p>
-<p>Uc浏览器
-Mozilla/5.0 (Linux; U; Android 11; zh-CN; Redmi K40 Pro Build/QKQ1.190825.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.0.0.1080 Mobile Safari/537.36</p>
-<p>Quark浏览器+简单搜索
-Mozilla/5.0 (Linux; Android 11; Redmi K40 Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/84.0.4147.105 Mobile Safari/537.36 SearchCraft/2.8.2 baiduboxapp/3.2.5.10</p>
-<p>QQ
-Mozilla/5.0 (Linux; U; Android 11; zh-cn; Redmi K40 Pro Build/PKQ1.181121.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/9.4 Mobile Safari/537.36</p>
-<p>微信</p>
-<p>Mozilla/5.0 (Linux; Android 11; Redmi K30 5G Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3185 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/999 MicroMessenger/8.0.16.2040(0x2800105F) Process/toolsmp WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64</p>
-<p>Mozilla/5.0 (Linux; Android 11; Redmi K40 Pro Build/QKQ1.190910.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2757 MMWEBSDK/201101 Mobile Safari/537.36 MMWEBID/70 MicroMessenger/7.0.21.1800(0x2700153B) Process/toolsmp WeChat/arm64 Weixin NetType/4G Language/zh_CN ABI/arm64</p>
-<p>Iphone
-Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1</p>
-]]></content>
-    <author>
-      <name>jiange1236</name>
-    </author>
-    <category term="other" scheme=""/>
-    <contributor>
-      <name>jiange1236</name>
-    </contributor>
-    <published>2022-02-11T00:00:00.000Z</published>
     <rights>Copyright by jiange1236</rights>
   </entry>
 </feed>
