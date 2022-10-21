@@ -60,6 +60,10 @@ https://gitee.com/halflife/list/raw/master/ad.txt
 
 https://anti-ad.net/easylist.txt
 
+miTVhosts
+
+https://raw.githubusercontent.com/liamliu108/miTVhosts/master/hosts
+
 ### 安卓
 
 https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
