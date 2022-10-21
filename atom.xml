@@ -3,7 +3,7 @@
   <id>https://jiange1236.github.io/</id>
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
-  <updated>2022-09-19T12:24:19.941Z</updated>
+  <updated>2022-10-21T06:47:32.129Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -182,7 +182,7 @@ nslookup www.taobao.com 应该是国内
     <title type="html">检测鉴定</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html"/>
-    <updated>2022-09-19T12:22:01.000Z</updated>
+    <updated>2022-10-21T06:44:30.000Z</updated>
     <content type="html"><![CDATA[<h1 id="检测、鉴定依据" tabindex="-1"> 检测、鉴定依据</h1>
 <h2 id="检测依据" tabindex="-1"> 检测依据</h2>
 <p><strong>通用部分</strong></p>
@@ -291,6 +291,7 @@ nslookup www.taobao.com 应该是国内
 <blockquote>
 <p><strong>《混凝土结构工程施工质量验收规范》GB 50204-2015</strong></p>
 <p>附E.0.1：对梁、板类构件，应各抽取构件数量的 2%且不少于 5 个构件进行检验</p>
+<p><img src="@source/work/检测鉴定.assets/image-20221019165429259.png" alt="image-20221019165429259" loading="lazy"></p>
 </blockquote>
 <h3 id="钢筋直径" tabindex="-1"> 钢筋直径</h3>
 <p><strong>《混凝土结构现场检测技术标准》GB/T 50784-2013</strong></p>
@@ -390,20 +391,48 @@ nslookup www.taobao.com 应该是国内
 </ol>
 <h1 id="检测报告检查要点" tabindex="-1"> 检测报告检查要点</h1>
 <ol>
-<li>房屋属性：城镇房屋、城镇经营性房屋</li>
-<li>委托人姓名</li>
-<li>不上人平屋面</li>
-<li>构造柱位置（填黑），底部4层为框架房屋，结构类型应单独分层注明</li>
-<li>倾斜检测只测2点原因说明，测量高度不宜低于房屋高度3/4</li>
-<li>柱尺寸“202×600+501×601”应注明为异形柱</li>
-<li>检测构件数量满足A类</li>
-<li>计算软件版本号在“采用中国建筑科学研究院开发的PKPM系列软件”中注明</li>
-<li>计算参数砂浆强度实测&lt;2.0时，计算取1.0，分项系数1.3 1.5</li>
-<li>砌体应补充高厚比计算结果、抗剪验算、局压验算结果</li>
-<li>保护层厚度根数与纵筋根数对应上</li>
-<li>检测鉴定报告有效期一年</li>
-<li>危险构件数量计算，楼梯板计入楼面板数量中</li>
+<li>
+<p>房屋属性：城镇房屋、城镇经营性房屋</p>
+</li>
+<li>
+<p>委托人姓名</p>
+</li>
+<li>
+<p>不上人平屋面</p>
+</li>
+<li>
+<p>构造柱位置（填黑），底部4层为框架房屋，结构类型应单独分层注明</p>
+</li>
+<li>
+<p>倾斜检测只测2点原因说明，测量高度不宜低于房屋高度3/4</p>
+</li>
+<li>
+<p>柱尺寸“202×600+501×601”应注明为异形柱</p>
+</li>
+<li>
+<p>检测构件数量满足A类</p>
+</li>
+<li>
+<p>计算软件版本号在“采用中国建筑科学研究院开发的PKPM系列软件”中注明</p>
+</li>
+<li>
+<p>计算参数砂浆强度实测&lt;2.0时，计算取1.0，分项系数1.3 1.5</p>
+</li>
+<li>
+<p>砌体应补充高厚比计算结果、抗剪验算、局压验算结果</p>
+</li>
+<li>
+<p>保护层厚度根数与纵筋根数对应上</p>
+</li>
+<li>
+<p>检测鉴定报告有效期一年</p>
+</li>
+<li>
+<p>危险构件数量计算，楼梯板计入楼面板数量中</p>
+<h6 id="空斗墙" tabindex="-1"> 空斗墙</h6>
+</li>
 </ol>
+<p><img src="@source/work/检测鉴定.assets/image-20220921163033677.png" alt="image-20220921163033677" loading="lazy"></p>
 <h1 id="抗震鉴定" tabindex="-1"> 抗震鉴定</h1>
 <h2 id="建筑分类" tabindex="-1"> 建筑分类</h2>
 <p>1.0.4  现有建筑应根据实际需要和可能，按下列规定选择其后续使用年限：</p>
@@ -11314,7 +11343,7 @@ decompyle3 xx.pyc > xx.py
     <title type="html">Openwrt</title>
     <id>https://jiange1236.github.io/tech/Openwrt&amp;%E7%94%B5%E8%A7%86.html</id>
     <link href="https://jiange1236.github.io/tech/Openwrt&amp;%E7%94%B5%E8%A7%86.html"/>
-    <updated>2022-06-17T01:17:24.000Z</updated>
+    <updated>2022-10-21T06:44:30.000Z</updated>
     <content type="html"><![CDATA[<p>[toc]</p>
 <h1 id="openwrt" tabindex="-1"> Openwrt</h1>
 <h2 id="r2s" tabindex="-1"> R2S</h2>
@@ -11344,6 +11373,8 @@ decompyle3 xx.pyc > xx.py
 <p><a href="https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt" target="_blank" rel="noopener noreferrer">https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt</a></p>
 <p><a href="https://gitee.com/halflife/list/raw/master/ad.txt" target="_blank" rel="noopener noreferrer">https://gitee.com/halflife/list/raw/master/ad.txt</a></p>
 <p><a href="https://anti-ad.net/easylist.txt" target="_blank" rel="noopener noreferrer">https://anti-ad.net/easylist.txt</a></p>
+<p>miTVhosts</p>
+<p><a href="https://raw.githubusercontent.com/liamliu108/miTVhosts/master/hosts" target="_blank" rel="noopener noreferrer">https://raw.githubusercontent.com/liamliu108/miTVhosts/master/hosts</a></p>
 <h3 id="安卓" tabindex="-1"> 安卓</h3>
 <p><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" target="_blank" rel="noopener noreferrer">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a></p>
 <p><img src="@source/tech/Openwrt&amp;电视.assets/image-20211218114841912.png" alt="image-20211218114841912" loading="lazy"></p>
