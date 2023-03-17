@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 21 Oct 2022 06:47:32 GMT</pubDate>
-    <lastBuildDate>Fri, 21 Oct 2022 06:47:32 GMT</lastBuildDate>
+    <pubDate>Fri, 17 Mar 2023 03:52:48 GMT</pubDate>
+    <lastBuildDate>Fri, 17 Mar 2023 03:52:48 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>计算机</category>
@@ -16,6 +16,272 @@
     <category>理财</category>
     <category>使用指南</category>
     <category>other</category>
+    <item>
+      <title>玩客云</title>
+      <link>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html</link>
+      <guid>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">玩客云</source>
+      <pubDate>Fri, 17 Mar 2023 03:50:04 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="玩客云" tabindex="-1"> 玩客云</h1>
+<div><pre><code>nano /etc/apt/sources.list
+</code></pre><div aria-hidden="true"><div></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
+<div><pre><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>然后更新软件源</p>
+<div><pre><code>apt update
+apt upgrade
+# apt --fix-broken install
+# sudo apt autoremove -y
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div><p></p>
+<p><strong>Install Home Assistant Supervised</strong></p>
+<div><pre><code>apt-get install \
+apparmor \
+jq \
+wget \
+curl \
+udisks2 \
+libglib2.0-bin \
+network-manager \
+dbus \
+lsb-release \
+systemd-journal-remote -y
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>OS Agent</strong></p>
+<div><pre><code>wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_armv7.deb
+sudo dpkg -i os-agent_1.4.1_linux_armv7.deb
+sudo apt-get install apparmor
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p><strong>grub错误</strong></p>
+<div><pre><code>解决方法很简单：
+sudo nano /etc/default/grub
+添加：
+systemd.unified_cgroup_hierarchy=false
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div><p><strong>Home Assistant Supervised Debian Package</strong></p>
+<div><pre><code>wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
+dpkg -i homeassistant-supervised.deb
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><p><strong>Docker镜像</strong></p>
+<p>直接修改 <code>/etc/docker/daemon.json</code> (docker 版本 &gt;= 1.10 时) 内容为:</p>
+<div><pre><code><span>{</span><span>"registry-mirrors"</span><span>:</span> <span>[</span><span>"https://05f073ad3c0010ea0f4bc00b7105ec20.mirror.swr.myhuaweicloud.com"</span><span>]</span><span>}</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>修改后重启服务:</p>
+<div><pre><code>systemctl daemon-reload
+systemctl restart <span>docker</span>
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><div><pre><code># docker pull 05f073ad3c0010ea0f4bc00b7105ec20.mirror.swr.myhuaweicloud.com/homeassistant/armv7-homeassistant
+docker run -d --restart=always --name="home-assistants" -v /data/homeassistant/config:/config --net=host homeassistant/armv7-homeassistant
+docker run -d --restart=always --name="home-assistants" -v /data/homeassistant/config:/config --net=host ghcr.io/home-assistant/raspberrypi3-homeassistant:2023.3.3
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><h2 id="hacs" tabindex="-1"> <strong>HACS</strong></h2>
+<div><pre><code>docker exec -it homeassistant bash
+wget -O - https://get.hacs.xyz | bash -
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><h2 id="supervisor" tabindex="-1"> Supervisor</h2>
+<p>更新</p>
+<div><pre><code>ha supervisor update
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="docker" tabindex="-1"> Docker</h1>
+<h2 id="docker安装" tabindex="-1"> Docker安装</h2>
+<p><strong>Docker</strong></p>
+<div><pre><code>export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
+# 如您使用 curl
+curl -fsSL https://get.docker.com/ | sh
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p>国内镜像</p>
+<div><pre><code>mkdir -p /etc/docker
+tee /etc/docker/daemon.json &lt;&lt;-'EOF'
+{
+  "registry-mirrors": [
+    "https://0b27f0a81a00f3560fbdc00ddd2f99e0.mirror.swr.myhuaweicloud.com",
+    "https://ypzju6vq.mirror.aliyuncs.com",
+    "https://registry.docker-cn.com",
+    "http://hub-mirror.c.163.com",
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+EOF
+systemctl daemon-reload
+systemctl restart docker
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="docker基本命令" tabindex="-1"> Docker基本命令</h2>
+<p>启动 Docker 服务</p>
+<div><pre><code>systemctl start docker
+</code></pre><div aria-hidden="true"><div></div></div></div><p>查看 Docker 运行状态</p>
+<div><pre><code>systemctl status docker
+</code></pre><div aria-hidden="true"><div></div></div></div><p>将 Docker 服务加入开机自启动</p>
+<div><pre><code>systemctl enable docker
+</code></pre><div aria-hidden="true"><div></div></div></div><p>查看容器在线状态及大小</p>
+<div><pre><code>docker ps -as
+</code></pre><div aria-hidden="true"><div></div></div></div><p>查看容器的运行输出日志</p>
+<div><pre><code>docker logs freenom
+</code></pre><div aria-hidden="true"><div></div></div></div><p>重新启动容器</p>
+<div><pre><code>docker restart freenom
+</code></pre><div aria-hidden="true"><div></div></div></div><p>停止容器的运行</p>
+<div><pre><code>docker stop freenom
+</code></pre><div aria-hidden="true"><div></div></div></div><p>移除容器</p>
+<div><pre><code>docker rm -f freenom
+</code></pre><div aria-hidden="true"><div></div></div></div><p>查看 docker 容器占用 CPU，内存等信息</p>
+<div><pre><code>docker stats --no-stream
+</code></pre><div aria-hidden="true"><div></div></div></div><p>查看 Docker 安装版本等信息</p>
+<div><pre><code>docker version
+</code></pre><div aria-hidden="true"><div></div></div></div><p>重启 Docker（非容器）</p>
+<div><pre><code>systemctl restart docker
+</code></pre><div aria-hidden="true"><div></div></div></div><p>清理 Docker</p>
+<div><pre><code>docker system prune
+</code></pre><div aria-hidden="true"><div></div></div></div><p>查看 Docker 网络信息</p>
+<div><pre><code>docker network ls
+</code></pre><div aria-hidden="true"><div></div></div></div><p>检查 bridge 网络状态</p>
+<div><pre><code>docker network inspect bridge
+</code></pre><div aria-hidden="true"><div></div></div></div><h2 id="docker代理" tabindex="-1"> Docker代理</h2>
+<ol>
+<li>
+<p>Create a systemd drop-in directory for the <code>docker</code> service:</p>
+<div><pre><code>sudo mkdir -p /etc/systemd/system/docker.service.d
+</code></pre><div aria-hidden="true"><div></div></div></div></li>
+<li>
+<p>Create a file named <code>/etc/systemd/system/docker.service.d/http-proxy.conf</code> that adds the <code>HTTP_PROXY</code> environment variable:</p>
+<div><pre><code>[Service]
+Environment="HTTP_PROXY=socks5://192.168.10.32:20170"
+Environment="HTTPS_PROXY=socks5://192.168.10.32:20170"
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div></li>
+<li>
+<p>Flush changes and restart Docker</p>
+<div><pre><code>sudo systemctl daemon-reload
+sudo systemctl restart docker
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div></li>
+<li>
+<p>Verify that the configuration has been loaded and matches the changes you made, for example:</p>
+<div><pre><code>sudo systemctl show --property=Environment docker
+</code></pre><div aria-hidden="true"><div></div></div></div></li>
+</ol>
+<p>修改hosts</p>
+<div><pre><code>echo "185.199.109.133   raw.githubusercontent.com" >> /etc/hosts
+docker exec -it homeassistant /bin/bash
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><h2 id="watchtower" tabindex="-1"> Watchtower</h2>
+<div><pre><code>docker run --rm \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  containrrr/watchtower \
+  --cleanup \
+  --run-once \
+  v2raya homeassistant
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h1 id="openwrt" tabindex="-1"> OpenWrt</h1>
+<p>🔵打开网卡混杂模式</p>
+<div><pre><code>ip link set eth0 promisc on
+</code></pre><div aria-hidden="true"><div></div></div></div><p>🔵创建网络</p>
+<div><pre><code>docker network create -d macvlan --subnet=192.168.30.0/24 --gateway=192.168.30.1 -o parent=eth0 macnet
+</code></pre><div aria-hidden="true"><div></div></div></div><p>🔘[↑自己根据 玩客云 所在网段修改，如：玩客云IP:10.1.2.11，则10.1.1.0/24 改成 10.1.2.0/24，10.1.1.1改成主路由地址]</p>
+<p>🔵拉取 OpenWRT 镜像</p>
+<div><pre><code>docker pull wfnb/onecloud:23-01-25-beta
+</code></pre><div aria-hidden="true"><div></div></div></div><p>🔵创建容器</p>
+<div><pre><code>docker run -d --name=OpenWrt --restart always --network macnet --privileged wfnb/onecloud:23-01-25-beta /sbin/init
+
+docker import openwrt-01.10.2023-meson-meson8b-thunder-onecloud-rootfs.tar.gz kiddin9_openwrt
+docker run -d --name=OpenWrt --restart always --network macnet --privileged kiddin9_openwrt /sbin/init
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div><p>🔘--name=OpenWrt 其中OpenWrt是容器名称，可以更改成你想要的，容器名称注意不要和其他容器一样，会冲突</p>
+<p>🔘--ip 10.1.1.13 其中10.1.1.13是容器IP，可以更改成你想要的，容器IP不要重复，这一项可删除</p>
+<p>🔵修改OpenWrt IP</p>
+<div><pre><code>docker exec OpenWrt sed -e "s/10.1.1.13/192.168.30.120/" -i /etc/config/network
+docker exec -it OpenWrt bash
+/etc/init.d/network restart
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p>🔘OpenWrt 是容器名称，和你创建容器时的一致</p>
+<p>🔘镜像设置的默认IP是10.1.1.13，可通过该命令修改</p>
+<p>🔵管理密码是 password</p>
+<p>🔵LAN口固定IP地址，网关指向主路由IP地址</p>
+<p>iptables -t nat -I POSTROUTING eth0 -j MASQUERADE</p>
+<p>🔴设置 容器不自启动 、 停止容器 和 删除容器</p>
+<div><pre><code>docker container update --restart=no [容器ID]
+docker stop [容器ID]
+docker rm [容器ID]
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p>🔴查看所有镜像</p>
+<div><pre><code>docker images
+</code></pre><div aria-hidden="true"><div></div></div></div><p>🔘记录下 xuanaimai/openwrt 21-09-15 右边的 IMAGE ID（镜像ID，下面用得到）</p>
+<p>🔴删除镜像</p>
+<div><pre><code>docker rmi [镜像ID]
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="alist" tabindex="-1"> Alist</h1>
+<div><pre><code>docker run -d --restart=always -v /etc/alist:/opt/alist/data -v /tmp:/opt/alist/tmp -p 5244:5244 --name="alist" xhofe/alist:latest
+</code></pre><div aria-hidden="true"><div></div></div></div><p>查看密码</p>
+<div><pre><code>docker exec -it alist ./alist admin
+</code></pre><div aria-hidden="true"><div></div></div></div><p>使用<a href="http://ip:5244/" target="_blank" rel="noopener noreferrer">http://ip:5244</a>    来登录alist点击下面的管理输入管理员的账号和密码</p>
+<h1 id="homepage" tabindex="-1"> Homepage</h1>
+<p><strong>Homepage</strong></p>
+<div><pre><code>docker run -p 3000:3000 -v /etc/homepage:/app/config -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/benphelps/homepage:latest
+</code></pre><div aria-hidden="true"><div></div></div></div><p><strong>Homarr</strong></p>
+<div><pre><code>docker run  \
+  --name homarr \
+  --restart always \
+  -p 7575:7575 \
+  -v /data/homarr/configs:/app/data/configs \
+  -v /data/homarr/icons:/app/public/icons \
+  -d ghcr.io/ajnart/homarr:latest
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>Flare</strong></p>
+<div><pre><code>docker run -d --restart=always -p 80:5005 -v /data/flare:/app soulteary/flare
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="v2raya" tabindex="-1"> V2rayA</h1>
+<p>开启IP转发</p>
+<div><pre><code>echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf &amp;&amp; sysctl -p
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="portainer" tabindex="-1"> Portainer</h1>
+<div><pre><code>docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /portainer、data:/data portainer/portainer-ce:latest
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="青龙面板" tabindex="-1"> 青龙面板</h1>
+<p>青龙面板</p>
+<div><pre><code>docker run -dit \
+  -v /ql/data:/ql/data \
+  -p 5700:5700 \
+  --name qinglong \
+  --hostname qinglong \
+  --restart unless-stopped \
+  whyour/qinglong:latest
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>检查服务</p>
+<div><pre><code>docker exec -it qinglong /bin/bash ql check
+</code></pre><div aria-hidden="true"><div></div></div></div><p>1</p>
+<div><pre><code>docker exec -it qinglong ql repo https://ghproxy.com/https://github.com/zero205/JD_tencent_scf.git "jd_|jx_|jdCookie"  "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign|ql" "main"
+</code></pre><div aria-hidden="true"><div></div></div></div><p>2</p>
+<div><pre><code>docker exec -it qinglong ql repo https://github.com/smiek2221/scripts.git "jd_|gua_" "" "ZooFaker_Necklace.js|JDJRValidator_Pure.js|sign_graphics_validate.js"
+</code></pre><div aria-hidden="true"><div></div></div></div><ol>
+<li>KingRan库【推荐❤❤❤❤❤】</li>
+</ol>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/KingRan/KR.git "jd_|jx_|jdCookie" "activity|backUp" "^jd[^_]|USER|utils|function|sign|sendNotify|ql|JDJR"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>2.Faker3【集合库（很多重复任务，自己禁用）❤❤❤❤】</p>
+<div><pre><code>ql repo https<span>:</span><span>//git.metauniverse-cn.com/https://github.com/shufflewzc/faker3.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator|magic|depend|h5sts" "main"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><ol start="3">
+<li>yyds【集合库❤❤❤】</li>
+</ol>
+<p>YYDS</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/okyyds/yyds.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "master"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>YYDS_Pure</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/okyyds/yydspure.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "master"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>【注意】拉库前请打开青龙面板-配置文件 第18行 GithubProxyUrl=&quot;&quot; 双引号中的内容删除。</p>
+<ol start="4">
+<li>环境保护【推荐❤❤❤❤】</li>
+</ol>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/feverrun/my_scripts.git "jd_|jx_|jddj_|getCookie|getJDCookie" "backUp/activity|backUp/card|backUp/py|backUp/utils/|backUp/test|jd_fruits.js|jd_pet.js|jd_factory.js|jd_health.js|jd_sgmh.js|jd_dreamFactory.js|jd_plantBean.js" "^(jd|JD|JS)[^_]|USER|sendNotify|utils"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><ol start="5">
+<li>ccwav大佬的通知增强版和CK检测</li>
+</ol>
+<p>//不包含sendNotify:</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/ccwav/QLScript2.git "jd_" "sendNotify|NoUsed" "ql"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>//包含sendNotify:</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/ccwav/QLScript2.git "jd_" "NoUsed" "ql|sendNotify"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>6.【619】【集合库，可选】</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/gys619/jdd.git "jd_|jx_|jddj_|gua_|getJDCookie|wskey" "activity|backUp" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_|sign_graphics_validate|jddj_cookie|function|ql|magic|JDJR|JD" "main"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>7 .【zero205】【集合库，推荐拉KR即可】</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/zero205/JD_tencent_scf.git "jd_|jx_|jdCookie" "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign|ql" "main"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>8 .【6dylan6/jdpro】</p>
+<div><pre><code>ql repo https<span>:</span><span>//git.so2.link/6dylan6/jdpro.git "jd_|jx_|jddj_" "backUp" "^jd[^_]|USER|JD|function|sendNotify"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>9 .【青蛙/smiek2121】</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/smiek2121/scripts.git "jd_|gua_" "" "^jd[^_]|USER|utils|sendNotify|ZooFaker|JDJRValidator_|^sign|cleancart_"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>10 .【船长】</p>
+<div><pre><code>ql repo https<span>:</span><span>//github.com/HarbourJ/HarbourToulu.git "jd_" "activity|backUp|jd_sign" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJR</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="wol" tabindex="-1"> WOL</h1>
+<div><pre><code>docker run -d --net=host --restart=always chishin/wol-go-web
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="cron" tabindex="-1"> Cron</h1>
+<div><pre><code>apt-get install cron
+/etc/init.d/cron restart
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><p>编辑定时自动脚本</p>
+<div><pre><code>crontab -e
+</code></pre><div aria-hidden="true"><div></div></div></div><p>在ssh中执行脚本，然后编辑文件。</p>
+<div><pre><code>0 4 * * * /sbin/reboot
+</code></pre><div aria-hidden="true"><div></div></div></div><p>丢进去这个脚本，表示每天凌晨1点重启服务器。编辑完毕之后:wq保存退出。</p>
+<p>保存退出重启生效</p>
+<div><pre><code>/etc/init.d/cron stop
+/etc/init.d/cron start
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div>]]></content:encoded>
+    </item>
     <item>
       <title>OpenWRT 分流DNS的设置</title>
       <link>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</link>
@@ -431,6 +697,7 @@ nslookup www.taobao.com 应该是国内
 <p><img src="@source/work/检测鉴定.assets/image-20220921163033677.png" alt="image-20220921163033677" loading="lazy"></p>
 <h1 id="抗震鉴定" tabindex="-1"> 抗震鉴定</h1>
 <h2 id="建筑分类" tabindex="-1"> 建筑分类</h2>
+<p><strong>《建筑抗震鉴定标准》GB 50023-2009</strong></p>
 <p>1.0.4  现有建筑应根据实际需要和可能，按下列规定选择其后续使用年限：</p>
 <ol>
 <li>在70年代及以前建造经耐久性鉴定可继续使用的现有建筑，其后续使用年限不应少于30年；在80年代建造的现有建筑，宜采用40年或更长，且不得少于30年。</li>
@@ -449,6 +716,11 @@ nslookup www.taobao.com 应该是国内
 <p>后续使用年限50年的建筑(简称C类建筑)，应按现行国家标准《建筑抗震设计规范》GB 50011的要求进行抗震鉴定。</p>
 </li>
 </ol>
+<h2 id="抗震验算" tabindex="-1"> 抗震验算</h2>
+<p><strong>水平地震影响系数最大值(《既有建筑鉴定与加固通用规范》GB 55021-2021)</strong></p>
+<p>A类：现行标准αmax × 0.8</p>
+<p>B类：现行标准αmax × 0.9</p>
+<p><img src="@source/work/检测鉴定.assets/image-20221122153758007.png" alt="image-20221122153758007" loading="lazy"></p>
 <h1 id="长沙市房屋安全管理条例" tabindex="-1"> 长沙市房屋安全管理条例</h1>
 <h2 id="主体结构" tabindex="-1"> 主体结构</h2>
 <p><strong>第十一条 房屋安全使用责任人不得擅自实施下列影响房屋安全的行为：</strong></p>
@@ -3813,6 +4085,9 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 <p><strong>楼梯、栏杆</strong></p>
 <p>栏杆高度1.1m 顶部水平荷载 1.0kN/m （学校类建筑取 1.5kN/m）</p>
 <p>装配搁置式楼梯，取砼容重38，栏杆荷载1.0，抹灰荷载等，楼梯间活荷载(多层住宅 2.0 其他 3.5kN/m2)</p>
+<h2 id="_2012" tabindex="-1"> 2012</h2>
+<p><img src="@source/work/1荷载.assets/image-20230317114752781.png" alt="image-20230317114752781" loading="lazy"><img src="@source/work/1荷载.assets/image-20230317114823614.png" alt="image-20230317114823614" loading="lazy"></p>
+<h2 id="_2021" tabindex="-1"> 2021</h2>
 <p><img src="@source/work/1荷载.assets/image-20220817143601039.png" alt="image-20220817143601039" loading="lazy"></p>
 <h1 id="幼儿园-售楼部-商业" tabindex="-1"> 幼儿园/售楼部/商业</h1>
 <p>售楼部吊灯 15kN</p>
@@ -7476,6 +7751,8 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 <p>设备配电箱一般在H+1.6标高安装，高度约300~400</p>
 <p>建筑物大屋面以上仅靠悬臂受力的女儿墙高度不应超过 3m, 不应采用砌体的女儿墙, 应采用钢筋混凝土女儿墙。悬臂受力的女儿墙高度大于 1.8m 栏板已至少15cm, 不太经济, 建议加斜撑或构架以受力合理且降低造价。</p>
 <p>屋内避难间做防火门</p>
+<p><strong>建筑高度</strong></p>
+<p>民用建筑通用规范3.2.6：屋顶设备用房及其他局部突出屋面用房的总面积不超过屋面面积的1/4时，不应计入建筑高度</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -12046,6 +12323,7 @@ plugin:
 <p>启用 ： √</p>
 <p>推送模式：钉钉</p>
 <p>Webhook：7002438326f5a29c3c8fcf6fa5d1e8ac8bfe21bd96b6a9db8394730604092e2f</p>
+<p>企业微信：2487f18f-5c86-493a-b85d-c68cf4d2ec8c</p>
 <p>本设备名称：ZeR2S</p>
 <p>设备别名：</p>
 <p>46:60:08:50:e5:1b-DMIG.PC</p>
@@ -26091,50 +26369,6 @@ APKInstaller： <a href="https://www.coolapk.com/feed/30857122?shareKey=OTAzN2Jm
 <p>恒星播放器 - 电影先生
 <a href="https://github.com/Garefield/stellar-dyxs" target="_blank" rel="noopener noreferrer">https://github.com/Garefield/stellar-dyxs</a></p>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>截图工具大全</title>
-      <link>https://jiange1236.github.io/others/%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7.html</link>
-      <guid>https://jiange1236.github.io/others/%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7.html</guid>
-      <source url="https://jiange1236.github.io/rss.xml">截图工具大全</source>
-      <description>截图工具大全</description>
-      <category>other</category>
-      <pubDate>Sat, 12 Feb 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="截图工具大全" tabindex="-1"> 截图工具大全</h1>
-<p>第一款. win10自带</p>
-<p>快捷键：Windows键+Shift+S</p>
-<p>第二款.微信自带</p>
-<p>快捷键：Alt+A</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-16442232269891.webp" alt="图片" loading="lazy"></p>
-<p>第三款.QQ自带</p>
-<p>快捷键：Ctrl+Alt+A</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-16442232269892.webp" alt="图片" loading="lazy"></p>
-<p>第四款.钉钉自带</p>
-<p>快捷键：Ctrl+Shift+A</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-16442232269893.webp" alt="图片" loading="lazy"></p>
-<p>第五款.浏览器自带</p>
-<p>个人使用的星愿浏览器</p>
-<p>第六款.Snipaste</p>
-<p><a href="https://zh.snipaste.com/" target="_blank" rel="noopener noreferrer">https://zh.snipaste.com/</a></p>
-<p>快捷键：F1</p>
-<p>它还有一个超好用的贴图功能！把一些资料贴在桌面上，然后再去编辑文章，省得来回切换了</p>
-<p>第七款.Sniptool</p>
-<p><a href="https://tc5.us/file/15690961-442919658" target="_blank" rel="noopener noreferrer">https://tc5.us/file/15690961-442919658</a></p>
-<p>它可以将多个截取的图片组合到一个画布中,并且，它拥有强大的标注编辑功能，对于截图内容可以进行编辑标注。比如添加文本、画框、表情，对截图进行透明化处理，更换背景等。</p>
-<p>更赞的时，它还有一个模糊图像功能，可以对截图内容进行局部</p>
-<p>第八款. FsCapture</p>
-<p><a href="http://xz.w10a.com/Small/FastStoneCapturev2020.zip" target="_blank" rel="noopener noreferrer">http://xz.w10a.com/Small/FastStoneCapturev2020.zip</a></p>
-<p>可以长截图，屏幕放大与聚焦，这在视频演示中很常用。除此之外，它还有一个强大的编辑器，可以做一些图片的处理，比如模糊（私密部分打码）、调整色彩等，基本是个简版的PS。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-16442232269894.webp" alt="图片" loading="lazy"></p>
-<p>第九款.FireShot <a href="https://www.chrome666.com/chrome-extension/fireshot.html" target="_blank" rel="noopener noreferrer">https://www.chrome666.com/chrome-extension/fireshot.html</a></p>
-<p>能搞定网页长图，基本功能都具备</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-16442232269895.jpg" alt="图片" loading="lazy"></p>
-<p>第十款.ShareX</p>
-<p><a href="https://getsharex.com/" target="_blank" rel="noopener noreferrer">https://getsharex.com/</a></p>
-<p>开源免费，steam有收录</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-16442232269896.jpg" alt="图片" loading="lazy"></p>
-]]></content:encoded>
-      <enclosure url="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-16442232269891.webp" type="image/webp"/>
     </item>
   </channel>
 </rss>
