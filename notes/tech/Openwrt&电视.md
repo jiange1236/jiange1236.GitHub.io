@@ -949,6 +949,8 @@ plugin:
 
 Webhook：7002438326f5a29c3c8fcf6fa5d1e8ac8bfe21bd96b6a9db8394730604092e2f
 
+企业微信：2487f18f-5c86-493a-b85d-c68cf4d2ec8c
+
 本设备名称：ZeR2S
 
 设备别名：
