@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 07 May 2023 07:36:18 GMT</pubDate>
-    <lastBuildDate>Sun, 07 May 2023 07:36:18 GMT</lastBuildDate>
+    <pubDate>Sat, 27 May 2023 02:57:13 GMT</pubDate>
+    <lastBuildDate>Sat, 27 May 2023 02:57:13 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>计算机</category>
@@ -495,6 +495,9 @@ nslookup www.taobao.com 应该是国内
 <p><strong>《砌体工程现场检测技术标准》GB/T 50315-2011</strong></p>
 <p>3.3.2：每一检测单元内，不宜少于6个测区，应将单个构件(单片墙体、柱)作为一个测区。当一个检测单元不足6个构件时，应将每个构件作为一个测区。</p>
 <h2 id="主体检测" tabindex="-1"> 主体检测</h2>
+<p><strong>《混凝土结构工程施工质量验收规范》GB 50204-2015</strong></p>
+<p>10.1.1：对涉及混凝土结构安全的有代表性的部位应进行结构实体检验。结构实体检验应包括<strong>混凝土强度、钢筋保护层厚度、结构位置与尺寸偏差</strong>以及合同约定的项目；必要时可检验其他项目。
+结构实体检验应由监理单位组织施工单位实施，并见证实施过程。施工单位应制定结构实体检验专项方案，并经监理单位审核批准后实施。除结构位置与尺寸偏差外的结构实体检验项目，应由具有相应资质的检测机构完成。</p>
 <p><strong>现浇混凝土构件强度回弹/抽芯</strong></p>
 <p><img src="@source/work/检测鉴定.assets/image-20230413110854938.png" alt="image-20230413110854938" loading="lazy"></p>
 <p>不宜抽取截面高度小于300mm的梁和边长小于300mm的柱</p>
@@ -665,6 +668,9 @@ nslookup www.taobao.com 应该是国内
 故该房屋地基评定为非危险Bu级。</p>
 <h2 id="钢结构涂层" tabindex="-1"> 钢结构涂层</h2>
 <p>室外应为150μm，室内应为125μm，其允许偏差为-25μm</p>
+<h2 id="建议" tabindex="-1"> 建议</h2>
+<p>对存在缺陷的部位定期维护检查，确保房屋的安全使用</p>
+<p>对存在危险的构件应委托具有相应资质的单位进行加固设计及加固处理，确保房屋的安全使用</p>
 <h1 id="现场检测注意事项" tabindex="-1"> 现场检测注意事项</h1>
 <ol>
 <li>同一面房屋尽量使用一张照片，采用手机的全景模式拍摄，自动合成成一张图</li>
@@ -4105,6 +4111,7 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 <p>装配搁置式楼梯，取砼容重38，栏杆荷载1.0，抹灰荷载等，楼梯间活荷载(多层住宅 2.0 其他 3.5kN/m2)</p>
 <h2 id="_2012" tabindex="-1"> 2012</h2>
 <p><img src="@source/work/1荷载.assets/image-20230317114752781.png" alt="image-20230317114752781" loading="lazy"><img src="@source/work/1荷载.assets/image-20230317114823614.png" alt="image-20230317114823614" loading="lazy"></p>
+<p><img src="@source/work/1荷载.assets/image-20230510200016731.png" alt="image-20230510200016731" loading="lazy"></p>
 <h2 id="_2021" tabindex="-1"> 2021</h2>
 <p><img src="@source/work/1荷载.assets/image-20220817143601039.png" alt="image-20220817143601039" loading="lazy"></p>
 <h1 id="幼儿园-售楼部-商业" tabindex="-1"> 幼儿园/售楼部/商业</h1>
