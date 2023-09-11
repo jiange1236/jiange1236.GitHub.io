@@ -3,7 +3,7 @@
   <id>https://jiange1236.github.io/</id>
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
-  <updated>2023-05-27T02:57:13.304Z</updated>
+  <updated>2023-09-11T01:30:38.291Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -23,10 +23,328 @@
     <name>jiange1236</name>
   </contributor>
   <entry>
+    <title type="html">优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</title>
+    <id>https://jiange1236.github.io/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</id>
+    <link href="https://jiange1236.github.io/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html"/>
+    <updated>2023-09-11T01:26:15.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="优选warp的endpoint-ip-提高本地warp节点访问性并修改各客户端的endpoint-ip-misakano-の-小破站" tabindex="-1"> 优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</h1>
+<blockquote>
+<h2 id="excerpt" tabindex="-1"> Excerpt</h2>
+<p>在之前的博客教程中，我们提到了如何使用CloudFlare WARP客户端。不过官方的客户端的体验在中国大陆来说比较差。而提取出来的WireGuard配置文件中，自己寻找可用的EndPoint IP又是一件很麻烦的事情。在这期文章中，我们主要来解决两个问题：一是优选出可用的WARP EndPoint IP并应用到WireGuard的节点；二是将优选的IP应用到官方客户端  推荐 <a href="https://b" target="_blank" rel="noopener noreferrer">https://b</a></p>
+</blockquote>
+<hr>
+<p>在之前的博客教程中，我们提到了如何使用CloudFlare WARP客户端。不过官方的客户端的体验在中国大陆来说比较差。而提取出来的WireGuard配置文件中，自己寻找可用的EndPoint IP又是一件很麻烦的事情。在这期文章中，我们主要来解决两个问题：一是优选出可用的WARP EndPoint IP并应用到WireGuard的节点；二是将优选的IP应用到官方客户端</p>
+<blockquote>
+<p>推荐 <a href="https://blog.misaka.rest/2023/02/08/cf-warp/" target="_blank" rel="noopener noreferrer">https://blog.misaka.rest/2023/02/08/cf-warp/</a> 和 <a href="https://blog.misaka.rest/2023/01/25/wireguard-warp/" target="_blank" rel="noopener noreferrer">https://blog.misaka.rest/2023/01/25/wireguard-warp/</a> 这两篇文章一起看，效果最佳</p>
+</blockquote>
+<h2 id="准备材料" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#%E5%87%86%E5%A4%87%E6%9D%90%E6%96%99" title="准备材料" target="_blank" rel="noopener noreferrer"></a>准备材料</h2>
+<ul>
+<li>提取的WARP的WireGuard配置</li>
+<li>官方WARP客户端</li>
+</ul>
+<h2 id="优选步骤" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#%E4%BC%98%E9%80%89%E6%AD%A5%E9%AA%A4" title="优选步骤" target="_blank" rel="noopener noreferrer"></a>优选步骤</h2>
+<p>注意：请将任何VPN代理软件关闭，否则优选结果有可能不准！！！</p>
+<h3 id="windows" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#Windows" title="Windows" target="_blank" rel="noopener noreferrer"></a>Windows</h3>
+<ol>
+<li>从这个网站：<a href="https://gitlab.com/Misaka-blog/warp-script/-/blob/main/files/warp-yxip/warp-yxip-win.7z" target="_blank" rel="noopener noreferrer">https://gitlab.com/Misaka-blog/warp-script/-/blob/main/files/warp-yxip/warp-yxip-win.7z</a> 下载<code>warp-yxip-win.7z</code>文件，并解压。如无意外的话文件内容应该是长这样</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001247.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001247.png" alt="" loading="lazy"></a></p>
+<ol start="2">
+<li>启动<code>warp-yxip.bat</code>，选择优选模式（默认为IPv4）</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001317.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001317.png" alt="" loading="lazy"></a></p>
+<ol start="3">
+<li>等待优选，大约需要1-3分钟</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172637.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172637.png" alt="" loading="lazy"></a></p>
+<ol start="4">
+<li>优选完成后，找到<code>result.csv</code>文件，打开。可以看到优选的EndPoint IP是按照丢包率和延迟排列的</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172753.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172753.png" alt="" loading="lazy"></a></p>
+<h3 id="mac-os" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#Mac-OS" title="Mac OS" target="_blank" rel="noopener noreferrer"></a>Mac OS</h3>
+<p>暂无，待补充</p>
+<h3 id="linux-各发行版" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#Linux-%E5%90%84%E5%8F%91%E8%A1%8C%E7%89%88" title="Linux 各发行版" target="_blank" rel="noopener noreferrer"></a>Linux 各发行版</h3>
+<ol>
+<li>进入命令行，复制粘贴以下命令</li>
+</ol>
+<table><tbody><tr><td><pre><span>1</span><br></pre></td><td><pre><span>wget -N https://gitlab.com/Misaka-blog/<mark>warp</mark>-script/-/raw/main/files/<mark>warp</mark>-yxip/<mark>warp</mark>-yxip.sh &amp;&amp; bash <mark>warp</mark>-yxip.sh</span><br></pre></td></tr></tbody></table>
+<ol start="2">
+<li>选择优选模式（默认为IPv4）</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001632.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001632.png" alt="" loading="lazy"></a></p>
+<ol start="3">
+<li>等待脚本安装依赖，并优选</li>
+<li>脚本会自动显示前10个最优的WARP Endpoint IP</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001706.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001706.png" alt="" loading="lazy"></a></p>
+<h3 id="安卓-termux" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#%E5%AE%89%E5%8D%93-Termux" title="安卓 Termux" target="_blank" rel="noopener noreferrer"></a>安卓 Termux</h3>
+<ol>
+<li>安装并打开Termux，复制粘贴以下命令</li>
+</ol>
+<table><tbody><tr><td><pre><span>1</span><br></pre></td><td><pre><span>wget -N https://gitlab.com/Misaka-blog/<mark>warp</mark>-script/-/raw/main/files/<mark>warp</mark>-yxip/<mark>warp</mark>-yxip.sh &amp;&amp; bash <mark>warp</mark>-yxip.sh</span><br></pre></td></tr></tbody></table>
+<ol start="2">
+<li>选择优选模式（默认为IPv4）</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230528172643.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230528172643.png" alt="" loading="lazy"></a></p>
+<ol start="3">
+<li>等待脚本安装依赖，并优选</li>
+<li>脚本会自动显示前10个最优的WARP Endpoint IP</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001706.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001706.png" alt="" loading="lazy"></a></p>
+<h3 id="苹果-ish" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#%E8%8B%B9%E6%9E%9C-iSH" title="苹果 iSH" target="_blank" rel="noopener noreferrer"></a>苹果 iSH</h3>
+<ol>
+<li>安装并打开iSH，输入以下命令</li>
+</ol>
+<table><tbody><tr><td><pre><span>1</span><br></pre></td><td><pre><span>apk add -f openssh bash wget</span><br></pre></td></tr></tbody></table>
+<ol start="2">
+<li>复制粘贴以下命令</li>
+</ol>
+<table><tbody><tr><td><pre><span>1</span><br></pre></td><td><pre><span>wget -N https://gitlab.com/Misaka-blog/<mark>warp</mark>-script/-/raw/main/files/<mark>warp</mark>-yxip/<mark>warp</mark>-yxip.sh &amp;&amp; bash <mark>warp</mark>-yxip.sh</span><br></pre></td></tr></tbody></table>
+<ol start="3">
+<li>选择优选模式（默认为IPv4）</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001632.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001632.png" alt="" loading="lazy"></a></p>
+<ol start="4">
+<li>等待脚本安装依赖，并优选</li>
+<li>脚本会自动显示前10个最优的WARP Endpoint IP</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001706.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001706.png" alt="" loading="lazy"></a></p>
+<h2 id="节点应用" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#%E8%8A%82%E7%82%B9%E5%BA%94%E7%94%A8" title="节点应用" target="_blank" rel="noopener noreferrer"></a>节点应用</h2>
+<h3 id="wireguard-配置节点" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#WireGuard-%E9%85%8D%E7%BD%AE%E8%8A%82%E7%82%B9" title="WireGuard 配置节点" target="_blank" rel="noopener noreferrer"></a>WireGuard 配置节点</h3>
+<p>将之前的EndPoint IP替换为优选出来的</p>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172834.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172834.png" alt="" loading="lazy"></a></p>
+<h3 id="windows-warp-官方客户端" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#Windows-WARP-%E5%AE%98%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF" title="Windows WARP 官方客户端" target="_blank" rel="noopener noreferrer"></a>Windows WARP 官方客户端</h3>
+<ol>
+<li>找到CloudFlare WARP官方客户端的安装位置（一般在<code>C:\Program Files\Cloudflare\Cloudflare WARP</code>），将博客项目提供的<code>设置端点.bat</code>文件复制进来</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172940.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312172940.png" alt="" loading="lazy"></a></p>
+<ol start="2">
+<li>打开<code>设置端点.bat</code>，输入优选过的EndPoint IP并设置</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312173152.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312173152.png" alt="" loading="lazy"></a></p>
+<ol start="3">
+<li>重新链接官方WARP客户端，可以看到之前很难连接上的WARP就奇迹般地连上了</li>
+</ol>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312173210.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230312173210.png" alt="" loading="lazy"></a></p>
+<h3 id="安卓-warp-官方客户端-仅限6-9和6-10版本" tabindex="-1"> <a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp#%E5%AE%89%E5%8D%93-WARP-%E5%AE%98%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF%EF%BC%88%E4%BB%85%E9%99%906-9%E5%92%8C6-10%E7%89%88%E6%9C%AC%EF%BC%89" title="安卓 WARP 官方客户端（仅限6.9和6.10版本）" target="_blank" rel="noopener noreferrer"></a>安卓 WARP 官方客户端（仅限6.9和6.10版本）</h3>
+<p><a href="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230528171712.png" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230528171712.png" alt="" loading="lazy"></a></p>
+<p>版权声明: 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.misaka.rest/" target="_blank" rel="noopener noreferrer">MisakaNo の 小破站</a>！</p>
+<hr>
+]]></content>
+    <published>2023-09-11T01:26:15.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">资源来源 | Nite07的小窝</title>
+    <id>https://jiange1236.github.io/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html</id>
+    <link href="https://jiange1236.github.io/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html"/>
+    <updated>2023-09-11T01:26:15.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="资源来源-nite07的小窝" tabindex="-1"> 资源来源 | Nite07的小窝</h1>
+<blockquote>
+<h2 id="excerpt" tabindex="-1"> Excerpt</h2>
+<p>如果有破解需求或版权相关问题请通过下方联系方式咨询。     名称 分享内容 是否收费 会员制度 途径    Downloadly Windows、Mac 应用 不收费 有，非会员下载慢，可以开通会员加速下载 前往   Taiwebs Windows、Mac、Linux、安卓应用 不收费 无 前往   Lrepack Windows 应用（主要发布重新打包和便携资源） 不收费 有，非会员下载慢，</p>
+</blockquote>
+<hr>
+<h2 id="资源来源" tabindex="-1"> 资源来源</h2>
+<blockquote>
+<p>如果有破解需求或版权相关问题请通过下方联系方式咨询。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>分享内容</th>
+<th>是否收费</th>
+<th>会员制度</th>
+<th>途径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Downloadly</td>
+<td>Windows、Mac 应用</td>
+<td>不收费</td>
+<td>有，非会员下载慢，可以开通会员加速下载</td>
+<td><a href="https://downloadly.net/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>Taiwebs</td>
+<td>Windows、Mac、Linux、安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://en.taiwebs.com/windows/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>Lrepack</td>
+<td>Windows 应用（主要发布重新打包和便携资源）</td>
+<td>不收费</td>
+<td>有，非会员下载慢，可以开通会员加速下载</td>
+<td><a href="https://lrepacks.net/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>423Down</td>
+<td>Windows、安卓应用</td>
+<td>部分资源需要会员</td>
+<td>有</td>
+<td><a href="https://www.423down.com/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>monkrus(m0nkrus)</td>
+<td>Adobe 全家桶</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://w14.monkrus.ws/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>懒得勤快</td>
+<td>Windows、安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://masuit.com/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>果核剥壳</td>
+<td>Windows、安卓应用</td>
+<td>不收费</td>
+<td>有</td>
+<td><a href="https://www.ghxi.com/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>乐享网(黑鹰)</td>
+<td>安卓应用</td>
+<td>部分资源需要会员</td>
+<td>有</td>
+<td><a href="https://www.lxapk.com/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>眠羊</td>
+<td>安卓应用</td>
+<td>收入群费</td>
+<td>有</td>
+<td><a href="tencent://message/?uin=2649147838&amp;Site=&amp;Menu=yes">前往</a></td>
+</tr>
+<tr>
+<td>Dreamcast</td>
+<td>QQ 修改版</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://pan.lanzoui.com/b010ttokj" target="_blank" rel="noopener noreferrer">网盘链接</a> 密码：<code>buoc</code></td>
+</tr>
+<tr>
+<td>Mobilism</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>有，非会员下载慢，可以开通会员加速下载</td>
+<td><a href="https://forum.mobilism.org/index.php" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>好软分享</td>
+<td>Windows、安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/haoruanfenxiang" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>某不知名杂货铺(wushidi)</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/youthkinga" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>霍格沃茨魔法学校(zhou45)</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/zhou45" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>星茶会[愿]</td>
+<td>网易云音乐修改版</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/xingchahui" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>乱七八糟的储物箱(xyxyspace/小叶夕阳)</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/xyxyspace" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>FL Studio 破解补丁</td>
+<td>Fl Studio 破解</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/flstudioc" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>擅长搜索的高木同学</td>
+<td>Windows、Mac、安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/gaomutongxue" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>しぐれうい(Rikkati)</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/RikkaTi" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>appstorrent</td>
+<td>Mac 应用、系统、扩展</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://appstorrent.ru/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>秋风のとおり道(AWAvenue)</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/AWAvenue" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>法海之路(FaHai)</td>
+<td>Windows 应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://www.fahai.org/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>帝落</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/bymask6666" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>星空不寂寞</td>
+<td>搜狗拼音输入法</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://www.xingkbjm.com/" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+<tr>
+<td>优质资源研究中心(暗猎魂殇)</td>
+<td>安卓应用</td>
+<td>不收费</td>
+<td>无</td>
+<td><a href="https://t.me/alhsyzzy" target="_blank" rel="noopener noreferrer">前往</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+]]></content>
+    <published>2023-09-11T01:26:15.000Z</published>
+  </entry>
+  <entry>
     <title type="html">玩客云</title>
     <id>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html</id>
     <link href="https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html"/>
-    <updated>2023-03-17T03:50:04.000Z</updated>
+    <updated>2023-09-11T01:26:15.000Z</updated>
     <content type="html"><![CDATA[<h1 id="玩客云" tabindex="-1"> 玩客云</h1>
 <div><pre><code>nano /etc/apt/sources.list
 </code></pre><div aria-hidden="true"><div></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
@@ -218,8 +536,21 @@ docker rm [容器ID]
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>Flare</strong></p>
 <div><pre><code>docker run -d --restart=always -p 80:5005 -v /data/flare:/app soulteary/flare
 </code></pre><div aria-hidden="true"><div></div></div></div><h1 id="v2raya" tabindex="-1"> V2rayA</h1>
-<p>开启IP转发</p>
+<p>安装</p>
+<div><pre><code>docker run -d \
+  --restart=always \
+  --privileged \
+  --network=host \
+  --name v2raya \
+  -e V2RAYA_ADDRESS=0.0.0.0:2017 \
+  -v /lib/modules:/lib/modules:ro \
+  -v /etc/resolv.conf:/etc/resolv.conf \
+  -v /etc/v2raya:/etc/v2raya \
+  mzz2017/v2raya
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>开启IP转发</p>
 <div><pre><code>echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf &amp;&amp; sysctl -p
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="wireproxy" tabindex="-1"> wireproxy</h1>
+<div><pre><code>docker run --expose 20173 -p 0.0.0.0:20173:20173 -v /etc/wireguard:/etc/wireproxy --env wireproxyconfigpath=/etc/wireproxy/wireproxy.conf daycat/wireproxy-docker
 </code></pre><div aria-hidden="true"><div></div></div></div><h1 id="portainer" tabindex="-1"> Portainer</h1>
 <div><pre><code>docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /portainer、data:/data portainer/portainer-ce:latest
 </code></pre><div aria-hidden="true"><div></div></div></div><h1 id="青龙面板" tabindex="-1"> 青龙面板</h1>
@@ -230,7 +561,7 @@ docker rm [容器ID]
   --name qinglong \
   --hostname qinglong \
   --restart unless-stopped \
-  whyour/qinglong:latest
+  dockerproxy.com/whyour/qinglong:latest
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>检查服务</p>
 <div><pre><code>docker exec -it qinglong /bin/bash ql check
 </code></pre><div aria-hidden="true"><div></div></div></div><p>1</p>
@@ -274,6 +605,8 @@ docker rm [容器ID]
 <div><pre><code>ql repo https<span>:</span><span>//github.com/HarbourJ/HarbourToulu.git "jd_" "activity|backUp|jd_sign" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJR</span>
 </code></pre><div aria-hidden="true"><div></div></div></div><h1 id="wol" tabindex="-1"> WOL</h1>
 <div><pre><code>docker run -d --net=host --restart=always chishin/wol-go-web
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="ddns-go" tabindex="-1"> DDNS-GO</h1>
+<div><pre><code>docker run -d --name ddns-go --restart=always --net=host -v /opt/ddns-go:/root jeessy/ddns-go
 </code></pre><div aria-hidden="true"><div></div></div></div><h1 id="cron" tabindex="-1"> Cron</h1>
 <div><pre><code>apt-get install cron
 /etc/init.d/cron restart
@@ -448,7 +781,7 @@ nslookup www.taobao.com 应该是国内
     <title type="html">检测鉴定</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html"/>
-    <updated>2023-05-27T02:54:47.000Z</updated>
+    <updated>2023-09-11T01:26:15.000Z</updated>
     <content type="html"><![CDATA[<h1 id="检测、鉴定依据" tabindex="-1"> 检测、鉴定依据</h1>
 <h2 id="检测依据" tabindex="-1"> 检测依据</h2>
 <p><strong>通用部分</strong></p>
@@ -522,6 +855,7 @@ nslookup www.taobao.com 应该是国内
 <h2 id="混凝土强度" tabindex="-1"> 混凝土强度</h2>
 <p><strong>《回弹法检测混凝土抗压强度技术规程》JGJ/T 23-2011</strong></p>
 <p>4.1.4-1：对于一般构件，测区数不宜少于10个。当受检构件数量大于30个且不需提供单个构件推定强度或受检构件某一方向尺寸不大于4.5m且另一方向尺寸不大于0.3m时，每个构件的测区数量可适当减少，但不应少于5个</p>
+<p>4.1.4-5：测区的面积不宜大于0.04m2</p>
 <p><strong>《混凝土结构现场检测技术标准》GB/T 50784-2013</strong></p>
 <p>附A.2.2-1：当需要进行单个构件推定时，每个构件布置的测区数不宜少于10个；当不需要进行单个构件推定时，每个构件布置的测区数可适当减少，但不应少于3个；</p>
 <p><strong>《钻芯法检测混凝土强度技术规程》JGJ/T 384-2016</strong></p>
@@ -825,7 +1159,49 @@ nslookup www.taobao.com 应该是国内
 <p>5.7.2 围护结构承重构件的危险性鉴定应包括承载能力、 构造和连接、 变形等内容</p>
 <h2 id="房屋危险性鉴定" tabindex="-1"> 房屋危险性鉴定</h2>
 <p><strong>房屋结构的危险性等级</strong></p>
-<i>Content not supported</i>]]></content>
+<i>Content not supported</i><h1 id="鉴定流程" tabindex="-1"> 鉴定流程</h1>
+<p><strong>结构安全性鉴定流程：</strong></p>
+<p>（1）委托</p>
+<p>（2）初步调查</p>
+<p>初步调查包含查阅图纸资料、建筑物历史、考察现场、制定详细调查计划及检测、试验工作大纲并提出需由委托方完成的准备工作。</p>
+<p>（3）确定鉴定目的、范围和内容</p>
+<p>（4）详细调查（包含检测）</p>
+<p>详细调查包含结构体系基本情况勘察、结构使用条件调查核实、地基基础，包括桩基础的调查与检测、材料性能检测分析、承重结构和围护系统检查</p>
+<p>（5）安全性鉴定评级</p>
+<p>根据调查、检测和结构承载力验算（建模分析）结果，进行安全性评级</p>
+<p>（6）结构安全性鉴定报告</p>
+<p><strong>结构快速鉴定评估流程：</strong></p>
+<p>（1）委托</p>
+<p>（2）初步调查</p>
+<p>初步调查包含查阅图纸资料、建筑物历史、考察现场。</p>
+<p>（3）确定鉴定目的、范围和内容</p>
+<p>（4）详细调查（不包含检测）</p>
+<p>详细调查包含结构体系基本情况勘察、结构使用条件调查核实、地基基础检查、承重结构和围护系统检查</p>
+<p>（5）快速鉴定评级</p>
+<p>根据调查结果，进行快速鉴定评级</p>
+<p>（6）快速鉴定评估报告</p>
+<h1 id="房屋改造" tabindex="-1"> 房屋改造</h1>
+<h2 id="房屋改造前需要做检测鉴定" tabindex="-1"> 房屋改造前需要做检测鉴定</h2>
+<p><strong>一、改造之前需要对既有建筑进行检测鉴定</strong></p>
+<p>1、确定既有建筑的结构类型;</p>
+<p>2、检测调查既有建筑的现状及存在的对结构不利的病害部位;</p>
+<p>3、检测既有建筑的必要参数(如：混凝土强度、砖强度、砂浆强度、钢筋位置及根数、碳化深度、构件截面尺寸、轴线尺寸、钢结构的涂层厚度、钢材硬度、焊缝探伤、超声探测钢材厚度、防火涂层等);</p>
+<p>4、检测地基基础的结构形式及范围，通过试验验证地基基础的承载能力;</p>
+<p>5、处理分析检测数据进行建立既有建筑模型来分析受力情况;</p>
+<p>6、得出本次检测鉴定结论;</p>
+<p>7、根据检测鉴定结论给业主朋友提出合理的指导建议。</p>
+<p><strong>二、设计单位根据检测鉴定结论进行既有建筑的改造设计。</strong></p>
+<p><strong>三、依据设计单位对既有建筑的改造设计进行改造施工。</strong></p>
+<h2 id="房屋改造后需要做检测鉴定" tabindex="-1"> 房屋改造后需要做检测鉴定</h2>
+<p><strong>1、房屋抗震等级鉴定检测</strong></p>
+<p>通过对房屋的改建，不同房屋的用途也会发生改变，抗震等级也会出现变化，原来的抗震能力不一定能够和现在的房屋抗震相对比。房屋抗震等级的鉴定，就是通过对房屋质量检测，按照一定的规定抗震设防要求，针对房屋在一定程度地震作用下进行安全性评估的过程，最终根据评估的情况来进行对房屋建筑进行抗震等级划分。</p>
+<p><strong>2、建筑结构的安全性</strong></p>
+<p>检测这一项是为了防止结构倒塌，也是衡量结构工程最重要的质量标准。房屋安全检测一般需要通过对现场复核结构布置、荷载情况，材料性能检测、裂缝损伤检测、经结构验算和分析、沉降变形测量，对结构的安全进行评估，并且提出一些可行性的加固建议。</p>
+<p><strong>3、房屋强度检测</strong></p>
+<p>房屋安全性检测和房屋抗震检测，房屋安全性检测是指通过调查、现场检测、结构分析验算、对房屋安全性进行鉴定，主要适用于已发现安全隐患、危险迹象或其他需要评定安全性等级的房屋。</p>
+<p><strong>4、提成改建方案以及建议</strong></p>
+<p>质佳检测建议，房屋建造过程中、停工续建时或使用过程中，需要加层、插层、扩建，或较大范围的结构体系或使用功能改变等房屋改建时，需要对原有房屋结构进行房屋安全鉴定和抗震鉴定，综合评估改建后的结构安全性，必要时，提出改建方案优化措施和原结构加固措施建议。</p>
+]]></content>
     <category term="工作" scheme=""/>
     <published>2022-06-20T00:00:00.000Z</published>
   </entry>
@@ -26491,137 +26867,6 @@ APKInstaller： <a href="https://www.coolapk.com/feed/30857122?shareKey=OTAzN2Jm
       <name>jiange1236</name>
     </contributor>
     <published>2022-02-11T00:00:00.000Z</published>
-    <rights>Copyright by jiange1236</rights>
-  </entry>
-  <entry>
-    <title type="html">开源后台管理系统</title>
-    <id>https://jiange1236.github.io/others/%E5%BC%80%E6%BA%90%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html</id>
-    <link href="https://jiange1236.github.io/others/%E5%BC%80%E6%BA%90%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
-    <summary type="html">开源后台管理系统</summary>
-    <content type="html"><![CDATA[<h1 id="开源后台管理系统" tabindex="-1"> 开源后台管理系统</h1>
-<p><strong>1. D2admin</strong></p>
-<p>开源地址：<a href="https://github.com/d2-projects/d2-admin" target="_blank" rel="noopener noreferrer">https://github.com/d2-projects/d2-admin</a></p>
-<p>文档地址：<a href="https://d2.pub/zh/doc/d2-admin/" target="_blank" rel="noopener noreferrer">https://d2.pub/zh/doc/d2-admin/</a></p>
-<p>效果预览：<a href="https://d2.pub/d2-admin/preview/#/index" target="_blank" rel="noopener noreferrer">https://d2.pub/d2-admin/preview/#/index</a></p>
-<p>开源协议：MIT</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611813.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>2. vue-element-admin</strong></p>
-<p>开源地址：<a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" rel="noopener noreferrer">https://github.com/PanJiaChen/vue-element-admin</a></p>
-<p>文档地址：<a href="https://panjiachen.github.io/vue-element-admin-site/zh/" target="_blank" rel="noopener noreferrer">https://panjiachen.github.io/vue-element-admin-site/zh/</a></p>
-<p>效果预览：<a href="https://d2.pub/d2-admin/preview/#/index" target="_blank" rel="noopener noreferrer">https://d2.pub/d2-admin/preview/#/index</a></p>
-<p>开源协议：MIT</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611814.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>3. JEECG-BOOT</strong></p>
-<p>开源地址：<a href="https://github.com/zhangdaiscott/jeecg-boot" target="_blank" rel="noopener noreferrer">https://github.com/zhangdaiscott/jeecg-boot</a></p>
-<p>文档地址：<a href="https://panjiachen.github.io/vue-element-admin-site/zh/" target="_blank" rel="noopener noreferrer">https://panjiachen.github.io/vue-element-admin-site/zh/</a></p>
-<p>效果预览：<a href="http://boot.jeecg.com/" target="_blank" rel="noopener noreferrer">http://boot.jeecg.com/</a></p>
-<p>开源协议：Apache-2.0 License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611815.webp" alt="图片" loading="lazy">图片</p>
-<h1 id="_4-gin-vue-admin" tabindex="-1"> <strong>4. GIN-VUE-ADMIN</strong></h1>
-<p>开源地址：<a href="https://github.com/flipped-aurora/gin-vue-admin" target="_blank" rel="noopener noreferrer">https://github.com/flipped-aurora/gin-vue-admin</a></p>
-<p>文档地址：<a href="https://www.gin-vue-admin.com/" target="_blank" rel="noopener noreferrer">https://www.gin-vue-admin.com/</a></p>
-<p>效果预览：<a href="http://demo.gin-vue-admin.com/#/layout/dashboard" target="_blank" rel="noopener noreferrer">http://demo.gin-vue-admin.com/#/layout/dashboard</a></p>
-<p>开源协议：Apache-2.0 License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611816.webp" alt="图片" loading="lazy">图片</p>
-<h1 id="_5-vue-admin-beautiful" tabindex="-1"> <strong>5. vue-admin-beautiful</strong></h1>
-<p>开源地址：<a href="https://github.com/chuzhixin/vue-admin-beautiful" target="_blank" rel="noopener noreferrer">https://github.com/chuzhixin/vue-admin-beautiful</a></p>
-<p>文档地址：<a href="https://www.gin-vue-admin.com/" target="_blank" rel="noopener noreferrer">https://www.gin-vue-admin.com/</a></p>
-<p>效果预览：<a href="http://beautiful.panm.cn/" target="_blank" rel="noopener noreferrer">http://beautiful.panm.cn/</a></p>
-<p>开源协议：MPL-2.0 License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611817.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>6. Dcat-admin</strong></p>
-<p>开源地址：<a href="https://github.com/jqhph/dcat-admin" target="_blank" rel="noopener noreferrer">https://github.com/jqhph/dcat-admin</a></p>
-<p>文档地址：<a href="http://www.dcatadmin.com/" target="_blank" rel="noopener noreferrer">http://www.dcatadmin.com/</a></p>
-<p>效果预览：<a href="http://103.39.211.179:8080/admin" target="_blank" rel="noopener noreferrer">http://103.39.211.179:8080/admin</a></p>
-<p>开源协议：MIT License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611918.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>7. RuoYi</strong></p>
-<p>开源地址：<a href="https://gitee.com/y_project/RuoYi" target="_blank" rel="noopener noreferrer">https://gitee.com/y_project/RuoYi</a></p>
-<p>文档地址：<a href="https://doc.ruoyi.vip/" target="_blank" rel="noopener noreferrer">https://doc.ruoyi.vip/</a></p>
-<p>效果预览：<a href="https://vue.ruoyi.vip/index" target="_blank" rel="noopener noreferrer">https://vue.ruoyi.vip/index</a></p>
-<p>开源协议：MIT License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611919.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>8. renren-fast-vue</strong></p>
-<p>开源地址：<a href="https://gitee.com/renrenio/renren-fast-vue" target="_blank" rel="noopener noreferrer">https://gitee.com/renrenio/renren-fast-vue</a></p>
-<p>文档地址：<a href="https://www.renren.io/guide" target="_blank" rel="noopener noreferrer">https://www.renren.io/guide</a></p>
-<p>效果预览：<a href="http://demo.open.renren.io/renren-fast/#/home" target="_blank" rel="noopener noreferrer">http://demo.open.renren.io/renren-fast/#/home</a></p>
-<p>开源协议：MIT License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611920.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>9. ant-design-pro</strong></p>
-<p>开源地址：<a href="https://github.com/ant-design/ant-design-pro" target="_blank" rel="noopener noreferrer">https://github.com/ant-design/ant-design-pro</a></p>
-<p>文档地址：<a href="https://pro.ant.design/index-cn/" target="_blank" rel="noopener noreferrer">https://pro.ant.design/index-cn/</a></p>
-<p>效果预览：<a href="https://pro.ant.design/" target="_blank" rel="noopener noreferrer">https://pro.ant.design/</a></p>
-<p>开源协议：MIT License</p>
-<p><strong>10. iview-admin</strong></p>
-<p>开源地址：<a href="https://github.com/iview/iview-admin" target="_blank" rel="noopener noreferrer">https://github.com/iview/iview-admin</a></p>
-<p>文档地址：<a href="https://lison16.github.io/iview-admin-doc/" target="_blank" rel="noopener noreferrer">https://lison16.github.io/iview-admin-doc/</a></p>
-<p>效果预览：<a href="https://admin.iviewui.com/home" target="_blank" rel="noopener noreferrer">https://admin.iviewui.com/home</a></p>
-<p>开源协议：MIT License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611921.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>11. material-dashboard</strong></p>
-<p>开源地址：<a href="https://github.com/creativetimofficial/material-dashboard#demo" target="_blank" rel="noopener noreferrer">https://github.com/creativetimofficial/material-dashboard#demo</a></p>
-<p>文档地址：<a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html" target="_blank" rel="noopener noreferrer">https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html</a></p>
-<p>效果预览：<a href="https://demos.creative-tim.com/material-dashboard/examples/dashboard.html" target="_blank" rel="noopener noreferrer">https://demos.creative-tim.com/material-dashboard/examples/dashboard.html</a></p>
-<p>开源协议：MIT License</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611922.webp" alt="图片" loading="lazy">图片</p>
-<p><strong>12.EAdmin</strong></p>
-<p>开源地址：<a href="https://github.com/suruibuas/eadmin" target="_blank" rel="noopener noreferrer">https://github.com/suruibuas/eadmin</a></p>
-<p>文档地址：<a href="http://doc.eadmin.com.cn/" target="_blank" rel="noopener noreferrer">http://doc.eadmin.com.cn/</a></p>
-<p>效果预览：<a href="http://www.eadmin.com.cn/" target="_blank" rel="noopener noreferrer">http://www.eadmin.com.cn/</a></p>
-<p>开源协议：无</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/640-164346319611923.jpg" alt="图片" loading="lazy"></p>
-]]></content>
-    <author>
-      <name>jiange1236</name>
-    </author>
-    <category term="other" scheme=""/>
-    <contributor>
-      <name>jiange1236</name>
-    </contributor>
-    <published>2022-02-06T00:00:00.000Z</published>
-    <rights>Copyright by jiange1236</rights>
-  </entry>
-  <entry>
-    <title type="html">影视</title>
-    <id>https://jiange1236.github.io/others/%E5%BD%B1%E8%A7%86.html</id>
-    <link href="https://jiange1236.github.io/others/%E5%BD%B1%E8%A7%86.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
-    <summary type="html">影视</summary>
-    <content type="html"><![CDATA[<h1 id="影视" tabindex="-1"> 影视</h1>
-<h2 id="恒星播放器-电脑看片工具" tabindex="-1"> 恒星播放器(电脑看片工具)</h2>
-<p><a href="https://tsq.lanzoui.com/b0c3ne46d" target="_blank" rel="noopener noreferrer">https://tsq.lanzoui.com/b0c3ne46d</a></p>
-<p>【第一部分：6个影视资源插件】</p>
-<p>第三方直播插件</p>
-<p><a href="https://github.com/simplecelery/stellar-stream" target="_blank" rel="noopener noreferrer">https://github.com/simplecelery/stellar-stream</a></p>
-<p>看直播插件</p>
-<p><a href="https://github.com/simplecelery/zhibo" target="_blank" rel="noopener noreferrer">https://github.com/simplecelery/zhibo</a></p>
-<p>电影天堂插件</p>
-<p><a href="https://github.com/ninebird1/stellar_dytt" target="_blank" rel="noopener noreferrer">https://github.com/ninebird1/stellar_dytt</a></p>
-<p>看电影插件</p>
-<p><a href="https://github.com/xiaohu-xh/stellar-movie" target="_blank" rel="noopener noreferrer">https://github.com/xiaohu-xh/stellar-movie</a></p>
-<p>看各大视频平台影视资源插件</p>
-<p><a href="https://github.com/ninebird1/stellar-youget" target="_blank" rel="noopener noreferrer">https://github.com/ninebird1/stellar-youget</a></p>
-<p>看电视插件
-<a href="https://github.com/stellarplayer/stellar-watch-tv" target="_blank" rel="noopener noreferrer">https://github.com/stellarplayer/stellar-watch-tv</a></p>
-<p>【新增4个插件】
-遥控器
-<a href="https://github.com/stellarplayer/stellar-web-ctrl" target="_blank" rel="noopener noreferrer">https://github.com/stellarplayer/stellar-web-ctrl</a></p>
-<p>恒星播放器 - 字幕天堂插件
-<a href="https://github.com/Garefield/stellar-zmtt" target="_blank" rel="noopener noreferrer">https://github.com/Garefield/stellar-zmtt</a></p>
-<p>恒星播放器 - 80s电影
-<a href="https://github.com/Garefield/stellar-80s" target="_blank" rel="noopener noreferrer">https://github.com/Garefield/stellar-80s</a></p>
-<p>恒星播放器 - 电影先生
-<a href="https://github.com/Garefield/stellar-dyxs" target="_blank" rel="noopener noreferrer">https://github.com/Garefield/stellar-dyxs</a></p>
-]]></content>
-    <author>
-      <name>jiange1236</name>
-    </author>
-    <category term="other" scheme=""/>
-    <contributor>
-      <name>jiange1236</name>
-    </contributor>
-    <published>2022-01-28T00:00:00.000Z</published>
     <rights>Copyright by jiange1236</rights>
   </entry>
 </feed>
