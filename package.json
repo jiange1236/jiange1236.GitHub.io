@@ -1,5 +1,5 @@
 {
-  "name": "Zeblog",
+  "name": "studynote",
   "version": "2.0.0",
   "description": "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
   "license": "MIT",
@@ -8,24 +8,18 @@
     "email": "183465355@qq.com",
     "url": "https://zecdn.top/"
   },
+  "type": "module",
   "scripts": {
     "build": "vuepress build notes",
-    "clean-dev": "vuepress dev notes --no-cache",
+    "clean-dev": "vuepress dev notes --clean-cache",
     "dev": "vuepress dev notes",
-    "eject-theme": "vuepress eject-hope notes"
+    "update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@mr-hope/vuepress-plugin-components": "^1.27.1",
-    "@mr-hope/vuepress-plugin-seo": "^1.26.0",
-    "vuepress": "^1.9.5",
-    "vuepress-plugin-auto-sidebar": "^2.3.2",
-    "vuepress-plugin-cursor-effects": "^1.0.2",
-    "vuepress-plugin-fulltext-search": "^2.2.1",
-    "vuepress-theme-hope": "^1.27.3",
-    "webpack-dev-server": "^4.7.3"
-  },
-  "dependencies": {
-    "cache-loader": "^4.1.0",
-    "vue-loader": "^15.9.8"
+    "@vuepress/client": "2.0.0-rc.0",
+    "vue": "^3.3.9",
+    "vuepress": "2.0.0-rc.0",
+    "vuepress-plugin-search-pro": "2.0.0-rc.2",
+    "vuepress-theme-hope": "2.0.0-rc.2"
   }
 }
