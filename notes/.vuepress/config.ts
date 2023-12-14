@@ -9,8 +9,6 @@ export default defineUserConfig({
 
   base: "/",
 
-  dest: "notes/.vuepress/dist",
-
   head: [
     // 百度统计
     [
