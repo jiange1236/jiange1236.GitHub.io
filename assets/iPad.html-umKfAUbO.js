@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as s,b as o}from"./app-IsEvEAQV.js";const _={},c=o("p",null,"Bioshock（生化奇兵）",-1),n=o("p",null,"幽浮：未知敌人",-1),l=o("p",null,"Vainglory网际直通车",-1),r=[c,n,l];function a(i,d){return t(),s("div",null,r)}const m=e(_,[["render",a],["__file","iPad.html.vue"]]);export{m as default};
