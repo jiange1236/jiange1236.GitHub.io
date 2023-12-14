@@ -1,46 +1,17 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+import docsearchPlugin from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
-  base: "/",
-
   lang: "zh-CN",
-  title: "StudyNote",
+  title: "Zeblog",
   description: "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
 
-  theme,
+  base: "/",
 
-  // Enable it with pwa
-  // shouldPrefetch: false,
+  dest: "./dist",
+
   head: [
-    ["meta", { name: "robots", content: "all" }],
-    ["meta", { name: "author", content: "xlc520" }],
-    [
-      "meta",
-      {
-        "http-equiv": "Cache-Control",
-        content: "no-cache, no-store, must-revalidate",
-      },
-    ],
-    ["meta", { "http-equiv": "Pragma", content: "no-cache" }],
-    ["meta", { "http-equiv": "Expires", content: "0" }],
-    [
-      "meta",
-      {
-        name: "keywords",
-        content:
-          "Java,MySQL,Spring,Redis,MyBatis,SpringBoot,IDEA,JVM,Java基础,并发编程,虚拟机,数据库,笔记,教程,linux,Windows,shell",
-      },
-    ],
-    [
-      "meta",
-      {
-        name: "description",
-        content:
-          "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
-      },
-    ],
     // 百度统计
     [
       "script",{},
@@ -54,8 +25,9 @@ export default defineUserConfig({
       })();
       `
     ],
+
     // 解决403错误
-    // ["meta", { name: "referrer", content: "no-referrer" }],
+    ["meta", { name: "referrer", content: "no-referrer" }],
     [
       "link",
       {
@@ -64,40 +36,63 @@ export default defineUserConfig({
       },
     ],
   ],
-
+  locales: {
+    "/": {
+      lang: "zh-CN",
+      title: "Zeblog",
+      description: "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
+    },
+  },
+  theme,
+  shouldPrefetch: false,
   plugins: [
-    searchProPlugin({
-      // 索引全部内容
-      indexContent: true,
-      // 是否自动提示搜索建议
-      autoSuggestions: true,
-      hotKeys: [{ key: "k", ctrl: true }, { key: "/", ctrl: true }], //热键
-      // 存储搜索结果历史的最大数量
-      resultHistoryCount: 10,
-      // 存储搜索查询词历史的最大数量
-      queryHistoryCount: 10,
-      // 结束输入到开始搜索的延时
-      searchDelay: 500,
-      // 是否在开发服务器中中启用实时热重载
-      hotReload: true,
-      // 结果排序策略
-      sortStrategy: "max",
-      // 为分类和标签添加索引
-      customFields: [
-        {
-          getter: (page) => page.frontmatter.category,
-          formatter: {
-            "/": "分类：$content",
+    docsearchPlugin({
+      appId: "2T68NYRRBQ",
+      apiKey: "37348b9c57bafc66de2383f8ed1b73ae",
+      indexName: "zeml",
+      locales: {
+        "/": {
+          placeholder: "搜索",
+          translations: {
+            button: {
+              buttonText: "搜索",
+              buttonAriaLabel: "搜索",
+            },
+            modal: {
+              searchBox: {
+                resetButtonTitle: "清除查询条件",
+                resetButtonAriaLabel: "清除查询条件",
+                cancelButtonText: "取消",
+                cancelButtonAriaLabel: "取消",
+              },
+              startScreen: {
+                recentSearchesTitle: "搜索历史",
+                noRecentSearchesText: "没有搜索历史",
+                saveRecentSearchButtonTitle: "保存至搜索历史",
+                removeRecentSearchButtonTitle: "从搜索历史中移除",
+                favoriteSearchesTitle: "收藏",
+                removeFavoriteSearchButtonTitle: "从收藏中移除",
+              },
+              errorScreen: {
+                titleText: "无法获取结果",
+                helpText: "你可能需要检查你的网络连接",
+              },
+              footer: {
+                selectText: "选择",
+                navigateText: "切换",
+                closeText: "关闭",
+                searchByText: "搜索提供者",
+              },
+              noResultsScreen: {
+                noResultsText: "无法找到相关结果",
+                suggestedQueryText: "你可以尝试查询",
+                reportMissingResultsText: "你认为该查询应该有结果？",
+                reportMissingResultsLinkText: "点击反馈",
+              },
+            },
           },
         },
-        {
-          getter: (page) => page.frontmatter.tag,
-          formatter: {
-            "/": "标签：$content",
-          },
-        },
-      ],
+      },
     }),
   ],
-
 });
