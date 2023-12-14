@@ -29,3 +29,14 @@ mklink /J F:\Blog\jiange1236.GitHub.io\notes\work F:\我的坚果云\工作
 3.使用"git reset —hard 8628628991470b26e698d98e986a54fa6b5f4352"操作，将历史记录重置到这个版本。
 
 4.使用"git push origin HEAD —force"，PUSH到github。
+
+## 代理
+
+**只对Github代理（推荐）**
+
+```bash
+#使用socks5代理（推荐）
+git config --global http.https://github.com.proxy socks5://127.0.0.1:20170
+#使用http代理（不推荐）
+git config --global http.https://github.com.proxy http://127.0.0.1:20170
+```
