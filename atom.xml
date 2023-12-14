@@ -3,7 +3,7 @@
   <id>https://jiange1236.github.io/</id>
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
-  <updated>2023-09-11T01:42:14.972Z</updated>
+  <updated>2023-12-14T07:43:37.670Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -344,7 +344,7 @@
     <title type="html">玩客云</title>
     <id>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html</id>
     <link href="https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html"/>
-    <updated>2023-09-11T01:26:15.000Z</updated>
+    <updated>2023-12-14T07:14:40.000Z</updated>
     <content type="html"><![CDATA[<h1 id="玩客云" tabindex="-1"> 玩客云</h1>
 <div><pre><code>nano /etc/apt/sources.list
 </code></pre><div aria-hidden="true"><div></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
@@ -394,15 +394,24 @@ dpkg -i homeassistant-supervised.deb
 <div><pre><code>systemctl daemon-reload
 systemctl restart <span>docker</span>
 </code></pre><div aria-hidden="true"><div></div><div></div></div></div><div><pre><code># docker pull 05f073ad3c0010ea0f4bc00b7105ec20.mirror.swr.myhuaweicloud.com/homeassistant/armv7-homeassistant
-docker run -d --restart=always --name="home-assistants" -v /data/homeassistant/config:/config --net=host homeassistant/armv7-homeassistant
-docker run -d --restart=always --name="home-assistants" -v /data/homeassistant/config:/config --net=host ghcr.io/home-assistant/raspberrypi3-homeassistant:2023.3.3
+docker run -d --restart=always --name="homeassistant" -v /data/homeassistant/config:/config --net=host ghcr.io/homeassistant/armv7-homeassistant
+docker run -d --privileged --restart=always --name="homeassistant" -v /data/homeassistant/config:/config --net=host ghcr.io/home-assistant/raspberrypi3-homeassistant
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><h2 id="hacs" tabindex="-1"> <strong>HACS</strong></h2>
 <div><pre><code>docker exec -it homeassistant bash
 wget -O - https://get.hacs.xyz | bash -
-</code></pre><div aria-hidden="true"><div></div><div></div></div></div><h2 id="supervisor" tabindex="-1"> Supervisor</h2>
+或wget -O - https://hacs.vip/get | HUB_DOMAIN=ghproxy.com/github.com bash -
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><h2 id="supervisor" tabindex="-1"> Supervisor</h2>
 <p>更新</p>
 <div><pre><code>ha supervisor update
-</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="docker" tabindex="-1"> Docker</h1>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>卸载</p>
+<div><pre><code>sudo systemctl disable haos-agent.service
+sudo systemctl disable hassio-apparmor.service
+sudo systemctl disable hassio-supervisor.service
+sudo systemctl stop hassio-supervisor.service
+sudo systemctl stop haos-agent.service
+sudo systemctl stop hassio-apparmor.service
+docker ps | grep -E 'hassio'| awk '{print $1}' | xargs docker rm -f
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h1 id="docker" tabindex="-1"> Docker</h1>
 <h2 id="docker安装" tabindex="-1"> Docker安装</h2>
 <p><strong>Docker</strong></p>
 <div><pre><code>export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
@@ -452,6 +461,10 @@ systemctl restart docker
 <div><pre><code>docker network ls
 </code></pre><div aria-hidden="true"><div></div></div></div><p>检查 bridge 网络状态</p>
 <div><pre><code>docker network inspect bridge
+</code></pre><div aria-hidden="true"><div></div></div></div><p>批量停止</p>
+<div><pre><code>docker stop $(docker ps -a | grep "hassio" | awk '{print $1}')
+</code></pre><div aria-hidden="true"><div></div></div></div><p>批量删除</p>
+<div><pre><code>docker rmi --force `docker images | grep hassio | awk '{print $3}'`
 </code></pre><div aria-hidden="true"><div></div></div></div><h2 id="docker代理" tabindex="-1"> Docker代理</h2>
 <ol>
 <li>
@@ -461,8 +474,8 @@ systemctl restart docker
 <li>
 <p>Create a file named <code>/etc/systemd/system/docker.service.d/http-proxy.conf</code> that adds the <code>HTTP_PROXY</code> environment variable:</p>
 <div><pre><code>[Service]
-Environment="HTTP_PROXY=socks5://192.168.10.32:20170"
-Environment="HTTPS_PROXY=socks5://192.168.10.32:20170"
+Environment="HTTP_PROXY=socks5://127.0.0.1:20170"
+Environment="HTTPS_PROXY=socks5://127.0.0.1:20170"
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div></li>
 <li>
 <p>Flush changes and restart Docker</p>
@@ -564,7 +577,17 @@ docker rm [容器ID]
   dockerproxy.com/whyour/qinglong:latest
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>检查服务</p>
 <div><pre><code>docker exec -it qinglong /bin/bash ql check
-</code></pre><div aria-hidden="true"><div></div></div></div><p>1</p>
+</code></pre><div aria-hidden="true"><div></div></div></div><p>安装依赖</p>
+<div><pre><code>docker exec -it qinglong bash -c "$(curl -fsSL https://githubfast.com/FlechazoPh/QLDependency/raw/main/Shell/QLOneKeyDependency.sh | sh)"
+
+#青龙内更新依赖
+task KingRan_KR/jd_indeps.sh
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div><p><a href="http://xn--config-2g0js76l.sh" target="_blank" rel="noopener noreferrer">修改config.sh</a></p>
+<div><pre><code>RepoFileExtensions="js py sh"
+export WX_ADDRESS="周子健@15116155426@@湖南省@长沙市@开福区@珠江郦城@430105@410000"
+export jd_jinggeng_address="周子健@15116155426@湖南省@长沙市@开福区@珠江郦城"
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><h2 id="京东脚本" tabindex="-1"> 京东脚本</h2>
+<p>1</p>
 <div><pre><code>docker exec -it qinglong ql repo https://ghproxy.com/https://github.com/zero205/JD_tencent_scf.git "jd_|jx_|jdCookie"  "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign|ql" "main"
 </code></pre><div aria-hidden="true"><div></div></div></div><p>2</p>
 <div><pre><code>docker exec -it qinglong ql repo https://github.com/smiek2221/scripts.git "jd_|gua_" "" "ZooFaker_Necklace.js|JDJRValidator_Pure.js|sign_graphics_validate.js"
@@ -603,10 +626,16 @@ docker rm [容器ID]
 <div><pre><code>ql repo https<span>:</span><span>//github.com/smiek2121/scripts.git "jd_|gua_" "" "^jd[^_]|USER|utils|sendNotify|ZooFaker|JDJRValidator_|^sign|cleancart_"</span>
 </code></pre><div aria-hidden="true"><div></div></div></div><p>10 .【船长】</p>
 <div><pre><code>ql repo https<span>:</span><span>//github.com/HarbourJ/HarbourToulu.git "jd_" "activity|backUp|jd_sign" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJR</span>
-</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="wol" tabindex="-1"> WOL</h1>
+</code></pre><div aria-hidden="true"><div></div></div></div><h2 id="dailycheckin" tabindex="-1"> DailyCheckIn</h2>
+<p><a href="https://sitoi.gitee.io/dailycheckin/" target="_blank" rel="noopener noreferrer">https://sitoi.gitee.io/dailycheckin/</a></p>
+<h2 id="bilioutils" tabindex="-1"> BiliOutils</h2>
+<p><a href="https://bilioutils.js.org/" target="_blank" rel="noopener noreferrer">https://bilioutils.js.org/</a></p>
+<h1 id="wol" tabindex="-1"> WOL</h1>
 <div><pre><code>docker run -d --net=host --restart=always chishin/wol-go-web
 </code></pre><div aria-hidden="true"><div></div></div></div><h1 id="ddns-go" tabindex="-1"> DDNS-GO</h1>
 <div><pre><code>docker run -d --name ddns-go --restart=always --net=host -v /opt/ddns-go:/root jeessy/ddns-go
+</code></pre><div aria-hidden="true"><div></div></div></div><h1 id="lucky" tabindex="-1"> Lucky</h1>
+<div><pre><code>docker run -d --name lucky --restart=always --net=host -v /opt/luckyconf:/goodluck gdy666/lucky
 </code></pre><div aria-hidden="true"><div></div></div></div><h1 id="cron" tabindex="-1"> Cron</h1>
 <div><pre><code>apt-get install cron
 /etc/init.d/cron restart
@@ -781,7 +810,7 @@ nslookup www.taobao.com 应该是国内
     <title type="html">检测鉴定</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html"/>
-    <updated>2023-09-11T01:26:15.000Z</updated>
+    <updated>2023-12-14T07:14:40.000Z</updated>
     <content type="html"><![CDATA[<h1 id="检测、鉴定依据" tabindex="-1"> 检测、鉴定依据</h1>
 <h2 id="检测依据" tabindex="-1"> 检测依据</h2>
 <p><strong>通用部分</strong></p>
@@ -1200,7 +1229,7 @@ nslookup www.taobao.com 应该是国内
 <p><strong>3、房屋强度检测</strong></p>
 <p>房屋安全性检测和房屋抗震检测，房屋安全性检测是指通过调查、现场检测、结构分析验算、对房屋安全性进行鉴定，主要适用于已发现安全隐患、危险迹象或其他需要评定安全性等级的房屋。</p>
 <p><strong>4、提成改建方案以及建议</strong></p>
-<p>质佳检测建议，房屋建造过程中、停工续建时或使用过程中，需要加层、插层、扩建，或较大范围的结构体系或使用功能改变等房屋改建时，需要对原有房屋结构进行房屋安全鉴定和抗震鉴定，综合评估改建后的结构安全性，必要时，提出改建方案优化措施和原结构加固措施建议。</p>
+<p>房屋建造过程中、停工续建时或使用过程中，需要加层、插层、扩建，或较大范围的结构体系或使用功能改变等房屋改建时，需要对原有房屋结构进行房屋安全鉴定和抗震鉴定，综合评估改建后的结构安全性，必要时，提出改建方案优化措施和原结构加固措施建议。</p>
 ]]></content>
     <category term="工作" scheme=""/>
     <published>2022-06-20T00:00:00.000Z</published>
@@ -4121,7 +4150,7 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
     <title type="html">荷载</title>
     <id>https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html</id>
     <link href="https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html"/>
-    <updated>2023-05-27T02:54:47.000Z</updated>
+    <updated>2023-12-14T07:14:40.000Z</updated>
     <content type="html"><![CDATA[<p>[toc]</p>
 <h1 id="荷载组合" tabindex="-1"> 荷载组合</h1>
 <p><strong>承载力极限状态基本组合</strong></p>
@@ -4488,6 +4517,8 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 <p><strong>楼梯、栏杆</strong></p>
 <p>栏杆高度1.1m 顶部水平荷载 1.0kN/m （学校类建筑取 1.5kN/m）</p>
 <p>装配搁置式楼梯，取砼容重38，栏杆荷载1.0，抹灰荷载等，楼梯间活荷载(多层住宅 2.0 其他 3.5kN/m2)</p>
+<p><strong>厂房屋面</strong></p>
+<p>湘建设〔2008〕80号：对于轻型屋面、大跨度悬臂等结构防范冰雪灾害工作问题，工程设计企业严格按照湘建明电[2008]13号文要求，在严格执行国家现行《建筑结构荷载规范》的基础上，根据我省气候特点，适当考虑冰荷载的影响，在规范作出调整之前，不上人的屋面活荷载不宜少于0.7KN/m2</p>
 <h2 id="_2012" tabindex="-1"> 2012</h2>
 <p><img src="@source/work/1荷载.assets/image-20230317114752781.png" alt="image-20230317114752781" loading="lazy"><img src="@source/work/1荷载.assets/image-20230317114823614.png" alt="image-20230317114823614" loading="lazy"></p>
 <p><img src="@source/work/1荷载.assets/image-20230510200016731.png" alt="image-20230510200016731" loading="lazy"></p>
@@ -19866,7 +19897,7 @@ class classC{
     <title type="html">装配式设计</title>
     <id>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html</id>
     <link href="https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2023-12-14T07:14:40.000Z</updated>
     <content type="html"><![CDATA[<p>[toc]</p>
 <h1 id="装配式专利企业" tabindex="-1"> 装配式专利企业</h1>
 <p>ti,ab:(楼梯) AND ti,ab:(连接) NOT ti,ab:(装置)</p>
@@ -26684,189 +26715,6 @@ return // return=img直接输出图片
       <name>jiange1236</name>
     </contributor>
     <published>2022-03-20T00:00:00.000Z</published>
-    <rights>Copyright by jiange1236</rights>
-  </entry>
-  <entry>
-    <title type="html">卸载windows服务，删除 windows 服务</title>
-    <id>https://jiange1236.github.io/others/%E5%88%A0%E9%99%A4%20windows%20%E6%9C%8D%E5%8A%A1.html</id>
-    <link href="https://jiange1236.github.io/others/%E5%88%A0%E9%99%A4%20windows%20%E6%9C%8D%E5%8A%A1.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
-    <summary type="html">卸载windows服务，删除 windows 服务</summary>
-    <content type="html"><![CDATA[<h1 id="卸载windows服务-删除-windows-服务" tabindex="-1"> 卸载windows服务，删除 windows 服务</h1>
-<h2 id="方法-步骤" tabindex="-1"> 方法/步骤</h2>
-<ol>
-<li>
-<p>1</p>
-<p>windows提供了基于命令窗口删除服务的功能，就是在命令窗口输入</p>
-<p><strong>sc delete 服务名称</strong></p>
-<p>在窗口输入上面的命令就能删除了。下面详细说明。</p>
-</li>
-<li>
-<p>2</p>
-<p><strong>确定&quot;服务名称&quot;</strong>，&quot;服务名称&quot;并不是我们在服务列表里直接看到的名称，我们看到的是服务的&quot;显示名称&quot;,查看服务名称的方法，就是在要删除的服务上右击，选择&quot;属性&quot;，这时就能看到真正的&quot;服务名称&quot;。比如下面的例子我们要删除“SQL Server Browser”服务，其真实的服务名称为“SQLBrowser”</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/d9a8d2d2bb665159594c639f8fe23ea23b42c7a1.jpg" alt="怎么卸载windows服务，删除 windows 服务" loading="lazy"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/116b1ae23ea23a424176d3a53733ec3835bbc0a1.jpg" alt="怎么卸载windows服务，删除 windows 服务" loading="lazy"></p>
-</li>
-<li>
-<p>3</p>
-<p><strong>执行”sc delete 服务名称“</strong>，打开命令窗口，输入  ”sc delete &quot;+刚才查看到的服务名称，回车就会提示删除成功。这里我们输入  <code>sc delete SQLBrowser</code> ，提示删除成功后，在服务窗口列表里也删除掉了。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/a151a233ec3834bbffe3d1ea8714c27bd3823da6.jpg" alt="怎么卸载windows服务，删除 windows 服务" loading="lazy"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/0d55dc7bd28286894d4ac40465f97fbd4d7c37a6.jpg" alt="怎么卸载windows服务，删除 windows 服务" loading="lazy"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/7efc527c34b33c41c0b6a0f4887de137c8762ea6.jpg" alt="怎么卸载windows服务，删除 windows 服务" loading="lazy"></p>
-</li>
-</ol>
-]]></content>
-    <author>
-      <name>jiange1236</name>
-    </author>
-    <category term="other" scheme=""/>
-    <contributor>
-      <name>jiange1236</name>
-    </contributor>
-    <published>2022-01-27T00:00:00.000Z</published>
-    <rights>Copyright by jiange1236</rights>
-  </entry>
-  <entry>
-    <title type="html">安装WSA-激活GPU-双击安装APK</title>
-    <id>https://jiange1236.github.io/others/%E5%AE%89%E8%A3%85WSA-%E6%BF%80%E6%B4%BBGPU-%E5%8F%8C%E5%87%BB%E5%AE%89%E8%A3%85APK.html</id>
-    <link href="https://jiange1236.github.io/others/%E5%AE%89%E8%A3%85WSA-%E6%BF%80%E6%B4%BBGPU-%E5%8F%8C%E5%87%BB%E5%AE%89%E8%A3%85APK.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
-    <summary type="html">安装WSA-激活GPU-双击安装APK</summary>
-    <content type="html"><![CDATA[<h1 id="安装wsa-激活gpu-双击安装apk" tabindex="-1"> 安装WSA-激活GPU-双击安装APK</h1>
-<p>仅支持Windows11（包含正式版、RP、Beta、Dev）
-》》》 目 录 《《《
-1.安装WSA本体（必装）
-2.激活GPU（普通用户请跳过！！！）
-3.安装“安装程序”（选装）
-4.安装ADB（选装）
-5.安装Android应用
-6.卸载Android应用
-7.注意事项
-8.参考链接</p>
-<p>【1 安装WSA本体】
--
-① 微软商店程序抓包网址： <a href="https://store.rg-adguard.net/" target="_blank" rel="noopener noreferrer">查看链接</a>
-② WSA微软商店链接： <a href="https://www.microsoft.com/store/productId/9P3395VX91NR" target="_blank" rel="noopener noreferrer">查看链接</a>
--
-1.打开①链接，在输入框中输入②，选择Slow通道，确认，下载最底下的&quot;MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral_~_8wekyb3d8bbwe.msixbundle&quot;
-(注：四个选项与Windows渠道相对应，Fast-Dev渠道，Slow-Beta渠道，RP-RP渠道和Retail-正式版，目前只有Beta版本有发布)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_b9fb4b26_4742_3909@854x219.png.m.jpg" alt="img" loading="lazy"></p>
-<p>输入下载地址，选择正确通道</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_6e58f04a_4742_3911@1234x333.png.m.jpg" alt="img" loading="lazy"></p>
-<p>选择最新安装包</p>
-<p>2.右键Windodws徽标，选择&quot;Windows终端（管理员）&quot;输入命令 add-appxpackage &quot;文件路径/文件名&quot;，回车，安装完成</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_d413f6bb_4742_3913@834x644.png.m.jpg" alt="img" loading="lazy"></p>
-<p>打开终端</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_6907ae9d_4742_3915@1129x631.png.m.jpg" alt="img" loading="lazy"></p>
-<p>输入指令</p>
-<p>3.开启主板虚拟化支持，具体按照各BIOS进行设置（新购买电脑一般已开启主板虚拟化支持）
-4.系统中开启Hyper-V和虚拟机平台，打开资源管理器，在路径中输入中文&quot;控制面板&quot;，回车，即可进入控制面板，选择程序-程序和功能-启用或关闭Windows功能，开启&quot;Hyper-V&quot;和&quot;虚拟机平台&quot;，确定，重启</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_fac9b857_1334_2244@1499x962.png.m.jpg" alt="img" loading="lazy"></p>
-<p>资源管理器可以直接进入控制面板</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_c335fb7e_1334_2246@1499x962.png.m.jpg" alt="img" loading="lazy"></p>
-<p>按图开启Windows功能</p>
-<p>5.完成，Enjoy it.</p>
-<p>【2 激活GPU】（普通用户无需进行该项设置！！！）
--
-INTEL英特尔：
-<a href="https://www.intel.com/content/www/us/en/download/19344/intel-graphics-windows-10-windows-11-dch-drivers.html" target="_blank" rel="noopener noreferrer">查看链接</a>
-NVIDIA英伟达（经验证无效，请使用官网最新驱动）：
-<a href="https://developer.nvidia.com/cuda/wsl/download" target="_blank" rel="noopener noreferrer">查看链接</a>
-AMD超微半导体：
-<a href="https://www.amd.com/en/support/kb/release-notes/rn-rad-win-wsl-support" target="_blank" rel="noopener noreferrer">查看链接</a>
-opengl3支持：
-<a href="https://www.microsoft.com/store/productId/9NQPSL29BFFF" target="_blank" rel="noopener noreferrer">查看链接</a>
--
-1.下载安装对应显卡驱动和opengl3支持，安装后重启
-（注：具体是否成功受概率等玄学因素影响，Intel驱动如果安装失败可尝试再次安装；未测试是否影响调用，建议普通用户跳过该步骤）
-2.设置中开启高性能模式，设置-系统-显示-图形，应用的自定义选项-浏览，添加WSA，选择WSA，图形首选项选择高性能，保存</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_7b0d9d68_3027_155@1775x1115.png.m.jpg" alt="img" loading="lazy"></p>
-<p>打开设置</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_d40bb361_3027_1552@1775x1115.png.m.jpg" alt="img" loading="lazy"></p>
-<p>添加WSA</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_6185d916_3027_1554@1775x1115.png.m.jpg" alt="img" loading="lazy"></p>
-<p>选项中选择高性能模式</p>
-<p>3.显卡设置中开启高性能模式（以N卡为例，集显和A卡请自测），NVIDIA控制面板-管理3D设置-添加-选择WSA，确定，并调整WSA首选图形处理器为高性能NVIDIA处理器</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_1a2bee58_3028_9618@974x1199.png.m.jpg" alt="img" loading="lazy"></p>
-<p>打开NVIDIA控制面板并添加WSA</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_c9c477e5_3028_9619@974x718.png.m.jpg" alt="img" loading="lazy"></p>
-<p>选择高性能NVIDIA处理器</p>
-<p>4.重启，完成</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_451e5133_3028_9621@503x909.png.m.jpg" alt="img" loading="lazy"></p>
-<p>安兔兔GPU显示分数，但很低</p>
-<p>【3 安装“安装程序”】
--
-APKInstaller： <a href="https://github.com/Paving-Base/APK-Installer/releases" target="_blank" rel="noopener noreferrer">查看链接</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_b0236f41_4742_3917@835x388.png.m.jpg" alt="img" loading="lazy"></p>
-<p>安装程序可以直接桌面显示apk且可以双击安装</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_76800999_4742_3919@636x405.png.m.jpg" alt="img" loading="lazy"></p>
-<p>以WinUi的界面进行安卓程序的安装</p>
-<p>-
-1.下载最新压缩包，如&quot;APKInstaller.Package._0.0.1.0_Test.rar&quot;
-2.解压缩
-3.开启旁加载模式，设置-隐私和安全性-开发者选项-开启&quot;从任意源（包括松散文件）安装应用&quot;</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_3f879f05_4742_392@1775x1115.png.m.jpg" alt="img" loading="lazy"></p>
-<p>打开开发人员模式</p>
-<p>4.右键msixbundle文件，如&quot;APKInstaller (Package)_0.0.1.0_x86_x64_arm64.msixbundle&quot;，属性-数字签名-双击签名列表中的签名-查看证书-安装证书-本地计算机-将所有的证书都放入下列储存-受信任人-完成</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_e89acd6b_6561_4202@1352x952.png.m.jpg" alt="img" loading="lazy"></p>
-<p>打开属性</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_ef4554ea_4742_3922@2091x745.png.m.jpg" alt="img" loading="lazy"></p>
-<p>安装程序证书 1</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_bef29485_4742_3924@1072x746.png.m.jpg" alt="img" loading="lazy"></p>
-<p>安装程序证书 2</p>
-<p>5.双击msixbundle文件，如&quot;APKInstaller (Package)_0.0.1.0_x86_x64_arm64.msixbundle&quot;，自动安装框架，然后提示安装失败
-6.右键&quot;Install.ps1&quot;选择&quot;使用PowerShell运行&quot;</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_ee8ded6d_4746_3735@1352x952.png.m.jpg" alt="img" loading="lazy"></p>
-<p>安装程序本体</p>
-<p>7.安装完成</p>
-<p>【4 安装ADB】
--
-最新ADB： <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip" target="_blank" rel="noopener noreferrer">查看链接</a>
--
-1.下载解压缩，将文件夹内的所有文件复制到&quot;C:\Users\用户名&quot;下即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_772f1dd4_4746_3737@1365x957.png.m.jpg" alt="img" loading="lazy"></p>
-<p>安装adb在正确的位置，无需配置环境变量</p>
-<p>【5 安装Android应用】
--
-方法一（ADB安装）：
-1.打开&quot;Windows Subsystem for Android™&quot;，打开&quot;开发人员模式&quot;</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_43576668_4746_3739@1003x813.png.m.jpg" alt="img" loading="lazy"></p>
-<p>打开WSA</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_2a149b56_4746_374@1200x932.png.m.jpg" alt="img" loading="lazy"></p>
-<p>开启开发人员模式，注意未启动WSA不能安装程序</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_9f6776e4_4746_3742@636x388.png.m.jpg" alt="img" loading="lazy"></p>
-<p>启动WSA</p>
-<p><img src="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/538951_ffb679db_4746_3744@1200x932.png.m.jpg" alt="img" loading="lazy"></p>
-<p>启动成功，可以安装应用</p>
-<p>2.确保已正确安装ADB，Win+R，输入&quot;CMD&quot;，回车，输入指令&quot;adb connect 127.0.0.1:58526&quot;
-3.&quot;adb install （将安装文件拖入此处）&quot;，回车，安装完成
--
-方法二（安装器安装）：
-1.确保已正确安装APKInstaller，双击.apk的安卓程序进行安装，根据指引打开&quot;开发人员模式&quot;
-（注：Android子系统必须处于开机状态才能进行安装，可以点击WSA中&quot;开发人员模式&quot;下&quot;管理开发人员设置&quot;唤醒）</p>
-<p>【6 卸载Android应用】
--
-1.列表中直接右键卸载即可</p>
-<p>【7 注意事项】
-1.该教程基于Windows11专业版制作，如家庭版没有某些选项，可以百度其他打开的方式
-2.如果遇到鼠标无法点击的情况，如登录酷安，可以使用tab键切换组件
-3.提示WiFi连接问题：<a href="https://www.uso.cn/post/view/47990" target="_blank" rel="noopener noreferrer">查看链接</a>
-4.PowerShell运行ps1文件的问题：<a href="https://m.jb51.net/os/win10/728455.html" target="_blank" rel="noopener noreferrer">查看链接</a>
-5.Windows家庭版没有PowerShell的问题：<a href="https://blog.csdn.net/houmenghu/article/details/103876847" target="_blank" rel="noopener noreferrer">查看链接</a></p>
-<p>【8 参考链接】
--
-WSA安装： <a href="https://www.coolapk.com/feed/30833815?shareKey=NGRjZTFhMjYxNTQ2NjE3MmNmMmU~&amp;shareUid=538951&amp;shareFrom=com.coolapk.market_11.4.3" target="_blank" rel="noopener noreferrer">查看链接</a>
-GPU驱动： <a href="https://www.coolapk.com/feed/30854918?shareKey=Y2ZiMjNmN2E4NWM2NjE3MmNmMmU~&amp;shareUid=538951&amp;shareFrom=com.coolapk.market_11.4.3" target="_blank" rel="noopener noreferrer">查看链接</a>
-APKInstaller： <a href="https://www.coolapk.com/feed/30857122?shareKey=OTAzN2JmMDBmZTg3NjE3MmNmMDM~&amp;shareUid=538951&amp;shareFrom=com.coolapk.market_11.4.3" target="_blank" rel="noopener noreferrer">查看链接</a></p>
-]]></content>
-    <author>
-      <name>jiange1236</name>
-    </author>
-    <category term="other" scheme=""/>
-    <contributor>
-      <name>jiange1236</name>
-    </contributor>
-    <published>2022-02-11T00:00:00.000Z</published>
     <rights>Copyright by jiange1236</rights>
   </entry>
 </feed>
