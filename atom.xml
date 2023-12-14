@@ -3,7 +3,7 @@
   <id>https://jiange1236.github.io/</id>
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
-  <updated>2023-12-14T07:43:37.670Z</updated>
+  <updated>2023-12-14T07:52:18.310Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -11628,7 +11628,7 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
     <title type="html">硬链接</title>
     <id>https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html</id>
     <link href="https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html"/>
-    <updated>2022-05-16T00:40:01.000Z</updated>
+    <updated>2023-12-14T07:50:39.000Z</updated>
     <content type="html"><![CDATA[<h1 id="硬链接" tabindex="-1"> 硬链接</h1>
 <p><strong>Linux</strong></p>
 <div><pre><code>mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work
@@ -11642,7 +11642,13 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 <p>2.定位你误操作的那一个版本，我上传包涵敏感信息的操作是&quot;0f6f7b72667830e407880271e6ebc24abba232c5&quot;。我们取它之前的版本，就是哈希值为&quot;8628628991470b26e698d98e986a54fa6b5f4352&quot;的那一版本。</p>
 <p>3.使用&quot;git reset —hard 8628628991470b26e698d98e986a54fa6b5f4352&quot;操作，将历史记录重置到这个版本。</p>
 <p>4.使用&quot;git push origin HEAD —force&quot;，PUSH到github。</p>
-]]></content>
+<h2 id="代理" tabindex="-1"> 代理</h2>
+<p><strong>只对Github代理（推荐）</strong></p>
+<div><pre><code><span>#使用socks5代理（推荐）</span>
+<span>git</span> config --global http.https://github.com.proxy socks5://127.0.0.1:20170
+<span>#使用http代理（不推荐）</span>
+<span>git</span> config --global http.https://github.com.proxy http://127.0.0.1:20170
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div>]]></content>
     <published>2022-05-15T02:33:02.000Z</published>
   </entry>
   <entry>

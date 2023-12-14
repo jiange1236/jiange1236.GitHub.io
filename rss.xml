@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 14 Dec 2023 07:43:37 GMT</pubDate>
-    <lastBuildDate>Thu, 14 Dec 2023 07:43:37 GMT</lastBuildDate>
+    <pubDate>Thu, 14 Dec 2023 07:52:18 GMT</pubDate>
+    <lastBuildDate>Thu, 14 Dec 2023 07:52:18 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>计算机</category>
@@ -11639,7 +11639,13 @@ total <span>=</span> <span>len</span><span>(</span>updatelist<span>)</span>
 <p>2.定位你误操作的那一个版本，我上传包涵敏感信息的操作是&quot;0f6f7b72667830e407880271e6ebc24abba232c5&quot;。我们取它之前的版本，就是哈希值为&quot;8628628991470b26e698d98e986a54fa6b5f4352&quot;的那一版本。</p>
 <p>3.使用&quot;git reset —hard 8628628991470b26e698d98e986a54fa6b5f4352&quot;操作，将历史记录重置到这个版本。</p>
 <p>4.使用&quot;git push origin HEAD —force&quot;，PUSH到github。</p>
-]]></content:encoded>
+<h2 id="代理" tabindex="-1"> 代理</h2>
+<p><strong>只对Github代理（推荐）</strong></p>
+<div><pre><code><span>#使用socks5代理（推荐）</span>
+<span>git</span> config --global http.https://github.com.proxy socks5://127.0.0.1:20170
+<span>#使用http代理（不推荐）</span>
+<span>git</span> config --global http.https://github.com.proxy http://127.0.0.1:20170
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>Deepin</title>
