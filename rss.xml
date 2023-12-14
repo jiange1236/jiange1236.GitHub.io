@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <atom:link href="https://jiange1236.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-    <title>StudyNote</title>
+    <title>Zeblog</title>
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 14 Dec 2023 09:03:40 GMT</pubDate>
-    <lastBuildDate>Thu, 14 Dec 2023 09:03:40 GMT</lastBuildDate>
+    <pubDate>Thu, 14 Dec 2023 10:10:03 GMT</pubDate>
+    <lastBuildDate>Thu, 14 Dec 2023 10:10:03 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>计算机</category>
