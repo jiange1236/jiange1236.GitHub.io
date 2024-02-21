@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 14 Dec 2023 13:42:54 GMT</pubDate>
-    <lastBuildDate>Thu, 14 Dec 2023 13:42:54 GMT</lastBuildDate>
+    <pubDate>Wed, 21 Feb 2024 06:32:46 GMT</pubDate>
+    <lastBuildDate>Wed, 21 Feb 2024 06:32:46 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>计算机</category>
@@ -16,6 +16,381 @@
     <category>理财</category>
     <category>使用指南</category>
     <category>other</category>
+    <item>
+      <title>玩客云</title>
+      <link>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</link>
+      <guid>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">玩客云</source>
+      <description>玩客云 nano /etc/apt/sources.list 删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free</description>
+      <pubDate>Wed, 21 Feb 2024 06:31:28 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> 玩客云</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后更新软件源</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="#Docker%E5%AE%89%E8%A3%85"><strong>Docker安装</strong></a></p>
+<p><strong>Install Home Assistant Supervised</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>OS Agent</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>grub错误</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Home Assistant Supervised Debian Package</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Docker镜像</strong></p>
+<p>直接修改 <code>/etc/docker/daemon.json</code> (docker 版本 &gt;= 1.10 时) 内容为:</p>
+<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改后重启服务:</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <strong>HACS</strong></h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Supervisor</h2>
+<p>更新</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>卸载</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <a href="https://www.cnblogs.com/mouseleo/p/8585979.html" target="_blank" rel="noopener noreferrer">Debian 使用 cron 执行定时任务</a></h2>
+<p>在linux下有两种方法来让一个命令或者脚本执行:</p>
+<ol>
+<li>crontab : 执行一个任务一次或者多次.</li>
+<li>at : 只执行一次.</li>
+</ol>
+<p>crontab是通过读取一个crontab文件来工作，这是一个普通的文本文件，里面列出了要执行的任务。每行都含有要指定的任务的命令、参数与选项，以及要执行任务的时间。（cron 软件在后台运行并且经常检查 /etc/crontab 文件。cron 软件也检查 /var/cron/tabs 目录，搜索新的 crontab 文件。这些 crontab 文件存储一些 cron 在特定时间执行任务的信息。）
+crontab的基本格式：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol>
+<li>* * * * * command</li>
+</ol>
+<p>几个星号分别为：分 时 日 月 周，最后是要执行的命令。</p>
+<ul>
+<li>分：0~59</li>
+<li>时：0~23</li>
+<li>日：1~31</li>
+<li>月：1~12</li>
+<li>周：0～6（0表示星期天）</li>
+</ul>
+<p>除了数字还有几个个特殊的符号就是* / - ：</p>
+<ul>
+<li>* 代表所有的取值范围内的数字</li>
+<li>/ 代表每的意思</li>
+<li>*/5 表示每5个单位</li>
+<li>- 代表从某个数字到某个数字</li>
+<li>, 分开几个离散的数字</li>
+</ul>
+<p>配置文件的一些例子：</p>
+<ul>
+<li>0 3 * * * /root/test.sh 每天凌晨3点执行test.sh文件</li>
+<li>* 23-7/1 * * * /root/lnmp restart 晚上11点到早上7点之间，每隔一小时重启lnmp套件</li>
+<li>*/30 * * * * /usr/sbin/ntpdate 每半小时同步一下时间</li>
+<li>0 23 * * 6 /lnmp restart 每星期六的11 : 00 pm重启重启lnmp套件。</li>
+<li>*/1 * * * * echo "i am running."&gt;&gt;/tmp/running.txt 每隔1分钟向/tmp/running.txt写一个"i am running."字符串。</li>
+</ul>
+<p>运行
+我以为编辑crontab保存后会自动执行，其实不然，必须通过重启cron才可以，命令如下：</p>
+<ul>
+<li>启动/etc/init.d/cron start</li>
+<li>关闭/etc/init.d/cron stop</li>
+<li>重启/etc/init.d/cron restart</li>
+</ul>
+<h1> 群晖</h1>
+<h2> OPKG</h2>
+<p>ssh 进入群晖后, sudo -i 获取管理员权限, 运行下面的命令:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>脚本运行完毕后, 修改环境文件:</p>
+<ol>
+<li>/root/.profile:</li>
+</ol>
+<p>PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/usr/local/bin:/opt/bin:/opt/sbin</p>
+<ol start="2">
+<li>/etc/rc:</li>
+</ol>
+<p>/opt/etc/init.d/rc.unslung start</p>
+<h1> Docker</h1>
+<h2> Docker安装</h2>
+<p><strong>Docker</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>国内镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Docker基本命令</h2>
+<p>启动 Docker 服务</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 运行状态</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>将 Docker 服务加入开机自启动</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器在线状态及大小</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器的运行输出日志</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重新启动容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>停止容器的运行</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>移除容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 docker 容器占用 CPU，内存等信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 安装版本等信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重启 Docker（非容器）</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>清理 Docker</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 网络信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>检查 bridge 网络状态</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改容器网段IP</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>批量停止</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>批量删除</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> Docker代理</h2>
+<ol>
+<li>
+<p>Create a systemd drop-in directory for the <code>docker</code> service:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>Create a file named <code>/etc/systemd/system/docker.service.d/http-proxy.conf</code> that adds the <code>HTTP_PROXY</code> environment variable:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>Flush changes and restart Docker</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>Verify that the configuration has been loaded and matches the changes you made, for example:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+</ol>
+<p>修改hosts</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> 重建Docker网络</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Watchtower</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> OpenWrt</h1>
+<p>🔵打开网卡混杂模式</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建网络</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘[↑自己根据 玩客云 所在网段修改，如：玩客云IP:10.1.2.11，则10.1.1.0/24 改成 10.1.2.0/24，10.1.1.1改成主路由地址]</p>
+<p>🔵拉取 OpenWRT 镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘--name=OpenWrt 其中OpenWrt是容器名称，可以更改成你想要的，容器名称注意不要和其他容器一样，会冲突</p>
+<p>🔘--ip 10.1.1.13 其中10.1.1.13是容器IP，可以更改成你想要的，容器IP不要重复，这一项可删除</p>
+<p>🔵修改OpenWrt IP</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘OpenWrt 是容器名称，和你创建容器时的一致</p>
+<p>🔘镜像设置的默认IP是10.1.1.13，可通过该命令修改</p>
+<p>🔵管理密码是 password</p>
+<p>🔵LAN口固定IP地址，网关指向主路由IP地址</p>
+<p>iptables -t nat -I POSTROUTING eth0 -j MASQUERADE</p>
+<p>🔴设置 容器不自启动 、 停止容器 和 删除容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔴查看所有镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘记录下 xuanaimai/openwrt 21-09-15 右边的 IMAGE ID（镜像ID，下面用得到）</p>
+<p>🔴删除镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Alist</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看密码</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>使用<a href="http://ip:5244/" target="_blank" rel="noopener noreferrer">http://ip:5244</a>    来登录alist点击下面的管理输入管理员的账号和密码</p>
+<h1> Homepage</h1>
+<p><strong>Homepage</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>Homarr</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Flare</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> V2rayA</h1>
+<p>安装</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>开启IP转发</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>http://ip:2017</p>
+<h1> wireproxy</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Portainer</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> 青龙面板</h1>
+<p>青龙面板:5700</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>检查服务</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>安装依赖</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改config.sh</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 京东脚本</h2>
+<p>1</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol>
+<li>KingRan库【推荐❤❤❤❤❤】</li>
+</ol>
+<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2.Faker3【集合库（很多重复任务，自己禁用）❤❤❤❤】</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="3">
+<li>yyds【集合库❤❤❤】</li>
+</ol>
+<p>YYDS</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>YYDS_Pure</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>【注意】拉库前请打开青龙面板-配置文件 第18行 GithubProxyUrl="" 双引号中的内容删除。</p>
+<ol start="4">
+<li>环境保护【推荐❤❤❤❤】</li>
+</ol>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="5">
+<li>ccwav大佬的通知增强版和CK检测</li>
+</ol>
+<p>//不包含sendNotify:</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>//包含sendNotify:</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>6.【619】【集合库，可选】</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>7 .【zero205】【集合库，推荐拉KR即可】</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>8 .【6dylan6/jdpro】</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>9 .【青蛙/smiek2121】</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>10 .【船长】</p>
+<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> DailyCheckIn</h2>
+<p>https://sitoi.gitee.io/dailycheckin/</p>
+<h2> BiliOutils</h2>
+<p>https://bilioutils.js.org/</p>
+<h1> WOL</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> DDNS-GO</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Lucky</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>http://ip:16601</p>
+<h1> Cron</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>编辑定时自动脚本</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在ssh中执行脚本，然后编辑文件。</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>丢进去这个脚本，表示每天凌晨1点重启服务器。编辑完毕之后:wq保存退出。</p>
+<p>保存退出重启生效</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</title>
+      <link>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</source>
+      <description>【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当 Excerpt 点击查看详情！ 采访团队：《建筑结构》杂志社</description>
+      <pubDate>Wed, 21 Feb 2024 06:31:28 GMT</pubDate>
+      <content:encoded><![CDATA[<h1> 【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</h1>
+<blockquote>
+<h2> Excerpt</h2>
+<p>点击查看详情！</p>
+</blockquote>
+<hr>
+<p><strong>采访团队：</strong>《建筑结构》杂志社</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_gif/MVPvEL7Qg0Egj76lSPicXbCTgBVIialdvwWxbm21OZytaf8P6xK86NglUjbFn8agwwLkdNhBNdSRvMLtiaXKjEj7A/640?wx_fmt=gif&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p><strong>问题1：您和您的团队是何时接到上级通知并确定奔赴灾区一线？具体接受到哪些方面的任务？请介绍下贵单位是如何组织及第一时间所做的准备以及路上经历、何时到达灾区等情况。</strong></p>
+<p>**回复：**我司是在2023年12月25日接到青海省住建厅的邀请，公司党委第一时间集结公司专业技术人员39人组建先锋救援队驰援青海灾区，全力投入震后房屋安全评估工作。同时，公司紧急统一采购御寒鞋服、保暖帽、手套、食品等物资，并组织安排车辆、检测设备，于12月26日分三批次驾车连夜驰援（图1），历经10个小时的长途跋涉（图2），于2023年12月27日3：25全部抵达青海重灾区民和回族土族自治县（图3）。后续，根据灾区救援需要，公司党委又先后派出36人驰援前线，在最顶峰时期人员数量最多达到75人。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh1f5NnAmryQmkLBMibgWWvqNmFQCDDlugqLiaF8gnib9jlCrnriaIPeXqbQ/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图1 连夜驰援灾区</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh35Ow2vs6LoYNaWib92B3nE7VTuGhOVIAzJFh4t4sMstJCaV7ia9FQU8Q/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图2 沿途线路图</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh2xOxDvicmjchZpoiaxAZicOdbsJkHfVO9cYVQUt0Tu7qJb5aWBL5gFiaHA/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图3 第一批先锋救援队员在满坪镇中心学校合影</p>
+<p><strong>问题2：青海大多数地区属于高原地区，正值冬季，天寒地冻且交通不便，贵公司多名技术人员在青海灾区开展房屋灾后鉴定评估，请介绍一下同事开展的工作及生活情况？面对困难，同事们工作状态和心态方面是如何得以及时调整的？</strong></p>
+<p><strong>回复：<strong>我司部分技术人员前期到达的是青海省海东市</strong>民和回族土族自治县</strong>，海拔高度平均2，300m，后续到达的<strong>循化撒拉族自治县</strong>，最高海拔3200m，最低温度–17℃，居住地距离灾区约50km。村里道路坑洼不平（图4、图5），沿途多处滑坡地段，还有滚石不断滑落。本次地震烈度图见图6。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhfMibFKgnLxAYTWzOGjTk02qjwOTpPSgib9Ell446WAZou4J1CengqlJg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图4 通往待检测农房村庄的道路大车来往不断，交通不畅</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh8VCVZJJlPxjZn88ewYDrA9v1kgF6wNooRoNtezJN8jXEzibwSiavdebQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图5 村内道路一侧沟内淤泥深度2m</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhLaWO43gicCvibuwN9bF19XSJSo3CU7k2DvvKKa8WicSDibWUdkvP0LEg4Q/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图6 积石山6.2级地震烈度图</p>
+<p>为尽快完成评估任务，让灾区老百姓能够早日住上安全可靠的房屋，我司全体成员克服高原不适、天气寒冷、交通不便、路途危险等困难，自发地早出（8:00）晚归（20:00），并自带泡面（午餐），晚上简餐后，再投入整理数据的工作（图7），一般每天工作至凌晨1：00左右，平均每天工作15~16小时，各位同事的工作量巨大（图8~11）。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhalibfwgSOKaImHhgaKia5fh5TwYqo10ZTbJE8GVmKtsZmYYgeaQF2vlw/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图7 晚上加班进行数据整理工作</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhftCDMqMWRlUHMojFFlIW4VmzUMibicnxpR7rvXynawiaFqzCql4AFUiajA/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图8 建筑物相对不均匀沉降检测现场照片</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhNFJsuOUyMYTnUYKxGDuBdK2Zdkib5W9FgvvibTtZLtV6BpVtFTYDIpLQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图9 采集住户信息照片</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhDNAP0YMxof4YdL9ib4oqxPbrbt5ElREU7BBptgXfd6XNcXRDIHdGB0w/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图10 混凝土强度测试照片</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh8awwCqaSor28hJYD5ibbSV8r3IezgmOuPlmTicEuTFIR7DCpkSVEdqsg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图11 柱内钢筋扫描现场照片</p>
+<p>工作开展期间，公司领导及当地政府领导亲赴救援一线，亲切慰问奋战在低温高原环境下的先锋救援队员们，给队员们送去了慰问品、食品等，队员们均深受鼓舞，并将这份热情转化到现场的实际工作中。</p>
+<p><strong>问题3：请结合现场考察震害情况，介绍下本次地震中学校和医院等公共建筑及民房的震害特点和分布情况。</strong></p>
+<p>**回复：**本次积石山地震震级为6.2级，民和县、循化县抗震设防烈度均为7度，民和县有三个乡镇（甘沟乡、中川乡、官亭镇）是重灾区，本次地震破坏烈度均为8度，破坏相对来说比较严重。</p>
+<p>所调研的学校和医院的建筑多数为框架结构，少量为砖混结构，从灾害范围分布上看，三个重灾区的公共建筑，损坏严重。框架结构的典型破坏形态为填充墙体的“X”形剪切破坏（图12、13），少量的框架结构出现梯柱（短柱）上下两端节点的剪切裂缝（图14）和底层框架柱柱顶的剪切裂缝（图15），未见框架结构的公共建筑柱端出现塑性铰的严重破坏形态，均满足抗震规范“小震不坏、中震可修、大震不倒”的设防要求。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh6MerPMgPibDy6XSQu4sImfIYK9eRfNx6gFHDlkotdKrdPd3Mibt40lsw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图12 框架结构填充墙剪切破坏</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhibDmqWQQ3MfWhQNic2oCJuH3hwKVRk8SkPRmtZZTicnFTxiamKdokrbb0A/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图13 填充墙体水平开裂</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh1hdOziaibFlrSo75zQu7CichGDzAaUnrbAkGmrgpEVqibPjIia9AuI5wS5Q/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图14 梯柱柱端开裂</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhMETaOhCjWM9DnVQNZbYwgS68JQJS1LgSEJ2R1FG6kJLPhe5vxvgiaUQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图15 框架柱柱顶开裂</p>
+<p>砌体结构的公共建筑在本次地震中震害相对严重，三个重灾区的学校、医院建筑的一层承重墙体均出现较为严重的“X”形剪切破坏（图16）和水平剪切破坏（图17），有的承重墙体的砖块及构造柱被剪成碎渣状，构造柱钢筋屈服（图18）。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhkXCKc1xicCiauLet5r7MzxEYye7IFYkoAuibiaFGcar7AoVyztPEtxr4fg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图16 砌体结构承重墙体剪切破坏</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh25Sa3vZjaln0EtlsQv0gHZgicaLlVuYarSEfScNOrmjcRYAKNEVlWHQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图17 窗间墙水平剪切破坏</p>
+<p>![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)</p>
+<p>▲&nbsp;图18 砌体结构构造柱钢筋屈服</p>
+<p>该地区典型的农房结构形式为砖/土木混合承重结构（或木构架承重），这些混合承重房屋因砖墙、土墙与木构架抗侧刚度、变形能力的差异较大，呈现出典型破坏形态是木梁与墙体出现相对位移（图19），最大移位量达16cm。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhBrDTPM7LcwwZiaZXzxfibXc4Bl7gdUNoficvUp7yHQumxmjH2ozL2zVsQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图19 木梁与承重墙体产生相对位移</p>
+<p>其次，木构架节点出现拔榫（图20），甚至个别节点出现脱榫现象（图21），致使木柱倾斜。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhoJicAwS2YDs9RFU4TcxKiagyUiaXnROBfIwcia4mpdDd0PIsxoPXOXdzFg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图20 木结构榫卯节点拔榫</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhlGSBM1W7GO4KxDJ1Ku5NmI2bLZZFtibGcXD0417wIWDAs6ibHoEEQOUQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图21 木结构榫卯节点脱榫</p>
+<p>另外，还有承重墙体出现剪切破坏（图22），外闪甚至倒塌，纵横墙连接位置失效（图23）等震害。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhYFBo9pOrib2ObPTlyticjMGmialaYtib2VKvtAXgLSLnP12vHwWSgdAiaeQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图22 农房承重砌体墙剪切破坏</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh6h8KgrMa28k6ciboRhP4ibcJSibj7icaGMWevibiaDD1icDLKnxRGp5JxMnEA/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图23 纵横墙连接失效</p>
+<p>木构架承重房屋的震害主要表现为：围护墙体外闪、倒塌、开裂，木构架榫卯节点拔榫、木柱倾斜、柱底移位等震害（图24），起到很好的耗能能力。个别内框架结构/底部大空间框架结构一层柱端（柱顶和柱底）出现明显的塑性铰（25、26）。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhosibm7lt43icwVa2LlOccysf0RiaBiaV1OTBehIqExegiblDFnicM4q00iaGg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图24 木柱柱底移位【水平位移量80mm】</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhTS2CdfDJzMaJf23b3hhbWib428PkEXrlJ6xpLqSzOxwv4IeH9blN9wA/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图25 底部大开间民房柱端出现塑性铰</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh80Eh7ZPPYOY9ha3y5KknAiaSeyDo9JEemEicwp6UEcDXuLkW2dDPfXXg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图26 底部大开间民房柱底出现塑性铰</p>
+<p>发现有2个异常破坏形态的砖混商铺，其各楼层竖向刚度基本均匀，第一个建筑一层承重墙体基本完好，二层窗间承重墙出现典型的“X”形剪切破坏（图27）；第二个建筑的一、二层承重墙体基本完好，三层窗间墙顶部出现典型的水平剪切裂缝（图28）。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhVwTYic1zYhfunsdTvWPE8vSrO7nZrzCCyZELlw1FLZRnSkcz0lefncw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图27 &nbsp;二层（目前闲置弃用）窗间墙剪切破坏</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhTY7A20rIJuwAJsTiaLRzVVvLq1Wrg5Dg7U4GTQRMungk910nxLNd75g/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图28 三层窗间墙剪切破坏</p>
+<p>同时，还发生了严重的地质灾害“沙涌”（另一说为黄土震陷液化），源头见图29，造成一处新建房屋严重倾斜、墙体开裂（图30），多户房屋整体性被摧毁，沿线树木、房屋均遭到不同程度的破坏。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhYAsdCynhT95aeibH5xhFibeVBAQIRSewcwvd5qBeJ0Ep7vico9HoQMRFQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图29 “沙涌”源头</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhs3t6gIUY5km4317llMsSQSlkIxBAdg06trlD1YmsfNdZ0Sr7QKIl0A/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图30 “沙涌”对一新建房屋造成严重影响</p>
+<p><strong>问题4：请您从结构专业角度简要介绍一下目前这些受损建筑今后方便实施的修缮加固设计和施工方法。</strong></p>
+<p><strong>回复：</strong>（1）对于框架结构，破坏严重的填充墙体须采用拆除重砌的方法进行处理，破坏程度不严重的墙体可采用注浆（胶）+钢筋网水泥砂浆面层方法加固或采用局部拆除补砌的方法进行修缮；对有损伤的框架柱（包含节点）可采用置换（图31）、包钢或粘碳纤维布的加固方法进行加固。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhv6JZ5Mbn2arbFbTU9Z1HQ4OiaiaFsqdZHy6LV8W0dlhKCBuNiaqA7uVJQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图31 框架柱置换</p>
+<p>（2）对于砌体结构，承重墙体破坏严重的拆除重建；破坏程度不严重的墙体可采用配筋砂浆带、注浆（胶）+钢筋网水泥砂浆面层、聚丙烯网水泥砂浆面层（图32，我公司研发，已获发明专利）、钢筋混凝土面层、高延性纤维混凝土面层、碳纤维网格面层（图33）等方法进行加固。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhmYazicqCWQwcRdo4azgyjcYDTXnIGYEJ1eib0oiaAUv0K59OI0CNehWicQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图32 聚丙烯网水泥砂浆加固砌体墙技术应用于高烈度区农房抗震加固中</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhsnMR96jyRIXWHeXKcxUSoNeWBNia5DU3tricDJgk96ef4Pqia0diaHucsg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图33 碳纤维网格加固砖墙</p>
+<p>（3）对于木构架，可采用粘贴碳纤维布、扁钢带等方法进行节点加固。</p>
+<p>（4）对于生土墙承重结构，可采用配筋砂浆带、高延性纤维混凝土面层等方法进行加固。</p>
+<p><strong>问题5：据了解，2015年尼泊尔地震，贵公司以及您本人就参与了西藏日喀则等地区的抗震救灾工作，能借此机会回顾一下当时情况吗？</strong></p>
+<p>**回复：**2015年4月25日14时11分，与我国西藏自治区日喀则市吉隆县和聂拉木县紧邻的尼泊尔发生8.1级大地震（图34），两个县城的建筑物及市政基础设施受灾严重，部分结构体系为框架的柱端出现明显的塑性铰（图35、36），砌体承重房屋剪切破坏有的甚至整体坍塌（图37）。受当地政府的邀请，陕西省建筑科学研究院专家组一行11人赶赴吉隆县和聂拉木县进行震后房屋评估工作，工作地海拔高度约3600~3800m，全体成员均出现不同程度的高原反应，历时11天完成了两个县约50处公共建筑的安全评估工作。</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhU4k4pSBjia5BXSbvc8FOoK3APOnPh4ic1zia3wHziawxib6Lmkv4aCHDTgQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图34 尼泊尔8.1级地震烈度图</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhNiamdmFiaZ5hNgnhiahHUaaGBK5xzEPlQkN5ib7dVicVNMdib2m0B52Kfwzw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图35 框架柱柱底出现塑性铰</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEh5XZnkECjW9nPlwHnDo3EmwSfDy6YiaPBFNiblt2r14YeFm228bPGXoZA/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图36 框架柱柱顶出现塑性铰</p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhvtDjWZRACB7giaHACRujPLA3rMyfayhXT87t9UcetibhdI4IuicB4gB7A/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p>▲&nbsp;图37 西藏典型砌体房屋震损</p>
+<p><strong>问题6：结合本次地震，请从宏观角度简单谈一下未来我国建筑抗震防灾能力建设的发展。</strong></p>
+<p>**回复：**基于本次震害调查的成果，个人认为有必要科学开展城镇、村庄房屋的抗震减灾规划，对抗震设防烈度7度以上区域的既有老旧存量建筑、民房、自建房应全面开展抗震鉴定和加固，加强新建建筑的抗震设计、施工过程管理以及验收、维护的监管力度，注重对公共建筑非结构构件的抗震构造设计，在考虑当地风俗及村民接受度的前提下，适当提高农房抗震构造措施以及非结构构件的设计，全面提升我国村镇房屋的整体抗震防灾韧性，契合国家现代化健康可持续发展的迫切需求！</p>
+<p><strong>作者简介：</strong></p>
+<p><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8mMOdD0OYsUfYbVrjPkVEhL8l2Yo3cFTaUd2ycHmkDx4HIESkknvC8z7ZhFv7hqwE6iaVE28a3Kug/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<p><strong>张风亮</strong>，陕西省建筑科学研究院有限公司总经理助理、建筑结构与施工研究所所长，陕西建科建设特种工程有限公司董事长，正高级工程师，博士生导师，长期致力于建筑物结构性能评估及其性能提升技术研究。兼任住建设部防灾研究中心专家委员会委员、中国建筑节能协会工程改造与加固分会专家委员会委员等。先后参加2015年尼泊尔地震、2017年陕西省绥德县洪灾、2023年积石山地震房屋灾后安全评估工作。主持完成省部级重大研发课题3项，发表论文60余篇，出版专著5部，取得发明专利23项，主持完成600余项房屋安全鉴定等事故处理项目。科研成果分获重庆市科技进步一等奖、陕西省科技进步二等奖、华夏建设科学技术奖二等奖、陕西省科技进步三等奖、工程建设科学技术进步一等奖。</p>
+<p>个人先后获得陕西省青年科技新星、第十三届陕西省青年科技奖、“西安市英才计划”青年人才、陕西省中青年科技创新领军人才、工程建设科技创新人才万人计划-青年拔尖人才等荣誉称号。</p>
+<p>图片来源丨本文照片均由嘉宾本人提供。</p>
+<p>**责任编辑：**李会珍</p>
+<p><strong><em>相关阅读</em></strong></p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650466171&amp;idx=1&amp;sn=d7a5b2b941112d0a468f758d0442674a&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">【积石山地震专访】西南交大潘毅教授：查灾情远赴甘青二省，探究竟辗转黄河两岸</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650471949&amp;idx=1&amp;sn=dc308fc8a6d1d3ee0a85bbeea6d529c5&amp;chksm=bedbaf2689ac2630b62c3863498477062f30627f71a4c348eb36782d9300f088092c8f18c2e9&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">【积石山地震专访】甘肃省城乡规划院总工芮佳：连夜奔赴千里路，抗震救灾积石山</a></p>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650472322&amp;idx=1&amp;sn=8b6b8fa49043b41e00c4e47aa7efd33b&amp;chksm=bedbaea989ac27bfbe838442ac552e9141f9697edd4bbcc94123b30e8ef555de853927f0bc43&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">【积石山地震专访】中国建研院史铁花：千里奔赴担重任，勠力同心为房安</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650472413&amp;idx=1&amp;sn=cc31bc2b9f886c50de56ccf2e11bbf50&amp;chksm=bedbaef689ac27e078d23f071efa52f3d3fef9cbd7f35920f242c6609379eec3c677b8de9a23&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">【积石山地震专访】甘肃省院江重阳副总工：闻令而动奔赴灾区一线，挺膺担当诠释行业责任</a></h2>
+<p><em>原创转载请注意：原创文章48小时之后才能转载，且不能在文前和文中插入任何宣传性内容。在开头处应注明“本文来源：建筑结构（ID：buildingstructure）”。</em></p>
+<h2> </h2>
+<p><strong>推荐阅读</strong></p>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650445964&amp;idx=1&amp;sn=6f5d166faf8fe802de55ca9e97edf3fc&amp;chksm=bedbc9a789ac40b10e3893aff7a50110dfb07b05eadd9840d0cabcfbe4391411e010ad4fac7d&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"></a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650464920&amp;idx=1&amp;sn=5f83685561ede976236b7b874a40928d&amp;chksm=bedbb3b389ac3aa5bb407ddc7d5803b2b9c136c43a3bea57fdb93ec30425224a396a1a7a4512&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">建筑结构丨广州大学周云教授：砌体支墩消能减震原理与效果分析</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650464638&amp;idx=1&amp;sn=fb80ecd1f79f6b57ffd333b35ffc808d&amp;chksm=bedbb05589ac39433ac641748de571ef25515f0d19ad87bff4126f220847577443737fc6fbb0&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">建筑结构丨智能建造：基于建筑机器人的木结构建筑小批量定制化生产模式探索的实践案例</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650464428&amp;idx=1&amp;sn=1bc28f218817a2080f78d0003a41b36c&amp;chksm=bedbb18789ac3891025a12e64fafc42bcd0b640a81ffe33565183b74b69485b991cce4e5184e&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">建筑结构丨智能建造：3D打印技术及其在超高层建筑应用的可行性分析</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650458524&amp;idx=1&amp;sn=16b81e2d6debd24a7f433f2d9cd4d131&amp;chksm=bedb98b789ac11a12828ffb99e62637e4a0571be58cdbdf155956e9be706f1739b7064d4433f&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"></a></h2>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650451532&amp;idx=1&amp;sn=460803969d6bc4fd05de5a5bacac074e&amp;chksm=bedbff6789ac76713ced09efa279760fc75655ddb0c06ed0b2718cd829703409d2cf66c509d6&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">《建筑结构》2022年度优秀论文颁奖在苏州成功举办！</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650372905&amp;idx=1&amp;sn=902e1f08a198b2326d7eb28a51276cd0&amp;chksm=bed82a0289afa3149422a49e998c5d7fabe725b1768ba92e0b13d184385636f72610bc83aaf0&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">建筑结构丨喜讯！“第二届建筑结构行业杰出青年”入选名单正式公布</a></p>
+<h2> </h2>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650347208&amp;idx=1&amp;sn=19c0d28b6d0f1196bd7ddfa9182453fe&amp;chksm=bed847e389afcef51f773dad2c3ac548f158a32e88ca9807f0ab3b6354ed2263191962ad372f&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">@所有人｜《建筑结构》2022年大事记！感恩相伴，共赴未来…</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650347208&amp;idx=1&amp;sn=19c0d28b6d0f1196bd7ddfa9182453fe&amp;chksm=bed847e389afcef51f773dad2c3ac548f158a32e88ca9807f0ab3b6354ed2263191962ad372f&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"></a></p>
+<h2> </h2>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650347208&amp;idx=1&amp;sn=19c0d28b6d0f1196bd7ddfa9182453fe&amp;chksm=bed847e389afcef51f773dad2c3ac548f158a32e88ca9807f0ab3b6354ed2263191962ad372f&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"></a></p>
+<h2> </h2>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650347208&amp;idx=1&amp;sn=19c0d28b6d0f1196bd7ddfa9182453fe&amp;chksm=bed847e389afcef51f773dad2c3ac548f158a32e88ca9807f0ab3b6354ed2263191962ad372f&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"></a></p>
+<h2> </h2>
+<p><strong>重要通知</strong></p>
+<h2> </h2>
+<p><a href="https://www.ytsjk.cn/store/product/p-3591" target="_blank" rel="noopener noreferrer">【期刊订阅】《建筑结构》2024年期刊征订正式开启！</a></p>
+<h2> </h2>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650331475&amp;idx=3&amp;sn=b5511962384a6fedd90b330c7d67d0d8&amp;chksm=bed9887889ae016ec5b37a263b78adeaffe3ec05d8b64b081c2144f8d2c8c824b4efe597c09a&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"></a></p>
+<h2> </h2>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650331475&amp;idx=3&amp;sn=b5511962384a6fedd90b330c7d67d0d8&amp;chksm=bed9887889ae016ec5b37a263b78adeaffe3ec05d8b64b081c2144f8d2c8c824b4efe597c09a&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"></a></p>
+<h2> </h2>
+<p><strong>参编邀请</strong></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650429410&amp;idx=1&amp;sn=477cd65ab42bfe272555f06e607e0160&amp;chksm=bedb06c989ac8fdf74284b921eacf385e9c26c64e374ea95375a7a85c36e0fc8d5bab8461835&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·边坡孤石防治、搅拌桩技术规程</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650429458&amp;idx=1&amp;sn=2a9218603adf18ba71252ecb5c5d3e93&amp;chksm=bedb093989ac802f4a667556bf4de050995943b66ec51078b620597ab72a6d80addff947abb9&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·建筑智能化、产业化等技术规程</a></p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650433120&amp;idx=1&amp;sn=1eab8dda438f493c7e121e66577c502f&amp;chksm=bedb374b89acbe5daa6b99bbfcb0cee9f0ce6e202f6dec86f0797f8dba250ce3a66c077f507d&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·减隔震、加固改造、停车库等技术规程</a></p>
+<h2> <a href="https://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650350201&amp;idx=2&amp;sn=e95dcdb32f58cb7fd80868b2068dab28&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·钢结构钢材选用与检验技术规程</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650357133&amp;idx=3&amp;sn=213c73c6acbf8656b314ff1b4f7219ce&amp;chksm=bed86ca689afe5b0efec73eebd53f90db4712aecefefa0862731d37dbc285ae52ed83c7ade13&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·回弹法检测、激光扫描法检测</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650353361&amp;idx=3&amp;sn=69f3c09f1f1441173676282583acfeb3&amp;chksm=bed87ffa89aff6ec66111d29aa62822efd1cb9cf33aa216f95713641500d4082c9f8b1bcca5c&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·建筑消能减震装置认证标准</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650343892&amp;idx=2&amp;sn=68e9b4be494c6ecc8572d0cd1cd852f6&amp;chksm=bed858ff89afd1e9e70c6869e58b0a9993b201edbba5885dc22f95dbf48a761f78fe96d0bf4b&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·混凝土模块化建筑、装配整体式钢骨架混凝土结构</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650349894&amp;idx=2&amp;sn=82862e1bbef3cf80ef62ffaf766b6ca4&amp;chksm=bed8706d89aff97b2eea1afba3a561e1fae70f3d29285754ff6999b98203e0b039cb68c1a1a5&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·聚碳酸酯板屋面、建筑幕墙更新改造</a></h2>
+<h2> <a href="http://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650354080&amp;idx=2&amp;sn=f730d5e751bfe7076dcf08d5a5fbd048&amp;chksm=bed8608b89afe99d6e9499816a4054cfb3183a9d390d881eeb2d2fca35c8828ffafcd7432712&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">·钢结构性能化设计、高强钢混组合结构</a></h2>
+<h2> </h2>
+<p><strong>诚邀加入</strong></p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650259507&amp;idx=1&amp;sn=c403049eb6a7538f412207d59bfef84b&amp;chksm=bed6911889a1180e31f852ededf36fabd6d99b61b972e638678482fd5913ed8fcd65ab9f54cf&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"><img src="https://mmbiz.qpic.cn/mmbiz_jpg/1q18a1y9CO965MyTqibvmZ0hcMZwicMbic1uhp2nShmB9rwiaL7d3g8AJB8iaAJ1gCTbzXuqyXAhictAAJrncbAkjeiaw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></a></p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MjM5NzcwMTcwMA==&amp;mid=2650259553&amp;idx=1&amp;sn=630e0811318b5855d3f00ca6ab080554&amp;chksm=bed6914a89a1185c5228d527fca6fc28b27259517524447b016e32e49cb5fe3f698e3243dfe1&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer"><img src="https://mmbiz.qpic.cn/mmbiz_jpg/1q18a1y9CO965MyTqibvmZ0hcMZwicMbic1vh1EXG5uCWX6fEhkwXicMwzwWfnTdO143JfE1gficyqmQjBDMPQMslFg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></a></p>
+<p><strong>在线教育</strong></p>
+<p><a href="https://ibr.xet.tech/s/3sppR6" target="_blank" rel="noopener noreferrer"><img src="https://mmbiz.qpic.cn/mmbiz_png/1q18a1y9CO924KFetkHQhicWymduXUGUwtasleRsQpKQlVyqKwEpicDF8BWohTyh77ia02ooiaicEVR5dpx1F3qiaZVg/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></a></p>
+<p><a href="https://appjyro7q0b9006.h5.xiaoeknow.com/v1/goods/goods_detail/p_635dfac1e4b01126ea9d700a?type=3&amp;share_type=5&amp;share_user_id=u_61cac6192cbdb_AsWKYDjabq&amp;entry=2&amp;entry_type=2002" target="_blank" rel="noopener noreferrer"><img src="https://mmbiz.qpic.cn/mmbiz_jpg/1q18a1y9CO965MyTqibvmZ0hcMZwicMbic1ayrfD9w78IVYWL5U4SYGkZmBibiaLibuChZkg73ictlSzgqbzdlOSzf9iag/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></a></p>
+<p><a href="https://xbl.xet.tech/s/3EzgEq" target="_blank" rel="noopener noreferrer"><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/1q18a1y9CO9zcRWKUlyV5Ch4tFwt0npHJsMyxQ6R9iaAZOSOENFKRNLy30mC1laslH7K1hECw3bWl0zTMiafegQg/640?wx_fmt=png&amp;from=appmsg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></a></p>
+<p><a href="https://qjyxs.xetlk.com/s/1MviXm" target="_blank" rel="noopener noreferrer"><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/1q18a1y9CO8osmsGic5tVCbXLSiavP7GNJvrQ3PoibcXpkVt717F1nSVAIGw1sicASxXBp8OVSicURnEczPYesDaLibA/640?wx_fmt=jpeg&amp;from=appmsg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></a></p>
+<p><a href="https://www.ytsjk.cn/store/s-2008" target="_blank" rel="noopener noreferrer"><img src="https://mmbiz.qpic.cn/mmbiz_jpg/1q18a1y9CO8nkWoyBzcCt27EibiaXprCxnzwR1d64drV77DEDZJubjnZ8FPfjnVHOEkMMHNmZk0lDRjiaF5n3FvLw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></a></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/1q18a1y9CO8yHP7zFD24LCTqH1Otocs1iaxmGIgcYgRzra8EKf0B2Mz5e5uianITryfoBmAgkEjHbibbPtAEYTkxg/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="图片"></p>
+<h2> </h2>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWjKiapL98Oria66bg57VxkiaJwKTjRKYLpzn1Qo9w8Z575nyRVSwGXlw8k4XjEHib1Vic3007YLryicbQhw/640?wx_fmt=gif&amp;wxfrom=5&amp;wx_lazy=1" alt="图片"></p>
+<p><strong><strong>"<strong><strong>阅********读原文</strong></strong>"免费注册结构云学堂</strong></strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWjKiapL98Oria66bg57VxkiaJwyNXHpzrB5P8ic30yv2VxDiaFFXmaXkZ959KKYiaPAOAFjGze6Wibdw2N9Q/640?wx_fmt=gif&amp;wxfrom=5&amp;wx_lazy=1" alt="图片"></p>
+<p><strong>点赞</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/Ljib4So7yuWjKiapL98Oria66bg57VxkiaJwo6zuLZ0zJLXjb8m2ARia9vUF7rGlBXGb9FVN0ZC12MRT0WOZWp7tDibQ/640?wx_fmt=gif&amp;wxfrom=5&amp;wx_lazy=1" alt="图片"></p>
+<p><strong>在看</strong></p>
+]]></content:encoded>
+      <enclosure url="https://mmbiz.qpic.cn/sz_mmbiz_gif/MVPvEL7Qg0Egj76lSPicXbCTgBVIialdvwWxbm21OZytaf8P6xK86NglUjbFn8agwwLkdNhBNdSRvMLtiaXKjEj7A/640?wx_fmt=gif&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" type="image/"/>
+    </item>
     <item>
       <title></title>
       <link>https://jiange1236.github.io/fun/%E5%AD%97%E6%AF%8D%E8%A1%A8%E6%83%85%E5%AD%97%E7%AC%A6%E7%94%BB.html</link>
@@ -413,141 +788,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>玩客云</title>
-      <link>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html</link>
-      <guid>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91.html</guid>
-      <source url="https://jiange1236.github.io/rss.xml">玩客云</source>
-      <description>玩客云 nano /etc/apt/sources.list 删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free</description>
-      <pubDate>Fri, 17 Mar 2023 03:50:04 GMT</pubDate>
-      <content:encoded><![CDATA[<h1> 玩客云</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后更新软件源</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="#Docker%E5%AE%89%E8%A3%85"><strong>Docker安装</strong></a></p>
-<p><strong>Install Home Assistant Supervised</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>OS Agent</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>grub错误</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Home Assistant Supervised Debian Package</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Docker镜像</strong></p>
-<p>直接修改 <code>/etc/docker/daemon.json</code> (docker 版本 &gt;= 1.10 时) 内容为:</p>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改后重启服务:</p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <strong>HACS</strong></h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Supervisor</h2>
-<p>更新</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>卸载</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> Docker</h1>
-<h2> Docker安装</h2>
-<p><strong>Docker</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>国内镜像</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Docker基本命令</h2>
-<p>启动 Docker 服务</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 运行状态</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>将 Docker 服务加入开机自启动</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器在线状态及大小</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器的运行输出日志</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重新启动容器</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>停止容器的运行</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>移除容器</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 docker 容器占用 CPU，内存等信息</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 安装版本等信息</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重启 Docker（非容器）</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>清理 Docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 网络信息</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>检查 bridge 网络状态</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>批量停止</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>批量删除</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> Docker代理</h2>
-<ol>
-<li>
-<p>Create a systemd drop-in directory for the <code>docker</code> service:</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
-<li>
-<p>Create a file named <code>/etc/systemd/system/docker.service.d/http-proxy.conf</code> that adds the <code>HTTP_PROXY</code> environment variable:</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
-<li>
-<p>Flush changes and restart Docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
-<li>
-<p>Verify that the configuration has been loaded and matches the changes you made, for example:</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
-</ol>
-<p>修改hosts</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> Watchtower</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> OpenWrt</h1>
-<p>🔵打开网卡混杂模式</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建网络</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘[↑自己根据 玩客云 所在网段修改，如：玩客云IP:10.1.2.11，则10.1.1.0/24 改成 10.1.2.0/24，10.1.1.1改成主路由地址]</p>
-<p>🔵拉取 OpenWRT 镜像</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建容器</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘--name=OpenWrt 其中OpenWrt是容器名称，可以更改成你想要的，容器名称注意不要和其他容器一样，会冲突</p>
-<p>🔘--ip 10.1.1.13 其中10.1.1.13是容器IP，可以更改成你想要的，容器IP不要重复，这一项可删除</p>
-<p>🔵修改OpenWrt IP</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘OpenWrt 是容器名称，和你创建容器时的一致</p>
-<p>🔘镜像设置的默认IP是10.1.1.13，可通过该命令修改</p>
-<p>🔵管理密码是 password</p>
-<p>🔵LAN口固定IP地址，网关指向主路由IP地址</p>
-<p>iptables -t nat -I POSTROUTING eth0 -j MASQUERADE</p>
-<p>🔴设置 容器不自启动 、 停止容器 和 删除容器</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔴查看所有镜像</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘记录下 xuanaimai/openwrt 21-09-15 右边的 IMAGE ID（镜像ID，下面用得到）</p>
-<p>🔴删除镜像</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Alist</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看密码</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>使用<a href="http://ip:5244/" target="_blank" rel="noopener noreferrer">http://ip:5244</a>    来登录alist点击下面的管理输入管理员的账号和密码</p>
-<h1> Homepage</h1>
-<p><strong>Homepage</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>Homarr</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Flare</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> V2rayA</h1>
-<p>安装</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>开启IP转发</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> wireproxy</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Portainer</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> 青龙面板</h1>
-<p>青龙面板</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>检查服务</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>安装依赖</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改config.sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 京东脚本</h2>
-<p>1</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol>
-<li>KingRan库【推荐❤❤❤❤❤】</li>
-</ol>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2.Faker3【集合库（很多重复任务，自己禁用）❤❤❤❤】</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="3">
-<li>yyds【集合库❤❤❤】</li>
-</ol>
-<p>YYDS</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>YYDS_Pure</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>【注意】拉库前请打开青龙面板-配置文件 第18行 GithubProxyUrl="" 双引号中的内容删除。</p>
-<ol start="4">
-<li>环境保护【推荐❤❤❤❤】</li>
-</ol>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="5">
-<li>ccwav大佬的通知增强版和CK检测</li>
-</ol>
-<p>//不包含sendNotify:</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>//包含sendNotify:</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>6.【619】【集合库，可选】</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>7 .【zero205】【集合库，推荐拉KR即可】</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>8 .【6dylan6/jdpro】</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>9 .【青蛙/smiek2121】</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>10 .【船长】</p>
-<div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> DailyCheckIn</h2>
-<p>https://sitoi.gitee.io/dailycheckin/</p>
-<h2> BiliOutils</h2>
-<p>https://bilioutils.js.org/</p>
-<h1> WOL</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> DDNS-GO</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Lucky</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Cron</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>编辑定时自动脚本</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在ssh中执行脚本，然后编辑文件。</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>丢进去这个脚本，表示每天凌晨1点重启服务器。编辑完毕之后:wq保存退出。</p>
-<p>保存退出重启生效</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>OpenWRT 分流DNS的设置</title>
       <link>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</link>
       <guid>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</guid>
@@ -573,6 +813,7 @@
 <ul>
 <li>配置上游DNS为127.0.0.1</li>
 <li>设置重定向53端口到AdGuardHome，如果使用了lean大佬的固件，请在防火墙，自定义规则中删除添加的两条53端口重定向规则（大部分人都使用了lean的固件）</li>
+<li>DNS缓存大小 留空</li>
 </ul>
 <p>注意：设置了重定向后，所有DNS结果都将应答非权威记录，如果不了解DNS协议请无视，这条并不会影响什么。</p>
 <h2> SmartDNS</h2>
@@ -603,7 +844,7 @@
 <p>无需任何设置，如果有设置请改回，除了上游服务器是127.0.0.1:6053。</p>
 <h2> 一些配置</h2>
 <p>smartdns 部分直接 vim 编辑 /etc/config/smartdns 照抄即可，无需手动设置，配置完记得界面上点击保存应用，或者uci命令刷新配置，我里面有杭州电信的DNS服务器，不是杭州的记得自己改掉，否则可能有负面效果。</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 如何验证？</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 如何验证？</h2>
 <p>登录路由器 使用 dig 或者 nslookup 检查下各端口的DNS以及分流情况</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>注：如果手动查询规则列表内的域名，使用端口6053，然后匹配规则，转发给7913，然后被缓存住。（国外因为跳过测速，所以多个域名是正确的）</p>
 ]]></content:encoded>
@@ -4091,8 +4332,11 @@
 <p><strong>楼梯、栏杆</strong></p>
 <p>栏杆高度1.1m 顶部水平荷载 1.0kN/m （学校类建筑取 1.5kN/m）</p>
 <p>装配搁置式楼梯，取砼容重38，栏杆荷载1.0，抹灰荷载等，楼梯间活荷载(多层住宅 2.0 其他 3.5kN/m2)</p>
-<p><strong>厂房屋面</strong></p>
-<p>湘建设〔2008〕80号：对于轻型屋面、大跨度悬臂等结构防范冰雪灾害工作问题，工程设计企业严格按照湘建明电[2008]13号文要求，在严格执行国家现行《建筑结构荷载规范》的基础上，根据我省气候特点，适当考虑冰荷载的影响，在规范作出调整之前，不上人的屋面活荷载不宜少于0.7KN/m2</p>
+<hr>
+<!--**厂房屋面**-->
+<!--湘建设〔2008〕80号：对于轻型屋面、大跨度悬臂等结构防范冰雪灾害工作问题，工程设计企业严格按照湘建明电[2008]13号文要求，在严格执行国家现行《建筑结构荷载规范》的基础上，根据我省气候特点，适当考虑冰荷载的影响，在规范作出调整之前，不上人的屋面活荷载不宜少于0.7KN/m2-->
+<!--2018年5月15日，我厅下发《湖南省住房和城乡建设厅关于宣布<关于进一步推动我省建筑业开拓省外、国外市场的意见>等32件规范性文件失效的通知》（湘建法[2018]84号），明确宣布《关于做好房屋建筑工程抵御冰雪灾害设计工作的通知》（湘建设[2008]80号）文件失效。因此，从2018年5月15日起，轻钢屋面的活荷载标准值取值严格执行国家发布的现行技术标准，不再执行《关于做好房屋建筑工程抵御冰雪灾害设计工作的通知》（湘建设[2008]80号）有关规定。-->
+<hr>
 <h2> 2012</h2>
 <p></p>
 <p></p>
@@ -11640,11 +11884,14 @@
       <link>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</link>
       <guid>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</guid>
       <source url="https://jiange1236.github.io/rss.xml">Openwrt</source>
-      <description>[toc] Openwrt R2S https://github.com/fanck0605/openwrt-nanopi-r2s https://github.com/fanck0605/friendlywrt-nanopi-r2s https://github.com/klever1988/nanopi-openwrt https://github.com/kiddin9/OpenWrt_x86-r2s-r4s https://github.com/QiuSimons/YAOF</description>
+      <description>[toc] Openwrt OPKG 原版 src/gz openwrt_core https://dl.openwrt.ai/23.05/targets/mediatek/mt7622/5.15.147 src/gz openwrt_base https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/base src/gz openwrt_packages https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/packages src/gz openwrt_luci https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/luci src/gz openwrt_routing https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/routing src/gz openwrt_kiddin9 https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/kiddin9</description>
       <pubDate>Sat, 14 May 2022 16:30:31 GMT</pubDate>
       <content:encoded><![CDATA[<p>[toc]</p>
 <h1> Openwrt</h1>
-<h2> R2S</h2>
+<h2> OPKG</h2>
+<p>原版</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>查找大文件</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> R2S</h2>
 <p>https://github.com/fanck0605/openwrt-nanopi-r2s</p>
 <p>https://github.com/fanck0605/friendlywrt-nanopi-r2s</p>
 <p>https://github.com/klever1988/nanopi-openwrt</p>
@@ -11676,23 +11923,17 @@
 <h3> 安卓</h3>
 <p>https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</p>
 <p></p>
-<h2> passwall</h2>
-<p>trojan-go://1992919@zecdn.tk:443/?sni=zecdn.tk&amp;type=ws&amp;host=zecdn.tk&amp;path=%2Fzewebsocket&amp;encryption=none#zecdn.tk</p>
-<p>trojan-go://1992919@zetor.ml:443/?sni=zetor.ml&amp;type=ws&amp;host=zetor.ml&amp;path=%2Fzewebsocket&amp;encryption=none#zetor.ml</p>
-<p>trojan-go://1992919@162.159.204.212:443/?sni=zecdn.tk&amp;type=ws&amp;host=zecdn.tk&amp;path=%2Fzewebsocket&amp;encryption=none#162.159.204.212</p>
-<p>trojan-go://1992919@2a06:98c1:3121:a3f6:4384:cf33:3031:5ee9:443/?sni=zecdn.tk&amp;type=ws&amp;host=zecdn.tk&amp;path=%2Fzewebsocket&amp;encryption=none#2a06:98c1:3121:a3f6:4384:cf33:3031:5ee9</p>
-<p>trojan-go://1992919@2606:4700:83b9:700d:c277:9911:6ad2:31fc:443/?sni=zecdn.tk&amp;type=ws&amp;host=zecdn.tk&amp;path=%2Fzewebsocket&amp;encryption=none#2606:4700:83b9:700d:c277:9911:6ad2:31fc</p>
-<p>vmess://eyJ2IjoiMiIsInBzIjoidjJyLWhlcm8iLCJhZGQiOiIyNjA2OjQ3MDA6ODNiOTo3MDBkOmMyNzc6OTkxMTo2YWQyOjMxZmMiLCJwb3J0IjoiNDQzIiwiaWQiOiJhZDgwNjQ4Ny0yZDI2LTQ2MzYtOThiNi1hYmNkY2M4NTIxZjciLCJob3N0IjoiemVjZG4ubWwiLCJwYXRoIjoiLyIsIm5ldCI6IndzIiwic2VjdXJpdHkiOiJhdXRvIiwidGxzIjoidGxzIiwic25pIjoiemVjZG4ubWwifQ==</p>
-<p>trojan-go://1992919@2606:4700:83b9:700d:c277:9911:6ad2:31fc:443/?sni=zecdn.gq&amp;type=ws&amp;host=zecdn.gq&amp;path=%2Fzewebsocket&amp;encryption=none#oracle-2606:4700:83b9:700d:c277:9911:6ad2:31fc</p>
-<h2> adh</h2>
-<p></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> SSH</h2>
+<h2> AdGuard Home</h2>
+<p>最近128m的小闪存运行AdGuardHome几天后，空间就爆了，改成只记录一天的日志还是爆，后来发现即使设置成一天，AdGuardHome也不是覆写，而是把旧的日志文件重命名继续保存了。
+所以用到了以下代码，自动删除旧的日志文件。直接计划任务里面添加以下代码</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
+此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。</p>
+<h2> SSH</h2>
 <p>根据韩风大佬的视频整理的笔记，方便记忆，原视频地址：https://www.bilibili.com/video/BV1hT4y1E78k</p>
 <p>因为前期创建zerotier账号并加入设备较简单，这里不再做记录，有需要的可以参考原视频，或这里，</p>
 <p>https://gitee.com/xiaominglei001/forMarkdown/raw/master/FireShot Capture 044 - 20210412150410.png (1275×8773) - gitee.com.png</p>
 <p>补充：</p>
 <p>最好选择private加入，否则30天不登录会被删除。</p>
-<p>目前我的：e4da7455b20b4ea6</p>
 <p></p>
 <p></p>
 <p></p>
@@ -11810,7 +12051,7 @@
 <p>更新时间星期：每天</p>
 <p>更新时间小时：0点</p>
 <p><strong>规则列表</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>服务器端</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>服务器端</strong></p>
 <p>启用：√</p>
 <p>端口：10801</p>
 <h3> DDNS.to内网穿透</h3>
@@ -11822,7 +12063,13 @@
 <p>MosDNS 日志文件：/dev/null</p>
 <p>启用 DNS 重定向： √</p>
 <p>启用 DNS 广告过滤：√</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 全能推送</h3>
+<p><strong>卸载</strong></p>
+<p>曾经安装过其他版本的 MosDNS LuCI 或使用的固件自带了 MosDNS，安装后可能无法正常运行，你需要先将其它来源的版本卸载并清除数据残留后再装才能使用。</p>
+<p>解决方法：</p>
+<p>1、卸载包含 <strong>mosdns</strong> 字符的所有软件包
+2、删除数据 <code>rm -rf /etc/config/mosdns /etc/mosdns</code>
+3、重新安装 mosdns</p>
+<h3> 全能推送</h3>
 <p><strong>基本设置</strong></p>
 <p>启用 ： √</p>
 <p>推送模式：钉钉</p>
@@ -11947,12 +12194,11 @@
 <p>本地 IPV6 DNS 服务器：□</p>
 <p><strong>wan</strong></p>
 <p>设备：eth1</p>
-<p>PAP/CHAP 用户名：731X12966710</p>
-<p>PAP/CHAP 密码：023150</p>
 <p><strong>zerotier</strong></p>
 <p>设备：ztyqb6d54s</p>
 <h4> 全局网络选项</h4>
-<p>IPv6 ULA 前缀：</p>
+<p>IPv6 ULA 前缀：
+<s>fdc0:0e88:a625::/48</s></p>
 <h3> DHCP/DNS</h3>
 <h4> 高级设置</h4>
 <p>过滤 IPv6 记录：□</p>
@@ -23779,325 +24025,6 @@ ak加速器：https://www.akspeedy.com/
 <p>一个在线工具，可以检查某个网站使用了哪些追踪技术。</p>
 ]]></content:encoded>
       <enclosure url="https://cdn.jsdelivr.net/gh/jiange1236/MyImage/MdImg/1586485194470-ebb43c09-a27d.jpeg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>免费随机图片api</title>
-      <link>https://jiange1236.github.io/others/%E5%85%8D%E8%B4%B9%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api.html</link>
-      <guid>https://jiange1236.github.io/others/%E5%85%8D%E8%B4%B9%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87api.html</guid>
-      <source url="https://jiange1236.github.io/rss.xml">免费随机图片api</source>
-      <description>免费随机图片api接口</description>
-      <category>other</category>
-      <pubDate>Sun, 20 Mar 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h1> 免费随机图片api接口</h1>
-<h2> api接口整合</h2>
-<p>樱花：https://www.dmoe.cc/random.php</p>
-<p>晓晴博客：https://acg.toubiec.cn/random.php</p>
-<p>Unsplash Source | API Documentation：详情请看官网介绍</p>
-<p>夏沫博客：https://cdn.seovx.com/?mom=302</p>
-<p>https://cdn.seovx.com/d/?mom=302</p>
-<p>https://cdn.seovx.com/ha/?mom=302</p>
-<p>心灵毒鸡汤:https://cdn.seovx.com/api/su/</p>
-<p>二次元随机图：https://api.blogbig.cn/random/api.php</p>
-<p>搏天api：https://api.btstu.cn/sjbz/api.php</p>
-<p>姬长信API For Docker：</p>
-<p>----每日bing：https://api.isoyu.com/bing_images.php</p>
-<p>----美女图片壁纸：https://api.isoyu.com/mm_images.php</p>
-<p>----网红专栏壁纸：https://api.isoyu.com/beibei_images.php</p>
-<p>----动态IP签名图片：https://api.isoyu.com/ip_images.php?signature=早安</p>
-<p>----ARU(阿鲁)表情包：https://api.isoyu.com/ARU_GIF_S.php</p>
-<p>樱道：https://api.r10086.com/动漫综合1.php （网站中有更多api接口）</p>
-<p>小歪API：https://api.ixiaowai.cn/api/api.php（二次元动漫）</p>
-<p>https://api.ixiaowai.cn/mcapi/mcapi.php（mc酱动漫）</p>
-<p>https://api.ixiaowai.cn/gqapi/gqapi.php（高清壁纸）</p>
-<p>保罗｜API：https://api.paugram.com/wallpaper/</p>
-<p>墨天逸：https://api.mtyqx.cn/tapi/random.php</p>
-<p>EEE.DOG：https://api.yimian.xyz/img</p>
-<p>动漫星空：https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php</p>
-<p>岁月小筑：#https调用https://img.xjh.me/random_img.php</p>
-<p>#http调用http://img.xjh.me/random_img.php</p>
-<p>东方Project：https://img.paulzzh.tech/touhou/random</p>
-<p>主题作者Tagaki的API（有时候会挂）</p>
-<ul>
-<li>https://api.lixingyong.com/api/images</li>
-</ul>
-<p>暗鸦API</p>
-<ul>
-<li><a href="https://img.r10086.com/" target="_blank" rel="noopener noreferrer">使用文档</a></li>
-<li>由于分类太细了，自行去站点查看</li>
-</ul>
-<p>Unsplash API</p>
-<ul>
-<li><a href="https://source.unsplash.com/" target="_blank" rel="noopener noreferrer">使用文档</a></li>
-<li>https://source.unsplash.com/random</li>
-<li>https://source.unsplash.com/user/erondu</li>
-<li>功能挺多的，自行去站点查看</li>
-</ul>
-<p>电脑动漫图片：http://api.btstu.cn/sjbz/?lx=dongman</p>
-<p>电脑美女图片：http://api.btstu.cn/sjbz/?lx=meizi</p>
-<p>电脑随机动漫妹子：http://api.btstu.cn/sjbz/?lx=suiji</p>
-<p>手机动漫图片：http://api.btstu.cn/sjbz/?lx=m_dongman</p>
-<p>手机美女图片：http://api.btstu.cn/sjbz/?lx=m_meizi</p>
-<p>手机随机动漫妹子：http://api.btstu.cn/sjbz/?m_lx=suiji</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> api网站整合</h1>
-<h2> 随机图库 Lorem Picsum</h2>
-<h3> 获取指定大小的随机图片</h3>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://picsum.photos/200/300" alt="img">
-这样你就能得到一张宽度为200，高度为300的随机图片</p>
-<p>如果你想要获得正方形图片，只需要如下代码</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://picsum.photos/200" alt="img"></p>
-<p>这样你就能得到一张宽度为200，高度为200的随机正方形图片</p>
-<h3> 获取指定id的图片</h3>
-<hr>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://picsum.photos/id/237/200/300" alt="img"></p>
-<p><a href="https://link.segmentfault.com/?enc=10djdrYAQMXJVtrDdbBnFw%3D%3D.jKRLI%2BiBN1j%2BPnROsQ8lK5Zyvc9yKkOJ%2FbfjTOpyCI8%3D" target="_blank" rel="noopener noreferrer">所有图片列表</a></p>
-<h3> 静态随机图片</h3>
-<hr>
-<p>每次根据种子获得相同的随机图像，方法是在URL开头添加<code>/seed/ {seed}</code>。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://picsum.photos/seed/picsum/200" alt="img"></p>
-<h3> 灰度图片</h3>
-<hr>
-<p>只需要在链接末尾添加<code>?grayscale</code>即可</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://picsum.photos/200/300?grayscale" alt="img"></p>
-<h3> 模糊图片</h3>
-<hr>
-<p>通过附加<code>?blur</code>到url的末尾获得模糊图像。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://picsum.photos/200/200/?blur" alt="img"></p>
-<p>可以通过提供介于1和10之间的数字来调整模糊量。</p>
-<div class="language-apache line-numbers-mode" data-ext="apache"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://picsum.photos/200?blur=2" alt="img"></p>
-<h3> 高级用法</h3>
-<hr>
-<p>您可以结合使用以上任何选项。</p>
-<p>例如，要获得灰度和模糊的特定图像。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><img src="https://picsum.photos/id/870/200?grayscale&amp;blur=2" alt="img"></p>
-<p>要在浏览器中请求多张相同大小的图像，请添加<code>random</code>查询参数以防止图像被缓存：</p>
-<div class="language-routeros line-numbers-mode" data-ext="routeros"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>如果您需要文件结尾，则可以添加<code>.jpg</code>到url的结尾。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>要获取WebP格式的图像，可以将其添加<code>.webp</code>到URL的末尾。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> 列出图片</h3>
-<hr>
-<p>使用<code>/v2/list</code>端点获取图像列表。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>默认情况下，该API每页将返回30个项目。</p>
-<p>要请求另一个页面，请使用<code>?page</code>参数。</p>
-<p>要更改每页的项目数量，请使用<code>?limit</code>参数。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>该<code>Link</code>头包括关于下一首/上页分页信息</p>
-<h3> 图像细节</h3>
-<hr>
-<p>使用<code>/id/{id}/info</code>端点获取有关特定图像的信息。</p>
-<div class="language-awk line-numbers-mode" data-ext="awk"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>您可以通过查看<code>Picsum-ID</code>标题或<code>User Comment</code>EXIF元数据中的字段来查找图像的ID 。</p>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 樱花</h2>
-<blockquote>
-<p>网址：https://www.dmoe.cc/</p>
-</blockquote>
-<ul>
-<li>随机二次元图片API</li>
-</ul>
-<p>API基本调用格式：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>参数：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>JSON调用格式</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>JSON数据</p>
-<div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 晓晴博客</h2>
-<blockquote>
-<p>网址：https://www.toubiec.cn/318.html</p>
-</blockquote>
-<ul>
-<li>随机二次元图片接口</li>
-</ul>
-<p>源码项目地址：https://www.toubiec.cn/99.html</p>
-<h2> Unsplash Source | API Documentation</h2>
-<blockquote>
-<p>网址：https://source.unsplash.com/</p>
-</blockquote>
-<ul>
-<li>简单的嵌入Unsplash图片，可以登录Unsplash账号设置，也可以自定义筛选接口的图片类型</li>
-</ul>
-<p>随机搜索术语
-使用上述任何格式，您可以通过在 URL 末尾提供逗号分离的搜索词列表来进一步缩小随机照片的选择范围。</p>
-<p>如果您想将结果限制在我们精心策划的收藏中，只需在 URL 末尾添加即可。featured</p>
-<p>参数</p>
-<p>https://source.unsplash.com/featured/?{KEYWORD},{KEYWORD}
-1
-*可选地指定大小，将其放置在基座URL之后。</p>
-<p>例</p>
-<p>https://source.unsplash.com/1600x900/?nature,water</p>
-<h2> 夏沫博客</h2>
-<blockquote>
-<p>网址：https://cdn.seovx.com/</p>
-</blockquote>
-<ul>
-<li>在线古风美图二次元API接口</li>
-</ul>
-<p>美图接口代码示例:</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>二次元接口代码示例:</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>古风接口代码示例:</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> 二次元随机图</h2>
-<blockquote>
-<p>网址：https://api.blogbig.cn/random</p>
-</blockquote>
-<ul>
-<li>该api已停运，原接口保持但不维护</li>
-</ul>
-<p>二次元随机图API请求方式</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
-<li>
-<p>请求地址</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
-<li>
-<p>参数</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
-</ul>
-<p>返回数据</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 搏天api</h2>
-<blockquote>
-<p>网址：https://api.btstu.cn/doc/sjbz.php</p>
-</blockquote>
-<ul>
-<li>
-<p>随机输出各类壁纸</p>
-</li>
-<li>
-<p>请求方式：get</p>
-</li>
-<li>
-<p>请求地址：https://api.btstu.cn/sjbz/api.php</p>
-</li>
-<li>
-<p>返回格式：json/images</p>
-</li>
-<li>
-<p>请求示例：https://api.btstu.cn/sjbz/api.php?format=images</p>
-</li>
-</ul>
-<p>请求参数：</p>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>必填</th>
-<th>类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>method</td>
-<td>否</td>
-<td>string</td>
-<td>输出壁纸端[mobile/pc/zsy]默认为pc</td>
-</tr>
-<tr>
-<td>lx</td>
-<td>否</td>
-<td>string</td>
-<td>选择输出分类[meizi/dongman/fengjing/suiji]，为空随机输出</td>
-</tr>
-<tr>
-<td>format</td>
-<td>否</td>
-<td>string</td>
-<td>输出壁纸格式[json/images]默认为images</td>
-</tr>
-</tbody>
-</table>
-<p>返回参数：</p>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>code</td>
-<td>string</td>
-<td>返回的状态码</td>
-</tr>
-<tr>
-<td>imgurl</td>
-<td>string</td>
-<td>返回图片地址</td>
-</tr>
-<tr>
-<td>width</td>
-<td>string</td>
-<td>返回图片宽度</td>
-</tr>
-<tr>
-<td>height</td>
-<td>string</td>
-<td>返回图片高度</td>
-</tr>
-</tbody>
-</table>
-<h2> 姬长信API For Docker</h2>
-<blockquote>
-<p>网址：https://api.isoyu.com/</p>
-</blockquote>
-<ul>
-<li>姬长信API For Docker 一个基于多种编程语言开源免费不限制提供生活常用,出行服务,开发工具,金融服务,通讯服务和公益大数据的平台.</li>
-</ul>
-<h2> 樱道</h2>
-<blockquote>
-<p>网址：https://img.r10086.com/</p>
-</blockquote>
-<h2> 小歪API</h2>
-<blockquote>
-<p>网址：https://api.ixiaowai.cn/</p>
-</blockquote>
-<ul>
-<li>图片API，文字API，二维码API，随心所动不再单调</li>
-</ul>
-<p>图片API基本调用格式：
-https://api.ixiaowai.cn/api/api.php（二次元动漫）
-https://api.ixiaowai.cn/mcapi/mcapi.php（mc酱动漫）
-https://api.ixiaowai.cn/gqapi/gqapi.php（高清壁纸）</p>
-<ul>
-<li>
-<p>JSON调用格式</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
-</ul>
-<h2> 保罗｜API</h2>
-<blockquote>
-<p>网址：https://api.paugram.com/help/wallpaper</p>
-</blockquote>
-<ul>
-<li>生成适合 Single 主题的白底动漫壁纸</li>
-</ul>
-<h2> 墨天逸</h2>
-<blockquote>
-<p>网址：https://api.mtyqx.cn/</p>
-</blockquote>
-<ul>
-<li>
-<p>随机图片API</p>
-</li>
-<li>
-<p>API基本调用格式：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
-</ul>
-<p>EEE.DOG
-网址：https://www.eee.dog/tech/rand-pic-api.html</p>
-<p>本API基于华为云对象存储，使用华为CDN云加速，全球平均下载速度达10MB/s。API中已收录1100+张二次元图片，20+张Bing壁纸(每日自动抓取)，150+张二次元头像，10+张图床上传图片。</p>
-<h2> 动漫星空</h2>
-<blockquote>
-<p>网址：https://api.dongmanxingkong.com/</p>
-</blockquote>
-<h2> 岁月小筑</h2>
-<blockquote>
-<p>网址：https://img.xjh.me/</p>
-</blockquote>
-<ul>
-<li>随机图片API</li>
-</ul>
-<h2> 东方Project</h2>
-<blockquote>
-<p>网址：https://img.paulzzh.tech/</p>
-</blockquote>
-<ul>
-<li>随机图片API</li>
-</ul>
-]]></content:encoded>
-      <enclosure url="https://picsum.photos/200/300" type="image/"/>
     </item>
   </channel>
 </rss>
