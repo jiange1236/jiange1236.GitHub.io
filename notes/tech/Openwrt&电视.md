@@ -2,6 +2,25 @@
 
 # Openwrt
 
+## OPKG
+
+原版
+
+```
+src/gz openwrt_core https://dl.openwrt.ai/23.05/targets/mediatek/mt7622/5.15.147
+src/gz openwrt_base https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/base
+src/gz openwrt_packages https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/packages
+src/gz openwrt_luci https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/luci
+src/gz openwrt_routing https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/routing
+src/gz openwrt_kiddin9 https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/kiddin9
+```
+
+查找大文件
+
+```
+find / -type f -size +5120b
+```
+
 ## R2S
 
 https://github.com/fanck0605/openwrt-nanopi-r2s
@@ -70,358 +89,17 @@ https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 
 ![image-20211218114841912](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-20211218114841912.png)
 
-## passwall
+## AdGuard Home
 
-trojan-go://1992919@zecdn.tk:443/?sni=zecdn.tk&type=ws&host=zecdn.tk&path=%2Fzewebsocket&encryption=none#zecdn.tk
-
-trojan-go://1992919@zetor.ml:443/?sni=zetor.ml&type=ws&host=zetor.ml&path=%2Fzewebsocket&encryption=none#zetor.ml
-
-trojan-go://1992919@162.159.204.212:443/?sni=zecdn.tk&type=ws&host=zecdn.tk&path=%2Fzewebsocket&encryption=none#162.159.204.212
-
-trojan-go://1992919@2a06:98c1:3121:a3f6:4384:cf33:3031:5ee9:443/?sni=zecdn.tk&type=ws&host=zecdn.tk&path=%2Fzewebsocket&encryption=none#2a06:98c1:3121:a3f6:4384:cf33:3031:5ee9
-
-trojan-go://1992919@2606:4700:83b9:700d:c277:9911:6ad2:31fc:443/?sni=zecdn.tk&type=ws&host=zecdn.tk&path=%2Fzewebsocket&encryption=none#2606:4700:83b9:700d:c277:9911:6ad2:31fc
-
-vmess://eyJ2IjoiMiIsInBzIjoidjJyLWhlcm8iLCJhZGQiOiIyNjA2OjQ3MDA6ODNiOTo3MDBkOmMyNzc6OTkxMTo2YWQyOjMxZmMiLCJwb3J0IjoiNDQzIiwiaWQiOiJhZDgwNjQ4Ny0yZDI2LTQ2MzYtOThiNi1hYmNkY2M4NTIxZjciLCJob3N0IjoiemVjZG4ubWwiLCJwYXRoIjoiLyIsIm5ldCI6IndzIiwic2VjdXJpdHkiOiJhdXRvIiwidGxzIjoidGxzIiwic25pIjoiemVjZG4ubWwifQ==
-
-trojan-go://1992919@2606:4700:83b9:700d:c277:9911:6ad2:31fc:443/?sni=zecdn.gq&type=ws&host=zecdn.gq&path=%2Fzewebsocket&encryption=none#oracle-2606:4700:83b9:700d:c277:9911:6ad2:31fc
-
-
-
-## adh
-
-![image-20211218114940424](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-20211218114940424.png)
+最近128m的小闪存运行AdGuardHome几天后，空间就爆了，改成只记录一天的日志还是爆，后来发现即使设置成一天，AdGuardHome也不是覆写，而是把旧的日志文件重命名继续保存了。
+所以用到了以下代码，自动删除旧的日志文件。直接计划任务里面添加以下代码
 
 ```
-bind_host: 0.0.0.0
-bind_port: 3000
-beta_bind_port: 0
-users:
-- name: root
-  password: $2y$10$tf9yPgZz2Alq6IAo0n70eeIavkCi1gTaEHjZMAmhMyH5BWevrFjsi
-auth_attempts: 5
-block_auth_min: 15
-http_proxy: ""
-language: zh-cn
-debug_pprof: false
-web_session_ttl: 720
-dns:
-  bind_hosts:
-  - 0.0.0.0
-  port: 5553
-  statistics_interval: 1
-  querylog_enabled: true
-  querylog_file_enabled: true
-  querylog_interval: 6h
-  querylog_size_memory: 1000
-  anonymize_client_ip: false
-  protection_enabled: true
-  blocking_mode: default
-  blocking_ipv4: ""
-  blocking_ipv6: ""
-  blocked_response_ttl: 10
-  parental_block_host: family-block.dns.adguard.com
-  safebrowsing_block_host: standard-block.dns.adguard.com
-  ratelimit: 0
-  ratelimit_whitelist: []
-  refuse_any: true
-  upstream_dns:
-  - 211.142.211.124
-  - 111.8.14.18
-  - 223.5.5.5
-  - 8.8.8.8
-  - tcp://223.5.5.5
-  - tcp://223.6.6.6
-  - tcp://8.8.4.4
-  - https://1.1.1.1/dns-query
-  - https://1.0.0.1/dns-query
-  - tls://dns.google:853
-  - 2400:3200::1
-  - 240c::6666
-  - 2001:4860:4860::8888
-  upstream_dns_file: ""
-  bootstrap_dns:
-  - 114.114.114.114:53
-  - 8.8.8.8:53
-  - 223.5.5.5:53
-  - 180.76.76.76:53
-  - 2001:4860:4860::8888
-  - 2620:fe::10
-  - 2620:fe::fe:10
-  all_servers: true
-  fastest_addr: false
-  fastest_timeout: 1s
-  allowed_clients: []
-  disallowed_clients: []
-  blocked_hosts:
-  - version.bind
-  - id.server
-  - hostname.bind
-  trusted_proxies:
-  - 127.0.0.0/8
-  - ::1/128
-  cache_size: 8388608
-  cache_ttl_min: 10
-  cache_ttl_max: 86400
-  cache_optimistic: false
-  bogus_nxdomain: []
-  aaaa_disabled: false
-  enable_dnssec: true
-  edns_client_subnet: false
-  max_goroutines: 300
-  ipset: []
-  filtering_enabled: true
-  filters_update_interval: 24
-  parental_enabled: false
-  safesearch_enabled: false
-  safebrowsing_enabled: false
-  safebrowsing_cache_size: 1048576
-  safesearch_cache_size: 1048576
-  parental_cache_size: 1048576
-  cache_time: 30
-  rewrites: []
-  blocked_services: []
-  upstream_timeout: 10s
-  local_domain_name: lan
-  resolve_clients: true
-  use_private_ptr_resolvers: true
-  local_ptr_upstreams: []
-tls:
-  enabled: false
-  server_name: ""
-  force_https: false
-  port_https: 443
-  port_dns_over_tls: 853
-  port_dns_over_quic: 784
-  port_dnscrypt: 0
-  dnscrypt_config_file: ""
-  allow_unencrypted_doh: false
-  strict_sni_check: false
-  certificate_chain: ""
-  private_key: ""
-  certificate_path: ""
-  private_key_path: ""
-filters:
-- enabled: false
-  url: http://sub.adtchrome.com/adt-chinalist-easylist.txt
-  name: 广告终结者使用的拦截规则，基于ChinaList&EasyList修正维护
-  id: 139789181
-- enabled: false
-  url: https://easylist-downloads.adblockplus.org/easylist.txt
-  name: EasyList-去除国际网页中大多数广告，包括不需要的框架、图像和对象
-  id: 139789112
-- enabled: false
-  url: https://easylist-downloads.adblockplus.org/easylistchina.txt
-  name: EasyList China-EasyList针对国内的补充规则
-  id: 139789121
-- enabled: false
-  url: https://anti-ad.net/easylist.txt
-  name: anti-AD命中率最高列表
-  id: 139789122
-- enabled: false
-  url: https://gitee.com/halflife/list/raw/master/ad.txt
-  name: halflife合并乘风
-  id: 139789131
-- enabled: true
-  url: https://easylist.to/easylist/easyprivacy.txt
-  name: EasyPrivacy隐私相关
-  id: 139789132
-- enabled: false
-  url: https://www.i-dont-care-about-cookies.eu/abp/
-  name: I don't care about cookies隐私相关
-  id: 139789133
-- enabled: false
-  url: https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/all.txt
-  name: 百万ADH广告拦截过滤规则
-  id: 139789141
-- enabled: false
-  url: https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds-Ultra.txt
-  name: GoodbyeAds 大全去广告
-  id: 139789142
-- enabled: true
-  url: https://gist.githubusercontent.com/Ewpratten/a25ae63a7200c02c850fede2f32453cf/raw/b9318009399b99e822515d388b8458557d828c37/hosts-yt-ads
-  name: YouTube-去广告
-  id: 139789143
-- enabled: false
-  url: https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
-  name: 1024host
-  id: 139789151
-- enabled: false
-  url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext
-  name: Peter Lowe’s Ad and tracking server list​
-  id: 139789152
-- enabled: false
-  url: https://easylist.to/easylist/fanboy-social.txt
-  name: Fanboy's Social Blocking List
-  id: 139789153
-- enabled: false
-  url: https://easylist.to/easylist/fanboy-annoyance.txt
-  name: Fanboy's Annoyance List
-  id: 139789154
-- enabled: false
-  url: https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
-  name: EasyList Cookie List
-  id: 139789155
-- enabled: false
-  url: https://fanboy.co.nz/fanboy-antifacebook.txt
-  name: Anti-Facebook List
-  id: 139789161
-- enabled: true
-  url: https://filters.adtidy.org/extension/ublock/filters/14.txt
-  name: AdGuard Annoyances filter
-  id: 139789162
-- enabled: false
-  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
-  name: MalwareDomainList.com Hosts List
-  id: 139789163
-- enabled: false
-  url: https://www.fanboy.co.nz/enhancedstats.txt
-  name: Fanboy's Enhanced Tracking List
-  id: 139789164
-- enabled: true
-  url: https://filters.adtidy.org/extension/ublock/filters/3.txt
-  name: AdGuard Tracking Protection filter
-  id: 139789165
-- enabled: false
-  url: https://easylist.to/easylist/easylist.txt
-  name: EasyList
-  id: 139789171
-- enabled: true
-  url: https://filters.adtidy.org/extension/ublock/filters/11.txt
-  name: AdGuard Mobile Ads filter
-  id: 139789172
-- enabled: true
-  url: https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
-  name: AdGuard Base filter
-  id: 139789173
-- enabled: false
-  url: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-  name: Adblock Warning Removal List
-  id: 139789174
-- enabled: false
-  url: https://fanboy.co.nz/fanboy-problematic-sites.txt
-  name: Fanboy's problematic-sites
-  id: 139789175
-- enabled: false
-  url: https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt
-  name: Adbyby Lazy Rule
-  id: 139789182
-- enabled: false
-  url: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
-  name: hosts
-  id: 139789183
-- enabled: false
-  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
-  name: aak-cont-list-notubo
-  id: 139789184
-- enabled: false
-  url: https://adaway.org/hosts.txt
-  name: Adaway HOST
-  id: 139789187
-- enabled: true
-  url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
-  name: 乘风 广告过滤规则
-  id: 1639281510
-- enabled: false
-  url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
-  name: 乘风 视频过滤规则
-  id: 1639281511
-- enabled: true
-  url: https://filters.adtidy.org/extension/ublock/filters/17.txt
-  name: AdGuard URL Tracking filter
-  id: 1639281513
-- enabled: true
-  url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-  name: CJX's Annoyance List
-  id: 1639281514
-- enabled: true
-  url: https://filters.adtidy.org/extension/ublock/filters/224.txt
-  name: AdGuard Chinese filter
-  id: 1639402249
-- enabled: true
-  url: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
-  name: NoCoin Filter List
-  id: 1639402251
-- enabled: true
-  url: https://filters.adtidy.org/extension/ublock/filters/7.txt
-  name: AdGuard Japanese filter
-  id: 1639402252
-- enabled: true
-  url: https://raw.githubusercontent.com/jiange1236/miTVhosts-for-adh/master/hosts
-  name: miTVhosts
-  id: 1639496128
-whitelist_filters: []
-user_rules:
-- '@@||taobao.com^$important'
-- '@@||tmall.com^$important'
-- '@@||jd.com^important'
-- '@@||flyme.cn^$important'
-- '@@||meizu.com^$important'
-- '@@||flydigi.com^'
-- '@@||pv.sohu.com^$important'
-- '@@||000714.xyz^'
-- '@@||blueskyxn.com^'
-- '@@||analytics.google.com^'
-- '@@||analytics.twitter.com^'
-- '@@||azure.com^'
-- '@@||microsoft.com^'
-- '@@||gstatic.com^'
-- '@@||windows.com^'
-- '@@||live.com^'
-- '@@||google-analytics.com^'
-- '@@||maccms.com^'
-- '@@||gvt2.com^'
-- '@@||googleapis.com^'
-- '@@||www.paypalobjects.com^'
-- '@@||paypal.com^'
-- '@@||amazon.com^'
-- '@@||ad.jp^'
-- '@@||tagtic.cn^'
-- '@@||knet.cn^'
-- '@@||anquan.org^'
-- '@@||hanada.info^'
-- '@@||moonbbs.com^'
-- '@@||weiming.info^'
-- '@@||disqus.com^'
-- '@@||referrer.disqus.com^'
-- '@@||go.rakuten.com^'
-- '@@||fvs.io^'
-- '@@||ssl.p.jwpcdn.com'
-- '@@||c3pool.com^'
-- '@@||bankcomm.com^'
-- '@@||cmbchina.com^'
-- ""
-dhcp:
-  enabled: false
-  interface_name: ""
-  dhcpv4:
-    gateway_ip: ""
-    subnet_mask: ""
-    range_start: ""
-    range_end: ""
-    lease_duration: 86400
-    icmp_timeout_msec: 1000
-    options: []
-  dhcpv6:
-    range_start: ""
-    lease_duration: 86400
-    ra_slaac_only: false
-    ra_allow_slaac: false
-clients: []
-log_compress: false
-log_localtime: false
-log_max_backups: 0
-log_max_size: 100
-log_max_age: 3
-log_file: ""
-verbose: false
-os:
-  group: ""
-  user: ""
-  rlimit_nofile: 0
-schema_version: 12
-
+50 5 * * * [ -f /etc/AdGuardHome/data/querylog.json.1 ] && rm /etc/AdGuardHome/data/querylog.json.1
 ```
+
+我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
+此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
 
 ## SSH
 
@@ -434,8 +112,6 @@ https://gitee.com/xiaominglei001/forMarkdown/raw/master/FireShot Capture 044 - 2
 补充：
 
 最好选择private加入，否则30天不登录会被删除。
-
-目前我的：e4da7455b20b4ea6
 
 ![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
 
@@ -772,7 +448,9 @@ xn--ngstr-lra8j.com
 
 #github
 github.com
-xiaoz.org
+github.global.ssl.fastly.net
+assets-cdn.github.com
+api.ipify.org
 
 #po
 thzpic.com
@@ -821,123 +499,15 @@ MosDNS 日志文件：/dev/null
 
 启用 DNS 广告过滤：√
 
-```
-log:
-  level: error
-  file: ""
+**卸载**
 
-plugin:
-  - tag: main_server
-    type: server
-    args:
-      entry:
-        - _no_ecs
-        - lazy_cache
-        - _prefer_ipv4
-        - _single_flight
-        - main_sequence
-      server:
-        - protocol: udp
-          addr: ":5335"
-        - protocol: tcp
-          addr: ":5335"
+曾经安装过其他版本的 MosDNS LuCI 或使用的固件自带了 MosDNS，安装后可能无法正常运行，你需要先将其它来源的版本卸载并清除数据残留后再装才能使用。
 
-  - tag: main_sequence
-    type: sequence
-    args:
-      exec:
-        - if:
-            - query_is_whitelist_domain
-          exec:
-            - forward_local
-            - _return
-        - if:
-            - query_is_ad_domain
-            - qtype65
-          exec:
-            - _block_with_nxdomain
-            - _return
-        - if:
-            - query_is_local_domain
-            - "!_query_is_common"
-          exec:
-            - forward_local
-            - _return
-        - if:
-            - query_is_non_local_domain
-          exec:
-            - forward_remote
-            - _return
-        - primary:
-            - forward_local
-            - if:
-                - "!response_has_local_ip"
-              exec:
-                - _drop_response
-          secondary:
-            - forward_remote
-          fast_fallback: 150
-          always_standby: true
+解决方法：
 
-  - tag: forward_local
-    type: fast_forward
-    args:
-      upstream:
-        - addr: "tls://211.142.211.124"
-        - addr: "tls://1.2.4.8"
-        - addr: "tls://111.8.14.18"
-        - addr: "tls://223.5.5.5"
-
-  - tag: query_is_whitelist_domain
-    type: query_matcher
-    args:
-      domain:
-        - "ext:./whitelist.txt"
-
-  - tag: forward_remote
-    type: fast_forward
-    args:
-      upstream:
-        - addr: "tls://8.8.4.4"
-        - addr: "tls://9.9.9.9"
-
-  - tag: lazy_cache
-    type: cache
-    args:
-      size: 512000
-      lazy_cache_ttl: 259200
-
-  - tag: query_is_local_domain
-    type: query_matcher
-    args:
-      domain:
-        - "ext:/usr/share/v2ray/geosite.dat:cn"
-
-  - tag: query_is_non_local_domain
-    type: query_matcher
-    args:
-      domain:
-        - "ext:/usr/share/v2ray/geosite.dat:geolocation-!cn"
-
-  - tag: response_has_local_ip
-    type: response_matcher
-    args:
-      ip:
-        - "ext:/usr/share/v2ray/geoip.dat:cn"
-
-  - tag: query_is_ad_domain
-    type: query_matcher
-    args:
-      domain:
-        - "ext:./serverlist.txt"
-
-  - tag: qtype65
-    type: query_matcher
-    args:
-      qtype: [65]
-```
-
-
+1、卸载包含 **mosdns** 字符的所有软件包
+2、删除数据 `rm -rf /etc/config/mosdns /etc/mosdns`
+3、重新安装 mosdns
 
 ### 全能推送
 
@@ -1140,10 +710,6 @@ DHCPv6 服务：混合模式
 
 设备：eth1
 
-PAP/CHAP 用户名：731X12966710
-
-PAP/CHAP 密码：023150
-
 **zerotier**
 
 设备：ztyqb6d54s
@@ -1151,6 +717,7 @@ PAP/CHAP 密码：023150
 #### 全局网络选项
 
 IPv6 ULA 前缀：
+~~fdc0:0e88:a625::/48~~
 
 ### DHCP/DNS
 

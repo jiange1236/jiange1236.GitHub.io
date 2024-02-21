@@ -34,6 +34,7 @@ source: https://github.com/luckyyyyy/blog/issues/57#issue-1198960406
 
 - 配置上游DNS为127.0.0.1
 - 设置重定向53端口到AdGuardHome，如果使用了lean大佬的固件，请在防火墙，自定义规则中删除添加的两条53端口重定向规则（大部分人都使用了lean的固件）
+- DNS缓存大小 留空
 
 注意：设置了重定向后，所有DNS结果都将应答非权威记录，如果不了解DNS协议请无视，这条并不会影响什么。
 
@@ -72,97 +73,74 @@ smartdns 部分直接 vim 编辑 /etc/config/smartdns 照抄即可，无需手�
 
 ```
 config smartdns
+	option enabled '1'
 	option server_name 'smartdns'
 	option port '6053'
+	option auto_set_dnsmasq '1'
 	option tcp_server '1'
-	option seconddns_tcp_server '1'
-	option coredump '0'
-	option seconddns_server_group 'passwall'
-	option seconddns_no_speed_check '1'
-	option seconddns_no_dualstack_selection '1'
-	option prefetch_domain '1'
-	option ipv6_server '0'
-	option force_aaaa_soa '1'
+	option ipv6_server '1'
+	option bind_device '1'
 	option dualstack_ip_selection '1'
 	option serve_expired '1'
-	option redirect 'dnsmasq-upstream'
-	option rr_ttl_min '300'
+	option cache_persist '1'
+	option resolve_local_hostnames '1'
+	option force_https_soa '1'
+	option rr_ttl_min '600'
 	option seconddns_port '7913'
+	option seconddns_tcp_server '1'
 	option seconddns_enabled '1'
+	option seconddns_server_group 'passwall'
+	option seconddns_no_speed_check '1'
 	option seconddns_no_rule_nameserver '1'
-	option seconddns_no_rule_addr '0'
-	option seconddns_no_rule_soa '0'
-	option seconddns_no_rule_ipset '0'
-	option cache_size '300'
+	option seconddns_no_dualstack_selection '1'
 	option seconddns_no_cache '1'
-	option enabled '1'
-	list old_redirect 'dnsmasq-upstream'
-	list old_port '6053'
-	list old_enabled '1'
+	option old_port '6053'
+	option old_enabled '1'
+	option old_auto_set_dnsmasq '1'
+
+config domain-rule
 
 config server
+	option enabled '1'
+	option name 'cnnic'
+	option ip '1.2.4.8'
+	option type 'udp'
+
+config server
+	option enabled '1'
 	option name 'aliyun'
 	option ip '223.5.5.5'
-	option port '53'
 	option type 'udp'
-	option blacklist_ip '0'
-	option server_group 'cn'
-	option enabled '1'
-
-config server
-	option name '114'
-	option ip '114.114.114.114'
-	option port '53'
-	option type 'udp'
-	option blacklist_ip '0'
-	option server_group 'cn'
-	option enabled '1'
 
 config server
 	option enabled '1'
+	option name 'cm1'
+	option ip '211.142.211.124'
 	option type 'udp'
-	option name '电信'
-	option ip '202.101.172.35'
-	option port '53'
-	option server_group 'cn'
-	option blacklist_ip '0'
 
 config server
 	option enabled '1'
+	option name 'cm2'
+	option ip '111.8.14.18'
 	option type 'udp'
-	option name '电信'
-	option ip '202.101.172.47'
-	option port '53'
-	option server_group 'cn'
-	option blacklist_ip '0'
-
-config server
-	option type 'udp'
-	option port '53'
-	option name 'DNSPod'
-	option ip '119.29.29.29'
-	option blacklist_ip '0'
-	option server_group 'cn'
-	option enabled '1'
 
 config server
 	option enabled '1'
-	option name 'cloud'
+	option name 'cloudflare'
 	option ip '1.1.1.1'
 	option port '853'
 	option type 'tls'
 	option server_group 'passwall'
-	option blacklist_ip '0'
-	option addition_arg ' -exclude-default-group'
+	option exclude_default_group '1'
 
 config server
 	option enabled '1'
-	option type 'udp'
-	option name 'CNNIC SDNS'
-	option ip '1.2.4.8'
-	option port '53'
-	option server_group 'cn'
-	option blacklist_ip '0'
+	option name 'google'
+	option ip '8.8.8.8'
+	option port '853'
+	option type 'tls'
+	option server_group 'passwall'
+	option exclude_default_group '1'
 ```
 
 ## 如何验证？
