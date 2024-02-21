@@ -14,8 +14,8 @@ export default navbar([
 	text: "镜像",
 	icon: "cube",
 	children: [
-		{ text: "DownGit", link: "https://github.jiange1236.workers.dev/" ,icon:"github"},
-		{ text: "Proxy", link: "https://proxy.jiange1236.workers.dev/" ,icon:"archway"},
+		{ text: "CloudflareYes", link: "https://stock.hostmonit.com/CloudFlareYes" ,icon:"github"},
+		{ text: "Github镜像", link: "http://lib.zuotiyi.cn/tool/github.html" ,icon:"archway"},
 		{ 
 			text:"本站镜像",
 			icon:"network",
@@ -23,8 +23,7 @@ export default navbar([
 				{ text: "Cloudflare", link: "https://zeblog.pages.dev/" },
 				{ text: "Netflify", link: "https://zeblog.netlify.app/" },
 				{ text: "Vercel", link: "http://zeblog.vercel.app/" },
-				{ text: "Heroku", link: "https://zineblog.herokuapp.com/" },
-				{ text: "TCloud", link: "https://zeblog-5g8cvgsd8faacd02-1251974090.tcloudbaseapp.com/" },		
+				{ text: "Render", link: "https://zeblog.onrender.com/" },		
 			],
 		},
 	],
