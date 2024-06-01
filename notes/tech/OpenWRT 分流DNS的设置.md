@@ -32,7 +32,7 @@ source: https://github.com/luckyyyyy/blog/issues/57#issue-1198960406
 主要是起到记录的作用，对需要查看记录的同学有帮助，至于DNS广告屏蔽，虽然有用但会误伤，慎重选择。
 同时由于记录文件较大，请一定要注意`把记录时间改小，或者设置到有足够空间的目录中，否则会导致时间久了将磁盘撑满`
 
-- 配置上游DNS为127.0.0.1
+- 配置上游DNS为127.0.0.1:6053
 - 设置重定向53端口到AdGuardHome，如果使用了lean大佬的固件，请在防火墙，自定义规则中删除添加的两条53端口重定向规则（大部分人都使用了lean的固件）
 - DNS缓存大小 留空
 
@@ -66,6 +66,15 @@ source: https://github.com/luckyyyyy/blog/issues/57#issue-1198960406
 ## Dnsmasq
 
 无需任何设置，如果有设置请改回，除了上游服务器是127.0.0.1:6053。
+
+防火墙
+
+```
+iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
+iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
+```
+
+
 
 ## 一些配置
 

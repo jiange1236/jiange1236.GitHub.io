@@ -21,6 +21,17 @@ src/gz openwrt_kiddin9 https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/k
 find / -type f -size +5120b
 ```
 
+<<<<<<< HEAD
+定制软件包
+
+```
+luci-app-wechatpush luci-app-smartdns luci-app-v2raya luci-app-watchcat tailscale v2ray-core v2raya smartdns watchcat ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare
+```
+
+
+
+=======
+>>>>>>> 198c2116c5109f2dc09ab42ad8eb0a95319b83d1
 ## R2S
 
 https://github.com/fanck0605/openwrt-nanopi-r2s
@@ -46,6 +57,276 @@ https://github.com/DHDAXCW/NanoPi-R2S
 ~~https://www.right.com.cn/forum/thread-4042833-1-1.html~~
 
 https://www.right.com.cn/forum/thread-4034918-1-1.html
+
+SmartDNS设置
+
+```
+
+config smartdns
+	option enabled '1'
+	option server_name 'smartdns'
+	option port '53'
+	option auto_set_dnsmasq '1'
+	option tcp_server '1'
+	option ipv6_server '1'
+	option bind_device '1'
+	option dualstack_ip_selection '1'
+	option serve_expired '1'
+	option cache_persist '1'
+	option resolve_local_hostnames '1'
+	option force_https_soa '0'
+	option rr_ttl_min '30'
+	option seconddns_port '7913'
+	option seconddns_tcp_server '1'
+	option seconddns_enabled '1'
+	option seconddns_server_group 'passwall'
+	option seconddns_no_speed_check '1'
+	option seconddns_no_dualstack_selection '1'
+	option seconddns_no_cache '1'
+	option log_level 'error'
+	option rr_ttl_max '3600'
+	option rr_ttl_reply_max '3600'
+	option enable_auto_update '1'
+	option auto_update_week_time '0'
+	option auto_update_day_time '5'
+	option tls_server '0'
+	option doh_server '0'
+	option log_output_mode 'file'
+	list hosts_files 'miTVhosts'
+	option prefetch_domain '1'
+	option old_port '53'
+	option old_enabled '1'
+	option old_auto_set_dnsmasq '1'
+
+config domain-rule
+	option server_group 'passwall'
+	option speed_check_mode 'none'
+	option force_aaaa_soa '1'
+	option forwarding_domain_set_file '/etc/smartdns/domain-set/proxy-list.txt'
+	option ipset_name 'proxy-list'
+
+config server
+	option enabled '1'
+	option name 'cnnic'
+	option ip '1.2.4.8'
+	option type 'udp'
+
+config server
+	option enabled '1'
+	option name 'aliyun'
+	option ip '223.5.5.5'
+	option type 'udp'
+
+config server
+	option enabled '0'
+	option name 'cm1'
+	option ip '211.142.211.124'
+	option type 'udp'
+
+config server
+	option enabled '1'
+	option name 'cm2'
+	option ip '111.8.14.18'
+	option type 'udp'
+
+config server
+	option enabled '1'
+	option name 'cloudflare'
+	option ip '1.1.1.1'
+	option port '853'
+	option type 'tls'
+	option server_group 'passwall'
+	option exclude_default_group '1'
+
+config server
+	option enabled '1'
+	option name 'google'
+	option ip '8.8.8.8'
+	option port '853'
+	option type 'tls'
+	option server_group 'passwall'
+	option exclude_default_group '1'
+
+config server
+	option enabled '1'
+	option name 'google https'
+	option ip 'https://8.8.4.4/dns-query'
+	option type 'https'
+	option server_group 'passwall'
+	option exclude_default_group '1'
+
+config server
+	option enabled '1'
+	option name 'DNSPod DoH'
+	option ip 'https://doh.pub/dns-query'
+	option type 'https'
+
+config server
+	option enabled '0'
+	option name 'AdGuard'
+	option ip 'd8a6cfde.d.adguard-dns.com'
+	option type 'tls'
+
+config server
+	option enabled '1'
+	option name 'AdGuard DNS'
+	option ip 'https://dns.adguard-dns.com/dns-query'
+	option type 'https'
+
+config server
+	option enabled '1'
+	option name 'Cloudflare Gateway'
+	option ip 'kg3lq779id.cloudflare-gateway.com'
+	option type 'tls'
+
+config client-rule
+	option enabled '0'
+	option dualstack_ip_selection '1'
+	option force_https_soa '1'
+
+config ip-rule
+
+config server
+	option enabled '0'
+	option name 'cm1v6'
+	option ip '2409:8050:2000:1000::1'
+	option type 'udp'
+
+config server
+	option enabled '0'
+	option name 'cm2v6'
+	option ip '2409:8050:2000::1'
+	option type 'udp'
+
+config server
+	option enabled '0'
+	option name 'cu1'
+	option ip '58.20.127.170'
+	option type 'udp'
+
+config server
+	option enabled '0'
+	option name 'cu2'
+	option ip '58.20.127.238'
+	option type 'udp'
+
+config server
+	option enabled '0'
+	option name 'ct1'
+	option ip '222.246.129.81'
+	option type 'udp'
+
+config server
+	option enabled '0'
+	option name 'ct2'
+	option ip '59.51.78.210'
+	option type 'udp'
+
+config download-file
+	option name 'cloudflare-ipv4'
+	option url 'https://www.cloudflare.com/ips-v4/#'
+	option type 'ip-set'
+
+config download-file
+	option name 'cloudflare-ipv6'
+	option url 'https://www.cloudflare.com/ips-v6/#'
+	option type 'ip-set'
+
+config ip-rule-list
+	option enabled '0'
+	option name 'cloudflare-ipv4'
+	option ip_set_file '/etc/smartdns/ip-set/cloudflare-ipv4'
+	list ip_alias '104.17.104.119'
+	list ip_alias '172.64.144.111'
+
+config ip-rule-list
+	option enabled '0'
+	option name 'cloudflare-ipv6'
+	option ip_set_file '/etc/smartdns/ip-set/cloudflare-ipv6'
+	list ip_alias '2606:4700:10:40f3:99a8:fb4a:a069:4ffe'
+	list ip_alias '2606:4700:10:14e1:2442:6ff2:dca4:5e1a'
+
+config download-file
+	option name 'miTVhosts'
+	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/liamliu108/miTVhosts/master/hosts'
+	option type 'other'
+
+config download-file
+	option name 'reject-list.txt'
+	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt'
+	option type 'list'
+
+config download-file
+	option name 'direct-list.txt'
+	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt'
+	option type 'list'
+
+config download-file
+	option name 'proxy-list.txt'
+	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt'
+	option type 'list'
+
+config download-file
+	option name 'gfw.txt'
+	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt'
+	option type 'list'
+
+
+```
+
+### 分流设置
+
+分流参考文章
+
+https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
+
+https://github.com/pymumu/smartdns/issues/1022
+
+https://zeeko.dev/2022/09/smartdns-with-v2ray-tproxy/
+
+https://xtrojan.pro/bgfw/v2ray/v2ray-dns-streaming.html
+
+
+
+一、基本设置
+
+1. 下载页面设置需自动下载的要分流的域名列表文件（也可上传）。(格式为一行一个域名，需要分流的域名)
+2. 设置上游服务器，设置国外的DOT，DOH等服务器，并设置`服务器组`：比如oversea。可选勾选‘从默认组中排除’
+   也可以设置一个上游服务器，通过代理走转发程序，设置`服务器组`用于专门分流查询，这样查询DNS的出口和数据出口一样，DNS结果的亲和度和更好。
+3. 域名规则->域名分流设置：
+   - 设置`域名分组`，名称为第二步的名称：比如'oversea'
+   - 选择`跳过测速`
+   - 选择`停用IPV6地址解析`
+   - 选择`域名列表文件`，文件为第一步设置的自动下载的文件，此文件为需要分流的域名列表。
+   - 对于临时个别要分流的域名，可以在`域名列表`文本框中输入。
+
+二、最简单的按域名的透明代理：
+
+如果smartdns运行在主路由上，那么可以使用REDIRECT模式对TCP进行透明代理。下面举例对TCP进行透明转发，其中的[ipsetname]是IP集合的名称，比如可以设置`proxy-list`：
+
+1. shell命令，创建ipset集合
+   `ipset create proxy-list hash:net timeout 600`
+2. shell命令，iptable设置对应ipset集合中域名的TCP请求使用TPROXY重定向转发到本机2018的转发程序。
+   `iptables -t nat -I PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018`
+3. smartdns设置页面的`域名分流设置`->`ipset名称`设置为上述步骤中[ipsetname]的名称，比如`proxy-list`
+4. 在主路由的2018端口，开启REDIRECT模式的转发程序。
+5. 应用smartdns设置。
+6. 结束。
+
+对于udp，nfttable也是类似的步骤，上述透明代理github上有现成的脚本，PW也有类似的能力，只要选择好转发模式，和设置好正确的ipset名称或nftset名称即可。
+
+原理上，smartdns和转发软件的结合点，为ipset名称或nftset名称，那两个参数和转发软件匹配就可以做到按需转发。
+dnsmasq也是类似的工作方式。
+
+**删除规则**
+
+`iptables -t nat -D PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018`
+
+### GeoSite\GeoIP
+
+geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text
+
+原本 geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data
 
 ## 无线
 
@@ -96,7 +377,107 @@ https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 
 ```
 50 5 * * * [ -f /etc/AdGuardHome/data/querylog.json.1 ] && rm /etc/AdGuardHome/data/querylog.json.1
+<<<<<<< HEAD
 ```
+
+我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
+此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
+
+=======
+>>>>>>> 198c2116c5109f2dc09ab42ad8eb0a95319b83d1
+```
+[/csdn.net/]quic://dns.alidns.com
+[/dbankcloud.cn/dbankcloud.ru/dbankcloud.com/]quic://dns.alidns.com
+[/quark.cn/]quic://dns.alidns.com
+[/bytefcdn.com/]quic://dns.alidns.com
+[/tencent-cloud.cn/]quic://dns.alidns.com
+[/qq.com/]quic://dns.alidns.com
+[/tencent-cloud.com/]quic://dns.alidns.com
+[/tencentcs.cn/tencentcs.com/]quic://dns.alidns.com
+[/qq.com/]quic://dns.alidns.com
+[/tencent.com/tencent.cn/]quic://dns.alidns.com
+[/sogou.com/]quic://dns.alidns.com
+[/wpscdn.cn/]quic://dns.alidns.com
+[/xunlei.com/]quic://dns.alidns.com
+[/mi.com/]quic://dns.alidns.com
+[/miwifi.com/]quic://dns.alidns.com
+[/shifen.com/]quic://dns.alidns.com
+[/bdurl.net/]quic://dns.alidns.com
+[/amemv.com/]quic://dns.alidns.com
+[/toutiao.com/]quic://dns.alidns.com
+[/zijieapi.com/]quic://dns.alidns.com
+[/douyin.com/]quic://dns.alidns.com
+[/douyincdn.com/]quic://dns.alidns.com
+[/douyinec.com/]quic://dns.alidns.com
+[/douyinliving.com/]quic://dns.alidns.com
+[/douyinpic.com/]quic://dns.alidns.com
+[/douyinstatic.com/]quic://dns.alidns.com
+[/douyinvideo.net/]quic://dns.alidns.com
+[/douyinvod.click/]quic://dns.alidns.com
+[/douyinvod.com/]quic://dns.alidns.com
+[/tencent-blackboard.com/]quic://dns.alidns.com
+[/tencent-cloud.com/]quic://dns.alidns.com
+[/tencent-cloud.net/]quic://dns.alidns.com
+[/tencent-gf.com/]quic://dns.alidns.com
+[/tencent.com.hk/]quic://dns.alidns.com
+[/tencent.com/]quic://dns.alidns.com
+[/tencentads.com/]quic://dns.alidns.com
+[/tencentcdb.com/]quic://dns.alidns.com
+[/tencentclb.com/]quic://dns.alidns.com
+[/tencentcloud.com/]quic://dns.alidns.com
+[/tencentcloudapi.com/]quic://dns.alidns.com
+[/tencentcloudbase.com/]quic://dns.alidns.com
+[/tencentcs.com/]quic://dns.alidns.com
+[/tencentdba.com/]quic://dns.alidns.com
+[/tencentdevices.com/]quic://dns.alidns.com
+[/tencentipv6.com/]quic://dns.alidns.com
+[/tencentlog.com/]quic://dns.alidns.com
+[/tencentmeeting.com/]quic://dns.alidns.com
+[/tencentmind.com/]quic://dns.alidns.com
+[/tencentmusic.com/]quic://dns.alidns.com
+[/tencentsuite.com/]quic://dns.alidns.com
+[/tencentwm.com/]quic://dns.alidns.com
+[/tencentyun.com/]quic://dns.alidns.com
+[/tqqa.com/]quic://dns.alidns.com
+[/tqqyun.com/]quic://dns.alidns.com
+[/qpic.cn/]quic://dns.alidns.com
+[/qlogo.cn/]quic://dns.alidns.com
+[/cdnnode.cn/]quic://dns.alidns.com
+[/idouyinvod.com/]quic://dns.alidns.com
+[/taobao.com/]quic://dns.alidns.com
+[/jd.com/]quic://dns.alidns.com
+[/baidu.com/]quic://dns.alidns.com
+[/gov.cn/]quic://dns.alidns.com
+[/bilibili.com/]quic://dns.alidns.com
+[/bilivideo.com/]quic://dns.alidns.com
+[/bilivideo.cn/]quic://dns.alidns.com
+[/cnki.net/]quic://dns.alidns.com
+[/hdslb.com/]quic://dns.alidns.com
+[/163.com/]quic://dns.alidns.com
+[/126.net/]quic://dns.alidns.com
+[/huya.com/]quic://dns.alidns.com
+# Cloudflare DNS
+1.1.1.1
+2606:4700:4700::1111
+https://dns.cloudflare.com/dns-query
+tls://1dot1dot1dot1.cloudflare-dns.com
+# Google DNS
+8.8.8.8
+2001:4860:4860::8888
+https://dns.google/dns-query
+tls://dns.google
+h3://dns.google/dns-query
+# OpenDNS
+tls://dns.opendns.com
+https://doh.opendns.com/dns-query
+# NextDNS
+tls://dns.nextdns.io
+https://dns.nextdns.io/dns-query
+quic://dns.nextdns.io
+h3://dns.nextdns.io/dns-query
+```
+
+
 
 我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
 此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
@@ -188,11 +569,35 @@ cd /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/ddnsto/open
 
 如果不行则尝试二：重启路由器
 
+## DDNS
+
+**防火墙设置**
+
+名称 DDNS
+
+协议 TCP UDP
+
+源区域 **wan**
+
+目标区域 **lan**
+
+目标地址  `::0000:0000:0000:0001`
+
+目标端口 80
+
+操作 接受
+
+地址族限制 仅 IPv6
+
 ## 全能推送（Pushbot）
 
 https://www.right.com.cn/forum/thread-4051426-1-1.html
 
 项目地址：https://github.com/zzsj0928/luci-app-pushbot
+
+## 微信推送（wechatpush）
+
+pushplus_token `5dfff495415c445e8466c3f894d926f2`
 
 ## Tailscale
 
@@ -215,6 +620,11 @@ Linux开启接受子路由
 ```
 tailscale up --accept-routes
 ```
+
+1. 接口创建 `Tailscale`不配置协议，防火墙创建 `Tailscale`，保存并应用
+2. 防火墙 `Tailscale`区域设置，全部接受，开启IP 动态伪装、MSS 钳制，允许转发到 `Lan`、`Wan`，允许源区域 `Lan`，
+
+
 
 ## Vsftpd
 
@@ -336,33 +746,50 @@ luci-app-advanced_1.20-26_all
 13.107.21.200 www.bing.com
 13.107.21.200 cn.bing.com
 13.107.21.200 bing.com
+
+# Cloudflare
+162.159.192.231 cloudflare.com
+162.159.192.231 www.cloudflare.com
+162.159.192.231 cdnjs.cloudflare.com
+162.159.192.231 api.cloudflare.com
+162.159.192.231 dash.cloudflare.com
+162.159.192.231 platform.dash.cloudflare.com
+162.159.192.231 info.cloudflare.com
+162.159.192.231 sparrow.cloudflare.com
+162.159.192.231 assets.www.cloudflare.com
+162.159.192.231 videodelivery.net
 ```
 
-# 猫影视
+## 系统更新
 
-https://gitea.com/AYOM/zhou/
+值守式系统升级 attendedsysupgrade
 
-https://gitea.com/wuzang/mm
+非定制固件升级 gpsysupgrade
 
-https://us-oss.9t.ee/Cat/api.html
+# V2raya
 
-源：
+v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少geosite.dat, geoip.dat.
+其根本原因是缺少了整个v2ray核心.
 
-http://fj365.ml/m.json
+安装v2ray-core插件即可
 
-emotn分享码
-
-123456	666888	129915	aaa123
-
+指定v2ray binary path为 `/usr/bin/v2ray`
 
 
-https://post.smzdm.com/p/aen2z7g4/
 
-https://post.smzdm.com/p/aoowqow7/
+规则列表文件路径：`/usr/share/v2ray`
 
-https://post.smzdm.com/p/a99vlpmp/
+附加配置目录:`/etc/v2raya/ext`v2ray-ext.json
+
+```
+{"inbounds":[{"port":2018,"protocol":"dokodemo-door","listen":"0.0.0.0","sniffing":{"enabled":false,"metadataOnly":false},"settings":{"network":"tcp","followRedirect":true},"streamSettings":null,"tag":"redirect"}],"routing":{"rules":[{"type":"field","balancerTag":"proxy","inboundTag":["redirect"]}]}}
+```
 
 
+
+# V2ray
+
+https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
 
 # R2S设置
 
@@ -453,26 +880,16 @@ assets-cdn.github.com
 api.ipify.org
 
 #po
-thzpic.com
-hsck.cc
-btsow.com
-fikfap.com
-javdb.com
-javlibrary.com
-jdbimgs.com
-taohuaimg.com
-thzthzthz.cc
+tellme.pw
 hkbisi.com
-caregirl.net
-iporntv.net
-cdn2020.com
-91thz.cc
-bisi666.cc
-268ck.cc
-btsow.rest
-mobilepornmovies.com
 redgifs.com
-1y.is
+taohuaimg.com
+u9img.com
+madouqu27.cc
+u3c3.com
+u9a9.cc
+thza.cc
+hsck.us
 ```
 
 **服务器端**
