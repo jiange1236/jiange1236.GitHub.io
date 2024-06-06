@@ -1,26 +1,34 @@
-node_modules
-.temp
-# Build files
-packages/*/lib/
+# Node modules
+node_modules/
 
-# Vuepress Cache
-.cache
-# Vuepress Temp
-.temp
-# Vuepress Output
-dist
+# Dist files
+dist/
+lib/
 
-# VS Code Config file
+# Test coverage files
+coverage/
+
+# MacOS Desktop Services Store
+.DS_Store
+
+# Log files
+*.log
+
+# IDE setting files
+.idea
 .vscode
 
-# Rollup Cache
-.rollup.cache/
+# Temp files
+cache/
+.vite_opt_cache
+.cache
 
-# Typescript build info
-*.tsbuildinfo
+# Other files
+/src/client/shared.ts
+/src/node/shared.ts
+pnpm-global
+TODOs.md
 
-# Coverage Files
-coverage/
 
 筑友项目/
 
@@ -30,4 +38,3 @@ coverage/
 *.key.pub
 *.ppk
 key/
-
