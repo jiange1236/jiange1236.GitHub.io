@@ -154,7 +154,6 @@ else:
 
 **运算**
 
-```python
 拼接 +	用,拼接字符串列表 ','.join([s])		重复3次 *3	
 
 成员运算 in/not in	索引 s[i]	切片 s[i:j:k]	长度 len(s)	比较 >=
@@ -166,7 +165,6 @@ else:
 开头 s.startswith('i')		结尾 s.endswith('i')
 
 是否数字 s.isdigit()		是否字母 s.isalpha()		是否数字和字母 s.isalnum()
-```
 
 https://docs.python.org/zh-cn/3/library/stdtypes.html#string-methods
 
@@ -208,7 +206,6 @@ print(f'{name}的成绩 ===>{scores:.2f}')
 
 **运算**
 
-```python
 拼接 +	重复3次 *3	
 
 成员运算 in/not in	索引 s[i]	切片 s[i:j:k]	长度 len(s)	比较 >=
@@ -216,9 +213,6 @@ print(f'{name}的成绩 ===>{scores:.2f}')
 遍历 for ch in s		索引位置 s.index('i',n)	查找出现次数 s.count('i')
 
 排序 s.sort()		反转 s.reverse()
-```
-
-
 
 ```python
 items.append('i')    # 使用append方法在列表尾部添加元素
@@ -276,7 +270,6 @@ dict(iter(L)) # {'Italy': 'Rome', 'US': 'Washington DC'}
 
 **运算**
 
-```python
 成员运算 in/not in	比较（子集/包含） >=
 
 交集① s1 & s2		交集② s1.intersection(s2)	判断是否有交集 s1.isdisjoint(s2)
@@ -286,13 +279,8 @@ dict(iter(L)) # {'Italy': 'Rome', 'US': 'Washington DC'}
 差集① s1 - s2		差集② s1.difference(s2)
 
 对称差① s1 ^ s2	对称差② s1.symmetric_difference(s2)	对称差③ (s1 | s2) - (s1 & s2)
-```
 
-
-
-```
-set1.add(55)    # 通过add方法添加元素 set1.update({1, 10, 100, 1000})    # 通过update方法添加元素 set1.discard(99)    # 通过discard方法删除指定元素 if 10 in set1:    # 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常    set1.remove(10) print(set1.pop())    # pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear()    # clear方法可以清空整个集合              
-```
+​                set1.add(55)    # 通过add方法添加元素 set1.update({1, 10, 100, 1000})    # 通过update方法添加元素 set1.discard(99)    # 通过discard方法删除指定元素 if 10 in set1:    # 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常    set1.remove(10) print(set1.pop())    # pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear()    # clear方法可以清空整个集合              
 
 **空集合/不可变集合**
 
