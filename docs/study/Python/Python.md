@@ -280,7 +280,9 @@ dict(iter(L)) # {'Italy': 'Rome', 'US': 'Washington DC'}
 
 对称差① s1 ^ s2	对称差② s1.symmetric_difference(s2)	对称差③ (s1 | s2) - (s1 & s2)
 
-​                set1.add(55)    # 通过add方法添加元素 set1.update({1, 10, 100, 1000})    # 通过update方法添加元素 set1.discard(99)    # 通过discard方法删除指定元素 if 10 in set1:    # 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常    set1.remove(10) print(set1.pop())    # pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear()    # clear方法可以清空整个集合              
+```
+set1.add(55)    # 通过add方法添加元素 set1.update({1, 10, 100, 1000})    # 通过update方法添加元素 set1.discard(99)    # 通过discard方法删除指定元素 if 10 in set1:    # 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常    set1.remove(10) print(set1.pop())    # pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear()    # clear方法可以清空整个集合              
+```
 
 **空集合/不可变集合**
 

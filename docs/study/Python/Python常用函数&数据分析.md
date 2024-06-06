@@ -212,13 +212,13 @@ print(heapq.nlargest(3, list2, key=lambda x: x['price']))# 找出价格最高的
 
 定义Lambda函数的关键字是lambda，后面跟函数的参数，如果有多个参数用逗号进行分隔；冒号后面的部分就是函数的执行体，通常是一个表达式，表达式的运算结果就是Lambda函数的返回值，不需要写return 关键字
 
-```
+```python
 numbers1 = [35, 12, 8, 99, 60, 52]
 numbers2 = list(map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, numbers1)))
 def c1(*args, in_v=0, op=lambda x, y: x + y, **kwargs):  # Lambda函数作为默认参数
 ```
 
-```
+```python
 import operator, functools
 # 一行代码定义求阶乘的函数
 fac = lambda num: functools.reduce(operator.mul, range(1, num + 1), 1)
@@ -227,7 +227,7 @@ is_p = lambda x: x > 1 and all(map(lambda f: x % f, range(2, int(x ** 0.5) + 1))
 #bool and a 即当bool为TRUE时取a，否则为FALSE
 ```
 
-```
+```python
  def make_incrementor(n):
      return lambda x: x + n
 f = make_incrementor(42)
