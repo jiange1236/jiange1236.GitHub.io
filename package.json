@@ -1,49 +1,25 @@
 {
-  "name": "Zine⁶-repo",
-  "description": "Zine⁶ 的个人知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。",
-  "author": "Zine⁶",
+  "name": "studynote",
+  "version": "2.0.0",
+  "description": "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
   "license": "MIT",
-  "private": true,
+  "author": {
+    "name": "Zine",
+    "email": "183465355@qq.com",
+    "url": "https://zecdn.top/"
+  },
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "build": "vuepress build notes",
+    "clean-dev": "vuepress dev notes --clean-cache",
+    "dev": "vuepress dev notes",
+    "update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@arco-design/web-vue": "^2.53.3",
-    "@types/blueimp-md5": "^2.18.2",
-    "@types/jquery": "^3.5.29",
-    "markdown-it": "^13.0.2",
-    "markdown-it-footnote": "^3.0.3",
-    "markdown-it-mathjax3": "^4.3.2",
-    "mermaid": "9.3.0",
-    "unplugin-vue-components": "^0.25.2",
-    "vite": "^5.0.3",
-    "vitepress": "1.0.0-rc.31",
-    "vitepress-plugin-mermaid": "2.0.8",
-    "vue": "^3.3.9"
-  },
-  "dependencies": {
-    "@antv/g2plot": "2.4.31",
-    "axios": "^1.6.2",
-    "blueimp-md5": "^2.19.0",
-    "dayjs": "^1.11.10",
-    "fast-glob": "^3.3.2",
-    "gitalk": "^1.8.0",
-    "gray-matter": "^4.0.3",
-    "jquery": "^3.7.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "@antv/g-base": "0.5.11",
-      "@antv/path-util": "2.0.15",
-      "@antv/attr": "0.3.5"
-    },
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
-    }
+    "@vuepress/client": "2.0.0-rc.0",
+    "vue": "^3.3.9",
+    "vuepress": "2.0.0-rc.0",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.0",
+    "vuepress-theme-hope": "2.0.0-rc.2"
   }
 }
