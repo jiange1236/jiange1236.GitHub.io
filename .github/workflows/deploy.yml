@@ -29,13 +29,15 @@ jobs:
       - name: Build Blog
         env:
           NODE_OPTIONS: --max_old_space_size=4096
-        run: pnpm run build:vite
+        run: |
+          pnpm run build:vite
+          > notes/.vuepress/dist/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: notes/.vuepress/dist
 
   #deploy-server:
   #  runs-on: ubuntu-latest
