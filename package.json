@@ -1,25 +1,52 @@
 {
-  "name": "studynote",
-  "version": "2.0.0",
-  "description": "个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。",
-  "license": "MIT",
-  "author": {
-    "name": "Zine",
-    "email": "183465355@qq.com",
-    "url": "https://zecdn.top/"
-  },
+  "name": "zeblog",
+  "version": "1.0.0",
+  "description": "个人博客",
   "type": "module",
   "scripts": {
-    "build": "vuepress build notes",
-    "clean-dev": "vuepress dev notes --clean-cache",
-    "dev": "vuepress dev notes",
-    "update-package": "pnpm dlx vp-update"
+    "build:vite": "vuepress-vite build notes",
+    "build:vite-debug": "cross-env DEBUG=vuepress* vuepress-vite build notes",
+    "build:webpack": "vuepress-webpack build notes",
+    "build:webpack-debug": "cross-env DEBUG=vuepress* vuepress-webpack build notes",
+    "dev:vite": "vuepress-vite dev notes",
+    "dev:vite-clean": "vuepress-vite dev notes --clean-cache",
+    "dev:vite-debug": "cross-env DEBUG=vuepress* vuepress-vite dev notes",
+    "dev:webpack": "vuepress-webpack dev notes",
+    "dev:webpack-clean": "vuepress-webpack dev notes --clean-cache",
+    "dev:webpack-debug": "cross-env DEBUG=vuepress* vuepress-webpack dev notes",
+    "lint": "prettier --check --write .",
+    "lint:check": "prettier --check .",
+    "lint:md": "markdownlint-cli2 **/*.md",
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "author": "Zine⁶",
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "personal-blog"
+  ],
+  "dependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.13",
+    "@vuepress/bundler-webpack": "2.0.0-rc.13",
+    "@vuepress/plugin-append-date": "2.0.0-rc.34",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.34",
+    "@vuepress/plugin-feed": "2.0.0-rc.34",
+    "@vuepress/plugin-pwa": "2.0.0-rc.34",
+    "@waline/client": "3.2.1",
+    "flowchart.ts": "3.0.0",
+    "mathjax-full": "3.2.2",
+    "mermaid": "10.9.1",
+    "reveal.js": "5.1.0",
+    "sass-loader": "14.2.1",
+    "vite": "5.2.11",
+    "vue": "3.4.27",
+    "vuepress": "2.0.0-rc.13",
+    "vuepress-theme-hope": "2.0.0-rc.48"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
-    "vue": "^3.3.9",
-    "vuepress": "2.0.0-rc.0",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.0",
-    "vuepress-theme-hope": "2.0.0-rc.2"
-  }
+    "cross-env": "7.0.3",
+    "markdownlint-cli2": "0.13.0",
+    "prettier": "3.2.5"
+  },
+  "packageManager": "pnpm@9.1.4"
 }

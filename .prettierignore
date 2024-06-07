@@ -1,0 +1,16 @@
+dist/
+node_modules/
+
+notes/code/language/js/es6/array.md
+notes/code/language/js/es6/style.md
+notes/code/language/js/function/method.md
+notes/code/language/js/guide/condition.md
+notes/code/language/js/guide/exercise.md 
+notes/code/language/js/guide/grammar.md 
+notes/code/language/js/guide/loop.md
+notes/code/language/js/operators/priority.md
+notes/code/language/js/types/string.md
+notes/code/language/markdown/block.md
+notes/code/language/markdown/inline.md
+
+pnpm-lock.yaml

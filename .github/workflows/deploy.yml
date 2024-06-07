@@ -1,0 +1,63 @@
+name: Deploy blog
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Build Blog
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+        run: pnpm run build:vite
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
+
+  #deploy-server:
+  #  runs-on: ubuntu-latest
+  #  needs: deploy-gh-pages
+  #  steps:
+  #    - name: Checkout
+  #      uses: actions/checkout@v4
+  #      with:
+  #        ref: gh-pages
+  #        fetch-depth: 0
+
+  #    - name: Configuration environment
+  #      run: |
+  #        mkdir -p ~/.ssh/
+  #        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+  #        chmod 600 ~/.ssh/id_rsa
+  #        ssh-keyscan mister-hope.com >> ~/.ssh/known_hosts
+  #        git config --global user.name 'Mr.Hope'
+  #        git config --global user.email 'mister-hope@outlook.com'
+
+  #    - name: Deploy
+  #      run: |
+  #        ssh git@mister-hope.com "git config --global --add safe.directory /www/wwwroot/mrhope"
+  #        git push -f git@mister-hope.com:/www/wwwroot/mrhope gh-pages
+  #        ssh git@mister-hope.com "cd /www/wwwroot/mrhope && git reset --hard HEAD"

@@ -1,0 +1,59 @@
+name: Test blog
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-test:
+    name: Test build using ${{ matrix.bundler }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        bundler:
+          - webpack
+          - vite
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Build Blog with ${{ matrix.bundler }}
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
+        run: pnpm run build:${{ matrix.bundler }}
+
+  linter-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Linter test
+        run: pnpm run lint
