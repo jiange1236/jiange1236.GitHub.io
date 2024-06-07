@@ -3,7 +3,7 @@
   <id>https://jiange1236.github.io/</id>
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
-  <updated>2024-06-01T15:41:29.315Z</updated>
+  <updated>2024-06-07T05:05:05.768Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -26,7 +26,7 @@
     <title type="text"></title>
     <id>https://jiange1236.github.io/study/%E5%9C%9F%E7%9A%84%E5%88%86%E7%B1%BB.html</id>
     <link href="https://jiange1236.github.io/study/%E5%9C%9F%E7%9A%84%E5%88%86%E7%B1%BB.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<div class="language-mermaid line-numbers-mode" data-ext="mermaid"><pre class="language-mermaid"><code><span class="token keyword">flowchart</span> TB
 <span class="token comment">%% 图的方向说明</span>
 <span class="token comment">%% LR：从左到图，RL：从右到左，TB：从上到下，BT：从下到上</span>
@@ -75,7 +75,7 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
     <title type="text">截面表示方法</title>
     <id>https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html</id>
     <link href="https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 截面表示方法</h1>
 <p>增大截面加固法</p>
 <table>
@@ -269,7 +269,7 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
     <title type="text">优选 CF 的反代 IP | MisakaNo の 小破站</title>
     <id>https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89%20CF%20%E7%9A%84%E5%8F%8D%E4%BB%A3%20IP.html</id>
     <link href="https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89%20CF%20%E7%9A%84%E5%8F%8D%E4%BB%A3%20IP.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 优选 CF 的反代 IP | MisakaNo の 小破站</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -326,7 +326,7 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
     <title type="text">优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</title>
     <id>https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</id>
     <link href="https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -442,7 +442,7 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
     <title type="text">使用 CloudFlare Workers 反代节点 | MisakaNo の 小破站</title>
     <id>https://jiange1236.github.io/tech/Cloudflare/%E4%BD%BF%E7%94%A8%20CloudFlare%20Workers%20%E5%8F%8D%E4%BB%A3%E8%8A%82%E7%82%B9.html</id>
     <link href="https://jiange1236.github.io/tech/Cloudflare/%E4%BD%BF%E7%94%A8%20CloudFlare%20Workers%20%E5%8F%8D%E4%BB%A3%E8%8A%82%E7%82%B9.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 使用 CloudFlare Workers 反代节点 | MisakaNo の 小破站</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -508,7 +508,7 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
     <title type="text">文章推荐 | 肖从真大师团队：既有建筑结构加固改造与性能提升现状与发展</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20%20%E8%82%96%E4%BB%8E%E7%9C%9F%E5%A4%A7%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%9A%E6%97%A2%E6%9C%89%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%94%B9%E9%80%A0%E4%B8%8E%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20%20%E8%82%96%E4%BB%8E%E7%9C%9F%E5%A4%A7%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%9A%E6%97%A2%E6%9C%89%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%94%B9%E9%80%A0%E4%B8%8E%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 文章推荐 | 肖从真大师团队：既有建筑结构加固改造与性能提升现状与发展</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -677,16 +677,24 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
     <title type="text">玩客云</title>
     <id>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</id>
     <link href="https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 玩客云</h1>
-<p>安装包</p>
-<p><a href="https://github.com/hzyitc/armbian-onecloud/releases/download/ci-20240311-162146-UTC/Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz" target="_blank" rel="noopener noreferrer">Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz</a></p>]]></summary>
+<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>nano /etc/apt/sources.list
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code># 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
     <content type="html"><![CDATA[<h1> 玩客云</h1>
-<p>安装包</p>
-<p><a href="https://github.com/hzyitc/armbian-onecloud/releases/download/ci-20240311-162146-UTC/Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz" target="_blank" rel="noopener noreferrer">Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz</a></p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后更新软件源</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="#Docker%E5%AE%89%E8%A3%85"><strong>Docker安装</strong></a></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="#Docker%E5%AE%89%E8%A3%85"><strong>Docker安装</strong></a></p>
 <p><strong>Install Home Assistant Supervised</strong></p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>OS Agent</strong></p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>grub错误</strong></p>
@@ -694,35 +702,11 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Docker镜像</strong></p>
 <p>直接修改 <code>/etc/docker/daemon.json</code> (docker 版本 &gt;= 1.10 时) 内容为:</p>
 <div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改后重启服务:</p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <strong>HACS</strong></h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <strong>HACS</strong></h2>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Supervisor</h2>
 <p>更新</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>卸载</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h2> 连接WiFi</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>设置开机启动</p>
-<p><code>cd /etc/init.d/</code>
-<code>nano mywifi</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>chmod +x /etc/init.d/mywifi</code></p>
-<p><code>update-rc.d mywifi defaults</code></p>
-<p>编辑crontab <code>crontab -e</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2> <a href="https://www.cnblogs.com/mouseleo/p/8585979.html" target="_blank" rel="noopener noreferrer">Debian 使用 cron 执行定时任务</a></h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <a href="https://www.cnblogs.com/mouseleo/p/8585979.html" target="_blank" rel="noopener noreferrer">Debian 使用 cron 执行定时任务</a></h2>
 <p>在linux下有两种方法来让一个命令或者脚本执行:</p>
 <ol>
 <li>crontab : 执行一个任务一次或者多次.</li>
@@ -730,178 +714,128 @@ mix3 <span class="token arrow operator">--&gt;</span> mixxi2<span class="token t
 </ol>
 <p>crontab是通过读取一个crontab文件来工作，这是一个普通的文本文件，里面列出了要执行的任务。每行都含有要指定的任务的命令、参数与选项，以及要执行任务的时间。（cron 软件在后台运行并且经常检查 /etc/crontab 文件。cron 软件也检查 /var/cron/tabs 目录，搜索新的 crontab 文件。这些 crontab 文件存储一些 cron 在特定时间执行任务的信息。）
 crontab的基本格式：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>=======</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>wget -O - http://bin.entware.net/x64-k3.2/installer/generic.sh | sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"</p>
-<h1> 如您使用 curl</h1>
-<p>curl -fsSL https://get.docker.com/ | sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>mkdir -p /etc/docker
-tee /etc/docker/daemon.json &lt;&lt;-'EOF'
-{
-"registry-mirrors": [
-"https://0b27f0a81a00f3560fbdc00ddd2f99e0.mirror.swr.myhuaweicloud.com",
-"https://ypzju6vq.mirror.aliyuncs.com",
-"https://registry.docker-cn.com",
-"http://hub-mirror.c.163.com",
-"https://docker.mirrors.ustc.edu.cn"
-]
-}
-EOF
-systemctl daemon-reload
-systemctl restart docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl start docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl status docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl enable docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker ps -as</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker logs freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker restart freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stop freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rm -f freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stats --no-stream</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker version</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl restart docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker system prune</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker network ls</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker network inspect bridge</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改 /etc/docker/daemon.json，加入一行 "bip": "192.168.1.5/24",，然后再次查看 ifconfig，已经变成了 192 网段了
-重启 docker 服务，curl 尝试正常</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stop $(docker ps -aq)
-docker stop $(docker ps -a | grep "hassio" | awk '{print $1}')</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rmi --force <code>docker images | grep hassio | awk '{print $3}'</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改 /etc/docker/daemon.json，加入一行 "bip": "192.168.1.5/24",，然后再次查看 ifconfig，已经变成了 192 网段了
-重启 docker 服务，curl 尝试正常</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stop $(docker ps -aq)
-docker stop $(docker ps -a | grep "hassio" | awk '{print $1}')</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rmi --force <code>docker images | grep hassio | awk '{print $3}'</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>df -h</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>du -sh *</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>#!/bin/bash
-echo "======== start clean docker containers logs ========"
-logs=$(find /var/lib/docker/containers/ -name *-json.log)
-for log in $logs
-do
-echo "clean logs : $log"
-cat /dev/null &gt; $log
-done
-echo "======== end clean docker containers logs ========"</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>chmod +x clean.sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>0 5 * * 1 /var/lib/docker/clean.sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sudo mkdir -p /etc/systemd/system/docker.service.d</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>[Service]
-Environment="HTTP_PROXY=socks5://127.0.0.1:20170"
-Environment="HTTPS_PROXY=socks5://127.0.0.1:20170"</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sudo systemctl daemon-reload
-sudo systemctl restart docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sudo systemctl show --property=Environment docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>echo "185.199.109.133   raw.githubusercontent.com" &gt;&gt; /etc/hosts
-docker exec -it homeassistant /bin/bash</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> 安装brctl</h1>
-<p>apt-get install bridge-utils
-yum install bridge-utils</p>
-<h1> 停止docker服务</h1>
-<p>systemctl stop docker</p>
-<h1> 重建 docker 网络</h1>
-<p>ifconfig docker0 down
-brctl delbr docker0</p>
-<h1> 重启docker服务</h1>
-<p>systemctl start docker</p>
-<h1> 查看IP转发</h1>
-<p>cat /proc/sys/net/ipv4/ip_forward</p>
-<h1> IP 转发需要进行开启</h1>
-<p>echo 1 &gt; /proc/sys/net/ipv4/ip_forward</p>
-<p>使用上述任何一种方法都不会使更改持久。为了确保新设置在重新启动后仍然有效，您需要编辑 /etc/sysctl.conf 文件。</p>
-<h1> sudo nano /etc/sysctl.conf</h1>
-<p>将以下行之一添加到文件底部，具体取决于您想要关闭还是打开 Linux IP 转发。然后，保存对此文件的更改。该设置在重新启动后将是永久的。 net.ipv4.ip_forward 设置控制是否为 IPv4 打开或关闭 IP 转发。
-net.ipv4.ip_forward = 0
-OR
-net.ipv4.ip_forward = 1
-编辑文件后，您可以运行以下命令以使更改立即生效。</p>
-<h1> sysctl -p</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run --rm <br>
--v /var/run/docker.sock:/var/run/docker.sock <br>
-containrrr/watchtower <br>
---cleanup <br>
---run-once <br>
-v2raya homeassistant</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>ip link set eth0 promisc on</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker network create -d macvlan --subnet=192.168.30.0/24 --gateway=192.168.30.1 -o parent=eth0 macnet</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker pull wfnb/onecloud:23-01-25-beta</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run -d --name=OpenWrt --restart always --network macnet --privileged wfnb/onecloud:23-01-25-beta /sbin/init</p>
-<p>docker import openwrt-01.10.2023-meson-meson8b-thunder-onecloud-rootfs.tar.gz kiddin9_openwrt
-docker run -d --name=OpenWrt --restart always --network macnet --privileged kiddin9_openwrt /sbin/init</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker exec OpenWrt sed -e "s/10.1.1.13/192.168.30.120/" -i /etc/config/network
-docker exec -it OpenWrt bash
-/etc/init.d/network restart</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker container update --restart=no [容器ID]
-docker stop [容器ID]
-docker rm [容器ID]</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker images</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rmi [镜像ID]</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-docker run -d --restart=unless-stopped -v /data/alist:/opt/alist/data -v /tmp:/opt/alist/tmp --network=host --name="alist" xhofe/alist:latest</h1>
-<p>docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -v /tmp:/opt/alist/tmp --network=host --name="alist" xhofe/alist:latest</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker exec -it alist ./alist admin</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run -p 3000:3000 -v /etc/homepage:/app/config -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/benphelps/homepage:latest</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run  <br>
---name homarr <br>
---restart always <br>
--p 7575:7575 <br>
--v /data/homarr/configs:/app/data/configs <br>
--v /data/homarr/icons:/app/public/icons <br>
--d ghcr.io/ajnart/homarr:latest</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run -d --name flare --restart=unless-stopped -p 80:5005 -v /data/flare:/app soulteary/flare</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> docker run -d <br>
---restart=always <br>
---privileged <br>
---network=host <br>
---name v2raya <br>
--e V2RAYA_LOG_FILE=/tmp/v2raya.log <br>
--e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray <br>
--e V2RAYA_NFTABLES_SUPPORT=off <br>
--e IPTABLES_MODE=legacy \</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol>
+<li>* * * * * command</li>
+</ol>
+<p>几个星号分别为：分 时 日 月 周，最后是要执行的命令。</p>
+<ul>
+<li>分：0~59</li>
+<li>时：0~23</li>
+<li>日：1~31</li>
+<li>月：1~12</li>
+<li>周：0～6（0表示星期天）</li>
+</ul>
+<p>除了数字还有几个个特殊的符号就是* / - ：</p>
+<ul>
+<li>* 代表所有的取值范围内的数字</li>
+<li>/ 代表每的意思</li>
+<li>*/5 表示每5个单位</li>
+<li>- 代表从某个数字到某个数字</li>
+<li>, 分开几个离散的数字</li>
+</ul>
+<p>配置文件的一些例子：</p>
+<ul>
+<li>0 3 * * * /root/test.sh 每天凌晨3点执行test.sh文件</li>
+<li>* 23-7/1 * * * /root/lnmp restart 晚上11点到早上7点之间，每隔一小时重启lnmp套件</li>
+<li>*/30 * * * * /usr/sbin/ntpdate 每半小时同步一下时间</li>
+<li>0 23 * * 6 /lnmp restart 每星期六的11 : 00 pm重启重启lnmp套件。</li>
+<li>*/1 * * * * echo "i am running."&gt;&gt;/tmp/running.txt 每隔1分钟向/tmp/running.txt写一个"i am running."字符串。</li>
+</ul>
+<p>运行
+我以为编辑crontab保存后会自动执行，其实不然，必须通过重启cron才可以，命令如下：</p>
+<ul>
+<li>启动/etc/init.d/cron start</li>
+<li>关闭/etc/init.d/cron stop</li>
+<li>重启/etc/init.d/cron restart</li>
+</ul>
+<h1> 群晖</h1>
+<h2> OPKG</h2>
+<p>ssh 进入群晖后, sudo -i 获取管理员权限, 运行下面的命令:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>脚本运行完毕后, 修改环境文件:</p>
+<ol>
+<li>/root/.profile:</li>
+</ol>
+<p>PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/usr/local/bin:/opt/bin:/opt/sbin</p>
+<ol start="2">
+<li>/etc/rc:</li>
+</ol>
+<p>/opt/etc/init.d/rc.unslung start</p>
+<h1> Docker</h1>
+<h2> Docker安装</h2>
+<p><strong>Docker</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>国内镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Docker基本命令</h2>
+<p>启动 Docker 服务</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 运行状态</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>将 Docker 服务加入开机自启动</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器在线状态及大小</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器的运行输出日志</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重新启动容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>停止容器的运行</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>移除容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 docker 容器占用 CPU，内存等信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 安装版本等信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重启 Docker（非容器）</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>清理 Docker</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 网络信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>检查 bridge 网络状态</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改容器网段IP</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>批量停止</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>批量删除</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> Docker代理</h2>
+<ol>
+<li>
+<p>Create a systemd drop-in directory for the <code>docker</code> service:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>Create a file named <code>/etc/systemd/system/docker.service.d/http-proxy.conf</code> that adds the <code>HTTP_PROXY</code> environment variable:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>Flush changes and restart Docker</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>Verify that the configuration has been loaded and matches the changes you made, for example:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+</ol>
+<p>修改hosts</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> 重建Docker网络</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Watchtower</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> OpenWrt</h1>
+<p>🔵打开网卡混杂模式</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建网络</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘[↑自己根据 玩客云 所在网段修改，如：玩客云IP:10.1.2.11，则10.1.1.0/24 改成 10.1.2.0/24，10.1.1.1改成主路由地址]</p>
+<p>🔵拉取 OpenWRT 镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘--name=OpenWrt 其中OpenWrt是容器名称，可以更改成你想要的，容器名称注意不要和其他容器一样，会冲突</p>
+<p>🔘--ip 10.1.1.13 其中10.1.1.13是容器IP，可以更改成你想要的，容器IP不要重复，这一项可删除</p>
+<p>🔵修改OpenWrt IP</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘OpenWrt 是容器名称，和你创建容器时的一致</p>
+<p>🔘镜像设置的默认IP是10.1.1.13，可通过该命令修改</p>
+<p>🔵管理密码是 password</p>
+<p>🔵LAN口固定IP地址，网关指向主路由IP地址</p>
+<p>iptables -t nat -I POSTROUTING eth0 -j MASQUERADE</p>
+<p>🔴设置 容器不自启动 、 停止容器 和 删除容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔴查看所有镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘记录下 xuanaimai/openwrt 21-09-15 右边的 IMAGE ID（镜像ID，下面用得到）</p>
+<p>🔴删除镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Alist</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看密码</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>使用<a href="http://ip:5244/" target="_blank" rel="noopener noreferrer">http://ip:5244</a>    来登录alist点击下面的管理输入管理员的账号和密码</p>
+<h1> Homepage</h1>
+<p><strong>Homepage</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>Homarr</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Flare</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> V2rayA</h1>
 <p>安装</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Linux安装</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1
-开启IP转发</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>开启IP转发</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>http://ip:2017</p>
 <h1> wireproxy</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Portainer</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> 青龙面板</h1>
 <p>青龙面板:5700</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>检查服务</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>检查服务</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>安装依赖</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改config.sh</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改config.sh</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 京东脚本</h2>
 <p>1</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2</p>
@@ -929,46 +863,26 @@ Linux安装</p>
 <div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>9 .【青蛙/smiek2121】</p>
 <div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>10 .【船长】</p>
 <div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> DailyCheckIn</h2>
-<h1> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-https://sitoi.github.io/dailycheckin/</h1>
-<p>https://sitoi.gitee.io/dailycheckin/</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<p>https://sitoi.github.io/dailycheckin/</p>
 <h2> BiliOutils</h2>
 <p>https://bilioutils.js.org/</p>
 <h1> WOL</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> DDNS-GO</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> Lucky</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>http://ip:16601</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Lucky</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>http://ip:16601</p>
 <h1> Cron</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>编辑定时自动脚本</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在ssh中执行脚本，然后编辑文件。</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>丢进去这个脚本，表示每天凌晨1点重启服务器。编辑完毕之后:wq保存退出。</p>
 <p>保存退出重启生效</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h1> Cloudflare Tunnel</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker版</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>蒲公英</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
     <published>2024-02-21T06:31:28.000Z</published>
   </entry>
   <entry>
     <title type="text">【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html"/>
-    <updated>2024-02-21T06:31:28.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -1156,7 +1070,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/%E5%AD%97%E6%AF%8D%E8%A1%A8%E6%83%85%E5%AD%97%E7%AC%A6%E7%94%BB.html</id>
     <link href="https://jiange1236.github.io/fun/%E5%AD%97%E6%AF%8D%E8%A1%A8%E6%83%85%E5%AD%97%E7%AC%A6%E7%94%BB.html"/>
-    <updated>2023-12-14T07:14:40.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>文本是歪的复制到游戏不歪
 如果游戏乱码试试调下字体
 点格式  字体：方正粗黑宋简体  字形：常规   大小：小二</p>
@@ -1229,7 +1143,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/Typora.html</id>
     <link href="https://jiange1236.github.io/tech/Typora.html"/>
-    <updated>2023-12-14T07:14:40.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>第一步： 下载最新版本的Typora安装</p>
 <p>第二部： 安装完后，进入typora的安装目录下的 \resources\page-dist\static\js 目录，找到 LicenseIndex开头的文件，我这里文件名如下：</p>
 <p>Lisenselndex.180dd4c7.b98d5f1f.chunk.js</p>
@@ -1248,7 +1162,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</title>
     <id>https://jiange1236.github.io/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</id>
     <link href="https://jiange1236.github.io/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html"/>
-    <updated>2023-09-11T01:26:15.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -1364,7 +1278,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">资源来源 | Nite07的小窝</title>
     <id>https://jiange1236.github.io/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html</id>
     <link href="https://jiange1236.github.io/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html"/>
-    <updated>2023-09-11T01:26:15.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 资源来源 | Nite07的小窝</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -1581,7 +1495,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">OpenWRT 分流DNS的设置</title>
     <id>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</id>
     <link href="https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>目前还是有许多人喜欢设置DNS，虽然会浪费一些转发性能，但如果明白其中的链路关系，合理设置后，还是能起到不错的效果的。同时也把正确的设置方式告诉大家。</p>
 <p>此教程基于当前路由是主路由，如果是旁路由虽差不多，但有一些差异，需要格外注意。</p>
 <p>同时请注意，删除你电脑，手机上的DNS（不要设置任何DNS）</p>
@@ -1655,31 +1569,28 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/Github.html</id>
     <link href="https://jiange1236.github.io/tech/Github.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
-    <summary type="html"><![CDATA[<h2> Github RAW 加速服务</h2>
+    <updated>2024-06-07T05:03:50.000Z</updated>
+    <summary type="html"><![CDATA[<h3> Github RAW 加速服务</h3>
 <p>https://www.7ed.net/#/raw-cdn</p>
 <p>https://raw.githubusercontents.com/用户/仓库/main(分支)/子目录/txt.txt</p>
 <p>https://raw.fastgit.org/</p>
 <p>https://raw-gh.gcdn.mirr.one/</p>
 <p>https://cdn.jsdelivr.net/gh/用户/仓库@main/子目录/txt.txt</p>
-<h2> Go代理</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>go env -w GOPROXY=https://goproxy.cn
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></summary>
-    <content type="html"><![CDATA[<h2> Github RAW 加速服务</h2>
+]]></summary>
+    <content type="html"><![CDATA[<h3> Github RAW 加速服务</h3>
 <p>https://www.7ed.net/#/raw-cdn</p>
 <p>https://raw.githubusercontents.com/用户/仓库/main(分支)/子目录/txt.txt</p>
 <p>https://raw.fastgit.org/</p>
 <p>https://raw-gh.gcdn.mirr.one/</p>
 <p>https://cdn.jsdelivr.net/gh/用户/仓库@main/子目录/txt.txt</p>
-<h2> Go代理</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content>
+]]></content>
     <published>2022-06-16T01:09:02.000Z</published>
   </entry>
   <entry>
     <title type="text">检测鉴定</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html"/>
-    <updated>2023-12-14T07:14:40.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 检测、鉴定依据</h1>
 <h2> 检测依据</h2>
 <p><strong>通用部分</strong></p>
@@ -2117,7 +2028,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">钢结构</title>
     <id>https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</id>
     <link href="https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html"/>
-    <updated>2022-05-26T02:25:45.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> 荷载组合</h1>
 <p>钢规3.1.5：按承载能力极限状态设计钢结构时，应考虑荷载效应的基本组合，必要时尚应考虑荷载效应的偶然组合。</p>
@@ -2504,7 +2415,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">图书馆</title>
     <id>https://jiange1236.github.io/study/%E5%9B%BE%E4%B9%A6%E9%A6%86.html</id>
     <link href="https://jiange1236.github.io/study/%E5%9B%BE%E4%B9%A6%E9%A6%86.html"/>
-    <updated>2022-05-18T03:05:06.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>龙源期刊</strong></p>
 <p>辽宁省图书馆http://lnlib.vip.qikan.com/Index.aspx</p>
 <p>贵州省图书馆http://gzslib.vip.qikan.com/index.aspx</p>
@@ -2554,7 +2465,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">Python常用函数&amp;数据分析</title>
     <id>https://jiange1236.github.io/study/Python/Python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.html</id>
     <link href="https://jiange1236.github.io/study/Python/Python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.html"/>
-    <updated>2022-05-18T02:43:25.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> 内置函数</h1>
 <table>
@@ -3444,7 +3355,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">LOFT装配式超薄夹层系统</title>
     <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.html</id>
     <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.html"/>
-    <updated>2022-05-18T02:43:25.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 这才是预制建筑该有的样子——更省、更快、更好！LOFT装配式超薄夹层系统来了！</h1>
 <blockquote>
 <p>Excerpt</p>
@@ -3541,7 +3452,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">彩力板</title>
     <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BD%A9%E5%8A%9B%E6%9D%BF.html</id>
     <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BD%A9%E5%8A%9B%E6%9D%BF.html"/>
-    <updated>2022-05-18T02:47:47.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p></p>
 <p>PC石材反打制作流程：爪钉设置（爪钉、化学螺杆）→背涂隔离→粘贴胶带石材入模→绑扎钢筋→浇捣混凝土→养护→脱模打密→封胶→粘贴保护膜→出厂</p>
 <p>制作养护脱模后，及时将同一块PC内的石材分格缝按建筑师要求打密封耐候胶，并粘贴保护膜出厂。</p>
@@ -3560,7 +3471,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">基金定投方法</title>
     <id>https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html</id>
     <link href="https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html"/>
-    <updated>2022-05-18T03:05:06.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>今天我想静静|附我的基金定投方法</strong></p>
 <p>**1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到了20%，但是估值依旧在往下走，价格也没有太跌。无论接下来牛市还是熊市，这只指数都是非常安全的标的。</p>
 <p>2，至于买创蓝筹。之前写过一篇<a href="http://mp.weixin.qq.com/s?__biz=MzI4MDgwNzE0OQ==&amp;mid=2247483761&amp;idx=1&amp;sn=55d659c688448e24f9beb0cecdda9616&amp;chksm=ebb392f3dcc41be56f598e45a9dc6c7cf336e581dac0689ac56a9843ccd5b330f963734608dc&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">为什么买创蓝筹</a>，这一半仓位属于进攻型仓位。</p>]]></summary>
@@ -3615,7 +3526,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">投资“固收+”债券基金，必须要了解的几个重点</title>
     <id>https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html</id>
     <link href="https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html"/>
-    <updated>2022-05-18T03:05:06.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>投资“固收+”债券基金，必须要了解的几个重点！</strong></p>
 <p>Original 实战研究的 东方财之道 <em>Today</em></p>
 <p>近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。</p>
@@ -3689,7 +3600,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">聊聊债券基金的选择方法与技巧</title>
     <id>https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html</id>
     <link href="https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html"/>
-    <updated>2022-05-18T03:05:06.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>一、怎么选择债券基金？</strong></p>
 <p><strong>1. 明确目标需求</strong></p>
 <p>投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。</p>
@@ -3762,7 +3673,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/iPad.html</id>
     <link href="https://jiange1236.github.io/fun/iPad.html"/>
-    <updated>2022-05-18T01:30:12.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>Bioshock（生化奇兵）</p>
 <p>幽浮：未知敌人</p>
 <p>Vainglory网际直通车</p>
@@ -3777,7 +3688,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/%E4%B8%89%E5%85%83.html</id>
     <link href="https://jiange1236.github.io/fun/%E4%B8%89%E5%85%83.html"/>
-    <updated>2022-05-18T01:30:12.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>青菜 芹菜 蒜苗 茼蒿 笋子 南瓜 黄瓜 小葱 大蒜 茄子 白菜 花菜 韭菜 西红柿 兰花菜 水芹菜</p>
 <p>苹果 菠萝 梨子 李子 青枣 红枣 荔枝 蛇果 橘子 猕猴桃 椰子 香蕉 西瓜 青提 红提 葡萄 黄桃 龙眼 桂圆 哈密瓜 香瓜 柿子 菠萝蜜 火龙果</p>
 <p>猴子 海星 海马 水母 珊瑚鱼 小丑鱼 鲤鱼 鲫鱼 边鱼 螃蟹 蜘蛛 蚊子 苍蝇 金丝猴 猕猴 海豚 马 斑马 蛇 蝙蝠 老鼠 桂花鱼 中华鲟 老鹰</p>
@@ -3792,7 +3703,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/%E5%8E%BB%E5%93%AA%E9%87%8C%E6%89%BE%E5%A4%A7%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%94%B5%E5%BD%B1%E5%9B%BE%E7%89%87%20(2013.5.11%E6%9B%B4%E6%96%B0).html</id>
     <link href="https://jiange1236.github.io/fun/%E5%8E%BB%E5%93%AA%E9%87%8C%E6%89%BE%E5%A4%A7%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%94%B5%E5%BD%B1%E5%9B%BE%E7%89%87%20(2013.5.11%E6%9B%B4%E6%96%B0).html"/>
-    <updated>2022-05-18T01:30:12.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>图片1：驯龙高手 How to Train Your Dragon 剧照</p>
 <p>图片1：驯龙高手 How to Train Your Dragon 剧照</p>
 <p>原图地址：http://img2.douban.com/view/photo/raw/public/p456604559.jpg  尺寸：1280x543</p>
@@ -3951,7 +3862,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/%E5%B9%BF%E6%92%AD.html</id>
     <link href="https://jiange1236.github.io/fun/%E5%B9%BF%E6%92%AD.html"/>
-    <updated>2022-05-18T01:30:12.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>糖蒜广播 大内密谈 坏蛋调频</p>
 <ul>
 <li>正在播放 《Tonight-AGA》 ●━━━━━━─────── 5:20 ⇆ ◁ ❚❚ ▷ ↻</li>
@@ -3968,7 +3879,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/%E7%8B%BC%E4%BA%BA%E6%9D%80.html</id>
     <link href="https://jiange1236.github.io/fun/%E7%8B%BC%E4%BA%BA%E6%9D%80.html"/>
-    <updated>2022-05-18T01:30:12.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>以下配置建议的规则：屠城、遗言、无新月。</p>
 <p>6 - 7 人局</p>
 <p>3 - 4 村民 2狼人 女巫</p>
@@ -4031,7 +3942,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/love/%E3%80%8C%E8%AF%97%E7%BB%8F%E7%88%B1%E6%83%85%EF%BC%8C%E7%BB%9D%E7%BE%8E%E6%89%8B%E7%BB%98%E3%80%8D%EF%BC%9A%E4%B8%80%E6%97%A5%E4%B8%8D%E8%A7%81%EF%BC%8C%E5%A6%82%E4%B8%89%E7%A7%8B%E5%85%AE%EF%BC%81.html</id>
     <link href="https://jiange1236.github.io/fun/love/%E3%80%8C%E8%AF%97%E7%BB%8F%E7%88%B1%E6%83%85%EF%BC%8C%E7%BB%9D%E7%BE%8E%E6%89%8B%E7%BB%98%E3%80%8D%EF%BC%9A%E4%B8%80%E6%97%A5%E4%B8%8D%E8%A7%81%EF%BC%8C%E5%A6%82%E4%B8%89%E7%A7%8B%E5%85%AE%EF%BC%81.html"/>
-    <updated>2022-05-18T01:30:12.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>1、一日不见，如三秋兮。——《诗经·王风·采葛》</p>
 <p>2、委委佗佗，如山如河。——《诗经·鄘风·君子偕老》</p>
 <p>3、江有汜，之子归，不我以。不我以，其后也悔。——《诗经·召南·江有汜》</p>
@@ -4082,7 +3993,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/love/%E6%9C%9B%E4%BD%A0%E8%AF%B4%E7%9A%84%E5%86%8D%E8%A7%81%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%BB%A3%E8%A1%A8%E7%9D%80%E5%86%8D%E4%B9%9F%E4%B8%8D%E8%A7%81%E3%80%82%E3%80%8A%E7%AC%AC%E4%B8%80%E5%B0%81%E3%80%8B.html</id>
     <link href="https://jiange1236.github.io/fun/love/%E6%9C%9B%E4%BD%A0%E8%AF%B4%E7%9A%84%E5%86%8D%E8%A7%81%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%BB%A3%E8%A1%A8%E7%9D%80%E5%86%8D%E4%B9%9F%E4%B8%8D%E8%A7%81%E3%80%82%E3%80%8A%E7%AC%AC%E4%B8%80%E5%B0%81%E3%80%8B.html"/>
-    <updated>2022-05-18T01:30:12.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>望你说的再见，不是代表着再也不见。《第一封》</p>
 <p>我还在原地，傻傻的等你回来。《第二封》</p>
 <p>只要身边有你,无论富贵与否,我都是世上最幸福的人。《第三封》</p>
@@ -4385,7 +4296,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">Python</title>
     <id>https://jiange1236.github.io/study/Python/Python.html</id>
     <link href="https://jiange1236.github.io/study/Python/Python.html"/>
-    <updated>2022-05-18T02:43:25.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> 变量</h1>
 <p># 整数转成浮点数	float(a)</p>
@@ -5033,7 +4944,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">荷载</title>
     <id>https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html</id>
     <link href="https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> 荷载组合</h1>
 <p><strong>承载力极限状态基本组合</strong></p>
@@ -6046,7 +5957,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <p>18、模型拼装漏板荷载、模型拼装掉楼层</p>
 <p>19、Pkpm计算悬挑板、PMCAD计算边跨板、JCCAD筏板边跨，均没弯矩传给边梁形成扭矩，板支座处也没弯矩，全部漏荷载（更准确地说是漏荷载效应！），板支座钢筋与边梁扭筋均需要人为增大</p>
 <p>20、独立基础漏弯矩荷载，按照抗震规范6.2.3条，框架结构柱底弯矩是要放大的</p>
-<p>%</p>
 ]]></content>
     <category term="工作"/>
     <published>2022-05-13T00:00:00.000Z</published>
@@ -6055,7 +5965,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">设计</title>
     <id>https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html</id>
     <link href="https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <hr>
 <h1> 注意事项</h1>
@@ -6783,7 +6693,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <p><strong>强、弱连梁</strong></p>
 <p>强连梁一般设在需要保证墙体整体性和提高墙体刚度的关键部位，比如调周期比和减少位移时，可以用来加强外围墙体；弱连梁通常用于剪力墙长度过大，需要特意削弱的部位，防止地震力过度集中。但此时一般都可以按照普通梁计算。</p>
 <h1> 非结构构件</h1>
-<p>**非结构构件：**主要指建筑非结构构件（如维护外墙、隔墙、幕墙、吊顶、广告牌、储物柜架等）及建筑附属机电设备支架（如电梯，照明和应急电源，通信设备，管道系统，采暖和空调系统，烟火监测和消防系统用天线）等。</p>
 <h2> 转角窗</h2>
 <p><strong>转角窗的加强措施（结构技术措施 5.1.13、11G329-1 P3-19）</strong></p>
 <ol>
@@ -9102,7 +9011,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">施工图</title>
     <id>https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html</id>
     <link href="https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <p><strong>总说明</strong></p>
 <ol>
@@ -9295,7 +9204,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <h2> 构造柱</h2>
 <p>填充墙墙长大于5m或大于层高的2倍时应设置构造柱；后砌外墙一字墙尽端、L形墙转角处、电梯井道四角、门窗洞口大于2.1米时应设置构造柱;砖砌女儿墙构造柱详12ZG003第39页,其中1号筋为2φ12;女儿墙及带形窗台墙每隔3米需设构造柱。</p>
 <p>抗规13.3.4：钢筋混凝土结构中的砌体填充墙，墙长大于8m或大于层高的2倍时宜设置构造柱</p>
-<p>抗规10.2.5-1：多层砖砌体房屋的构造柱应符合下列构造规定：构造柱的最小截面可为180mm×240mm(墙厚190mm时为180mm×190mm)；构造柱纵向钢筋宜采用4φ12，箍筋直径可采用6mm，间距不宜大于250mm，且在柱上、下端适当加密；当6、7度超过六层、8度超过五层和9度时，构造柱纵向钢筋宜采用4φ14，箍筋间距不应大于200mm；房屋四角的构造柱应适当加大截面及配筋；</p>
 <h2> 洞口</h2>
 <p>避难层风井洞口</p>
 <p>风井在一定层数时封闭</p>
@@ -10497,7 +10405,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">基础</title>
     <id>https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html</id>
     <link href="https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <p><strong>基础设计值安全储备10%~20%</strong></p>
 <p>地基规6.3.7-2：填土压实系数取不小于0.94</p>
@@ -10828,7 +10736,7 @@ https://sitoi.github.io/dailycheckin/</h1>
 <p>挡墙转角处暗柱，仅转角处有梁搭过来时要加暗柱。</p>
 <p><strong>侧壁所受荷载</strong></p>
 <p>\1. 重力荷载		2. 土压力			3. 水压力			4. 土与侧壁的摩擦力</p>
-<p>①室外地坪活荷载按5kN/m2（无车道）、10kN/m2（有车道）考虑，或考虑20t消防车的侧压力（应考虑土层厚度的扩散作用，不能直接按荷载规范取值）土的浮重度按11kN/m3考虑</p>
+<p>①室外地坪活荷载按5kN/m2（无车道）、10kN/m2（有车道）考虑，或考虑20t消防车的侧压力（应考虑土层厚度的扩散作用，不能直接按荷载规范取值）</p>
 <p>②按抗浮水位考虑侧压力（也考虑雨水排放不畅</p>
 <p>③按两跨连续板计算，下部嵌固在基础梁内，上部在首层板简支</p>
 <p>④按偏压构件考虑，墙体裂缝控制在0.3mm以内 ；偏保守则按受弯构件考虑</p>
@@ -11819,7 +11727,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">结构笔记-理论篇</title>
     <id>https://jiange1236.github.io/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html</id>
     <link href="https://jiange1236.github.io/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1> 楼板计算模型</h1>
 <p>1、刚性板：平面内刚度无穷大，平面外刚度为0。 其主要用于大部分有梁体系的板，一般的非特别厚的板，平面内刚度无穷大和平面外刚度为0，相对的都是梁的刚度。</p>
@@ -12565,8 +12473,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <h1> 砼基本原理</h1>
 <p>提高砼梁延性：减小砼相对受压区高度（减少受拉配筋、配置受压钢筋、采用T形截面和提高砼强度等级）</p>
 <p>斜截面受剪承载力计算位置：A.支座边缘处的截面；B.受拉区弯起钢筋起点处的截面；C.箍筋截面面积或间距改变处的截面；D.腹板宽度改变处的截面</p>
-<h1> 生命线工程</h1>
-<p>生命线工程：主要是指维持城市生存功能系统和对国计民生有重大影响的工程。主要包括供水，排水系统工程；电力、燃气，石油输送管线等能源供给系统工程；电话和广播电视等情报通信系统工程；大型医疗系统工程和公路、铁路等交通系统的工程</p>
 ]]></content>
     <category term="工作"/>
     <published>2022-05-13T00:00:00.000Z</published>
@@ -12575,7 +12481,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">硬链接</title>
     <id>https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html</id>
     <link href="https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html"/>
-    <updated>2023-12-14T07:50:39.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 硬链接</h1>
 <p><strong>Linux</strong></p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work
@@ -12599,7 +12505,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">Deepin</title>
     <id>https://jiange1236.github.io/tech/Deepin_Ubuntu.html</id>
     <link href="https://jiange1236.github.io/tech/Deepin_Ubuntu.html"/>
-    <updated>2022-05-16T00:40:01.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> Deepin</h1>
 <h2> 系统</h2>
@@ -12721,7 +12627,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.html</id>
     <link href="https://jiange1236.github.io/tech/%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.html"/>
-    <updated>2022-05-14T16:36:01.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>群辉 emby套件版服务端 白嫖教程</strong></p>
 <p><strong>安装教程</strong></p>
 <ul>
@@ -12784,7 +12690,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">半洗白原理</title>
     <id>https://jiange1236.github.io/tech/NAS%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.html</id>
     <link href="https://jiange1236.github.io/tech/NAS%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.html"/>
-    <updated>2022-05-14T16:30:31.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <p>apollolake</p>
 <p>https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_access_files_on_Synology_NAS_within_the_local_network_NFS</p>
@@ -13032,7 +12938,7 @@ https://sitoi.github.io/dailycheckin/</h1>
     <title type="text">Openwrt</title>
     <id>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</id>
     <link href="https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> Openwrt</h1>
 <h2> OPKG</h2>
@@ -13049,25 +12955,7 @@ src/gz openwrt_kiddin9 https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/k
 <h2> OPKG</h2>
 <p>原版</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>查找大文件</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-定制软件包</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2> R2S</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> R2S</h2>
 <p>https://github.com/fanck0605/openwrt-nanopi-r2s</p>
 <p>https://github.com/fanck0605/friendlywrt-nanopi-r2s</p>
 <p>https://github.com/klever1988/nanopi-openwrt</p>
@@ -13079,48 +12967,6 @@ src/gz openwrt_kiddin9 https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/k
 <p>首先固件要支持ipv6，这是前提，设置：wan=高级=获取ipv6自动，wan6=dhcp6客户端下面选项保持初始设置，lan=ipv6=混合模式=混合模式=有状态+无状态，dhcp/dns=高级=取消禁止解析ipv6，基本上就ok了</p>
 <p><s>https://www.right.com.cn/forum/thread-4042833-1-1.html</s></p>
 <p>https://www.right.com.cn/forum/thread-4034918-1-1.html</p>
-<p>SmartDNS设置</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 分流设置</h3>
-<p>分流参考文章</p>
-<p>https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file</p>
-<p>https://github.com/pymumu/smartdns/issues/1022</p>
-<p>https://zeeko.dev/2022/09/smartdns-with-v2ray-tproxy/</p>
-<p>https://xtrojan.pro/bgfw/v2ray/v2ray-dns-streaming.html</p>
-<p>一、基本设置</p>
-<ol>
-<li>下载页面设置需自动下载的要分流的域名列表文件（也可上传）。(格式为一行一个域名，需要分流的域名)</li>
-<li>设置上游服务器，设置国外的DOT，DOH等服务器，并设置<code>服务器组</code>：比如oversea。可选勾选‘从默认组中排除’
-也可以设置一个上游服务器，通过代理走转发程序，设置<code>服务器组</code>用于专门分流查询，这样查询DNS的出口和数据出口一样，DNS结果的亲和度和更好。</li>
-<li>域名规则-&gt;域名分流设置：
-<ul>
-<li>设置<code>域名分组</code>，名称为第二步的名称：比如'oversea'</li>
-<li>选择<code>跳过测速</code></li>
-<li>选择<code>停用IPV6地址解析</code></li>
-<li>选择<code>域名列表文件</code>，文件为第一步设置的自动下载的文件，此文件为需要分流的域名列表。</li>
-<li>对于临时个别要分流的域名，可以在<code>域名列表</code>文本框中输入。</li>
-</ul>
-</li>
-</ol>
-<p>二、最简单的按域名的透明代理：</p>
-<p>如果smartdns运行在主路由上，那么可以使用REDIRECT模式对TCP进行透明代理。下面举例对TCP进行透明转发，其中的[ipsetname]是IP集合的名称，比如可以设置<code>proxy-list</code>：</p>
-<ol>
-<li>shell命令，创建ipset集合
-<code>ipset create proxy-list hash:net timeout 600</code></li>
-<li>shell命令，iptable设置对应ipset集合中域名的TCP请求使用TPROXY重定向转发到本机2018的转发程序。
-<code>iptables -t nat -I PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018</code></li>
-<li>smartdns设置页面的<code>域名分流设置</code>-&gt;<code>ipset名称</code>设置为上述步骤中[ipsetname]的名称，比如<code>proxy-list</code></li>
-<li>在主路由的2018端口，开启REDIRECT模式的转发程序。</li>
-<li>应用smartdns设置。</li>
-<li>结束。</li>
-</ol>
-<p>对于udp，nfttable也是类似的步骤，上述透明代理github上有现成的脚本，PW也有类似的能力，只要选择好转发模式，和设置好正确的ipset名称或nftset名称即可。</p>
-<p>原理上，smartdns和转发软件的结合点，为ipset名称或nftset名称，那两个参数和转发软件匹配就可以做到按需转发。
-dnsmasq也是类似的工作方式。</p>
-<p><strong>删除规则</strong></p>
-<p><code>iptables -t nat -D PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018</code></p>
-<h3> GeoSite\GeoIP</h3>
-<p>geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text</p>
-<p>原本 geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data</p>
 <h2> 无线</h2>
 <p></p>
 <p></p>
@@ -13144,25 +12990,7 @@ dnsmasq也是类似的工作方式。</p>
 <h2> AdGuard Home</h2>
 <p>最近128m的小闪存运行AdGuardHome几天后，空间就爆了，改成只记录一天的日志还是爆，后来发现即使设置成一天，AdGuardHome也不是覆写，而是把旧的日志文件重命名继续保存了。
 所以用到了以下代码，自动删除旧的日志文件。直接计划任务里面添加以下代码</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
-此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。</p>
-<p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
 此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。</p>
 <h2> SSH</h2>
 <p>根据韩风大佬的视频整理的笔记，方便记忆，原视频地址：https://www.bilibili.com/video/BV1hT4y1E78k</p>
@@ -13199,30 +13027,14 @@ dnsmasq也是类似的工作方式。</p>
 <p>*安装好ddnsto之后无法启用配置</p>
 <p>因为 Openwrt 15 版本跟最新的插件不兼容导致，解决办法尝试一：</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>如果不行则尝试二：重启路由器</p>
-<h2> DDNS</h2>
-<p><strong>防火墙设置</strong></p>
-<p>名称 DDNS</p>
-<p>协议 TCP UDP</p>
-<p>源区域 <strong>wan</strong></p>
-<p>目标区域 <strong>lan</strong></p>
-<p>目标地址  <code>::0000:0000:0000:0001</code></p>
-<p>目标端口 80</p>
-<p>操作 接受</p>
-<p>地址族限制 仅 IPv6</p>
 <h2> 全能推送（Pushbot）</h2>
 <p>https://www.right.com.cn/forum/thread-4051426-1-1.html</p>
 <p>项目地址：https://github.com/zzsj0928/luci-app-pushbot</p>
-<h2> 微信推送（wechatpush）</h2>
-<p>pushplus_token <code>5dfff495415c445e8466c3f894d926f2</code></p>
 <h2> Tailscale</h2>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>开启子路由</p>
 <p>https://tailscale.com/kb/1019/subnets/?q=subnet</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>Linux开启接受子路由</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol>
-<li>接口创建 <code>Tailscale</code>不配置协议，防火墙创建 <code>Tailscale</code>，保存并应用</li>
-<li>防火墙 <code>Tailscale</code>区域设置，全部接受，开启IP 动态伪装、MSS 钳制，允许转发到 <code>Lan</code>、<code>Wan</code>，允许源区域 <code>Lan</code>，</li>
-</ol>
-<h2> Vsftpd</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> Vsftpd</h2>
 <p>/etc/vsftpd.conf</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>允许匿名访问</p>
 <div class="language-undefined line-numbers-mode" data-ext="undefined"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>启动vsftpd</p>
@@ -13259,18 +13071,17 @@ dnsmasq也是类似的工作方式。</p>
 <p>https://op.dllkids.xyz/packages/aarch64_generic/</p>
 <p>luci-app-advanced_1.20-26_all</p>
 <p><strong>hosts</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 系统更新</h2>
-<p>值守式系统升级 attendedsysupgrade</p>
-<p>非定制固件升级 gpsysupgrade</p>
-<h1> V2raya</h1>
-<p>v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少geosite.dat, geoip.dat.
-其根本原因是缺少了整个v2ray核心.</p>
-<p>安装v2ray-core插件即可</p>
-<p>指定v2ray binary path为 <code>/usr/bin/v2ray</code></p>
-<p>规则列表文件路径：<code>/usr/share/v2ray</code></p>
-<p>附加配置目录:<code>/etc/v2raya/ext</code>v2ray-ext.json</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> V2ray</h1>
-<p>https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> 猫影视</h1>
+<p>https://gitea.com/AYOM/zhou/</p>
+<p>https://gitea.com/wuzang/mm</p>
+<p>https://us-oss.9t.ee/Cat/api.html</p>
+<p>源：</p>
+<p>http://fj365.ml/m.json</p>
+<p>emotn分享码</p>
+<p>123456	666888	129915	aaa123</p>
+<p>https://post.smzdm.com/p/aen2z7g4/</p>
+<p>https://post.smzdm.com/p/aoowqow7/</p>
+<p>https://post.smzdm.com/p/a99vlpmp/</p>
 <h1> R2S设置</h1>
 <h2> 系统</h2>
 <h3> 管理权</h3>
@@ -13304,7 +13115,7 @@ dnsmasq也是类似的工作方式。</p>
 <p>更新时间星期：每天</p>
 <p>更新时间小时：0点</p>
 <p><strong>规则列表</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>服务器端</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>服务器端</strong></p>
 <p>启用：√</p>
 <p>端口：10801</p>
 <h3> DDNS.to内网穿透</h3>
@@ -13512,7 +13323,7 @@ iptables -t nat -I POSTROUTING -o tailscale0 -j MASQUERADE</p>
     <title type="text">工具安装篇</title>
     <id>https://jiange1236.github.io/tech/Potplayer.html</id>
     <link href="https://jiange1236.github.io/tech/Potplayer.html"/>
-    <updated>2022-05-14T16:30:31.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <p>Potplayer 是高清影视常用的播放器，界面简洁，功能齐全，比 MPC-HC 和 MPC-BE 更人性化；但其**默认方案十分糟糕，预设过多错误，无法正确播放 10-bit 视频，**一直饱受诟病。VCB-Studio 以往发布的数篇高清教程大多偏重于 madVR，在 PotPlayer 的设置方面有些错漏。为了广大观众能正确、便捷地用 PotPlayer 享受高清影视，我们为大家带来一篇基于 PotPlayer 的高清影视全套 64-bit 工具链完整配置图文详解教程。</p>
 <p>本教程花大力气调整 Potplayer ，很大程度上是为了纠正 Potplayer 错误的默认设置，让它能跟 MPC-HC 和 MPC-BE 站到同一起跑线上，如果嫌 Potplayer 设置麻烦，请使用 MPC-HC 和 MPC-BE 搭配 madVR。如果 VCB-Studio 其他播放器教程中的 Potplayer 设置与本篇有冲突，以本篇教程为准。如果看不清图片，请在图片上右键点击-在新选项卡中打开，查看大图。</p>]]></summary>
@@ -13653,7 +13464,7 @@ iptables -t nat -I POSTROUTING -o tailscale0 -j MASQUERADE</p>
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/Cameyo.html</id>
     <link href="https://jiange1236.github.io/tech/Cameyo.html"/>
-    <updated>2022-05-14T16:19:22.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>使用方法</p>
 <p>打包：</p>
 <p>先关闭 所有 无关的软件（不然，你的男/女朋友QQ发果照给你，也会打包进去的，对此我不负责！）
@@ -13692,7 +13503,7 @@ iptables -t nat -I POSTROUTING -o tailscale0 -j MASQUERADE</p>
     <title type="text">段落格式</title>
     <id>https://jiange1236.github.io/tech/Markdown.html</id>
     <link href="https://jiange1236.github.io/tech/Markdown.html"/>
-    <updated>2022-06-16T07:35:00.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> 段落格式</h1>
 <p>字体</p>
@@ -15340,7 +15151,7 @@ ___粗斜体文本___
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/Ublock%20Origin.html</id>
     <link href="https://jiange1236.github.io/tech/Ublock%20Origin.html"/>
-    <updated>2022-05-14T15:59:13.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>【过滤规则】（对于比较良心的网站，建议加入白名单，以支持网站的发展）</p>
 <p><strong>halflife</strong></p>
 <p>一、halflife吧大佬半生的过滤规则（日更，无论订阅哪一个规则，建议都订阅国内源2，因为这个源比较稳定）</p>
@@ -15399,95 +15210,50 @@ ___粗斜体文本___
     <published>2022-05-14T15:59:13.000Z</published>
   </entry>
   <entry>
-    <title type="text">RoutingA</title>
+    <title type="text">Windows</title>
     <id>https://jiange1236.github.io/tech/V2rayA.html</id>
     <link href="https://jiange1236.github.io/tech/V2rayA.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
-    <summary type="html"><![CDATA[<h1> RoutingA</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>default: direct
-# Write your own rules below
-# domain(geosite:geolocation-!cn) -&gt; proxy
-# ip(geoip:hk, geoip:mo) -&gt; proxy
-
-source(100.0.0.0/8) -&gt; direct
-port(6881-6889) -&gt; direct
-sourcePort(6881-6889) -&gt; direct
-domain(geosite:cn) -&gt; direct
-ip(geoip:private, geoip:cn) -&gt; direct
-domain(geosite:category-scholar-!cn, geosite:category-scholar-cn) -&gt; direct
-# domain(ext:"LoyalsoldierSite.dat:china-list", ext:"LoyalsoldierSite.dat:cn") -&gt; direct
-
-# domain(geosite:google-scholar) -&gt; proxy
-# domain(geosite:google, geosite:github, geosite:facebook, geosite:greatfire) -&gt; proxy
-domain(regexp: v2ray.*) -&gt; proxy
-domain(regexp: v2fly.*) -&gt; proxy
-domain(domain: singlelogin.se) -&gt; proxy
-domain(contains: zlibrary) -&gt; proxy
-domain(contains: z-library) -&gt; proxy
-domain(geosite:z-library) -&gt; proxy
-domain(ext:"LoyalsoldierSite.dat:gfw") -&gt; proxy
-
-# domain(geosite:category-ads) -&gt; block
-# domain(ext:"LoyalsoldierSite.dat:category-ads-all") -&gt; block
-
-domain(geosite:category-porn, geosite:javdb) -&gt; proxy
-domain(regexp: thz.*) -&gt; proxy
-domain(regexp: porn.*) -&gt; proxy
-domain(regexp: btsow.*) -&gt; proxy
-domain(domain: taohuaimg.com) -&gt; proxy
-domain(regexp: bisi.*) -&gt; proxy
-domain(regexp: madouqu.*) -&gt; proxy
-domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
-    <content type="html"><![CDATA[<h1> RoutingA</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> GeoIP、GeoSite</h1>
-<h2> GeoIP</h2>
-<p>源文件：https://github.com/v2fly/geoip</p>
-<h2> GeoSite</h2>
-<p>源文件：https://github.com/v2fly/domain-list-community</p>
-<h2> Loyalsoldier</h2>
-<h3> GeoIP</h3>
-<p>geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text</p>
-<ul>
-<li>新增类别（方便有特殊需求的用户使用）：
-<ul>
-<li><code>geoip:cloudflare</code></li>
-<li><code>geoip:cloudfront</code></li>
-<li><code>geoip:facebook</code></li>
-<li><code>geoip:fastly</code></li>
-<li><code>geoip:google</code></li>
-<li><code>geoip:netflix</code></li>
-<li><code>geoip:telegram</code></li>
-<li><code>geoip:twitter</code></li>
-</ul>
-</li>
-</ul>
-<h3> GeoSite</h3>
-<p>geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data</p>
-<p>新增类别（方便有特殊需求的用户使用）：</p>
-<ul>
-<li>
-<p><code>geosite:gfw</code></p>
-</li>
-<li>
-<p><code>geosite:china-list</code>：包含 <a href="https://github.com/felixonmars/dnsmasq-china-list/blob/master/accelerated-domains.china.conf" target="_blank" rel="noopener noreferrer">@felixonmars/dnsmasq-china-list/accelerated-domains.china.conf</a> 文件里的域名，供有特殊 DNS 分流需求的用户使用。</p>
-</li>
-<li>
-<p><code>geosite:apple-cn</code>：包含 <a href="https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf" target="_blank" rel="noopener noreferrer">@felixonmars/dnsmasq-china-list/apple.china.conf</a> 文件里的域名，供希望 Apple 域名直连（不走代理）的用户使用。</p>
-</li>
-<li>
-<p><code>geosite:google-cn</code>：包含 <a href="https://github.com/felixonmars/dnsmasq-china-list/blob/master/google.china.conf" target="_blank" rel="noopener noreferrer">@felixonmars/dnsmasq-china-list/google.china.conf</a> 文件里的域名，供希望 Google 域名直连（不走代理）的用户使用。</p>
-</li>
-<li>
-<p>[<strong>慎用</strong>]<code>geosite:win-spy</code>：包含 <a href="https://github.com/crazy-max/WindowsSpyBlocker/blob/master/data/hosts/spy.txt" target="_blank" rel="noopener noreferrer">@crazy-max/WindowsSpyBlocker/hosts/spy.txt</a> 文件里的域名，供希望屏蔽 Windows 操作系统隐私跟踪域名的用户使用。</p>
-</li>
-<li>
-<p>[<strong>慎用</strong>]<code>geosite:win-update</code>：包含 <a href="https://github.com/crazy-max/WindowsSpyBlocker/blob/master/data/hosts/update.txt" target="_blank" rel="noopener noreferrer">@crazy-max/WindowsSpyBlocker/hosts/update.txt</a> 文件里的域名，供希望屏蔽 Windows 操作系统自动升级的用户使用。</p>
-</li>
-<li>
-<p>[<strong>慎用</strong>]<code>geosite:win-extra</code>：包含 <a href="https://github.com/crazy-max/WindowsSpyBlocker/blob/master/data/hosts/extra.txt" target="_blank" rel="noopener noreferrer">@crazy-max/WindowsSpyBlocker/hosts/extra.txt</a> 文件里的域名，供希望屏蔽 Windows 操作系统附加隐私跟踪域名的用户使用。</p>
-</li>
-</ul>
+    <updated>2024-06-07T05:03:50.000Z</updated>
+    <summary type="html"><![CDATA[<h1> Windows</h1>
+<p>本节介绍如何在 Windows 上安装 v2rayA。需要注意的是，目前在 Windows 上仅支持一键配置系统代理而非透明代理。</p>
+<h2> 使用安装包一键安装</h2>
+<p>安装包将内置 v2ray-core，如需更换 Xray-core，可在安装完毕后于安装目录手动进行替换。</p>
+<p>从 <a href="https://github.com/v2rayA/v2rayA/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 下载适用于 Windows 的安装包，例如 installer_windows_x64_1.5.6.exe，按照指示安装完毕即可。可运行桌面快捷方式或直接访问 http://127.0.0.1:2017 打开管理页面。</p>]]></summary>
+    <content type="html"><![CDATA[<h1> Windows</h1>
+<p>本节介绍如何在 Windows 上安装 v2rayA。需要注意的是，目前在 Windows 上仅支持一键配置系统代理而非透明代理。</p>
+<h2> 使用安装包一键安装</h2>
+<p>安装包将内置 v2ray-core，如需更换 Xray-core，可在安装完毕后于安装目录手动进行替换。</p>
+<p>从 <a href="https://github.com/v2rayA/v2rayA/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 下载适用于 Windows 的安装包，例如 installer_windows_x64_1.5.6.exe，按照指示安装完毕即可。可运行桌面快捷方式或直接访问 http://127.0.0.1:2017 打开管理页面。</p>
+<p>通过安装包安装 v2rayA 后，v2rayA 将以服务的形式运行，默认情况下将开机自启。你也可以在任务管理器中的“服务”选项卡管理 v2rayA 的启动与停止。</p>
+<h2> 手动安装核心和 v2rayA</h2>
+<p>v2rayA 目前不支持 TUN，因此 Windows 之上的透明代理无法启用。安全起见，下面将以普通用户权限来运行 v2rayA。</p>
+<p>建议从 scoop 安装 v2ray 核心，这样你可以很容易地获取后续更新。可以通过 <a href="https://github.com/qv2ray/mochi" target="_blank" rel="noopener noreferrer">Qv2ray 的 Mochi 仓库</a> 安装核心。不过注意，如果你从 scoop 安装了核心，那么你应该使用实际的核心文件，而不是 <code>scoop\shims</code> 下的外壳，否则将造成内核重启失败故障。</p>
+<h3> 下载 v2rayA</h3>
+<p>从 <a href="https://github.com/v2rayA/v2rayA/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 或 GitHub Action 下载适用于 Windows 的二进制文件，然后重命名为 <code>v2raya.exe</code>（格外注意 Windows 系统下不能丢失扩展名）。</p>
+<h3> 下载 V2Ray 核心 / Xray 核心</h3>
+<h4> 方法一：从 scoop 安装</h4>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> 方法二：手动下载安装</h4>
+<blockquote>
+<p>安装 V2Ray：https://www.v2fly.org/guide/install.html
+安装 Xray：https://xray.sh/document/install.html</p>
+</blockquote>
+<p>下载压缩包之后解压即可。</p>
+<h3> 运行 v2rayA</h3>
+<p>以下假设 v2rayA 与核心都保存到了 D 盘的对应文件夹，如果你文件的存放位置不是这些文件夹，那么你需要根据实际情况修改命令或配置文件。</p>
+<h4> 直接运行</h4>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> 作为服务运行</h4>
+<p>使用 <a href="https://github.com/winsw/winsw/" target="_blank" rel="noopener noreferrer">WinSW</a> 可以将 v2rayA 作为服务运行并自动开机启动。</p>
+<p>下载 WinSW（版本随意，不过 Windows 10 用户使用 <code>WinSW-net461.exe</code> 这个版本即可）的 3.x 版本，然后将其重命名为 <code>v2raya-service.exe</code> 并放入 v2rayA 所在的文件夹下面。</p>
+<p>在 v2rayA 所在文件夹下新建 <code>v2raya-service.xml</code> 然后编辑：</p>
+<div class="language-xml line-numbers-mode" data-ext="xml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>此处的用户名是你显示在“计算机管理”中的用户名，而非在控制面板或系统设置里面看到的完整用户名。密码是你的本地账户密码或者微软账户密码。</p>
+<p>保存文件，然后运行：</p>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>操作需要管理员权限。在 v2rayA 所在目录下可以查看日志文件。</p>
+<h4> 后台运行（使用 PowerShell 的隐藏窗口功能）：</h4>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> 后台运行（使用 ConEmu）</h4>
+<p><a href="https://conemu.github.io/" target="_blank" rel="noopener noreferrer">ConEmu</a> 是一个 Windows 下的终端程序，右击它窗口上的最小化按钮可以让它把窗口最小化到托盘区。在 ConEmu 中的 PowerShell 会话中使用 <a href="https://v2raya.org/docs/prologue/installation/windows/#%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8C" target="_blank" rel="noopener noreferrer">直接运行</a> 项里面提到的命令运行 v2rayA 即可。</p>
+<h2> 其它</h2>
+<p>Scoop 源：https://github.com/v2raya/v2raya-scoop</p>
+<p>你可以通过 <a href="https://scoop.sh/" target="_blank" rel="noopener noreferrer">Scoop</a> 安装 v2rayA，安装完成后可以直接通过 <code>v2raya</code> 命令运行。</p>
 ]]></content>
     <published>2022-05-14T15:59:13.000Z</published>
   </entry>
@@ -15495,7 +15261,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/Wikipedia%E5%85%A8%E5%9F%9F%E6%81%A2%E5%A4%8D%E8%AE%BF%E9%97%AE%E6%8C%87%E5%8D%97%20-%20%E4%B8%80%E4%BA%BA%E6%98%93%E5%AE%89%20-%20AnYi&amp;apos;s%20Blog.html</id>
     <link href="https://jiange1236.github.io/tech/Wikipedia%E5%85%A8%E5%9F%9F%E6%81%A2%E5%A4%8D%E8%AE%BF%E9%97%AE%E6%8C%87%E5%8D%97%20-%20%E4%B8%80%E4%BA%BA%E6%98%93%E5%AE%89%20-%20AnYi&apos;s%20Blog.html"/>
-    <updated>2022-05-14T15:59:13.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>https://zh.wikipedia.org/zh/Wikipedia:%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E6%8B%B7%E8%B4%9D%E7%BD%91%E7%AB%99](https://zh.wikipedia.org/zh/Wikipedia:维基百科拷贝网站)</p>
 <p>https://zh.wikipedia.wikimirror.org/wiki</p>
 <p>https://wiwiki.kfd.me</p>
@@ -15561,7 +15327,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C%E7%9C%BC%E8%8A%B1%E7%BC%AD%E4%B9%B1%EF%BC%8C%E6%9D%82%E7%89%8C%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%B0%91%EF%BC%9F.html</id>
     <link href="https://jiange1236.github.io/tech/%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C%E7%9C%BC%E8%8A%B1%E7%BC%AD%E4%B9%B1%EF%BC%8C%E6%9D%82%E7%89%8C%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%B0%91%EF%BC%9F.html"/>
-    <updated>2022-05-14T15:59:13.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>【装机帮扶站】第439期：主板品牌眼花缭乱，杂牌到底有多少？</strong></p>
 <p>作为一台PC中最关键的承载躯干，主板需要互联各硬件进行功能交换，并且提供额外的扩展空间，方便用户进行必要的拓展。</p>
 <p>随着制造技术的不断加强，角色重要但实际制造技术含量并不算高的主板已经成为各种小作坊赚钱的利器，虽然知名的消费级品牌差不多一双手就数得过来，但逛了淘宝才发现，数十上百个主板品牌琳琅满目，鱼龙混杂。山寨小作坊品牌也不是不能用，但我们不建议购买。</p>
@@ -15621,7 +15387,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/%E4%BA%91%E5%AD%A6%E5%A0%82%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD.html</id>
     <link href="https://jiange1236.github.io/tech/%E4%BA%91%E5%AD%A6%E5%A0%82%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD.html"/>
-    <updated>2022-05-14T15:59:13.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<ol>
 <li>
 <p>打开视频链接</p>
@@ -15685,7 +15451,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">写给职场新人的 PPT 演示制作指南 - 少数派</title>
     <id>https://jiange1236.github.io/study/%E5%86%99%E7%BB%99%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA%E7%9A%84PPT%E6%BC%94%E7%A4%BA%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97-%E5%B0%91%E6%95%B0%E6%B4%BE.html</id>
     <link href="https://jiange1236.github.io/study/%E5%86%99%E7%BB%99%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA%E7%9A%84PPT%E6%BC%94%E7%A4%BA%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97-%E5%B0%91%E6%95%B0%E6%B4%BE.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 写给职场新人的 PPT 演示制作指南 - 少数派</h1>
 <blockquote>
 <p>Excerpt</p>
@@ -15824,7 +15590,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">技术资料</title>
     <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/</id>
     <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p align="center"> 
   <img src="https://metrics.lecoq.io/jiange1236?template=classic&amp;isocalendar=1&amp;languages=1&amp;people=1&amp;activity=1&amp;achievements=1&amp;lines=1&amp;repositories=1&amp;notable=1&amp;introduction=1&amp;pagespeed=1&amp;repositories=100&amp;repositories.batch=100&amp;repositories.forks=false&amp;repositories.affiliations=owner&amp;isocalendar.duration=full-year&amp;languages.limit=8&amp;languages.threshold=0%&amp;languages.colors=github&amp;languages.sections=most-used&amp;languages.indepth=false&amp;languages.analysis.timeout=15&amp;languages.categories=markup%2C programming&amp;languages.recent.categories=markup%2C programming&amp;languages.recent.load=300&amp;languages.recent.days=14&amp;people.limit=24&amp;people.identicons=false&amp;people.identicons.hide=false&amp;people.size=28&amp;people.types=followers%2C following&amp;people.shuffle=false&amp;activity.limit=5&amp;activity.load=300&amp;activity.days=14&amp;activity.visibility=all&amp;activity.timestamps=false&amp;activity.filter=all&amp;achievements.threshold=C&amp;achievements.secrets=true&amp;achievements.display=detailed&amp;achievements.limit=0&amp;notable.from=organization&amp;notable.repositories=false&amp;notable.indepth=false&amp;notable.types=commit&amp;repositories.featured= jiange1236%2Fjiange1236.github.io&amp;introduction.title=true&amp;pagespeed.url=jiange1236.github.io&amp;pagespeed.detailed=false&amp;pagespeed.screenshot=false&amp;config.timezone=Asia%2FShanghai"> 
 </p>]]></summary>
@@ -15841,7 +15607,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">结构设计易违反的强制性条文“六大类”108条</title>
     <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%98%93%E8%BF%9D%E5%8F%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E6%80%A7%E6%9D%A1%E6%96%87%E2%80%9C%E5%85%AD%E5%A4%A7%E7%B1%BB%E2%80%9D108%E6%9D%A1.html</id>
     <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%98%93%E8%BF%9D%E5%8F%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E6%80%A7%E6%9D%A1%E6%96%87%E2%80%9C%E5%85%AD%E5%A4%A7%E7%B1%BB%E2%80%9D108%E6%9D%A1.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 荷载及地震作用</h1>
 <p>1、楼面均布活荷载取值有误。</p>
 <p>取值有误的楼面活荷载主要有阳台、走道、门厅、楼梯、电梯公用前室及消防疏散楼梯的活荷载。</p>
@@ -16188,7 +15954,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">SAP2000</title>
     <id>https://jiange1236.github.io/study/SAP2000.html</id>
     <link href="https://jiange1236.github.io/study/SAP2000.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <hr>
 <h1> 建模流程</h1>
@@ -17582,7 +17348,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">Sausage</title>
     <id>https://jiange1236.github.io/study/Sausage.html</id>
     <link href="https://jiange1236.github.io/study/Sausage.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>1、 打开软件 PKPM</strong></p>
 <p>如图 8-3 所示，选择“ SAUSAGE”项，设置当前</p>
 <p>工作目录，点击“应用”</p>
@@ -17625,7 +17391,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">一注例题</title>
     <id>https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html</id>
     <link href="https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1> 科目</h1>
 <table>
@@ -18024,7 +17790,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">一注备考</title>
     <id>https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E5%A4%87%E8%80%83.html</id>
     <link href="https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E5%A4%87%E8%80%83.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p></p>
 <hr>
 <h1> 混凝土</h1>
@@ -18879,7 +18645,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">岩土备考</title>
     <id>https://jiange1236.github.io/study/%E5%B2%A9%E5%9C%9F%E5%A4%87%E8%80%83.html</id>
     <link href="https://jiange1236.github.io/study/%E5%B2%A9%E5%9C%9F%E5%A4%87%E8%80%83.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>高坚勇，华兰虎</p>
 <p>老鼠开水</p>
 <p>李向阳</p>
@@ -18899,7 +18665,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">考岩者说——宏观考试法</title>
     <id>https://jiange1236.github.io/study/%E8%80%83%E5%B2%A9%E8%80%85%E8%AF%B4%E2%80%94%E2%80%94%E5%AE%8F%E8%A7%82%E8%80%83%E8%AF%95%E6%B3%95.html</id>
     <link href="https://jiange1236.github.io/study/%E8%80%83%E5%B2%A9%E8%80%85%E8%AF%B4%E2%80%94%E2%80%94%E5%AE%8F%E8%A7%82%E8%80%83%E8%AF%95%E6%B3%95.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>如何复习注册岩土工程师专业考试？  一颗志在必得的心； 8个月，35周，245天，1342个小时；</p>
 <p>3160+3480道习题；1048张稿纸；</p>
 <p>1瓶墨水，30根替芯，7枝记号笔；</p>
@@ -19009,7 +18775,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">BIM</title>
     <id>https://jiange1236.github.io/work/BIM.html</id>
     <link href="https://jiange1236.github.io/work/BIM.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>①可视化 不同工期展示</p>
 <p>②标准化 品牌形成</p>
 <p>③虚拟工艺 工艺样板 做样板间</p>
@@ -19039,7 +18805,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">PKPM设置</title>
     <id>https://jiange1236.github.io/work/PKPM%E8%AE%BE%E7%BD%AE.html</id>
     <link href="https://jiange1236.github.io/work/PKPM%E8%AE%BE%E7%BD%AE.html"/>
-    <updated>2022-06-16T01:09:02.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1> 注意事项</h1>
 <p>地库子项：</p>
@@ -19516,7 +19282,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">PKPM输出</title>
     <id>https://jiange1236.github.io/work/PKPM%E8%BE%93%E5%87%BA.html</id>
     <link href="https://jiange1236.github.io/work/PKPM%E8%BE%93%E5%87%BA.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1> 应送审的技术资料</h1>
 <p>1.电算总信息设置 2.形参平面图 3.荷载布置平面图 4.主要电算书（周期、振型、有效质量系数、轴压比、剪重比、刚度比、位移比、周期比、刚重比、层间受剪承载力比、抗浮锚杆计算书等） 5.主要电算图（配筋图、尺寸图、荷载图、挠度图(应在梁施工图中导出)、裂缝图（梁应采用T形截面计算，勾选了参数“考虑支座宽度对裂缝的影响”）、超筋图、剪力包络图、底层墙柱轴力图、组合剪力墙和边缘构件配筋图、剪力墙稳定性验算、剪力墙偏拉验算） 6.基础电算结果 7.地下室外墙计算 8.人防计算 9.水池计算</p>
@@ -20058,7 +19824,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">广联达乐构</title>
     <id>https://jiange1236.github.io/work/%E5%B9%BF%E8%81%94%E8%BE%BE%E4%B9%90%E6%9E%84.html</id>
     <link href="https://jiange1236.github.io/work/%E5%B9%BF%E8%81%94%E8%BE%BE%E4%B9%90%E6%9E%84.html"/>
-    <updated>2022-05-14T05:49:32.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<ol>
 <li>【结构模型】&gt;【计算模型关联】</li>
 <li>【模型导入】</li>
@@ -20079,10 +19845,10 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <published>2022-05-13T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">CAD</title>
+    <title type="text">板王</title>
     <id>https://jiange1236.github.io/work/%E6%9D%BF%E7%8E%8B.html</id>
     <link href="https://jiange1236.github.io/work/%E6%9D%BF%E7%8E%8B.html"/>
-    <updated>2024-06-01T15:40:16.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1> CAD</h1>
 <p><strong>正交卡顿</strong></p>
@@ -20263,35 +20029,15 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
 <p>bkm 创建镜像平面，用于复制对象</p>
 <p>bkr 创建旋转平面，用于复制对象</p>
 <h1> 天正</h1>
-<ol>
-<li>
-<p>记录下天正的搜索路径</p>
-<p>D:\tangent\tarcht20v10\sys19x64</p>
-<p>D:\tangent\tarcht20v10\sys</p>
-<p>D:\tangent\tarcht20v10\dwb</p>
-<p>受信任的位置</p>
-<p>D:\tangent\tarcht20v10\sys19x64</p>
-<p>D:\tangent\tarcht20v10\sys19</p>
-<p>D:\tangent\tarcht20v10\sys</p>
-<p>D:\tangent\tarcht20v10\LISP</p>
-</li>
-<li>
-<p>把天正搜索路径加入探索者软件的搜索路径</p>
-</li>
-<li>
-<p>把天正安装目录的acad.rx和dmload.rx两个文件复制一份放到探索者软件内。acad.rx是必需的</p>
-</li>
-</ol>
-<p>先删除安装目录下的文件\TElecT20V10\SYS\config.tpr，再打开天正，这个文件会重新出现，然后把这个文件属性改为只读就可以了</p>
-<h1> 理正岩土</h1>
-<p><strong>导入dxf建模的注意事项</strong></p>
-<p>1.保证图层简单、线条简单</p>
-<p>2.以米为单位</p>
-<p>3.画在 (0,0)点附近</p>
-<p>4.节点和节点之间精确连接，没有缝隙</p>
-<p>5.用直线（line）命令，样条曲线转多段线：【SPLINEDIT】→【P】</p>
-<p>6.另存为R12dxf格式</p>
-<p>7.边坡左边低、右边高</p>
+<p><s>1、天正里的sys15复制到TSSD文件夹中的sys15</s></p>
+<p><s>2、天正里的sys16复制到TSSD文件夹中的sys16</s></p>
+<p><s>3、天正里的sys17复制到TSSD文件夹中的sys17</s></p>
+<p><s>4、天正里的sys18x64复制到TSSD文件夹中的sys18</s></p>
+<p><s>5、天正里的sys19x64复制到TSSD文件夹中的sys19</s></p>
+<p><s>6、天正里的SYS复制到TSSD文件夹中的Prg、sys19、sys18、sys17、sys16、sys15</s></p>
+<p>支持文件搜索路径</p>
+<p>C:\Tangent\TArchT20V4\sys19x64</p>
+<p>C:\Tangent\TArchT20V4\SYS</p>
 ]]></content>
     <category term="工作"/>
     <published>2022-05-13T00:00:00.000Z</published>
@@ -20300,7 +20046,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">楼梯、电梯</title>
     <id>https://jiange1236.github.io/work/%E6%A5%BC%E6%A2%AF%E3%80%81%E7%94%B5%E6%A2%AF.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A5%BC%E6%A2%AF%E3%80%81%E7%94%B5%E6%A2%AF.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 楼梯尺寸</h1>
 <p>楼梯净高 2.2m</p>
 <p>梯板厚度 1/20~1/30（一般1/26）</p>
@@ -20653,7 +20399,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">求职面试</title>
     <id>https://jiange1236.github.io/work/%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95.html</id>
     <link href="https://jiange1236.github.io/work/%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95.html"/>
-    <updated>2022-08-17T00:41:56.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 简历</h1>
 <p><strong>自我评价</strong></p>
 <ul>
@@ -20904,7 +20650,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">装配式设计</title>
     <id>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html</id>
     <link href="https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html"/>
-    <updated>2023-12-14T07:14:40.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> 装配式专利企业</h1>
 <p>ti,ab:(楼梯) AND ti,ab:(连接) NOT ti,ab:(装置)</p>
@@ -21869,7 +21615,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">装配式钢结构</title>
     <id>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E9%92%A2%E7%BB%93%E6%9E%84.html</id>
     <link href="https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E9%92%A2%E7%BB%93%E6%9E%84.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1> 钢框架结构</h1>
 <h2> 赛博思钢管混凝土框架-开缝钢板剪力墙结构体系</h2>
@@ -21948,7 +21694,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">设计指标&amp;产值</title>
     <id>https://jiange1236.github.io/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html</id>
     <link href="https://jiange1236.github.io/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1> 产值</h1>
 <p>设计费15元/m2</p>
@@ -22034,7 +21780,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">Crossin的编程教室 - Python 新手引导</title>
     <id>https://jiange1236.github.io/study/Python/Crossin%E7%9A%84%E7%BC%96%E7%A8%8B%E6%95%99%E5%AE%A4%20-%20Python%20%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC.html</id>
     <link href="https://jiange1236.github.io/study/Python/Crossin%E7%9A%84%E7%BC%96%E7%A8%8B%E6%95%99%E5%AE%A4%20-%20Python%20%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC.html"/>
-    <updated>2022-05-18T02:43:25.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><a href="http://crossincode.com/home/" target="_blank" rel="noopener noreferrer"><strong>更多资源请点击【Crossin的编程教室】</strong></a></p>
 <p><strong>Python 新手引导</strong></p>
 <p>公众号：Crossin的编程教室（crossincode）</p>
@@ -22145,7 +21891,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">正则表达式</title>
     <id>https://jiange1236.github.io/study/Python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</id>
     <link href="https://jiange1236.github.io/study/Python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html"/>
-    <updated>2022-05-18T02:43:25.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <hr>
 <table>
@@ -22619,7 +22365,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">PKPM软件2021新规范v1.1版对通用规范全面支持</title>
     <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/PKPM%E8%BD%AF%E4%BB%B62021%E6%96%B0%E8%A7%84%E8%8C%83v1.1%E7%89%88%E5%AF%B9%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81.html</id>
     <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/PKPM%E8%BD%AF%E4%BB%B62021%E6%96%B0%E8%A7%84%E8%8C%83v1.1%E7%89%88%E5%AF%B9%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>已经发布的全文强条通用规范中包含▼▼▼</p>
 <p><strong>6本</strong>工程项目类通用规范：《燃气工程项目规范》、《供热工程项目规范》、《城市道路交通工程项目规范》、《园林绿化工程项目规范》、《城市垃圾处理处置工程项目规范》及《市容环卫工程项目规范》；</p>
 <p><strong>16本</strong>工程建设类通用规范：《工程结构通用规范》、《建筑与市政地基基础通用规范》、《建筑与市政工程抗震通用规范》、《钢结构通用规范》、《木结构通用规范》、《组合结构通用规范》、《砌体结构通用规范》、《既有建筑鉴定与加固通用规范》、《混凝土结构通用规范》、《工程勘察通用规范》、《工程测量通用规范》、《既有建筑维护与改造通用规范》、《建筑给水排水与节水通用规范》、《建筑环境通用规范》、《建筑节能与可再生能源利用通用规范》及《建筑与市政工程无障碍通用规范》。</p>]]></summary>
@@ -22821,7 +22567,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">【技术周刊】通用规范与现行规范的对比</title>
     <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/YJK%E3%80%90%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%E3%80%91%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E4%B8%8E%E7%8E%B0%E8%A1%8C%E8%A7%84%E8%8C%83%E7%9A%84%E5%AF%B9%E6%AF%94.html</id>
     <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/YJK%E3%80%90%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%E3%80%91%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E4%B8%8E%E7%8E%B0%E8%A1%8C%E8%A7%84%E8%8C%83%E7%9A%84%E5%AF%B9%E6%AF%94.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>【技术周刊】通用规范与现行规范的对比</p>
 <blockquote>
 <p>Excerpt</p>
@@ -22986,7 +22732,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">张涛：山地建筑结构设计实践及细部策略（以贵州、浙江、四川多地项目为例）</title>
     <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BC%A0%E6%B6%9B%EF%BC%9A%E5%B1%B1%E5%9C%B0%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E5%8F%8A%E7%BB%86%E9%83%A8%E7%AD%96%E7%95%A5%EF%BC%88%E4%BB%A5%E8%B4%B5%E5%B7%9E%E3%80%81%E6%B5%99%E6%B1%9F%E3%80%81%E5%9B%9B%E5%B7%9D%E5%A4%9A%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%BA%E4%BE%8B%EF%BC%89%E4%B8%A8%E7%BB%8F%E5%85%B8%E5%BF%85%E5%90%AC.html</id>
     <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BC%A0%E6%B6%9B%EF%BC%9A%E5%B1%B1%E5%9C%B0%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E5%8F%8A%E7%BB%86%E9%83%A8%E7%AD%96%E7%95%A5%EF%BC%88%E4%BB%A5%E8%B4%B5%E5%B7%9E%E3%80%81%E6%B5%99%E6%B1%9F%E3%80%81%E5%9B%9B%E5%B7%9D%E5%A4%9A%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%BA%E4%BE%8B%EF%BC%89%E4%B8%A8%E7%BB%8F%E5%85%B8%E5%BF%85%E5%90%AC.html"/>
-    <updated>2022-05-16T02:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 张涛：山地建筑结构设计实践及细部策略（以贵州、浙江、四川多地项目为例）丨经典必听</h1>
 <blockquote>
 <h2> Excerpt</h2>
@@ -23012,7 +22758,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">从“等同现浇构造”走向“非等同现浇构造”——装配整体式混凝土结构理论研究与技术研发</title>
     <id>https://jiange1236.github.io/work/%E6%96%B0%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/EMC%E4%BD%93%E7%B3%BB.html</id>
     <link href="https://jiange1236.github.io/work/%E6%96%B0%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/EMC%E4%BD%93%E7%B3%BB.html"/>
-    <updated>2022-05-14T05:49:32.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1> 从“等同现浇构造”走向“非等同现浇构造”——装配整体式混凝土结构理论研究与技术研发</h1>
 <blockquote>
@@ -23161,7 +22907,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">主要功能与配置演示</title>
     <id>https://jiange1236.github.io/guide/</id>
     <link href="https://jiange1236.github.io/guide/"/>
-    <updated>2022-05-18T03:07:30.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 主要功能与配置演示</h1>
 <ul>
 <li><a href="/guide/page.html" target="blank">页面展示</a></li>
@@ -23183,7 +22929,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">组件禁用</title>
     <id>https://jiange1236.github.io/guide/disable.html</id>
     <link href="https://jiange1236.github.io/guide/disable.html"/>
-    <updated>2022-05-18T03:05:06.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>你可以通过设置页面的 Frontmatter，在页面禁用一些功能。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>你可以通过设置页面的 Frontmatter，在页面禁用一些功能。</p>
@@ -23210,7 +22956,7 @@ domain(domain: u3c3.com, domain: u9a9.cc) -&gt; proxy
     <title type="text">Markdown 增强</title>
     <id>https://jiange1236.github.io/guide/markdown.html</id>
     <link href="https://jiange1236.github.io/guide/markdown.html"/>
-    <updated>2022-05-13T07:27:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p>VuePress 的每个文档页面都是由 Markdown 渲染而成。所以你需要通过在相应路径创建编写 Markdown 建立你的文档或博客页面。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>VuePress 的每个文档页面都是由 Markdown 渲染而成。所以你需要通过在相应路径创建编写 Markdown 建立你的文档或博客页面。</p>
@@ -23361,7 +23107,7 @@ $$</p>
     <title type="text">页面配置</title>
     <id>https://jiange1236.github.io/guide/page.html</id>
     <link href="https://jiange1236.github.io/guide/page.html"/>
-    <updated>2022-05-18T03:05:06.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<p><code>more</code> 注释之前的内容被视为文章摘要。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p><code>more</code> 注释之前的内容被视为文章摘要。</p>
@@ -23422,7 +23168,7 @@ $$</p>
     <title type="text">API</title>
     <id>https://jiange1236.github.io/others/API.html</id>
     <link href="https://jiange1236.github.io/others/API.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> API</h1>
 <h2> hutool</h2>
 <p>一个小而全的 Java 工具类库，通过静态方法封装，并提供详细完整的中文文档和注释，使Java拥有函数式语言般的优雅。</p>
@@ -23506,7 +23252,7 @@ https://api.eyeit.cn/jitang/jtapi.php</li>
     <title type="text">Bing必应API</title>
     <id>https://jiange1236.github.io/others/Bing%E5%BF%85%E5%BA%94API.html</id>
     <link href="https://jiange1236.github.io/others/Bing%E5%BF%85%E5%BA%94API.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Bing必应API</h1>
 <p>http://xlc.pp.ua/bing-api/index.php?rand=true</p>
 <h2> 1</h2>
@@ -23752,7 +23498,7 @@ http://cn.bing.com/HPImageArchive.aspx?idx=2&amp;n=1得到前天的图片
     <title type="text">Euserv</title>
     <id>https://jiange1236.github.io/others/Euserv.html</id>
     <link href="https://jiange1236.github.io/others/Euserv.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Euserv</h1>
 <p>EUserv是一家德国主机商，提供VPS主机、服务器等，目前该商家提供免费ipv6主机服务器，配置信息是CPU：1 Core、内存：1 GB、硬盘：10 GB HDD、带宽：1 Gbit，提供一个IPv6地址，想要IPv4地址那就付费了。虽然免费VPS主机看起来配置很好，但是用起来非常地卡。</p>
 <p>申请EUserv免费VPS主机的过程并不复杂，也不需要什么Paypal、信用卡之类的验证，但是EUserv免费VPS主机申请要人工审核，一般来说48小时内会收到回复。当然，也有申请EUserv免费VPS主机失败的，或者是EUserv免费VPS主机被删号的。</p>]]></summary>
@@ -23910,7 +23656,7 @@ PASSWORD = ‘password1 password2’ # 多个账号写法</p>
     <title type="text">Linux脚本工具</title>
     <id>https://jiange1236.github.io/others/Linux%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7.html</id>
     <link href="https://jiange1236.github.io/others/Linux%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Linux脚本工具</h1>
 <h2> EdNovas 的 Toolbox 工具箱</h2>
 <p><strong>脚本地址</strong></p>
@@ -23939,7 +23685,7 @@ PASSWORD = ‘password1 password2’ # 多个账号写法</p>
     <title type="text">MyEclipsev2021永久激活版</title>
     <id>https://jiange1236.github.io/others/MyEclipse.html</id>
     <link href="https://jiange1236.github.io/others/MyEclipse.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> MyEclipsev2021永久激活版</h1>
 <h3> 激活码</h3>
 <p>1、zLR8ZC-855575-6154505816197416
@@ -24059,7 +23805,7 @@ Ctrl+Alt+↑ 复制当前行到上一行(复制增加)</p>
     <title type="text">MySQL 8</title>
     <id>https://jiange1236.github.io/others/MySQL.html</id>
     <link href="https://jiange1236.github.io/others/MySQL.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> MySQL 8</h1>
 <p>mysql从5.7一下子跳跃到了8.0，其中的改变还是很大，有点这里就不说了，小伙伴们自己去百度了解一下，这里重点说一下，安装的事</p>
 <p>1.解压后，文件下下面是没有my.ini 和 data目录的，需要自己新建一个my.ini和data目录</p>
@@ -24135,7 +23881,7 @@ default-character-set=utf8
     <title type="text">MySQL压缩版安装配置</title>
     <id>https://jiange1236.github.io/others/MySQL%E5%8E%8B%E7%BC%A9%E7%89%88%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</id>
     <link href="https://jiange1236.github.io/others/MySQL%E5%8E%8B%E7%BC%A9%E7%89%88%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> MySQL压缩版安装配置</h1>
 <h2> 1 下载</h2>
 <p>官网：https://www.mysql.com/
@@ -24226,7 +23972,7 @@ net stop mysql命令，停止mysql服务
     <title type="text">Nginx从安装到高可用</title>
     <id>https://jiange1236.github.io/others/Nginx%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E9%AB%98%E5%8F%AF%E7%94%A8.html</id>
     <link href="https://jiange1236.github.io/others/Nginx%E4%BB%8E%E5%AE%89%E8%A3%85%E5%88%B0%E9%AB%98%E5%8F%AF%E7%94%A8.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Nginx从安装到高可用</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>原文：blog.csdn.net/qq_34886352/article/details/103581973
 第1-100期：100期Java项目整理
@@ -24461,7 +24207,7 @@ net stop mysql命令，停止mysql服务
     <title type="text">Nginx安装Web应用防火墙</title>
     <id>https://jiange1236.github.io/others/Nginx%E5%AE%89%E8%A3%85Web%E5%BA%94%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99.html</id>
     <link href="https://jiange1236.github.io/others/Nginx%E5%AE%89%E8%A3%85Web%E5%BA%94%E7%94%A8%E9%98%B2%E7%81%AB%E5%A2%99.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Nginx安装Web应用防火墙</h1>
 <p>LNMP一键安装包 ngx_lua_waf waf(web应用防火墙) 安装设置。WAF中文名是Web应用防火墙，WAF能够根据规则拦截SQL注入、恶意请求、黑客扫描等HTTP请求从而保护WEB应用的安全。</p>
 <p>今天我们要说的是一个比较简单好用的基于lua的waf：ngx_lua_waf。它是一个基于lua-nginx-module(openresty)的web应用防火墙，https://github.com/loveshell/ngx_lua_waf。</p>
@@ -24528,7 +24274,7 @@ ngx_lua_waf配置文件参数说明：</p>
     <title type="text">微软Office 365 E5 开发人员计划</title>
     <id>https://jiange1236.github.io/others/OfficeE5.html</id>
     <link href="https://jiange1236.github.io/others/OfficeE5.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 申请加入微软Office 365 E5 开发人员计划</h1>
 <h1> 前言</h1>
 <p>最近闲来无事，申请了个Office E5订阅，对我而言有用的是5T OneDrive（可扩容25T）</p>
@@ -24798,7 +24544,7 @@ Configuration.HTTPS.Password设置为PFX文件的密码</p>
     <title type="text">SSH客户端软件</title>
     <id>https://jiange1236.github.io/others/SSH%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%BD%AF%E4%BB%B6.html</id>
     <link href="https://jiange1236.github.io/others/SSH%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%BD%AF%E4%BB%B6.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> SSH客户端软件</h1>
 <p>SSH客户端是在管理和配置Linux服务器用到很多的软件了，一款好的SSH管理软件不但可以让你更好地执行<a href="https://www.v1tx.com/post/linux-commands/" target="_blank" rel="noopener noreferrer">Linux命令</a>，对于工作效率的提升也是非常明显，在本文中我们就来介绍几款非常好用的SSH客户端软件</p>
 <h2> Xshell</h2>
@@ -24891,7 +24637,7 @@ https://lanzoui.com/iafhqwr0fba</p>
     <title type="text">SpringBoot+拦截器+自定义异常+自定义注解+全局异常处理</title>
     <id>https://jiange1236.github.io/others/SpringBoot.html</id>
     <link href="https://jiange1236.github.io/others/SpringBoot.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> SpringBoot+拦截器+自定义异常+自定义注解+全局异常处理</h1>
 <ul>
 <li>
@@ -25059,7 +24805,7 @@ https://lanzoui.com/iafhqwr0fba</p>
     <title type="text">StartAllBack</title>
     <id>https://jiange1236.github.io/others/StartAllBack(StartIsBack)v3.2.1Stable.html</id>
     <link href="https://jiange1236.github.io/others/StartAllBack(StartIsBack)v3.2.1Stable.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> StartAllBack</h1>
 <p>StartAllBack(StartIsBack) v3.2.1 Stable</p>
 <p>Windows11开始菜单增强工具StartAllBack正式版发布了！在任务栏上为Windows 11恢复经典样式的Windows 7主题风格开始菜单，主要功能包括：恢复和改进开始菜单样式、个性化任务栏、资源管理器等功能。</p>
@@ -25119,7 +24865,7 @@ https://423down.lanzouo.com/i1YBsva4eqf</p>
     <title type="text">Steam</title>
     <id>https://jiange1236.github.io/others/Steam%E5%85%8D%E8%B4%B9%E8%A7%A3%E9%94%81.html</id>
     <link href="https://jiange1236.github.io/others/Steam%E5%85%8D%E8%B4%B9%E8%A7%A3%E9%94%81.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Steam</h1>
 <p>电脑桌面按win+R	
 steam://install/1198260 《Beneath steel clouds》（锁区）
@@ -25177,7 +24923,7 @@ steam://install/1330250 《对魔忍COLLECTION：决战竞技场》（锁区）<
     <title type="text">Clash - V2ray订阅</title>
     <id>https://jiange1236.github.io/others/clash-v2ray.html</id>
     <link href="https://jiange1236.github.io/others/clash-v2ray.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Clash - V2ray订阅</h1>
 <h2> 资源池</h2>
 <p>[F 搜 free proxies](https://fsou.cc/search?q=free proxies)</p>
@@ -25301,7 +25047,7 @@ https://sub.v1.mk/</p>
     <title type="text">generate_204 测速地址</title>
     <id>https://jiange1236.github.io/others/generate_204%E6%B5%8B%E9%80%9F%E5%9C%B0%E5%9D%80.html</id>
     <link href="https://jiange1236.github.io/others/generate_204%E6%B5%8B%E9%80%9F%E5%9C%B0%E5%9D%80.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> generate_204 测速地址</h1>
 <p>http://www.gstatic.com/generate_204</p>
 <p>http://connect.rom.miui.com/generate_204</p>
@@ -25330,7 +25076,7 @@ https://sub.v1.mk/</p>
     <title type="text">Openssl一键自签证书</title>
     <id>https://jiange1236.github.io/others/openssl%E4%B8%80%E9%94%AE%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6.html</id>
     <link href="https://jiange1236.github.io/others/openssl%E4%B8%80%E9%94%AE%E8%87%AA%E7%AD%BE%E8%AF%81%E4%B9%A6.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> Openssl一键自签证书</h1>
 <p><code>vim openssl.sh</code></p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token shebang important">#!/bin/bash</span>
@@ -25369,7 +25115,7 @@ https://sub.v1.mk/</p>
     <title type="text">python安装源</title>
     <id>https://jiange1236.github.io/others/python%E5%AE%89%E8%A3%85%E6%BA%90.html</id>
     <link href="https://jiange1236.github.io/others/python%E5%AE%89%E8%A3%85%E6%BA%90.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> python安装源</h1>
 <p>在<code>C:\Users\Administrator\pip</code>下，新建<code>pip.ini</code>，输入以下内容：</p>
 <div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token punctuation">[</span><span class="token keyword">global</span><span class="token punctuation">]</span>
@@ -25398,7 +25144,7 @@ trusted<span class="token operator">-</span>host <span class="token operator">=<
     <title type="text">SpringBoot打包不同环境配置与shell脚本部署</title>
     <id>https://jiange1236.github.io/others/springboot%E6%89%93%E5%8C%85%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E9%83%A8%E7%BD%B2.html</id>
     <link href="https://jiange1236.github.io/others/springboot%E6%89%93%E5%8C%85%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E9%83%A8%E7%BD%B2.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> SpringBoot打包不同环境配置与shell脚本部署</h1>
 <p>本篇和大家分享的是springboot打包并结合shell脚本命令部署，重点在分享一个shell程序启动工具，希望能便利工作；</p>
 <ul>
@@ -25494,7 +25240,7 @@ trusted<span class="token operator">-</span>host <span class="token operator">=<
     <title type="text">win10快捷键</title>
     <id>https://jiange1236.github.io/others/win10%E5%BF%AB%E6%8D%B7%E9%94%AE.html</id>
     <link href="https://jiange1236.github.io/others/win10%E5%BF%AB%E6%8D%B7%E9%94%AE.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> win10快捷键</h1>
 <h3> 1.win10 自定义</h3>
 <p>Win 10 下快捷方式设置了快捷键一直无法呼出。</p>
@@ -25526,7 +25272,7 @@ trusted<span class="token operator">-</span>host <span class="token operator">=<
     <title type="text">临时邮箱和接码</title>
     <id>https://jiange1236.github.io/others/%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E5%92%8C%E6%8E%A5%E7%A0%81.html</id>
     <link href="https://jiange1236.github.io/others/%E4%B8%B4%E6%97%B6%E9%82%AE%E7%AE%B1%E5%92%8C%E6%8E%A5%E7%A0%81.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 临时邮箱和接码</h1>
 <p>1、<a href="https://10minutemail.com/" target="_blank" rel="noopener noreferrer">10 Minute Mail – Temporary E-Mail</a></p>
 <p>支持中文，有效期 10 分钟，可延时。</p>
@@ -25641,7 +25387,7 @@ https://www.google.com/search?q=Receive+SMS</p>
     <title type="text">免费VPS</title>
     <id>https://jiange1236.github.io/others/%E5%85%8D%E8%B4%B9VPS.html</id>
     <link href="https://jiange1236.github.io/others/%E5%85%8D%E8%B4%B9VPS.html"/>
-    <updated>2022-05-14T12:43:11.000Z</updated>
+    <updated>2024-06-07T05:03:50.000Z</updated>
     <summary type="html"><![CDATA[<h1> 免费VPS</h1>
 <h2> Oracle Cloud 甲骨文云：</h2>
 <p>永久免费两个 1h1g 的小鸡</p>

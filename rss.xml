@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 01 Jun 2024 15:41:29 GMT</pubDate>
-    <lastBuildDate>Sat, 01 Jun 2024 15:41:29 GMT</lastBuildDate>
+    <pubDate>Fri, 07 Jun 2024 05:05:05 GMT</pubDate>
+    <lastBuildDate>Fri, 07 Jun 2024 05:05:05 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>计算机</category>
@@ -596,14 +596,12 @@
       <link>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</link>
       <guid>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</guid>
       <source url="https://jiange1236.github.io/rss.xml">玩客云</source>
-      <description>玩客云 安装包 Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz</description>
+      <description>玩客云 nano /etc/apt/sources.list 删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free</description>
       <pubDate>Wed, 21 Feb 2024 06:31:28 GMT</pubDate>
       <content:encoded><![CDATA[<h1> 玩客云</h1>
-<p>安装包</p>
-<p><a href="https://github.com/hzyitc/armbian-onecloud/releases/download/ci-20240311-162146-UTC/Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz" target="_blank" rel="noopener noreferrer">Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz</a></p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后更新软件源</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="#Docker%E5%AE%89%E8%A3%85"><strong>Docker安装</strong></a></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="#Docker%E5%AE%89%E8%A3%85"><strong>Docker安装</strong></a></p>
 <p><strong>Install Home Assistant Supervised</strong></p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>OS Agent</strong></p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>grub错误</strong></p>
@@ -611,35 +609,11 @@
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Docker镜像</strong></p>
 <p>直接修改 <code>/etc/docker/daemon.json</code> (docker 版本 &gt;= 1.10 时) 内容为:</p>
 <div class="language-json line-numbers-mode" data-ext="json"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改后重启服务:</p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <strong>HACS</strong></h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <strong>HACS</strong></h2>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Supervisor</h2>
 <p>更新</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>卸载</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h2> 连接WiFi</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>设置开机启动</p>
-<p><code>cd /etc/init.d/</code>
-<code>nano mywifi</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>chmod +x /etc/init.d/mywifi</code></p>
-<p><code>update-rc.d mywifi defaults</code></p>
-<p>编辑crontab <code>crontab -e</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2> <a href="https://www.cnblogs.com/mouseleo/p/8585979.html" target="_blank" rel="noopener noreferrer">Debian 使用 cron 执行定时任务</a></h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> <a href="https://www.cnblogs.com/mouseleo/p/8585979.html" target="_blank" rel="noopener noreferrer">Debian 使用 cron 执行定时任务</a></h2>
 <p>在linux下有两种方法来让一个命令或者脚本执行:</p>
 <ol>
 <li>crontab : 执行一个任务一次或者多次.</li>
@@ -647,178 +621,128 @@
 </ol>
 <p>crontab是通过读取一个crontab文件来工作，这是一个普通的文本文件，里面列出了要执行的任务。每行都含有要指定的任务的命令、参数与选项，以及要执行任务的时间。（cron 软件在后台运行并且经常检查 /etc/crontab 文件。cron 软件也检查 /var/cron/tabs 目录，搜索新的 crontab 文件。这些 crontab 文件存储一些 cron 在特定时间执行任务的信息。）
 crontab的基本格式：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>=======</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>wget -O - http://bin.entware.net/x64-k3.2/installer/generic.sh | sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"</p>
-<h1> 如您使用 curl</h1>
-<p>curl -fsSL https://get.docker.com/ | sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>mkdir -p /etc/docker
-tee /etc/docker/daemon.json &lt;&lt;-'EOF'
-{
-"registry-mirrors": [
-"https://0b27f0a81a00f3560fbdc00ddd2f99e0.mirror.swr.myhuaweicloud.com",
-"https://ypzju6vq.mirror.aliyuncs.com",
-"https://registry.docker-cn.com",
-"http://hub-mirror.c.163.com",
-"https://docker.mirrors.ustc.edu.cn"
-]
-}
-EOF
-systemctl daemon-reload
-systemctl restart docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl start docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl status docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl enable docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker ps -as</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker logs freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker restart freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stop freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rm -f freenom</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stats --no-stream</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker version</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>systemctl restart docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker system prune</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker network ls</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker network inspect bridge</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改 /etc/docker/daemon.json，加入一行 "bip": "192.168.1.5/24",，然后再次查看 ifconfig，已经变成了 192 网段了
-重启 docker 服务，curl 尝试正常</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stop $(docker ps -aq)
-docker stop $(docker ps -a | grep "hassio" | awk '{print $1}')</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rmi --force <code>docker images | grep hassio | awk '{print $3}'</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改 /etc/docker/daemon.json，加入一行 "bip": "192.168.1.5/24",，然后再次查看 ifconfig，已经变成了 192 网段了
-重启 docker 服务，curl 尝试正常</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker stop $(docker ps -aq)
-docker stop $(docker ps -a | grep "hassio" | awk '{print $1}')</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rmi --force <code>docker images | grep hassio | awk '{print $3}'</code></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>df -h</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>du -sh *</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>#!/bin/bash
-echo "======== start clean docker containers logs ========"
-logs=$(find /var/lib/docker/containers/ -name *-json.log)
-for log in $logs
-do
-echo "clean logs : $log"
-cat /dev/null &gt; $log
-done
-echo "======== end clean docker containers logs ========"</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>chmod +x clean.sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>0 5 * * 1 /var/lib/docker/clean.sh</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sudo mkdir -p /etc/systemd/system/docker.service.d</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>[Service]
-Environment="HTTP_PROXY=socks5://127.0.0.1:20170"
-Environment="HTTPS_PROXY=socks5://127.0.0.1:20170"</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sudo systemctl daemon-reload
-sudo systemctl restart docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>sudo systemctl show --property=Environment docker</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>echo "185.199.109.133   raw.githubusercontent.com" &gt;&gt; /etc/hosts
-docker exec -it homeassistant /bin/bash</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> 安装brctl</h1>
-<p>apt-get install bridge-utils
-yum install bridge-utils</p>
-<h1> 停止docker服务</h1>
-<p>systemctl stop docker</p>
-<h1> 重建 docker 网络</h1>
-<p>ifconfig docker0 down
-brctl delbr docker0</p>
-<h1> 重启docker服务</h1>
-<p>systemctl start docker</p>
-<h1> 查看IP转发</h1>
-<p>cat /proc/sys/net/ipv4/ip_forward</p>
-<h1> IP 转发需要进行开启</h1>
-<p>echo 1 &gt; /proc/sys/net/ipv4/ip_forward</p>
-<p>使用上述任何一种方法都不会使更改持久。为了确保新设置在重新启动后仍然有效，您需要编辑 /etc/sysctl.conf 文件。</p>
-<h1> sudo nano /etc/sysctl.conf</h1>
-<p>将以下行之一添加到文件底部，具体取决于您想要关闭还是打开 Linux IP 转发。然后，保存对此文件的更改。该设置在重新启动后将是永久的。 net.ipv4.ip_forward 设置控制是否为 IPv4 打开或关闭 IP 转发。
-net.ipv4.ip_forward = 0
-OR
-net.ipv4.ip_forward = 1
-编辑文件后，您可以运行以下命令以使更改立即生效。</p>
-<h1> sysctl -p</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run --rm <br>
--v /var/run/docker.sock:/var/run/docker.sock <br>
-containrrr/watchtower <br>
---cleanup <br>
---run-once <br>
-v2raya homeassistant</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>ip link set eth0 promisc on</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker network create -d macvlan --subnet=192.168.30.0/24 --gateway=192.168.30.1 -o parent=eth0 macnet</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker pull wfnb/onecloud:23-01-25-beta</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run -d --name=OpenWrt --restart always --network macnet --privileged wfnb/onecloud:23-01-25-beta /sbin/init</p>
-<p>docker import openwrt-01.10.2023-meson-meson8b-thunder-onecloud-rootfs.tar.gz kiddin9_openwrt
-docker run -d --name=OpenWrt --restart always --network macnet --privileged kiddin9_openwrt /sbin/init</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker exec OpenWrt sed -e "s/10.1.1.13/192.168.30.120/" -i /etc/config/network
-docker exec -it OpenWrt bash
-/etc/init.d/network restart</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker container update --restart=no [容器ID]
-docker stop [容器ID]
-docker rm [容器ID]</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker images</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker rmi [镜像ID]</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-docker run -d --restart=unless-stopped -v /data/alist:/opt/alist/data -v /tmp:/opt/alist/tmp --network=host --name="alist" xhofe/alist:latest</h1>
-<p>docker run -d --restart=unless-stopped -v /etc/alist:/opt/alist/data -v /tmp:/opt/alist/tmp --network=host --name="alist" xhofe/alist:latest</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker exec -it alist ./alist admin</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run -p 3000:3000 -v /etc/homepage:/app/config -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/benphelps/homepage:latest</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run  <br>
---name homarr <br>
---restart always <br>
--p 7575:7575 <br>
--v /data/homarr/configs:/app/data/configs <br>
--v /data/homarr/icons:/app/public/icons <br>
--d ghcr.io/ajnart/homarr:latest</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker run -d --name flare --restart=unless-stopped -p 80:5005 -v /data/flare:/app soulteary/flare</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> docker run -d <br>
---restart=always <br>
---privileged <br>
---network=host <br>
---name v2raya <br>
--e V2RAYA_LOG_FILE=/tmp/v2raya.log <br>
--e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray <br>
--e V2RAYA_NFTABLES_SUPPORT=off <br>
--e IPTABLES_MODE=legacy \</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol>
+<li>* * * * * command</li>
+</ol>
+<p>几个星号分别为：分 时 日 月 周，最后是要执行的命令。</p>
+<ul>
+<li>分：0~59</li>
+<li>时：0~23</li>
+<li>日：1~31</li>
+<li>月：1~12</li>
+<li>周：0～6（0表示星期天）</li>
+</ul>
+<p>除了数字还有几个个特殊的符号就是* / - ：</p>
+<ul>
+<li>* 代表所有的取值范围内的数字</li>
+<li>/ 代表每的意思</li>
+<li>*/5 表示每5个单位</li>
+<li>- 代表从某个数字到某个数字</li>
+<li>, 分开几个离散的数字</li>
+</ul>
+<p>配置文件的一些例子：</p>
+<ul>
+<li>0 3 * * * /root/test.sh 每天凌晨3点执行test.sh文件</li>
+<li>* 23-7/1 * * * /root/lnmp restart 晚上11点到早上7点之间，每隔一小时重启lnmp套件</li>
+<li>*/30 * * * * /usr/sbin/ntpdate 每半小时同步一下时间</li>
+<li>0 23 * * 6 /lnmp restart 每星期六的11 : 00 pm重启重启lnmp套件。</li>
+<li>*/1 * * * * echo "i am running."&gt;&gt;/tmp/running.txt 每隔1分钟向/tmp/running.txt写一个"i am running."字符串。</li>
+</ul>
+<p>运行
+我以为编辑crontab保存后会自动执行，其实不然，必须通过重启cron才可以，命令如下：</p>
+<ul>
+<li>启动/etc/init.d/cron start</li>
+<li>关闭/etc/init.d/cron stop</li>
+<li>重启/etc/init.d/cron restart</li>
+</ul>
+<h1> 群晖</h1>
+<h2> OPKG</h2>
+<p>ssh 进入群晖后, sudo -i 获取管理员权限, 运行下面的命令:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>脚本运行完毕后, 修改环境文件:</p>
+<ol>
+<li>/root/.profile:</li>
+</ol>
+<p>PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/usr/local/bin:/opt/bin:/opt/sbin</p>
+<ol start="2">
+<li>/etc/rc:</li>
+</ol>
+<p>/opt/etc/init.d/rc.unslung start</p>
+<h1> Docker</h1>
+<h2> Docker安装</h2>
+<p><strong>Docker</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>国内镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Docker基本命令</h2>
+<p>启动 Docker 服务</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 运行状态</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>将 Docker 服务加入开机自启动</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器在线状态及大小</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看容器的运行输出日志</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重新启动容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>停止容器的运行</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>移除容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 docker 容器占用 CPU，内存等信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 安装版本等信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>重启 Docker（非容器）</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>清理 Docker</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看 Docker 网络信息</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>检查 bridge 网络状态</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改容器网段IP</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>批量停止</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>批量删除</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> Docker代理</h2>
+<ol>
+<li>
+<p>Create a systemd drop-in directory for the <code>docker</code> service:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>Create a file named <code>/etc/systemd/system/docker.service.d/http-proxy.conf</code> that adds the <code>HTTP_PROXY</code> environment variable:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>Flush changes and restart Docker</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>Verify that the configuration has been loaded and matches the changes you made, for example:</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+</ol>
+<p>修改hosts</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> 重建Docker网络</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Watchtower</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> OpenWrt</h1>
+<p>🔵打开网卡混杂模式</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建网络</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘[↑自己根据 玩客云 所在网段修改，如：玩客云IP:10.1.2.11，则10.1.1.0/24 改成 10.1.2.0/24，10.1.1.1改成主路由地址]</p>
+<p>🔵拉取 OpenWRT 镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔵创建容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘--name=OpenWrt 其中OpenWrt是容器名称，可以更改成你想要的，容器名称注意不要和其他容器一样，会冲突</p>
+<p>🔘--ip 10.1.1.13 其中10.1.1.13是容器IP，可以更改成你想要的，容器IP不要重复，这一项可删除</p>
+<p>🔵修改OpenWrt IP</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘OpenWrt 是容器名称，和你创建容器时的一致</p>
+<p>🔘镜像设置的默认IP是10.1.1.13，可通过该命令修改</p>
+<p>🔵管理密码是 password</p>
+<p>🔵LAN口固定IP地址，网关指向主路由IP地址</p>
+<p>iptables -t nat -I POSTROUTING eth0 -j MASQUERADE</p>
+<p>🔴设置 容器不自启动 、 停止容器 和 删除容器</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔴查看所有镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>🔘记录下 xuanaimai/openwrt 21-09-15 右边的 IMAGE ID（镜像ID，下面用得到）</p>
+<p>🔴删除镜像</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Alist</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看密码</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>使用<a href="http://ip:5244/" target="_blank" rel="noopener noreferrer">http://ip:5244</a>    来登录alist点击下面的管理输入管理员的账号和密码</p>
+<h1> Homepage</h1>
+<p><strong>Homepage</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>Homarr</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Flare</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> V2rayA</h1>
 <p>安装</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Linux安装</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1
-开启IP转发</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>开启IP转发</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>http://ip:2017</p>
 <h1> wireproxy</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Portainer</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> 青龙面板</h1>
 <p>青龙面板:5700</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>检查服务</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>检查服务</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>安装依赖</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改config.sh</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>修改config.sh</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 京东脚本</h2>
 <p>1</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2</p>
@@ -846,39 +770,19 @@ Linux安装</p>
 <div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>9 .【青蛙/smiek2121】</p>
 <div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>10 .【船长】</p>
 <div class="language-php line-numbers-mode" data-ext="php"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> DailyCheckIn</h2>
-<h1> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-https://sitoi.github.io/dailycheckin/</h1>
-<p>https://sitoi.gitee.io/dailycheckin/</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<p>https://sitoi.github.io/dailycheckin/</p>
 <h2> BiliOutils</h2>
 <p>https://bilioutils.js.org/</p>
 <h1> WOL</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> DDNS-GO</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> Lucky</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>http://ip:16601</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> Lucky</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>http://ip:16601</p>
 <h1> Cron</h1>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>编辑定时自动脚本</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在ssh中执行脚本，然后编辑文件。</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>丢进去这个脚本，表示每天凌晨1点重启服务器。编辑完毕之后:wq保存退出。</p>
 <p>保存退出重启生效</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h1> Cloudflare Tunnel</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker版</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>蒲公英</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
     <item>
       <title>【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</title>
@@ -1526,16 +1430,15 @@ https://sitoi.github.io/dailycheckin/</h1>
       <link>https://jiange1236.github.io/tech/Github.html</link>
       <guid>https://jiange1236.github.io/tech/Github.html</guid>
       <source url="https://jiange1236.github.io/rss.xml"></source>
-      <description>Github RAW 加速服务 https://www.7ed.net/#/raw-cdn https://raw.githubusercontents.com/用户/仓库/main(分支)/子目录/txt.txt https://raw.fastgit.org/ https://raw-gh.gcdn.mirr.one/ https://cdn.jsdelivr.net/gh/用户/仓库@main/子目录/txt.txt Go代理 go env -w GOPROXY=https://goproxy.cn</description>
+      <description>Github RAW 加速服务 https://www.7ed.net/#/raw-cdn https://raw.githubusercontents.com/用户/仓库/main(分支)/子目录/txt.txt https://raw.fastgit.org/ https://raw-gh.gcdn.mirr.one/ https://cdn.jsdelivr.net/gh/用户/仓库@main/子目录/txt.txt</description>
       <pubDate>Thu, 16 Jun 2022 01:09:02 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> Github RAW 加速服务</h2>
+      <content:encoded><![CDATA[<h3> Github RAW 加速服务</h3>
 <p>https://www.7ed.net/#/raw-cdn</p>
 <p>https://raw.githubusercontents.com/用户/仓库/main(分支)/子目录/txt.txt</p>
 <p>https://raw.fastgit.org/</p>
 <p>https://raw-gh.gcdn.mirr.one/</p>
 <p>https://cdn.jsdelivr.net/gh/用户/仓库@main/子目录/txt.txt</p>
-<h2> Go代理</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
+]]></content:encoded>
     </item>
     <item>
       <title>检测鉴定</title>
@@ -5643,7 +5546,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <p>18、模型拼装漏板荷载、模型拼装掉楼层</p>
 <p>19、Pkpm计算悬挑板、PMCAD计算边跨板、JCCAD筏板边跨，均没弯矩传给边梁形成扭矩，板支座处也没弯矩，全部漏荷载（更准确地说是漏荷载效应！），板支座钢筋与边梁扭筋均需要人为增大</p>
 <p>20、独立基础漏弯矩荷载，按照抗震规范6.2.3条，框架结构柱底弯矩是要放大的</p>
-<p>%</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -6370,7 +6272,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <p><strong>强、弱连梁</strong></p>
 <p>强连梁一般设在需要保证墙体整体性和提高墙体刚度的关键部位，比如调周期比和减少位移时，可以用来加强外围墙体；弱连梁通常用于剪力墙长度过大，需要特意削弱的部位，防止地震力过度集中。但此时一般都可以按照普通梁计算。</p>
 <h1> 非结构构件</h1>
-<p>**非结构构件：**主要指建筑非结构构件（如维护外墙、隔墙、幕墙、吊顶、广告牌、储物柜架等）及建筑附属机电设备支架（如电梯，照明和应急电源，通信设备，管道系统，采暖和空调系统，烟火监测和消防系统用天线）等。</p>
 <h2> 转角窗</h2>
 <p><strong>转角窗的加强措施（结构技术措施 5.1.13、11G329-1 P3-19）</strong></p>
 <ol>
@@ -8861,7 +8762,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <h2> 构造柱</h2>
 <p>填充墙墙长大于5m或大于层高的2倍时应设置构造柱；后砌外墙一字墙尽端、L形墙转角处、电梯井道四角、门窗洞口大于2.1米时应设置构造柱;砖砌女儿墙构造柱详12ZG003第39页,其中1号筋为2φ12;女儿墙及带形窗台墙每隔3米需设构造柱。</p>
 <p>抗规13.3.4：钢筋混凝土结构中的砌体填充墙，墙长大于8m或大于层高的2倍时宜设置构造柱</p>
-<p>抗规10.2.5-1：多层砖砌体房屋的构造柱应符合下列构造规定：构造柱的最小截面可为180mm×240mm(墙厚190mm时为180mm×190mm)；构造柱纵向钢筋宜采用4φ12，箍筋直径可采用6mm，间距不宜大于250mm，且在柱上、下端适当加密；当6、7度超过六层、8度超过五层和9度时，构造柱纵向钢筋宜采用4φ14，箍筋间距不应大于200mm；房屋四角的构造柱应适当加大截面及配筋；</p>
 <h2> 洞口</h2>
 <p>避难层风井洞口</p>
 <p>风井在一定层数时封闭</p>
@@ -10384,7 +10284,7 @@ https://sitoi.github.io/dailycheckin/</h1>
 <p>挡墙转角处暗柱，仅转角处有梁搭过来时要加暗柱。</p>
 <p><strong>侧壁所受荷载</strong></p>
 <p>\1. 重力荷载		2. 土压力			3. 水压力			4. 土与侧壁的摩擦力</p>
-<p>①室外地坪活荷载按5kN/m2（无车道）、10kN/m2（有车道）考虑，或考虑20t消防车的侧压力（应考虑土层厚度的扩散作用，不能直接按荷载规范取值）土的浮重度按11kN/m3考虑</p>
+<p>①室外地坪活荷载按5kN/m2（无车道）、10kN/m2（有车道）考虑，或考虑20t消防车的侧压力（应考虑土层厚度的扩散作用，不能直接按荷载规范取值）</p>
 <p>②按抗浮水位考虑侧压力（也考虑雨水排放不畅</p>
 <p>③按两跨连续板计算，下部嵌固在基础梁内，上部在首层板简支</p>
 <p>④按偏压构件考虑，墙体裂缝控制在0.3mm以内 ；偏保守则按受弯构件考虑</p>
@@ -12117,8 +12017,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <h1> 砼基本原理</h1>
 <p>提高砼梁延性：减小砼相对受压区高度（减少受拉配筋、配置受压钢筋、采用T形截面和提高砼强度等级）</p>
 <p>斜截面受剪承载力计算位置：A.支座边缘处的截面；B.受拉区弯起钢筋起点处的截面；C.箍筋截面面积或间距改变处的截面；D.腹板宽度改变处的截面</p>
-<h1> 生命线工程</h1>
-<p>生命线工程：主要是指维持城市生存功能系统和对国计民生有重大影响的工程。主要包括供水，排水系统工程；电力、燃气，石油输送管线等能源供给系统工程；电话和广播电视等情报通信系统工程；大型医疗系统工程和公路、铁路等交通系统的工程</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -12569,25 +12467,7 @@ https://sitoi.github.io/dailycheckin/</h1>
 <h2> OPKG</h2>
 <p>原版</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>查找大文件</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-定制软件包</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2> R2S</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> R2S</h2>
 <p>https://github.com/fanck0605/openwrt-nanopi-r2s</p>
 <p>https://github.com/fanck0605/friendlywrt-nanopi-r2s</p>
 <p>https://github.com/klever1988/nanopi-openwrt</p>
@@ -12599,48 +12479,6 @@ https://sitoi.github.io/dailycheckin/</h1>
 <p>首先固件要支持ipv6，这是前提，设置：wan=高级=获取ipv6自动，wan6=dhcp6客户端下面选项保持初始设置，lan=ipv6=混合模式=混合模式=有状态+无状态，dhcp/dns=高级=取消禁止解析ipv6，基本上就ok了</p>
 <p><s>https://www.right.com.cn/forum/thread-4042833-1-1.html</s></p>
 <p>https://www.right.com.cn/forum/thread-4034918-1-1.html</p>
-<p>SmartDNS设置</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 分流设置</h3>
-<p>分流参考文章</p>
-<p>https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file</p>
-<p>https://github.com/pymumu/smartdns/issues/1022</p>
-<p>https://zeeko.dev/2022/09/smartdns-with-v2ray-tproxy/</p>
-<p>https://xtrojan.pro/bgfw/v2ray/v2ray-dns-streaming.html</p>
-<p>一、基本设置</p>
-<ol>
-<li>下载页面设置需自动下载的要分流的域名列表文件（也可上传）。(格式为一行一个域名，需要分流的域名)</li>
-<li>设置上游服务器，设置国外的DOT，DOH等服务器，并设置<code>服务器组</code>：比如oversea。可选勾选‘从默认组中排除’
-也可以设置一个上游服务器，通过代理走转发程序，设置<code>服务器组</code>用于专门分流查询，这样查询DNS的出口和数据出口一样，DNS结果的亲和度和更好。</li>
-<li>域名规则-&gt;域名分流设置：
-<ul>
-<li>设置<code>域名分组</code>，名称为第二步的名称：比如'oversea'</li>
-<li>选择<code>跳过测速</code></li>
-<li>选择<code>停用IPV6地址解析</code></li>
-<li>选择<code>域名列表文件</code>，文件为第一步设置的自动下载的文件，此文件为需要分流的域名列表。</li>
-<li>对于临时个别要分流的域名，可以在<code>域名列表</code>文本框中输入。</li>
-</ul>
-</li>
-</ol>
-<p>二、最简单的按域名的透明代理：</p>
-<p>如果smartdns运行在主路由上，那么可以使用REDIRECT模式对TCP进行透明代理。下面举例对TCP进行透明转发，其中的[ipsetname]是IP集合的名称，比如可以设置<code>proxy-list</code>：</p>
-<ol>
-<li>shell命令，创建ipset集合
-<code>ipset create proxy-list hash:net timeout 600</code></li>
-<li>shell命令，iptable设置对应ipset集合中域名的TCP请求使用TPROXY重定向转发到本机2018的转发程序。
-<code>iptables -t nat -I PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018</code></li>
-<li>smartdns设置页面的<code>域名分流设置</code>-&gt;<code>ipset名称</code>设置为上述步骤中[ipsetname]的名称，比如<code>proxy-list</code></li>
-<li>在主路由的2018端口，开启REDIRECT模式的转发程序。</li>
-<li>应用smartdns设置。</li>
-<li>结束。</li>
-</ol>
-<p>对于udp，nfttable也是类似的步骤，上述透明代理github上有现成的脚本，PW也有类似的能力，只要选择好转发模式，和设置好正确的ipset名称或nftset名称即可。</p>
-<p>原理上，smartdns和转发软件的结合点，为ipset名称或nftset名称，那两个参数和转发软件匹配就可以做到按需转发。
-dnsmasq也是类似的工作方式。</p>
-<p><strong>删除规则</strong></p>
-<p><code>iptables -t nat -D PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018</code></p>
-<h3> GeoSite\GeoIP</h3>
-<p>geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text</p>
-<p>原本 geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data</p>
 <h2> 无线</h2>
 <p></p>
 <p></p>
@@ -12664,25 +12502,7 @@ dnsmasq也是类似的工作方式。</p>
 <h2> AdGuard Home</h2>
 <p>最近128m的小闪存运行AdGuardHome几天后，空间就爆了，改成只记录一天的日志还是爆，后来发现即使设置成一天，AdGuardHome也不是覆写，而是把旧的日志文件重命名继续保存了。
 所以用到了以下代码，自动删除旧的日志文件。直接计划任务里面添加以下代码</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
-此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。</p>
-<p>=======</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>198c2116c5109f2dc09ab42ad8eb0a95319b83d1</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
 此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。</p>
 <h2> SSH</h2>
 <p>根据韩风大佬的视频整理的笔记，方便记忆，原视频地址：https://www.bilibili.com/video/BV1hT4y1E78k</p>
@@ -12719,30 +12539,14 @@ dnsmasq也是类似的工作方式。</p>
 <p>*安装好ddnsto之后无法启用配置</p>
 <p>因为 Openwrt 15 版本跟最新的插件不兼容导致，解决办法尝试一：</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>如果不行则尝试二：重启路由器</p>
-<h2> DDNS</h2>
-<p><strong>防火墙设置</strong></p>
-<p>名称 DDNS</p>
-<p>协议 TCP UDP</p>
-<p>源区域 <strong>wan</strong></p>
-<p>目标区域 <strong>lan</strong></p>
-<p>目标地址  <code>::0000:0000:0000:0001</code></p>
-<p>目标端口 80</p>
-<p>操作 接受</p>
-<p>地址族限制 仅 IPv6</p>
 <h2> 全能推送（Pushbot）</h2>
 <p>https://www.right.com.cn/forum/thread-4051426-1-1.html</p>
 <p>项目地址：https://github.com/zzsj0928/luci-app-pushbot</p>
-<h2> 微信推送（wechatpush）</h2>
-<p>pushplus_token <code>5dfff495415c445e8466c3f894d926f2</code></p>
 <h2> Tailscale</h2>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>开启子路由</p>
 <p>https://tailscale.com/kb/1019/subnets/?q=subnet</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>Linux开启接受子路由</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol>
-<li>接口创建 <code>Tailscale</code>不配置协议，防火墙创建 <code>Tailscale</code>，保存并应用</li>
-<li>防火墙 <code>Tailscale</code>区域设置，全部接受，开启IP 动态伪装、MSS 钳制，允许转发到 <code>Lan</code>、<code>Wan</code>，允许源区域 <code>Lan</code>，</li>
-</ol>
-<h2> Vsftpd</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> Vsftpd</h2>
 <p>/etc/vsftpd.conf</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>允许匿名访问</p>
 <div class="language-undefined line-numbers-mode" data-ext="undefined"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>启动vsftpd</p>
@@ -12779,18 +12583,17 @@ dnsmasq也是类似的工作方式。</p>
 <p>https://op.dllkids.xyz/packages/aarch64_generic/</p>
 <p>luci-app-advanced_1.20-26_all</p>
 <p><strong>hosts</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 系统更新</h2>
-<p>值守式系统升级 attendedsysupgrade</p>
-<p>非定制固件升级 gpsysupgrade</p>
-<h1> V2raya</h1>
-<p>v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少geosite.dat, geoip.dat.
-其根本原因是缺少了整个v2ray核心.</p>
-<p>安装v2ray-core插件即可</p>
-<p>指定v2ray binary path为 <code>/usr/bin/v2ray</code></p>
-<p>规则列表文件路径：<code>/usr/share/v2ray</code></p>
-<p>附加配置目录:<code>/etc/v2raya/ext</code>v2ray-ext.json</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h1> V2ray</h1>
-<p>https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> 猫影视</h1>
+<p>https://gitea.com/AYOM/zhou/</p>
+<p>https://gitea.com/wuzang/mm</p>
+<p>https://us-oss.9t.ee/Cat/api.html</p>
+<p>源：</p>
+<p>http://fj365.ml/m.json</p>
+<p>emotn分享码</p>
+<p>123456	666888	129915	aaa123</p>
+<p>https://post.smzdm.com/p/aen2z7g4/</p>
+<p>https://post.smzdm.com/p/aoowqow7/</p>
+<p>https://post.smzdm.com/p/a99vlpmp/</p>
 <h1> R2S设置</h1>
 <h2> 系统</h2>
 <h3> 管理权</h3>
@@ -12824,7 +12627,7 @@ dnsmasq也是类似的工作方式。</p>
 <p>更新时间星期：每天</p>
 <p>更新时间小时：0点</p>
 <p><strong>规则列表</strong></p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>服务器端</strong></p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>服务器端</strong></p>
 <p>启用：√</p>
 <p>端口：10801</p>
 <h3> DDNS.to内网穿透</h3>
@@ -14884,61 +14687,47 @@ iptables -t nat -I POSTROUTING -o tailscale0 -j MASQUERADE</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>RoutingA</title>
+      <title>Windows</title>
       <link>https://jiange1236.github.io/tech/V2rayA.html</link>
       <guid>https://jiange1236.github.io/tech/V2rayA.html</guid>
-      <source url="https://jiange1236.github.io/rss.xml">RoutingA</source>
-      <description>RoutingA default: direct # Write your own rules below # domain(geosite:geolocation-!cn) -&amp;gt; proxy # ip(geoip:hk, geoip:mo) -&amp;gt; proxy source(100.0.0.0/8) -&amp;gt; direct port(6881-6889) -&amp;gt; direct sourcePort(6881-6889) -&amp;gt; direct domain(geosite:cn) -&amp;gt; direct ip(geoip:private, geoip:cn) -&amp;gt; direct domain(geosite:category-scholar-!cn, geosite:category-scholar-cn) -&amp;gt; direct # domain(ext:&amp;quot;LoyalsoldierSite.dat:china-list&amp;quot;, ext:&amp;quot;LoyalsoldierSite.dat:cn&amp;quot;) -&amp;gt; direct # domain(geosite:google-scholar) -&amp;gt; proxy # domain(geosite:google, geosite:github, geosite:facebook, geosite:greatfire) -&amp;gt; proxy domain(regexp: v2ray.*) -&amp;gt; proxy domain(regexp: v2fly.*) -&amp;gt; proxy domain(domain: singlelogin.se) -&amp;gt; proxy domain(contains: zlibrary) -&amp;gt; proxy domain(contains: z-library) -&amp;gt; proxy domain(geosite:z-library) -&amp;gt; proxy domain(ext:&amp;quot;LoyalsoldierSite.dat:gfw&amp;quot;) -&amp;gt; proxy # domain(geosite:category-ads) -&amp;gt; block # domain(ext:&amp;quot;LoyalsoldierSite.dat:category-ads-all&amp;quot;) -&amp;gt; block domain(geosite:category-porn, geosite:javdb) -&amp;gt; proxy domain(regexp: thz.*) -&amp;gt; proxy domain(regexp: porn.*) -&amp;gt; proxy domain(regexp: btsow.*) -&amp;gt; proxy domain(domain: taohuaimg.com) -&amp;gt; proxy domain(regexp: bisi.*) -&amp;gt; proxy domain(regexp: madouqu.*) -&amp;gt; proxy domain(domain: u3c3.com, domain: u9a9.cc) -&amp;gt; proxy</description>
+      <source url="https://jiange1236.github.io/rss.xml">Windows</source>
+      <description>Windows 本节介绍如何在 Windows 上安装 v2rayA。需要注意的是，目前在 Windows 上仅支持一键配置系统代理而非透明代理。 使用安装包一键安装 安装包将内置 v2ray-core，如需更换 Xray-core，可在安装完毕后于安装目录手动进行替换。 从 GitHub Releases 下载适用于 Windows 的安装包，例如 installer_windows_x64_1.5.6.exe，按照指示安装完毕即可。可运行桌面快捷方式或直接访问 http://127.0.0.1:2017 打开管理页面。</description>
       <pubDate>Sat, 14 May 2022 15:59:13 GMT</pubDate>
-      <content:encoded><![CDATA[<h1> RoutingA</h1>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> GeoIP、GeoSite</h1>
-<h2> GeoIP</h2>
-<p>源文件：https://github.com/v2fly/geoip</p>
-<h2> GeoSite</h2>
-<p>源文件：https://github.com/v2fly/domain-list-community</p>
-<h2> Loyalsoldier</h2>
-<h3> GeoIP</h3>
-<p>geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text</p>
-<ul>
-<li>新增类别（方便有特殊需求的用户使用）：
-<ul>
-<li><code>geoip:cloudflare</code></li>
-<li><code>geoip:cloudfront</code></li>
-<li><code>geoip:facebook</code></li>
-<li><code>geoip:fastly</code></li>
-<li><code>geoip:google</code></li>
-<li><code>geoip:netflix</code></li>
-<li><code>geoip:telegram</code></li>
-<li><code>geoip:twitter</code></li>
-</ul>
-</li>
-</ul>
-<h3> GeoSite</h3>
-<p>geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data</p>
-<p>新增类别（方便有特殊需求的用户使用）：</p>
-<ul>
-<li>
-<p><code>geosite:gfw</code></p>
-</li>
-<li>
-<p><code>geosite:china-list</code>：包含 <a href="https://github.com/felixonmars/dnsmasq-china-list/blob/master/accelerated-domains.china.conf" target="_blank" rel="noopener noreferrer">@felixonmars/dnsmasq-china-list/accelerated-domains.china.conf</a> 文件里的域名，供有特殊 DNS 分流需求的用户使用。</p>
-</li>
-<li>
-<p><code>geosite:apple-cn</code>：包含 <a href="https://github.com/felixonmars/dnsmasq-china-list/blob/master/apple.china.conf" target="_blank" rel="noopener noreferrer">@felixonmars/dnsmasq-china-list/apple.china.conf</a> 文件里的域名，供希望 Apple 域名直连（不走代理）的用户使用。</p>
-</li>
-<li>
-<p><code>geosite:google-cn</code>：包含 <a href="https://github.com/felixonmars/dnsmasq-china-list/blob/master/google.china.conf" target="_blank" rel="noopener noreferrer">@felixonmars/dnsmasq-china-list/google.china.conf</a> 文件里的域名，供希望 Google 域名直连（不走代理）的用户使用。</p>
-</li>
-<li>
-<p>[<strong>慎用</strong>]<code>geosite:win-spy</code>：包含 <a href="https://github.com/crazy-max/WindowsSpyBlocker/blob/master/data/hosts/spy.txt" target="_blank" rel="noopener noreferrer">@crazy-max/WindowsSpyBlocker/hosts/spy.txt</a> 文件里的域名，供希望屏蔽 Windows 操作系统隐私跟踪域名的用户使用。</p>
-</li>
-<li>
-<p>[<strong>慎用</strong>]<code>geosite:win-update</code>：包含 <a href="https://github.com/crazy-max/WindowsSpyBlocker/blob/master/data/hosts/update.txt" target="_blank" rel="noopener noreferrer">@crazy-max/WindowsSpyBlocker/hosts/update.txt</a> 文件里的域名，供希望屏蔽 Windows 操作系统自动升级的用户使用。</p>
-</li>
-<li>
-<p>[<strong>慎用</strong>]<code>geosite:win-extra</code>：包含 <a href="https://github.com/crazy-max/WindowsSpyBlocker/blob/master/data/hosts/extra.txt" target="_blank" rel="noopener noreferrer">@crazy-max/WindowsSpyBlocker/hosts/extra.txt</a> 文件里的域名，供希望屏蔽 Windows 操作系统附加隐私跟踪域名的用户使用。</p>
-</li>
-</ul>
+      <content:encoded><![CDATA[<h1> Windows</h1>
+<p>本节介绍如何在 Windows 上安装 v2rayA。需要注意的是，目前在 Windows 上仅支持一键配置系统代理而非透明代理。</p>
+<h2> 使用安装包一键安装</h2>
+<p>安装包将内置 v2ray-core，如需更换 Xray-core，可在安装完毕后于安装目录手动进行替换。</p>
+<p>从 <a href="https://github.com/v2rayA/v2rayA/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 下载适用于 Windows 的安装包，例如 installer_windows_x64_1.5.6.exe，按照指示安装完毕即可。可运行桌面快捷方式或直接访问 http://127.0.0.1:2017 打开管理页面。</p>
+<p>通过安装包安装 v2rayA 后，v2rayA 将以服务的形式运行，默认情况下将开机自启。你也可以在任务管理器中的“服务”选项卡管理 v2rayA 的启动与停止。</p>
+<h2> 手动安装核心和 v2rayA</h2>
+<p>v2rayA 目前不支持 TUN，因此 Windows 之上的透明代理无法启用。安全起见，下面将以普通用户权限来运行 v2rayA。</p>
+<p>建议从 scoop 安装 v2ray 核心，这样你可以很容易地获取后续更新。可以通过 <a href="https://github.com/qv2ray/mochi" target="_blank" rel="noopener noreferrer">Qv2ray 的 Mochi 仓库</a> 安装核心。不过注意，如果你从 scoop 安装了核心，那么你应该使用实际的核心文件，而不是 <code>scoop\shims</code> 下的外壳，否则将造成内核重启失败故障。</p>
+<h3> 下载 v2rayA</h3>
+<p>从 <a href="https://github.com/v2rayA/v2rayA/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a> 或 GitHub Action 下载适用于 Windows 的二进制文件，然后重命名为 <code>v2raya.exe</code>（格外注意 Windows 系统下不能丢失扩展名）。</p>
+<h3> 下载 V2Ray 核心 / Xray 核心</h3>
+<h4> 方法一：从 scoop 安装</h4>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> 方法二：手动下载安装</h4>
+<blockquote>
+<p>安装 V2Ray：https://www.v2fly.org/guide/install.html
+安装 Xray：https://xray.sh/document/install.html</p>
+</blockquote>
+<p>下载压缩包之后解压即可。</p>
+<h3> 运行 v2rayA</h3>
+<p>以下假设 v2rayA 与核心都保存到了 D 盘的对应文件夹，如果你文件的存放位置不是这些文件夹，那么你需要根据实际情况修改命令或配置文件。</p>
+<h4> 直接运行</h4>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> 作为服务运行</h4>
+<p>使用 <a href="https://github.com/winsw/winsw/" target="_blank" rel="noopener noreferrer">WinSW</a> 可以将 v2rayA 作为服务运行并自动开机启动。</p>
+<p>下载 WinSW（版本随意，不过 Windows 10 用户使用 <code>WinSW-net461.exe</code> 这个版本即可）的 3.x 版本，然后将其重命名为 <code>v2raya-service.exe</code> 并放入 v2rayA 所在的文件夹下面。</p>
+<p>在 v2rayA 所在文件夹下新建 <code>v2raya-service.xml</code> 然后编辑：</p>
+<div class="language-xml line-numbers-mode" data-ext="xml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>此处的用户名是你显示在“计算机管理”中的用户名，而非在控制面板或系统设置里面看到的完整用户名。密码是你的本地账户密码或者微软账户密码。</p>
+<p>保存文件，然后运行：</p>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>操作需要管理员权限。在 v2rayA 所在目录下可以查看日志文件。</p>
+<h4> 后台运行（使用 PowerShell 的隐藏窗口功能）：</h4>
+<div class="language-ps1 line-numbers-mode" data-ext="ps1"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> 后台运行（使用 ConEmu）</h4>
+<p><a href="https://conemu.github.io/" target="_blank" rel="noopener noreferrer">ConEmu</a> 是一个 Windows 下的终端程序，右击它窗口上的最小化按钮可以让它把窗口最小化到托盘区。在 ConEmu 中的 PowerShell 会话中使用 <a href="https://v2raya.org/docs/prologue/installation/windows/#%E7%9B%B4%E6%8E%A5%E8%BF%90%E8%A1%8C" target="_blank" rel="noopener noreferrer">直接运行</a> 项里面提到的命令运行 v2rayA 即可。</p>
+<h2> 其它</h2>
+<p>Scoop 源：https://github.com/v2raya/v2raya-scoop</p>
+<p>你可以通过 <a href="https://scoop.sh/" target="_blank" rel="noopener noreferrer">Scoop</a> 安装 v2rayA，安装完成后可以直接通过 <code>v2raya</code> 命令运行。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -19277,10 +19066,10 @@ iptables -t nat -I POSTROUTING -o tailscale0 -j MASQUERADE</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>CAD</title>
+      <title>板王</title>
       <link>https://jiange1236.github.io/work/%E6%9D%BF%E7%8E%8B.html</link>
       <guid>https://jiange1236.github.io/work/%E6%9D%BF%E7%8E%8B.html</guid>
-      <source url="https://jiange1236.github.io/rss.xml">CAD</source>
+      <source url="https://jiange1236.github.io/rss.xml">板王</source>
       <description>[TOC] CAD 正交卡顿 修改系统变量 TEMPOVERRIDES 指令列输入TEMPOVERRIDES ，按下Enter键 将设定值由 1 变更为 0，应该就可以正常了 探索者 +P 上一次选择 pgp初始化 ucs-e ucsfollow=1旋转视图 fcd 重叠处理 xcq 线长取齐 xsc 图层显隐 wipeout 遮挡	xc剪裁 ls 线型比例因子	measurement=1 填充比例=公制</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -19449,35 +19238,15 @@ iptables -t nat -I POSTROUTING -o tailscale0 -j MASQUERADE</p>
 <p>bkm 创建镜像平面，用于复制对象</p>
 <p>bkr 创建旋转平面，用于复制对象</p>
 <h1> 天正</h1>
-<ol>
-<li>
-<p>记录下天正的搜索路径</p>
-<p>D:\tangent\tarcht20v10\sys19x64</p>
-<p>D:\tangent\tarcht20v10\sys</p>
-<p>D:\tangent\tarcht20v10\dwb</p>
-<p>受信任的位置</p>
-<p>D:\tangent\tarcht20v10\sys19x64</p>
-<p>D:\tangent\tarcht20v10\sys19</p>
-<p>D:\tangent\tarcht20v10\sys</p>
-<p>D:\tangent\tarcht20v10\LISP</p>
-</li>
-<li>
-<p>把天正搜索路径加入探索者软件的搜索路径</p>
-</li>
-<li>
-<p>把天正安装目录的acad.rx和dmload.rx两个文件复制一份放到探索者软件内。acad.rx是必需的</p>
-</li>
-</ol>
-<p>先删除安装目录下的文件\TElecT20V10\SYS\config.tpr，再打开天正，这个文件会重新出现，然后把这个文件属性改为只读就可以了</p>
-<h1> 理正岩土</h1>
-<p><strong>导入dxf建模的注意事项</strong></p>
-<p>1.保证图层简单、线条简单</p>
-<p>2.以米为单位</p>
-<p>3.画在 (0,0)点附近</p>
-<p>4.节点和节点之间精确连接，没有缝隙</p>
-<p>5.用直线（line）命令，样条曲线转多段线：【SPLINEDIT】→【P】</p>
-<p>6.另存为R12dxf格式</p>
-<p>7.边坡左边低、右边高</p>
+<p><s>1、天正里的sys15复制到TSSD文件夹中的sys15</s></p>
+<p><s>2、天正里的sys16复制到TSSD文件夹中的sys16</s></p>
+<p><s>3、天正里的sys17复制到TSSD文件夹中的sys17</s></p>
+<p><s>4、天正里的sys18x64复制到TSSD文件夹中的sys18</s></p>
+<p><s>5、天正里的sys19x64复制到TSSD文件夹中的sys19</s></p>
+<p><s>6、天正里的SYS复制到TSSD文件夹中的Prg、sys19、sys18、sys17、sys16、sys15</s></p>
+<p>支持文件搜索路径</p>
+<p>C:\Tangent\TArchT20V4\sys19x64</p>
+<p>C:\Tangent\TArchT20V4\SYS</p>
 ]]></content:encoded>
     </item>
     <item>
