@@ -67,7 +67,7 @@ export default hopeTheme(
 //      Whatsapp: "https://example.com",
 //      Youtube: "https://example.com",
       Zhihu: "https://www.zhihu.com/people/zhouzijian",
-  },
+          },
         },
       },
 
@@ -114,10 +114,10 @@ export default hopeTheme(
 //      Whatsapp: "https://example.com",
 //      Youtube: "https://example.com",
       Zhihu: "https://www.zhihu.com/people/zhouzijian",
+          },
+        },
+      },
     },
-  },
-    },
-  },
 
     displayFooter: true,
     copyright: "Copyright © 2019-present Zine⁶",
@@ -266,4 +266,4 @@ export default hopeTheme(
     },
   },
   false,
-});
+);
