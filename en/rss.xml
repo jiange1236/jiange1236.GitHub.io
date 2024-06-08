@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://zecdn.top/en/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://zecdn.top/en/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>My name is Zine⁶</title>
+    <link>https://zecdn.top/en/</link>
+    <description>Zine⁶ personal blog</description>
+    <language>en-US</language>
+    <pubDate>Sat, 08 Jun 2024 15:42:53 GMT</pubDate>
+    <lastBuildDate>Sat, 08 Jun 2024 15:42:53 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <copyright>MIT Licensed, © 2019-present Zine⁶</copyright>
+  </channel>
+</rss>

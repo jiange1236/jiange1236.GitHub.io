@@ -4,4 +4,4 @@ Disallow:
 User-agent:*
 Disallow:
 
-Sitemap: https://jiange1236.github.io/sitemap.xml
+Sitemap: https://zecdn.top/sitemap.xml

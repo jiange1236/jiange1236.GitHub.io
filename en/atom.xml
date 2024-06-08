@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://zecdn.top/en/atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <id>https://zecdn.top/en/</id>
+  <title>My name is Zine⁶</title>
+  <subtitle>Zine⁶ personal blog</subtitle>
+  <icon>https://zecdn.top/favicon.ico</icon>
+  <rights>MIT Licensed, © 2019-present Zine⁶</rights>
+  <updated>2024-06-08T15:42:53.855Z</updated>
+  <generator>@vuepress/plugin-feed</generator>
+  <link rel="self" href="https://zecdn.top/en/atom.xml"/>
+  <link rel="alternate" href="https://zecdn.top/en/"/>
+</feed>
