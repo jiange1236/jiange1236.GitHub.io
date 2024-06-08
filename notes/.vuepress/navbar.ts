@@ -1,6 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
-export default navbar([
+export const zhNavbarConfig = navbar([
+  "/",
   { text: "主页", link: "/", icon: "home"},
   { text: "项目", link: "/home", icon:"list-check" },
   { text: "工作", link: "/work/", icon:"briefcase" },
@@ -28,4 +29,11 @@ export default navbar([
 		},
 	],
   },
+]);
+
+export const enNavbarConfig = navbar([
+  "/en/",
+  "/en/note/",
+  "/en/code/",
+  "/en/software/",
 ]);

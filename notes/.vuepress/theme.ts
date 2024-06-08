@@ -1,61 +1,89 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
 
-export default hopeTheme({
-  hostname: "https://jiange1236.github.io",
+import { enNavbarConfig, zhNavbarConfig } from "./navbar.js";
+import { enSidebarConfig, zhSidebarConfig } from "./sidebar/index.js";
+
+export default hopeTheme(
+  {
+    hostname: "https://zecdn.top",
 
   author: {
-    name: "Zine",
-    url: "https://jiange1236.github.io",
-  },
-  
-  iconAssets: "fontawesome",
-  iconPrefix: "fas fa-",
-
-  logo: "/blog.png",
-
-  repo: "https://github.com/jiange1236/jiange1236.github.io",
-
-  docsDir: "notes",
-  docsRepo: "https://github.com/jiange1236/jiange1236.github.io",
-  docsBranch: "main",
-  
-  // navbar
-  navbar: navbar,
-
-  // sidebar
-  //sidebar: sidebar,
-  sidebar: {
-    "/finance/": "structure",
-	"/fun/": "structure",
-	"/others/": "structure",
-	"/photo/": "structure",
-	"/study/": "structure",
-	"/tech/": "structure",
-	"/work/": "structure",
-    // fallback
-    "/": [
-      "" /* / */,
-	  "home" /* /home.html */,
-      "intro" /* /intro.html */,
-    ],
+      name: "Zine⁶",
+      url: "https://zecdn.top",
   },
 
-  footer: "不忘初心，方得始终",
+    favicon: "/favicon.ico",
 
-  displayFooter: true,
+    iconAssets: "//at.alicdn.com/t/font_2410206_vuzkjonf4s9.css",
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word"],
+    logo: "/blog.png",
+
+    repo: "jiange1236/jiange1236.GitHub.io",
+
+    repoDisplay: false,
+
+    docsDir: "notes",
+
+    locales: {
+      "/": {
+        navbar: zhNavbarConfig,
+        sidebar: zhSidebarConfig,
+
+        footer:
+          '主题使用 <a href="https://theme-hope.vuejs.press/zh/">VuePress Theme Hope</a> | <a href="https://mister-hope.com/about/site.html" target="_blank">关于网站</a>',
+
+        copyright: "基于 MIT 协议，© 2019-至今 Zine⁶",
+
+        blog: {
+          description: "一级注册结构工程师 | 《时代周刊》2006年度风云人物",
+          intro: "/about/",
+          medias: {
+      Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
+//      Bitbucket: "https://example.com",
+//      Dingding: "https://example.com",
+//      Discord: "https://example.com",
+//      Dribbble: "https://example.com",
+      Email: "mailto:183465355@qq.com",
+//      Evernote: "https://example.com",
+      Facebook: "https://example.com",
+//      Flipboard: "https://example.com",
+      Gitee: "https://gitee.com/jiange1236",
+      GitHub: "https://github.com/jiange1236",
+//      Gitlab: "https://example.com",
+//      Gmail: "https://example.com",
+//      Instagram: "https://example.com",
+//      Lines: "https://example.com",
+//      Linkedin: "https://example.com",
+//      Pinterest: "https://example.com",
+//      Pocket: "https://example.com",
+//      QQ: "https://qq.com",
+//      Qzone: "https://example.com",
+//      Reddit: "https://example.com",
+//      Rss: "https://example.com",
+//      Steam: "https://example.com",
+      Twitter: "https://twitter.com/zhouzijian1236",
+//      Wechat: "https://example.com",
+      Weibo: "https://weibo.com/u/1873128010",
+//      Whatsapp: "https://example.com",
+//      Youtube: "https://example.com",
+      Zhihu: "https://www.zhihu.com/people/zhouzijian",
+  },
+        },
+      },
+
+      "/en/": {
+        navbar: enNavbarConfig,
+        sidebar: enSidebarConfig,
+
+        footer:
+          'Theme by <a href="https://theme-hope.vuejs.press">vuepress-theme-hope</a>',
+
+        copyright: "MIT Licensed, © 2019-present Zine⁶",
 
   blog: {
-    avatar: "https://avatars.githubusercontent.com/u/1384621?s=96&v=4",
-    description: "一级注册结构工程师 | 《时代周刊》2006年度风云人物",
-    intro: "/intro.html",
-	roundAvatar: true,
-    sidebarDisplay: "mobile",
-    articlePerPage: 10,//每页的文章数量
-	articleInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime", "Word"],
+          description:
+            "VuePress project member, front-end developer, studying for a master's degree in theoretical physics",
+          intro: "/en/about/",
     medias: {
       Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
 //      Bitbucket: "https://example.com",
@@ -88,57 +116,154 @@ export default hopeTheme({
       Zhihu: "https://www.zhihu.com/people/zhouzijian",
     },
   },
-
-  encrypt: {
-    config: {
-      // "/guide/encrypt.html": ["1234"],
     },
   },
 
-  // seo:true,
+    displayFooter: true,
+    copyright: "Copyright © 2019-present Zine⁶",
+
   plugins: {
     blog: {
-      autoExcerpt: true,//是否为每个页面生成摘录
+        excerptLength: 0,
     },
 
-    pwa:{
-      cachePic:true,
-      update:"available",
-    },
-    copyCode: {"showInMobile": true,duration: 2000},
-    // 你也可以使用 Waline
     comment: {
-      /**
-       * Using giscus
-       */
-      type: "giscus",
-      repo: "jiange1236/jiange1236.GitHub.io",
-      repoId: "R_kgDOHLemeQ",
-      category: "Announcements",
-      categoryId: "DIC_kwDOHLemec4CPFA-",
-	  mapping: "title",
-
+        provider: "Waline",
+        serverURL: "https://waline.zecdn.top",
     },
+
+      docsearch: {
+        appId: "I7SASQM4UK",
+        apiKey: "a20baaa964754c629bf5a7d027ffe7b7",
+        indexName: "zeblog",
+      },
 
     feed: {
       atom: true,
       json: true,
       rss: true,
     },
-	
+
     mdEnhance: {
-      enableAll: true,
-      // gfm: true,//是否支持完整的 GFM 语法
-      // codegroup: true,//是否启用代码组
-      // align: true,//是否启用自定义对齐格式支持
-      // sup: true,//是否启用上角标格式支持
-      // sub: true,//是否启用下角标格式支持
-      // footnote: true,//是否启用脚注格式支持
-      // lazyLoad: true,//是否使用原生方式懒加载页面图片
-      // mark: true,//是否启用标记格式支持
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
+        align: true,
+        codetabs: true,
+        demo: true,
+        figure: true,
+        flowchart: true,
+        footnote: true,
+        imgLazyload: true,
+        imgMark: true,
+        imgSize: true,
+        mathjax: true,
+        mermaid: true,
+        revealJs: true,
+        sub: true,
+        sup: true,
+        vPre: true,
+      },
+
+      pwa: {
+        themeColor: "#5c92d1",
+        cacheHTML: false,
+        maxSize: 3072,
+        apple: {
+          icon: "/assets/icon/apple-touch-icon.png",
+          statusBarColor: "white",
+    },
+        msTile: {
+          image: "/assets/icon/ms-icon-144.png",
+          color: "#ffffff",
+  },
+        manifest: {
+          name: "Zine⁶ 的个人博客",
+          short_name: "Zine⁶ Blog",
+          description: "Zine⁶ 的个人博客",
+          theme_color: "#5c92d1",
+          icons: [
+            {
+              src: "/assets/icon/chrome-192.png",
+              sizes: "192x192",
+              type: "image/png",
+            },
+            {
+              src: "/assets/icon/chrome-512.png",
+              sizes: "512x512",
+              type: "image/png",
+            },
+            {
+              src: "/assets/icon/chrome-mask-192.png",
+              sizes: "192x192",
+              purpose: "maskable",
+              type: "image/png",
+            },
+            {
+              src: "/assets/icon/chrome-mask-512.png",
+              sizes: "512x512",
+              purpose: "maskable",
+              type: "image/png",
+            },
+          ],
+          shortcuts: [
+            {
+              name: "分类",
+              short_name: "分类",
+              icons: [
+                {
+                  src: "/assets/icon/category-maskable.png",
+                  sizes: "192x192",
+                  purpose: "maskable",
+                  type: "image/png",
+                },
+              ],
+              url: "/category/",
+              description: "文章分类分组",
+            },
+            {
+              name: "标签",
+              short_name: "标签",
+              icons: [
+                {
+                  src: "/assets/icon/tag-maskable.png",
+                  sizes: "192x192",
+                  purpose: "maskable",
+                  type: "image/png",
+                },
+              ],
+              url: "/tag/",
+              description: "文章标签分组",
+            },
+            {
+              name: "时间线",
+              short_name: "时间线",
+              icons: [
+                {
+                  src: "/assets/icon/timeline-maskable.png",
+                  sizes: "192x192",
+                  purpose: "maskable",
+                  type: "image/png",
+                },
+              ],
+              url: "/timeline/",
+              description: "时间线文章列表",
+            },
+            {
+              name: "个人介绍",
+              short_name: "个人介绍",
+              icons: [
+                {
+                  src: "/assets/icon/about-maskable.png",
+                  sizes: "192x192",
+                  purpose: "maskable",
+                  type: "image/png",
+                },
+              ],
+              url: "/about/",
+              description: "个人介绍",
+            },
+          ],
+        },
       },
     },
   },
+  false,
 });

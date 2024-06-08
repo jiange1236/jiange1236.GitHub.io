@@ -18,6 +18,14 @@ mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/
 mklink /J F:\Blog\jiange1236.GitHub.io\notes\work F:\我的坚果云\工作
 ```
 
+# PNPM
+
+> 点击左下角开始，找到Windows PowerShell，点击右键找到更多，找到以管理员身份运行
+
+> 输入命令：set-ExecutionPolicy RemoteSigned 然后回车
+> 选择：输入A选择全是，或者输入Y选择是 都可以的
+> 接着重新启动然后去运行就可以了
+
 # Git
 
 ## 清除Github提交历史记录
