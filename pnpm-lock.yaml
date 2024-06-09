@@ -16,45 +16,18 @@ importers:
         version: 2.0.0-rc.13
       '@vuepress/plugin-append-date':
         specifier: 2.0.0-rc.34
-        version: 2.0.0-rc.34(@vuepress/plugin-git@2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27)))(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
+        version: 2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
       '@vuepress/plugin-docsearch':
         specifier: 2.0.0-rc.34
         version: 2.0.0-rc.34(@algolia/client-search@4.23.3)(search-insights@2.13.0)(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
       '@vuepress/plugin-feed':
         specifier: 2.0.0-rc.34
         version: 2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
-      '@vuepress/plugin-git':
-        specifier: 2.0.0-rc.34
-        version: 2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
       '@vuepress/plugin-pwa':
         specifier: 2.0.0-rc.34
         version: 2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
-      '@vuepress/plugin-shiki':
-        specifier: 2.0.0-rc.34
-        version: 2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
-      '@waline/client':
-        specifier: 3.2.1
-        version: 3.2.1
-      flowchart.ts:
-        specifier: 3.0.0
-        version: 3.0.0
-      mathjax-full:
-        specifier: 3.2.2
-        version: 3.2.2
-      mermaid:
-        specifier: 10.9.1
-        version: 10.9.1
-      reveal.js:
-        specifier: 5.1.0
-        version: 5.1.0
-      sass-loader:
-        specifier: 14.2.1
-        version: 14.2.1(sass@1.77.4)(webpack@5.91.0)
-      vite:
-        specifier: 5.2.11
-        version: 5.2.11(@types/node@20.14.1)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0)
       vue:
-        specifier: 3.4.27
+        specifier: ^3.4.27
         version: 3.4.27
       vuepress:
         specifier: 2.0.0-rc.13
@@ -5978,7 +5951,8 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.6
       to-fast-properties: 2.0.0
 
-  '@braintree/sanitize-url@6.0.4': {}
+  '@braintree/sanitize-url@6.0.4':
+    optional: true
 
   '@docsearch/css@3.6.0': {}
 
@@ -6487,13 +6461,16 @@ snapshots:
     dependencies:
       '@types/node': 20.14.1
 
-  '@types/d3-scale-chromatic@3.0.3': {}
+  '@types/d3-scale-chromatic@3.0.3':
+    optional: true
 
   '@types/d3-scale@4.0.8':
     dependencies:
       '@types/d3-time': 3.0.3
+    optional: true
 
-  '@types/d3-time@3.0.3': {}
+  '@types/d3-time@3.0.3':
+    optional: true
 
   '@types/debug@4.1.12':
     dependencies:
@@ -6574,6 +6551,7 @@ snapshots:
   '@types/mdast@3.0.15':
     dependencies:
       '@types/unist': 2.0.10
+    optional: true
 
   '@types/mdurl@2.0.0': {}
 
@@ -6595,7 +6573,8 @@ snapshots:
 
   '@types/range-parser@1.2.7': {}
 
-  '@types/raphael@2.3.9': {}
+  '@types/raphael@2.3.9':
+    optional: true
 
   '@types/resolve@1.20.2': {}
 
@@ -6626,7 +6605,8 @@ snapshots:
 
   '@types/trusted-types@2.0.7': {}
 
-  '@types/unist@2.0.10': {}
+  '@types/unist@2.0.10':
+    optional: true
 
   '@types/web-bluetooth@0.0.20': {}
 
@@ -6853,10 +6833,9 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  '@vuepress/plugin-append-date@2.0.0-rc.34(@vuepress/plugin-git@2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27)))(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))':
+  '@vuepress/plugin-append-date@2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))':
     dependencies:
       '@vuepress/helper': 2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
-      '@vuepress/plugin-git': 2.0.0-rc.34(vuepress@2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27))
       vuepress: 2.0.0-rc.13(@vuepress/bundler-vite@2.0.0-rc.13(@types/node@20.14.1)(jiti@1.21.0)(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0))(@vuepress/bundler-webpack@2.0.0-rc.13)(vue@3.4.27)
     transitivePeerDependencies:
       - typescript
@@ -7110,7 +7089,8 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@waline/api@1.0.0-alpha.7': {}
+  '@waline/api@1.0.0-alpha.7':
+    optional: true
 
   '@waline/client@3.2.1':
     dependencies:
@@ -7124,6 +7104,7 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - typescript
+    optional: true
 
   '@webassemblyjs/ast@1.12.1':
     dependencies:
@@ -7322,7 +7303,8 @@ snapshots:
       postcss: 8.4.38
       postcss-value-parser: 4.2.0
 
-  autosize@6.0.1: {}
+  autosize@6.0.1:
+    optional: true
 
   available-typed-arrays@1.0.7:
     dependencies:
@@ -7461,7 +7443,8 @@ snapshots:
 
   chalk@5.3.0: {}
 
-  character-entities@2.0.2: {}
+  character-entities@2.0.2:
+    optional: true
 
   cheerio-select@2.1.0:
     dependencies:
@@ -7542,7 +7525,8 @@ snapshots:
 
   commander@8.3.0: {}
 
-  commander@9.2.0: {}
+  commander@9.2.0:
+    optional: true
 
   common-tags@1.8.2: {}
 
@@ -7597,6 +7581,7 @@ snapshots:
   cose-base@1.0.3:
     dependencies:
       layout-base: 1.0.2
+    optional: true
 
   cosmiconfig@9.0.0:
     dependencies:
@@ -7732,18 +7717,23 @@ snapshots:
     dependencies:
       cose-base: 1.0.3
       cytoscape: 3.29.2
+    optional: true
 
-  cytoscape@3.29.2: {}
+  cytoscape@3.29.2:
+    optional: true
 
   d3-array@2.12.1:
     dependencies:
       internmap: 1.0.1
+    optional: true
 
   d3-array@3.2.4:
     dependencies:
       internmap: 2.0.3
+    optional: true
 
-  d3-axis@3.0.0: {}
+  d3-axis@3.0.0:
+    optional: true
 
   d3-brush@3.0.0:
     dependencies:
@@ -7752,77 +7742,99 @@ snapshots:
       d3-interpolate: 3.0.1
       d3-selection: 3.0.0
       d3-transition: 3.0.1(d3-selection@3.0.0)
+    optional: true
 
   d3-chord@3.0.1:
     dependencies:
       d3-path: 3.1.0
+    optional: true
 
-  d3-color@3.1.0: {}
+  d3-color@3.1.0:
+    optional: true
 
   d3-contour@4.0.2:
     dependencies:
       d3-array: 3.2.4
+    optional: true
 
   d3-delaunay@6.0.4:
     dependencies:
       delaunator: 5.0.1
+    optional: true
 
-  d3-dispatch@3.0.1: {}
+  d3-dispatch@3.0.1:
+    optional: true
 
   d3-drag@3.0.0:
     dependencies:
       d3-dispatch: 3.0.1
       d3-selection: 3.0.0
+    optional: true
 
   d3-dsv@3.0.1:
     dependencies:
       commander: 7.2.0
       iconv-lite: 0.6.3
       rw: 1.3.3
+    optional: true
 
-  d3-ease@3.0.1: {}
+  d3-ease@3.0.1:
+    optional: true
 
   d3-fetch@3.0.1:
     dependencies:
       d3-dsv: 3.0.1
+    optional: true
 
   d3-force@3.0.0:
     dependencies:
       d3-dispatch: 3.0.1
       d3-quadtree: 3.0.1
       d3-timer: 3.0.1
+    optional: true
 
-  d3-format@3.1.0: {}
+  d3-format@3.1.0:
+    optional: true
 
   d3-geo@3.1.1:
     dependencies:
       d3-array: 3.2.4
+    optional: true
 
-  d3-hierarchy@3.1.2: {}
+  d3-hierarchy@3.1.2:
+    optional: true
 
   d3-interpolate@3.0.1:
     dependencies:
       d3-color: 3.1.0
+    optional: true
 
-  d3-path@1.0.9: {}
+  d3-path@1.0.9:
+    optional: true
 
-  d3-path@3.1.0: {}
+  d3-path@3.1.0:
+    optional: true
 
-  d3-polygon@3.0.1: {}
+  d3-polygon@3.0.1:
+    optional: true
 
-  d3-quadtree@3.0.1: {}
+  d3-quadtree@3.0.1:
+    optional: true
 
-  d3-random@3.0.1: {}
+  d3-random@3.0.1:
+    optional: true
 
   d3-sankey@0.12.3:
     dependencies:
       d3-array: 2.12.1
       d3-shape: 1.3.7
+    optional: true
 
   d3-scale-chromatic@3.1.0:
     dependencies:
       d3-color: 3.1.0
       d3-interpolate: 3.0.1
+    optional: true
 
   d3-scale@4.0.2:
     dependencies:
@@ -7831,26 +7843,33 @@ snapshots:
       d3-interpolate: 3.0.1
       d3-time: 3.1.0
       d3-time-format: 4.1.0
+    optional: true
 
-  d3-selection@3.0.0: {}
+  d3-selection@3.0.0:
+    optional: true
 
   d3-shape@1.3.7:
     dependencies:
       d3-path: 1.0.9
+    optional: true
 
   d3-shape@3.2.0:
     dependencies:
       d3-path: 3.1.0
+    optional: true
 
   d3-time-format@4.1.0:
     dependencies:
       d3-time: 3.1.0
+    optional: true
 
   d3-time@3.1.0:
     dependencies:
       d3-array: 3.2.4
+    optional: true
 
-  d3-timer@3.0.1: {}
+  d3-timer@3.0.1:
+    optional: true
 
   d3-transition@3.0.1(d3-selection@3.0.0):
     dependencies:
@@ -7860,6 +7879,7 @@ snapshots:
       d3-interpolate: 3.0.1
       d3-selection: 3.0.0
       d3-timer: 3.0.1
+    optional: true
 
   d3-zoom@3.0.0:
     dependencies:
@@ -7868,6 +7888,7 @@ snapshots:
       d3-interpolate: 3.0.1
       d3-selection: 3.0.0
       d3-transition: 3.0.1(d3-selection@3.0.0)
+    optional: true
 
   d3@7.9.0:
     dependencies:
@@ -7901,11 +7922,13 @@ snapshots:
       d3-timer: 3.0.1
       d3-transition: 3.0.1(d3-selection@3.0.0)
       d3-zoom: 3.0.0
+    optional: true
 
   dagre-d3-es@7.0.10:
     dependencies:
       d3: 7.9.0
       lodash-es: 4.17.21
+    optional: true
 
   data-view-buffer@1.0.1:
     dependencies:
@@ -7940,6 +7963,7 @@ snapshots:
   decode-named-character-reference@1.0.2:
     dependencies:
       character-entities: 2.0.2
+    optional: true
 
   deepmerge@1.5.2: {}
 
@@ -7973,12 +7997,14 @@ snapshots:
   delaunator@5.0.1:
     dependencies:
       robust-predicates: 3.0.2
+    optional: true
 
   depd@1.1.2: {}
 
   depd@2.0.0: {}
 
-  dequal@2.0.3: {}
+  dequal@2.0.3:
+    optional: true
 
   destroy@1.2.0: {}
 
@@ -7986,7 +8012,8 @@ snapshots:
 
   detect-node@2.1.0: {}
 
-  diff@5.2.0: {}
+  diff@5.2.0:
+    optional: true
 
   dijkstrajs@1.0.3: {}
 
@@ -8020,7 +8047,8 @@ snapshots:
     dependencies:
       domelementtype: 2.3.0
 
-  dompurify@3.1.5: {}
+  dompurify@3.1.5:
+    optional: true
 
   domutils@2.8.0:
     dependencies:
@@ -8049,7 +8077,8 @@ snapshots:
 
   electron-to-chromium@1.4.789: {}
 
-  elkjs@0.9.3: {}
+  elkjs@0.9.3:
+    optional: true
 
   emoji-regex@10.3.0: {}
 
@@ -8198,7 +8227,8 @@ snapshots:
       esrecurse: 4.3.0
       estraverse: 4.3.0
 
-  esm@3.2.25: {}
+  esm@3.2.25:
+    optional: true
 
   esprima@4.0.1: {}
 
@@ -8218,7 +8248,8 @@ snapshots:
 
   etag@1.8.1: {}
 
-  eve-raphael@0.5.0: {}
+  eve-raphael@0.5.0:
+    optional: true
 
   eventemitter3@4.0.7: {}
 
@@ -8351,6 +8382,7 @@ snapshots:
       '@types/raphael': 2.3.9
       raphael: 2.3.0
       tslib: 2.6.2
+    optional: true
 
   follow-redirects@1.15.6: {}
 
@@ -8614,6 +8646,7 @@ snapshots:
   iconv-lite@0.6.3:
     dependencies:
       safer-buffer: 2.1.2
+    optional: true
 
   icss-utils@5.1.0(postcss@8.4.38):
     dependencies:
@@ -8645,9 +8678,11 @@ snapshots:
       hasown: 2.0.2
       side-channel: 1.0.6
 
-  internmap@1.0.1: {}
+  internmap@1.0.1:
+    optional: true
 
-  internmap@2.0.3: {}
+  internmap@2.0.3:
+    optional: true
 
   ipaddr.js@1.9.1: {}
 
@@ -8855,19 +8890,23 @@ snapshots:
   katex@0.16.10:
     dependencies:
       commander: 8.3.0
+    optional: true
 
-  khroma@2.1.0: {}
+  khroma@2.1.0:
+    optional: true
 
   kind-of@6.0.3: {}
 
-  kleur@4.1.5: {}
+  kleur@4.1.5:
+    optional: true
 
   launch-editor@2.6.1:
     dependencies:
       picocolors: 1.0.1
       shell-quote: 1.8.1
 
-  layout-base@1.0.2: {}
+  layout-base@1.0.2:
+    optional: true
 
   leven@3.1.0: {}
 
@@ -8948,7 +8987,8 @@ snapshots:
     dependencies:
       p-locate: 4.1.0
 
-  lodash-es@4.17.21: {}
+  lodash-es@4.17.21:
+    optional: true
 
   lodash.debounce@4.0.8: {}
 
@@ -9022,8 +9062,10 @@ snapshots:
   marked-highlight@2.1.1(marked@12.0.2):
     dependencies:
       marked: 12.0.2
+    optional: true
 
-  marked@12.0.2: {}
+  marked@12.0.2:
+    optional: true
 
   mathjax-full@3.2.2:
     dependencies:
@@ -9031,6 +9073,7 @@ snapshots:
       mhchemparser: 4.2.1
       mj-context-menu: 0.6.1
       speech-rule-engine: 4.0.7
+    optional: true
 
   mdast-util-from-markdown@1.3.1:
     dependencies:
@@ -9048,10 +9091,12 @@ snapshots:
       uvu: 0.5.6
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   mdast-util-to-string@3.2.0:
     dependencies:
       '@types/mdast': 3.0.15
+    optional: true
 
   mdn-data@2.0.28: {}
 
@@ -9098,10 +9143,12 @@ snapshots:
       web-worker: 1.3.0
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   methods@1.1.2: {}
 
-  mhchemparser@4.2.1: {}
+  mhchemparser@4.2.1:
+    optional: true
 
   micromark-core-commonmark@1.1.0:
     dependencies:
@@ -9121,12 +9168,14 @@ snapshots:
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
       uvu: 0.5.6
+    optional: true
 
   micromark-factory-destination@1.1.0:
     dependencies:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-factory-label@1.1.0:
     dependencies:
@@ -9134,11 +9183,13 @@ snapshots:
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
       uvu: 0.5.6
+    optional: true
 
   micromark-factory-space@1.1.0:
     dependencies:
       micromark-util-character: 1.2.0
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-factory-title@1.1.0:
     dependencies:
@@ -9146,6 +9197,7 @@ snapshots:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-factory-whitespace@1.1.0:
     dependencies:
@@ -9153,30 +9205,36 @@ snapshots:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-util-character@1.2.0:
     dependencies:
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-util-chunked@1.1.0:
     dependencies:
       micromark-util-symbol: 1.1.0
+    optional: true
 
   micromark-util-classify-character@1.1.0:
     dependencies:
       micromark-util-character: 1.2.0
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-util-combine-extensions@1.1.0:
     dependencies:
       micromark-util-chunked: 1.1.0
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-util-decode-numeric-character-reference@1.1.0:
     dependencies:
       micromark-util-symbol: 1.1.0
+    optional: true
 
   micromark-util-decode-string@1.1.0:
     dependencies:
@@ -9184,24 +9242,30 @@ snapshots:
       micromark-util-character: 1.2.0
       micromark-util-decode-numeric-character-reference: 1.1.0
       micromark-util-symbol: 1.1.0
+    optional: true
 
-  micromark-util-encode@1.1.0: {}
+  micromark-util-encode@1.1.0:
+    optional: true
 
-  micromark-util-html-tag-name@1.2.0: {}
+  micromark-util-html-tag-name@1.2.0:
+    optional: true
 
   micromark-util-normalize-identifier@1.1.0:
     dependencies:
       micromark-util-symbol: 1.1.0
+    optional: true
 
   micromark-util-resolve-all@1.1.0:
     dependencies:
       micromark-util-types: 1.1.0
+    optional: true
 
   micromark-util-sanitize-uri@1.2.0:
     dependencies:
       micromark-util-character: 1.2.0
       micromark-util-encode: 1.1.0
       micromark-util-symbol: 1.1.0
+    optional: true
 
   micromark-util-subtokenize@1.1.0:
     dependencies:
@@ -9209,10 +9273,13 @@ snapshots:
       micromark-util-symbol: 1.1.0
       micromark-util-types: 1.1.0
       uvu: 0.5.6
+    optional: true
 
-  micromark-util-symbol@1.1.0: {}
+  micromark-util-symbol@1.1.0:
+    optional: true
 
-  micromark-util-types@1.1.0: {}
+  micromark-util-types@1.1.0:
+    optional: true
 
   micromark@3.2.0:
     dependencies:
@@ -9235,6 +9302,7 @@ snapshots:
       uvu: 0.5.6
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   micromatch@4.0.5:
     dependencies:
@@ -9280,9 +9348,11 @@ snapshots:
 
   mitt@3.0.1: {}
 
-  mj-context-menu@0.6.1: {}
+  mj-context-menu@0.6.1:
+    optional: true
 
-  mri@1.2.0: {}
+  mri@1.2.0:
+    optional: true
 
   ms@2.0.0: {}
 
@@ -9312,7 +9382,8 @@ snapshots:
 
   node-releases@2.0.14: {}
 
-  non-layered-tidy-tree-layout@2.0.2: {}
+  non-layered-tidy-tree-layout@2.0.2:
+    optional: true
 
   normalize-path@3.0.0: {}
 
@@ -9703,6 +9774,7 @@ snapshots:
   raphael@2.3.0:
     dependencies:
       eve-raphael: 0.5.0
+    optional: true
 
   raw-body@2.5.2:
     dependencies:
@@ -9731,7 +9803,8 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
-  recaptcha-v3@1.10.0: {}
+  recaptcha-v3@1.10.0:
+    optional: true
 
   regenerate-unicode-properties@10.1.1:
     dependencies:
@@ -9804,13 +9877,15 @@ snapshots:
 
   reusify@1.0.4: {}
 
-  reveal.js@5.1.0: {}
+  reveal.js@5.1.0:
+    optional: true
 
   rimraf@5.0.7:
     dependencies:
       glob: 10.4.1
 
-  robust-predicates@3.0.2: {}
+  robust-predicates@3.0.2:
+    optional: true
 
   rollup@2.79.1:
     optionalDependencies:
@@ -9844,11 +9919,13 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  rw@1.3.3: {}
+  rw@1.3.3:
+    optional: true
 
   sade@1.8.1:
     dependencies:
       mri: 1.2.0
+    optional: true
 
   safe-array-concat@1.1.2:
     dependencies:
@@ -9875,6 +9952,7 @@ snapshots:
     optionalDependencies:
       sass: 1.77.4
       webpack: 5.91.0
+    optional: true
 
   sass@1.77.4:
     dependencies:
@@ -10072,6 +10150,7 @@ snapshots:
       commander: 9.2.0
       wicked-good-xpath: 1.3.0
       xmldom-sre: 0.1.31
+    optional: true
 
   sprintf-js@1.0.3: {}
 
@@ -10173,7 +10252,8 @@ snapshots:
       postcss: 8.4.38
       postcss-selector-parser: 6.1.0
 
-  stylis@4.3.2: {}
+  stylis@4.3.2:
+    optional: true
 
   supports-color@5.5.0:
     dependencies:
@@ -10250,7 +10330,8 @@ snapshots:
 
   ts-debounce@4.0.0: {}
 
-  ts-dedent@2.2.0: {}
+  ts-dedent@2.2.0:
+    optional: true
 
   tslib@2.6.2: {}
 
@@ -10324,6 +10405,7 @@ snapshots:
   unist-util-stringify-position@3.0.3:
     dependencies:
       '@types/unist': 2.0.10
+    optional: true
 
   universalify@2.0.1: {}
 
@@ -10351,7 +10433,8 @@ snapshots:
 
   uuid@8.3.2: {}
 
-  uuid@9.0.1: {}
+  uuid@9.0.1:
+    optional: true
 
   uvu@0.5.6:
     dependencies:
@@ -10359,6 +10442,7 @@ snapshots:
       diff: 5.2.0
       kleur: 4.1.5
       sade: 1.8.1
+    optional: true
 
   vary@1.1.2: {}
 
@@ -10573,7 +10657,8 @@ snapshots:
     dependencies:
       minimalistic-assert: 1.0.1
 
-  web-worker@1.3.0: {}
+  web-worker@1.3.0:
+    optional: true
 
   webidl-conversions@4.0.2: {}
 
@@ -10713,7 +10798,8 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  wicked-good-xpath@1.3.0: {}
+  wicked-good-xpath@1.3.0:
+    optional: true
 
   wildcard@2.0.1: {}
 
@@ -10856,7 +10942,8 @@ snapshots:
     dependencies:
       sax: 1.4.1
 
-  xmldom-sre@0.1.31: {}
+  xmldom-sre@0.1.31:
+    optional: true
 
   y18n@4.0.3: {}
 

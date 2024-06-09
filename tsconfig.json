@@ -4,5 +4,11 @@
     "moduleResolution": "NodeNext",
     "target": "ES2022"
   },
-  "include": ["./notes/.vuepress/**/*.ts"]
+  "include": [
+    "notes/.vuepress/**/*.ts",
+    "notes/.vuepress/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

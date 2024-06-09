@@ -127,6 +127,10 @@ export default hopeTheme(
         excerptLength: 0,
     },
 
+	shiki: {
+	  langs: ['ts', 'json', 'vue', 'php', 'md', 'bash', 'diff', 'python'],
+	},
+
     comment: {
         provider: "Waline",
         serverURL: "https://waline.zecdn.top",
