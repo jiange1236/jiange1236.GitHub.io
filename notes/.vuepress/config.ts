@@ -1,7 +1,7 @@
 import { appendDatePlugin } from "@vuepress/plugin-append-date";
 import type { UserConfig } from "vuepress";
 import { defineUserConfig } from "vuepress";
-
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 import theme from "./theme.js";
 
 export default <UserConfig>defineUserConfig({
@@ -45,15 +45,13 @@ export default <UserConfig>defineUserConfig({
   },
             },
 
-  markdown: {
-    code: {
-      lineNumbers: 10,
-              },
-              },
-
   theme,
 
-  plugins: [appendDatePlugin()],
+  plugins: [appendDatePlugin(),
+      shikiPlugin({
+      // 配置项
+        langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff', 'python'],
+    })],
 
   shouldPrefetch: false,
 });
