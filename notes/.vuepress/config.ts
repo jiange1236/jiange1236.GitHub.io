@@ -50,7 +50,7 @@ export default <UserConfig>defineUserConfig({
   plugins: [appendDatePlugin(),
       shikiPlugin({
       // 配置项
-        langs: ['ts', 'json', 'vue', 'md', 'bash', 'diff', 'python'],
+        langs: ['ts', 'json', 'vue', 'php', 'md', 'bash', 'diff', 'python'],
     })],
 
   shouldPrefetch: false,

@@ -33,6 +33,7 @@
     "@vuepress/plugin-feed": "2.0.0-rc.34",
     "@vuepress/plugin-pwa": "2.0.0-rc.34",
     "@vuepress/plugin-shiki": "2.0.0-rc.34",
+	"@vuepress/plugin-git": "2.0.0-rc.34",
 	"@waline/client": "3.2.1",
     "flowchart.ts": "3.0.0",
     "mathjax-full": "3.2.2",

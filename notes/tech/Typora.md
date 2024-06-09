@@ -1,3 +1,7 @@
+---
+date: 2023-12-14
+---
+
 第一步： 下载最新版本的Typora安装
 
 第二部： 安装完后，进入typora的安装目录下的 \resources\page-dist\static\js 目录，找到 LicenseIndex开头的文件，我这里文件名如下：

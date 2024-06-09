@@ -1,3 +1,7 @@
+---
+date: 2022-05-15
+---
+
 # 硬链接
 
 **Linux**
@@ -15,7 +19,12 @@ mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/
 **Windows**
 
 ```
-mklink /J F:\Blog\jiange1236.GitHub.io\notes\work F:\我的坚果云\工作
+mklink /J E:\GitHub\jiange1236.GitHub.io\notes\work E:\我的坚果云\工作
+mklink /J E:\GitHub\jiange1236.GitHub.io\notes\finance E:\我的坚果云\理财
+mklink /J E:\GitHub\jiange1236.GitHub.io\notes\fun E:\我的坚果云\娱乐
+mklink /J E:\GitHub\jiange1236.GitHub.io\notes\photo E:\我的坚果云\摄影
+mklink /J E:\GitHub\jiange1236.GitHub.io\notes\study E:\我的坚果云\学习
+mklink /J E:\GitHub\jiange1236.GitHub.io\notes\tech E:\我的坚果云\计算机
 ```
 
 # PNPM
@@ -25,6 +34,15 @@ mklink /J F:\Blog\jiange1236.GitHub.io\notes\work F:\我的坚果云\工作
 > 输入命令：set-ExecutionPolicy RemoteSigned 然后回车
 > 选择：输入A选择全是，或者输入Y选择是 都可以的
 > 接着重新启动然后去运行就可以了
+
+```
+npm install pnpm -g
+pnpm install
+pnpm i --frozen-lockfile
+
+```
+
+
 
 # Git
 

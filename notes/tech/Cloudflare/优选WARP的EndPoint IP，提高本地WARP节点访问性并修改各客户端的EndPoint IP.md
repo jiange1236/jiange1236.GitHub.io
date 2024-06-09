@@ -1,4 +1,5 @@
 ---
+date: 2023-09-11
 created: 2023-08-26
 tags: []
 source: https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp
