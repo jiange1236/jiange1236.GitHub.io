@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://zecdn.top/en/atom.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://jiange1236.github.io/en/atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
-  <id>https://zecdn.top/en/</id>
+  <id>https://jiange1236.github.io/en/</id>
   <title>Zeblog</title>
   <subtitle>Zine⁶ personal blog</subtitle>
-  <icon>https://zecdn.top/favicon.ico</icon>
-  <rights>MIT Licensed, © 2019-present Zine⁶</rights>
-  <updated>2024-06-09T13:59:51.388Z</updated>
+  <rights>MIT Licensed, © 2019-present Zine⁶ | &amp;lt;a href=&amp;quot;/en/about/site.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;About Site&amp;lt;/a&amp;gt;</rights>
+  <updated>2024-06-11T11:20:03.167Z</updated>
   <generator>@vuepress/plugin-feed</generator>
-  <link rel="self" href="https://zecdn.top/en/atom.xml"/>
-  <link rel="alternate" href="https://zecdn.top/en/"/>
+  <link rel="self" href="https://jiange1236.github.io/en/atom.xml"/>
+  <link rel="alternate" href="https://jiange1236.github.io/en/"/>
+  <entry>
+    <title type="text">Zine⁶ Intro</title>
+    <id>https://jiange1236.github.io/en/about/</id>
+    <link href="https://jiange1236.github.io/en/about/"/>
+    <updated>2024-06-11T11:18:48.000Z</updated>
+    <published>2022-01-07T00:00:00.000Z</published>
+  </entry>
 </feed>

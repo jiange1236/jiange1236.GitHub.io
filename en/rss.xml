@@ -1,15 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://zecdn.top/en/rss.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://jiange1236.github.io/en/rss.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="https://zecdn.top/en/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://jiange1236.github.io/en/rss.xml" rel="self" type="application/rss+xml"/>
     <title>Zeblog</title>
-    <link>https://zecdn.top/en/</link>
+    <link>https://jiange1236.github.io/en/</link>
     <description>Zine⁶ personal blog</description>
     <language>en-US</language>
-    <pubDate>Sun, 09 Jun 2024 13:59:51 GMT</pubDate>
-    <lastBuildDate>Sun, 09 Jun 2024 13:59:51 GMT</lastBuildDate>
+    <pubDate>Tue, 11 Jun 2024 11:20:03 GMT</pubDate>
+    <lastBuildDate>Tue, 11 Jun 2024 11:20:03 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <copyright>MIT Licensed, © 2019-present Zine⁶</copyright>
+    <copyright>MIT Licensed, © 2019-present Zine⁶ | &amp;lt;a href=&amp;quot;/en/about/site.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;About Site&amp;lt;/a&amp;gt;</copyright>
+    <item>
+      <title>Zine⁶ Intro</title>
+      <link>https://jiange1236.github.io/en/about/</link>
+      <guid>https://jiange1236.github.io/en/about/</guid>
+      <source url="https://jiange1236.github.io/en/rss.xml">Zine⁶ Intro</source>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate>
+    </item>
   </channel>
 </rss>

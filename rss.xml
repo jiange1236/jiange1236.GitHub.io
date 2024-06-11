@@ -1,32 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://zecdn.top/rss.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://jiange1236.github.io/rss.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <atom:link href="https://zecdn.top/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://jiange1236.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     <title>Zeblog</title>
-    <link>https://zecdn.top/</link>
+    <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 09 Jun 2024 13:59:51 GMT</pubDate>
-    <lastBuildDate>Sun, 09 Jun 2024 13:59:51 GMT</lastBuildDate>
+    <pubDate>Tue, 11 Jun 2024 11:20:03 GMT</pubDate>
+    <lastBuildDate>Tue, 11 Jun 2024 11:20:03 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <copyright>基于 MIT 协议，© 2019-至今 Zine⁶</copyright>
+    <copyright>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</copyright>
     <category>计算机</category>
     <category>工作</category>
     <category>学习</category>
     <category>理财</category>
     <item>
-      <title>Mr.Hope 介绍</title>
-      <link>https://zecdn.top/about/</link>
-      <guid>https://zecdn.top/about/</guid>
-      <source url="https://zecdn.top/rss.xml">Mr.Hope 介绍</source>
-      <pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate>
-    </item>
-    <item>
       <title>文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</title>
-      <link>https://zecdn.top/study/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6Zotero%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Zotero%20translators%E7%9F%A5%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%9F%A5%E4%B9%8E%E7%BF%BB%E8%AF%91%E5%99%A8_Jasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89%EF%BC%88%E5%9B%9B%EF%BC%89-CSDN%E5%8D%9A%E5%AE%A2.html</link>
-      <guid>https://zecdn.top/study/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6Zotero%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Zotero%20translators%E7%9F%A5%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%9F%A5%E4%B9%8E%E7%BF%BB%E8%AF%91%E5%99%A8_Jasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89%EF%BC%88%E5%9B%9B%EF%BC%89-CSDN%E5%8D%9A%E5%AE%A2.html</guid>
-      <source url="https://zecdn.top/rss.xml">文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</source>
+      <link>https://jiange1236.github.io/study/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6Zotero%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Zotero%20translators%E7%9F%A5%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%9F%A5%E4%B9%8E%E7%BF%BB%E8%AF%91%E5%99%A8_Jasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89%EF%BC%88%E5%9B%9B%EF%BC%89-CSDN%E5%8D%9A%E5%AE%A2.html</link>
+      <guid>https://jiange1236.github.io/study/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6Zotero%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Zotero%20translators%E7%9F%A5%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%9F%A5%E4%B9%8E%E7%BF%BB%E8%AF%91%E5%99%A8_Jasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89%EF%BC%88%E5%9B%9B%EF%BC%89-CSDN%E5%8D%9A%E5%AE%A2.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</source>
       <description>文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客 Excerpt 文章浏览阅读6.6w次，点赞118次，收藏467次。这里写目录标题一、Zotero translators|中文文献题录抓取1.1 Zotero translators下载1.2 Zo...</description>
       <pubDate>Sun, 09 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -39,9 +32,9 @@
     </item>
     <item>
       <title>截面表示方法</title>
-      <link>https://zecdn.top/work/%E5%8A%A0%E5%9B%BA.html</link>
-      <guid>https://zecdn.top/work/%E5%8A%A0%E5%9B%BA.html</guid>
-      <source url="https://zecdn.top/rss.xml">截面表示方法</source>
+      <link>https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html</link>
+      <guid>https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">截面表示方法</source>
       <description>截面表示方法 增大截面加固法 外包型钢加固法 粘贴纤维复合材加固法 混凝土 加固方案比选 碳纤维布优点： 1、碳纤维轻、薄，不需要大型施工机械，运输储存、施工简便，同样工程量，粘贴碳纤维施工工期短，大约是粘钢的40%。 2、碳纤维和钢材相比，不锈蚀，也不易被有害介质腐蚀，耐久性好。 3、碳纤维布具有柔韧性，能够包裹复杂外形的构件，在并非很光滑的结构建筑...</description>
       <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -52,9 +45,9 @@
     </item>
     <item>
       <title>优选 CF 的反代 IP | MisakaNo の 小破站</title>
-      <link>https://zecdn.top/tech/Cloudflare/%E4%BC%98%E9%80%89%20CF%20%E7%9A%84%E5%8F%8D%E4%BB%A3%20IP.html</link>
-      <guid>https://zecdn.top/tech/Cloudflare/%E4%BC%98%E9%80%89%20CF%20%E7%9A%84%E5%8F%8D%E4%BB%A3%20IP.html</guid>
-      <source url="https://zecdn.top/rss.xml">优选 CF 的反代 IP | MisakaNo の 小破站</source>
+      <link>https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89%20CF%20%E7%9A%84%E5%8F%8D%E4%BB%A3%20IP.html</link>
+      <guid>https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89%20CF%20%E7%9A%84%E5%8F%8D%E4%BB%A3%20IP.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">优选 CF 的反代 IP | MisakaNo の 小破站</source>
       <description>优选 CF 的反代 IP | MisakaNo の 小破站 Excerpt 在目前，由于优选 CF 的 IP 已被越来越多人滥用，导致某国防火墙已经开始重点关照。这时候我们就得找一些官方未公开的 IP 进行优选。不过，有些 IP 应该是为了某些服务，把自己反代到 CF 的服务器上，所以说我们得到了反代的 CF 的 IP 地址。幸运的是，经过某大佬的扫描...</description>
       <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -67,9 +60,9 @@
     </item>
     <item>
       <title>使用 CloudFlare Workers 反代节点 | MisakaNo の 小破站</title>
-      <link>https://zecdn.top/tech/Cloudflare/%E4%BD%BF%E7%94%A8%20CloudFlare%20Workers%20%E5%8F%8D%E4%BB%A3%E8%8A%82%E7%82%B9.html</link>
-      <guid>https://zecdn.top/tech/Cloudflare/%E4%BD%BF%E7%94%A8%20CloudFlare%20Workers%20%E5%8F%8D%E4%BB%A3%E8%8A%82%E7%82%B9.html</guid>
-      <source url="https://zecdn.top/rss.xml">使用 CloudFlare Workers 反代节点 | MisakaNo の 小破站</source>
+      <link>https://jiange1236.github.io/tech/Cloudflare/%E4%BD%BF%E7%94%A8%20CloudFlare%20Workers%20%E5%8F%8D%E4%BB%A3%E8%8A%82%E7%82%B9.html</link>
+      <guid>https://jiange1236.github.io/tech/Cloudflare/%E4%BD%BF%E7%94%A8%20CloudFlare%20Workers%20%E5%8F%8D%E4%BB%A3%E8%8A%82%E7%82%B9.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">使用 CloudFlare Workers 反代节点 | MisakaNo の 小破站</source>
       <description>使用 CloudFlare Workers 反代节点 | MisakaNo の 小破站 Excerpt 在我们使用一些VPS或者容器云的节点的时候，我们或多或少会出现IP/域名被墙的一种情况。但是有些提供商特别鸡贼不能够自定义域名。这时候我们可以使用CloudFlare的Workers来反代节点IP/域名，一起复活被墙的节点。 准备材料 一枚域名（因为...</description>
       <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -82,9 +75,9 @@
     </item>
     <item>
       <title>文章推荐 | 肖从真大师团队：既有建筑结构加固改造与性能提升现状与发展</title>
-      <link>https://zecdn.top/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20%20%E8%82%96%E4%BB%8E%E7%9C%9F%E5%A4%A7%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%9A%E6%97%A2%E6%9C%89%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%94%B9%E9%80%A0%E4%B8%8E%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95.html</link>
-      <guid>https://zecdn.top/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20%20%E8%82%96%E4%BB%8E%E7%9C%9F%E5%A4%A7%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%9A%E6%97%A2%E6%9C%89%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%94%B9%E9%80%A0%E4%B8%8E%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95.html</guid>
-      <source url="https://zecdn.top/rss.xml">文章推荐 | 肖从真大师团队：既有建筑结构加固改造与性能提升现状与发展</source>
+      <link>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20%20%E8%82%96%E4%BB%8E%E7%9C%9F%E5%A4%A7%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%9A%E6%97%A2%E6%9C%89%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%94%B9%E9%80%A0%E4%B8%8E%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%20%20%E8%82%96%E4%BB%8E%E7%9C%9F%E5%A4%A7%E5%B8%88%E5%9B%A2%E9%98%9F%EF%BC%9A%E6%97%A2%E6%9C%89%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%94%B9%E9%80%A0%E4%B8%8E%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87%E7%8E%B0%E7%8A%B6%E4%B8%8E%E5%8F%91%E5%B1%95.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">文章推荐 | 肖从真大师团队：既有建筑结构加固改造与性能提升现状与发展</source>
       <description>文章推荐 | 肖从真大师团队：既有建筑结构加固改造与性能提升现状与发展 Excerpt 综 述既有建筑结构加固改造与性能提升现状与发展肖从真 李建辉 马天怡 魏越 巫振弘 乔保娟中国建筑 图片图片 综 述 既有建筑结构加固改造与性能提升现状与发展 肖从真 李建辉 马天怡 魏越 巫振弘 乔保娟 中国建筑科学研究院有限公司 肖从真, 李建辉, 马天怡, 等...</description>
       <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -97,9 +90,9 @@
     </item>
     <item>
       <title>【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</title>
-      <link>https://zecdn.top/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html</link>
-      <guid>https://zecdn.top/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html</guid>
-      <source url="https://zecdn.top/rss.xml">【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</source>
+      <link>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A/%E3%80%90%E7%A7%AF%E7%9F%B3%E5%B1%B1%E5%9C%B0%E9%9C%87%E4%B8%93%E8%AE%BF%E3%80%91%E9%99%95%E8%A5%BF%E7%9C%81%E5%BB%BA%E7%A7%91%E9%99%A2%E5%BC%A0%E9%A3%8E%E4%BA%AE%E5%8D%9A%E5%A3%AB%EF%BC%9A%E5%AE%89%E5%8D%B1%E4%B8%8D%E9%A1%BE%E8%B7%B5%E4%BD%BF%E5%91%BD%EF%BC%8C%E6%8A%97%E9%9C%87%E6%95%91%E7%81%BE%E6%98%BE%E6%8B%85%E5%BD%93.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当</source>
       <description>【积石山地震专访】陕西省建科院张风亮博士：安危不顾践使命，抗震救灾显担当 Excerpt 点击查看详情！ 采访团队：《建筑结构》杂志社 图片图片 问题1：您和您的团队是何时接到上级通知并确定奔赴灾区一线？具体接受到哪些方面的任务？请介绍下贵单位是如何组织及第一时间所做的准备以及路上经历、何时到达灾区等情况。 **回复：**我司是在2023年12月25日...</description>
       <pubDate>Wed, 21 Feb 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -112,9 +105,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/fun/%E5%AD%97%E6%AF%8D%E8%A1%A8%E6%83%85%E5%AD%97%E7%AC%A6%E7%94%BB.html</link>
-      <guid>https://zecdn.top/fun/%E5%AD%97%E6%AF%8D%E8%A1%A8%E6%83%85%E5%AD%97%E7%AC%A6%E7%94%BB.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/%E5%AD%97%E6%AF%8D%E8%A1%A8%E6%83%85%E5%AD%97%E7%AC%A6%E7%94%BB.html</link>
+      <guid>https://jiange1236.github.io/fun/%E5%AD%97%E6%AF%8D%E8%A1%A8%E6%83%85%E5%AD%97%E7%AC%A6%E7%94%BB.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>文本是歪的复制到游戏不歪 如果游戏乱码试试调下字体 点格式 字体：方正粗黑宋简体 字形：常规 大小：小二 FUCK YOU ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓█▀▀▓█▓█▓█▀▀▓█▓▄▓▓▓▓▓▓ ▓▓▓▓▓█▀▀▓█▓█▓█▓▓▓█▀▄▓▓▓▓▓▓ ▓▓▓▓▓▀▓▓▓▀▀▀▓▀▀▀▓▀▓▀▓▓▓▓▓▓ ▓▓▓▓▓▓▓...</description>
       <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>文本是歪的复制到游戏不歪
@@ -173,32 +166,32 @@
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/Typora.html</link>
-      <guid>https://zecdn.top/tech/Typora.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/Typora.html</link>
+      <guid>https://jiange1236.github.io/tech/Typora.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>第一步： 下载最新版本的Typora安装 第二部： 安装完后，进入typora的安装目录下的 \resources\page-dist\static\js 目录，找到 LicenseIndex开头的文件，我这里文件名如下： Lisenselndex.180dd4c7.b98d5f1f.chunk.js 第三部：用文本编辑器打开该文件，搜索hasActi...</description>
       <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>第一步： 下载最新版本的Typora安装</p>
 <p>第二部： 安装完后，进入typora的安装目录下的 \resources\page-dist\static\js 目录，找到 LicenseIndex开头的文件，我这里文件名如下：</p>
 <p>Lisenselndex.180dd4c7.b98d5f1f.chunk.js</p>
-<p>第三部：用文本编辑器打开该文件，搜索hasActivated="true"==e.hasActivated并将其替换为hasActivated="true"=="true"
+<p>第三部：用文本编辑器打开该文件，搜索hasActivated="true"<mark>e.hasActivated并将其替换为hasActivated="true"</mark>"true"
 （修改前，可将该文件备份一下，万一操作失误，可以进行恢复）</p>
 ]]></content:encoded>
     </item>
     <item>
       <title>优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</title>
-      <link>https://zecdn.top/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</link>
-      <guid>https://zecdn.top/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</guid>
-      <source url="https://zecdn.top/rss.xml">优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</source>
+      <link>https://jiange1236.github.io/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</link>
+      <guid>https://jiange1236.github.io/tech/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</source>
       <description>created: 2023-08-26 tags: [] source: https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+warp 优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の...</description>
       <pubDate>Mon, 11 Sep 2023 00:00:00 GMT</pubDate>
       <enclosure url="https://cdn.jsdelivr.net/gh/Misaka-blog/imgs@main/20230328001247.png" type="image/png"/>
     </item>
     <item>
       <title>资源来源 | Nite07的小窝</title>
-      <link>https://zecdn.top/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html</link>
-      <guid>https://zecdn.top/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html</guid>
-      <source url="https://zecdn.top/rss.xml">资源来源 | Nite07的小窝</source>
+      <link>https://jiange1236.github.io/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html</link>
+      <guid>https://jiange1236.github.io/tech/%E8%B5%84%E6%BA%90%E6%9D%A5%E6%BA%90.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">资源来源 | Nite07的小窝</source>
       <description>资源来源 | Nite07的小窝 Excerpt 如果有破解需求或版权相关问题请通过下方联系方式咨询。 名称 分享内容 是否收费 会员制度 途径 Downloadly Windows、Mac 应用 不收费 有，非会员下载慢，可以开通会员加速下载 前往 Taiwebs Windows、Mac、Linux、安卓应用 不收费 无 前往 Lrepack Win...</description>
       <pubDate>Mon, 11 Sep 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -210,9 +203,9 @@
     </item>
     <item>
       <title>优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</title>
-      <link>https://zecdn.top/tech/Cloudflare/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</link>
-      <guid>https://zecdn.top/tech/Cloudflare/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</guid>
-      <source url="https://zecdn.top/rss.xml">优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</source>
+      <link>https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</link>
+      <guid>https://jiange1236.github.io/tech/Cloudflare/%E4%BC%98%E9%80%89WARP%E7%9A%84EndPoint%20IP%EF%BC%8C%E6%8F%90%E9%AB%98%E6%9C%AC%E5%9C%B0WARP%E8%8A%82%E7%82%B9%E8%AE%BF%E9%97%AE%E6%80%A7%E5%B9%B6%E4%BF%AE%E6%94%B9%E5%90%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84EndPoint%20IP.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站</source>
       <description>优选WARP的EndPoint IP，提高本地WARP节点访问性并修改各客户端的EndPoint IP | MisakaNo の 小破站 Excerpt 在之前的博客教程中，我们提到了如何使用CloudFlare WARP客户端。不过官方的客户端的体验在中国大陆来说比较差。而提取出来的WireGuard配置文件中，自己寻找可用的EndPoint IP又...</description>
       <pubDate>Mon, 11 Sep 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -225,9 +218,9 @@
     </item>
     <item>
       <title>玩客云</title>
-      <link>https://zecdn.top/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</link>
-      <guid>https://zecdn.top/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</guid>
-      <source url="https://zecdn.top/rss.xml">玩客云</source>
+      <link>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</link>
+      <guid>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">玩客云</source>
       <description>玩客云 安装包 Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz 删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可 然后更新软件源 Docker安装 Install Home Assistant Supervised OS Agen...</description>
       <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -515,14 +508,14 @@ docker stop $(docker ps -a | grep "hassio" | awk '{print $1}')</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span></span></span>
 <span class="line"><span>清理脚本 clean.sh</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>#!/bin/bash
-echo "======== start clean docker containers logs ========"
+echo "======== start clean docker containers logs <mark><mark><mark><mark>"
 logs=$(find /var/lib/docker/containers/ -name *-json.log)
 for log in $logs
 do
 echo "clean logs : $log"
 cat /dev/null &gt; $log
 done
-echo "======== end clean docker containers logs ========"</p>
+echo "</mark></mark></mark></mark> end clean docker containers logs ========"</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span></span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>chmod +x clean.sh</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span></span></span>
@@ -866,9 +859,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>OpenWRT 分流DNS的设置</title>
-      <link>https://zecdn.top/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</link>
-      <guid>https://zecdn.top/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</guid>
-      <source url="https://zecdn.top/rss.xml">OpenWRT 分流DNS的设置</source>
+      <link>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</link>
+      <guid>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">OpenWRT 分流DNS的设置</source>
       <description>目前还是有许多人喜欢设置DNS，虽然会浪费一些转发性能，但如果明白其中的链路关系，合理设置后，还是能起到不错的效果的。同时也把正确的设置方式告诉大家。 此教程基于当前路由是主路由，如果是旁路由虽差不多，但有一些差异，需要格外注意。 同时请注意，删除你电脑，手机上的DNS（不要设置任何DNS） 注意事项 建议小白用户使用 Clash 更稳定且方便 此教程...</description>
       <category>计算机</category>
       <pubDate>Sun, 18 Sep 2022 00:00:00 GMT</pubDate>
@@ -1004,9 +997,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/Github.html</link>
-      <guid>https://zecdn.top/tech/Github.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/Github.html</link>
+      <guid>https://jiange1236.github.io/tech/Github.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>Github RAW 加速服务 https://www.7ed.net/#/raw-cdn https://raw.githubusercontents.com/用户/仓库/main(分支)/子目录/txt.txt https://raw.fastgit.org/ https://raw-gh.gcdn.mirr.one/ https://cdn.js...</description>
       <pubDate>Thu, 16 Jun 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2>Github RAW 加速服务</h2>
@@ -1021,9 +1014,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>检测鉴定</title>
-      <link>https://zecdn.top/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</link>
-      <guid>https://zecdn.top/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</guid>
-      <source url="https://zecdn.top/rss.xml">检测鉴定</source>
+      <link>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">检测鉴定</source>
       <description>检测、鉴定依据 检测依据 通用部分 《建筑结构检测技术标准》GB/T 50344-2019； 《建筑变形测量规范》JGJ 8-2016； 砌体结构 《砌体工程现场检测技术标准》GB/T 50315-2011； 《砌体结构工程施工质量验收规范》GB 50203-2011； 混凝土结构 《混凝土结构现场检测技术标准》GB/T 50784-2013； 《回弹...</description>
       <category>工作</category>
       <pubDate>Mon, 20 Jun 2022 00:00:00 GMT</pubDate>
@@ -1196,9 +1189,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>钢结构</title>
-      <link>https://zecdn.top/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</link>
-      <guid>https://zecdn.top/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</guid>
-      <source url="https://zecdn.top/rss.xml">钢结构</source>
+      <link>https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</link>
+      <guid>https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">钢结构</source>
       <description>[toc] 荷载组合 钢规3.1.5：按承载能力极限状态设计钢结构时，应考虑荷载效应的基本组合，必要时尚应考虑荷载效应的偶然组合。 按正常使用极限状态设计钢结构时，应考虑荷载效应的标准组合 条文说明：对钢与混凝土组合梁，尚应考虑准永久组合。 螺栓 普通螺栓 分为A、B、C三个等级 ，主要用C级 A、B级：性能等级有5.6级和8.8级 C级：性能等级有4...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -1231,9 +1224,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>图书馆</title>
-      <link>https://zecdn.top/study/%E5%9B%BE%E4%B9%A6%E9%A6%86.html</link>
-      <guid>https://zecdn.top/study/%E5%9B%BE%E4%B9%A6%E9%A6%86.html</guid>
-      <source url="https://zecdn.top/rss.xml">图书馆</source>
+      <link>https://jiange1236.github.io/study/%E5%9B%BE%E4%B9%A6%E9%A6%86.html</link>
+      <guid>https://jiange1236.github.io/study/%E5%9B%BE%E4%B9%A6%E9%A6%86.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">图书馆</source>
       <description>龙源期刊 辽宁省图书馆http://lnlib.vip.qikan.com/Index.aspx 贵州省图书馆http://gzslib.vip.qikan.com/index.aspx 绵阳市图书馆http://mylib.vip.qikan.com/Index.aspx 北京市经济管理职业学院http://jjgl.vip.qikan.com/in...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -1275,9 +1268,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>Python常用函数&amp;数据分析</title>
-      <link>https://zecdn.top/study/Python/Python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.html</link>
-      <guid>https://zecdn.top/study/Python/Python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.html</guid>
-      <source url="https://zecdn.top/rss.xml">Python常用函数&amp;数据分析</source>
+      <link>https://jiange1236.github.io/study/Python/Python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.html</link>
+      <guid>https://jiange1236.github.io/study/Python/Python%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0_%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">Python常用函数&amp;数据分析</source>
       <description>[toc] 内置函数 Enumerate(iterable, start=0) --返回一个枚举对象 Filter、Map、Reduce和Enumerate函数 --筛选、代换、单个计算、累计计算 filter（fun，sequence） 参数fun可以是一个自定义的函数名，也可以使用lambda函数。参数sequence是一个序列，可以是列表、元组或...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -1289,9 +1282,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>LOFT装配式超薄夹层系统</title>
-      <link>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.html</link>
-      <guid>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.html</guid>
-      <source url="https://zecdn.top/rss.xml">LOFT装配式超薄夹层系统</source>
+      <link>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">LOFT装配式超薄夹层系统</source>
       <description>这才是预制建筑该有的样子——更省、更快、更好！LOFT装配式超薄夹层系统来了！ Excerpt 标准化设计、工厂化生产、装配化施工、一体化装修、\x0a信息化管理~ 图片图片 **什么是装配式建筑？ ** 形象地说，它类似于**“搭乐高”**， 传统施工中， 需将钢筋、混凝土等建筑材料 运至施工现场浇筑。 而“装配式”， 则是把梁、柱、墙板、阳台、楼梯...</description>
       <category>工作</category>
       <pubDate>Wed, 23 Dec 2020 00:00:00 GMT</pubDate>
@@ -1305,9 +1298,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>彩力板</title>
-      <link>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BD%A9%E5%8A%9B%E6%9D%BF.html</link>
-      <guid>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BD%A9%E5%8A%9B%E6%9D%BF.html</guid>
-      <source url="https://zecdn.top/rss.xml">彩力板</source>
+      <link>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BD%A9%E5%8A%9B%E6%9D%BF.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BD%A9%E5%8A%9B%E6%9D%BF.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">彩力板</source>
       <description>image-20220518102529271image-20220518102529271 PC石材反打制作流程：爪钉设置（爪钉、化学螺杆）→背涂隔离→粘贴胶带石材入模→绑扎钢筋→浇捣混凝土→养护→脱模打密→封胶→粘贴保护膜→出厂 制作养护脱模后，及时将同一块PC内的石材分格缝按建筑师要求打密封耐候胶，并粘贴保护膜出厂。 制造过程：解决砂岩石材易渗透...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -1319,10 +1312,200 @@ https://sitoi.github.io/dailycheckin/</h1>
 ]]></content:encoded>
     </item>
     <item>
+      <title>基金定投方法</title>
+      <link>https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html</link>
+      <guid>https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">基金定投方法</source>
+      <description>今天我想静静|附我的基金定投方法 **1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到...</description>
+      <category>理财</category>
+      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p><strong>今天我想静静|附我的基金定投方法</strong></p>
+<p>**1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到了20%，但是估值依旧在往下走，价格也没有太跌。无论接下来牛市还是熊市，这只指数都是非常安全的标的。</p>
+<p>2，至于买创蓝筹。之前写过一篇<a href="http://mp.weixin.qq.com/s?__biz=MzI4MDgwNzE0OQ==&amp;mid=2247483761&amp;idx=1&amp;sn=55d659c688448e24f9beb0cecdda9616&amp;chksm=ebb392f3dcc41be56f598e45a9dc6c7cf336e581dac0689ac56a9843ccd5b330f963734608dc&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">为什么买创蓝筹</a>，这一半仓位属于进攻型仓位。</p>
+<p>对了，我今天才发现，由于是转账买的（超过30万只能转账买入），好像天天基金就不提醒调仓动态了，之前加仓保险也是这样。3点之后我才看到“已受理“的通知。对于跟投的朋友，这真是雪上加霜。。<strong>不过也不用慌，这几只基，我都是准备中长期持有的，所以一两天的差别也不会特别大，说不定下周一买入，机会更好。</strong></p>
+<p><strong>那么，问题来了！面对这样的波动，我们如何做到不贪婪、不恐惧，坚定买入？</strong></p>
+<p><strong>有一个办法，那就是“定投”！</strong></p>
+<p>定投可以让你无惧市场的波动。波动越大，反倒越适合定投。上面的操作，其实属于典型的周定投的一次执行。</p>
+<p>下面简单分享下我理解的定投吧，内容比较多（大家去网上看看学习下，雪球/知乎都挺多的），我就以自己定投为例，讲几个认为重要的点。</p>
+<p>定投的原理就是<strong>低吸筹码，赌未来会涨回来。</strong></p>
+<p><strong>1、选择大于努力</strong>，<strong>选择一只能涨回来的基金非常重要</strong>。指数基金就很适合定投，首先指数会一直存在，无论公司怎么变动，行业有何影响，指数都会按照规则不断更新适合的股票加入，不适合的淘汰。但公司有可能倒闭（比如乐视，再定投也起不来），行业也可能遇到“黑天鹅”事件而受到颠覆。</p>
+<p>**并且指数基金不考验基金经理的人性、贪婪和恐惧。**选择一只不太差的指数基金，只要长期持有、坚持定投，基本都会有等待微笑曲线向上的时刻。</p>
+<p><strong>选择波动较大的指数基金，更适合定投。</strong></p>
+<p>**2、无惧波动，越跌越买，越涨越卖。**定投的目标是摊薄成本，所以无论市场怎么变化，下跌就是你收集筹码的最佳机会。当然你要会看指数估值（pe/pb），会判断当前位置（估值百分位），这些数据在基金平台都可以查到。</p>
+<p><strong>以我自己为例，我是如何定投的？</strong></p>
+<p>我一般不会设置自动定投（因为金额比较大）。我会按周手动定投，越跌越买，大跌大买，小跌小买。</p>
+<p>我自己简单设定了一个定投的规则。如下图：</p>
+<figure><figcaption>img</figcaption></figure>
+<p>**1，定投时间。**我一般会选择每周四/周五（因为都说这两天容易出现黑色星期五），在下午三点之前，会看一眼大盘，然后决定是否买入。</p>
+<p>**2，买入标志。**如果当天跌幅超过-2%，那么“买入”标志就出现了。（相应的，涨幅+2%，“卖出”标志就出现了），大概率当天3点前就会选择买卖。</p>
+<p>**3，买多少。**假设我有20万元，我会把资金分成10份，每份2万元。当买入标志出现之后，会结合最近一周（周线）的涨跌幅情况和最近一月（月线）的涨跌幅情况来看买入多少。</p>
+<p>如上表，比如最近一月涨幅小于+1%的前提下（如果涨了很多，可能不会买），当天跌了-2%，最近一周跌-3%，那我可能会买入3-4份，也就是6-8万元。然后严格执行。</p>
+<p>当然，具体买入多少，可能还与当时的情绪有关。所以把这个规则量化之后，可以辅助我们有一个相对标准，不至于随意感觉，被情绪左右。</p>
+<p><strong>最后，最重要的，就是严格执行</strong>。执行不到位，再好的战略和方法都是徒劳。</p>
+<p>以上只是定投的一点皮毛，不过大道至简，再复杂的，比如网格啥的，原理都差不多。</p>
+<p>新手也可以尝试无脑定投沪深300，中证500等指数，找找感觉，现在开始，做到长期年化收益10%，没啥问题。</p>
+<p>只要严格执行，注意止盈。</p>
+<p>最后到一段富有哲理的话，分享给基友们：</p>
+<p>认知最终匹配财富：</p>
+<p>你所赚的每一分钱，都是你对这个世界认知的变现，你所亏的每一分钱，都是因为对这个世界认知有缺陷。</p>
+<p>你永远赚不到超出你认知范围之外的钱，除非你靠运气，但是靠运气赚到的钱，最后往往又会靠实力亏掉；</p>
+<p>这是一种必然。</p>
+<p>这个社会最大的公平就在于：当一个人的财富大于自己认知的时候，这个社会有100种方法收割你，直到让你的认知和财富相匹配为止。</p>
+<p>以我自己为例，刚入股市的时候，投入了本金差不多10万块。最早也是跟着各种专家、大V、论坛的观点走，结果很快就亏了四万块。</p>
+<p>痛定思痛，我决定靠自己，于是系统学习了股票理论，期权、期货、货币知识，紧盯国内外政治经济社会发展，学习最前沿的金融知识，特别瞄定目前正在发生的国际大事。经过不断的摸索，我完全形成了自己的模式和打法，最后，终于把剩下的六万块也亏光了。</p>
+<p>于是，我开始投资基金。。</p>
+<p>比起我亏损的100万，今天有一个人更惨，因为按照承诺，他要被炮轰进太阳。。。</p>
+<figure><figcaption>img</figcaption></figure>
+<p><strong>【今日操作】今日买了创蓝筹和地产，实盘组合亏损120万+。天天基金实盘目前资产（3000万+）排名第一。后台有朋友问怎么跟投，可以在天天基金app/雪球搜索：马哥价值投基。</strong></p>
+<p>*申明一下哈，跟投要谨慎，投资有风险。以上所有观点谨代表我个人。我也未收取跟投者一分钱，我只顾我买的基金能帮我赚到钱。这是我的唯一公众号，所有内容都只首发在这里。</p>
+<p>发文之前，美股又是大幅跌开2个多点，明早看收盘有没有奇迹，不过这一波调整，应该也差不多，机会满地。</p>
+<p>等着马哥推文的，点个【在看】，有多人，陪熬夜，不容易！</p>
+<p>点击这里，今日互动</p>
+<p>文章已于2020-02-28修改</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>投资“固收+”债券基金，必须要了解的几个重点</title>
+      <link>https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html</link>
+      <guid>https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">投资“固收+”债券基金，必须要了解的几个重点</source>
+      <description>投资“固收+”债券基金，必须要了解的几个重点！ Original 实战研究的 东方财之道 Today 近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。 平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。 一、宏观数据： ​ 0 根据：Choice数据显示，目...</description>
+      <category>理财</category>
+      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p><strong>投资“固收+”债券基金，必须要了解的几个重点！</strong></p>
+<p>Original 实战研究的 东方财之道 <em>Today</em></p>
+<p>近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。</p>
+<p>平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。</p>
+<p><strong>一、宏观数据：</strong></p>
+<p>​    </p>
+<p>根据：Choice数据显示，目前中国全市场货币基金占48%，债基占28%，股基（包括指数基金）7.7%，混合基金占14.7%；</p>
+<p>货基占比最大，这个很容易理解，现在很多年轻人都不去存银行了；</p>
+<p>债基远超股基，可能会出乎大家的意料；</p>
+<p>目前债基持有人80%以上都是机构，个人投资者占比很少；</p>
+<p>从配置需求看，债券和股票都是非常重要的投资品种；</p>
+<p>债基和股基经常呈反相关性，很大程度上可以实现风险对冲；</p>
+<p>相对来说，<strong>投资债基比什么：黄金、原油基金要靠谱的多。</strong></p>
+<p>所以债基在我们的投资中是不可或缺的品种，但它并不是只涨不跌，还需要了解以下知识。</p>
+<p><strong>二、不同类型的债券对比：</strong></p>
+<p>​    </p>
+<p>上图是过去十年不同债基的对比：</p>
+<p>红色是短债，净值呈缓坡增长，时快时慢，但很少回调;</p>
+<p>玫红是长债，长期稳健向上，但也有回撤;</p>
+<p>绿和灰色是二级债基，每日都有波动，但相比沪深300指数（黄色）要好很多。</p>
+<p>二级债基平时感觉涨的很慢，但由于回撤小，兼顾了股票和债券，<strong>最近十年优秀的二级债基收益130%左右，是沪深300的3倍左右</strong>，尤其在股市大波动时，这类基金更能发挥优势。</p>
+<p><strong>三、如何投资：</strong></p>
+<p>​    </p>
+<p>上图的信息量比较大，下面说重点：</p>
+<p><strong>短债从年度上看无亏损</strong>，历史最大回撤1%，由于收益低，只适合短期临时投资。</p>
+<p><strong>长债是市场上的主流债基</strong>，过去10年有两次年度亏损，不过也都是0.2%以下的微亏，历史最大回撤5%左右。</p>
+<p>因为债券品种范围广，影响因素多，且不同基金杠杆率不同，所以业绩相差有点大，波动比短债更大。</p>
+<p>但是如果利用好这些波动，可以获得更好的收益，有两个重点指标可关注：</p>
+<p>1.<strong>核心指标：一定要关注10年期国债收益率，如果高于3%则值得投资</strong>（高于3.5%会更好）**，**低于3%可止盈换品种（如果没有太好的品种可投，可以放低到2.8%或长期持有）</p>
+<p>​    </p>
+<p>根据上图集思录的显示，最新的10年收益率是：2.86%，显然当前纯债不是好的投资机会。</p>
+<p>2.如果连续两年收益超过6%或单一年度超10%，则要小心回撤，如果哪年负收益或者收益低于1%，则潜在收益更高，到时再结合10年期国债收益率来判断。</p>
+<p>和股基一样，涨的太高是风险，跌的越多是机会。</p>
+<p>**二级债基，**一般都配置了10-20%的股票仓位，投资难度也在加大，不同基金业绩有较大差异，优秀的经理也会主动切换股债的比例，所以大部分时间都值得投资，在股市低位和国债收益率3%以上时可加大投资。</p>
+<p>由于二级债受股债双重影响（短期主要受股市影响），有的二级债偏稳健，有的偏激进，尽量选择管理人优秀的基金。</p>
+<p><strong>四、其它细节：</strong></p>
+<p>债券的主要收益来源是票息，长期只要不违约就是只赚不亏，但是它会受货币政策和市场情绪的影响，在不同时点买入，收益会有所不同。</p>
+<p>因为债券有违约风险，尽量选择固收类团队强的基金公司，也不要选择规模过小的基金，稳定性非常重要。</p>
+<p>债券资产不仅可以减少回撤，也可以在关键时期伺机而动，比如遇到股市处于严重低估时，就可以把部分债基转成股基，加强进攻。</p>
+<p>但是多数人都做反了，比如：看到股基大涨时，感觉债基涨的太慢，要转为股基。看到股基大跌时，又想转到债基避险，这样的操作90%都会放大亏损。</p>
+<p>**正常的操作是：股市高估，应加强债基，股市低估，应加强股基。**绝大部分时间都保持不动。</p>
+<p>我的《稳中求进》组合，也配置了20%的二级债基，未来市场发生严重高/低估时，会调整相应的比例。</p>
+<p>注：由于可转债股性强，容易受到股票市场影响，我将归纳到权益类品种，不在本文探讨之内。</p>
+<p><strong>五、近期主要问答：</strong></p>
+<p><strong>债券基金连续下跌，还能持有吗？</strong></p>
+<p>目前货币政策偏宽松，如果准备长期配置，可以忽略短期波动，继续持有。</p>
+<p><strong>既然债基也会下跌，那可以换成股基吗？</strong></p>
+<p>不建议，这两种是完全不同的风格，股基的波动率是前者的4-10倍，遇到大波动，股基一天的下跌可以抵得上债基跌一年。最好根据投资风格，合理搭配。</p>
+<p><strong>现在应该买哪类债基？</strong></p>
+<p>在10年期国债收益率低于3%时，可以临时配置些短债，如果持有时间比较长，可重点关注二级债基。</p>
+<p><strong>可以不配置债基吗？</strong></p>
+<p>如果是激进型投资者，可以不配置。比如我自己目前很少买债基，但是给风险承受力弱的亲友们都配置了债基，以降低资产的波动率。 后面如果股市机会差，我也会买些债券。</p>
+<p><strong>总结：</strong></p>
+<p>债券是仅次于股票的重要投资品种，特别是稳健型投资者。</p>
+<p>理性看待纯债波动，从年度看亏损概率很低。</p>
+<p>要想投资债基，必须要会看10年期国债收益率，这是基本技能。</p>
+<p>由于存在违约和管理人风险，在投资时也尽量分散，不要集中在一只基金上。</p>
+<p>选择债基主要是为了获得稳健收益，要把风控放在第一位，不要盲目攀比短期涨幅，在购买前一定要查询波动率和近5年回撤。</p>
+]]></content:encoded>
+      <enclosure url="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACv/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwD/2Q==" type="image/"/>
+    </item>
+    <item>
+      <title>聊聊债券基金的选择方法与技巧</title>
+      <link>https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html</link>
+      <guid>https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">聊聊债券基金的选择方法与技巧</source>
+      <description>一、怎么选择债券基金？ 1. 明确目标需求 投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。 1）纯债基金：顾名思义，指的是只可投资债券的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。 短期纯债型可以类似的...</description>
+      <category>理财</category>
+      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p><strong>一、怎么选择债券基金？</strong></p>
+<p><strong>1. 明确目标需求</strong></p>
+<p>投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。</p>
+<figure><figcaption></figcaption></figure>
+<p><strong>1）纯债基金</strong>：顾名思义，指的是<strong>只可投资债券</strong>的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。</p>
+<p>短期纯债型可以类似的看作货币基金的增强版，大多时候收益比货币基金略高些，但低于中长期纯债型。总的来说，由于只投资债券，不投资股票和可转债，纯债基金的风险和收益最低。</p>
+<p><strong>2）一级债券基金</strong>：除了投资债券（含可转债），还可以投资<strong>一级市场股票，也就是参与打新股</strong>。相比纯债基金，一级债券基金风险收益稍高些。</p>
+<p><strong>3）二级债券基金</strong>。除了投资债券（含可转债）、投资一级市场股票，<strong>还可以参与二级市场股票买卖</strong>。因此，二级债券基金的预期风险和收益最高。</p>
+<p>宇哥对近几年各类型债券基金的收益率做了统计，发现：二级债券基金在“股债双牛”的时候（如2014年）年收益率最高可达30.3%，但是当股债都不好的时候（如2016年）收益率可能为负，可见二级债券基金的波动较大；一级债券基金相对平稳，纯债基金波动最小。</p>
+<figure><figcaption></figcaption></figure>
+<p>数据来源：Wind，截止2018-10-12</p>
+<p>事实上，除了纯债基金、一级债基金和二级债基金，还有指数债券型基金。这类基金跟踪债券指数，数量很少，只占到3%。其中，被动指数型完全跟踪标的指数，风险收益较低；增强指数型（只有2只）跟踪标的指数的同时，有较大自由投资空间，风险收益较高。</p>
+<p>知道了各债券基金的风险收益特征，这时在选择基金时，就要考虑到目标需求。如果你是用闲置资金投资，期望获得相对稳定且较高的收益，那就选择二级债券基金；但如果你不想承担较高的风险，只追求稳定的收益，纯债或一级债券基金会更适合你。</p>
+<p><strong>2. 看基金公司的背景</strong></p>
+<p>和货币基金一样，债券基金也要看基金公司的背景。由于<strong>债券大部分是在银行间市场交易的，如果能背靠银行，基金公司也能拿到成本更低的债券，手里的资源也更多。因此，具有银行背景的基金公司更有优势，比如建信、工银瑞信。</strong></p>
+<p>另外，具有大券商公司背景的基金公司也会有优势，比如易方达、广发、汇添富等。当然了，其他派系的基金公司旗下也会有很多优质的债券基金，不能一概而论 。</p>
+<p><strong>3. 看业绩</strong></p>
+<p>虽说基金的业绩只代表过去，不代表过来。但对基金来说，考验基金好坏还是要参考其历史业绩。</p>
+<p><strong>1）和基准、同类基金的比较</strong></p>
+<p><strong>债券基金的业绩比较基准自然是债券指数，一般看的中证综合债</strong>。另外，基金业绩还要和同类基金作比较，如果投资者想长期持有，应选择更长周期的业绩；如果只是打算短期投资，则应选择近期的业绩进行比较。</p>
+<p><strong>2）四分位排名</strong></p>
+<p>重点关注近1年至近3年四分位排名为优秀和良好的基金，且短期排名（近1月、3月、6月）也较好。不过，需要提醒的是，四分位排名是将同类基金按涨幅大小顺序排列的，有的平台的同类基金包括了所有类型的债券基金，因此并不能很好地做比较。</p>
+<p><strong>3） 与历史业绩的比较</strong></p>
+<p>当前业绩与历史业绩（各年度涨幅、各季度涨幅）进行比较，目的是判断基金业绩的稳定性。只有长期表现稳定、收益良好的基金才是值得买的基金。</p>
+<p><strong>4） 标准差、夏普比率</strong></p>
+<p>标准差反应了债券基金的波动性，标准差越小，说明基金越稳定。夏普比率是衡量风险和收益的综合指标，它反映了单位风险获得的超额收益。当比较不同类型的债券基金哪个更优时，夏普比率是一个很好的指标，越大越好。通常观察的是近1年、近3年的夏普比率。</p>
+<p>另外，需要提醒的是：债券基金有时会发生因巨额赎回而单日涨幅飙升的情形，少则百分之几十，多则百分之一百多，比如金信民兴债券A(004400)，6月20日涨幅79.27%。在衡量基金的业绩时，一定要剔除这一因素，因为这是<strong>巨额赎回发生的赎回费导致的，并不代表基金本身真实的投资能力。况且，这类基金发生在以机构投资者占比为主的基金中，也是可遇不可求的。</strong></p>
+<figure><figcaption></figcaption></figure>
+<p>金信民兴债券A(004400)</p>
+<p><strong>4. 看资产配置、债券配置</strong></p>
+<p>看债券基金的资产配置，着重看基金是否有股票持仓、占比多少，债券持仓占比多少，从而判断基金的风险收益状况。如果股票持仓较高，则说明该基金预期风险和收益较高；反之，该基金预期风险和收益就较低。</p>
+<p>除了看资产配置，还要看债券配置。我们知道，<strong>债券基金80%以上的基金资产投资于债券。而债券又包括了国债、金融债、央行票据、企业债、可转债等，这些债券品种的风险和收益也不同。其中，国债最稳定，但是收益也最低；企业债属于信用债，风险收益等级稍高些；风险收益等级最大的是可转债，如果一只债券基金里绝大多数债券配的都是可转债，那我们称这只基金为可转债基金，可转债基金的风险收益最大，股票的涨跌都和它密切相关。</strong></p>
+<p>比如：“易方达安心回报”就是可转债基金。看持仓，股票占比14.29%，债券里可转债占比高达63.01%。结构性牛市，可转债基金表现很好。</p>
+<figure><figcaption></figcaption></figure>
+<p>易方达安心回报（110027）</p>
+<p><strong>5. 有没有踩过雷？</strong></p>
+<p>近年来，债券信用违约事件频发。327只债券基金出现下跌，30只净值跌幅超过10%，其中跌幅最大的债券基金（中融融丰纯债）净值跌幅超过47%。如果不幸踩雷，债券基金也会跌的让人触目惊心。</p>
+<p>因此，在选择债券基金的时候，要看看其基金公司的其它债券基金之前有没有踩过雷。如果踩过，说明该公司的投研实力还是较弱，信用风险甄别能力较差。</p>
+<p><strong>6. 是否有封闭期？</strong></p>
+<p>目前，债券基金主要分为开放式和封闭式。封闭式就是我们常说的“定开债”，即定期开放申赎。定开债虽然流动性不如开放式，但是由于有封闭期，<strong>基金可以参与更长久期的债券品种，并且还会加杠杆，预期收益会比开放式高。</strong></p>
+<p>因此，不能单纯看预期收益，还要考虑到流动性。如果资金期限不固定，必要时一定要撤离，定开债就不适合你了。</p>
+<p><strong>7. 看评级</strong></p>
+<p>可以通过基金评级来选基。不管是从收益率、波动性，还是夏普比率看，星级越高的基金表现都更优。建议大家优选星级高的基金，比如3年5星的基金。当然，评级高的基金未来不一定表现一定好，也不排除其它外在的因素导致业绩不达预期。</p>
+<p>除了以上，还要看费率，包括管理费、托管费、申购费、赎回费等（对于C份额，还要关注销售服务费）。尽量优选费率低的，能省一点是一点。</p>
+<p>**二、**<strong>债券基金有哪些买卖技巧？</strong></p>
+<p><strong>1. 经济下行时，买；复苏见底时，卖</strong></p>
+<p>影响债市表现的最根本因素是经济基本面。当经济下行时，市场预期央行采取宽松的货币政策，致使利率下行，而我们知道债券和利率负相关，从而债券牛市开启。而当经济复苏时，市场预期货币政策收紧，利率回升，债券牛市结束。</p>
+<p>因此，<strong>对于债券型基金，在市场一致预期经济处于下行通道时，是参与债市的好时机。而在经济见底复苏时，就要注意风险了。</strong></p>
+<p><strong>2. 资金面宽松时，买；资金面紧张时，卖</strong></p>
+<p>除了经济基本面，资金面也是影响债市的重要因素。<strong>当资金面宽松，即处于降息周期或低利率环境时，债市通常会有不错的表现，这时正是买债券基金的时机；而当资金面紧张，利率上升时，债券基金的表现可能还不如货币基金。</strong></p>
+<p><strong>3. 股市表现不好时，可考虑债券基金</strong></p>
+<p>总体来说，股票市场和债券市场存在一定的“跷跷板”效应。一方面，股市不好时，债市可能会有不错的表现；另一方面，从资产配置、分散风险的角度，股市不好时，可以加大债券的投资比例、降低波动。</p>
+<p><strong>4. 牛市时，配置二级债券基金、可转债基金</strong></p>
+<p><strong>二</strong>级债券基金可以参与二级市场股票买卖。因此，当股市表现好时，可配置二级债券基金，获得相对稳定且较高的收益。</p>
+<p>对于可转债基金，由于可转债具有可转换性，当它所对标的股票价格上涨时，债券价格也会上涨；此外，债券价格和股价之前还存在套利的可能性。因此，当股市表现好时，可转债基金会有不错的收益。同样，成也萧何败萧何，当股市表现差时，可转债基金也会出现较大的下跌，这个时候应卖出。</p>
+<p>**三、**<strong>总结：</strong></p>
+<p>作为固收类基金的主力，债券基金分类众多，不同类型的债券基金风险收益特征也不同。因此，挑选债券基金的第一步就是明确自己的目标需求，选择适合的债基类型，然后再结合基金公司背景、业绩、资产配置、债券配置、封闭期、评级等选择心仪的债券基金。</p>
+<p>另外，虽然债券基金可以作为一种长期配置的品种，但如果能较好的做好择时、掌握一些买卖技巧，会赚得更多。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title></title>
-      <link>https://zecdn.top/fun/iPad.html</link>
-      <guid>https://zecdn.top/fun/iPad.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/iPad.html</link>
+      <guid>https://jiange1236.github.io/fun/iPad.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>Bioshock（生化奇兵） 幽浮：未知敌人 Vainglory网际直通车</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>Bioshock（生化奇兵）</p>
@@ -1332,9 +1515,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/fun/%E4%B8%89%E5%85%83.html</link>
-      <guid>https://zecdn.top/fun/%E4%B8%89%E5%85%83.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/%E4%B8%89%E5%85%83.html</link>
+      <guid>https://jiange1236.github.io/fun/%E4%B8%89%E5%85%83.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>青菜 芹菜 蒜苗 茼蒿 笋子 南瓜 黄瓜 小葱 大蒜 茄子 白菜 花菜 韭菜 西红柿 兰花菜 水芹菜 苹果 菠萝 梨子 李子 青枣 红枣 荔枝 蛇果 橘子 猕猴桃 椰子 香蕉 西瓜 青提 红提 葡萄 黄桃 龙眼 桂圆 哈密瓜 香瓜 柿子 菠萝蜜 火龙果 猴子 海星 海马 水母 珊瑚鱼 小丑鱼 鲤鱼 鲫鱼 边鱼 螃蟹 蜘蛛 蚊子 苍蝇 金丝猴 猕猴 海豚...</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>青菜 芹菜 蒜苗 茼蒿 笋子 南瓜 黄瓜 小葱 大蒜 茄子 白菜 花菜 韭菜 西红柿 兰花菜 水芹菜</p>
@@ -1344,9 +1527,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/fun/%E5%8E%BB%E5%93%AA%E9%87%8C%E6%89%BE%E5%A4%A7%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%94%B5%E5%BD%B1%E5%9B%BE%E7%89%87%20(2013.5.11%E6%9B%B4%E6%96%B0).html</link>
-      <guid>https://zecdn.top/fun/%E5%8E%BB%E5%93%AA%E9%87%8C%E6%89%BE%E5%A4%A7%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%94%B5%E5%BD%B1%E5%9B%BE%E7%89%87%20(2013.5.11%E6%9B%B4%E6%96%B0).html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/%E5%8E%BB%E5%93%AA%E9%87%8C%E6%89%BE%E5%A4%A7%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%94%B5%E5%BD%B1%E5%9B%BE%E7%89%87%20(2013.5.11%E6%9B%B4%E6%96%B0).html</link>
+      <guid>https://jiange1236.github.io/fun/%E5%8E%BB%E5%93%AA%E9%87%8C%E6%89%BE%E5%A4%A7%E5%B0%BA%E5%AF%B8%E7%9A%84%E7%94%B5%E5%BD%B1%E5%9B%BE%E7%89%87%20(2013.5.11%E6%9B%B4%E6%96%B0).html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>图片1：驯龙高手 How to Train Your Dragon 剧照 图片1：驯龙高手 How to Train Your Dragon 剧照 原图地址：http://img2.douban.com/view/photo/raw/public/p456604559.jpg 尺寸：1280x543 因为每天都在豆瓣传电影图片，不断的有人发来豆邮询问哪...</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>图片1：驯龙高手 How to Train Your Dragon 剧照</p>
@@ -1500,9 +1683,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/fun/%E5%B9%BF%E6%92%AD.html</link>
-      <guid>https://zecdn.top/fun/%E5%B9%BF%E6%92%AD.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/%E5%B9%BF%E6%92%AD.html</link>
+      <guid>https://jiange1236.github.io/fun/%E5%B9%BF%E6%92%AD.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>糖蒜广播 大内密谈 坏蛋调频 正在播放 《Tonight-AGA》 ●━━━━━━─────── 5:20 ⇆ ◁ ❚❚ ▷ ↻</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>糖蒜广播 大内密谈 坏蛋调频</p>
@@ -1513,9 +1696,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/fun/%E7%8B%BC%E4%BA%BA%E6%9D%80.html</link>
-      <guid>https://zecdn.top/fun/%E7%8B%BC%E4%BA%BA%E6%9D%80.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/%E7%8B%BC%E4%BA%BA%E6%9D%80.html</link>
+      <guid>https://jiange1236.github.io/fun/%E7%8B%BC%E4%BA%BA%E6%9D%80.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>以下配置建议的规则：屠城、遗言、无新月。 6 - 7 人局 3 - 4 村民 2狼人 女巫 8 - 9 人局 4 - 5 村民 2 狼人 女巫 爱神 4 - 5 村民 2 狼人 女巫 白痴 5 - 6 村民 2 狼人 女巫 3 - 4 村民 3 狼人 女巫 先知 10 - 11人局 4 - 5 村民 3 狼人 女巫 先知 爱神 5 - 6 村民 3 狼...</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>以下配置建议的规则：屠城、遗言、无新月。</p>
@@ -1563,200 +1746,10 @@ https://sitoi.github.io/dailycheckin/</h1>
 ]]></content:encoded>
     </item>
     <item>
-      <title>基金定投方法</title>
-      <link>https://zecdn.top/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html</link>
-      <guid>https://zecdn.top/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html</guid>
-      <source url="https://zecdn.top/rss.xml">基金定投方法</source>
-      <description>今天我想静静|附我的基金定投方法 **1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到...</description>
-      <category>理财</category>
-      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p><strong>今天我想静静|附我的基金定投方法</strong></p>
-<p>**1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到了20%，但是估值依旧在往下走，价格也没有太跌。无论接下来牛市还是熊市，这只指数都是非常安全的标的。</p>
-<p>2，至于买创蓝筹。之前写过一篇<a href="http://mp.weixin.qq.com/s?__biz=MzI4MDgwNzE0OQ==&amp;mid=2247483761&amp;idx=1&amp;sn=55d659c688448e24f9beb0cecdda9616&amp;chksm=ebb392f3dcc41be56f598e45a9dc6c7cf336e581dac0689ac56a9843ccd5b330f963734608dc&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">为什么买创蓝筹</a>，这一半仓位属于进攻型仓位。</p>
-<p>对了，我今天才发现，由于是转账买的（超过30万只能转账买入），好像天天基金就不提醒调仓动态了，之前加仓保险也是这样。3点之后我才看到“已受理“的通知。对于跟投的朋友，这真是雪上加霜。。<strong>不过也不用慌，这几只基，我都是准备中长期持有的，所以一两天的差别也不会特别大，说不定下周一买入，机会更好。</strong></p>
-<p><strong>那么，问题来了！面对这样的波动，我们如何做到不贪婪、不恐惧，坚定买入？</strong></p>
-<p><strong>有一个办法，那就是“定投”！</strong></p>
-<p>定投可以让你无惧市场的波动。波动越大，反倒越适合定投。上面的操作，其实属于典型的周定投的一次执行。</p>
-<p>下面简单分享下我理解的定投吧，内容比较多（大家去网上看看学习下，雪球/知乎都挺多的），我就以自己定投为例，讲几个认为重要的点。</p>
-<p>定投的原理就是<strong>低吸筹码，赌未来会涨回来。</strong></p>
-<p><strong>1、选择大于努力</strong>，<strong>选择一只能涨回来的基金非常重要</strong>。指数基金就很适合定投，首先指数会一直存在，无论公司怎么变动，行业有何影响，指数都会按照规则不断更新适合的股票加入，不适合的淘汰。但公司有可能倒闭（比如乐视，再定投也起不来），行业也可能遇到“黑天鹅”事件而受到颠覆。</p>
-<p>**并且指数基金不考验基金经理的人性、贪婪和恐惧。**选择一只不太差的指数基金，只要长期持有、坚持定投，基本都会有等待微笑曲线向上的时刻。</p>
-<p><strong>选择波动较大的指数基金，更适合定投。</strong></p>
-<p>**2、无惧波动，越跌越买，越涨越卖。**定投的目标是摊薄成本，所以无论市场怎么变化，下跌就是你收集筹码的最佳机会。当然你要会看指数估值（pe/pb），会判断当前位置（估值百分位），这些数据在基金平台都可以查到。</p>
-<p><strong>以我自己为例，我是如何定投的？</strong></p>
-<p>我一般不会设置自动定投（因为金额比较大）。我会按周手动定投，越跌越买，大跌大买，小跌小买。</p>
-<p>我自己简单设定了一个定投的规则。如下图：</p>
-<figure><figcaption>img</figcaption></figure>
-<p>**1，定投时间。**我一般会选择每周四/周五（因为都说这两天容易出现黑色星期五），在下午三点之前，会看一眼大盘，然后决定是否买入。</p>
-<p>**2，买入标志。**如果当天跌幅超过-2%，那么“买入”标志就出现了。（相应的，涨幅+2%，“卖出”标志就出现了），大概率当天3点前就会选择买卖。</p>
-<p>**3，买多少。**假设我有20万元，我会把资金分成10份，每份2万元。当买入标志出现之后，会结合最近一周（周线）的涨跌幅情况和最近一月（月线）的涨跌幅情况来看买入多少。</p>
-<p>如上表，比如最近一月涨幅小于+1%的前提下（如果涨了很多，可能不会买），当天跌了-2%，最近一周跌-3%，那我可能会买入3-4份，也就是6-8万元。然后严格执行。</p>
-<p>当然，具体买入多少，可能还与当时的情绪有关。所以把这个规则量化之后，可以辅助我们有一个相对标准，不至于随意感觉，被情绪左右。</p>
-<p><strong>最后，最重要的，就是严格执行</strong>。执行不到位，再好的战略和方法都是徒劳。</p>
-<p>以上只是定投的一点皮毛，不过大道至简，再复杂的，比如网格啥的，原理都差不多。</p>
-<p>新手也可以尝试无脑定投沪深300，中证500等指数，找找感觉，现在开始，做到长期年化收益10%，没啥问题。</p>
-<p>只要严格执行，注意止盈。</p>
-<p>最后到一段富有哲理的话，分享给基友们：</p>
-<p>认知最终匹配财富：</p>
-<p>你所赚的每一分钱，都是你对这个世界认知的变现，你所亏的每一分钱，都是因为对这个世界认知有缺陷。</p>
-<p>你永远赚不到超出你认知范围之外的钱，除非你靠运气，但是靠运气赚到的钱，最后往往又会靠实力亏掉；</p>
-<p>这是一种必然。</p>
-<p>这个社会最大的公平就在于：当一个人的财富大于自己认知的时候，这个社会有100种方法收割你，直到让你的认知和财富相匹配为止。</p>
-<p>以我自己为例，刚入股市的时候，投入了本金差不多10万块。最早也是跟着各种专家、大V、论坛的观点走，结果很快就亏了四万块。</p>
-<p>痛定思痛，我决定靠自己，于是系统学习了股票理论，期权、期货、货币知识，紧盯国内外政治经济社会发展，学习最前沿的金融知识，特别瞄定目前正在发生的国际大事。经过不断的摸索，我完全形成了自己的模式和打法，最后，终于把剩下的六万块也亏光了。</p>
-<p>于是，我开始投资基金。。</p>
-<p>比起我亏损的100万，今天有一个人更惨，因为按照承诺，他要被炮轰进太阳。。。</p>
-<figure><figcaption>img</figcaption></figure>
-<p><strong>【今日操作】今日买了创蓝筹和地产，实盘组合亏损120万+。天天基金实盘目前资产（3000万+）排名第一。后台有朋友问怎么跟投，可以在天天基金app/雪球搜索：马哥价值投基。</strong></p>
-<p>*申明一下哈，跟投要谨慎，投资有风险。以上所有观点谨代表我个人。我也未收取跟投者一分钱，我只顾我买的基金能帮我赚到钱。这是我的唯一公众号，所有内容都只首发在这里。</p>
-<p>发文之前，美股又是大幅跌开2个多点，明早看收盘有没有奇迹，不过这一波调整，应该也差不多，机会满地。</p>
-<p>等着马哥推文的，点个【在看】，有多人，陪熬夜，不容易！</p>
-<p>点击这里，今日互动</p>
-<p>文章已于2020-02-28修改</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>投资“固收+”债券基金，必须要了解的几个重点</title>
-      <link>https://zecdn.top/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html</link>
-      <guid>https://zecdn.top/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html</guid>
-      <source url="https://zecdn.top/rss.xml">投资“固收+”债券基金，必须要了解的几个重点</source>
-      <description>投资“固收+”债券基金，必须要了解的几个重点！ Original 实战研究的 东方财之道 Today 近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。 平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。 一、宏观数据： ​ 0 根据：Choice数据显示，目...</description>
-      <category>理财</category>
-      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p><strong>投资“固收+”债券基金，必须要了解的几个重点！</strong></p>
-<p>Original 实战研究的 东方财之道 <em>Today</em></p>
-<p>近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。</p>
-<p>平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。</p>
-<p><strong>一、宏观数据：</strong></p>
-<p>​    </p>
-<p>根据：Choice数据显示，目前中国全市场货币基金占48%，债基占28%，股基（包括指数基金）7.7%，混合基金占14.7%；</p>
-<p>货基占比最大，这个很容易理解，现在很多年轻人都不去存银行了；</p>
-<p>债基远超股基，可能会出乎大家的意料；</p>
-<p>目前债基持有人80%以上都是机构，个人投资者占比很少；</p>
-<p>从配置需求看，债券和股票都是非常重要的投资品种；</p>
-<p>债基和股基经常呈反相关性，很大程度上可以实现风险对冲；</p>
-<p>相对来说，<strong>投资债基比什么：黄金、原油基金要靠谱的多。</strong></p>
-<p>所以债基在我们的投资中是不可或缺的品种，但它并不是只涨不跌，还需要了解以下知识。</p>
-<p><strong>二、不同类型的债券对比：</strong></p>
-<p>​    </p>
-<p>上图是过去十年不同债基的对比：</p>
-<p>红色是短债，净值呈缓坡增长，时快时慢，但很少回调;</p>
-<p>玫红是长债，长期稳健向上，但也有回撤;</p>
-<p>绿和灰色是二级债基，每日都有波动，但相比沪深300指数（黄色）要好很多。</p>
-<p>二级债基平时感觉涨的很慢，但由于回撤小，兼顾了股票和债券，<strong>最近十年优秀的二级债基收益130%左右，是沪深300的3倍左右</strong>，尤其在股市大波动时，这类基金更能发挥优势。</p>
-<p><strong>三、如何投资：</strong></p>
-<p>​    </p>
-<p>上图的信息量比较大，下面说重点：</p>
-<p><strong>短债从年度上看无亏损</strong>，历史最大回撤1%，由于收益低，只适合短期临时投资。</p>
-<p><strong>长债是市场上的主流债基</strong>，过去10年有两次年度亏损，不过也都是0.2%以下的微亏，历史最大回撤5%左右。</p>
-<p>因为债券品种范围广，影响因素多，且不同基金杠杆率不同，所以业绩相差有点大，波动比短债更大。</p>
-<p>但是如果利用好这些波动，可以获得更好的收益，有两个重点指标可关注：</p>
-<p>1.<strong>核心指标：一定要关注10年期国债收益率，如果高于3%则值得投资</strong>（高于3.5%会更好）**，**低于3%可止盈换品种（如果没有太好的品种可投，可以放低到2.8%或长期持有）</p>
-<p>​    </p>
-<p>根据上图集思录的显示，最新的10年收益率是：2.86%，显然当前纯债不是好的投资机会。</p>
-<p>2.如果连续两年收益超过6%或单一年度超10%，则要小心回撤，如果哪年负收益或者收益低于1%，则潜在收益更高，到时再结合10年期国债收益率来判断。</p>
-<p>和股基一样，涨的太高是风险，跌的越多是机会。</p>
-<p>**二级债基，**一般都配置了10-20%的股票仓位，投资难度也在加大，不同基金业绩有较大差异，优秀的经理也会主动切换股债的比例，所以大部分时间都值得投资，在股市低位和国债收益率3%以上时可加大投资。</p>
-<p>由于二级债受股债双重影响（短期主要受股市影响），有的二级债偏稳健，有的偏激进，尽量选择管理人优秀的基金。</p>
-<p><strong>四、其它细节：</strong></p>
-<p>债券的主要收益来源是票息，长期只要不违约就是只赚不亏，但是它会受货币政策和市场情绪的影响，在不同时点买入，收益会有所不同。</p>
-<p>因为债券有违约风险，尽量选择固收类团队强的基金公司，也不要选择规模过小的基金，稳定性非常重要。</p>
-<p>债券资产不仅可以减少回撤，也可以在关键时期伺机而动，比如遇到股市处于严重低估时，就可以把部分债基转成股基，加强进攻。</p>
-<p>但是多数人都做反了，比如：看到股基大涨时，感觉债基涨的太慢，要转为股基。看到股基大跌时，又想转到债基避险，这样的操作90%都会放大亏损。</p>
-<p>**正常的操作是：股市高估，应加强债基，股市低估，应加强股基。**绝大部分时间都保持不动。</p>
-<p>我的《稳中求进》组合，也配置了20%的二级债基，未来市场发生严重高/低估时，会调整相应的比例。</p>
-<p>注：由于可转债股性强，容易受到股票市场影响，我将归纳到权益类品种，不在本文探讨之内。</p>
-<p><strong>五、近期主要问答：</strong></p>
-<p><strong>债券基金连续下跌，还能持有吗？</strong></p>
-<p>目前货币政策偏宽松，如果准备长期配置，可以忽略短期波动，继续持有。</p>
-<p><strong>既然债基也会下跌，那可以换成股基吗？</strong></p>
-<p>不建议，这两种是完全不同的风格，股基的波动率是前者的4-10倍，遇到大波动，股基一天的下跌可以抵得上债基跌一年。最好根据投资风格，合理搭配。</p>
-<p><strong>现在应该买哪类债基？</strong></p>
-<p>在10年期国债收益率低于3%时，可以临时配置些短债，如果持有时间比较长，可重点关注二级债基。</p>
-<p><strong>可以不配置债基吗？</strong></p>
-<p>如果是激进型投资者，可以不配置。比如我自己目前很少买债基，但是给风险承受力弱的亲友们都配置了债基，以降低资产的波动率。 后面如果股市机会差，我也会买些债券。</p>
-<p><strong>总结：</strong></p>
-<p>债券是仅次于股票的重要投资品种，特别是稳健型投资者。</p>
-<p>理性看待纯债波动，从年度看亏损概率很低。</p>
-<p>要想投资债基，必须要会看10年期国债收益率，这是基本技能。</p>
-<p>由于存在违约和管理人风险，在投资时也尽量分散，不要集中在一只基金上。</p>
-<p>选择债基主要是为了获得稳健收益，要把风控放在第一位，不要盲目攀比短期涨幅，在购买前一定要查询波动率和近5年回撤。</p>
-]]></content:encoded>
-      <enclosure url="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACv/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfwD/2Q==" type="image/"/>
-    </item>
-    <item>
-      <title>聊聊债券基金的选择方法与技巧</title>
-      <link>https://zecdn.top/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html</link>
-      <guid>https://zecdn.top/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html</guid>
-      <source url="https://zecdn.top/rss.xml">聊聊债券基金的选择方法与技巧</source>
-      <description>一、怎么选择债券基金？ 1. 明确目标需求 投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。 1）纯债基金：顾名思义，指的是只可投资债券的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。 短期纯债型可以类似的...</description>
-      <category>理财</category>
-      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p><strong>一、怎么选择债券基金？</strong></p>
-<p><strong>1. 明确目标需求</strong></p>
-<p>投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。</p>
-<figure><figcaption></figcaption></figure>
-<p><strong>1）纯债基金</strong>：顾名思义，指的是<strong>只可投资债券</strong>的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。</p>
-<p>短期纯债型可以类似的看作货币基金的增强版，大多时候收益比货币基金略高些，但低于中长期纯债型。总的来说，由于只投资债券，不投资股票和可转债，纯债基金的风险和收益最低。</p>
-<p><strong>2）一级债券基金</strong>：除了投资债券（含可转债），还可以投资<strong>一级市场股票，也就是参与打新股</strong>。相比纯债基金，一级债券基金风险收益稍高些。</p>
-<p><strong>3）二级债券基金</strong>。除了投资债券（含可转债）、投资一级市场股票，<strong>还可以参与二级市场股票买卖</strong>。因此，二级债券基金的预期风险和收益最高。</p>
-<p>宇哥对近几年各类型债券基金的收益率做了统计，发现：二级债券基金在“股债双牛”的时候（如2014年）年收益率最高可达30.3%，但是当股债都不好的时候（如2016年）收益率可能为负，可见二级债券基金的波动较大；一级债券基金相对平稳，纯债基金波动最小。</p>
-<figure><figcaption></figcaption></figure>
-<p>数据来源：Wind，截止2018-10-12</p>
-<p>事实上，除了纯债基金、一级债基金和二级债基金，还有指数债券型基金。这类基金跟踪债券指数，数量很少，只占到3%。其中，被动指数型完全跟踪标的指数，风险收益较低；增强指数型（只有2只）跟踪标的指数的同时，有较大自由投资空间，风险收益较高。</p>
-<p>知道了各债券基金的风险收益特征，这时在选择基金时，就要考虑到目标需求。如果你是用闲置资金投资，期望获得相对稳定且较高的收益，那就选择二级债券基金；但如果你不想承担较高的风险，只追求稳定的收益，纯债或一级债券基金会更适合你。</p>
-<p><strong>2. 看基金公司的背景</strong></p>
-<p>和货币基金一样，债券基金也要看基金公司的背景。由于<strong>债券大部分是在银行间市场交易的，如果能背靠银行，基金公司也能拿到成本更低的债券，手里的资源也更多。因此，具有银行背景的基金公司更有优势，比如建信、工银瑞信。</strong></p>
-<p>另外，具有大券商公司背景的基金公司也会有优势，比如易方达、广发、汇添富等。当然了，其他派系的基金公司旗下也会有很多优质的债券基金，不能一概而论 。</p>
-<p><strong>3. 看业绩</strong></p>
-<p>虽说基金的业绩只代表过去，不代表过来。但对基金来说，考验基金好坏还是要参考其历史业绩。</p>
-<p><strong>1）和基准、同类基金的比较</strong></p>
-<p><strong>债券基金的业绩比较基准自然是债券指数，一般看的中证综合债</strong>。另外，基金业绩还要和同类基金作比较，如果投资者想长期持有，应选择更长周期的业绩；如果只是打算短期投资，则应选择近期的业绩进行比较。</p>
-<p><strong>2）四分位排名</strong></p>
-<p>重点关注近1年至近3年四分位排名为优秀和良好的基金，且短期排名（近1月、3月、6月）也较好。不过，需要提醒的是，四分位排名是将同类基金按涨幅大小顺序排列的，有的平台的同类基金包括了所有类型的债券基金，因此并不能很好地做比较。</p>
-<p><strong>3） 与历史业绩的比较</strong></p>
-<p>当前业绩与历史业绩（各年度涨幅、各季度涨幅）进行比较，目的是判断基金业绩的稳定性。只有长期表现稳定、收益良好的基金才是值得买的基金。</p>
-<p><strong>4） 标准差、夏普比率</strong></p>
-<p>标准差反应了债券基金的波动性，标准差越小，说明基金越稳定。夏普比率是衡量风险和收益的综合指标，它反映了单位风险获得的超额收益。当比较不同类型的债券基金哪个更优时，夏普比率是一个很好的指标，越大越好。通常观察的是近1年、近3年的夏普比率。</p>
-<p>另外，需要提醒的是：债券基金有时会发生因巨额赎回而单日涨幅飙升的情形，少则百分之几十，多则百分之一百多，比如金信民兴债券A(004400)，6月20日涨幅79.27%。在衡量基金的业绩时，一定要剔除这一因素，因为这是<strong>巨额赎回发生的赎回费导致的，并不代表基金本身真实的投资能力。况且，这类基金发生在以机构投资者占比为主的基金中，也是可遇不可求的。</strong></p>
-<figure><figcaption></figcaption></figure>
-<p>金信民兴债券A(004400)</p>
-<p><strong>4. 看资产配置、债券配置</strong></p>
-<p>看债券基金的资产配置，着重看基金是否有股票持仓、占比多少，债券持仓占比多少，从而判断基金的风险收益状况。如果股票持仓较高，则说明该基金预期风险和收益较高；反之，该基金预期风险和收益就较低。</p>
-<p>除了看资产配置，还要看债券配置。我们知道，<strong>债券基金80%以上的基金资产投资于债券。而债券又包括了国债、金融债、央行票据、企业债、可转债等，这些债券品种的风险和收益也不同。其中，国债最稳定，但是收益也最低；企业债属于信用债，风险收益等级稍高些；风险收益等级最大的是可转债，如果一只债券基金里绝大多数债券配的都是可转债，那我们称这只基金为可转债基金，可转债基金的风险收益最大，股票的涨跌都和它密切相关。</strong></p>
-<p>比如：“易方达安心回报”就是可转债基金。看持仓，股票占比14.29%，债券里可转债占比高达63.01%。结构性牛市，可转债基金表现很好。</p>
-<figure><figcaption></figcaption></figure>
-<p>易方达安心回报（110027）</p>
-<p><strong>5. 有没有踩过雷？</strong></p>
-<p>近年来，债券信用违约事件频发。327只债券基金出现下跌，30只净值跌幅超过10%，其中跌幅最大的债券基金（中融融丰纯债）净值跌幅超过47%。如果不幸踩雷，债券基金也会跌的让人触目惊心。</p>
-<p>因此，在选择债券基金的时候，要看看其基金公司的其它债券基金之前有没有踩过雷。如果踩过，说明该公司的投研实力还是较弱，信用风险甄别能力较差。</p>
-<p><strong>6. 是否有封闭期？</strong></p>
-<p>目前，债券基金主要分为开放式和封闭式。封闭式就是我们常说的“定开债”，即定期开放申赎。定开债虽然流动性不如开放式，但是由于有封闭期，<strong>基金可以参与更长久期的债券品种，并且还会加杠杆，预期收益会比开放式高。</strong></p>
-<p>因此，不能单纯看预期收益，还要考虑到流动性。如果资金期限不固定，必要时一定要撤离，定开债就不适合你了。</p>
-<p><strong>7. 看评级</strong></p>
-<p>可以通过基金评级来选基。不管是从收益率、波动性，还是夏普比率看，星级越高的基金表现都更优。建议大家优选星级高的基金，比如3年5星的基金。当然，评级高的基金未来不一定表现一定好，也不排除其它外在的因素导致业绩不达预期。</p>
-<p>除了以上，还要看费率，包括管理费、托管费、申购费、赎回费等（对于C份额，还要关注销售服务费）。尽量优选费率低的，能省一点是一点。</p>
-<p>**二、**<strong>债券基金有哪些买卖技巧？</strong></p>
-<p><strong>1. 经济下行时，买；复苏见底时，卖</strong></p>
-<p>影响债市表现的最根本因素是经济基本面。当经济下行时，市场预期央行采取宽松的货币政策，致使利率下行，而我们知道债券和利率负相关，从而债券牛市开启。而当经济复苏时，市场预期货币政策收紧，利率回升，债券牛市结束。</p>
-<p>因此，<strong>对于债券型基金，在市场一致预期经济处于下行通道时，是参与债市的好时机。而在经济见底复苏时，就要注意风险了。</strong></p>
-<p><strong>2. 资金面宽松时，买；资金面紧张时，卖</strong></p>
-<p>除了经济基本面，资金面也是影响债市的重要因素。<strong>当资金面宽松，即处于降息周期或低利率环境时，债市通常会有不错的表现，这时正是买债券基金的时机；而当资金面紧张，利率上升时，债券基金的表现可能还不如货币基金。</strong></p>
-<p><strong>3. 股市表现不好时，可考虑债券基金</strong></p>
-<p>总体来说，股票市场和债券市场存在一定的“跷跷板”效应。一方面，股市不好时，债市可能会有不错的表现；另一方面，从资产配置、分散风险的角度，股市不好时，可以加大债券的投资比例、降低波动。</p>
-<p><strong>4. 牛市时，配置二级债券基金、可转债基金</strong></p>
-<p><strong>二</strong>级债券基金可以参与二级市场股票买卖。因此，当股市表现好时，可配置二级债券基金，获得相对稳定且较高的收益。</p>
-<p>对于可转债基金，由于可转债具有可转换性，当它所对标的股票价格上涨时，债券价格也会上涨；此外，债券价格和股价之前还存在套利的可能性。因此，当股市表现好时，可转债基金会有不错的收益。同样，成也萧何败萧何，当股市表现差时，可转债基金也会出现较大的下跌，这个时候应卖出。</p>
-<p>**三、**<strong>总结：</strong></p>
-<p>作为固收类基金的主力，债券基金分类众多，不同类型的债券基金风险收益特征也不同。因此，挑选债券基金的第一步就是明确自己的目标需求，选择适合的债基类型，然后再结合基金公司背景、业绩、资产配置、债券配置、封闭期、评级等选择心仪的债券基金。</p>
-<p>另外，虽然债券基金可以作为一种长期配置的品种，但如果能较好的做好择时、掌握一些买卖技巧，会赚得更多。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title></title>
-      <link>https://zecdn.top/fun/love/%E3%80%8C%E8%AF%97%E7%BB%8F%E7%88%B1%E6%83%85%EF%BC%8C%E7%BB%9D%E7%BE%8E%E6%89%8B%E7%BB%98%E3%80%8D%EF%BC%9A%E4%B8%80%E6%97%A5%E4%B8%8D%E8%A7%81%EF%BC%8C%E5%A6%82%E4%B8%89%E7%A7%8B%E5%85%AE%EF%BC%81.html</link>
-      <guid>https://zecdn.top/fun/love/%E3%80%8C%E8%AF%97%E7%BB%8F%E7%88%B1%E6%83%85%EF%BC%8C%E7%BB%9D%E7%BE%8E%E6%89%8B%E7%BB%98%E3%80%8D%EF%BC%9A%E4%B8%80%E6%97%A5%E4%B8%8D%E8%A7%81%EF%BC%8C%E5%A6%82%E4%B8%89%E7%A7%8B%E5%85%AE%EF%BC%81.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/love/%E3%80%8C%E8%AF%97%E7%BB%8F%E7%88%B1%E6%83%85%EF%BC%8C%E7%BB%9D%E7%BE%8E%E6%89%8B%E7%BB%98%E3%80%8D%EF%BC%9A%E4%B8%80%E6%97%A5%E4%B8%8D%E8%A7%81%EF%BC%8C%E5%A6%82%E4%B8%89%E7%A7%8B%E5%85%AE%EF%BC%81.html</link>
+      <guid>https://jiange1236.github.io/fun/love/%E3%80%8C%E8%AF%97%E7%BB%8F%E7%88%B1%E6%83%85%EF%BC%8C%E7%BB%9D%E7%BE%8E%E6%89%8B%E7%BB%98%E3%80%8D%EF%BC%9A%E4%B8%80%E6%97%A5%E4%B8%8D%E8%A7%81%EF%BC%8C%E5%A6%82%E4%B8%89%E7%A7%8B%E5%85%AE%EF%BC%81.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>1、一日不见，如三秋兮。——《诗经·王风·采葛》 2、委委佗佗，如山如河。——《诗经·鄘风·君子偕老》 3、江有汜，之子归，不我以。不我以，其后也悔。——《诗经·召南·江有汜》 4、夫妻好合，如鼓琴瑟。——《诗经·小雅·常棣》 5、匪女之为美，美人之贻。——《诗经·邶风·静女》 6、呦呦鹿鸣，食野之苹。我有嘉宾，鼓瑟吹笙。——《诗经·小雅·鹿鸣》 7、...</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>1、一日不见，如三秋兮。——《诗经·王风·采葛》</p>
@@ -1798,9 +1791,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/fun/love/%E6%9C%9B%E4%BD%A0%E8%AF%B4%E7%9A%84%E5%86%8D%E8%A7%81%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%BB%A3%E8%A1%A8%E7%9D%80%E5%86%8D%E4%B9%9F%E4%B8%8D%E8%A7%81%E3%80%82%E3%80%8A%E7%AC%AC%E4%B8%80%E5%B0%81%E3%80%8B.html</link>
-      <guid>https://zecdn.top/fun/love/%E6%9C%9B%E4%BD%A0%E8%AF%B4%E7%9A%84%E5%86%8D%E8%A7%81%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%BB%A3%E8%A1%A8%E7%9D%80%E5%86%8D%E4%B9%9F%E4%B8%8D%E8%A7%81%E3%80%82%E3%80%8A%E7%AC%AC%E4%B8%80%E5%B0%81%E3%80%8B.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/fun/love/%E6%9C%9B%E4%BD%A0%E8%AF%B4%E7%9A%84%E5%86%8D%E8%A7%81%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%BB%A3%E8%A1%A8%E7%9D%80%E5%86%8D%E4%B9%9F%E4%B8%8D%E8%A7%81%E3%80%82%E3%80%8A%E7%AC%AC%E4%B8%80%E5%B0%81%E3%80%8B.html</link>
+      <guid>https://jiange1236.github.io/fun/love/%E6%9C%9B%E4%BD%A0%E8%AF%B4%E7%9A%84%E5%86%8D%E8%A7%81%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%BB%A3%E8%A1%A8%E7%9D%80%E5%86%8D%E4%B9%9F%E4%B8%8D%E8%A7%81%E3%80%82%E3%80%8A%E7%AC%AC%E4%B8%80%E5%B0%81%E3%80%8B.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>望你说的再见，不是代表着再也不见。《第一封》 我还在原地，傻傻的等你回来。《第二封》 只要身边有你,无论富贵与否,我都是世上最幸福的人。《第三封》 红尘有你，我只要隐隐地能够感觉得到你在我的世界里的存在，我就能信心十足、精神百倍地去做好每天的每一件事。我懂得了，应该说我更加懂得了，爱一个人就应该不计较付出不计较收获，无怨无悔，始终真心真意。《第四封》 ...</description>
       <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>望你说的再见，不是代表着再也不见。《第一封》</p>
@@ -1979,9 +1972,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>Python</title>
-      <link>https://zecdn.top/study/Python/Python.html</link>
-      <guid>https://zecdn.top/study/Python/Python.html</guid>
-      <source url="https://zecdn.top/rss.xml">Python</source>
+      <link>https://jiange1236.github.io/study/Python/Python.html</link>
+      <guid>https://jiange1236.github.io/study/Python/Python.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">Python</source>
       <description>[toc] 变量 # 整数转成浮点数 float(a) # 浮点型转成字符串 (输出字符串时不会看到引号哟) str(b) # 字符串转成布尔型 (有内容的字符串都会变成True) bool(c) # 布尔型转成整数 (True会转成1，False会转成0) int(d) # 将整数变成对应的字符 (97刚好对应字符表中的字母a) chr(97) # ...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -2002,9 +1995,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>硬链接</title>
-      <link>https://zecdn.top/tech/Blog%E6%90%AD%E5%BB%BA.html</link>
-      <guid>https://zecdn.top/tech/Blog%E6%90%AD%E5%BB%BA.html</guid>
-      <source url="https://zecdn.top/rss.xml">硬链接</source>
+      <link>https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html</link>
+      <guid>https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">硬链接</source>
       <description>硬链接 Linux Windows PNPM 点击左下角开始，找到Windows PowerShell，点击右键找到更多，找到以管理员身份运行 输入命令：set-ExecutionPolicy RemoteSigned 然后回车 选择：输入A选择全是，或者输入Y选择是 都可以的 接着重新启动然后去运行就可以了 Git 清除Github提交历史记录 1....</description>
       <pubDate>Sun, 15 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -2047,9 +2040,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/Cameyo.html</link>
-      <guid>https://zecdn.top/tech/Cameyo.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/Cameyo.html</link>
+      <guid>https://jiange1236.github.io/tech/Cameyo.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>使用方法 打包： 先关闭 所有 无关的软件（不然，你的男/女朋友QQ发果照给你，也会打包进去的，对此我不负责！） 运行 扫描安装过程并打包.exe，这时不要乱动，等右下角扫描完成，出现中文提示（见下图），然后安装需要打包的软件； img 软件安装完成后（可以打开软件设置一下），点击安装已完成，等待它比较安装前后的文件， 完成后他会提示你生成的单文件路径...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>使用方法</p>
@@ -2076,9 +2069,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>Deepin</title>
-      <link>https://zecdn.top/tech/Deepin_Ubuntu.html</link>
-      <guid>https://zecdn.top/tech/Deepin_Ubuntu.html</guid>
-      <source url="https://zecdn.top/rss.xml">Deepin</source>
+      <link>https://jiange1236.github.io/tech/Deepin_Ubuntu.html</link>
+      <guid>https://jiange1236.github.io/tech/Deepin_Ubuntu.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">Deepin</source>
       <description>[toc] Deepin 系统 升级内核 卸载内核 然后再 就可以了 QQ卡死 如果 linux 里装了 win 的宋体，QQ 就会卡死，此时 QQ 会使用宋体里的点阵字体。此时解决方案是把 win 的宋体的 ttc 文件往 QQ 的 wine 容器里也装一份（即复制到 ~/.deepinwine/Deepin-QQ/drive_c/Windows/F...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>[toc]</p>
@@ -2238,9 +2231,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>段落格式</title>
-      <link>https://zecdn.top/tech/Markdown.html</link>
-      <guid>https://zecdn.top/tech/Markdown.html</guid>
-      <source url="https://zecdn.top/rss.xml">段落格式</source>
+      <link>https://jiange1236.github.io/tech/Markdown.html</link>
+      <guid>https://jiange1236.github.io/tech/Markdown.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">段落格式</source>
       <description>[toc] 段落格式 字体 分割线 删除线 下划线 脚注 区块 表格 HTML版 图片 HTML元素 特殊字符 使用Ctrl+Alt+Del 重启电脑 转义字符 ** 正常显示星号 ** Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号： 流程图 https://mermaid-js.github.io/mermaid/#/ 横向流...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>[toc]</p>
@@ -2268,9 +2261,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>半洗白原理</title>
-      <link>https://zecdn.top/tech/NAS%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.html</link>
-      <guid>https://zecdn.top/tech/NAS%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.html</guid>
-      <source url="https://zecdn.top/rss.xml">半洗白原理</source>
+      <link>https://jiange1236.github.io/tech/NAS%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.html</link>
+      <guid>https://jiange1236.github.io/tech/NAS%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">半洗白原理</source>
       <description>[toc] apollolake https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_access_files_on_Synology_NAS_within_the_local_network_NFS 半洗白原理 半洗白原理：DSM6 以上的系统。群晖...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>[toc]</p>
@@ -2390,9 +2383,9 @@ https://sitoi.github.io/dailycheckin/</h1>
     </item>
     <item>
       <title>Openwrt</title>
-      <link>https://zecdn.top/tech/Openwrt_%E7%94%B5%E8%A7%86.html</link>
-      <guid>https://zecdn.top/tech/Openwrt_%E7%94%B5%E8%A7%86.html</guid>
-      <source url="https://zecdn.top/rss.xml">Openwrt</source>
+      <link>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</link>
+      <guid>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">Openwrt</source>
       <description>[toc] Openwrt OPKG 原版 查找大文件 &amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD 定制软件包 ======= 198c2116c5109f2dc09ab42ad8eb0a95319b83d1 R2S https://github.com/fanck0605/openwrt-nanopi-r2s https://github.com/fanck0605/...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>[toc]</p>
@@ -3141,9 +3134,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>工具安装篇</title>
-      <link>https://zecdn.top/tech/Potplayer.html</link>
-      <guid>https://zecdn.top/tech/Potplayer.html</guid>
-      <source url="https://zecdn.top/rss.xml">工具安装篇</source>
+      <link>https://jiange1236.github.io/tech/Potplayer.html</link>
+      <guid>https://jiange1236.github.io/tech/Potplayer.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">工具安装篇</source>
       <description>[toc] Potplayer 是高清影视常用的播放器，界面简洁，功能齐全，比 MPC-HC 和 MPC-BE 更人性化；但其**默认方案十分糟糕，预设过多错误，无法正确播放 10-bit 视频，**一直饱受诟病。VCB-Studio 以往发布的数篇高清教程大多偏重于 madVR，在 PotPlayer 的设置方面有些错漏。为了广大观众能正确、便捷地用...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>[toc]</p>
@@ -3280,9 +3273,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/Ublock%20Origin.html</link>
-      <guid>https://zecdn.top/tech/Ublock%20Origin.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/Ublock%20Origin.html</link>
+      <guid>https://jiange1236.github.io/tech/Ublock%20Origin.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>【过滤规则】（对于比较良心的网站，建议加入白名单，以支持网站的发展） halflife 一、halflife吧大佬半生的过滤规则（日更，无论订阅哪一个规则，建议都订阅国内源2，因为这个源比较稳定） 下列规则、各规则的不同源不要同时订阅，因为重复了，也就是所有地址选择一个订阅就可以了 \1. 【推荐】合并EasylistChina、EasylistLit...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>【过滤规则】（对于比较良心的网站，建议加入白名单，以支持网站的发展）</p>
@@ -3337,9 +3330,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>RoutingA</title>
-      <link>https://zecdn.top/tech/V2rayA.html</link>
-      <guid>https://zecdn.top/tech/V2rayA.html</guid>
-      <source url="https://zecdn.top/rss.xml">RoutingA</source>
+      <link>https://jiange1236.github.io/tech/V2rayA.html</link>
+      <guid>https://jiange1236.github.io/tech/V2rayA.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">RoutingA</source>
       <description>RoutingA GeoIP、GeoSite GeoIP 源文件：https://github.com/v2fly/geoip GeoSite 源文件：https://github.com/v2fly/domain-list-community Loyalsoldier GeoIP geoip.dat 所有类别：https://github.com/L...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
@@ -3429,9 +3422,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/Wikipedia%E5%85%A8%E5%9F%9F%E6%81%A2%E5%A4%8D%E8%AE%BF%E9%97%AE%E6%8C%87%E5%8D%97%20-%20%E4%B8%80%E4%BA%BA%E6%98%93%E5%AE%89%20-%20AnYi&amp;apos;s%20Blog.html</link>
-      <guid>https://zecdn.top/tech/Wikipedia%E5%85%A8%E5%9F%9F%E6%81%A2%E5%A4%8D%E8%AE%BF%E9%97%AE%E6%8C%87%E5%8D%97%20-%20%E4%B8%80%E4%BA%BA%E6%98%93%E5%AE%89%20-%20AnYi&amp;apos;s%20Blog.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/Wikipedia%E5%85%A8%E5%9F%9F%E6%81%A2%E5%A4%8D%E8%AE%BF%E9%97%AE%E6%8C%87%E5%8D%97%20-%20%E4%B8%80%E4%BA%BA%E6%98%93%E5%AE%89%20-%20AnYi&amp;apos;s%20Blog.html</link>
+      <guid>https://jiange1236.github.io/tech/Wikipedia%E5%85%A8%E5%9F%9F%E6%81%A2%E5%A4%8D%E8%AE%BF%E9%97%AE%E6%8C%87%E5%8D%97%20-%20%E4%B8%80%E4%BA%BA%E6%98%93%E5%AE%89%20-%20AnYi&amp;apos;s%20Blog.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>https://zh.wikipedia.org/zh/Wikipedia:%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E6%8B%B7%E8%B4%9D%E7%BD%91%E7%AB%99](https://zh.wikipedia.org/zh/Wikipedia:维基百科拷贝网站) https://zh.wikipe...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>https://zh.wikipedia.org/zh/Wikipedia:%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E6%8B%B7%E8%B4%9D%E7%BD%91%E7%AB%99](https://zh.wikipedia.org/zh/Wikipedia:维基百科拷贝网站)</p>
@@ -3550,9 +3543,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C%E7%9C%BC%E8%8A%B1%E7%BC%AD%E4%B9%B1%EF%BC%8C%E6%9D%82%E7%89%8C%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%B0%91%EF%BC%9F.html</link>
-      <guid>https://zecdn.top/tech/%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C%E7%9C%BC%E8%8A%B1%E7%BC%AD%E4%B9%B1%EF%BC%8C%E6%9D%82%E7%89%8C%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%B0%91%EF%BC%9F.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C%E7%9C%BC%E8%8A%B1%E7%BC%AD%E4%B9%B1%EF%BC%8C%E6%9D%82%E7%89%8C%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%B0%91%EF%BC%9F.html</link>
+      <guid>https://jiange1236.github.io/tech/%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C%E7%9C%BC%E8%8A%B1%E7%BC%AD%E4%B9%B1%EF%BC%8C%E6%9D%82%E7%89%8C%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%B0%91%EF%BC%9F.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>【装机帮扶站】第439期：主板品牌眼花缭乱，杂牌到底有多少？ 作为一台PC中最关键的承载躯干，主板需要互联各硬件进行功能交换，并且提供额外的扩展空间，方便用户进行必要的拓展。 随着制造技术的不断加强，角色重要但实际制造技术含量并不算高的主板已经成为各种小作坊赚钱的利器，虽然知名的消费级品牌差不多一双手就数得过来，但逛了淘宝才发现，数十上百个主板品牌琳琅...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p><strong>【装机帮扶站】第439期：主板品牌眼花缭乱，杂牌到底有多少？</strong></p>
@@ -3605,9 +3598,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/%E4%BA%91%E5%AD%A6%E5%A0%82%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD.html</link>
-      <guid>https://zecdn.top/tech/%E4%BA%91%E5%AD%A6%E5%A0%82%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/%E4%BA%91%E5%AD%A6%E5%A0%82%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD.html</link>
+      <guid>https://jiange1236.github.io/tech/%E4%BA%91%E5%AD%A6%E5%A0%82%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>打开视频链接 按F12进入控制台，选择【网络】菜单 查找后缀为m3u8的文件，右键【复制】&amp;gt;【复制链接地址】 将链接地址复制进批量下载器中，点击添加 查找前缀为tokenVideoKey的文件，点击【预览】，复制videoKeyId 打开http://tool.chacuo.net/cryptaes 选择AES加密模式【ECB】，填充【no paddi...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<ol>
@@ -3642,9 +3635,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/tech/%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.html</link>
-      <guid>https://zecdn.top/tech/%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.html</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/tech/%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.html</link>
+      <guid>https://jiange1236.github.io/tech/%E7%BE%A4%E8%BE%89emby%E5%A5%97%E4%BB%B6%E7%89%88%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%99%BD%E5%AB%96%E6%95%99%E7%A8%8B.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>群辉 emby套件版服务端 白嫖教程 安装教程 在群辉中安装好WebStation跟EMBY 1. 打开Web Station如图所示新建虚拟主机 2. 证书下载地址 https://raw.githubusercontent.com/s1oz/embyonekey/master/mb3admin.com.cert.pem https://raw.gi...</description>
       <pubDate>Sat, 14 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p><strong>群辉 emby套件版服务端 白嫖教程</strong></p>
@@ -3697,9 +3690,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>SAP2000</title>
-      <link>https://zecdn.top/study/SAP2000.html</link>
-      <guid>https://zecdn.top/study/SAP2000.html</guid>
-      <source url="https://zecdn.top/rss.xml">SAP2000</source>
+      <link>https://jiange1236.github.io/study/SAP2000.html</link>
+      <guid>https://jiange1236.github.io/study/SAP2000.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">SAP2000</source>
       <description>[TOC] 建模流程 建立模型 设置单位制 kN·m·C 设置轴网 定义材料 定义框架截面 定义面截面 壳-薄壳 膜厚度=弯曲厚度 面对象剖分 按最大尺寸剖分面 2m (定义实体截面) 绘制模型 定义静力荷载工况 恒载 DEAD DEAD 1 活载 LIVE LIVE 0 X向地震 QX QUAKE 0 Chinese 2010 Y向地震 QY QUA...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -3708,9 +3701,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>Sausage</title>
-      <link>https://zecdn.top/study/Sausage.html</link>
-      <guid>https://zecdn.top/study/Sausage.html</guid>
-      <source url="https://zecdn.top/rss.xml">Sausage</source>
+      <link>https://jiange1236.github.io/study/Sausage.html</link>
+      <guid>https://jiange1236.github.io/study/Sausage.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">Sausage</source>
       <description>1、 打开软件 PKPM 如图 8-3 所示，选择“ SAUSAGE”项，设置当前 工作目录，点击“应用” 2、检查模型 点击菜单项“ 分析”→“检查模型”，弹出“检查模型” 对话框 3、参数设置 对于导入的 SAUSAGE 模型无须对本节参数进行设置，本节参数设置仅 对 SAUSAGE 中的新建模型起作用。 项目参数设置：点击菜单栏“建模编辑‖→“ ...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -3742,9 +3735,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>一注例题</title>
-      <link>https://zecdn.top/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html</link>
-      <guid>https://zecdn.top/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html</guid>
-      <source url="https://zecdn.top/rss.xml">一注例题</source>
+      <link>https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html</link>
+      <guid>https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">一注例题</source>
       <description>[TOC] 科目 简支梁最大挠度 一注真题注意要点 通用 自由度=3x刚片数-2x铰点数-支座链杆数 标准值、设计值 斜向荷载值 x cosα 剪力为0处弯矩值最大 跨中弯矩计算按计算跨度 支座剪力计算按净跨 混凝土结构 纵筋保护层厚度=保护层厚度+箍筋直径 有效高度估算 梁的纵向受力钢筋按一排布置时，h0=h-20-6-20/2 梁的纵向受力钢筋按二...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -3756,9 +3749,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>一注备考</title>
-      <link>https://zecdn.top/study/%E4%B8%80%E6%B3%A8%E5%A4%87%E8%80%83.html</link>
-      <guid>https://zecdn.top/study/%E4%B8%80%E6%B3%A8%E5%A4%87%E8%80%83.html</guid>
-      <source url="https://zecdn.top/rss.xml">一注备考</source>
+      <link>https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E5%A4%87%E8%80%83.html</link>
+      <guid>https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E5%A4%87%E8%80%83.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">一注备考</source>
       <description>clipboardclipboard 混凝土 钢筋混凝土结构 承载能力极限状态 计算内容 3.3.1 ​ 承载力极限状态表达式 3.3.2 ​ 疲劳验算 6.7 正常使用极限状态 计算内容 3.4.1 裂缝 ​ 受力裂缝控制等级分类 3.4.4 ​ 最大裂缝限值 3.4.5 ​ 裂缝宽度验算 7.1.1 ​ 最大裂缝宽度计算 7.1.2 ​ 纵向钢筋等...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -3767,9 +3760,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>写给职场新人的 PPT 演示制作指南 - 少数派</title>
-      <link>https://zecdn.top/study/%E5%86%99%E7%BB%99%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA%E7%9A%84PPT%E6%BC%94%E7%A4%BA%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97-%E5%B0%91%E6%95%B0%E6%B4%BE.html</link>
-      <guid>https://zecdn.top/study/%E5%86%99%E7%BB%99%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA%E7%9A%84PPT%E6%BC%94%E7%A4%BA%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97-%E5%B0%91%E6%95%B0%E6%B4%BE.html</guid>
-      <source url="https://zecdn.top/rss.xml">写给职场新人的 PPT 演示制作指南 - 少数派</source>
+      <link>https://jiange1236.github.io/study/%E5%86%99%E7%BB%99%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA%E7%9A%84PPT%E6%BC%94%E7%A4%BA%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97-%E5%B0%91%E6%95%B0%E6%B4%BE.html</link>
+      <guid>https://jiange1236.github.io/study/%E5%86%99%E7%BB%99%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA%E7%9A%84PPT%E6%BC%94%E7%A4%BA%E5%88%B6%E4%BD%9C%E6%8C%87%E5%8D%97-%E5%B0%91%E6%95%B0%E6%B4%BE.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">写给职场新人的 PPT 演示制作指南 - 少数派</source>
       <description>写给职场新人的 PPT 演示制作指南 - 少数派 Excerpt 一个人闷头做 PPT 一定不是好办法，多学习多讨论才能有更快的进步。 Matrix 精选 Matrix 是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选 Matrix 最优质的文章，展示来自用户的最真实的体验和观点。 文章代表作者个人观点，少数派仅...</description>
       <category>学习</category>
       <pubDate>Fri, 24 Jan 2020 00:00:00 GMT</pubDate>
@@ -3782,9 +3775,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>岩土备考</title>
-      <link>https://zecdn.top/study/%E5%B2%A9%E5%9C%9F%E5%A4%87%E8%80%83.html</link>
-      <guid>https://zecdn.top/study/%E5%B2%A9%E5%9C%9F%E5%A4%87%E8%80%83.html</guid>
-      <source url="https://zecdn.top/rss.xml">岩土备考</source>
+      <link>https://jiange1236.github.io/study/%E5%B2%A9%E5%9C%9F%E5%A4%87%E8%80%83.html</link>
+      <guid>https://jiange1236.github.io/study/%E5%B2%A9%E5%9C%9F%E5%A4%87%E8%80%83.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">岩土备考</source>
       <description>高坚勇，华兰虎 老鼠开水 李向阳 华山 案例买了华山的练习册，知识买了老鼠开水，没买机构辅导书，就用了手册</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -3797,9 +3790,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>考岩者说——宏观考试法</title>
-      <link>https://zecdn.top/study/%E8%80%83%E5%B2%A9%E8%80%85%E8%AF%B4%E2%80%94%E2%80%94%E5%AE%8F%E8%A7%82%E8%80%83%E8%AF%95%E6%B3%95.html</link>
-      <guid>https://zecdn.top/study/%E8%80%83%E5%B2%A9%E8%80%85%E8%AF%B4%E2%80%94%E2%80%94%E5%AE%8F%E8%A7%82%E8%80%83%E8%AF%95%E6%B3%95.html</guid>
-      <source url="https://zecdn.top/rss.xml">考岩者说——宏观考试法</source>
+      <link>https://jiange1236.github.io/study/%E8%80%83%E5%B2%A9%E8%80%85%E8%AF%B4%E2%80%94%E2%80%94%E5%AE%8F%E8%A7%82%E8%80%83%E8%AF%95%E6%B3%95.html</link>
+      <guid>https://jiange1236.github.io/study/%E8%80%83%E5%B2%A9%E8%80%85%E8%AF%B4%E2%80%94%E2%80%94%E5%AE%8F%E8%A7%82%E8%80%83%E8%AF%95%E6%B3%95.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">考岩者说——宏观考试法</source>
       <description>如何复习注册岩土工程师专业考试？ 一颗志在必得的心； 8个月，35周，245天，1342个小时； 3160+3480道习题；1048张稿纸； 1瓶墨水，30根替芯，7枝记号笔； 50本规范，1本手册，13本教材。 imgimg imgimg imgimg imgimg imgimg 导图如下，全文分为总则、整体规划、详细计划、应试技巧和其他5个部分，约...</description>
       <category>学习</category>
       <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
@@ -3889,9 +3882,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>荷载</title>
-      <link>https://zecdn.top/work/1%E8%8D%B7%E8%BD%BD.html</link>
-      <guid>https://zecdn.top/work/1%E8%8D%B7%E8%BD%BD.html</guid>
-      <source url="https://zecdn.top/rss.xml">荷载</source>
+      <link>https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html</link>
+      <guid>https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">荷载</source>
       <description>[toc] 荷载组合 承载力极限状态基本组合 注意书库、档案库、储藏室、机房、厂房屋面积灰荷载等的可变荷载组合值系数为0.9 1.3(1.0)恒+1.3(1.0)预+1.5×γL活+ψc积灰+ψc吊车 1.3(1.0)恒+1.3(1.0)预+1.5×γL活+1.5×0.6风+ψc吊车 1.3(1.0)恒+1.3(1.0)预+1.5风+1.5×0.7×γ...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -3916,9 +3909,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>设计</title>
-      <link>https://zecdn.top/work/2%E8%AE%BE%E8%AE%A1.html</link>
-      <guid>https://zecdn.top/work/2%E8%AE%BE%E8%AE%A1.html</guid>
-      <source url="https://zecdn.top/rss.xml">设计</source>
+      <link>https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html</link>
+      <guid>https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">设计</source>
       <description>[TOC] 注意事项 女儿墙挑耳、预制女儿墙厚度（反坎）、压顶梁、构造柱 建筑绝对标高（总说明）、结构标高、梯梁标高 正负零与地面高差 升降板定义（边缘铰接） 墙图中单独一层开洞表示 主次梁点铰，主次梁搭接（当主梁同一位置只有一侧有次梁搭接时，主梁宽度≥250mm；当主梁同一位置两侧都有次梁搭接时，主梁宽度≥300mm） 反梁刚度系数改为1.0 钢结构...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -3927,9 +3920,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>施工图</title>
-      <link>https://zecdn.top/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html</link>
-      <guid>https://zecdn.top/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html</guid>
-      <source url="https://zecdn.top/rss.xml">施工图</source>
+      <link>https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html</link>
+      <guid>https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">施工图</source>
       <description>[TOC] 总说明 基本风压w，高度大于60m的高层需要w×1.1倍 规范版本更新 项目介绍、抗浮水位、基础类型、墙体材料 标准层拆分分层 梁标准层数尽量少，如30层的高层，除了屋面和首层外，中间的标准层分成不多于3个标准层（如2-11,13~20,21~30） 基础梁记得画，梁虚实线部分【实线：地基梁（一层梁）、外轮廓、卫生间等降板处，楼梯间、风井、...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4030,9 +4023,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>基础</title>
-      <link>https://zecdn.top/work/4%E5%9F%BA%E7%A1%80.html</link>
-      <guid>https://zecdn.top/work/4%E5%9F%BA%E7%A1%80.html</guid>
-      <source url="https://zecdn.top/rss.xml">基础</source>
+      <link>https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html</link>
+      <guid>https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">基础</source>
       <description>[toc] 基础设计值安全储备10%~20% 地基规6.3.7-2：填土压实系数取不小于0.94 荷载折减 覆土荷载施加 筏板保护层50(底) 20(面) 地勘报告 持力层土质、地基承载力特征值（地下室单桩竖向承载力特征值应取试验值扣除地下室深度范围内的桩侧阻力）、地基类型、基础建议砌筑标高 地质剖面图-确定基础埋置标高 饱和软土（粉土和砂土）在地震强...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4057,9 +4050,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>结构笔记-理论篇</title>
-      <link>https://zecdn.top/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html</link>
-      <guid>https://zecdn.top/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html</guid>
-      <source url="https://zecdn.top/rss.xml">结构笔记-理论篇</source>
+      <link>https://jiange1236.github.io/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html</link>
+      <guid>https://jiange1236.github.io/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">结构笔记-理论篇</source>
       <description>[TOC] 楼板计算模型 1、刚性板：平面内刚度无穷大，平面外刚度为0。 其主要用于大部分有梁体系的板，一般的非特别厚的板，平面内刚度无穷大和平面外刚度为0，相对的都是梁的刚度。 2、弹性板6：真实计算板平面内外的刚度（这里的真实计算是素砼的刚度，不包括钢筋）。 其主要用于“板柱结构”以及“板柱－剪力墙结构”，这种结构没有梁，不考虑板的平面外刚度就不合...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4082,9 +4075,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>BIM</title>
-      <link>https://zecdn.top/work/BIM.html</link>
-      <guid>https://zecdn.top/work/BIM.html</guid>
-      <source url="https://zecdn.top/rss.xml">BIM</source>
+      <link>https://jiange1236.github.io/work/BIM.html</link>
+      <guid>https://jiange1236.github.io/work/BIM.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">BIM</source>
       <description>①可视化 不同工期展示 ②标准化 品牌形成 ③虚拟工艺 工艺样板 做样板间 ④碰撞检查 ⑤深化设计 管道管线优化 支架共享 ⑥数据采集、资料集成管理 ⑦算量 ⑧过程成本控制 ⑨能耗，应力，吊装，日照分析 ⑩高支模，脚手架分析，空调冷热分析</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4102,9 +4095,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>PKPM设置</title>
-      <link>https://zecdn.top/work/PKPM%E8%AE%BE%E7%BD%AE.html</link>
-      <guid>https://zecdn.top/work/PKPM%E8%AE%BE%E7%BD%AE.html</guid>
-      <source url="https://zecdn.top/rss.xml">PKPM设置</source>
+      <link>https://jiange1236.github.io/work/PKPM%E8%AE%BE%E7%BD%AE.html</link>
+      <guid>https://jiange1236.github.io/work/PKPM%E8%AE%BE%E7%BD%AE.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">PKPM设置</source>
       <description>[TOC] 注意事项 地库子项： 1.消防车荷载是否组合：可以通过点选消防车荷载处的梁板配筋查看工况。 2.桩刚度 3.基床系数 4.高层基础是否勾选楼层荷载折减。 5.抗浮水位。 6.基础板面荷载中的恒活，地库外墙范围外的筏板覆土恒载。 7.基础模型中的筏板混凝土等级。 其他地上部分子项： 1.悬挑梁，梁布置修改等处的点铰复查。 2.修改楼层组装或其...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4169,9 +4162,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>PKPM输出</title>
-      <link>https://zecdn.top/work/PKPM%E8%BE%93%E5%87%BA.html</link>
-      <guid>https://zecdn.top/work/PKPM%E8%BE%93%E5%87%BA.html</guid>
-      <source url="https://zecdn.top/rss.xml">PKPM输出</source>
+      <link>https://jiange1236.github.io/work/PKPM%E8%BE%93%E5%87%BA.html</link>
+      <guid>https://jiange1236.github.io/work/PKPM%E8%BE%93%E5%87%BA.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">PKPM输出</source>
       <description>[TOC] 应送审的技术资料 1.电算总信息设置 2.形参平面图 3.荷载布置平面图 4.主要电算书（周期、振型、有效质量系数、轴压比、剪重比、刚度比、位移比、周期比、刚重比、层间受剪承载力比、抗浮锚杆计算书等） 5.主要电算图（配筋图、尺寸图、荷载图、挠度图(应在梁施工图中导出)、裂缝图（梁应采用T形截面计算，勾选了参数“考虑支座宽度对裂缝的影响”）...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4391,9 +4384,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>广联达乐构</title>
-      <link>https://zecdn.top/work/%E5%B9%BF%E8%81%94%E8%BE%BE%E4%B9%90%E6%9E%84.html</link>
-      <guid>https://zecdn.top/work/%E5%B9%BF%E8%81%94%E8%BE%BE%E4%B9%90%E6%9E%84.html</guid>
-      <source url="https://zecdn.top/rss.xml">广联达乐构</source>
+      <link>https://jiange1236.github.io/work/%E5%B9%BF%E8%81%94%E8%BE%BE%E4%B9%90%E6%9E%84.html</link>
+      <guid>https://jiange1236.github.io/work/%E5%B9%BF%E8%81%94%E8%BE%BE%E4%B9%90%E6%9E%84.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">广联达乐构</source>
       <description>【结构模型】&amp;gt;【计算模型关联】 【模型导入】 剪切关系有问题时：挪动板至外面，再挪回来；【连接顺序】&amp;gt;【调整剪切关系】 【模型检查】：计算书检查、平面检查 【全楼微调】：消除碎数</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4408,9 +4401,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>CAD</title>
-      <link>https://zecdn.top/work/%E6%9D%BF%E7%8E%8B.html</link>
-      <guid>https://zecdn.top/work/%E6%9D%BF%E7%8E%8B.html</guid>
-      <source url="https://zecdn.top/rss.xml">CAD</source>
+      <link>https://jiange1236.github.io/work/%E6%9D%BF%E7%8E%8B.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%9D%BF%E7%8E%8B.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">CAD</source>
       <description>[TOC] CAD 正交卡顿 修改系统变量 TEMPOVERRIDES 指令列输入TEMPOVERRIDES ，按下Enter键 将设定值由 1 变更为 0，应该就可以正常了 探索者 +P 上一次选择 pgp初始化 ucs-e ucsfollow=1旋转视图 fcd 重叠处理 xcq 线长取齐 xsc 图层显隐 wipeout 遮挡 xc剪裁 ls 线...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4612,9 +4605,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>楼梯、电梯</title>
-      <link>https://zecdn.top/work/%E6%A5%BC%E6%A2%AF%E3%80%81%E7%94%B5%E6%A2%AF.html</link>
-      <guid>https://zecdn.top/work/%E6%A5%BC%E6%A2%AF%E3%80%81%E7%94%B5%E6%A2%AF.html</guid>
-      <source url="https://zecdn.top/rss.xml">楼梯、电梯</source>
+      <link>https://jiange1236.github.io/work/%E6%A5%BC%E6%A2%AF%E3%80%81%E7%94%B5%E6%A2%AF.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%A5%BC%E6%A2%AF%E3%80%81%E7%94%B5%E6%A2%AF.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">楼梯、电梯</source>
       <description>楼梯尺寸 楼梯净高 2.2m 梯板厚度 1/20~1/30（一般1/26） 梯板宽度考虑施工缝，施工缝宽度20mm 除AT外，其他楼梯的平台（楼层平台或休息平台）厚度与梯板厚度相同 楼梯类型 框架结构现浇楼梯优先采用ATa、ATb形式 AT~ET型梯板的两端分别以（低端和高端）梯梁为支座 ATa、ATb型为带滑动支座的板式楼梯，梯板全部由踏步段构成，其...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4630,9 +4623,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>求职面试</title>
-      <link>https://zecdn.top/work/%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95.html</link>
-      <guid>https://zecdn.top/work/%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95.html</guid>
-      <source url="https://zecdn.top/rss.xml">求职面试</source>
+      <link>https://jiange1236.github.io/work/%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%B1%82%E8%81%8C%E9%9D%A2%E8%AF%95.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">求职面试</source>
       <description>简历 自我评价 首先用“小标题法则”，提炼2-5小标题，比如：工作能力、专业背景、优势匹配、性格特质、岗位认识、职业目标…… 在每个小标题下，用形容词+一句话事例，比如：“擅长沟通表达，曾获得校辩论赛最佳辩手”、“擅长策划组织，曾组织10余场校园论坛”、“对游戏行业充满热情，作为未来职业发展方向，曾多次参加游戏设计大赛”、“职业成熟度较高，曾在3家世界...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4874,9 +4867,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>装配式设计</title>
-      <link>https://zecdn.top/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html</link>
-      <guid>https://zecdn.top/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html</guid>
-      <source url="https://zecdn.top/rss.xml">装配式设计</source>
+      <link>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html</link>
+      <guid>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">装配式设计</source>
       <description>[toc] 装配式专利企业 ti,ab:(楼梯) AND ti,ab:(连接) NOT ti,ab:(装置) ti,ab:(预制) AND ti,ab:(空心) AND ti,ab:(墙) 模块化边模 空心 美好建筑装配科技有限公司 湖南东方红装配式建筑科技有限公司 湖南东方红新型建材有限公司 北京珠穆朗玛绿色建筑科技有限公司 中国建筑第七工程局有限公...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4925,9 +4918,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>装配式钢结构</title>
-      <link>https://zecdn.top/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E9%92%A2%E7%BB%93%E6%9E%84.html</link>
-      <guid>https://zecdn.top/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E9%92%A2%E7%BB%93%E6%9E%84.html</guid>
-      <source url="https://zecdn.top/rss.xml">装配式钢结构</source>
+      <link>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E9%92%A2%E7%BB%93%E6%9E%84.html</link>
+      <guid>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E9%92%A2%E7%BB%93%E6%9E%84.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">装配式钢结构</source>
       <description>[toc] 钢框架结构 赛博思钢管混凝土框架-开缝钢板剪力墙结构体系 imgimg 赛博思-低多层快速装配式结构体系 imgimg 赛博思-结构-围护一体化构件 imgimg 远大可建装配式钢结构 imgimg imgimg 钢框架-支撑结构 宝钢框架-支撑体系 imgimg 钢框架-延性墙板结构 框架-支撑+消能墙体系（建谊+宝钢） 钢框架-钢板剪力...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -4988,9 +4981,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>设计指标&amp;产值</title>
-      <link>https://zecdn.top/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html</link>
-      <guid>https://zecdn.top/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html</guid>
-      <source url="https://zecdn.top/rss.xml">设计指标&amp;产值</source>
+      <link>https://jiange1236.github.io/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html</link>
+      <guid>https://jiange1236.github.io/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">设计指标&amp;产值</source>
       <description>[TOC] 产值 设计费15元/m2 结构设计费4.05元/m2 给到个人设计费=4.05x0.8x0.33=1.07元/m2 专负7% 校对12% 审核7% 设计74% 单设计，个人设计费=1.07*74%=0.79元/m2 个人产值=收入/0.8/0.33=收入/0.264=收入*3.787 单设计，个人产值=画图量4.0574%=画图量*3元/m...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -5063,9 +5056,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>Crossin的编程教室 - Python 新手引导</title>
-      <link>https://zecdn.top/study/Python/Crossin%E7%9A%84%E7%BC%96%E7%A8%8B%E6%95%99%E5%AE%A4%20-%20Python%20%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC.html</link>
-      <guid>https://zecdn.top/study/Python/Crossin%E7%9A%84%E7%BC%96%E7%A8%8B%E6%95%99%E5%AE%A4%20-%20Python%20%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC.html</guid>
-      <source url="https://zecdn.top/rss.xml">Crossin的编程教室 - Python 新手引导</source>
+      <link>https://jiange1236.github.io/study/Python/Crossin%E7%9A%84%E7%BC%96%E7%A8%8B%E6%95%99%E5%AE%A4%20-%20Python%20%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC.html</link>
+      <guid>https://jiange1236.github.io/study/Python/Crossin%E7%9A%84%E7%BC%96%E7%A8%8B%E6%95%99%E5%AE%A4%20-%20Python%20%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">Crossin的编程教室 - Python 新手引导</source>
       <description>更多资源请点击【Crossin的编程教室】 Python 新手引导 公众号：Crossin的编程教室（crossincode） 关于入门建议请参阅公众号文章： http://mp.weixin.qq.com/s/fpXZrZLHI2GmFBJf7TPP7Q Python 版本选择 Python2 还是 Python3？ https://www.zhih...</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -5169,9 +5162,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>正则表达式</title>
-      <link>https://zecdn.top/study/Python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</link>
-      <guid>https://zecdn.top/study/Python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</guid>
-      <source url="https://zecdn.top/rss.xml">正则表达式</source>
+      <link>https://jiange1236.github.io/study/Python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</link>
+      <guid>https://jiange1236.github.io/study/Python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">正则表达式</source>
       <description>[TOC] 数字 字符 网络 编程 其它</description>
       <category>学习</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -5180,9 +5173,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>PKPM软件2021新规范v1.1版对通用规范全面支持</title>
-      <link>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/PKPM%E8%BD%AF%E4%BB%B62021%E6%96%B0%E8%A7%84%E8%8C%83v1.1%E7%89%88%E5%AF%B9%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81.html</link>
-      <guid>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/PKPM%E8%BD%AF%E4%BB%B62021%E6%96%B0%E8%A7%84%E8%8C%83v1.1%E7%89%88%E5%AF%B9%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81.html</guid>
-      <source url="https://zecdn.top/rss.xml">PKPM软件2021新规范v1.1版对通用规范全面支持</source>
+      <link>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/PKPM%E8%BD%AF%E4%BB%B62021%E6%96%B0%E8%A7%84%E8%8C%83v1.1%E7%89%88%E5%AF%B9%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/PKPM%E8%BD%AF%E4%BB%B62021%E6%96%B0%E8%A7%84%E8%8C%83v1.1%E7%89%88%E5%AF%B9%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E5%85%A8%E9%9D%A2%E6%94%AF%E6%8C%81.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">PKPM软件2021新规范v1.1版对通用规范全面支持</source>
       <description>已经发布的全文强条通用规范中包含▼▼▼ 6本工程项目类通用规范：《燃气工程项目规范》、《供热工程项目规范》、《城市道路交通工程项目规范》、《园林绿化工程项目规范》、《城市垃圾处理处置工程项目规范》及《市容环卫工程项目规范》； 16本工程建设类通用规范：《工程结构通用规范》、《建筑与市政地基基础通用规范》、《建筑与市政工程抗震通用规范》、《钢结构通用规范...</description>
       <category>工作</category>
       <pubDate>Tue, 07 Dec 2021 00:00:00 GMT</pubDate>
@@ -5381,9 +5374,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>【技术周刊】通用规范与现行规范的对比</title>
-      <link>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/YJK%E3%80%90%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%E3%80%91%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E4%B8%8E%E7%8E%B0%E8%A1%8C%E8%A7%84%E8%8C%83%E7%9A%84%E5%AF%B9%E6%AF%94.html</link>
-      <guid>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/YJK%E3%80%90%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%E3%80%91%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E4%B8%8E%E7%8E%B0%E8%A1%8C%E8%A7%84%E8%8C%83%E7%9A%84%E5%AF%B9%E6%AF%94.html</guid>
-      <source url="https://zecdn.top/rss.xml">【技术周刊】通用规范与现行规范的对比</source>
+      <link>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/YJK%E3%80%90%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%E3%80%91%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E4%B8%8E%E7%8E%B0%E8%A1%8C%E8%A7%84%E8%8C%83%E7%9A%84%E5%AF%B9%E6%AF%94.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/YJK%E3%80%90%E6%8A%80%E6%9C%AF%E5%91%A8%E5%88%8A%E3%80%91%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E4%B8%8E%E7%8E%B0%E8%A1%8C%E8%A7%84%E8%8C%83%E7%9A%84%E5%AF%B9%E6%AF%94.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">【技术周刊】通用规范与现行规范的对比</source>
       <description>【技术周刊】通用规范与现行规范的对比 Excerpt 本文针对已经支持的六本通规对新老规范做一个对比分析，并结合工程案例分析其对结构设计的具体影响。 图片图片 即将在2022年1月1日实施的通用系列规范受到广大设计师朋友的普遍关注。随着YJK V4.0版本的推出，通用规范中的六本已可通过软件实现结构的计算和设计。在后续的小版本更新中，软件还将陆续支持《...</description>
       <category>工作</category>
       <pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate>
@@ -5396,9 +5389,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>张涛：山地建筑结构设计实践及细部策略（以贵州、浙江、四川多地项目为例）</title>
-      <link>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BC%A0%E6%B6%9B%EF%BC%9A%E5%B1%B1%E5%9C%B0%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E5%8F%8A%E7%BB%86%E9%83%A8%E7%AD%96%E7%95%A5%EF%BC%88%E4%BB%A5%E8%B4%B5%E5%B7%9E%E3%80%81%E6%B5%99%E6%B1%9F%E3%80%81%E5%9B%9B%E5%B7%9D%E5%A4%9A%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%BA%E4%BE%8B%EF%BC%89%E4%B8%A8%E7%BB%8F%E5%85%B8%E5%BF%85%E5%90%AC.html</link>
-      <guid>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BC%A0%E6%B6%9B%EF%BC%9A%E5%B1%B1%E5%9C%B0%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E5%8F%8A%E7%BB%86%E9%83%A8%E7%AD%96%E7%95%A5%EF%BC%88%E4%BB%A5%E8%B4%B5%E5%B7%9E%E3%80%81%E6%B5%99%E6%B1%9F%E3%80%81%E5%9B%9B%E5%B7%9D%E5%A4%9A%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%BA%E4%BE%8B%EF%BC%89%E4%B8%A8%E7%BB%8F%E5%85%B8%E5%BF%85%E5%90%AC.html</guid>
-      <source url="https://zecdn.top/rss.xml">张涛：山地建筑结构设计实践及细部策略（以贵州、浙江、四川多地项目为例）</source>
+      <link>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BC%A0%E6%B6%9B%EF%BC%9A%E5%B1%B1%E5%9C%B0%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E5%8F%8A%E7%BB%86%E9%83%A8%E7%AD%96%E7%95%A5%EF%BC%88%E4%BB%A5%E8%B4%B5%E5%B7%9E%E3%80%81%E6%B5%99%E6%B1%9F%E3%80%81%E5%9B%9B%E5%B7%9D%E5%A4%9A%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%BA%E4%BE%8B%EF%BC%89%E4%B8%A8%E7%BB%8F%E5%85%B8%E5%BF%85%E5%90%AC.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E5%BC%A0%E6%B6%9B%EF%BC%9A%E5%B1%B1%E5%9C%B0%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E5%8F%8A%E7%BB%86%E9%83%A8%E7%AD%96%E7%95%A5%EF%BC%88%E4%BB%A5%E8%B4%B5%E5%B7%9E%E3%80%81%E6%B5%99%E6%B1%9F%E3%80%81%E5%9B%9B%E5%B7%9D%E5%A4%9A%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%BA%E4%BE%8B%EF%BC%89%E4%B8%A8%E7%BB%8F%E5%85%B8%E5%BF%85%E5%90%AC.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">张涛：山地建筑结构设计实践及细部策略（以贵州、浙江、四川多地项目为例）</source>
       <description>张涛：山地建筑结构设计实践及细部策略（以贵州、浙江、四川多地项目为例）丨经典必听 Excerpt 海量学习资料，普通会员免费注册，限时特惠。 内容: 同济大学建筑设计研究院(集团)有限公司，建筑设计三院副院长张涛在2019年7月25-27日昆明召开的“第二届全国山地建筑结构技术交流会”上作的题为《山地建筑结构设计实践及细部策略（以贵州、浙江、四川多地项...</description>
       <category>工作</category>
       <pubDate>Mon, 24 Jan 2022 00:00:00 GMT</pubDate>
@@ -5411,9 +5404,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>结构设计易违反的强制性条文“六大类”108条</title>
-      <link>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%98%93%E8%BF%9D%E5%8F%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E6%80%A7%E6%9D%A1%E6%96%87%E2%80%9C%E5%85%AD%E5%A4%A7%E7%B1%BB%E2%80%9D108%E6%9D%A1.html</link>
-      <guid>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%98%93%E8%BF%9D%E5%8F%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E6%80%A7%E6%9D%A1%E6%96%87%E2%80%9C%E5%85%AD%E5%A4%A7%E7%B1%BB%E2%80%9D108%E6%9D%A1.html</guid>
-      <source url="https://zecdn.top/rss.xml">结构设计易违反的强制性条文“六大类”108条</source>
+      <link>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%98%93%E8%BF%9D%E5%8F%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E6%80%A7%E6%9D%A1%E6%96%87%E2%80%9C%E5%85%AD%E5%A4%A7%E7%B1%BB%E2%80%9D108%E6%9D%A1.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1%E6%98%93%E8%BF%9D%E5%8F%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E6%80%A7%E6%9D%A1%E6%96%87%E2%80%9C%E5%85%AD%E5%A4%A7%E7%B1%BB%E2%80%9D108%E6%9D%A1.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">结构设计易违反的强制性条文“六大类”108条</source>
       <description>荷载及地震作用 1、楼面均布活荷载取值有误。 取值有误的楼面活荷载主要有阳台、走道、门厅、楼梯、电梯公用前室及消防疏散楼梯的活荷载。 可能出现人流密集的建筑主要是指学校、公共建筑和高层建筑。 民用建筑未明确的常用楼面活荷载标准值如下:设浴缸、坐厕的卫生间4KN/㎡；有分隔蹲厕的公共卫生间8KN/㎡（包括填料、隔墙）或按实际考虑；阶梯教室、微机房3KN/...</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
@@ -5755,9 +5748,9 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title>从“等同现浇构造”走向“非等同现浇构造”——装配整体式混凝土结构理论研究与技术研发</title>
-      <link>https://zecdn.top/work/%E6%96%B0%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/EMC%E4%BD%93%E7%B3%BB.html</link>
-      <guid>https://zecdn.top/work/%E6%96%B0%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/EMC%E4%BD%93%E7%B3%BB.html</guid>
-      <source url="https://zecdn.top/rss.xml">从“等同现浇构造”走向“非等同现浇构造”——装配整体式混凝土结构理论研究与技术研发</source>
+      <link>https://jiange1236.github.io/work/%E6%96%B0%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/EMC%E4%BD%93%E7%B3%BB.html</link>
+      <guid>https://jiange1236.github.io/work/%E6%96%B0%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB/EMC%E4%BD%93%E7%B3%BB.html</guid>
+      <source url="https://jiange1236.github.io/rss.xml">从“等同现浇构造”走向“非等同现浇构造”——装配整体式混凝土结构理论研究与技术研发</source>
       <description>[TOC] 从“等同现浇构造”走向“非等同现浇构造”——装配整体式混凝土结构理论研究与技术研发 郁银泉 全国工程勘察设计大师，中国建筑标准设计研究院有限公司副总经理、总工程师，教授级高级工程师。长期从事结构工程研究，在装配式建筑、钢结构建筑、超限高层以及工程建设标准化等多个领域有很深造诣。获人社部、国务院国资委授予的“中央企业劳动模范”称号，中国工程建...</description>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>[TOC]</p>
@@ -5898,41 +5891,33 @@ dnsmasq也是类似的工作方式。</p>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/fun/</link>
-      <guid>https://zecdn.top/fun/</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
-      <description>sticky: true title: 娱乐 description: 娱乐分类 category: 娱乐 tag: 娱乐 article: false timeline: false 您是第 位访问者</description>
-      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title></title>
-      <link>https://zecdn.top/finance/</link>
-      <guid>https://zecdn.top/finance/</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/finance/</link>
+      <guid>https://jiange1236.github.io/finance/</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>sticky: true title: 理财 description: 理财分类 category: 理财 tag: 理财 article: false timeline: false 您是第 位访问者</description>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/others/</link>
-      <guid>https://zecdn.top/others/</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
-      <description>sticky: true title: 其它 description: 其它分类 category: 其它 tag: 其它 article: false timeline: false 您是第 位访问者</description>
+      <link>https://jiange1236.github.io/fun/</link>
+      <guid>https://jiange1236.github.io/fun/</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
+      <description>sticky: true title: 娱乐 description: 娱乐分类 category: 娱乐 tag: 娱乐 article: false timeline: false 您是第 位访问者</description>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title></title>
-      <link>https://zecdn.top/photo/</link>
-      <guid>https://zecdn.top/photo/</guid>
-      <source url="https://zecdn.top/rss.xml"></source>
+      <link>https://jiange1236.github.io/photo/</link>
+      <guid>https://jiange1236.github.io/photo/</guid>
+      <source url="https://jiange1236.github.io/rss.xml"></source>
       <description>sticky: true title: 摄影 description: 摄影分类 category: 摄影 tag: 摄影 article: false timeline: false 您是第 位访问者</description>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>技术资料</title>
-      <link>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/</link>
-      <guid>https://zecdn.top/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/</guid>
-      <source url="https://zecdn.top/rss.xml">技术资料</source>
+      <link>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/</link>
+      <guid>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/</guid>
+      <source url="https://jiange1236.github.io/rss.xml">技术资料</source>
       <description>技术资料分类</description>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>

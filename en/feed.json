@@ -1,9 +1,19 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Zeblog",
-  "home_page_url": "https://zecdn.top/en/",
-  "feed_url": "https://zecdn.top/en/feed.json",
+  "home_page_url": "https://jiange1236.github.io/en/",
+  "feed_url": "https://jiange1236.github.io/en/feed.json",
   "description": "Zine⁶ personal blog",
-  "favicon": "https://zecdn.top/favicon.ico",
-  "items": []
+  "items": [
+    {
+      "title": "Zine⁶ Intro",
+      "url": "https://jiange1236.github.io/en/about/",
+      "id": "https://jiange1236.github.io/en/about/",
+      "content_html": "",
+      "date_published": "2022-01-07T00:00:00.000Z",
+      "date_modified": "2024-06-11T11:18:48.000Z",
+      "authors": [],
+      "tags": []
+    }
+  ]
 }
