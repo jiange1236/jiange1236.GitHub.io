@@ -19,7 +19,7 @@ export default defineUserConfig({
       `
     ]
 	],
-	
+
   locales: {
     "/en/": {
       lang: "en-US",

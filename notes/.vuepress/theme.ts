@@ -17,7 +17,7 @@ export default hopeTheme({
   repo: "jiange1236/jiange1236.GitHub.io",
 
   docsDir: "notes",
-  
+
   blog: {
 	medias: {
       Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
@@ -67,7 +67,7 @@ export default hopeTheme({
       sidebar: enSidebar,
 
       footer: "To Be A Better Man",
-	  
+
 	  copyright: 'MIT Licensed, © 2019-present Zine⁶ | <a href="/en/about/site.html" target="_blank">About Site</a>',
 
       displayFooter: true,
@@ -95,7 +95,7 @@ export default hopeTheme({
       footer: "不忘初心，方得始终",
 
       copyright: '基于 MIT 协议，© 2019-至今 Zine⁶ | <a href="/about/site.html">关于网站</a>',
-	  	  
+
 	  displayFooter: true,
 
       blog: {
@@ -148,13 +148,13 @@ export default hopeTheme({
 	shiki: {
 	  langs: ['ts', 'json', 'vue', 'php', 'md', 'bash', 'diff', 'python'],
 	  },
-	
+
 	feed: {
         atom: true,
         json: true,
         rss: true,
       },
-	
+
     components: {
       components: ["Badge", "VPCard"],
     },
