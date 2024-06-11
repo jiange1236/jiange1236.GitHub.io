@@ -1,4 +1,5 @@
 ---
+date: 2024-06-09
 home: true
 title: Zine 介绍
 icon: people
