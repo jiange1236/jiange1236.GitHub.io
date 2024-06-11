@@ -1,273 +1,282 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { enNavbar, zhNavbar } from "./navbar/index.js";
+import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
-import { enNavbarConfig, zhNavbarConfig } from "./navbar.js";
-import { enSidebarConfig, zhSidebarConfig } from "./sidebar/index.js";
-
-export default hopeTheme(
-  {
-    hostname: "https://zecdn.top",
+export default hopeTheme({
+  hostname: "https://jiange1236.github.io",
 
   author: {
-      name: "Zine⁶",
-      url: "https://zecdn.top",
+    name: "Zine⁶",
+    url: "https://zecdn.top",
   },
 
-    favicon: "/favicon.ico",
+  iconAssets: "fontawesome-with-brands",
 
-    iconAssets: "//at.alicdn.com/t/font_2410206_vuzkjonf4s9.css",
+  logo: "/logo.png",
 
-    logo: "/blog.png",
+  repo: "jiange1236/jiange1236.GitHub.io",
 
-    repo: "jiange1236/jiange1236.GitHub.io",
-
-    repoDisplay: false,
-
-    docsDir: "notes",
-
-    locales: {
-      "/": {
-        navbar: zhNavbarConfig,
-        sidebar: zhSidebarConfig,
-
-        footer:
-          '主题使用 <a href="https://theme-hope.vuejs.press/zh/">VuePress Theme Hope</a> | <a href="https://mister-hope.com/about/site.html" target="_blank">关于网站</a>',
-
-        copyright: "基于 MIT 协议，© 2019-至今 Zine⁶",
-
-        blog: {
-          description: "一级注册结构工程师 | 《时代周刊》2006年度风云人物",
-          intro: "/about/",
-          medias: {
-      Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
-//      Bitbucket: "https://example.com",
-//      Dingding: "https://example.com",
-//      Discord: "https://example.com",
-//      Dribbble: "https://example.com",
-      Email: "mailto:183465355@qq.com",
-//      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-//      Flipboard: "https://example.com",
-      Gitee: "https://gitee.com/jiange1236",
-      GitHub: "https://github.com/jiange1236",
-//      Gitlab: "https://example.com",
-//      Gmail: "https://example.com",
-//      Instagram: "https://example.com",
-//      Lines: "https://example.com",
-//      Linkedin: "https://example.com",
-//      Pinterest: "https://example.com",
-//      Pocket: "https://example.com",
-//      QQ: "https://qq.com",
-//      Qzone: "https://example.com",
-//      Reddit: "https://example.com",
-//      Rss: "https://example.com",
-//      Steam: "https://example.com",
-      Twitter: "https://twitter.com/zhouzijian1236",
-//      Wechat: "https://example.com",
-      Weibo: "https://weibo.com/u/1873128010",
-//      Whatsapp: "https://example.com",
-//      Youtube: "https://example.com",
-      Zhihu: "https://www.zhihu.com/people/zhouzijian",
-          },
-        },
-      },
-
-      "/en/": {
-        navbar: enNavbarConfig,
-        sidebar: enSidebarConfig,
-
-        footer:
-          'Theme by <a href="https://theme-hope.vuejs.press">vuepress-theme-hope</a>',
-
-        copyright: "MIT Licensed, © 2019-present Zine⁶",
-
+  docsDir: "notes",
+  
   blog: {
-          description:
-            "VuePress project member, front-end developer, studying for a master's degree in theoretical physics",
-          intro: "/en/about/",
-    medias: {
+	medias: {
       Baidu: "https://tieba.baidu.com/home/main?un=jiange1236",
+//      BiliBili: "https://example.com",
 //      Bitbucket: "https://example.com",
 //      Dingding: "https://example.com",
 //      Discord: "https://example.com",
 //      Dribbble: "https://example.com",
       Email: "mailto:183465355@qq.com",
 //      Evernote: "https://example.com",
-      Facebook: "https://example.com",
+//      Facebook: "https://example.com",
 //      Flipboard: "https://example.com",
       Gitee: "https://gitee.com/jiange1236",
       GitHub: "https://github.com/jiange1236",
 //      Gitlab: "https://example.com",
-//      Gmail: "https://example.com",
+//      Gmail: "mailto:info@example.com",
 //      Instagram: "https://example.com",
+//      Lark: "https://example.com",
 //      Lines: "https://example.com",
 //      Linkedin: "https://example.com",
 //      Pinterest: "https://example.com",
 //      Pocket: "https://example.com",
-//      QQ: "https://qq.com",
+//      QQ: "https://example.com",
 //      Qzone: "https://example.com",
 //      Reddit: "https://example.com",
 //      Rss: "https://example.com",
 //      Steam: "https://example.com",
-      Twitter: "https://twitter.com/zhouzijian1236",
+      Twitter: "https://x.com/jiange1236",
 //      Wechat: "https://example.com",
       Weibo: "https://weibo.com/u/1873128010",
 //      Whatsapp: "https://example.com",
 //      Youtube: "https://example.com",
       Zhihu: "https://www.zhihu.com/people/zhouzijian",
-          },
-        },
+      VuePressThemeHope: {
+        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+        link: "https://theme-hope.vuejs.press",
       },
     },
+  },
 
-    displayFooter: true,
-    copyright: "Copyright © 2019-present Zine⁶",
+  locales: {
+    "/en/": {
+      // navbar
+      navbar: enNavbar,
+
+      // sidebar
+      sidebar: enSidebar,
+
+      footer: "To Be A Better Man",
+	  
+	  copyright: 'MIT Licensed, © 2019-present Zine⁶ | <a href="/en/about/site.html" target="_blank">About Site</a>',
+
+      displayFooter: true,
+
+      blog: {
+        description: "A Civil Engineer",
+        intro: "/en/about/",
+      },
+
+//      metaLocales: {
+//        editLink: "Edit this page on GitHub",
+//      },
+    },
+
+    /**
+     * Chinese locale config
+     */
+    "/": {
+      // navbar
+      navbar: zhNavbar,
+
+      // sidebar
+      sidebar: zhSidebar,
+
+      footer: "不忘初心，方得始终",
+
+      copyright: '基于 MIT 协议，© 2019-至今 Zine⁶ | <a href="/about/site.html">关于网站</a>',
+	  	  
+	  displayFooter: true,
+
+      blog: {
+        description: "一级注册结构工程师 | 《时代周刊》2006年度风云人物",
+        intro: "/about/",
+      },
+
+      // page meta
+//      metaLocales: {
+//        editLink: "在 GitHub 上编辑此页",
+//      },
+    },
+  },
+
+  //encrypt: {
+  //  config: {
+  //    "/demo/encrypt.html": ["1234"],
+  //    "/zh/demo/encrypt.html": ["1234"],
+  //  },
+  //},
+
+  // enable it to preview all changes in time
+  // hotReload: true,
 
   plugins: {
     blog: {
         excerptLength: 0,
-    },
-
-	shiki: {
-	  langs: ['ts', 'json', 'vue', 'php', 'md', 'bash', 'diff', 'python'],
-	},
+      },
 
     comment: {
-        provider: "Waline",
-        serverURL: "https://waline.zecdn.top",
-    },
-
-      docsearch: {
+        provider: "Giscus",
+        repo: "jiange1236/jiange1236.github.io",
+		repoId: "R_kgDOHLemeQ",
+		category: "Announcements",
+		categoryId: "DIC_kwDOHLemec4CPFA-",
+      },
+    // Install @waline/client before enabling it
+    // Note: This is for testing ONLY!
+    // You MUST generate and use your own comment service in production.
+    // comment: {
+    //   provider: "Waline",
+    //   serverURL: "https://waline-comment.vuejs.press",
+    // },
+    docsearch: {
         appId: "I7SASQM4UK",
         apiKey: "a20baaa964754c629bf5a7d027ffe7b7",
         indexName: "zeblog",
       },
 
-    feed: {
-      atom: true,
-      json: true,
-      rss: true,
+	shiki: {
+	  langs: ['ts', 'json', 'vue', 'php', 'md', 'bash', 'diff', 'python'],
+	  },
+	
+	feed: {
+        atom: true,
+        json: true,
+        rss: true,
+      },
+	
+    components: {
+      components: ["Badge", "VPCard"],
     },
 
+    // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
-        align: true,
-        codetabs: true,
-        demo: true,
-        figure: true,
-        flowchart: true,
-        footnote: true,
-        imgLazyload: true,
-        imgMark: true,
-        imgSize: true,
-        mathjax: true,
-        mermaid: true,
-        revealJs: true,
-        sub: true,
-        sup: true,
-        vPre: true,
-      },
-
-      pwa: {
-        themeColor: "#5c92d1",
-        cacheHTML: false,
-        maxSize: 3072,
-        apple: {
-          icon: "/assets/icon/apple-touch-icon.png",
-          statusBarColor: "white",
-    },
-        msTile: {
-          image: "/assets/icon/ms-icon-144.png",
-          color: "#ffffff",
-  },
-        manifest: {
-          name: "Zine⁶ 的个人博客",
-          short_name: "Zine⁶ Blog",
-          description: "Zine⁶ 的个人博客",
-          theme_color: "#5c92d1",
-          icons: [
-            {
-              src: "/assets/icon/chrome-192.png",
-              sizes: "192x192",
-              type: "image/png",
-            },
-            {
-              src: "/assets/icon/chrome-512.png",
-              sizes: "512x512",
-              type: "image/png",
-            },
-            {
-              src: "/assets/icon/chrome-mask-192.png",
-              sizes: "192x192",
-              purpose: "maskable",
-              type: "image/png",
-            },
-            {
-              src: "/assets/icon/chrome-mask-512.png",
-              sizes: "512x512",
-              purpose: "maskable",
-              type: "image/png",
-            },
-          ],
-          shortcuts: [
-            {
-              name: "分类",
-              short_name: "分类",
-              icons: [
-                {
-                  src: "/assets/icon/category-maskable.png",
-                  sizes: "192x192",
-                  purpose: "maskable",
-                  type: "image/png",
-                },
-              ],
-              url: "/category/",
-              description: "文章分类分组",
-            },
-            {
-              name: "标签",
-              short_name: "标签",
-              icons: [
-                {
-                  src: "/assets/icon/tag-maskable.png",
-                  sizes: "192x192",
-                  purpose: "maskable",
-                  type: "image/png",
-                },
-              ],
-              url: "/tag/",
-              description: "文章标签分组",
-            },
-            {
-              name: "时间线",
-              short_name: "时间线",
-              icons: [
-                {
-                  src: "/assets/icon/timeline-maskable.png",
-                  sizes: "192x192",
-                  purpose: "maskable",
-                  type: "image/png",
-                },
-              ],
-              url: "/timeline/",
-              description: "时间线文章列表",
-            },
-            {
-              name: "个人介绍",
-              short_name: "个人介绍",
-              icons: [
-                {
-                  src: "/assets/icon/about-maskable.png",
-                  sizes: "192x192",
-                  purpose: "maskable",
-                  type: "image/png",
-                },
-              ],
-              url: "/about/",
-              description: "个人介绍",
-            },
-          ],
+      align: true,
+      attrs: true,
+      codetabs: true,
+      component: true,
+      demo: true,
+      figure: true,
+      imgLazyload: true,
+	  imgMark: true,
+      imgSize: true,
+      include: true,
+      mark: true,
+      plantuml: true,
+      spoiler: true,
+      stylize: [
+        {
+          matcher: "Recommended",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
+          },
         },
-      },
+      ],
+      sub: true,
+      sup: true,
+      tabs: true,
+      tasklist: true,
+      vPre: true,
+      flowchart: true,
+	  mathjax: true,
+	  mermaid: true,
+	  revealJs: true,
+	  footnote: true,
+      // install chart.js before enabling it
+      // chart: true,
+
+      // insert component easily
+
+      // install echarts before enabling it
+      // echarts: true,
+
+      // gfm requires mathjax-full to provide tex support
+      // gfm: true,
+
+      // install katex before enabling it
+      // katex: true,
+
+      // playground: {
+      //   presets: ["ts", "vue"],
+      // },
+
+      // install @vue/repl before enabling it
+      // vuePlayground: true,
+
+      // install sandpack-vue3 before enabling it
+      // sandpack: true,
     },
+
+    pwa: true,
+	//   {
+    //   favicon: "/favicon.ico",
+    //   cacheHTML: true,
+    //   cacheImage: true,
+    //   appendBase: true,
+    //   apple: {
+    //     icon: "/assets/icon/apple-icon-152.png",
+    //     statusBarColor: "black",
+    //   },
+    //   msTile: {
+    //     image: "/assets/icon/ms-icon-144.png",
+    //     color: "#ffffff",
+    //   },
+    //   manifest: {
+    //     icons: [
+    //       {
+    //         src: "/assets/icon/chrome-mask-512.png",
+    //         sizes: "512x512",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-mask-192.png",
+    //         sizes: "192x192",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-512.png",
+    //         sizes: "512x512",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-192.png",
+    //         sizes: "192x192",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //     shortcuts: [
+    //       {
+    //         name: "Demo",
+    //         short_name: "Demo",
+    //         url: "/demo/",
+    //         icons: [
+    //           {
+    //             src: "/assets/icon/guide-maskable.png",
+    //             sizes: "192x192",
+    //             purpose: "maskable",
+    //             type: "image/png",
+    //           },
+    //         ],
+    //       },
+    //     ],
+    //   },
+    // },
   },
-  false,
-);
+});

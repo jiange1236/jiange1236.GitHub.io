@@ -1,9 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const zhNavbarConfig = navbar([
-  "/",
+export const zhNavbar = navbar([
   { text: "主页", link: "/", icon: "home"},
-  { text: "项目", link: "/home", icon:"list-check" },
   { text: "工作", link: "/work/", icon:"briefcase" },
   { text: "学习", link: "/study/", icon:"book-open"},
   { text: "计算机", link: "/tech/", icon:"desktop"},
@@ -24,16 +22,9 @@ export const zhNavbarConfig = navbar([
 				{ text: "Cloudflare", link: "https://zeblog.pages.dev/" },
 				{ text: "Netflify", link: "https://zeblog.netlify.app/" },
 				{ text: "Vercel", link: "http://zeblog.vercel.app/" },
-				{ text: "Render", link: "https://zeblog.onrender.com/" },		
+				{ text: "Render", link: "https://zeblog-zyd3.onrender.com/" },		
 			],
 		},
 	],
   },
-]);
-
-export const enNavbarConfig = navbar([
-  "/en/",
-  "/en/note/",
-  "/en/code/",
-  "/en/software/",
 ]);

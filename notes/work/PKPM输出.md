@@ -1,5 +1,4 @@
 ---
-index: 6
 title: PKPM输出
 date: 2022-05-13
 isOriginal: true
@@ -9,6 +8,7 @@ tag:
   - 工作
   - PKPM
 article: true
+star: true
 ---
 
 [TOC]

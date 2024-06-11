@@ -6,7 +6,7 @@ title: 主页
 bgImage: https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images
 heroText: Zeblog
 heroImage: /logo.png
-tagline: 不忘初心，方得始终
+tagline: To Be A Better Man
 heroFullScreen: true
 head:
   - - meta
@@ -17,17 +17,17 @@ head:
       content: B31F3DC544415A88304FF62DF09DB917
 
 projects:
-  - name: 工作笔记
-    desc: 土木工程设计/工程笔记
+  - name: Work Notes
+    desc: Civil Engineering Notes
     link: /work/
     icon: project
 
-  - name: 学习笔记
-    desc: 个人学习的笔记
+  - name: Study Notes
+    desc: Personal Study Notes
     link: /study/
     icon: book
 
-  - name: 个人简介
+  - name: Intro
     link: /about/
     icon: link
 
