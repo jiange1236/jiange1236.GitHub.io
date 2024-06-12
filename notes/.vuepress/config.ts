@@ -33,6 +33,12 @@ export default defineUserConfig({
     },
   },
 
+  markdown: {
+    headers: {
+      level: [1, 2, 3],
+    },
+  },
+
   theme,
 
   plugins: [appendDatePlugin()],
