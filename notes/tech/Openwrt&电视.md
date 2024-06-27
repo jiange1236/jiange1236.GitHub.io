@@ -25,17 +25,31 @@ src/gz openwrt_kiddin9 https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/k
 find / -type f -size +5120b
 ```
 
-<<<<<<< HEAD
 定制软件包
 
 ```
 luci-app-wechatpush luci-app-smartdns luci-app-v2raya luci-app-watchcat tailscale v2ray-core v2raya smartdns watchcat ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare
 ```
 
+**备份软件包列表**
+
+SSH登录到OpenWrt，并执行如下命令，备份当前已安装的软件包列表。
+
+```
+opkg list-installed | cut -f 1 -d ' ' > /etc/config/packages.list
+```
+
+保存路径为 `/etc/config` ，可以在系统更新后仍保留下来。
+
+在更新完系统后，再次SSH登录到OpenWrt，执行如下命令，可以批量安装备份下来的软件包。（执行前记得要确保已经联网并更新过lists哈）
+
+```
+opkg update
+cat /etc/config/packages.list | opkg install
+```
 
 
-=======
->>>>>>> 198c2116c5109f2dc09ab42ad8eb0a95319b83d1
+
 ## R2S
 
 https://github.com/fanck0605/openwrt-nanopi-r2s
@@ -381,14 +395,11 @@ https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 
 ```
 50 5 * * * [ -f /etc/AdGuardHome/data/querylog.json.1 ] && rm /etc/AdGuardHome/data/querylog.json.1
-<<<<<<< HEAD
 ```
 
 我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
 此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
 
-=======
->>>>>>> 198c2116c5109f2dc09ab42ad8eb0a95319b83d1
 ```
 [/csdn.net/]quic://dns.alidns.com
 [/dbankcloud.cn/dbankcloud.ru/dbankcloud.com/]quic://dns.alidns.com
@@ -616,13 +627,7 @@ tailscale up
 https://tailscale.com/kb/1019/subnets/?q=subnet
 
 ```
-tailscale up --advertise-routes=192.168.2.0/24
-```
-
-Linux开启接受子路由
-
-```
-tailscale up --accept-routes
+tailscale up --advertise-routes=10.0.0.0/24 --accept-routes  --accept-dns=false
 ```
 
 1. 接口创建 `Tailscale`不配置协议，防火墙创建 `Tailscale`，保存并应用
