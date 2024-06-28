@@ -14,6 +14,16 @@ article: false
 timeline: false
 ---
 
+```component VPBanner
+title: 摄影
+content: 摄影分类
+logo: 
+color: var(--banner-text)
+background: rgba(217, 244, 208, 0.5)
+actions:
+  - text: 摄影
+    link: /photo/
+```
 
 <p align="center"> 
   <img src="https://cdn.jsdelivr.net/gh/jiange1236/jiange1236@main/github-metrics.svg" /> 

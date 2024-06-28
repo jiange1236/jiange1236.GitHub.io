@@ -14,6 +14,16 @@ article: false
 timeline: false
 ---
 
+```component VPBanner
+title: 理财
+content: 理财分类
+logo: 
+color: var(--banner-text)
+background: rgba(217, 244, 208, 0.5)
+actions:
+  - text: 理财
+    link: /finance/
+```
 
 <p align="center"> 
   <img src="https://cdn.jsdelivr.net/gh/jiange1236/jiange1236@main/github-metrics.svg" /> 
