@@ -4,7 +4,7 @@
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
   <rights>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</rights>
-  <updated>2024-06-28T09:06:44.767Z</updated>
+  <updated>2024-06-28T09:31:24.397Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -6859,7 +6859,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text"></title>
     <id>https://jiange1236.github.io/finance/</id>
     <link href="https://jiange1236.github.io/finance/"/>
-    <updated>2024-06-28T09:05:32.000Z</updated>
+    <updated>2024-06-28T09:30:09.000Z</updated>
     <summary type="html"><![CDATA[<hr>
 <p>sticky: true
 title: 理财
@@ -6880,7 +6880,7 @@ timeline: false</li>
     <title type="text"></title>
     <id>https://jiange1236.github.io/fun/</id>
     <link href="https://jiange1236.github.io/fun/"/>
-    <updated>2024-06-28T09:05:32.000Z</updated>
+    <updated>2024-06-28T09:30:09.000Z</updated>
     <summary type="html"><![CDATA[<hr>
 <p>sticky: true
 title: 娱乐
@@ -6901,7 +6901,7 @@ timeline: false</li>
     <title type="text"></title>
     <id>https://jiange1236.github.io/photo/</id>
     <link href="https://jiange1236.github.io/photo/"/>
-    <updated>2024-06-28T09:05:32.000Z</updated>
+    <updated>2024-06-28T09:30:09.000Z</updated>
     <summary type="html"><![CDATA[<hr>
 <p>sticky: true
 title: 摄影
