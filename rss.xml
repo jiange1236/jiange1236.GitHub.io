@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 28 Jun 2024 08:47:59 GMT</pubDate>
-    <lastBuildDate>Fri, 28 Jun 2024 08:47:59 GMT</lastBuildDate>
+    <pubDate>Fri, 28 Jun 2024 09:06:44 GMT</pubDate>
+    <lastBuildDate>Fri, 28 Jun 2024 09:06:44 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</copyright>
@@ -5692,7 +5692,7 @@ dnsmasq也是类似的工作方式。</p>
       <link>https://jiange1236.github.io/finance/</link>
       <guid>https://jiange1236.github.io/finance/</guid>
       <source url="https://jiange1236.github.io/rss.xml"></source>
-      <description>sticky: true title: 理财 description: 理财分类 category: 理财 tag: 理财 article: false timeline: false 您是第 位访问者</description>
+      <description>sticky: true title: 理财 description: 理财分类 category: 理财 tag: 理财 article: false timeline: false</description>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -5700,7 +5700,7 @@ dnsmasq也是类似的工作方式。</p>
       <link>https://jiange1236.github.io/fun/</link>
       <guid>https://jiange1236.github.io/fun/</guid>
       <source url="https://jiange1236.github.io/rss.xml"></source>
-      <description>sticky: true title: 娱乐 description: 娱乐分类 category: 娱乐 tag: 娱乐 article: false timeline: false 您是第 位访问者</description>
+      <description>sticky: true title: 娱乐 description: 娱乐分类 category: 娱乐 tag: 娱乐 article: false timeline: false</description>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
     </item>
     <item>
@@ -5708,7 +5708,7 @@ dnsmasq也是类似的工作方式。</p>
       <link>https://jiange1236.github.io/photo/</link>
       <guid>https://jiange1236.github.io/photo/</guid>
       <source url="https://jiange1236.github.io/rss.xml"></source>
-      <description>sticky: true title: 摄影 description: 摄影分类 category: 摄影 tag: 摄影 article: false timeline: false 您是第 位访问者</description>
+      <description>sticky: true title: 摄影 description: 摄影分类 category: 摄影 tag: 摄影 article: false timeline: false</description>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
     </item>
     <item>
