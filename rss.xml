@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 27 Jun 2024 00:37:45 GMT</pubDate>
-    <lastBuildDate>Thu, 27 Jun 2024 00:37:45 GMT</lastBuildDate>
+    <pubDate>Fri, 28 Jun 2024 08:47:59 GMT</pubDate>
+    <lastBuildDate>Fri, 28 Jun 2024 08:47:59 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</copyright>
@@ -162,20 +162,6 @@
 ━┃┃━┃┃┃┏━┛┗━┓┃┗━━┛┃┃┗━━━┓━
 ━┗┛━┗━┛┗━━━━┛┗━━━━┛┗━━━━┛━</p>
 <p>瓦的开黑群：222517456</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title></title>
-      <link>https://jiange1236.github.io/tech/Typora.html</link>
-      <guid>https://jiange1236.github.io/tech/Typora.html</guid>
-      <source url="https://jiange1236.github.io/rss.xml"></source>
-      <description>第一步： 下载最新版本的Typora安装 第二部： 安装完后，进入typora的安装目录下的 \resources\page-dist\static\js 目录，找到 LicenseIndex开头的文件，我这里文件名如下： Lisenselndex.180dd4c7.b98d5f1f.chunk.js 第三部：用文本编辑器打开该文件，搜索hasActi...</description>
-      <pubDate>Thu, 14 Dec 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>第一步： 下载最新版本的Typora安装</p>
-<p>第二部： 安装完后，进入typora的安装目录下的 \resources\page-dist\static\js 目录，找到 LicenseIndex开头的文件，我这里文件名如下：</p>
-<p>Lisenselndex.180dd4c7.b98d5f1f.chunk.js</p>
-<p>第三部：用文本编辑器打开该文件，搜索hasActivated="true"<mark>e.hasActivated并将其替换为hasActivated="true"</mark>"true"
-（修改前，可将该文件备份一下，万一操作失误，可以进行恢复）</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -499,7 +485,7 @@ crontab的基本格式：</p>
 <span class="line"><span>net.ipv4.ip_forward = 1</span></span>
 <span class="line"><span>编辑文件后，您可以运行以下命令以使更改立即生效。</span></span>
 <span class="line"><span># sysctl -p</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>Watchtower</h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>Watchtower</h1>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run --rm \</span></span>
 <span class="line"><span>  -v /var/run/docker.sock:/var/run/docker.sock \</span></span>
 <span class="line"><span>  containrrr/watchtower \</span></span>
@@ -544,7 +530,18 @@ crontab的基本格式：</p>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>查看密码</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker exec -it alist ./alist admin</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>使用<a href="http://ip:5244/" target="_blank" rel="noopener noreferrer">http://ip:5244</a>    来登录alist点击下面的管理输入管理员的账号和密码</p>
-<h1>Homepage</h1>
+<h2>小雅Alist</h2>
+<p><strong>小雅Alist的相关周边</strong></p>
+<p>一键脚本</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>bash -c "$(curl --insecure -fsSL https://ddsrem.com/xiaoya_install.sh)"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>相关地址</p>
+<p>https://github.com/DDS-Derek/xiaoya-alist</p>
+<p><strong>小雅Alist</strong></p>
+<p>一键安装和更新容器，标准模式，打开端口 5678</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>bash -c "$(curl http://docker.xiaoya.pro/update_new.sh)"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>一键安装和更新容器，host模式（推荐，软路由和NAS上更少网络故障，打开端口 5678）</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>bash -c "$(curl http://docker.xiaoya.pro/update_new.sh)" -s host</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>Homepage</h1>
 <p><strong>Homepage</strong></p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -p 3000:3000 -v /etc/homepage:/app/config -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/benphelps/homepage:latest</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>Homarr</strong></p>
@@ -5723,7 +5720,7 @@ dnsmasq也是类似的工作方式。</p>
       <category>工作</category>
       <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p align="center"> 
-  <img src="https://metrics.lecoq.io/jiange1236?template=classic&amp;isocalendar=1&amp;languages=1&amp;people=1&amp;activity=1&amp;achievements=1&amp;lines=1&amp;repositories=1&amp;notable=1&amp;introduction=1&amp;pagespeed=1&amp;repositories=100&amp;repositories.batch=100&amp;repositories.forks=false&amp;repositories.affiliations=owner&amp;isocalendar.duration=full-year&amp;languages.limit=8&amp;languages.threshold=0%&amp;languages.colors=github&amp;languages.sections=most-used&amp;languages.indepth=false&amp;languages.analysis.timeout=15&amp;languages.categories=markup%2C programming&amp;languages.recent.categories=markup%2C programming&amp;languages.recent.load=300&amp;languages.recent.days=14&amp;people.limit=24&amp;people.identicons=false&amp;people.identicons.hide=false&amp;people.size=28&amp;people.types=followers%2C following&amp;people.shuffle=false&amp;activity.limit=5&amp;activity.load=300&amp;activity.days=14&amp;activity.visibility=all&amp;activity.timestamps=false&amp;activity.filter=all&amp;achievements.threshold=C&amp;achievements.secrets=true&amp;achievements.display=detailed&amp;achievements.limit=0&amp;notable.from=organization&amp;notable.repositories=false&amp;notable.indepth=false&amp;notable.types=commit&amp;repositories.featured= jiange1236%2Fjiange1236.github.io&amp;introduction.title=true&amp;pagespeed.url=jiange1236.github.io&amp;pagespeed.detailed=false&amp;pagespeed.screenshot=false&amp;config.timezone=Asia%2FShanghai"> 
+  <img src="https://cdn.jsdelivr.net/gh/jiange1236/jiange1236@main/github-metrics.svg"> 
 </p>
 <p align="center"> 
   您是第  <img src="https://profile-counter.glitch.me/jiange1236/count.svg">  位访问者
