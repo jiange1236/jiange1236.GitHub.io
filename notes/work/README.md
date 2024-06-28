@@ -28,3 +28,5 @@ actions:
 <p align="center"> 
   您是第  <img src="https://profile-counter.glitch.me/jiange1236/count.svg" />  位访问者
 </p>
+
+<Share colorful />
