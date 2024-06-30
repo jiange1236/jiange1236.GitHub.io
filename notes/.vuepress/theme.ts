@@ -156,7 +156,7 @@ export default hopeTheme({
       },
 
     components: {
-      components: ['Badge', 'VPBanner', 'VPCard', 'Share', 'SiteInfo'],
+      components: ['Badge', 'PDF', 'Share', 'SiteInfo', 'VPBanner', 'VPCard'],
     },
 
     // These features are enabled for demo, only preserve features you need here

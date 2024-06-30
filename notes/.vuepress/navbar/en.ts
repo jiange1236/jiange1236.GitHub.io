@@ -8,12 +8,19 @@ export const enNavbar = navbar([
   { text: "Fun", link: "/fun/", icon:"dice"},  
   { text: "Photo", link: "/photo/", icon:"camera"},
   { text: "Finance", link: "/finance/", icon:"chart-line"},
-  { text: "Others", link: "/others/", icon:"bolt"},
+  {
+	text: "Others",
+	icon: "bolt",
+	prefix: "/others/",
+	children: [
+		{ text: "Standards", link: "standards/" ,icon:"fa-brands fa-readme"},
+	],
+  },
   {
 	text: "Mirror",
 	icon: "cube",
 	children: [
-		{ text: "CloudflareYes", link: "https://stock.hostmonit.com/CloudFlareYes" ,icon:"github"},
+		{ text: "CloudflareYes", link: "https://stock.hostmonit.com/CloudFlareYes" ,icon:"fa-brands fa-github"},
 		{ text: "Github Mirror", link: "http://lib.zuotiyi.cn/tool/github.html" ,icon:"archway"},
 		{ 
 			text:"Blog Mirror",

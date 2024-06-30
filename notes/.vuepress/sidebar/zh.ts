@@ -7,6 +7,7 @@ export const zhSidebar = sidebar({
   "/finance/": "structure",
   "/fun/": "structure",
   "/others/": "structure",
+  "/others/standards/": "structure",
   "/photo/": "structure",
   "/study/": "structure",
   "/tech/": "structure",

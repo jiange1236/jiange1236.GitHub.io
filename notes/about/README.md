@@ -36,3 +36,5 @@ star: true
 ## 联系方式
 
 你可以通过邮箱 mailto:183465355@qq.com 发函。
+
+<Share colorful />

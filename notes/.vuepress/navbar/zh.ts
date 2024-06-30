@@ -8,12 +8,19 @@ export const zhNavbar = navbar([
   { text: "娱乐", link: "/fun/", icon:"dice"},  
   { text: "摄影", link: "/photo/", icon:"camera"},
   { text: "理财", link: "/finance/", icon:"chart-line"},
-  { text: "其它", link: "/others/", icon:"bolt"},
+  {
+	text: "其它",
+	icon: "bolt",
+	prefix: "/others/",
+	children: [
+		{ text: "规范", link: "standards/" ,icon:"fa-brands fa-readme"},
+	],
+  },
   {
 	text: "镜像",
 	icon: "cube",
 	children: [
-		{ text: "CloudflareYes", link: "https://stock.hostmonit.com/CloudFlareYes" ,icon:"github"},
+		{ text: "CloudflareYes", link: "https://stock.hostmonit.com/CloudFlareYes" ,icon:"fa-brands fa-github"},
 		{ text: "Github镜像", link: "http://lib.zuotiyi.cn/tool/github.html" ,icon:"archway"},
 		{ 
 			text:"本站镜像",
