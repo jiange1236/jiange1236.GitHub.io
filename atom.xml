@@ -4,7 +4,7 @@
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
   <rights>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</rights>
-  <updated>2024-06-30T15:05:46.857Z</updated>
+  <updated>2024-08-04T11:56:33.265Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -15,6 +15,46 @@
   <contributor>
     <name>须尽欢</name>
   </contributor>
+  <entry>
+    <title type="text">建筑分类</title>
+    <id>https://jiange1236.github.io/work/%E9%98%B2%E7%81%AB.html</id>
+    <link href="https://jiange1236.github.io/work/%E9%98%B2%E7%81%AB.html"/>
+    <updated>2024-08-04T11:55:20.000Z</updated>
+    <summary type="html"><![CDATA[
+<p>防火通规5.3.1  下列民用建筑的耐火等级应为一级：</p>
+<p>1  一类高层民用建筑；</p>
+<p>2  二层和二层半式、多层式民用机场航站楼；</p>
+<p>3  A类广播电影电视建筑；</p>
+<p>4  四级生物安全实验室。</p>
+<p>5.3.2  下列民用建筑的耐火等级不应低于二级：</p>
+<p>1  二类高层民用建筑；</p>
+<p>2  一层和一层半式民用机场航站楼；</p>
+<p>3  总建筑面积大于1500m2的单、多层人员密集场所；</p>
+<p>4  B类广播电影电视建筑；</p>
+<p>5  一级普通消防站、二级普通消防站、特勤消防站、战勤保障消防站；</p>]]></summary>
+    <content type="html"><![CDATA[
+<p>防火通规5.3.1  下列民用建筑的耐火等级应为一级：</p>
+<p>1  一类高层民用建筑；</p>
+<p>2  二层和二层半式、多层式民用机场航站楼；</p>
+<p>3  A类广播电影电视建筑；</p>
+<p>4  四级生物安全实验室。</p>
+<p>5.3.2  下列民用建筑的耐火等级不应低于二级：</p>
+<p>1  二类高层民用建筑；</p>
+<p>2  一层和一层半式民用机场航站楼；</p>
+<p>3  总建筑面积大于1500m2的单、多层人员密集场所；</p>
+<p>4  B类广播电影电视建筑；</p>
+<p>5  一级普通消防站、二级普通消防站、特勤消防站、战勤保障消防站；</p>
+<p>6  设置洁净手术部的建筑，三级生物安全实验室；</p>
+<p>7  用于灾时避难的建筑。</p>
+<p>5.3.3  除本规范第5.3.1条、第5.3.2条规定的建筑外，下列民用建筑的耐火等级不应低于三级：</p>
+<p>1  城市和镇中心区内的民用建筑；</p>
+<p>2  老年人照料设施、教学建筑、医疗建筑。</p>
+<figure><figcaption>img</figcaption></figure>
+<h1>耐火极限</h1>
+<p>防火通规5.1.3：建筑高度大于100m的工业与民用建筑楼板的耐火极限不应低于2.00h。一级耐火等级工业与民用建筑的上人平屋顶，屋面板的耐火极限不应低于1.50h；二级耐火等级工业与民用建筑的上人平屋顶，屋面板的耐火极限不应低于1.00h。</p>
+]]></content>
+    <published>2024-08-04T11:55:20.000Z</published>
+  </entry>
   <entry>
     <title type="text">文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</title>
     <id>https://jiange1236.github.io/study/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6Zotero%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Zotero%20translators%E7%9F%A5%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%9F%A5%E4%B9%8E%E7%BF%BB%E8%AF%91%E5%99%A8_Jasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89%EF%BC%88%E5%9B%9B%EF%BC%89-CSDN%E5%8D%9A%E5%AE%A2.html</id>
@@ -37,7 +77,7 @@
     <title type="text">截面表示方法</title>
     <id>https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html</id>
     <link href="https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html"/>
-    <updated>2024-06-09T09:47:21.000Z</updated>
+    <updated>2024-08-04T11:55:20.000Z</updated>
     <summary type="html"><![CDATA[
 <p>增大截面加固法</p>
 <table>
@@ -282,7 +322,7 @@ source: https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?highlight=cloudflare+w
     <title type="text">玩客云</title>
     <id>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</id>
     <link href="https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html"/>
-    <updated>2024-06-28T08:46:45.000Z</updated>
+    <updated>2024-08-04T11:55:20.000Z</updated>
     <summary type="html"><![CDATA[
 <p>安装包</p>
 <p><a href="https://github.com/hzyitc/armbian-onecloud/releases/download/ci-20240311-162146-UTC/Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz" target="_blank" rel="noopener noreferrer">Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz</a></p>]]></summary>
@@ -491,7 +531,10 @@ crontab的基本格式：</p>
 <span class="line"><span>docker stop $(docker ps -a | grep "hassio" | awk '{print $1}')</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>批量删除</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker rmi --force `docker images | grep hassio | awk '{print $3}'`</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>清理空间</h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>重命名镜像</p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker tag docker.lixd.xyz/natpierce/natpierce:latest natpierce/natpierce:latest</span></span>
+<span class="line"><span>docker rmi docker.lixd.xyz/natpierce/natpierce:latest</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2>清理空间</h2>
 <p>查看空间占用</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>df -h</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>查看当前文件夹下占用空间分布</p>
@@ -562,204 +605,10 @@ crontab的基本格式：</p>
 <span class="line"><span>net.ipv4.ip_forward = 1</span></span>
 <span class="line"><span>编辑文件后，您可以运行以下命令以使更改立即生效。</span></span>
 <span class="line"><span># sysctl -p</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>Watchtower</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run --rm \</span></span>
-<span class="line"><span>  -v /var/run/docker.sock:/var/run/docker.sock \</span></span>
-<span class="line"><span>  containrrr/watchtower \</span></span>
-<span class="line"><span>  --cleanup \</span></span>
-<span class="line"><span>  --run-once \</span></span>
-<span class="line"><span>  v2raya homeassistant</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>OpenWrt</h1>
-<p>🔵打开网卡混杂模式</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>ip link set eth0 promisc on</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>🔵创建网络</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker network create -d macvlan --subnet=192.168.30.0/24 --gateway=192.168.30.1 -o parent=eth0 macnet</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>🔘[↑自己根据 玩客云 所在网段修改，如：玩客云IP:10.1.2.11，则10.1.1.0/24 改成 10.1.2.0/24，10.1.1.1改成主路由地址]</p>
-<p>🔵拉取 OpenWRT 镜像</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker pull wfnb/onecloud:23-01-25-beta</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>🔵创建容器</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --name=OpenWrt --restart always --network macnet --privileged wfnb/onecloud:23-01-25-beta /sbin/init</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>docker import openwrt-01.10.2023-meson-meson8b-thunder-onecloud-rootfs.tar.gz kiddin9_openwrt</span></span>
-<span class="line"><span>docker run -d --name=OpenWrt --restart always --network macnet --privileged kiddin9_openwrt /sbin/init</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘--name=OpenWrt 其中OpenWrt是容器名称，可以更改成你想要的，容器名称注意不要和其他容器一样，会冲突</p>
-<p>🔘--ip 10.1.1.13 其中10.1.1.13是容器IP，可以更改成你想要的，容器IP不要重复，这一项可删除</p>
-<p>🔵修改OpenWrt IP</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker exec OpenWrt sed -e "s/10.1.1.13/192.168.30.120/" -i /etc/config/network</span></span>
-<span class="line"><span>docker exec -it OpenWrt bash</span></span>
-<span class="line"><span>/etc/init.d/network restart</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔘OpenWrt 是容器名称，和你创建容器时的一致</p>
-<p>🔘镜像设置的默认IP是10.1.1.13，可通过该命令修改</p>
-<p>🔵管理密码是 password</p>
-<p>🔵LAN口固定IP地址，网关指向主路由IP地址</p>
-<p>iptables -t nat -I POSTROUTING eth0 -j MASQUERADE</p>
-<p>🔴设置 容器不自启动 、 停止容器 和 删除容器</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker container update --restart=no [容器ID]</span></span>
-<span class="line"><span>docker stop [容器ID]</span></span>
-<span class="line"><span>docker rm [容器ID]</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>🔴查看所有镜像</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker images</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>🔘记录下 xuanaimai/openwrt 21-09-15 右边的 IMAGE ID（镜像ID，下面用得到）</p>
-<p>🔴删除镜像</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker rmi [镜像ID]</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>Alist</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --restart=unless-stopped -v /data/alist:/opt/alist/data -v /tmp:/opt/alist/tmp --network=host --name="alist" xhofe/alist:latest</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>查看密码</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker exec -it alist ./alist admin</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>使用<a href="http://ip:5244/" target="_blank" rel="noopener noreferrer">http://ip:5244</a>    来登录alist点击下面的管理输入管理员的账号和密码</p>
-<h2>小雅Alist</h2>
-<p><strong>小雅Alist的相关周边</strong></p>
-<p>一键脚本</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>bash -c "$(curl --insecure -fsSL https://ddsrem.com/xiaoya_install.sh)"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>相关地址</p>
-<p>https://github.com/DDS-Derek/xiaoya-alist</p>
-<p><strong>小雅Alist</strong></p>
-<p>一键安装和更新容器，标准模式，打开端口 5678</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>bash -c "$(curl http://docker.xiaoya.pro/update_new.sh)"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>一键安装和更新容器，host模式（推荐，软路由和NAS上更少网络故障，打开端口 5678）</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>bash -c "$(curl http://docker.xiaoya.pro/update_new.sh)" -s host</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>Homepage</h1>
-<p><strong>Homepage</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -p 3000:3000 -v /etc/homepage:/app/config -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/benphelps/homepage:latest</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>Homarr</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run  \</span></span>
-<span class="line"><span>  --name homarr \</span></span>
-<span class="line"><span>  --restart always \</span></span>
-<span class="line"><span>  -p 7575:7575 \</span></span>
-<span class="line"><span>  -v /data/homarr/configs:/app/data/configs \</span></span>
-<span class="line"><span>  -v /data/homarr/icons:/app/public/icons \</span></span>
-<span class="line"><span>  -d ghcr.io/ajnart/homarr:latest</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Flare</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --name flare --restart=unless-stopped -p 80:5005 -v /data/flare:/app soulteary/flare</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>Sun-Panel</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --restart=always -p 3002:3002 \</span></span>
-<span class="line"><span>-v ~/docker_data/sun-panel/conf:/app/conf \</span></span>
-<span class="line"><span>-v /var/run/docker.sock:/var/run/docker.sock \</span></span>
-<span class="line"><span>--name sun-panel \</span></span>
-<span class="line"><span>hslr/sun-panel:latest</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>V2rayA</h1>
-<p>Docker安装</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d \</span></span>
-<span class="line"><span>  --restart=always \</span></span>
-<span class="line"><span>  --privileged \</span></span>
-<span class="line"><span>  --network=host \</span></span>
-<span class="line"><span>  --name v2raya \</span></span>
-<span class="line"><span>  -e V2RAYA_LOG_FILE=/tmp/v2raya.log \</span></span>
-<span class="line"><span>  -e V2RAYA_V2RAY_BIN=/usr/local/bin/v2ray \</span></span>
-<span class="line"><span>  -e V2RAYA_NFTABLES_SUPPORT=off \</span></span>
-<span class="line"><span>  -e IPTABLES_MODE=legacy \</span></span>
-<span class="line"><span>  -v /lib/modules:/lib/modules:ro \</span></span>
-<span class="line"><span>  -v /etc/resolv.conf:/etc/resolv.conf \</span></span>
-<span class="line"><span>  -v /etc/v2raya:/etc/v2raya \</span></span>
-<span class="line"><span>  mzz2017/v2raya</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Linux安装</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>sudo sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray</span></span>
-<span class="line"><span>systemctl start v2raya  #启动服务</span></span>
-<span class="line"><span>systemctl enable v2raya  #开机启动</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>开启IP转发</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>echo net.ipv4.ip_forward=1 &gt;&gt; /etc/sysctl.conf &amp;&amp; sysctl -p</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>http://ip:2017</p>
-<h1>wireproxy</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run --expose 20173 -p 0.0.0.0:20173:20173 -v /etc/wireguard:/etc/wireproxy --env wireproxyconfigpath=/etc/wireproxy/wireproxy.conf daycat/wireproxy-docker</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>Portainer</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 --name portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v /portainer、data:/data portainer/portainer-ce:latest</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>青龙面板</h1>
-<p>青龙面板:5700</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -dit \</span></span>
-<span class="line"><span>  -v /data/ql:/ql/data \</span></span>
-<span class="line"><span>  --network=host \</span></span>
-<span class="line"><span>  --name qinglong \</span></span>
-<span class="line"><span>  --hostname qinglong \</span></span>
-<span class="line"><span>  --restart unless-stopped \</span></span>
-<span class="line"><span>  whyour/qinglong:latest</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>检查服务</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker exec -it qinglong /bin/bash ql check</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>安装依赖</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker exec -it qinglong bash -c "$(curl -fsSL https://raw.githubusercontent.com/FlechazoPh/QLDependency/main/Shell/XinQLOneKey.sh | bash)"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>修改config.sh</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>RepoFileExtensions="js py sh"</span></span>
-<span class="line"><span>export WX_ADDRESS="周子健@15116155426@@湖南省@长沙市@开福区@珠江郦城@430105@410000"</span></span>
-<span class="line"><span>export jd_jinggeng_address="周子健@15116155426@湖南省@长沙市@开福区@珠江郦城"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>京东脚本</h2>
-<p>1</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker exec -it qinglong ql repo https://ghproxy.com/https://github.com/zero205/JD_tencent_scf.git "jd_|jx_|jdCookie"  "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign|ql" "main"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>2</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker exec -it qinglong ql repo https://github.com/smiek2221/scripts.git "jd_|gua_" "" "ZooFaker_Necklace.js|JDJRValidator_Pure.js|sign_graphics_validate.js"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol>
-<li>KingRan库【推荐❤❤❤❤❤】</li>
-</ol>
-<div class="language-json line-numbers-mode" data-highlighter="shiki" data-ext="json" data-title="json" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https:</span><span style="color:#616E88">//github.com/KingRan/KR.git "jd_|jx_|jdCookie" "activity|backUp" "^jd[^_]|USER|utils|function|sign|sendNotify|ql|JDJR"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>2.Faker3【集合库（很多重复任务，自己禁用）❤❤❤❤】</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//git.metauniverse-cn.com/https://github.com/shufflewzc/faker3.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator|magic|depend|h5sts" "main"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="3">
-<li>yyds【集合库❤❤❤】</li>
-</ol>
-<p>YYDS</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/okyyds/yyds.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "master"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>YYDS_Pure</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/okyyds/yydspure.git "jd_|jx_|gua_|jddj_|jdCookie" "activity|backUp" "^jd[^_]|USER|function|utils|sendNotify|ZooFaker_Necklace.js|JDJRValidator_|sign_graphics_validate|ql|JDSignValidator" "master"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>【注意】拉库前请打开青龙面板-配置文件 第18行 GithubProxyUrl="" 双引号中的内容删除。</p>
-<ol start="4">
-<li>环境保护【推荐❤❤❤❤】</li>
-</ol>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/feverrun/my_scripts.git "jd_|jx_|jddj_|getCookie|getJDCookie" "backUp/activity|backUp/card|backUp/py|backUp/utils/|backUp/test|jd_fruits.js|jd_pet.js|jd_factory.js|jd_health.js|jd_sgmh.js|jd_dreamFactory.js|jd_plantBean.js" "^(jd|JD|JS)[^_]|USER|sendNotify|utils"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="5">
-<li>ccwav大佬的通知增强版和CK检测</li>
-</ol>
-<p>//不包含sendNotify:</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/ccwav/QLScript2.git "jd_" "sendNotify|NoUsed" "ql"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>//包含sendNotify:</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/ccwav/QLScript2.git "jd_" "NoUsed" "ql|sendNotify"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>6.【619】【集合库，可选】</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/gys619/jdd.git "jd_|jx_|jddj_|gua_|getJDCookie|wskey" "activity|backUp" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJRValidator_|sign_graphics_validate|jddj_cookie|function|ql|magic|JDJR|JD" "main"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>7 .【zero205】【集合库，推荐拉KR即可】</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/zero205/JD_tencent_scf.git "jd_|jx_|jdCookie" "backUp|icon" "^jd[^_]|USER|sendNotify|sign_graphics_validate|JDJR|JDSign|ql" "main"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>8 .【6dylan6/jdpro】</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//git.so2.link/6dylan6/jdpro.git "jd_|jx_|jddj_" "backUp" "^jd[^_]|USER|JD|function|sendNotify"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>9 .【青蛙/smiek2121】</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/smiek2121/scripts.git "jd_|gua_" "" "^jd[^_]|USER|utils|sendNotify|ZooFaker|JDJRValidator_|^sign|cleancart_"</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>10 .【船长】</p>
-<div class="language-php line-numbers-mode" data-highlighter="shiki" data-ext="php" data-title="php" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span style="color:#D8DEE9FF">ql repo https</span><span style="color:#81A1C1">:</span><span style="color:#616E88">//github.com/HarbourJ/HarbourToulu.git "jd_" "activity|backUp|jd_sign" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJR</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>DailyCheckIn</h2>
-<p>https://sitoi.github.io/dailycheckin/</p>
-<h2>BiliOutils</h2>
-<p>https://bilioutils.js.org/</p>
-<h1>WOL</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --net=host --restart=unless-stopped chishin/wol-go-web</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>DDNS-GO</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --name ddns-go --restart=unless-stopped --net=host -v /data/ddns-go:/root jeessy/ddns-go</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>Lucky</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --name lucky --restart=unless-stopped --net=host -v /data/lucky:/goodluck gdy666/lucky</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>http://ip:16601</p>
-<h1>Cron</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>apt-get install cron</span></span>
-<span class="line"><span>/etc/init.d/cron restart</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>编辑定时自动脚本</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>crontab -e</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>在ssh中执行脚本，然后编辑文件。</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>0 4 * * * /sbin/reboot</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>丢进去这个脚本，表示每天凌晨1点重启服务器。编辑完毕之后:wq保存退出。</p>
-<p>保存退出重启生效</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>/etc/init.d/cron stop</span></span>
-<span class="line"><span>/etc/init.d/cron start</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h1>Cloudflare Tunnel</h1>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>添加架构：</span></span>
-<span class="line"><span>sudo dpkg --add-architecture arm64</span></span>
-<span class="line"><span>移除架构：</span></span>
-<span class="line"><span>sudo dpkg --remove-architecture xxx</span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb &amp;&amp; </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>sudo dpkg -i cloudflared.deb &amp;&amp; </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>sudo cloudflared service install xxx</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>docker版</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run --name cloudflared -d --restart=unless-stopped --net=host zoeyvid/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiZjAxNzExNGYyYTQ0YzI4NmVmZjNkZmVkMTIyNWIzZmUiLCJ0IjoiMTliM2E0MTctMGRiYy00ZDE2LWI2YTctM2I3M2UyMmNkMjYyIiwicyI6Ik1qSXlZekUzTVdNdE9USTFZeTAwWTJVNExUbGpNekV0T1RnMk5EVTBNREJpWWpjdyJ9 </span></span>
-<span class="line"><span></span></span>
-<span class="line"><span>docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>蒲公英</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>docker run -d --device=/dev/net/tun --net=host --cap-add=NET_ADMIN --env PGY_USERNAME="xxx" --env PGY_PASSWORD="xxx" bestoray/pgyvpn</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>Docker镜像</h2>
+<p>| 项目名称 | 项目地址                                        | 加速地址                                                     |
+|</p>
+]]></content>
     <published>2023-03-17T03:50:04.000Z</published>
   </entry>
   <entry>
@@ -940,7 +789,7 @@ crontab的基本格式：</p>
     <title type="text">检测鉴定</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
+    <updated>2024-08-04T11:55:20.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>检测依据</h2>
 <p><strong>通用部分</strong></p>
@@ -1125,22 +974,22 @@ crontab的基本格式：</p>
     <title type="text">钢结构</title>
     <id>https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</id>
     <link href="https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
+    <updated>2024-08-04T11:55:20.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1>荷载组合</h1>
 <p>钢规3.1.5：按承载能力极限状态设计钢结构时，应考虑荷载效应的基本组合，必要时尚应考虑荷载效应的偶然组合。</p>
 <p>按正常使用极限状态设计钢结构时，应考虑荷载效应的标准组合	条文说明：对钢与混凝土组合梁，尚应考虑准永久组合。</p>
+<h1>材料</h1>
+<p>高钢规4.1.2-4：承重构件所用钢材的质量等级不宜低于B级；抗震等级为二级及以上的高层民用建筑钢结构，其框架梁、柱和抗侧力支撑等主要抗侧力构件钢材的质量等级不宜低于C级</p>
 <h1>螺栓</h1>
 <p><strong>普通螺栓</strong></p>
-<p>分为A、B、C三个等级 ，主要用C级</p>
-<p>A、B级：性能等级有5.6级和8.8级</p>
-<p>C级：性能等级有4.6级和4.8级</p>
-<p>一般仅用于临时安装固定，檩条连接</p>
-<p><strong>高强螺栓</strong></p>]]></summary>
+<p>分为A、B、C三个等级 ，主要用C级</p>]]></summary>
     <content type="html"><![CDATA[<p>[toc]</p>
 <h1>荷载组合</h1>
 <p>钢规3.1.5：按承载能力极限状态设计钢结构时，应考虑荷载效应的基本组合，必要时尚应考虑荷载效应的偶然组合。</p>
 <p>按正常使用极限状态设计钢结构时，应考虑荷载效应的标准组合	条文说明：对钢与混凝土组合梁，尚应考虑准永久组合。</p>
+<h1>材料</h1>
+<p>高钢规4.1.2-4：承重构件所用钢材的质量等级不宜低于B级；抗震等级为二级及以上的高层民用建筑钢结构，其框架梁、柱和抗侧力支撑等主要抗侧力构件钢材的质量等级不宜低于C级</p>
 <h1>螺栓</h1>
 <p><strong>普通螺栓</strong></p>
 <p>分为A、B、C三个等级 ，主要用C级</p>
@@ -2179,7 +2028,7 @@ crontab的基本格式：</p>
     <title type="text">硬链接</title>
     <id>https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html</id>
     <link href="https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html"/>
-    <updated>2024-06-09T09:47:21.000Z</updated>
+    <updated>2024-08-04T11:55:20.000Z</updated>
     <summary type="html"><![CDATA[
 <p><strong>Linux</strong></p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work</span></span></code></pre>
@@ -2195,8 +2044,9 @@ crontab的基本格式：</p>
 <span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\fun E:\我的坚果云\娱乐</span></span>
 <span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\photo E:\我的坚果云\摄影</span></span>
 <span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\study E:\我的坚果云\学习</span></span>
-<span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\tech E:\我的坚果云\计算机</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>PNPM</h1>
+<span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\tech E:\我的坚果云\计算机</span></span>
+<span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\others E:\我的坚果云\其它</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>PNPM</h1>
 <blockquote>
 <p>点击左下角开始，找到Windows PowerShell，点击右键找到更多，找到以管理员身份运行</p>
 </blockquote>
@@ -2607,7 +2457,7 @@ crontab的基本格式：</p>
     <title type="text">Openwrt</title>
     <id>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</id>
     <link href="https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html"/>
-    <updated>2024-06-27T00:36:14.000Z</updated>
+    <updated>2024-08-04T11:55:20.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1>Openwrt</h1>
 <h2>OPKG</h2>
@@ -2632,7 +2482,7 @@ crontab的基本格式：</p>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>查找大文件</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>find / -type f -size +5120b</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>定制软件包</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>luci-app-wechatpush luci-app-smartdns luci-app-v2raya luci-app-watchcat tailscale v2ray-core v2raya smartdns watchcat ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare</span></span></code></pre>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>coreutils-base64 luci-app-wechatpush luci-app-smartdns luci-app-v2raya luci-app-watchcat luci-app-tailscale tailscale v2ray-core v2raya smartdns watchcat ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap ttyd luci-app-ttyd</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>备份软件包列表</strong></p>
 <p>SSH登录到OpenWrt，并执行如下命令，备份当前已安装的软件包列表。</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>opkg list-installed | cut -f 1 -d ' ' &gt; /etc/config/packages.list</span></span></code></pre>
@@ -2903,9 +2753,6 @@ dnsmasq也是类似的工作方式。</p>
 <h3>GeoSite\GeoIP</h3>
 <p>geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text</p>
 <p>原本 geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data</p>
-<h2>无线</h2>
-<figure><figcaption>image-20211218115620639</figcaption></figure>
-<figure><figcaption>image-20211218115655439</figcaption></figure>
 <h2>广告规则</h2>
 <p>https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt</p>
 <p>https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt</p>
@@ -2922,7 +2769,6 @@ dnsmasq也是类似的工作方式。</p>
 <p>https://raw.githubusercontent.com/liamliu108/miTVhosts/master/hosts</p>
 <h3>安卓</h3>
 <p>https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</p>
-<figure><figcaption>image-20211218114841912</figcaption></figure>
 <h2>AdGuard Home</h2>
 <p>最近128m的小闪存运行AdGuardHome几天后，空间就爆了，改成只记录一天的日志还是爆，后来发现即使设置成一天，AdGuardHome也不是覆写，而是把旧的日志文件重命名继续保存了。
 所以用到了以下代码，自动删除旧的日志文件。直接计划任务里面添加以下代码</p>
@@ -3176,7 +3022,9 @@ dnsmasq也是类似的工作方式。</p>
 <p>规则列表文件路径：<code>/usr/share/v2ray</code></p>
 <p>附加配置目录:<code>/etc/v2raya/ext</code>v2ray-ext.json</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>{"inbounds":[{"port":2018,"protocol":"dokodemo-door","listen":"0.0.0.0","sniffing":{"enabled":false,"metadataOnly":false},"settings":{"network":"tcp","followRedirect":true},"streamSettings":null,"tag":"redirect"}],"routing":{"rules":[{"type":"field","balancerTag":"proxy","inboundTag":["redirect"]}]}}</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>V2ray</h1>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>Cloudflare优选IP</h2>
+<p>https://github.com/yonggekkk/openwrt_win64-ddns-cdnip</p>
+<h1>V2ray</h1>
 <p>https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file</p>
 <h1>R2S设置</h1>
 <h2>系统</h2>
@@ -3192,7 +3040,12 @@ dnsmasq也是类似的工作方式。</p>
 <p>星期：星期一</p>
 <p>小时：4</p>
 <p>分钟：30</p>
-<h2>服务</h2>
+<h3>计划任务</h3>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="background-color:#2e3440ff;color:#d8dee9ff"><pre class="shiki nord vp-code"><code><span class="line"><span>30 5 * * * /etc/init.d/tailscale restart</span></span>
+<span class="line"><span>00 5 * * 6 sleep 5 &amp;&amp; touch /etc/banner &amp;&amp; reboot</span></span>
+<span class="line"><span>0 5 * * 0 /etc/init.d/smartdns updatefiles</span></span>
+<span class="line"><span>0 3 * * * cd /root/cfipopw/ &amp;&amp; bash cdnip.sh</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>服务</h2>
 <h3>Passwall</h3>
 <p><strong>DNS</strong></p>
 <p>过滤模式：pdnsd 通过TCP节点请求DNS</p>
@@ -4398,7 +4251,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">施工图</title>
     <id>https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html</id>
     <link href="https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html"/>
-    <updated>2024-06-27T00:36:14.000Z</updated>
+    <updated>2024-08-04T11:55:20.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <p><strong>总说明</strong></p>
 <ol>
