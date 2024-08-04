@@ -28,7 +28,7 @@ find / -type f -size +5120b
 定制软件包
 
 ```
-luci-app-wechatpush luci-app-smartdns luci-app-v2raya luci-app-watchcat tailscale v2ray-core v2raya smartdns watchcat ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare
+coreutils-base64 luci-app-wechatpush luci-app-smartdns luci-app-v2raya luci-app-watchcat luci-app-tailscale tailscale v2ray-core v2raya smartdns watchcat ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap ttyd luci-app-ttyd
 ```
 
 **备份软件包列表**
@@ -346,13 +346,7 @@ geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text
 
 原本 geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data
 
-## 无线
 
-
-
-![image-20211218115620639](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-20211218115620639.png)
-
-![image-20211218115655439](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-20211218115655439.png)
 
 ## 广告规则
 
@@ -385,8 +379,6 @@ https://raw.githubusercontent.com/liamliu108/miTVhosts/master/hosts
 ### 安卓
 
 https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-
-![image-20211218114841912](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-20211218114841912.png)
 
 ## AdGuard Home
 
@@ -796,6 +788,10 @@ v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少ge
 
 
 
+## Cloudflare优选IP
+
+https://github.com/yonggekkk/openwrt_win64-ddns-cdnip
+
 # V2ray
 
 https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
@@ -827,6 +823,17 @@ https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
 小时：4
 
 分钟：30
+
+### 计划任务
+
+```
+30 5 * * * /etc/init.d/tailscale restart
+00 5 * * 6 sleep 5 && touch /etc/banner && reboot
+0 5 * * 0 /etc/init.d/smartdns updatefiles
+0 3 * * * cd /root/cfipopw/ && bash cdnip.sh
+```
+
+
 
 ## 服务
 

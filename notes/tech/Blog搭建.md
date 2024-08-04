@@ -25,6 +25,7 @@ mklink /J E:\GitHub\jiange1236.GitHub.io\notes\fun E:\我的坚果云\娱乐
 mklink /J E:\GitHub\jiange1236.GitHub.io\notes\photo E:\我的坚果云\摄影
 mklink /J E:\GitHub\jiange1236.GitHub.io\notes\study E:\我的坚果云\学习
 mklink /J E:\GitHub\jiange1236.GitHub.io\notes\tech E:\我的坚果云\计算机
+mklink /J E:\GitHub\jiange1236.GitHub.io\notes\others E:\我的坚果云\其它
 ```
 
 # PNPM
