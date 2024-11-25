@@ -1,6 +1,11 @@
 import { appendDatePlugin } from "@vuepress/plugin-append-date";
+import { markdownIncludePlugin } from '@vuepress/plugin-markdown-include';
+import { markdownMathPlugin } from '@vuepress/plugin-markdown-math';
+import { markdownStylizePlugin } from '@vuepress/plugin-markdown-stylize';
+import { markdownTabPlugin } from '@vuepress/plugin-markdown-tab';
+import { revealJsPlugin } from '@vuepress/plugin-revealjs';
 import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import theme from "./theme.ts";
 
 export default defineUserConfig({
   base: "/",
@@ -41,7 +46,15 @@ export default defineUserConfig({
 
   theme,
 
-  plugins: [appendDatePlugin()],
+  plugins: [
+    appendDatePlugin(),
+	markdownIncludePlugin({
+      // 选项
+    }),
+	markdownStylizePlugin({
+      // 配置项
+    }),
+	],
 
   // Enable it with pwa
   shouldPrefetch: false,

@@ -28,7 +28,8 @@ find / -type f -size +5120b
 定制软件包
 
 ```
-coreutils-base64 luci-app-wechatpush luci-app-smartdns luci-app-v2raya luci-app-watchcat luci-app-tailscale tailscale v2ray-core v2raya smartdns watchcat ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap ttyd luci-app-ttyd
+luci-app-wechatpush luci-app-smartdns luci-app-watchcat luci-app-tailscale luci-app-ttyd luci-app-ddns tailscale smartdns watchcat ttyd ddns
+coreutils-base64 ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap v2ray-core v2raya luci-app-v2raya
 ```
 
 **备份软件包列表**
@@ -65,232 +66,6 @@ https://github.com/QiuSimons/YAOF
 https://github.com/DHDAXCW/NanoPi-R2S
 
 
-
-### SmartDNS+ADGuardHome+Passwall
-
-~~https://post.smzdm.com/p/a6dn5g8n/~~
-
-首先固件要支持ipv6，这是前提，设置：wan=高级=获取ipv6自动，wan6=dhcp6客户端下面选项保持初始设置，lan=ipv6=混合模式=混合模式=有状态+无状态，dhcp/dns=高级=取消禁止解析ipv6，基本上就ok了
-
-~~https://www.right.com.cn/forum/thread-4042833-1-1.html~~
-
-https://www.right.com.cn/forum/thread-4034918-1-1.html
-
-SmartDNS设置
-
-```
-
-config smartdns
-	option enabled '1'
-	option server_name 'smartdns'
-	option port '53'
-	option auto_set_dnsmasq '1'
-	option tcp_server '1'
-	option ipv6_server '1'
-	option bind_device '1'
-	option dualstack_ip_selection '1'
-	option serve_expired '1'
-	option cache_persist '1'
-	option resolve_local_hostnames '1'
-	option force_https_soa '0'
-	option rr_ttl_min '30'
-	option seconddns_port '7913'
-	option seconddns_tcp_server '1'
-	option seconddns_enabled '1'
-	option seconddns_server_group 'passwall'
-	option seconddns_no_speed_check '1'
-	option seconddns_no_dualstack_selection '1'
-	option seconddns_no_cache '1'
-	option log_level 'error'
-	option rr_ttl_max '3600'
-	option rr_ttl_reply_max '3600'
-	option enable_auto_update '1'
-	option auto_update_week_time '0'
-	option auto_update_day_time '5'
-	option tls_server '0'
-	option doh_server '0'
-	option log_output_mode 'file'
-	list hosts_files 'miTVhosts'
-	option prefetch_domain '1'
-	option old_port '53'
-	option old_enabled '1'
-	option old_auto_set_dnsmasq '1'
-
-config domain-rule
-	option server_group 'passwall'
-	option speed_check_mode 'none'
-	option force_aaaa_soa '1'
-	option forwarding_domain_set_file '/etc/smartdns/domain-set/proxy-list.txt'
-	option ipset_name 'proxy-list'
-
-config server
-	option enabled '1'
-	option name 'cnnic'
-	option ip '1.2.4.8'
-	option type 'udp'
-
-config server
-	option enabled '1'
-	option name 'aliyun'
-	option ip '223.5.5.5'
-	option type 'udp'
-
-config server
-	option enabled '0'
-	option name 'cm1'
-	option ip '211.142.211.124'
-	option type 'udp'
-
-config server
-	option enabled '1'
-	option name 'cm2'
-	option ip '111.8.14.18'
-	option type 'udp'
-
-config server
-	option enabled '1'
-	option name 'cloudflare'
-	option ip '1.1.1.1'
-	option port '853'
-	option type 'tls'
-	option server_group 'passwall'
-	option exclude_default_group '1'
-
-config server
-	option enabled '1'
-	option name 'google'
-	option ip '8.8.8.8'
-	option port '853'
-	option type 'tls'
-	option server_group 'passwall'
-	option exclude_default_group '1'
-
-config server
-	option enabled '1'
-	option name 'google https'
-	option ip 'https://8.8.4.4/dns-query'
-	option type 'https'
-	option server_group 'passwall'
-	option exclude_default_group '1'
-
-config server
-	option enabled '1'
-	option name 'DNSPod DoH'
-	option ip 'https://doh.pub/dns-query'
-	option type 'https'
-
-config server
-	option enabled '0'
-	option name 'AdGuard'
-	option ip 'd8a6cfde.d.adguard-dns.com'
-	option type 'tls'
-
-config server
-	option enabled '1'
-	option name 'AdGuard DNS'
-	option ip 'https://dns.adguard-dns.com/dns-query'
-	option type 'https'
-
-config server
-	option enabled '1'
-	option name 'Cloudflare Gateway'
-	option ip 'kg3lq779id.cloudflare-gateway.com'
-	option type 'tls'
-
-config client-rule
-	option enabled '0'
-	option dualstack_ip_selection '1'
-	option force_https_soa '1'
-
-config ip-rule
-
-config server
-	option enabled '0'
-	option name 'cm1v6'
-	option ip '2409:8050:2000:1000::1'
-	option type 'udp'
-
-config server
-	option enabled '0'
-	option name 'cm2v6'
-	option ip '2409:8050:2000::1'
-	option type 'udp'
-
-config server
-	option enabled '0'
-	option name 'cu1'
-	option ip '58.20.127.170'
-	option type 'udp'
-
-config server
-	option enabled '0'
-	option name 'cu2'
-	option ip '58.20.127.238'
-	option type 'udp'
-
-config server
-	option enabled '0'
-	option name 'ct1'
-	option ip '222.246.129.81'
-	option type 'udp'
-
-config server
-	option enabled '0'
-	option name 'ct2'
-	option ip '59.51.78.210'
-	option type 'udp'
-
-config download-file
-	option name 'cloudflare-ipv4'
-	option url 'https://www.cloudflare.com/ips-v4/#'
-	option type 'ip-set'
-
-config download-file
-	option name 'cloudflare-ipv6'
-	option url 'https://www.cloudflare.com/ips-v6/#'
-	option type 'ip-set'
-
-config ip-rule-list
-	option enabled '0'
-	option name 'cloudflare-ipv4'
-	option ip_set_file '/etc/smartdns/ip-set/cloudflare-ipv4'
-	list ip_alias '104.17.104.119'
-	list ip_alias '172.64.144.111'
-
-config ip-rule-list
-	option enabled '0'
-	option name 'cloudflare-ipv6'
-	option ip_set_file '/etc/smartdns/ip-set/cloudflare-ipv6'
-	list ip_alias '2606:4700:10:40f3:99a8:fb4a:a069:4ffe'
-	list ip_alias '2606:4700:10:14e1:2442:6ff2:dca4:5e1a'
-
-config download-file
-	option name 'miTVhosts'
-	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/liamliu108/miTVhosts/master/hosts'
-	option type 'other'
-
-config download-file
-	option name 'reject-list.txt'
-	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt'
-	option type 'list'
-
-config download-file
-	option name 'direct-list.txt'
-	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt'
-	option type 'list'
-
-config download-file
-	option name 'proxy-list.txt'
-	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt'
-	option type 'list'
-
-config download-file
-	option name 'gfw.txt'
-	option url 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt'
-	option type 'list'
-
-
-```
 
 ### 分流设置
 
@@ -596,6 +371,12 @@ cd /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/ddnsto/open
 
 地址族限制 仅 IPv6
 
+
+
+**区域**
+
+wan → REJECT 接受入站
+
 ## 全能推送（Pushbot）
 
 https://www.right.com.cn/forum/thread-4051426-1-1.html
@@ -828,7 +609,7 @@ https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
 
 ```
 30 5 * * * /etc/init.d/tailscale restart
-00 5 * * 6 sleep 5 && touch /etc/banner && reboot
+0 5 * * 6 sleep 30 && touch /etc/banner && reboot
 0 5 * * 0 /etc/init.d/smartdns updatefiles
 0 3 * * * cd /root/cfipopw/ && bash cdnip.sh
 ```
@@ -888,6 +669,7 @@ google.com.tw
 google.com.hk
 gstatic.com
 xn--ngstr-lra8j.com
+ip-api.com
 
 #github
 github.com
@@ -1168,10 +950,3 @@ IPv6 ULA 前缀：
 
 ### 防火墙
 
-iptables -I FORWARD -i ztyqb6d54s -j ACCEPT
-iptables -I FORWARD -o ztyqb6d54s -j ACCEPT
-iptables -t nat -I POSTROUTING -o ztyqb6d54s -j MASQUERADE
-
-iptables -I FORWARD -i tailscale0 -j ACCEPT
-iptables -I FORWARD -o tailscale0 -j ACCEPT
-iptables -t nat -I POSTROUTING -o tailscale0 -j MASQUERADE

@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { enNavbar, zhNavbar } from "./navbar/index.ts";
+import { enSidebar, zhSidebar } from "./sidebar/index.ts";
 
 export default hopeTheme({
   hostname: "https://jiange1236.github.io",
@@ -122,6 +122,7 @@ export default hopeTheme({
 
   plugins: {
     blog: {
+    // 不自动生成摘要
         excerptLength: 0,
       },
 
@@ -161,19 +162,24 @@ export default hopeTheme({
 
     // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
-      align: true,
+      vPre: true,
+      linkify: true,
+	  align: true,
       attrs: true,
-      codetabs: true,
+	  spoiler: true,
+	  sup: true,
+	  sub: true,
+	  footnote: true,
+      mark: true,
+      tasklist: true,
+      include: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-	  imgMark: true,
-      imgSize: true,
-      include: true,
-      mark: true,
+      chart: true,
+	  echarts: true,
+      flowchart: true,
+	  mermaid: true,
       plantuml: true,
-      spoiler: true,
       stylize: [
         {
           matcher: "Recommended",
@@ -187,39 +193,7 @@ export default hopeTheme({
           },
         },
       ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
-      flowchart: true,
-	  mathjax: true,
-	  mermaid: true,
-	  revealJs: true,
-	  footnote: true,
-      // install chart.js before enabling it
-      // chart: true,
 
-      // insert component easily
-
-      // install echarts before enabling it
-      // echarts: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // install katex before enabling it
-      // katex: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // install @vue/repl before enabling it
-      // vuePlayground: true,
-
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
     },
 
     pwa: true,
@@ -278,5 +252,29 @@ export default hopeTheme({
     //     ],
     //   },
     // },
+	markdownHint: {
+        // 启用提示容器，默认为 true
+        hint: true,
+        // 启用 GFM 警告，默认为 true
+        alert: true,
+    },
+	markdownImage: {
+      // 启用 figure
+      figure: true,
+      // 启用图片懒加载
+      lazyload: true,
+      // 启用图片标记
+      mark: true,
+      // 启用图片大小
+      size: true,
+    },
+	markdownMath: {},
+	markdownTab: {
+      // 启用代码选项卡
+      codeTabs: true,
+      // 启用选项卡
+      tabs: true,
+    },
+	revealjs: true, // 启用 revealjs 插件
   },
 });

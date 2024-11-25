@@ -1,6 +1,6 @@
 ---
 date: 2022-01-07
-layout: Slide
+layout: SlidePage
 title: Zine⁶ Intro
 icon: people
 tag:
