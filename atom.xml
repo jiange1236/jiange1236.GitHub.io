@@ -4,7 +4,7 @@
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
   <rights>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</rights>
-  <updated>2024-11-25T03:35:49.545Z</updated>
+  <updated>2024-11-26T03:09:49.615Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -16,23 +16,35 @@
     <name>须尽欢</name>
   </contributor>
   <entry>
+    <title type="text"></title>
+    <id>https://jiange1236.github.io/tech/%E7%A1%AC%E7%9B%98%E4%BF%AE%E5%A4%8D.html</id>
+    <link href="https://jiange1236.github.io/tech/%E7%A1%AC%E7%9B%98%E4%BF%AE%E5%A4%8D.html"/>
+    <updated>2024-11-26T03:08:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>打开运行输入cmd回车，输入chkdsk+空格+盘符:/f  回车例如检查并修复G分区：CHKDSK G:/F（修复指令会把硬盘进行修复，删除一些错误的文件或者删除中毒的文件。操作前需要您考虑是否进行修复。）
+图文教程（请把中文一起复制到浏览器访问）：<a href="https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#" target="_blank" rel="noopener noreferrer">https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#</a> 《CHKDSK修复指令使用方法》</p>]]></summary>
+    <content type="html"><![CDATA[<p>打开运行输入cmd回车，输入chkdsk+空格+盘符:/f  回车例如检查并修复G分区：CHKDSK G:/F（修复指令会把硬盘进行修复，删除一些错误的文件或者删除中毒的文件。操作前需要您考虑是否进行修复。）
+图文教程（请把中文一起复制到浏览器访问）：<a href="https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#" target="_blank" rel="noopener noreferrer">https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#</a> 《CHKDSK修复指令使用方法》</p>
+]]></content>
+    <published>2024-11-26T03:08:35.000Z</published>
+  </entry>
+  <entry>
     <title type="text">加息</title>
     <id>https://jiange1236.github.io/finance/%E7%90%86%E8%B4%A2.html</id>
     <link href="https://jiange1236.github.io/finance/%E7%90%86%E8%B4%A2.html"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
+    <updated>2024-11-26T03:08:35.000Z</updated>
     <summary type="html"><![CDATA[
 <p>换美元，买美元理财</p>
 ]]></summary>
     <content type="html"><![CDATA[
 <p>换美元，买美元理财</p>
 ]]></content>
-    <published>2024-11-25T03:31:20.000Z</published>
+    <published>2024-11-25T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">安装</title>
     <id>https://jiange1236.github.io/tech/Termux.html</id>
     <link href="https://jiange1236.github.io/tech/Termux.html"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
+    <updated>2024-11-26T03:08:35.000Z</updated>
     <summary type="html"><![CDATA[
 <p>更换源</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>change-termux-repo</span></span></code></pre>
@@ -62,13 +74,13 @@
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">tsu</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>这将尝试获取 root 权限。</p>
 ]]></content>
-    <published>2024-11-25T03:31:20.000Z</published>
+    <published>2024-11-25T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">建筑分类</title>
     <id>https://jiange1236.github.io/work/%E9%98%B2%E7%81%AB.html</id>
     <link href="https://jiange1236.github.io/work/%E9%98%B2%E7%81%AB.html"/>
-    <updated>2024-08-04T11:55:20.000Z</updated>
+    <updated>2024-11-26T03:08:35.000Z</updated>
     <summary type="html"><![CDATA[
 <p>防火通规5.3.1  下列民用建筑的耐火等级应为一级：</p>
 <p>1  一类高层民用建筑；</p>
@@ -102,7 +114,7 @@
 <h1>耐火极限</h1>
 <p>防火通规5.1.3：建筑高度大于100m的工业与民用建筑楼板的耐火极限不应低于2.00h。一级耐火等级工业与民用建筑的上人平屋顶，屋面板的耐火极限不应低于1.50h；二级耐火等级工业与民用建筑的上人平屋顶，屋面板的耐火极限不应低于1.00h。</p>
 ]]></content>
-    <published>2024-08-04T11:55:20.000Z</published>
+    <published>2024-08-04T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</title>
@@ -1017,7 +1029,7 @@ crontab的基本格式：</p>
     <title type="text">钢结构</title>
     <id>https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</id>
     <link href="https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
+    <updated>2024-11-26T03:08:35.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1>荷载组合</h1>
 <p>钢规3.1.5：按承载能力极限状态设计钢结构时，应考虑荷载效应的基本组合，必要时尚应考虑荷载效应的偶然组合。</p>
@@ -2066,7 +2078,7 @@ crontab的基本格式：</p>
     <title type="text">硬链接</title>
     <id>https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html</id>
     <link href="https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html"/>
-    <updated>2024-08-04T11:55:20.000Z</updated>
+    <updated>2024-11-26T03:08:35.000Z</updated>
     <summary type="html"><![CDATA[
 <p><strong>Linux</strong></p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work</span></span></code></pre>
@@ -2095,8 +2107,15 @@ crontab的基本格式：</p>
 </blockquote>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>npm install pnpm -g</span></span>
 <span class="line"><span>pnpm install</span></span>
-<span class="line"><span>pnpm i --frozen-lockfile</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>Git</h1>
+<span class="line"><span>pnpm i --frozen-lockfile</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#列出所有过期依赖</span></span>
+<span class="line"><span>pnpm outdated</span></span>
+<span class="line"><span>#更新依赖</span></span>
+<span class="line"><span>pnpm update --latest</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>自动安装peer依赖</strong>：如果出现peer依赖问题，可以通过设置<code>pnpm config set auto-install-peers true</code>来自动安装缺失的peer依赖</p>
+<p><strong>清理存储</strong>：如果使用pnpm，可以通过执行<code>pnpm store prune</code>来清理存储，移除过时的包</p>
+<h1>Git</h1>
 <h2>清除Github提交历史记录</h2>
 <p>1.将Repository使用git clone到本地，在终端使用"git log"查看提交记录。Github会为每一次commit操作生成哈希值，用这个哈希值来记录你的提交记录。</p>
 <p>2.定位你误操作的那一个版本，我上传包涵敏感信息的操作是"0f6f7b72667830e407880271e6ebc24abba232c5"。我们取它之前的版本，就是哈希值为"8628628991470b26e698d98e986a54fa6b5f4352"的那一版本。</p>
