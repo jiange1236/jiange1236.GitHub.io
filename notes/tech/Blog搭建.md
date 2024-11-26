@@ -41,9 +41,16 @@ npm install pnpm -g
 pnpm install
 pnpm i --frozen-lockfile
 
+#列出所有过期依赖
+pnpm outdated
+#更新依赖
+pnpm update --latest
+
 ```
 
+**自动安装peer依赖**：如果出现peer依赖问题，可以通过设置`pnpm config set auto-install-peers true`来自动安装缺失的peer依赖
 
+**清理存储**：如果使用pnpm，可以通过执行`pnpm store prune`来清理存储，移除过时的包
 
 # Git
 

@@ -26,6 +26,7 @@ export const zhNavbar = navbar([
 			text:"本站镜像",
 			icon:"network",
 			children: [
+				{ text: "EdgeOne", link: "https://t.zecdn.top" },
 				{ text: "Cloudflare", link: "https://zeblog.pages.dev" },
 				{ text: "Netflify", link: "https://zeblog.netlify.app" },
 				{ text: "Vercel", link: "http://zeblog.vercel.app" },
