@@ -48,12 +48,6 @@ export default defineUserConfig({
 
   plugins: [
     appendDatePlugin(),
-	markdownIncludePlugin({
-      // 选项
-    }),
-	markdownStylizePlugin({
-      // 配置项
-    }),
 	],
 
   // Enable it with pwa

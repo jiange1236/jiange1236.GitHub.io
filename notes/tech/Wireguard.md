@@ -1,3 +1,7 @@
+---
+date: 2025-01-23
+---
+
 # 如何在Debian 11安装WireGuard VPN
 
 WireGuard是一种现代VPN虚拟私有网络技术，它利用最新的加密技术。

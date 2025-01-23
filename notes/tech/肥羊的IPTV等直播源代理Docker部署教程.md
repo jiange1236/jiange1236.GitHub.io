@@ -1,4 +1,5 @@
 ---
+date: 2025-01-23
 created: 2024-11-27
 tags: []
 source: https://blog.ccino.org/p/feiyang-iptv-and-other-live-source-proxy-docker-deployment-tutorial/

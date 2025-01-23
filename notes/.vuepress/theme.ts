@@ -10,8 +10,6 @@ export default hopeTheme({
     url: "https://zecdn.top",
   },
 
-  iconAssets: "fontawesome-with-brands",
-
   logo: "/logo.png",
 
   repo: "jiange1236/jiange1236.GitHub.io",
@@ -120,48 +118,7 @@ export default hopeTheme({
   // enable it to preview all changes in time
   // hotReload: true,
 
-  plugins: {
-    blog: {
-    // 不自动生成摘要
-        excerptLength: 0,
-      },
-
-    comment: {
-        provider: "Giscus",
-        repo: "jiange1236/jiange1236.github.io",
-		repoId: "R_kgDOHLemeQ",
-		category: "Announcements",
-		categoryId: "DIC_kwDOHLemec4CPFA-",
-      },
-    // Install @waline/client before enabling it
-    // Note: This is for testing ONLY!
-    // You MUST generate and use your own comment service in production.
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
-    docsearch: {
-        appId: "I7SASQM4UK",
-        apiKey: "a20baaa964754c629bf5a7d027ffe7b7",
-        indexName: "zeblog",
-      },
-
-	shiki: {
-	  langs: ['ts', 'json', 'vue', 'php', 'md', 'bash', 'diff', 'python'],
-	  },
-
-	feed: {
-        atom: true,
-        json: true,
-        rss: true,
-      },
-
-    components: {
-      components: ['Badge', 'PDF', 'Share', 'SiteInfo', 'VPBanner', 'VPCard'],
-    },
-
-    // These features are enabled for demo, only preserve features you need here
-    mdEnhance: {
+  markdown: {
       vPre: true,
       linkify: true,
 	  align: true,
@@ -193,8 +150,62 @@ export default hopeTheme({
           },
         },
       ],
-
+      alert: true,
+	  hint: true,
+	  math: true,
+	  tabs: true,
+	  codeTabs: true,
+	  highlighter: {
+	    type: 'shiki',
+      },
+	  revealjs: true, // 启用 revealjs 插件
+	  figure: true,
+	  imgLazyload: true,
+	  imgMark: true,
+	  obsidianImgSize: true,
+  },
+  
+  plugins: {
+    blog: {
+    // 不自动生成摘要
+        excerptLength: 0,
     },
+
+    icon: {
+      assets: 'fontawesome',
+	},
+
+	comment: {
+        provider: "Giscus",
+        repo: "jiange1236/jiange1236.github.io",
+		repoId: "R_kgDOHLemeQ",
+		category: "Announcements",
+		categoryId: "DIC_kwDOHLemec4CPFA-",
+    },
+    // Install @waline/client before enabling it
+    // Note: This is for testing ONLY!
+    // You MUST generate and use your own comment service in production.
+    // comment: {
+    //   provider: "Waline",
+    //   serverURL: "https://waline-comment.vuejs.press",
+    // },
+    docsearch: {
+        appId: "I7SASQM4UK",
+        apiKey: "a20baaa964754c629bf5a7d027ffe7b7",
+        indexName: "zeblog",
+    },
+
+	feed: {
+        atom: true,
+        json: true,
+        rss: true,
+    },
+
+    components: {
+      components: ['Badge', 'PDF', 'Share', 'SiteInfo', 'VPBanner', 'VPCard'],
+    },
+
+    // These features are enabled for demo, only preserve features you need here
 
     pwa: true,
 	//   {
@@ -252,29 +263,5 @@ export default hopeTheme({
     //     ],
     //   },
     // },
-	markdownHint: {
-        // 启用提示容器，默认为 true
-        hint: true,
-        // 启用 GFM 警告，默认为 true
-        alert: true,
-    },
-	markdownImage: {
-      // 启用 figure
-      figure: true,
-      // 启用图片懒加载
-      lazyload: true,
-      // 启用图片标记
-      mark: true,
-      // 启用图片大小
-      size: true,
-    },
-	markdownMath: {},
-	markdownTab: {
-      // 启用代码选项卡
-      codeTabs: true,
-      // 启用选项卡
-      tabs: true,
-    },
-	revealjs: true, // 启用 revealjs 插件
   },
 });
