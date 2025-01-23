@@ -2,7 +2,7 @@
 date: 2022-05-14
 ---
 
-[toc]
+[TOC]
 
 # Openwrt
 
@@ -49,8 +49,6 @@ opkg update
 cat /etc/config/packages.list | opkg install
 ```
 
-
-
 ## R2S
 
 https://github.com/fanck0605/openwrt-nanopi-r2s
@@ -65,8 +63,6 @@ https://github.com/QiuSimons/YAOF
 
 https://github.com/DHDAXCW/NanoPi-R2S
 
-
-
 ### 分流设置
 
 分流参考文章
@@ -78,8 +74,6 @@ https://github.com/pymumu/smartdns/issues/1022
 https://zeeko.dev/2022/09/smartdns-with-v2ray-tproxy/
 
 https://xtrojan.pro/bgfw/v2ray/v2ray-dns-streaming.html
-
-
 
 一、基本设置
 
@@ -120,8 +114,6 @@ dnsmasq也是类似的工作方式。
 geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text
 
 原本 geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data
-
-
 
 ## 广告规则
 
@@ -259,8 +251,6 @@ quic://dns.nextdns.io
 h3://dns.nextdns.io/dns-query
 ```
 
-
-
 我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
 此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
 
@@ -371,8 +361,6 @@ cd /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/ddnsto/open
 
 地址族限制 仅 IPv6
 
-
-
 **区域**
 
 wan → REJECT 接受入站
@@ -405,8 +393,6 @@ tailscale up --advertise-routes=10.0.0.0/24 --accept-routes  --accept-dns=false
 
 1. 接口创建 `Tailscale`不配置协议，防火墙创建 `Tailscale`，保存并应用
 2. 防火墙 `Tailscale`区域设置，全部接受，开启IP 动态伪装、MSS 钳制，允许转发到 `Lan`、`Wan`，允许源区域 `Lan`，
-
-
 
 ## Vsftpd
 
@@ -557,8 +543,6 @@ v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少ge
 
 指定v2ray binary path为 `/usr/bin/v2ray`
 
-
-
 规则列表文件路径：`/usr/share/v2ray`
 
 附加配置目录:`/etc/v2raya/ext`v2ray-ext.json
@@ -566,8 +550,6 @@ v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少ge
 ```
 {"inbounds":[{"port":2018,"protocol":"dokodemo-door","listen":"0.0.0.0","sniffing":{"enabled":false,"metadataOnly":false},"settings":{"network":"tcp","followRedirect":true},"streamSettings":null,"tag":"redirect"}],"routing":{"rules":[{"type":"field","balancerTag":"proxy","inboundTag":["redirect"]}]}}
 ```
-
-
 
 ## Cloudflare优选IP
 
@@ -613,8 +595,6 @@ https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
 0 5 * * 0 /etc/init.d/smartdns updatefiles
 0 3 * * * cd /root/cfipopw/ && bash cdnip.sh
 ```
-
-
 
 ## 服务
 
@@ -862,10 +842,10 @@ ZeroTier Network ID：8bd5124fd6f3b844
 
 **MiniUPnP 访问控制列表**
 
-|       备注       |  外部端口  | 内部地址  |  内部端口  | 操作  |
-| :--------------: | :--------: | :-------: | :--------: | :---: |
+| 备注               | 外部端口       | 内部地址      | 内部端口       | 操作    |
+|:----------------:|:----------:|:---------:|:----------:|:-----:|
 | Allow high ports | 1024-65535 | 0.0.0.0/0 | 1024-65535 | allow |
-|   Default deny   |  0-65535   | 0.0.0.0/0 |  0-65535   | deny  |
+| Default deny     | 0-65535    | 0.0.0.0/0 | 0-65535    | deny  |
 
 ### Watchcat
 
@@ -942,11 +922,10 @@ IPv6 ULA 前缀：
 
 #### 静态地址分配
 
-| 主机名  |     MAC 地址      |   IPv4 地址   | 租期 |         DUID         | IPv6 后缀（十六进制） |           |
-| :-----: | :---------------: | :-----------: | :--: | :------------------: | :-------------------: | :-------: |
-| MiWiFi  | 5C:02:14:B1:B5:D6 | 192.168.2.176 | 12h  |         *无*         |         *无*          | ☰编辑删除 |
-| ZeNote8 | 28:16:7F:3A:03:BF | 192.168.2.227 | 12h  |         *无*         |         *无*          | ☰编辑删除 |
-|  ZeNas  | 02:11:32:1F:38:6C | 192.168.2.110 | 12h  | 000300010211321f386c |         *无*          | ☰编辑删除 |
+| 主机名     | MAC 地址            | IPv4 地址       | 租期  | DUID                 | IPv6 后缀（十六进制） |       |
+|:-------:|:-----------------:|:-------------:|:---:|:--------------------:|:-------------:|:-----:|
+| MiWiFi  | 5C:02:14:B1:B5:D6 | 192.168.2.176 | 12h | *无*                  | *无*           | ☰编辑删除 |
+| ZeNote8 | 28:16:7F:3A:03:BF | 192.168.2.227 | 12h | *无*                  | *无*           | ☰编辑删除 |
+| ZeNas   | 02:11:32:1F:38:6C | 192.168.2.110 | 12h | 000300010211321f386c | *无*           | ☰编辑删除 |
 
 ### 防火墙
-

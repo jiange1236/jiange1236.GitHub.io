@@ -47,13 +47,13 @@ source: https://github.com/luckyyyyy/blog/issues/57#issue-1198960406
 - 启用第二组服务器，端口7913，跳过测速，跳过Nameserver规则（非常重要，否则会死循环），跳过双栈优选，跳过cache，其余设置保持默认。
 
 - 配置上游服务器，
-
+  
   ```
   部分设置要填写后点编辑才能看到
   ```
-
+  
   。
-
+  
   - 国内上游填写你的运营商，额外填写一些国内常用的，例如阿里云，DNSPod等等，可以参考文末的配置，分组信息填写cn。
   - 国外上游填写1.1.1.1端口853，协议填写tls，分组信息填写passwall，额外的服务参数填写 -exclude-default-group
 
@@ -74,82 +74,80 @@ iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
 ```
 
-
-
 ## 一些配置
 
 smartdns 部分直接 vim 编辑 /etc/config/smartdns 照抄即可，无需手动设置，配置完记得界面上点击保存应用，或者uci命令刷新配置，我里面有杭州电信的DNS服务器，不是杭州的记得自己改掉，否则可能有负面效果。
 
 ```
 config smartdns
-	option enabled '1'
-	option server_name 'smartdns'
-	option port '6053'
-	option auto_set_dnsmasq '1'
-	option tcp_server '1'
-	option ipv6_server '1'
-	option bind_device '1'
-	option dualstack_ip_selection '1'
-	option serve_expired '1'
-	option cache_persist '1'
-	option resolve_local_hostnames '1'
-	option force_https_soa '1'
-	option rr_ttl_min '600'
-	option seconddns_port '7913'
-	option seconddns_tcp_server '1'
-	option seconddns_enabled '1'
-	option seconddns_server_group 'passwall'
-	option seconddns_no_speed_check '1'
-	option seconddns_no_rule_nameserver '1'
-	option seconddns_no_dualstack_selection '1'
-	option seconddns_no_cache '1'
-	option old_port '6053'
-	option old_enabled '1'
-	option old_auto_set_dnsmasq '1'
+    option enabled '1'
+    option server_name 'smartdns'
+    option port '6053'
+    option auto_set_dnsmasq '1'
+    option tcp_server '1'
+    option ipv6_server '1'
+    option bind_device '1'
+    option dualstack_ip_selection '1'
+    option serve_expired '1'
+    option cache_persist '1'
+    option resolve_local_hostnames '1'
+    option force_https_soa '1'
+    option rr_ttl_min '600'
+    option seconddns_port '7913'
+    option seconddns_tcp_server '1'
+    option seconddns_enabled '1'
+    option seconddns_server_group 'passwall'
+    option seconddns_no_speed_check '1'
+    option seconddns_no_rule_nameserver '1'
+    option seconddns_no_dualstack_selection '1'
+    option seconddns_no_cache '1'
+    option old_port '6053'
+    option old_enabled '1'
+    option old_auto_set_dnsmasq '1'
 
 config domain-rule
 
 config server
-	option enabled '1'
-	option name 'cnnic'
-	option ip '1.2.4.8'
-	option type 'udp'
+    option enabled '1'
+    option name 'cnnic'
+    option ip '1.2.4.8'
+    option type 'udp'
 
 config server
-	option enabled '1'
-	option name 'aliyun'
-	option ip '223.5.5.5'
-	option type 'udp'
+    option enabled '1'
+    option name 'aliyun'
+    option ip '223.5.5.5'
+    option type 'udp'
 
 config server
-	option enabled '1'
-	option name 'cm1'
-	option ip '211.142.211.124'
-	option type 'udp'
+    option enabled '1'
+    option name 'cm1'
+    option ip '211.142.211.124'
+    option type 'udp'
 
 config server
-	option enabled '1'
-	option name 'cm2'
-	option ip '111.8.14.18'
-	option type 'udp'
+    option enabled '1'
+    option name 'cm2'
+    option ip '111.8.14.18'
+    option type 'udp'
 
 config server
-	option enabled '1'
-	option name 'cloudflare'
-	option ip '1.1.1.1'
-	option port '853'
-	option type 'tls'
-	option server_group 'passwall'
-	option exclude_default_group '1'
+    option enabled '1'
+    option name 'cloudflare'
+    option ip '1.1.1.1'
+    option port '853'
+    option type 'tls'
+    option server_group 'passwall'
+    option exclude_default_group '1'
 
 config server
-	option enabled '1'
-	option name 'google'
-	option ip '8.8.8.8'
-	option port '853'
-	option type 'tls'
-	option server_group 'passwall'
-	option exclude_default_group '1'
+    option enabled '1'
+    option name 'google'
+    option ip '8.8.8.8'
+    option port '853'
+    option type 'tls'
+    option server_group 'passwall'
+    option exclude_default_group '1'
 ```
 
 ## 如何验证？
@@ -163,4 +161,3 @@ nslookup www.taobao.com 应该是国内
 ```
 
 注：如果手动查询规则列表内的域名，使用端口6053，然后匹配规则，转发给7913，然后被缓存住。（国外因为跳过测速，所以多个域名是正确的）
-

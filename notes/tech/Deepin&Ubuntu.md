@@ -2,7 +2,7 @@
 date: 2022-05-14
 ---
 
-[toc]
+[TOC]
 
 # Deepin
 
@@ -56,15 +56,17 @@ rm /sys/firmware/efi/efivars/dump-*
 
 **网卡驱动**
 
-https://bbs.deepin.org/zh/post/214079
-
 https://bbs.deepin.org/zh/post/211628
 
-\#卸载网卡驱动 sudo apt autopurge bcmwl-kernel-source broadcom-sta-*
+卸载网卡驱动 sudo apt autopurge bcmwl-kernel-source broadcom-sta-*
 
-\#下载网卡驱动 http://mirrors.ustc.edu.cn/debian/pool/non-free/b/broadcom-sta/broadcom-sta-source_6.30.223.271-17~bpo10%2B1_all.deb
+下载网卡驱动 http://mirrors.ustc.edu.cn/debian/pool/non-free/b/broadcom-sta/broadcom-sta-source_6.30.223.271-17~bpo10%2B1_all.deb
 
-\#更新网卡驱动 sudo dpkg -i broadcom-sta* 
+更新网卡驱动 sudo dpkg -i broadcom-sta* 
+
+**蓝牙驱动**
+
+https://github.com/winterheart/broadcom-bt-firmware/releases
 
 **Selenium驱动**
 
@@ -102,24 +104,9 @@ sudo apt install telegram-desktop
 
 sudo dpkg -i deepin.com.ynote_6.10.0.1_i386.deb
 
-**notepadqq打不开**
+**残留图标**
 
-sudo apt install libqt5websockets5
-
-```
-sudo apt install nfs-common
-#显示远程主机共享文件 
-showmount -e 192.168.1.110 
-#创建本地目录 
-mkdir /NFSvideo 
-#将远程文件夹挂载到本地目录 
-sudo mount -t nfs 192.168.1.110:/volume1/video /data/home/zhou/Videos/nasvideo 
-#开启开机挂载 
-vi /etc/fstab 
-192.168.1.15:/volume4/Swap  /NFSfile    nfs    defaults    0    0       
-```
-
-deepin.com.ynote_6.10.0.1_i386.deb
+图标文件夹 `~/.local/share/applications` 
 
 ## TUNA
 
@@ -189,19 +176,19 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 ## v2rayA
 
 - 启动 v2rayA
-
+  
   ```bash
   sudo systemctl start v2raya.service
   ```
 
 - 设置开机自动启动
-
+  
   ```bash
   sudo systemctl enable v2raya.service
   ```
-
+  
   重启v2rayA
-
+  
   ```bash
   sudo systemctl restart v2raya.service
   ```
@@ -213,34 +200,34 @@ Deepin Quick Setup
 Follow these simple steps to start using Flatpak
 
 1. Install Flatpak
-
+   
    To install Flatpak, run the following:
-
+   
    ```bash
    sudo apt install flatpak
    ```
 
 2. Add the Flathub repository
-
+   
    Flathub is the best place to get Flatpak apps. To enable it, run:
-
+   
    ```bash
    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
    ```
 
 3. Install the Deepin themes
-
+   
    To install light and dark themes, run:
-
+   
    ```bash
    flatpak install flathub org.gtk.Gtk3theme.deepin
    flatpak install flathub org.gtk.Gtk3theme.deepin-dark
    ```
 
 4. Restart
-
-   To complete setup, restart your system. Now all you have to do is [install some apps](https://flathub.org/)!
    
+   To complete setup, restart your system. Now all you have to do is [install some apps](https://flathub.org/)!
+
 ## Fstab
 
 ```
