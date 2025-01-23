@@ -4,28 +4,778 @@
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
   <rights>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</rights>
-  <updated>2024-12-17T23:11:00.084Z</updated>
+  <updated>2025-01-23T11:29:18.508Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
-  <category term="计算机"/>
   <category term="工作"/>
+  <category term="计算机"/>
   <category term="学习"/>
   <category term="理财"/>
+  <contributor>
+    <name>[[结构随手笔记]]</name>
+  </contributor>
   <contributor>
     <name>须尽欢</name>
   </contributor>
   <entry>
+    <title type="text">3proxy.cfg</title>
+    <id>https://jiange1236.github.io/tech/3proxy.html</id>
+    <link href="https://jiange1236.github.io/tech/3proxy.html"/>
+    <updated>2025-01-23T11:28:01.000Z</updated>
+    <summary type="html"><![CDATA[
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>#代理如果需要服务器解析，那么使用该dns解析并代理，我看官方的解释，默认是使用第一个的，如果第一个挂了才会使用第二个。如果不配置dns，则会使用服务器配置的dns地址，所以这里不是必须的，你可以注释掉</span></span>
+<span class="line"><span>#nserver 8.8.4.4</span></span>
+<span class="line"><span>#nserver 8.8.8.8</span></span>
+<span class="line"><span>#域名解析最大的缓存条目 默认即可，也可以注释掉</span></span>
+<span class="line"><span>#nscache 65536</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#各项连接选项的超时时间</span></span>
+<span class="line"><span>timeouts 1 5 30 60 180 1800 10 60     </span></span>
+<span class="line"><span>#timeouts &lt;BYTE_SHORT&gt; &lt;BYTE_LONG&gt; &lt;STRING_SHORT&gt; &lt;STRING_LONG&gt; &lt;CONNECTION_SHORT&gt; &lt;CONNECTION_LONG&gt; &lt;DNS&gt; &lt;CHAIN&gt;  </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#windows 用service ,  linux 用 deamon，这一项是必须的</span></span>
+<span class="line"><span>service</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#日志路径 参数D 是每天记录单独的日志文件  </span></span>
+<span class="line"><span>#log c:/service/3proxy/logs/3proxy.log D</span></span>
+<span class="line"><span>#日志内容格式</span></span>
+<span class="line"><span>#logformat "L%d %H:%M %N-%p %C:%c %R:%r %O %I %h %T err:%E"</span></span>
+<span class="line"><span>#保存最新的10个日志文件</span></span>
+<span class="line"><span>#rotate 10</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 代理认证的用户名和密码，这里定义了两个用户，zdw的密码是777，user的密码是pass，CL代表明文密码，多条之间空格分隔</span></span>
+<span class="line"><span>#users zdw:CL:777 user:CL:pass</span></span>
+<span class="line"><span># CL：代表明文密码</span></span>
+<span class="line"><span># CR：密码使用密文加密</span></span>
+<span class="line"><span># NT：密文加密</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#代理认证类型</span></span>
+<span class="line"><span>auth none</span></span>
+<span class="line"><span># none：不需要认证（默认类型）</span></span>
+<span class="line"><span># iponly：根据源IP地址进行ACL控制</span></span>
+<span class="line"><span># username：只验证用户名，用于Socks4代理</span></span>
+<span class="line"><span># nbname：认证基于NetBIOS （Windows系统）</span></span>
+<span class="line"><span># strong：基于弹窗用户名/密码认证，支持HTTP/POP3/FTP/SOCKSv5的代理类型</span></span>
+<span class="line"><span># cache：认证缓存，依赖authcache选项</span></span>
+<span class="line"><span>#####  auth strong / auth iponly atrong  可以同时开启多项认证方式</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#allow选项，允许这两个用户通过认证，用英文的逗号分隔</span></span>
+<span class="line"><span>allow *</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># allow &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; operationlist&gt; &lt;weekdayslist&gt; &lt;timeperiodslist&gt;  allow选项的参数，选项支持 *匹配</span></span>
+<span class="line"><span># deny &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt; &lt;weekdayslist&gt; &lt;timeperiodslist&gt;    deny选项的参数，选项支持 *匹配</span></span>
+<span class="line"><span>#Operation is one of:  代理连接方式支持以下方式</span></span>
+<span class="line"><span>#        CONNECT - establish outgoing TCP connection</span></span>
+<span class="line"><span>#        BIND - bind TCP port for listening</span></span>
+<span class="line"><span>#        UDPASSOC - make UDP association</span></span>
+<span class="line"><span>#        ICMPASSOC - make ICMP association (for future use)</span></span>
+<span class="line"><span>#        HTTP_GET - HTTP GET request</span></span>
+<span class="line"><span>#        HTTP_PUT - HTTP PUT request</span></span>
+<span class="line"><span>#        HTTP_POST - HTTP POST request</span></span>
+<span class="line"><span>#        HTTP_HEAD - HTTP HEAD request</span></span>
+<span class="line"><span>#        HTTP_CONNECT - HTTP CONNECT request</span></span>
+<span class="line"><span>#        HTTP_OTHER - over HTTP request</span></span>
+<span class="line"><span>#        HTTP - matches any HTTP request except HTTP_CONNECT</span></span>
+<span class="line"><span>#        HTTPS - same as HTTP_CONNECT</span></span>
+<span class="line"><span>#        FTP_GET - FTP get request</span></span>
+<span class="line"><span>#        FTP_PUT - FTP put request</span></span>
+<span class="line"><span>#        FTP_LIST - FTP list request</span></span>
+<span class="line"><span>#        FTP_DATA - FTP data connection. Note: FTP_DATA requires access to dynamic</span></span>
+<span class="line"><span>#        non-ptivileged (1024-65535) ports on remote side.</span></span>
+<span class="line"><span>#        FTP - matches any FTP/FTP Data request</span></span>
+<span class="line"><span>#        ADMIN - access to administration interface</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#开启一个HTTP代理 端口是20001  -n：关闭windows NTML验证（使用上面定义的账号密码认证）</span></span>
+<span class="line"><span>proxy -n -p20001</span></span>
+<span class="line"><span>#开启一个socks代理 端口是20002</span></span>
+<span class="line"><span>#socks -n -p20002</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#某一项代理方式可以设置无需记录日志</span></span>
+<span class="line"><span>nolog</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#速度限制段</span></span>
+<span class="line"><span>#首先，不限制zdw的速度</span></span>
+<span class="line"><span>#nobandlimin zdw</span></span>
+<span class="line"><span>#然后，其他用户整体限制到5m</span></span>
+<span class="line"><span>#bandlimin 5120000 *</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#bandlimin &lt;rate&gt; &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt;   入相带宽限制</span></span>
+<span class="line"><span>#bandlimout  &lt;rate&gt;  &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt;  出向带宽限制</span></span>
+<span class="line"><span>#nobandlimin   &lt;userlist&gt;  &lt;sourcelist&gt;  &lt;targetlist&gt;  &lt;targetportlist&gt;  &lt;operationlist&gt;  入带宽不限制</span></span>
+<span class="line"><span>#nobandlimout &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt;  出带宽不限制</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#用来划分各代理区域的配置参数，比如你可以在配置文件中配置两个代理 一个HTTP代理 一个Socks5代理  那么到第二段Socks5代理的时候，由于配置文件语法格式的限制，所以需要隔离上一个代理选项的配置参数，这里就需要 flash选项来刷新下端即将出现的参数，用来覆盖上端重复的参数。</span></span>
+<span class="line"><span>flush</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#下面这两行不是必须的，你可以看着办</span></span>
+<span class="line"><span>#代理服务器向外转发的时候绑定的IP地址</span></span>
+<span class="line"><span>#external 10.0.0.14</span></span>
+<span class="line"><span>#代理本地监听的IP地址</span></span>
+<span class="line"><span>#internal 0.0.0.0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>#代理如果需要服务器解析，那么使用该dns解析并代理，我看官方的解释，默认是使用第一个的，如果第一个挂了才会使用第二个。如果不配置dns，则会使用服务器配置的dns地址，所以这里不是必须的，你可以注释掉</span></span>
+<span class="line"><span>#nserver 8.8.4.4</span></span>
+<span class="line"><span>#nserver 8.8.8.8</span></span>
+<span class="line"><span>#域名解析最大的缓存条目 默认即可，也可以注释掉</span></span>
+<span class="line"><span>#nscache 65536</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#各项连接选项的超时时间</span></span>
+<span class="line"><span>timeouts 1 5 30 60 180 1800 10 60     </span></span>
+<span class="line"><span>#timeouts &lt;BYTE_SHORT&gt; &lt;BYTE_LONG&gt; &lt;STRING_SHORT&gt; &lt;STRING_LONG&gt; &lt;CONNECTION_SHORT&gt; &lt;CONNECTION_LONG&gt; &lt;DNS&gt; &lt;CHAIN&gt;  </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#windows 用service ,  linux 用 deamon，这一项是必须的</span></span>
+<span class="line"><span>service</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#日志路径 参数D 是每天记录单独的日志文件  </span></span>
+<span class="line"><span>#log c:/service/3proxy/logs/3proxy.log D</span></span>
+<span class="line"><span>#日志内容格式</span></span>
+<span class="line"><span>#logformat "L%d %H:%M %N-%p %C:%c %R:%r %O %I %h %T err:%E"</span></span>
+<span class="line"><span>#保存最新的10个日志文件</span></span>
+<span class="line"><span>#rotate 10</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 代理认证的用户名和密码，这里定义了两个用户，zdw的密码是777，user的密码是pass，CL代表明文密码，多条之间空格分隔</span></span>
+<span class="line"><span>#users zdw:CL:777 user:CL:pass</span></span>
+<span class="line"><span># CL：代表明文密码</span></span>
+<span class="line"><span># CR：密码使用密文加密</span></span>
+<span class="line"><span># NT：密文加密</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#代理认证类型</span></span>
+<span class="line"><span>auth none</span></span>
+<span class="line"><span># none：不需要认证（默认类型）</span></span>
+<span class="line"><span># iponly：根据源IP地址进行ACL控制</span></span>
+<span class="line"><span># username：只验证用户名，用于Socks4代理</span></span>
+<span class="line"><span># nbname：认证基于NetBIOS （Windows系统）</span></span>
+<span class="line"><span># strong：基于弹窗用户名/密码认证，支持HTTP/POP3/FTP/SOCKSv5的代理类型</span></span>
+<span class="line"><span># cache：认证缓存，依赖authcache选项</span></span>
+<span class="line"><span>#####  auth strong / auth iponly atrong  可以同时开启多项认证方式</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#allow选项，允许这两个用户通过认证，用英文的逗号分隔</span></span>
+<span class="line"><span>allow *</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># allow &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; operationlist&gt; &lt;weekdayslist&gt; &lt;timeperiodslist&gt;  allow选项的参数，选项支持 *匹配</span></span>
+<span class="line"><span># deny &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt; &lt;weekdayslist&gt; &lt;timeperiodslist&gt;    deny选项的参数，选项支持 *匹配</span></span>
+<span class="line"><span>#Operation is one of:  代理连接方式支持以下方式</span></span>
+<span class="line"><span>#        CONNECT - establish outgoing TCP connection</span></span>
+<span class="line"><span>#        BIND - bind TCP port for listening</span></span>
+<span class="line"><span>#        UDPASSOC - make UDP association</span></span>
+<span class="line"><span>#        ICMPASSOC - make ICMP association (for future use)</span></span>
+<span class="line"><span>#        HTTP_GET - HTTP GET request</span></span>
+<span class="line"><span>#        HTTP_PUT - HTTP PUT request</span></span>
+<span class="line"><span>#        HTTP_POST - HTTP POST request</span></span>
+<span class="line"><span>#        HTTP_HEAD - HTTP HEAD request</span></span>
+<span class="line"><span>#        HTTP_CONNECT - HTTP CONNECT request</span></span>
+<span class="line"><span>#        HTTP_OTHER - over HTTP request</span></span>
+<span class="line"><span>#        HTTP - matches any HTTP request except HTTP_CONNECT</span></span>
+<span class="line"><span>#        HTTPS - same as HTTP_CONNECT</span></span>
+<span class="line"><span>#        FTP_GET - FTP get request</span></span>
+<span class="line"><span>#        FTP_PUT - FTP put request</span></span>
+<span class="line"><span>#        FTP_LIST - FTP list request</span></span>
+<span class="line"><span>#        FTP_DATA - FTP data connection. Note: FTP_DATA requires access to dynamic</span></span>
+<span class="line"><span>#        non-ptivileged (1024-65535) ports on remote side.</span></span>
+<span class="line"><span>#        FTP - matches any FTP/FTP Data request</span></span>
+<span class="line"><span>#        ADMIN - access to administration interface</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#开启一个HTTP代理 端口是20001  -n：关闭windows NTML验证（使用上面定义的账号密码认证）</span></span>
+<span class="line"><span>proxy -n -p20001</span></span>
+<span class="line"><span>#开启一个socks代理 端口是20002</span></span>
+<span class="line"><span>#socks -n -p20002</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#某一项代理方式可以设置无需记录日志</span></span>
+<span class="line"><span>nolog</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#速度限制段</span></span>
+<span class="line"><span>#首先，不限制zdw的速度</span></span>
+<span class="line"><span>#nobandlimin zdw</span></span>
+<span class="line"><span>#然后，其他用户整体限制到5m</span></span>
+<span class="line"><span>#bandlimin 5120000 *</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#bandlimin &lt;rate&gt; &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt;   入相带宽限制</span></span>
+<span class="line"><span>#bandlimout  &lt;rate&gt;  &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt;  出向带宽限制</span></span>
+<span class="line"><span>#nobandlimin   &lt;userlist&gt;  &lt;sourcelist&gt;  &lt;targetlist&gt;  &lt;targetportlist&gt;  &lt;operationlist&gt;  入带宽不限制</span></span>
+<span class="line"><span>#nobandlimout &lt;userlist&gt; &lt;sourcelist&gt; &lt;targetlist&gt; &lt;targetportlist&gt; &lt;operationlist&gt;  出带宽不限制</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#用来划分各代理区域的配置参数，比如你可以在配置文件中配置两个代理 一个HTTP代理 一个Socks5代理  那么到第二段Socks5代理的时候，由于配置文件语法格式的限制，所以需要隔离上一个代理选项的配置参数，这里就需要 flash选项来刷新下端即将出现的参数，用来覆盖上端重复的参数。</span></span>
+<span class="line"><span>flush</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#下面这两行不是必须的，你可以看着办</span></span>
+<span class="line"><span>#代理服务器向外转发的时候绑定的IP地址</span></span>
+<span class="line"><span>#external 10.0.0.14</span></span>
+<span class="line"><span>#代理本地监听的IP地址</span></span>
+<span class="line"><span>#internal 0.0.0.0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>Powershell</h1>
+<p><strong>运行</strong></p>
+<p>打开控制台cmd/powershell**（管理员模式）<strong>切换到解压目录</strong>，**运行如下命令：</p>
+<div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" data-title="text" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>.\3proxy.exe .\3proxy.cfg</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>如果没有报错、没有任何输出，则证明运行成功，可以在客户端安装支持sock5的代理程序验证是否可用</p>
+<p><strong>注册为系统服务</strong></p>
+<p>在保证上面步骤成功的情况下运行如下命令</p>
+<div class="language-text line-numbers-mode" data-highlighter="shiki" data-ext="text" data-title="text" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>// 注册为服务并运行，默认使用3proxy.exe同路径下的3proxy.cfg配置文件</span></span>
+<span class="line"><span>.\3proxy.exe --install</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 删除服务，删除服务前要停止服务，如下图所示</span></span>
+<span class="line"><span>.\3proxy.exe --remove</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <published>2025-01-23T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">如何在Debian 11安装WireGuard VPN</title>
+    <id>https://jiange1236.github.io/tech/Wireguard.html</id>
+    <link href="https://jiange1236.github.io/tech/Wireguard.html"/>
+    <updated>2025-01-23T11:28:01.000Z</updated>
+    <summary type="html"><![CDATA[
+<p>WireGuard是一种现代VPN虚拟私有网络技术，它利用最新的加密技术。</p>
+<p>与其他流行的VPN解决方案，例如IPsec和<a href="https://www.myfreax.com/how-to-set-up-an-openvpn-server-on-ubuntu-18-04/" target="_blank" rel="noopener noreferrer">OpenVPN</a>相比，<a href="https://www.wireguard.com/" target="_blank" rel="noopener noreferrer">WireGuard</a>更快，更易于配置并且占用空间更小。</p>]]></summary>
+    <content type="html"><![CDATA[
+<p>WireGuard是一种现代VPN虚拟私有网络技术，它利用最新的加密技术。</p>
+<p>与其他流行的VPN解决方案，例如IPsec和<a href="https://www.myfreax.com/how-to-set-up-an-openvpn-server-on-ubuntu-18-04/" target="_blank" rel="noopener noreferrer">OpenVPN</a>相比，<a href="https://www.wireguard.com/" target="_blank" rel="noopener noreferrer">WireGuard</a>更快，更易于配置并且占用空间更小。</p>
+<p>它是跨平台的，几乎可以在任何操作系统运行，包括Linux，Windows，Android和macOS。</p>
+<p>Wireguard是对等VPN，它不使用C/S客户端/服务器模型。根据配置，对等方可以充当传统的服务器或客户端。</p>
+<p>它充当隧道，在每个对等设备上创建虚拟网络接口来工作。对等方通过交换和验证公钥，类似于使用SSH公钥模式来相互认证。</p>
+<p>公钥与隧道中允许的IP地址列表进行映射。VPN流量封装在UDP中。</p>
+<blockquote>
+<p>在本教程中，所有"接口"都表示为网卡，网卡是中国术语，接口通用的名词。</p>
+</blockquote>
+<p>Wireguard可用于防御中间人攻击，匿名浏览网络，绕过受地域限制的内容或允许在家工作的同事安全地连接到公司网络。</p>
+<p>要遵循本教程，您登录的用户必须具有<a href="https://www.myfreax.com/how-to-create-a-sudo-user-on-debian/" target="_blank" rel="noopener noreferrer">sudo权限</a>。我们将首先在Debian 11安装WireGuard，然后将其设置为服务器。</p>
+<p>我们还将说明如何配置WireGuard作为客户端的配置。WireGuard可从默认的Debian 11软件源中获得。</p>
+<p>要安装它，请运行<a href="https://www.myfreax.com/how-to-use-apt-command/" target="_blank" rel="noopener noreferrer">apt</a>命令&nbsp;<code>sudo apt update &amp;&amp; sudo apt install wireguard</code>。这将安装WireGuard模块和工具。WireGuard作为内核模块运行。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> apt</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> update</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> apt</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wireguard</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2>配置WireGuard</h2>
+<p><code>wg</code>和<code>wg-quick</code>命令行工具可帮助您配置和管理WireGuard接口，WireGuard接口是虚拟网卡。WireGuard VPN网络中的每个设备都需要具有私钥和公钥。</p>
+<p>我们可以使用wiregurad的工具<code>wg genkey</code>和<code>wg pubkey</code>在<code>/etc/wireguard/</code>目录中生成私钥<code>/etc/wireguard/privatekey</code>和公钥<code>/etc/wireguard/publickey</code>。</p>
+<p>以下命令将使用<code>wg genkey</code>和<code>wg pubkey</code>，<a href="https://www.myfreax.com/linux-tee-command/" target="_blank" rel="noopener noreferrer">tee命令</a>以及管道同时生成私钥和公钥并存储在<code>/etc/wireguard/</code>目录。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">wg</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> genkey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tee</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/privatekey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">wg</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pubkey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tee</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/publickey</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>您可以使用<a href="https://www.myfreax.com/linux-cat-command/" target="_blank" rel="noopener noreferrer"><code>cat</code>命令</a>或<a href="https://www.myfreax.com/linux-cat-command/" target="_blank" rel="noopener noreferrer"></a><a href="https://www.myfreax.com/linux-cat-command/" target="_blank" rel="noopener noreferrer"><code>less</code></a>命令查看私钥和公钥文件的内容。请不要把私钥与任何人共享，并且应始终保证私钥的安全。</p>
+<p>Wireguard还支持预共享密钥，这增加了对称密钥加密的附加层。预共享密钥是可选的，并且对于每个对等设备都必须是唯一的。</p>
+<p>下一步是配置虚拟接口。可以使用<code>[](https://www.myfreax.com/linux-ip-command/)[ip](https://www.myfreax.com/linux-ip-command/)</code><a href="https://www.myfreax.com/linux-ip-command/" target="_blank" rel="noopener noreferrer">命令</a>和<code>wg</code>命令配置接口。</p>
+<p>使用你喜欢的<a href="https://www.myfreax.com/tag/vim/" target="_blank" rel="noopener noreferrer">文本编辑器</a>创建配置文件<code>/etc/wireguard/wg0.conf</code>，在本教程中我们将<a href="https://www.myfreax.com/the-basis-of-the-linux-vim-command/" target="_blank" rel="noopener noreferrer">使用vim创建文件</a>。</p>
+<p><a href="https://www.myfreax.com/how-to-copy-cut-paste-in-vim/" target="_blank" rel="noopener noreferrer">复制黏贴</a>以下内容到<code>/etc/wireguard/wg0.conf</code>文件中，然后<a href="https://www.myfreax.com/how-to-save-file-in-vim-quit-editor/" target="_blank" rel="noopener noreferrer">保存并退出vim编辑器</a>。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/wg0.conf</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-ini line-numbers-mode" data-highlighter="shiki" data-ext="ini" data-title="ini" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">[Interface]</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">Address</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> 10.0.0.1/24</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">SaveConfig</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> true</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">ListenPort</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> 51820</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">PrivateKey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> SERVER_PRIVATE_KEY</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">PostUp</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> iptables -A FORWARD -i %i -j ACCEPT</span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">; iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">PostDown</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> iptables -D FORWARD -i %i -j ACCEPT</span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">; iptables -t nat -D POSTROUTING -o ens3 -j MASQUERADE</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>/etc/wireguard/wg0.conf</p>
+<p>接口的命名可以是任何你喜欢的名称，但是建议使用诸如<code>wg0</code>或<code>wgvpn0</code>之类的名称。可以让我们能快速分清是物理接口还是虚拟接口即可。</p>
+<p>这里说明一下<code>/etc/wireguard/wg0.conf</code>配置文件定义接口的每个字段含义。</p>
+<p><strong>Address</strong>&nbsp;<code>wg0</code>接口的IP v4或IP v6的地址。请使用保留给私有网络范围内的IP地址，比如10.0.0.0/8、172.16.0.0/12或192.168.0.0/16。</p>
+<p><strong>ListenPort</strong>&nbsp;是接口监听的端口。<strong>PrivateKey</strong>&nbsp;由<code>wg genkey</code>命令生成的私钥。你可以使用<code>sudo cat /etc/wireguard/privatekey</code>命令要查看私钥文件的内容。</p>
+<p><strong>SaveConfig</strong>&nbsp;设置为true时，当关闭接口时将当前配置将保存到配置文件中。<strong>PostUp</strong>&nbsp;在启动接口之前执行的命令或脚本。</p>
+<p>在此示例中，在<strong>PostUp</strong>钩子启用iptables伪装。这允许流量离开服务器，使VPN客户端可以访问互联网。</p>
+<p>请记得使用您可访问网络的接口名称替换<code>-A POSTROUTING</code>后面的<code>ens3</code>。您可以通过以下ip命令方式轻松找到可访问网络的接口。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">ip</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -o</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -4</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> route</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> show</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> to</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> default</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">awk</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> '{print $5}'</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>在<strong>PostDown</strong>钩子，我们在关闭接口之前删除iptables伪装。一旦接口关闭，iptablesnat转发规则将被删除。</p>
+<p>为了保证私钥的安全，请将<code>wg0.conf</code>和<code>privatekey</code>文件对普通用户不可读。运行<a href="https://www.myfreax.com/chmod-command-in-linux/" target="_blank" rel="noopener noreferrer">chmod</a>命令<code>sudo chmod 600 /etc/wireguard/{privatekey,wg0.conf}</code>。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> chmod</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 600</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/{privatekey,wg0.conf}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>启用Wireguard接口</h2>
+<p>完成以上步骤后，我们可以通过<code>wg-quick</code>启动wireguard服务器。这在wireguard中就是将接口状态设置为开启，运行<code>wg-quick up</code>命令将启用<code>wg0</code>接口。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg-quick</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> up</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>[#] ip link add wg0 type wireguard</span></span>
+<span class="line"><span>[#] wg setconf wg0 /dev/fd/63</span></span>
+<span class="line"><span>[#] ip -4 address add 10.0.0.1/24 dev wg0</span></span>
+<span class="line"><span>[#] ip link set mtu 1420 up dev wg0</span></span>
+<span class="line"><span>[#] iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>要检查接口状态和配置，请运行<code>wg show</code>命令。因为<code>wg0</code>是一个虚拟网卡，因此您也可以运行<code>ip a show wg0</code>来验证<code>wg0</code>接口状态。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> show</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg0</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">ip</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> a</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> show</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>interface: wg0</span></span>
+<span class="line"><span>  public key: r3imyh3MCYggaZACmkx+CxlD6uAmICI8pe/PGq8+qCg=</span></span>
+<span class="line"><span>  private key: (hidden)</span></span>
+<span class="line"><span>  listening port: 51820</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>wireguard作为内核模块运行，默认情况wireguard会自动启动，但接口<code>wg0</code>虚拟网卡不会自动启动。</p>
+<p>你可以通过systemctl命令将<code>wg0</code>设置为自动启动。要在启动时启用WireGuard的<code>wg0</code>接口。请运行<code>sudo systemctl enable wg-quick@wg0</code>命令。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> enable</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg-quick@wg0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>配置防火墙</h2>
+<p>在之前的步骤中我们在启动<code>wg0</code>接口<code>postup</code>前配置了一条iptables的NAT路由。为使NAT路由可正常工作，必须启用IP转发。</p>
+<p>使用你喜欢的<a href="https://www.myfreax.com/tag/vim/" target="_blank" rel="noopener noreferrer">编辑器</a>打开文件<code>/etc/sysctl.conf</code>。在本教程中我们将<a href="https://www.myfreax.com/the-basis-of-the-linux-vim-command/" target="_blank" rel="noopener noreferrer">使用vim打开文件</a>。然后添加或取消注释行<code>net.ipv4.ip_forward</code>。</p>
+<p><a href="https://www.myfreax.com/how-to-save-file-in-vim-quit-editor/" target="_blank" rel="noopener noreferrer">退出vim并保存文件</a>。修改完成后，运行<code>sudo sysctl -p</code>命令启用新的内核属性配置。</p>
+<p>如果您正在使用<a href="https://www.myfreax.com/how-to-setup-a-firewall-with-ufw-on-debian-11/" target="_blank" rel="noopener noreferrer">UFW</a>管理<a href="https://www.myfreax.com/how-to-setup-a-firewall-with-ufw-on-debian-11/" target="_blank" rel="noopener noreferrer">防火墙</a>，则需要允许端口<code>51820</code>的UDP连接。至此，你已部署并配置wireguard Debian服务器的对等方。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/sysctl.conf</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> sysctl</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ufw</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> allow</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> 51820/udp</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-ini line-numbers-mode" data-highlighter="shiki" data-ext="ini" data-title="ini" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">net.ipv4.ip_forward</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379">1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>/etc/sysctl.conf</p>
+<h2>配置Linux和macOS客户端</h2>
+<p>你可在<a href="https://wireguard.com/install/" target="_blank" rel="noopener noreferrer">wireguard</a>官网上找到所有受支持的平台安装说明。在Linux系统，您可以使用<a href="https://www.myfreax.com/how-to-use-apt-command/" target="_blank" rel="noopener noreferrer">Apt</a>/<a href="https://www.myfreax.com/how-to-install-rpm-packages-on-centos/" target="_blank" rel="noopener noreferrer">Yum软件包管理器</a>来安装软件wireguard。</p>
+<p>macOS用户可以使用<code>brew</code>安装wireguard。安装完成后，请按照以下步骤配置客户端设备。</p>
+<p>设置Linux和macOS客户端的过程几乎与服务器相同，这是因为两端之间是对等。</p>
+<p>首先使用wiregurad的工具<code>wg genkey</code>和<code>wg pubkey</code>生成公钥和私钥并保存在<code>/etc/wireguard/</code>目录。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">wg</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> genkey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tee</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/privatekey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">wg</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> pubkey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> tee</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/publickey</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>使用你喜欢的<a href="https://www.myfreax.com/tag/vim/" target="_blank" rel="noopener noreferrer">文本编辑器</a>创建配置文件<code>/etc/wireguard/wg0.conf</code>，在本教程中我们将<a href="https://www.myfreax.com/the-basis-of-the-linux-vim-command/" target="_blank" rel="noopener noreferrer">使用vim创建文件</a>。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vim</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/wg0.conf</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-ini line-numbers-mode" data-highlighter="shiki" data-ext="ini" data-title="ini" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">[Interface]</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">PrivateKey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> CLIENT_PRIVATE_KEY </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">#客户端生成的私钥</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">Address</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> 10.0.0.2/24</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">[Peer]</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">PublicKey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> SERVER_PUBLIC_KEY  </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">#服务器端生成的公钥</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">Endpoint</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> SERVER_IP_ADDRESS:51820</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">AllowedIPs</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> 0.0.0.0/0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>/etc/wireguard/wg0.conf</p>
+<h3>Interface</h3>
+<p><strong>PrivateKey</strong>&nbsp;客户端生成的私有密钥，可以使用<code>cat</code>命令<code>sudo cat /etc/wireguard/privatekey</code>查看客户端计算机的私有密钥文件的内容。</p>
+<p><strong>Address</strong>&nbsp;<code>wg0</code>接口的IPv4或IP v6地址。</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> cat</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/privatekey</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3>Peer</h3>
+<p><strong>PublicKey</strong>&nbsp;您要连接的对等方的公钥。也就是服务器端的<code>/etc/wireguard/publickey</code>文件内容。</p>
+<p><strong>Endpoint</strong>&nbsp;您要连接的对等方的IP地址或主机名，后跟冒号，然后是远程对等方监听的端口号，默认是51820。注意：这个IP地址是公网可访问的IP地址。</p>
+<p><strong>AllowedIPs</strong>&nbsp;是使用逗号分隔的IPv4或IP v6地址列表，如果数据包与IP列表匹配，这些数据包将走wireguard通道。</p>
+<p>我们使用0.0.0.0/0表示将所有流量都转发到wireguard服务器端。如果您需要配置其他客户端，只需重复相同的步骤即可。</p>
+<h2>配置Windows客户端</h2>
+<p>从<a href="https://wireguard.com/install/" target="_blank" rel="noopener noreferrer">WireGuard网站</a>下载并安装Windows msi软件包。安装后，打开WireGuard应用程序，然后单击<code>添加隧道</code>。</p>
+<p>将自动创建公钥与私钥，并将其显示在屏幕上。输入接口的名称，该接口的名称，可以使用你喜欢的任何名称。并按如下方式编辑配置。</p>
+<div class="language-ini line-numbers-mode" data-highlighter="shiki" data-ext="ini" data-title="ini" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">[Interface]</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">PrivateKey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> CLIENT_PRIVATE_KEY </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">#客户端生成的私钥</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">Address</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> 10.0.0.2/24</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">[Peer]</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">PublicKey</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> SERVER_PUBLIC_KEY  </span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic">#服务器端生成的公钥</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">Endpoint</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> SERVER_IP_ADDRESS:51820</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#C678DD">AllowedIPs</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#98C379"> 0.0.0.0/0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>Interface</h3>
+<p><strong>PrivateKey</strong>&nbsp;客户端生成的私有密钥，可以使用<code>cat</code>命令<code>sudo cat /etc/wireguard/privatekey</code>查看客户端计算机的私有密钥文件的内容。</p>
+<p><strong>Address</strong>&nbsp;<code>wg0</code>接口的IPv4或IP v6地址。</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> cat</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /etc/wireguard/privatekey</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3>Peer</h3>
+<p><strong>PublicKey</strong>&nbsp;您要连接的对等方的公钥。也就是服务器端的<code>/etc/wireguard/publickey</code>文件内容。</p>
+<p><strong>Endpoint</strong>&nbsp;您要连接的对等方的IP地址或主机名，后跟冒号，然后是远程对等方监听的端口号，默认是51820。注意：这个IP地址是公网可访问的IP地址。</p>
+<p><strong>AllowedIPs</strong>&nbsp;是使用逗号分隔的IPv4或IP v6地址列表，如果数据包与IP列表匹配，这些数据包将走wireguard通道。</p>
+<p>我们使用0.0.0.0/0表示将所有流量都转发到wireguard服务器端。如果您需要配置其他客户端，只需重复相同的步骤即可。</p>
+<h2>将客户端添加到服务器</h2>
+<p>最后一步是将客户端的公钥和IP地址添加到对等方，也就是服务器端口。要将客户端添加到服务器，非常简单。</p>
+<p>你只需要在Debian 11服务器运行命令<code>sudo wg set wg0 peer CLIENT_PUBLIC_KEY allowed-ips 10.0.0.2</code>。</p>
+<p>请使用在客户端计算机生成的公钥替换<code>CLIENT_PUBLIC_KEY</code>，可以通过<code>sudo cat /etc/wireguard/publickey</code>命令查看客户端的公钥。</p>
+<p>Windows用户可以从WireGuard应用程序复制公钥。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg0</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> peer</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> CLIENT_PUBLIC_KEY</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> allowed-ips</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 10.0.0.2</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3>Linux/macOS客户端</h3>
+<p>Linux和macOS客户端运行命令<code>sudo wg-quick up wg0</code>启用客户端<code>wg0</code>接口。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg-quick</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> up</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>现在，您应该已连接到Debian 11服务器，并且来自客户端计算机的流量应通过该服务器。 您可以运行<code>sudo wg</code>命令检查连接。</p>
+<p>如果一切正常，你应该看到wg0接口，transfer和received的数据大小。</p>
+<p>您也可以打开浏览器，搜索<code>what is my ip</code>，然后您应该会看到您的Debian 11服务器IP地址。</p>
+<p>要停止使用wiregurad，请关闭<code>wg0</code>接口，运行命令<code>sudo wg-quick down wg0</code>。</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg-quick</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> down</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> wg0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>interface: wg0</span></span>
+<span class="line"><span>  public key: gFeK6A16ncnT1FG6fJhOCMPMeY4hZa97cZCNWis7cSo=</span></span>
+<span class="line"><span>  private key: (hidden)</span></span>
+<span class="line"><span>  listening port: 53527</span></span>
+<span class="line"><span>  fwmark: 0xca6c</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>peer: r3imyh3MCYggaZACmkx+CxlD6uAmICI8pe/PGq8+qCg=</span></span>
+<span class="line"><span>  endpoint: XXX.XXX.XXX.XXX:51820</span></span>
+<span class="line"><span>  allowed ips: 0.0.0.0/0</span></span>
+<span class="line"><span>  latest handshake: 53 seconds ago</span></span>
+<span class="line"><span>  transfer: 3.23 KiB received, 3.50 KiB sent</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>Windows客户端</h3>
+<p>如果您在Windows安装了WireGuard，请单击<code>激活</code>按钮。 连接到对等方后，隧道状态将更改为<code>活动</code>。</p>
+<h2>结论</h2>
+<p>我们已向您展示了如何在Debian 11安装WireGuard并将其配置为VPN服务器。通过此设置，</p>
+<p>您可以通过保持数据不公开来匿名浏览网络。如果您遇到任何问题，请随时发表评论。</p>
+<h1><a class="header-anchor" href="#在wireguard中排除部分ip-段"><span></span></a><a href="https://lxnchan.cn/wireguard-exclude-ips.html" target="_blank" rel="noopener noreferrer">在Wireguard中排除部分IP（段）</a></h1>
+<p>众所周知，在Wireguard中只能设置允许的IP（<code>AllowedIPs</code>），没办法设置排除部分IP段。但是可以通过一个Python脚本来计算排除掉某个IP或IP段之后的<code>AllowedIPs</code>。</p>
+<p>改一下下面的参数，然后直接丢Python运行一下，输出结果填在<code>AllowedIPs</code>即可。</p>
+<p>|                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|</p>
+]]></content>
+    <published>2025-01-23T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">百度网盘Docker | RUI</title>
+    <id>https://jiange1236.github.io/tech/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98Docker.html</id>
+    <link href="https://jiange1236.github.io/tech/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98Docker.html"/>
+    <updated>2025-01-23T11:28:01.000Z</updated>
+    <summary type="html"><![CDATA[
+<blockquote>
+<h2>Excerpt</h2>
+<p>百度网盘群晖套件版提取版 群晖套件版就是一个docker容器 网上竟然没有人分享这个docker容器 我自己提取出来了 ，可以在非群晖机器上直接运行 说明 baiduapp 这个是解包提取出来的 baiduappdata 不在群晖上，直接使用docker部署时需要用到 安装 解压baiduappdata.zip到`baidu/data文件夹 ; Doc...</p>
+</blockquote>
+<hr>
+<p><a href="https://docs.bestrui.top/" target="_blank" rel="noopener noreferrer">RUI</a></p>]]></summary>
+    <content type="html"><![CDATA[
+<blockquote>
+<h2>Excerpt</h2>
+<p>百度网盘群晖套件版提取版 群晖套件版就是一个docker容器 网上竟然没有人分享这个docker容器 我自己提取出来了 ，可以在非群晖机器上直接运行 说明 baiduapp 这个是解包提取出来的 baiduappdata 不在群晖上，直接使用docker部署时需要用到 安装 解压baiduappdata.zip到`baidu/data文件夹 ; Doc...</p>
+</blockquote>
+]]></content>
+    <published>2025-01-23T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">肥羊的IPTV等直播源代理Docker部署教程</title>
+    <id>https://jiange1236.github.io/tech/%E8%82%A5%E7%BE%8A%E7%9A%84IPTV%E7%AD%89%E7%9B%B4%E6%92%AD%E6%BA%90%E4%BB%A3%E7%90%86Docker%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B.html</id>
+    <link href="https://jiange1236.github.io/tech/%E8%82%A5%E7%BE%8A%E7%9A%84IPTV%E7%AD%89%E7%9B%B4%E6%92%AD%E6%BA%90%E4%BB%A3%E7%90%86Docker%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B.html"/>
+    <updated>2025-01-23T11:28:01.000Z</updated>
+    <summary type="html"><![CDATA[
+<blockquote>
+<h2>Excerpt</h2>
+<p>一、推荐使用 Docker 一键运行，并配置 watchtower 监听 Docker 镜像更新，直接一劳永逸： 1，使用 Docker 一键配置 allinone 1 docker run -d --restart unless-stopped --net=host --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone 2，一键配置 watchtower 每天凌晨两点自动监听 allinone 镜像更新，同步 GitHub 仓库： 1 docker run -d --name watchtower --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower allinone -c --schedule "0 0 2 * * *" 3、Docker compose 方式（10 月 26 日修订） 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 version: "3.3" services: allinone: restart: unless-stopped privileged: true ports: - 35455:35455 container_name: allinone image: youshandefeiyang/allinone networks:  -------------- version: "3.3" services: av3a-assistant: image: youshandefeiyang/av3a-assistant:amd64 restart: unless-stopped privileged: true ports: - 35442:35442 networks:  二、直接运行： 首先去 action 中下载对应平台二进制执行文件，然后解压并直接执行\n</p>
+</blockquote>]]></summary>
+    <content type="html"><![CDATA[
+<blockquote>
+<h2>Excerpt</h2>
+<p>一、推荐使用 Docker 一键运行，并配置 watchtower 监听 Docker 镜像更新，直接一劳永逸： 1，使用 Docker 一键配置 allinone 1 docker run -d --restart unless-stopped --net=host --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone 2，一键配置 watchtower 每天凌晨两点自动监听 allinone 镜像更新，同步 GitHub 仓库： 1 docker run -d --name watchtower --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower allinone -c --schedule "0 0 2 * * *" 3、Docker compose 方式（10 月 26 日修订） 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 version: "3.3" services: allinone: restart: unless-stopped privileged: true ports: - 35455:35455 container_name: allinone image: youshandefeiyang/allinone networks:</p>
+</blockquote>
+]]></content>
+    <published>2025-01-23T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">城市体检</title>
+    <id>https://jiange1236.github.io/work/%E5%9F%8E%E5%B8%82%E4%BD%93%E6%A3%80.html</id>
+    <link href="https://jiange1236.github.io/work/%E5%9F%8E%E5%B8%82%E4%BD%93%E6%A3%80.html"/>
+    <updated>2025-01-23T11:28:01.000Z</updated>
+    <summary type="html"><![CDATA[
+<h2>住房</h2>
+<h3>安全耐久</h3>
+<h3>功能完备</h3>
+<h3>绿色智能</h3>
+<h2>小区 （社区）</h2>
+<h3>设施完备</h3>
+<h3>环境宜居</h3>
+<h3>管理健全</h3>
+<h2>街区</h2>
+<h3>功能完善</h3>
+<h3>整洁有序</h3>
+<h3>特色活力</h3>
+<h2>城区（城市）</h2>
+<h3>生态宜居</h3>
+<h3>历史文化保护利用</h3>
+<h3>产城融合、职住平衡</h3>
+<h3>安全韧性</h3>
+<h3>智慧高效</h3>
+]]></summary>
+    <content type="html"><![CDATA[
+<h2>住房</h2>
+<h3>安全耐久</h3>
+<h3>功能完备</h3>
+<h3>绿色智能</h3>
+<h2>小区 （社区）</h2>
+<h3>设施完备</h3>
+<h3>环境宜居</h3>
+<h3>管理健全</h3>
+<h2>街区</h2>
+<h3>功能完善</h3>
+<h3>整洁有序</h3>
+<h3>特色活力</h3>
+<h2>城区（城市）</h2>
+<h3>生态宜居</h3>
+<h3>历史文化保护利用</h3>
+<h3>产城融合、职住平衡</h3>
+<h3>安全韧性</h3>
+<h3>智慧高效</h3>
+]]></content>
+    <published>2025-01-23T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">广东高规</title>
+    <id>https://jiange1236.github.io/work/%E5%B9%BF%E4%B8%9C%E9%AB%98%E8%A7%84.html</id>
+    <link href="https://jiange1236.github.io/work/%E5%B9%BF%E4%B8%9C%E9%AB%98%E8%A7%84.html"/>
+    <updated>2025-01-23T08:59:28.000Z</updated>
+    <summary type="html"><![CDATA[<p>[toc]</p>
+<h1>结构所在地区</h1>
+<p>选择广东高规，程序自动勾选上性能设计，取消与抗震等级相关的构件内力调整，自动调整抗震设计谱并取中震下地震影响系数最大值。</p>
+<h1>梁刚度系数</h1>
+<p>梁刚度放大系数把地震区分开进行设置；</p>
+<p>#梁刚度放大系数（地震） 1.2~1.5</p>
+<p>连梁刚度折减地震下可取 0.2~0.3，风作用下不宜小于 0.8；</p>
+<p>可以考虑梁端刚域，不要勾选柱端刚域。选择广东高规后，程序自动不勾选柱端刚域，</p>
+<p>若用户手动勾选，则程序会安装旧规范计算柱端刚域。</p>
+<h1>抗震构造等级及周期折减</h1>]]></summary>
+    <content type="html"><![CDATA[<p>[toc]</p>
+<h1>结构所在地区</h1>
+<p>选择广东高规，程序自动勾选上性能设计，取消与抗震等级相关的构件内力调整，自动调整抗震设计谱并取中震下地震影响系数最大值。</p>
+<h1>梁刚度系数</h1>
+<p>梁刚度放大系数把地震区分开进行设置；</p>
+<p>#梁刚度放大系数（地震） 1.2~1.5</p>
+<p>连梁刚度折减地震下可取 0.2~0.3，风作用下不宜小于 0.8；</p>
+<p>可以考虑梁端刚域，不要勾选柱端刚域。选择广东高规后，程序自动不勾选柱端刚域，</p>
+<p>若用户手动勾选，则程序会安装旧规范计算柱端刚域。</p>
+<h1>抗震构造等级及周期折减</h1>
+<p>抗震构造等级根据地区确定后在抗震等级中填写。程序中涉及的抗震构造措施的抗震等级调整均不勾选。</p>
+<p>周期折减系数根据规范要求进行设置，7 度及以上为 1</p>
+<h1>性能设计</h1>
+<p>选择对应性能水准。承载力利用系数，地震力折减系数程序自动根据规范要求取值。</p>
+<p>#水平耗能构件系数 可设置为 0.5~0.7 的数值；</p>
+<p>7 度 0.15g 及以上的结构可勾选考虑 #钢筋超强系数 1.25</p>
+<h1>结果输出</h1>
+<p>1、风荷载下结构顶点位移取 wdisp 文件中的层平均位移值，该值与结构总高度之比不宜大于 1/600.  后续版本会直接输出该值，现需要手动提取进行计算。</p>
+<p>2、楼层承载力限值修改为 0.75，当承载力之比小于 0.75 时，输出计算书相关部分会予以提示。</p>
+<p>3、剪重比调整根据 4.3.12 条进行修改，水平地震剪力系数根据表 4.3.12-1~4.3.12-3 取值</p>
+<p>4、整体稳定验算时按 1.0 恒+0.5 活计算</p>
+<p>5、修改柱轴压比计算方法，根据规范给出各种结构体系下的柱、墙轴压比限值。</p>
+]]></content>
+    <category term="工作"/>
+    <published>2024-12-30T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">砌体结构加固时，关于原砌体砂浆强度等级问题汇总</title>
+    <id>https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%A0%8C%E4%BD%93%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%97%B6%EF%BC%8C%E5%85%B3%E4%BA%8E%E5%8E%9F%E7%A0%8C%E4%BD%93%E7%A0%82%E6%B5%86%E5%BC%BA%E5%BA%A6%E7%AD%89%E7%BA%A7%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.html</id>
+    <link href="https://jiange1236.github.io/work/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%96%99/%E7%A0%8C%E4%BD%93%E7%BB%93%E6%9E%84%E5%8A%A0%E5%9B%BA%E6%97%B6%EF%BC%8C%E5%85%B3%E4%BA%8E%E5%8E%9F%E7%A0%8C%E4%BD%93%E7%A0%82%E6%B5%86%E5%BC%BA%E5%BA%A6%E7%AD%89%E7%BA%A7%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.html"/>
+    <updated>2025-01-23T11:28:01.000Z</updated>
+    <summary type="html"><![CDATA[<p><strong><strong>01 引言</strong></strong></p>
+<p>在砌体结构加固过程中，相关规范或规程对原砌体砂浆强度有明确要求。本文汇总了这些规定，分析了受剪承载力不够时，采用钢筋网砂浆面层加固时，为何原砌筑砂浆强度等级不能高于M2.5；探讨了当砂浆强度低于M0.4时，采用钢筋网砂浆面层加固时需要采取的措施。</p>
+<p><strong><strong>02 采用</strong></strong><strong>板墙面层加固时，墙体的砂浆强度等级要求</strong></p>
+<p>采用混凝土板墙加固墙体时，《砌体结构加固设计规范》GB50702和《既有建筑鉴定与加固通用规范》GB55021中没有砌筑砂浆强度的要求，而《建筑抗震鉴定标准》GB50023及《建筑抗震加固技术规程》JGJ116则有砂浆强度等级的相关规定。</p>]]></summary>
+    <content type="html"><![CDATA[<p><strong><strong>01 引言</strong></strong></p>
+<p>在砌体结构加固过程中，相关规范或规程对原砌体砂浆强度有明确要求。本文汇总了这些规定，分析了受剪承载力不够时，采用钢筋网砂浆面层加固时，为何原砌筑砂浆强度等级不能高于M2.5；探讨了当砂浆强度低于M0.4时，采用钢筋网砂浆面层加固时需要采取的措施。</p>
+<p><strong><strong>02 采用</strong></strong><strong>板墙面层加固时，墙体的砂浆强度等级要求</strong></p>
+<p>采用混凝土板墙加固墙体时，《砌体结构加固设计规范》GB50702和《既有建筑鉴定与加固通用规范》GB55021中没有砌筑砂浆强度的要求，而《建筑抗震鉴定标准》GB50023及《建筑抗震加固技术规程》JGJ116则有砂浆强度等级的相关规定。</p>
+<p><strong>1）《建筑抗震鉴定标准》GB50023中第5.2.3条是对A类砌体房屋砂浆强度的要求，第5.3.4条是</strong>对B类砌体房屋砂浆强度的要求**。**
+
+
+<strong>2)《<strong>建筑抗震加固技术规程</strong>》JGJ116-2009中第5.3.8.2条，墙段增强系数取值与砌筑砂浆强度有关。</strong><br>
+
+<strong>理解：</strong></p>
+<p>《建筑抗震鉴定标准》GB50023与《建筑抗震加固技术规程》JGJ116是抗震鉴定与加固设计配套的工程标准，所以抗震加固设计时，墙体砂浆强度也要满足《建筑抗震鉴定标准》GB50023中规定的A、B类建筑的最低要求限值。以A类建筑为例，加固时，原砌筑砂浆强度<strong>不宜</strong>（7度时超过二层或8、9度时）小于M1，<strong>不应</strong>（6度时或7度二层及以下）小于M0.4。</p>
+<p><strong><strong>03</strong></strong>&nbsp;<strong>采用钢筋网砂浆面层加固时，墙体的砂浆强度等级要求</strong></p>
+<p>采用水泥砂浆面层或钢筋网砂浆面层加固墙体时，《建筑抗震鉴定标准》GB50023、《建筑抗震加固技术规程》JGJ116、《砌体结构加固设计规范》GB50702及《既有建筑鉴定与加固通用规范》GB55021均对墙体砌筑砂浆的强度等级提出了明确要求。</p>
+<p><strong>1)《建筑抗震鉴定标准》GB50023-2009中第5.2.3是对A类建筑的要求，5.3.4是对B类建筑的要求。</strong>
+
+
+<strong>2)《建筑抗震加固技术规程》JGJ 116-2009第5.3.2条，规定原砌筑砂浆强度等级不宜高于M2.5。</strong>
+
+<strong>3 )****《砌体结构加固设计规范》GB 50702-2011的第6.1.2条，明确规定了受压构件和受剪构件的砂浆强度的最低要求。</strong>
+
+<strong>4）《既有建筑鉴定与加固通用规范》GB55021-2021第6.7.3条 ，与</strong>《砌体结构加固设计规范》GB 50702-2011规定相同，<strong>规定了受压构件有砂浆强度的最低要求。</strong>
+
+<strong>对于《建筑抗震加固技术规程》JGJ 116-2009 第 5.3.2 条规定的砌筑砂浆强度等级不宜高于 M2.5，而《砌体结构加固设计规范》GB 50702-2011第6.1.2 条规定砌筑砂浆强度等级不应低于 M2.5，如何理解？</strong></p>
+<p>《山东省施工图审查常见问题解答》中有具体解答，解答如下：</p>
+<p>1 当现行各工程建设标准规定不一致时，首先满足通用规范相关要求，其它推荐性标准建议按大管小、新管旧、专门管一般的原则。因此，砌体结构加固应执行《既有建筑鉴定与加固通用规范》GB55021-2021。《砌体结构加固设计规范》GB50702-2011实施后，《建筑抗震加固技术规程》JGJ 116-2009中砌体加固的有关内容也可作为设计参考。《既有建筑鉴定与加固通用规范》GB55021-2021第 6.7.3-1条沿用了《砌体结构加固设计规范》第 6.1.2-1 条的规定，且提升为强制性条文。</p>
+<p>2 按结构概念理解,《建筑抗震加固技术规程》JGJ116-2009 注重加固的效率，原砌体的砌筑砂浆强度等级高于M2.5时，这种加固方法效果较差，本规程的抗震加固承载力计算公式只适用于不大于M2.5情况。《砌体结构加固设计规范》GB 50702-2011注重工程质量和安全，本规范6.1.2 条规定了采用这种加固方法加固砌体时，原砌筑砂浆的强度等级最小要求，并且采用钢筋网砂浆面层的方法加固墙体时，采用了与JGJ116不同的计算方法。以上两本标准，按国家标准化法，通用规范实施后，都是现行推荐性标准，具体工程的结构设计师有判定是否采用的权责。</p>
+<p>结论建议如下：当采用钢筋网水泥砂浆面层加固法加固砌体构件：用于受压承载力加固时，原砌筑砂浆强度等级不应低于M2.5（《既有建筑鉴定与加固通用规范》GB55021-2021 第 6.7.3-1 强条）；当受压承载力满足要求，仅用于受剪承载力加固时，可按《砌体结构加固设计规范》GB 50702-2011第 6.3 节、6.4 节进行受剪承载力验算，并符合本规范相关规定要求【6.1.2 条：对砖砌体受剪构件，原砌筑砂浆强度等级不宜低于M1，若为低层房屋，允许不低于M0.4；但对砌块砌体，其原砌筑砂浆强度等级不应低于 M2.5（《既有建筑鉴定与加固通 用规范》GB55021-2021 第 6.7.3-1 强条）】；当受压承载力满足要求，仅用于受剪承载力加固时，当满足以上原砌筑砂浆最低要求，且不大于 M2.5 时，也可按《建筑抗震加固技术规程》JGJ 116-2009 进行砌体抗震加固设计。</p>
+<p>**《建筑抗震加固技术规程》**JGJ 116-2009（以下简称规程）**与《砌体结构加固设计规范》**GB 50702-2011（以下简称规范），<strong>在加固后墙体的计算方法上存在差异：&nbsp;规程采用的是增强系数法，而规范则采用受剪承****载力计算法。</strong></p>
+<p>规程中表5.3.2-1详细列出了单面加固与双面加固时的基准增强系数。从该表格可以观察到，无论是单面加固还是双面加固，随着砂浆强度等级的提升，基准增强系数均呈现逐渐减小的趋势。
+
+规程第5.3.2条文解释也说明了原因：当砌筑砂浆的强度等级超过M2.5时，面层加固的效果变得不显著，此时的增强系数接近于1.0。这与表5.3.2-1中显示的增强系数随砂浆强度提高而逐渐减小的趋势是一致的。</p>
+<p>规范采用的是受剪承载力计算法，砌体受剪承载力与原墙体砌筑砂浆强度等级、钢筋网水泥面层的厚度以及竖向压应力等因素相关。<strong>那么，规范的计算方法是否也呈现出与规程相似的变化规律呢？</strong></p>
+<p>将规范中用于抗震受剪承载力的计算方法转换为增强系数法。规范6.3.1规定砌体墙内剪力设计值等于原砌体受剪承载力加钢筋网水泥砂浆面层受剪承载力。
+
+规范6.3.2条给出了采用手工抹压施工的钢筋网水泥砂浆面层加固的受剪承载力计算公式。
+</p>
+<p>规范6.4.2 条给出了钢筋网水泥砂浆面层加固砌体墙的抗震受剪承载力计算公式。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>假设普通烧结砖砌体墙，墙厚tw=240mm，竖向压应力0.3MPa,采用钢筋网水泥砂浆面层加固，砂浆强度等级M10(f=3.4MPa,表6.2.1)，水平分布钢筋为6@200（HPB300），fy=270N/mm2, As =28.3mm2（单面加固）,A s =56.6mm2(双面加固)。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>原砌体抗震受剪承载力：VME&nbsp;=&nbsp;fve&nbsp;*&nbsp;A/γRE，γRE&nbsp;=1,A=tw*h</p>
+<p>VME=&nbsp;fve*tw*h</p>
+<p>砌体加固受剪承载力转化为增强系数：η=（VME +Vsj/γRE）/VME =1+Vsj/(0.9* Vme)</p>
+<p>=1+(0.02*f*b*h+0.2*&nbsp;fy*&nbsp;As*(h/s))/ (0.9*fve*tw*h&nbsp;) &nbsp; 式1</p>
+<p>对于单面砂浆面层加固：</p>
+<p>η=1+(0.076*b+8.49)/(fve*tw) &nbsp;式2</p>
+<p>对于双面砂浆面层加固：</p>
+<p>η&nbsp;=1&nbsp;+(0.076*b+16.98&nbsp;)&nbsp;/(&nbsp;fve*tw) &nbsp;式3</p>
+<p>依据式2和式3，计算了面层厚度为20mm（无配筋）、30mm（有配筋）及40mm（有配筋）时的增强系数，并将结果统计如下：</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>从式1可以得知，增强系数受原砖墙砌筑砂浆强度等级、钢筋网水泥砂浆面层厚度、竖向压应力以及原砌体墙厚度等因素的影响。本文仅针通过原砖墙砌筑砂浆强度等级的变化，分析增强系数的变化趋势，来阐释规程中关于受剪加固时原砌筑砂浆强度最高限值的规定。</p>
+<p>从表1可知，在保持其他参数不变的情况下，原砌筑砂浆强度等级的越高，增强系数相应越小，这一变化规律与规程中直接给出的基准增强系数变化规律相吻合。当原砌筑砂浆强度等级高于M2.5时，加固并非无效，而是其效果变得相对有限，增强系数趋近于1.0。</p>
+<p>以上内容参考了刘培、程绍革、白雪霜所撰写的《钢筋网水泥砂浆面层加固砖墙承载力增强系数的研究》一文。</p>
+<h2><strong><strong>04</strong></strong>&nbsp;<strong>采用高延性混凝土面层加固时，墙体的砂浆强度</strong>等级<strong>要求</strong></h2>
+<p>高延性混凝土面层加固法作为一种新型加固技术，未在《建筑抗震鉴定标准》GB50023、《建筑抗震加固技术规程》JGJ116、《砌体结构加固设计规范》GB 50702及《既有建筑鉴定与加固通用规范》GB55021等规范中被提及，而仅在地方或团体标准中有所涉及。全国已有多地发布实施了相关标准。</p>
+<p><strong>2016年</strong></p>
+<p>陕西《高延性混凝土应用技术规程》 DBJ61/T112-2021</p>
+<p>陕西《高延性混凝土加固砌体结构图集》 陕16J12</p>
+<p><strong>2018年</strong></p>
+<p>陕西《农村危房改造高延性混凝土加固应用技术导则》</p>
+<p><strong>2019年</strong></p>
+<p>甘肃《高延性混凝土应用技术标准》 DB62/T3159-2019</p>
+<p>甘肃《高延性混凝土加固砌体结构构造》甘19G01</p>
+<p>云南《高延性混凝土加固技术导则》</p>
+<p><strong>2020年</strong></p>
+<p>山西《高延性混凝土加固技术规程》 DBJ04/T397-2019</p>
+<p>宁夏《高延性混凝土加固技术规程》DB64/T 1746-2020</p>
+<p>河南《高延性混凝土加固农房技术标准》DBJ41/T236-2020</p>
+<p>安徽《高延性混凝土应用技术规程》DB34∕T 3469-2019</p>
+<p><strong>2021年</strong></p>
+<p>天津《高延性混凝土加固农村住房应用技术导则》</p>
+<p>新疆《高延性混凝土加固技术标准》XXJ135-2021</p>
+<p>山东《高延性混凝土加固技术规程》DB37/T5191-2021</p>
+<p>宁夏《高延性混凝土加固砌体结构图集》</p>
+<p>河北《高延性混凝土加固砌体结构技术标准》DB13(J)/T8394-2020</p>
+<p>辽宁《高延性混凝土加固技术规程》&nbsp;DB21/T 3353-2020</p>
+<p><strong>2022年</strong></p>
+<p>云南《既有房屋建筑抗震加固技术导则》</p>
+<p>CECS《高韧性混凝土加固砌体结构技术规程》 T/CECS997-2022</p>
+<p>江苏《高延性混凝土加固技术规程》T/JSTJH 5-2022</p>
+<p>陕西《陕西省城乡居民自建房安全隐患排查技术导则》</p>
+<p>西安《西安市城乡居民自建房加固技术导则》</p>
+<p>安徽《高延性混凝土加固砖砌体结构构造》</p>
+<p>陕西《钢筋桁架高延性混凝土楼承板标准图集》</p>
+<p>新疆《高延性混凝土加固砌体结构图集》</p>
+<p>江西《高延性混凝土加固技术标准》</p>
+<p><strong>2023年</strong></p>
+<p>山西《农村房屋高延性混凝土加固技术规程》DBJ04/T 438-2023</p>
+<p>西安《城镇既有建筑抗震隐患排查技术规程》DB 6101/T 3154—2023</p>
+<p>北京《砌体结构高延性混凝土加固技术规程》T/BECS 0001—2022</p>
+<p><strong>在标准****中有一条关于原墙体砂浆强度低于1.0MPa时的规定，以山东《高延性混凝土加固技术规程》DB37/T5191-2021为例：</strong></p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>本条特别指出，当原砌筑砂浆强度低于M1.0时，需对墙体实施嵌缝处理，这表明高延性混凝土面层加固技术可用于原砌筑砂浆强度低于M1.0的砌体房屋，其适用范围相较于《建筑抗震鉴定标准》GB50023中对A、B类建筑所设定的最低要求限值更为宽泛。</p>
+<p><strong>为何高延性混凝土面层加固可以用于原砌筑砂浆强度低于M1.0的情况？</strong></p>
+<p>以下内容节选自《建筑结构》公众号，西安建筑科技大学教授、博士生导师邓明科关于高延性混凝土的几条问题答复。</p>
+<p><strong>问题一：采用抹高延性混凝土加固砌体结构,没有在加固混凝土与砖墙之间设置拉结筋等增强共同受力的措施,加固混凝土面层时间久了有无脱落风险? 特别是采用黄土代替普通砂浆****的,粘接性不是很好,时间久了混凝土层会脱层吗?</strong></p>
+<p>答复：通过粘结试验，高延性混凝土与基材粘结并标准养护28d后，与基材烧结砖的正拉粘结强度不应小于0.6MPa，或破坏形式为基材砖内聚破坏，试验方法应符合国家标准《砌体结构加固设计规范》（GB 50702-2011）中附录B的有关规定。</p>
+<p>高延性混凝土与基材混凝土28d标准养护龄期的正拉粘结强度不应小于1.5MPa，或破坏形式为基材混凝土内聚破坏，试验方法应符合国家标准《建筑结构加固工程施工质量验收规范》（GB 50550-2010）中附录E的有关规定。</p>
+<p>加固砖墙时，采用嵌缝、抗剪件和水平短钢筋三选一的方式增强面层和砖墙的粘结作用，加固混凝土墙时通过对原混凝土墙进行凿毛的方式来保证加固面层与混凝土墙体的粘结。对于黄土替代砂浆的建筑通过去年的宁夏振动台试验已经完全验证了高韧性混凝土的加固效果，在实际工程中对于界面和灰缝需要做一些处理以增强粘结强度。</p>
+<p><strong>问题二：高延性复合材料可以用于多层砌体结构的加固吗？是否有用于混凝土空心砌块结构的案例呢？有相关的试验资料介绍吗？</strong></p>
+<p>答复：该技术已经由西安建筑科技大学从材料到构件，从构件到结构，从试验研究到工程应用，系统、全面地开展了相关研究和实践应用工作。主要从以下几个方面开展了大量的试验及理论研究。</p>
+<p>通过对高延性混凝土的力学性能研究、加固砌体结构研究、加固混凝土结构研究、加固砌体结构振动台试验验证等一系列研究工作，确定了高延性混凝土在解决材料脆性引起的工程问题及提高建筑物抗震性能及耐损伤能力方面有明显优势。</p>
+<p>其加固砌体结构计算原理及计算方法与《建筑抗震加固技术规程》（JGJ 116-2009）现浇钢筋混凝土板墙、钢筋网水泥砂浆面层相似；利用材料的性能优势代替了传统抗震加固中钢筋的作用。</p>
+<p><strong>问题三：70-80年代的两层砌体结构，检测砂浆强度只有M1.0，可以采用这种加固模式吗？需要双面还是单面加固？</strong></p>
+<p>答复：可以。原砌筑砂浆抗压强度检测推定值低于1.0MPa时，高延性混凝土面层与墙体之间宜采用局部嵌缝等方式进行处理，嵌缝深度宜为10mm~15mm。局部嵌缝采用梅花状布置，嵌缝净间距不应大于600mm。宜采用双面。</p>
+<p><strong>高延性混凝土除了有较高的强度与延性外，从问题一答复中也可以看出与基材也有较好的粘结作用。</strong></p>
+<p>**《建筑抗震鉴定标准》GB50023中规定了砖、砂浆的最低强度要求，笔者对其的理解是若基材强度太低，砂浆或者混凝土面层与基材之间的粘结作用很弱，在承受荷载时可能会发生横向变形剥离。而高延性混凝土与基材有很好的粘结作用，****并且采用嵌缝等方式增强面层和砖墙的粘结作用，**<strong>因此可以适用于砂浆强度更低的情况。</strong></p>
+<h2><strong>05 砌筑砂浆强度等级太低，超出规范限值要求，如何加固？</strong></h2>
+<p>根据《建筑抗震鉴定标准》GB50023、《建筑抗震加固技术规程》JGJ116、《砌体结构加固设计规范》GB 50702及《既有建筑鉴定与加固通用规范》GB55021对砌体砌筑砂浆的规定，砌体结构加固时原砌体砌筑砂浆的须满足如下要求：</p>
+<p>以A类7度时的砌体房屋为例，墙体的砂浆强度要求如下：</p>
+<p>砌体受压满足要求，受剪不满足要求：M1≤砂浆强度≤M2.5（超过二层）；M0.4≤砂浆强度≤M2.5（二层及以下）砌体受剪满足要求，受压不满足要求：砂浆强度≥M2.5</p>
+<p>以下几种情况不能采用水泥砂浆面层或钢筋网砂浆面层加固墙体：</p>
+<p>砂浆强度M＞2.5受剪不满足要求、砂浆强度M＜2.5受压不满足要求、砂浆强度（A类7度时）M＜M1（M0.4）受剪及受压都不满足要求，不能直接采用水泥砂浆面层或钢筋网砂浆面层加固墙体。</p>
+<h2><strong>假如某项目受当时建造条件限制，砌筑砂浆风化严重，砂浆强度低于0.4MPa，按规范要求是不能<strong><strong>采用钢筋网砂浆面层加固法</strong></strong>的，但很多项目又不得不采用该加固法，此时该如何处理？</strong></h2>
+<p>笔者认为此种情况需要先进行置换砂浆加固处理，把砌体结构中的部分低强度砂浆用高性能砂浆置换，形成新旧两种砂浆组成的砌体结构，即大家熟悉的勾缝，加固后提高了砌体结构抗剪承载力，同时也满足规范对砌体砂浆强度等级的要求。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p><strong>置换砂浆加固后，有新旧两部分砂浆，砂浆的抗剪强度如何取值？</strong></p>
+<p>要确定砂浆置换后抗剪强度取多少，首先理解《砌体结构设计规范》GB50003-2011中表3.2.1-1以及表3.2.2中的砌体抗压强度、抗剪强度设计值是如何得出的。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p><strong>1) 砌体抗压强度设计值是如何得出的？</strong></p>
+<p>根据《砌体结构设计规范》GB50003-2011附录B各类砌体强度平均值的计算公式和强度标准值。砌体轴心抗压强度平均值fm=k1*f1<sup>a</sup>*(1+0.07*f2)*k2</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>根据《砌体结构通用规范》GB55007-2021第2.0.2条条文解释,砌体强度标准值fk=(1-1.645*δf)*fm</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>根据《砌体结构通用规范》GB55007-2021第2.0.3条，砌体抗压时，强度变异系数δf=0.17。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>根据《砌体结构通用规范》GB55007-2021第2.0.4条，施工质量控制等级为B级时，材料分项系数γf=1.6，f=fk/γf。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>以烧结普通砖强度等级MU10，砂浆强度等级M2.5为例，验证表3.2.1-1中砌体抗压强度设计值。</p>
+<p>fm=k1*f1<sup>a</sup>*(1+0.07*f2)*k2=0.78*10<sup>0.5</sup>*（1+0.07*2.5）*1=2.898MPa</p>
+<p>fk=(1-1.645*δf)*fm=(1-1.645*0.17)*2.898=2.088MPa</p>
+<p>f=fk/γf=2.088/1.6=1.305MPa,与表格数值相符。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p><strong>2) 砌体抗剪强度设计值如何得出的？</strong></p>
+<p>根据《砌体结构设计规范》GB50003-2011附录B各类砌体强度平均值的计算公式和强度标准值。砌体抗剪强度平均值fv,m=k5*√f2。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>根据《砌体结构通用规范》GB55007-2021第2.0.3条，砌体抗剪时，强度变异系数δf=0.20。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>以砂浆强度等级M2.5为例，验证表3.2.2中砌体抗剪强度设计值。</p>
+<p>fv,m=k5*√f2=0.125*√2.5=0.198MPa</p>
+<p>fv,k=(1-1.645*δf)*fv,m=(1-1.645*0.2)*0.198=0.133MPa</p>
+<p>fv=fk/γf=0.133/1.6=0.083MPa,与表格中的数值相符。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p><strong>3) 任意强度等级的块体及砂浆的砌体抗压、砌体抗剪强度设计值如何计算？</strong></p>
+<p>以烧结普通砖强度等级为MU10,砂浆强度等级为M0.9为例，计算砌体的抗压强度及抗剪强度设计值。</p>
+<p><strong>砌体抗压强度设计值：</strong></p>
+<p>fm=k1*f1<sup>a</sup>*(1+0.07*f2)/k2=0.78*10<sup>0.5</sup>*（1+0.07*0.9）*0.96=2.5MPa</p>
+<p>fk=(1-1.645*δf)*fm=(1-1.645*0.17)*2.5=1.81MPa</p>
+<p>f=fk/γf=1.81/1.6=1.13MPa。</p>
+<p><strong>砌体抗剪强度设计值：</strong></p>
+<p>fv,m=k5*√f2=0.125*√0.9=0.119MPa</p>
+<p>fv,k=(1-1.645*δf)*fv,m=(1-1.645*0.2)*0.119=0.08MPa</p>
+<p>fv=fk/γf=0.08/1.6=0.05MPa。</p>
+<p><strong>了解了任意强度等级的块体和砂浆的砌体抗压、抗剪强度设计值的计算方法后，计算置换砂浆（勾缝）加固后，砌体的等效抗压及抗剪强度设计值。此外，在使用软件进行加固验算时，需输入砖与砂浆的强度等级以计算砌体的抗压及抗剪强度设计值，在已知</strong>等效抗压及抗剪强度设计值<strong>后，应如何反推对应的砖和砂浆强度等级？</strong></p>
+<p>**04) **砂浆（勾缝）加固后，<strong>砌体的等效抗压强度及抗剪强度设计值如何计算？</strong></p>
+<p>根据《置换砂浆加固砌体结构技术规程》T/CECS 1369-2023中的公式，可以计算出勾缝后砌体的等效抗压强度及抗剪强度设计值。规定如下：</p>
+<p>5.2.1砌体抗压强度设计值应根据砂浆和块体的强度等级按表5.2.1采用。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>5.2.2 置换砂浆加固砌体的等效抗压强度设计值应按下式计算：</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>5.2.3砌体延通缝抗剪强度设计值应根据原砂浆和置换砂浆砌体沿通缝的抗剪强度按表5.2.3采用。</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>5.2.4 置换砂浆加固砌体沿通缝的等效抗剪强度设计值应按下式计算：</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>5.2.5砌体沿阶梯形截面破坏时，受剪构件的承载力应满足下式要求：</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>5.2.6置换砂浆加固砌体沿阶梯形截面破坏的抗震抗剪强度设计值应按下式计算：</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p>5.2.7砌体沿阶梯形截面破坏时，受剪构件的抗震承载力应满足下式要求：</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p><strong><strong>05）知道勾缝后的等效砌体抗压强度及抗剪强度设计值，如何反推等效砖及砂浆的强度等级？</strong></strong></p>
+<p>墙厚240mm，烧结普通砖实测强度等级MU10,砂浆强度等级M0.9为例，采用M7.5砂浆置换加固，双侧置换深度60mm。</p>
+<p><strong>求原砌体的抗压强度设计值及抗剪强度设计值：</strong></p>
+<p>原砌体抗压强度设计值f=1.13MPa，原砌体抗剪强度设计值fv=0.05MPa。</p>
+<p><strong>求置换砂浆部分砌体的抗压强度设计值及抗剪强度设计值：</strong></p>
+<p>fmr=k1*f1a*(1+0.07*f2)/k2=0.78*100.5*（1+0.07*7.5）*1=3.76MPa</p>
+<p>fkr=(1-1.645*δf)*fm=(1-1.645*0.17)*3.76=2.71MPa</p>
+<p>fr=fkr/γf=2.71/1.6=1.69MPa</p>
+<p>置换砂浆部分砌体的抗剪强度设计值:fvr=0.14MPa（砌体规范表3.2.2）</p>
+<figure><img src="https://mp.weixin.qq.com/s/www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><title></title><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'><g transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'><rect x='249' y='126' width='1' height='1'></rect></g></g></svg>" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<p><strong>求砌体的等效抗压强度设计值及抗剪强度设计值：</strong></p>
+<p>根据式5.2.2，置换砂浆加固砌体的等效抗压强度设计值：</p>
+<p>fr0=（f*b1+fr*b2）/b=(1.1*180+1.69*60)/240=1.25MPa</p>
+<p>根据式5.2.4，置换砂浆加固砌体沿通缝的等效抗剪强度设计值：</p>
+<p>fv0=（fv*b1+fvr*b2）/b=(0.05*180+0.14*60)/240=0.07MPa</p>
+<p><strong>求砂浆的等效强度等级：</strong></p>
+<p>根据fv0=fv,k/γf</p>
+<p>fv,k=fv0*γf=0.07*1.6=0.11MPa</p>
+<p>根据fv,k=(1-1.645*δf)*fv,m</p>
+<p>fv,m=0.11/(1-1.645*0.2)=0.16MPa</p>
+<p>根据fv,m=k5*&nbsp;√f2</p>
+<p>f2=1.64MPa，砂浆的强度等级为M1.64。</p>
+<p><strong>求砖的等效强度等级：</strong></p>
+<p>根据fr0=fk/γf</p>
+<p>fk=fr0*γf=1.25*1.6=2.0MPa</p>
+<p>根据fk=(1-1.645*δf)*fm</p>
+<p>fm=fk/(1-1.645*δf)=2.0/(1-1.645*0.17)=2.78MPa</p>
+<p>根据fm=k1*f1a*(1+0.07*f2)*k2</p>
+<p>f1=10.2MPa，烧结普通砖强度等级为MU10.2。</p>
+<p><strong>采用置换砂浆加固后，软件中烧结普通砖强度等级输入MU10.2，砂浆强度等级输入M1.6。</strong></p>
+<p>采用置换砂浆加固时，还须满足以下构造要求，以下内容也来自于《置换砂浆加固砌体结构技术规程》T/CECS1369-2023。</p>
+<p>3.0.4 置换砂浆加固墙体宜采用双侧置换，块材的强度等级不宜低于MU10，不应低于MU7.5。置换砂浆的单侧置换深度不宜大于60mm，不应小于30mm。当灰缝厚度不小于8mm时，不宜采用置换砂浆加固。</p>
+<p>5.1.3 水平灰缝和竖向灰缝应同时进行砂浆置换。置换砂浆的强度等级不应高于块体的强度等级，置换深度和强度等级应按计算确定，置换深度应满足构造要求。</p>
+<p>5.1.8置换砂浆加固后墙体抗剪承载力提高幅度不应超过30%，需进一步提高承载力时，可附加钢板网砂浆面层加固。置换砂浆和附加钢筋网砂浆面层加固后墙体抗剪承载力提高幅度不应超过40%。钢板网砂浆面层加固砌体结构应符合本规程附录A的规定</p>
+<p>END</p>
+]]></content>
+    <author>
+      <name>[[结构随手笔记]]</name>
+    </author>
+    <contributor>
+      <name>[[结构随手笔记]]</name>
+    </contributor>
+    <published>2025-01-23T00:00:00.000Z</published>
+    <rights>Copyright by [[结构随手笔记]]</rights>
+  </entry>
+  <entry>
     <title type="text"></title>
     <id>https://jiange1236.github.io/tech/%E7%A1%AC%E7%9B%98%E4%BF%AE%E5%A4%8D.html</id>
     <link href="https://jiange1236.github.io/tech/%E7%A1%AC%E7%9B%98%E4%BF%AE%E5%A4%8D.html"/>
-    <updated>2024-11-26T03:08:35.000Z</updated>
+    <updated>2025-01-23T11:28:01.000Z</updated>
     <summary type="html"><![CDATA[<p>打开运行输入cmd回车，输入chkdsk+空格+盘符:/f  回车例如检查并修复G分区：CHKDSK G:/F（修复指令会把硬盘进行修复，删除一些错误的文件或者删除中毒的文件。操作前需要您考虑是否进行修复。）
 图文教程（请把中文一起复制到浏览器访问）：<a href="https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#" target="_blank" rel="noopener noreferrer">https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#</a> 《CHKDSK修复指令使用方法》</p>]]></summary>
     <content type="html"><![CDATA[<p>打开运行输入cmd回车，输入chkdsk+空格+盘符:/f  回车例如检查并修复G分区：CHKDSK G:/F（修复指令会把硬盘进行修复，删除一些错误的文件或者删除中毒的文件。操作前需要您考虑是否进行修复。）
 图文教程（请把中文一起复制到浏览器访问）：<a href="https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#" target="_blank" rel="noopener noreferrer">https://wit382.yuque.com/docs/share/2a6fc562-a2c5-42bb-b55e-2f06555bb291?#</a> 《CHKDSK修复指令使用方法》</p>
 ]]></content>
-    <published>2024-11-26T03:08:35.000Z</published>
+    <published>2024-11-26T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">加息</title>
@@ -135,24 +885,113 @@
     <published>2024-06-09T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">加固计算方法</title>
+    <title type="text">局部加固</title>
     <id>https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html</id>
     <link href="https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[
-<h2>抗震加固</h2>
-<p>抗震加固规3.0.3-2：结构的计算简图，应根据加固后的荷载、地震作用和实际受力状况确定；当加固后结构刚度和重力荷载代表值的变化分别不超过原来的10%和5%时，应允许不计入地震作用变化的影响</p>
-<h1>混凝土</h1>
-<p>《混凝土结构加固设计规范》重要构件和一般构件的区分，规范上说：其自身失效将影响或危及承重结构体系整体工作的承重构件叫重要构件；其自身失效为孤立事件，不影响承重结构体系整体工作的承重构件叫一般构件。
-框架梁，框架柱、框支柱、框支梁、剪力墙均算重要构件；次梁、楼板均算一般构件。</p>
-<h2>加固方案比选</h2>
-<p>碳纤维布优点：</p>]]></summary>
+<p><strong>《建筑抗震加固技术规程》JGJ116-2009</strong></p>
+<p>3.0.3 现有建筑抗震加固时，地震作用和结构抗震验算应复核下列规定：</p>
+<p>2 加固后结构的分析和构件承载力计算，应复核下列要求：</p>
+<p>1） 结构的计算简图，应根据加固后的荷载、地震作用和实际受力状况确定；<strong>当加固后结构刚度和重力荷载代表值的变化不超过原来的10%和5%时，应允许不计入地震作用变化的影响。</strong></p>
+<p><strong>北京地标《房屋综合安全鉴定标准》DB11 637-2015</strong></p>
+<p>第3.1.2条：在下列情况下，可仅进行房屋建筑结构安全性鉴定：</p>]]></summary>
     <content type="html"><![CDATA[
+<p><strong>《建筑抗震加固技术规程》JGJ116-2009</strong></p>
+<p>3.0.3 现有建筑抗震加固时，地震作用和结构抗震验算应复核下列规定：</p>
+<p>2 加固后结构的分析和构件承载力计算，应复核下列要求：</p>
+<p>1） 结构的计算简图，应根据加固后的荷载、地震作用和实际受力状况确定；<strong>当加固后结构刚度和重力荷载代表值的变化不超过原来的10%和5%时，应允许不计入地震作用变化的影响。</strong></p>
+<p><strong>北京地标《房屋综合安全鉴定标准》DB11 637-2015</strong></p>
+<p>第3.1.2条：在下列情况下，可仅进行房屋建筑结构安全性鉴定：</p>
+<p>1）房屋局部改造（不包括局部加层）影响一定范围的结构构件安全；</p>
+<p>2）因灾害或者事故导致结构局部损伤的；</p>
+<p>3）正常使用中发现结构构件存在安全问题；</p>
+<p>4)经安全评估发现房屋建筑存在局部安全隐患的；</p>
+<p>5）其他需要结构安全性鉴定的房屋。</p>
+<p>条文说明：考虑到有些房屋建筑在使用中需要局部改造（不包括局部加层）仅影响一定范围内的结构构件安全等可仅进行局部的结构安全性鉴定，比如屋顶绿化、屋顶增设太阳能灯，当建筑结构没有明显地基沉降和地基不均匀沉降的情况下，则可对涉及顶层的结构构件进行结构安全性鉴定。</p>
+<p><strong>北京市施工图审查协会技术委员会文件《关于钢管混凝土-钢梁-钢支撑结构抗震等级及既有建筑改造项目设计审查相关问题研讨会会议纪要》</strong></p>
+<p>1.检测要求</p>
+<p>1）正常设计、施工，峻工验收10年以内的既有建筑，验收资料完整、使用状况良好，可根据改造设计单位的要求决定是否进行检测。</p>
+<p>2)《建筑抗震设计规范》GBJ11-89（以下简称89规范）实施后设计的既有建筑，或已按89规范及后续标准进行过整体抗震加固改造的既有建筑，仅部分房间或个别楼层因改造引起的局部非抗侧力构件的调整，可仅针对相关区域和部位的结构构件进行检测。
+2.加固改造设计检查（审查）标准</p>
+<p>89规范实施后设计的既有建筑，在不延长后续使用年限的情况下，按下列要求执行：</p>
+<p>1）在进行安全性鉴定时，重力荷载及分项系数可按不低于建造期设计标准取值。经鉴定需加固的构件，荷载取值按现行标准执行。</p>
+<p>2）在不改变使用性质、使用功能，且不改变抗侧力结构体系的情况下，可按不低于建造期设计标准进行抗震鉴定。其设防类别、地震动参数改变时，按现行设计标准执行。分项系数及抗震措施不低于建造期设计标准。</p>
+<p><strong>北京市施工图审查协会技术委员会文件《关于“如何理解改变建筑主体和承重结构问题的答复意见”》</strong></p>
+<p>内部改造项目有下列情况之一的，视同改变建筑主体和承重结构，需按通知规定于施工前上传施工图。</p>
+<p>1.改变抗侧力结构，以及抗侧力结构需加固的（如框架梁、柱，剪力墙等改造或加固），不论加固后结构刚度和重力荷载代表值的变化是否超过原来的10%和5%。</p>
+<p>2.承重结构需改造和加固，或存在改变楼（屋）盖受力状况、荷载增加、增加或拆除承重梁、楼板开大洞公新升洞边或口固径大于等于1000mm）等情况之一的。</p>
+<p>3.存在新增承重构件，如增加雨篷、楼（屋）面梁、板、楼电梯等情况之一的。</p>
+<p>4.既有建筑达到设计工作年限拟继续使用，或经检测鉴定主体结构或构件不经加固不能继续使用的。</p>
+<p><strong>苏州市《既有建筑改造施工图设计审查要点》</strong></p>
+<p>1.既有建筑改造，当设防类别未提高，抗震单元内结构刚度变化不超10%、重力荷载代表值增量不超5%，且加固、改造的竖向抗侧构件不超5%，水平抗侧构件不超10%时：</p>
+<p>（1）可按原设计设防烈度进行加固改造；</p>
+<p>（2）加固改造后延续原有设计使用年限；</p>
+<p>（3）此类改造原则上不需进行抗震鉴定，加固改造区需先进行构件现状检测。</p>
+<p>2.对幼儿园、中小学校、医院、防灾救灾类等重点设防类既有建筑，及改造后提高为重点设防类的既有建筑：</p>
+<p>（1）改造后应满足《建筑抗震设计规范》GB50011-2010（2016 年版）的设防烈度；</p>
+<p>（2）其地震作用和抗震措施按不同的后续使用年限分别确定；</p>
+<p>（3）此类改造需先进行抗震鉴定。</p>
+<p>3.按不早于《建筑抗震设计规范》GB50011-2001 设计建造的既有建筑：</p>
+<p>（1）可结合业主要求和房屋使用状况，按原设计采用的《建筑抗震设计规范》进行抗震鉴定和加固设计；</p>
+<p>（2）加固改造后延续原有设计使用年限。</p>
+<p>4.按《建筑抗震设计规范》 GBJ11-89设计建造的既有建筑，不改变原结构体系进行加固改造，抗震单元内结构刚度变化不超10%，重力荷载代表值增量不超5%，且加固、改造的竖向抗侧构件不超本层的10%，水平抗侧构件不超本层的30%时：</p>
+<p>（1）原则上可按原设计设防烈度进行加固改造；</p>
+<p>（2）加固改造后延续原有设计使用年限；</p>
+<p>（3）此类改造需先进行抗震鉴定，其抗震鉴定可按原设计设防烈度进行。</p>
+<p>5.对不符合上述条文要求的既有建筑改造，原则上按现行抗震鉴定标准及抗震设计规范执行，确有困难时，可组织专家论证。</p>
+<p>6.既有建筑改造，后续使用年限30年、40年及延续原有设计使用年限的，可执行原可靠性设计标准；后续使用年限50年的，应执行现行可靠性设计标准。</p>
+<p>7.在既有建筑改造中，鼓励采用减隔震等新技术。</p>
+<p>条文说明：</p>
+<p>“二、1”先给出延续原有设计使用年限的前提条件，对符合条件的改造进行适度放松，也是鼓励业主和设计单位尽可能在充分利用原有结构前提下，合理改造使用。</p>
+<p>加固改造除控制抗震单元内结构刚度变化不超10%，重力荷载代表值增量不超5%外，尚应控制加固、改造的竖向抗侧构件不超5%，水平抗侧构件不超10%，竖向及水平抗侧构件变化均按数量统计（下同）。</p>
+<p>加固改造后设防烈度不应低于6度。</p>
+<p>构件现状检测主要为：构件断面尺寸、钢筋配置、材料强度等。</p>
+<p>“二、2”既有建筑改造，应进行抗震设防分类判定：</p>
+<p>教培机构一般有成人陪护，当未成年人数量不超过400人时，可考虑为标准设防类建筑。</p>
+<p>既有建筑改造为养老设施用房时，可考虑为标准设防类建筑；对于新建养老设施用房，应按重点设防类建筑考虑。</p>
+<p>“二、3”对于按不早于《建筑抗震设计规范》GB50011-2001设计建造的既有建筑，既可按现行抗震鉴定标准及抗震设计规范进行抗震鉴定和加固设计，也可结合业主要求和房屋使用状况，按原设计采用的《建筑抗震设计规范》进行抗震鉴定和加固设计。</p>
+<p>“二、4”对于按《建筑抗震设计规范》GBJ11-89设计建造的既有建筑，应在不改变原结构体系下进行加固改造，加固改造除控制抗震单元内结构刚度变化不超10%，重力荷载代表值增量不超5%外，尚应控制加固、改造的竖向抗侧构件不超本层的10%，水平抗侧构件不超本层的30%。抗震单元应进行整体计算分析，防止薄弱部位转移；未改动区域荷载可执行原荷载规范；加固改造区本层及以下楼层的竖向抗侧构件可确定适当的性能目标予以加强。</p>
+<p>此类加固改造的既有建筑，其结构体系应符合现行规范要求。条件许可时，宜按现行抗震设防烈度验算罕遇地震作用下的弹塑性层间位移角，满足大震不倒要求。</p>
+<p>“二、6”既有建筑改造，后续使用年限30年、40年及延续原有设计使用年限的，可执行原可靠性设计标准，即恒载分项系数采用1.2，活载分项系数采用1.4，此时尚应复核恒载分项系数为1.35的荷载组合；后续使用年限50年的，应执行现行可靠性设计标准，即恒载分项系数采用1.3，活载分项系数采用1.5。</p>
+<p><strong>上海《既有建筑抗震鉴定与加固标准》DGJ08-81-2021</strong></p>
+<p>14.0.1条：对现有建筑进行加层、插层或扩建时，必须按加层、插层或扩建后的结构状态建立计算模型，并按现行上海市工程建设规范《建筑抗震设计标准》DGJ08-9的要求进行抗震鉴定和抗震设计。加层、插层或扩建面积不超过原房屋总建筑面积的5%且单层新增面积不超过原房屋典型楼层面积的10%时，可按本标准第14.0.2条的方法进行抗震鉴定和抗震设计。</p>
+<p>14.0.2条：对现有建筑进行改建时，应按改建后的结构状态建立计算模型，并按本标准第1.0.4条和第1.0.5条的要求进行抗震鉴定，但新增结构构件应满足现行上海市工程建设规范《建筑抗震设计标准》DGJ08-9的抗震措施要求。若改建仅涉及原有结构局部区域的个别非抗侧力构件，并确保原结构整体抗震能力不被削弱，可不要求进行专门的抗震鉴定，但应进行整体结构和局部结构的安全性分析。</p>
+<p><strong>《合肥市既有建筑改造设计与审查导则（试行）》</strong></p>
+<p>6.3.1改造范围内及影响范围内的结构改造设计应满足现行规范要求，改造范围以外及改造影响范围以外的区域，不应低于原建造时的安全要求。</p>
+<p>6.3.2改造后延续原设计工作年限的既有建筑，当改造后的结构刚度和重力荷载代表值增量变化分别不超过原来的10%和5%，应允许不计入地震作用变化的影响。</p>
+<p>6.3.3结构局部改造且未超过原设计工作年限的房屋，未进行抗震鉴定和采取相应措施，房屋后续设计工作年限不得延长。</p>
+<p>《<strong>南京市既有建筑加固改造结构设计导则（试行）</strong>》</p>
+<p>3.1.12 既有建筑的局部改造，应对原结构安全的影响进行综合研判，可对结构局部 改造部位及其相关结构进行安全性鉴定，加固设计不影响剩余设计工作年限，并可按 不低于原建造时的标准进行，应确保主体结构整体牢固性，且承载能力和抗震性能不 因改造而降低。不得将加固改造工程拆解成多个局部改造。</p>
+<p>【条文说明】既有建筑的局部改造，一般指局部楼面水平构件增减、个别构件承载能力提升 等。结合既有建筑结构的现状，经综合研判确定对原有结构的抗震能力影响很小，可仅进行结构 安全性鉴定。本条文所指的局部改造，还需满足下列条件：</p>
+<p>1 不影响剩余设计工作年限；</p>
+<p>2 抗震 设防类别未提高；</p>
+<p>3 不涉及竖向抗侧力构件拆改、 不涉及重要水平抗侧力构件（例如转换梁）拆 改；</p>
+<p>4 不涉及扩建和加层；</p>
+<p>5 加固后抗震单元内结构刚度和重力荷载代表值的变化分别不超过原 来的 10%和 5%；</p>
+<p>6 房屋建设资料需齐全，与建筑结构的现状符合性较好。</p>
+<p><strong>《山东省施工图审查常见问题解答》</strong></p>
+<p>2.7.5 既有建筑结构整体改造和局部改造，如何划分？</p>
+<p>解答：满足以下条件的结构改造可界定为局部改造，取改造范围及其相关范围的结构构件进行鉴定（可靠性评估）、加固设计：</p>
+<p>1 改造未延长结构设计工作年限；</p>
+<p>2 改造未改动原结构抗侧力构件，对整体结构安全性影响较小；</p>
+<p>3 建筑物工程资料基本齐全、可信；</p>
+<p>4 前期正常使用，定期检查，未改变使用条件、使用功能，未进行降低结构性能的改造。</p>
+<p><strong>《东营市既有建筑改造工程设计审查要点（试行）》</strong></p>
+<p>结构局部改造：一般指局部楼面水平构件增减、个别构件承载能力提升等，结合既有建筑结构的现状，经综合研判确定对原有结构的抗震性能影响很小。满足以下条件的结构改造可界定为局部改造：</p>
+<p>(1)未延长结构设计工作年限。</p>
+<p>(2)抗震设防类别未提高。</p>
+<p>(3)不涉及竖向抗侧力构件、重要水平抗侧力构件（例如转换梁）拆改。</p>
+<p>(4)不涉及扩建和加层。</p>
+<p>(5)加固后抗震单元内结构刚度和重力荷载代表值的变化分别不超过原来的10%和5%。</p>
+<p>(6)房屋建设资料需齐全，与建筑结构的现状符合性较好。</p>
+<p>(7)前期正常使用，定期检查，未改变使用条件、使用功能，未进行降低结构性能的改造。</p>
+<h1>加固计算方法</h1>
 <h2>抗震加固</h2>
 <p>抗震加固规3.0.3-2：结构的计算简图，应根据加固后的荷载、地震作用和实际受力状况确定；当加固后结构刚度和重力荷载代表值的变化分别不超过原来的10%和5%时，应允许不计入地震作用变化的影响</p>
 <h1>混凝土</h1>
-<p>《混凝土结构加固设计规范》重要构件和一般构件的区分，规范上说：其自身失效将影响或危及承重结构体系整体工作的承重构件叫重要构件；其自身失效为孤立事件，不影响承重结构体系整体工作的承重构件叫一般构件。
-框架梁，框架柱、框支柱、框支梁、剪力墙均算重要构件；次梁、楼板均算一般构件。</p>
+<p>《混凝土结构加固设计规范》重要构件和一般构件的区分，规范上说：其自身失效将影响或危及承重结构体系整体工作的承重构件叫重要构件；其自身失效为孤立事件，不影响承重结构体系整体工作的承重构件叫一般构件。</p>
+<p>框架梁，框架柱、框支柱、框支梁、剪力墙均算重要构件；次梁、楼板均算一般构件。</p>
 <h2>加固方案比选</h2>
 <p>碳纤维布优点：</p>
 <p>1、碳纤维轻、薄，不需要大型施工机械，运输储存、施工简便，同样工程量，粘贴碳纤维施工工期短，大约是粘钢的40%。</p>
@@ -166,7 +1005,7 @@
 <p>①对梁柱类构件，在原砼表面打毛后，只要喷涂界面胶即可；</p>
 <p>②对大面积的墙、板，除打毛和喷涂界面胶外，还需种植剪切销钉。剪切销钉数量一般可按构造要求确定。</p>
 <p>原构件采用增大截面法加固时，混凝土界面(粘合面)经修整露出骨料新面后，尚应采用花锤、砂轮机或高压水射流进行打毛；必要时，也可凿成沟槽</p>
-<p>(1)花锤打毛：宜用1.5kg~2.5kg的尖头錾石花锤，在混凝土粘合面上錾出麻点，形成点深约3mm、点数600点/m²~800点/m²的均匀分布；也可錾成点深4mm~5mm、间距约30mm的梅花形分布。</p>
+<p>(1)花锤打毛：宜用1.5kg~2.5kg的尖头錾石花锤，在混凝土粘合面上錾出麻点，形成点深约3mm、点数600点/m<sup>2</sup>~800点/m<sup>2</sup>的均匀分布；也可錾成点深4mm~5mm、间距约30mm的梅花形分布。</p>
 <p>(2)砂轮机或高压水射流打毛：宜采用输出功率不小于340W的粗砂轮机或压力符合《建筑结构加固工程施工质量验收规范》GB50550-2010附录C要求的水射流，在混凝土粘合面上打出方向垂直于构件轴线、纹深为3mm~4mm、间距约50mm的横向纹路。</p>
 <p>(3)人工凿沟槽：宜用尖锐、锋利凿子，在坚实混凝土粘合面上凿出方向垂直于构件轴线、槽深约6mm、间距为100mm~150mm的横向沟槽。</p>
 <h2>粘贴纤维复合材加固法</h2>
@@ -187,6 +1026,65 @@
 <p>根据《混凝土结构加固设计规范》 GB 50367-2013 第15.2.1条，植筋仅承受轴向力，且仅允许按充分利用钢材强度的计算模式进行设计</p>
 <p><strong>箍筋间距不满足时</strong></p>
 <p>砼加固规15.3.3：应进行防劈裂加固。此时，可采用纤维织物复合材的围束作为原构件的附加箍筋进行加固</p>
+<h2>植筋深度</h2>
+<table><thead>
+  <tr>
+    <th align="center"></th>    
+    <th align="center">-</th>    
+    <th align="center">-</th>    
+    <th align="center">5d/2.5d</th>    
+    <th align="center">6d/3d</th>    
+    <th align="center">7d/3.5d</th>    
+    <th align="center">5d/2.5d</th>    
+    <th align="center">6d/3d</th>    
+    <th align="center">7d/3.5d</th>    
+    <th align="center">5d/2.5d</th>    
+    <th align="center">6d/3d</th>    
+    <th align="center">7d/3.5d</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td align="center">原混凝土强度</td>    
+    <td align="center">C20</td>    
+    <td align="center">C25</td>    
+    <td align="center" colspan="3">C30</td>    
+    <td align="center" colspan="3">C40</td>    
+    <td align="center" colspan="3">C60</td>
+  </tr>
+  <tr>
+    <td align="center">墙、柱、主梁受力纵筋</td>    
+    <td align="center">44d</td>    
+    <td align="center">37d</td>    
+    <td align="center">27d</td>    
+    <td align="center">25d</td>    
+    <td align="center">22d</td>    
+    <td align="center">23d</td>    
+    <td align="center">20d</td>    
+    <td align="center">18d</td>    
+    <td align="center">20d</td>    
+    <td align="center">18d</td>    
+    <td align="center">17d</td>
+  </tr>
+  <tr>
+    <td align="center">次梁受力纵筋</td>    
+    <td align="center">38d</td>    
+    <td align="center">32d</td>    
+    <td align="center">24d</td>    
+    <td align="center">22d</td>    
+    <td align="center">19d</td>    
+    <td align="center">20d</td>    
+    <td align="center">18d</td>    
+    <td align="center">16d</td>    
+    <td align="center">18d</td>    
+    <td align="center">16d</td>    
+    <td align="center">14d</td>
+  </tr>
+</tbody>
+</table>
+<p>（1）当钢筋直径大于 20 小于等于 25 mm 时，植筋深度需乘以 1.05 的系数。</p>
+<p>（2）当为悬挑结构构件时，表中数值乘以 1.5；当为非悬挑的重要构件接长时，表中数值乘以 1.15。</p>
+<p>（3）砼强度大于 C30 且采用快固型胶粘剂时，尚应乘以 1.25 的调整系数。</p>
+<p>（4）以上系数同时采用时须连乘。</p>
 <h3>化学锚栓</h3>
 <p></p>
 <p>（1）增加锚栓数量和增大锚栓间距对于提升锥体受拉承载力较为有效，但当间距大于Scr,n时，无实际效果，不应继续增大。同时注意，锚栓间距过大，会引起锚板厚度不足，此时可以考虑增大锚板厚度或者锚板增设加劲板，这样才能保证锚栓内力线性分布，计算与构造的一致。</p>
@@ -220,8 +1118,8 @@
 </ol>
 <h1>造价</h1>
 <p><strong>混凝土</strong></p>
-<p>| 加固方法               | 造价                                           | 工作内容                                                     |
-|</p>
+<p>| 加固方法               | 造价                                           | 工作内容                                                     |</p>
+<p>|</p>
 ]]></content>
     <published>2024-06-01T00:00:00.000Z</published>
   </entry>
@@ -377,7 +1275,7 @@ source: </span></a><a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?hi
     <title type="text">玩客云</title>
     <id>https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html</id>
     <link href="https://jiange1236.github.io/tech/%E7%8E%A9%E5%AE%A2%E4%BA%91_%E7%BE%A4%E6%99%96.html"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[
 <p>安装包</p>
 <p><a href="https://github.com/hzyitc/armbian-onecloud/releases/download/ci-20240311-162146-UTC/Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz" target="_blank" rel="noopener noreferrer">Armbian-unofficial_24.5.0-trunk_Onecloud_bullseye_edge_6.7.9_minimal.img.xz</a></p>]]></summary>
@@ -403,59 +1301,14 @@ source: </span></a><a href="https://blog.misaka.rest/2023/03/12/cf-warp-yxip/?hi
 <span class="line"><span># apt --fix-broken install</span></span>
 <span class="line"><span># sudo apt autoclean</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="#Docker%E5%AE%89%E8%A3%85"><strong>Docker安装</strong></a></p>
-<p><strong>Install Home Assistant Supervised</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>apt-get install \</span></span>
-<span class="line"><span>apparmor \</span></span>
-<span class="line"><span>jq \</span></span>
-<span class="line"><span>wget \</span></span>
-<span class="line"><span>curl \</span></span>
-<span class="line"><span>udisks2 \</span></span>
-<span class="line"><span>libglib2.0-bin \</span></span>
-<span class="line"><span>network-manager \</span></span>
-<span class="line"><span>dbus \</span></span>
-<span class="line"><span>lsb-release \</span></span>
-<span class="line"><span>systemd-journal-remote -y</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>OS Agent</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_armv7.deb</span></span>
-<span class="line"><span>sudo dpkg -i os-agent_1.4.1_linux_armv7.deb</span></span>
-<span class="line"><span>sudo apt-get install apparmor</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>grub错误</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>解决方法很简单：</span></span>
-<span class="line"><span>sudo nano /etc/default/grub</span></span>
-<span class="line"><span>添加：</span></span>
-<span class="line"><span>systemd.unified_cgroup_hierarchy=false</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Home Assistant Supervised Debian Package</strong></p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb</span></span>
-<span class="line"><span>dpkg -i homeassistant-supervised.deb</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>Docker镜像</strong></p>
+<p><strong>Docker镜像</strong></p>
 <p>直接修改 <code>/etc/docker/daemon.json</code> (docker 版本 &gt;= 1.10 时) 内容为:</p>
 <div class="language-json line-numbers-mode" data-highlighter="shiki" data-ext="json" data-title="json" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">"registry-mirrors"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">: [</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"https://docker.zecdn.top"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">]}</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>修改后重启服务:</p>
 <div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> daemon-reload</span></span>
 <span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> restart</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> docker</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span># docker pull 05f073ad3c0010ea0f4bc00b7105ec20.mirror.swr.myhuaweicloud.com/homeassistant/armv7-homeassistant</span></span>
-<span class="line"><span>docker pull dockerproxy.com/homeassistant/armv7-homeassistant:latest</span></span>
-<span class="line"><span>docker tag dockerproxy.com/homeassistant/armv7-homeassistant:latest homeassistant/armv7-homeassistant:latest</span></span>
-<span class="line"><span>docker rmi dockerproxy.com/homeassistant/armv7-homeassistant:latest</span></span>
-<span class="line"><span>docker run -d --privileged --restart=unless-stopped --name="homeassistant" -v /data/homeassistant/config:/config --net=host homeassistant/armv7-homeassistant</span></span>
-<span class="line"><span># docker run -d --privileged --restart=unless-stopped --name="homeassistant" -v /data/homeassistant/config:/config --net=host ghcr.io/home-assistant/raspberrypi3-homeassistant</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2><strong>HACS</strong></h2>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>docker exec -it homeassistant bash</span></span>
-<span class="line"><span>wget -O - https://hacs.vip/get | bash -</span></span>
-<span class="line"><span>或wget -O - https://hacs.vip/get | HUB_DOMAIN=ghproxy.com/github.com bash -</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>Supervisor</h2>
-<p>更新</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>ha supervisor update</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>卸载</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>sudo systemctl disable haos-agent.service</span></span>
-<span class="line"><span>sudo systemctl disable hassio-apparmor.service</span></span>
-<span class="line"><span>sudo systemctl disable hassio-supervisor.service</span></span>
-<span class="line"><span>sudo systemctl stop hassio-supervisor.service</span></span>
-<span class="line"><span>sudo systemctl stop haos-agent.service</span></span>
-<span class="line"><span>sudo systemctl stop hassio-apparmor.service</span></span>
-<span class="line"><span>docker ps | grep -E 'hassio'| awk '{print $1}' | xargs docker rm -f</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>连接WiFi</h2>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>iw wlx00367667a64b scan | grep SSID	#扫描附近的wifi</span></span>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2>连接WiFi</h2>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>iw wlx00367667a64b scan | grep SSID    #扫描附近的wifi</span></span>
 <span class="line"><span>nmcli d wifi connect ZZJ_WiFi password 1111111113 #连接wifi(密码含有空格则用引号括起)</span></span>
 <span class="line"><span>nmcli d wifi connect CMCC-U3UC password FTWS4FZX</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>设置开机启动</p>
@@ -515,7 +1368,61 @@ crontab的基本格式：</p>
 <li>关闭/etc/init.d/cron stop</li>
 <li>重启/etc/init.d/cron restart</li>
 </ul>
-<h1>群晖</h1>
+<h2>设置u盘自动挂载</h2>
+<p>1.插入u盘</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 查看u盘路径/大小/type</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">fdisk</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -l</span></span>
+<span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 如/dev/mmcblk0p1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>格式化u盘为exc4，保持默认，等待完成</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 举例</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">mkfs.ext4</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /dev/mmcblk0p1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>3.创建挂载目录</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 举例</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">mkdir</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /mnt/sd</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="4">
+<li>查看u盘UUID</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 举例</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">blkid</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /dev/mmcblk0p1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="5">
+<li>修改配置文件，在/etc/fstab后追加</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"># 例子，uuid和路径改成自己的</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">UUID</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">a63dfbda-29c8-478f-a88e-55796514c961</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   /mnt/sd/</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">   ext4</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">    defaults</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66">    0</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="6">
+<li>挂载目录修改权限</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">chmod</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -R</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 777</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /mnt/sd/</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="7">
+<li>重启</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">reboot</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -n</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="8">
+<li>检查</li>
+</ol>
+<p>挂载目录下存在lost+found目录即为成功</p>
+<h2>Docker 迁移</h2>
+<ol>
+<li>停止服务</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> stop</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> docker</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="2">
+<li>转移文件</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> mv</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /var/lib/docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /mnt/sd/docker</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="3">
+<li>
+<p>创建软链接</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ln</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -s</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /mnt/sd/docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /var/lib/docker</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></li>
+<li>
+<p>启动服务</p>
+</li>
+</ol>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">systemctl</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> start</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> docker</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h1>群晖</h1>
 <h2>OPKG</h2>
 <p>ssh 进入群晖后, sudo -i 获取管理员权限, 运行下面的命令:</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>wget -O - http://bin.entware.net/x64-k3.2/installer/generic.sh | sh</span></span></code></pre>
@@ -663,7 +1570,7 @@ crontab的基本格式：</p>
 <span class="line"><span>编辑文件后，您可以运行以下命令以使更改立即生效。</span></span>
 <span class="line"><span># sysctl -p</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>Docker镜像</h2>
-<p>| 项目名称 | 项目地址                                        | 加速地址                                                     |
+<p>| 项目名称     | 项目地址                                            | 加速地址                                                          |
 |</p>
 ]]></content>
     <published>2023-03-17T00:00:00.000Z</published>
@@ -672,7 +1579,7 @@ crontab的基本格式：</p>
     <title type="text">OpenWRT 分流DNS的设置</title>
     <id>https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html</id>
     <link href="https://jiange1236.github.io/tech/OpenWRT%20%E5%88%86%E6%B5%81DNS%E7%9A%84%E8%AE%BE%E7%BD%AE.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>目前还是有许多人喜欢设置DNS，虽然会浪费一些转发性能，但如果明白其中的链路关系，合理设置后，还是能起到不错的效果的。同时也把正确的设置方式告诉大家。</p>
 <p>此教程基于当前路由是主路由，如果是旁路由虽差不多，但有一些差异，需要格外注意。</p>
 <p>同时请注意，删除你电脑，手机上的DNS（不要设置任何DNS）</p>
@@ -739,74 +1646,74 @@ crontab的基本格式：</p>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2>一些配置</h2>
 <p>smartdns 部分直接 vim 编辑 /etc/config/smartdns 照抄即可，无需手动设置，配置完记得界面上点击保存应用，或者uci命令刷新配置，我里面有杭州电信的DNS服务器，不是杭州的记得自己改掉，否则可能有负面效果。</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>config smartdns</span></span>
-<span class="line"><span>	option enabled '1'</span></span>
-<span class="line"><span>	option server_name 'smartdns'</span></span>
-<span class="line"><span>	option port '6053'</span></span>
-<span class="line"><span>	option auto_set_dnsmasq '1'</span></span>
-<span class="line"><span>	option tcp_server '1'</span></span>
-<span class="line"><span>	option ipv6_server '1'</span></span>
-<span class="line"><span>	option bind_device '1'</span></span>
-<span class="line"><span>	option dualstack_ip_selection '1'</span></span>
-<span class="line"><span>	option serve_expired '1'</span></span>
-<span class="line"><span>	option cache_persist '1'</span></span>
-<span class="line"><span>	option resolve_local_hostnames '1'</span></span>
-<span class="line"><span>	option force_https_soa '1'</span></span>
-<span class="line"><span>	option rr_ttl_min '600'</span></span>
-<span class="line"><span>	option seconddns_port '7913'</span></span>
-<span class="line"><span>	option seconddns_tcp_server '1'</span></span>
-<span class="line"><span>	option seconddns_enabled '1'</span></span>
-<span class="line"><span>	option seconddns_server_group 'passwall'</span></span>
-<span class="line"><span>	option seconddns_no_speed_check '1'</span></span>
-<span class="line"><span>	option seconddns_no_rule_nameserver '1'</span></span>
-<span class="line"><span>	option seconddns_no_dualstack_selection '1'</span></span>
-<span class="line"><span>	option seconddns_no_cache '1'</span></span>
-<span class="line"><span>	option old_port '6053'</span></span>
-<span class="line"><span>	option old_enabled '1'</span></span>
-<span class="line"><span>	option old_auto_set_dnsmasq '1'</span></span>
+<span class="line"><span>    option enabled '1'</span></span>
+<span class="line"><span>    option server_name 'smartdns'</span></span>
+<span class="line"><span>    option port '6053'</span></span>
+<span class="line"><span>    option auto_set_dnsmasq '1'</span></span>
+<span class="line"><span>    option tcp_server '1'</span></span>
+<span class="line"><span>    option ipv6_server '1'</span></span>
+<span class="line"><span>    option bind_device '1'</span></span>
+<span class="line"><span>    option dualstack_ip_selection '1'</span></span>
+<span class="line"><span>    option serve_expired '1'</span></span>
+<span class="line"><span>    option cache_persist '1'</span></span>
+<span class="line"><span>    option resolve_local_hostnames '1'</span></span>
+<span class="line"><span>    option force_https_soa '1'</span></span>
+<span class="line"><span>    option rr_ttl_min '600'</span></span>
+<span class="line"><span>    option seconddns_port '7913'</span></span>
+<span class="line"><span>    option seconddns_tcp_server '1'</span></span>
+<span class="line"><span>    option seconddns_enabled '1'</span></span>
+<span class="line"><span>    option seconddns_server_group 'passwall'</span></span>
+<span class="line"><span>    option seconddns_no_speed_check '1'</span></span>
+<span class="line"><span>    option seconddns_no_rule_nameserver '1'</span></span>
+<span class="line"><span>    option seconddns_no_dualstack_selection '1'</span></span>
+<span class="line"><span>    option seconddns_no_cache '1'</span></span>
+<span class="line"><span>    option old_port '6053'</span></span>
+<span class="line"><span>    option old_enabled '1'</span></span>
+<span class="line"><span>    option old_auto_set_dnsmasq '1'</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>config domain-rule</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>config server</span></span>
-<span class="line"><span>	option enabled '1'</span></span>
-<span class="line"><span>	option name 'cnnic'</span></span>
-<span class="line"><span>	option ip '1.2.4.8'</span></span>
-<span class="line"><span>	option type 'udp'</span></span>
+<span class="line"><span>    option enabled '1'</span></span>
+<span class="line"><span>    option name 'cnnic'</span></span>
+<span class="line"><span>    option ip '1.2.4.8'</span></span>
+<span class="line"><span>    option type 'udp'</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>config server</span></span>
-<span class="line"><span>	option enabled '1'</span></span>
-<span class="line"><span>	option name 'aliyun'</span></span>
-<span class="line"><span>	option ip '223.5.5.5'</span></span>
-<span class="line"><span>	option type 'udp'</span></span>
+<span class="line"><span>    option enabled '1'</span></span>
+<span class="line"><span>    option name 'aliyun'</span></span>
+<span class="line"><span>    option ip '223.5.5.5'</span></span>
+<span class="line"><span>    option type 'udp'</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>config server</span></span>
-<span class="line"><span>	option enabled '1'</span></span>
-<span class="line"><span>	option name 'cm1'</span></span>
-<span class="line"><span>	option ip '211.142.211.124'</span></span>
-<span class="line"><span>	option type 'udp'</span></span>
+<span class="line"><span>    option enabled '1'</span></span>
+<span class="line"><span>    option name 'cm1'</span></span>
+<span class="line"><span>    option ip '211.142.211.124'</span></span>
+<span class="line"><span>    option type 'udp'</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>config server</span></span>
-<span class="line"><span>	option enabled '1'</span></span>
-<span class="line"><span>	option name 'cm2'</span></span>
-<span class="line"><span>	option ip '111.8.14.18'</span></span>
-<span class="line"><span>	option type 'udp'</span></span>
+<span class="line"><span>    option enabled '1'</span></span>
+<span class="line"><span>    option name 'cm2'</span></span>
+<span class="line"><span>    option ip '111.8.14.18'</span></span>
+<span class="line"><span>    option type 'udp'</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>config server</span></span>
-<span class="line"><span>	option enabled '1'</span></span>
-<span class="line"><span>	option name 'cloudflare'</span></span>
-<span class="line"><span>	option ip '1.1.1.1'</span></span>
-<span class="line"><span>	option port '853'</span></span>
-<span class="line"><span>	option type 'tls'</span></span>
-<span class="line"><span>	option server_group 'passwall'</span></span>
-<span class="line"><span>	option exclude_default_group '1'</span></span>
+<span class="line"><span>    option enabled '1'</span></span>
+<span class="line"><span>    option name 'cloudflare'</span></span>
+<span class="line"><span>    option ip '1.1.1.1'</span></span>
+<span class="line"><span>    option port '853'</span></span>
+<span class="line"><span>    option type 'tls'</span></span>
+<span class="line"><span>    option server_group 'passwall'</span></span>
+<span class="line"><span>    option exclude_default_group '1'</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>config server</span></span>
-<span class="line"><span>	option enabled '1'</span></span>
-<span class="line"><span>	option name 'google'</span></span>
-<span class="line"><span>	option ip '8.8.8.8'</span></span>
-<span class="line"><span>	option port '853'</span></span>
-<span class="line"><span>	option type 'tls'</span></span>
-<span class="line"><span>	option server_group 'passwall'</span></span>
-<span class="line"><span>	option exclude_default_group '1'</span></span></code></pre>
+<span class="line"><span>    option enabled '1'</span></span>
+<span class="line"><span>    option name 'google'</span></span>
+<span class="line"><span>    option ip '8.8.8.8'</span></span>
+<span class="line"><span>    option port '853'</span></span>
+<span class="line"><span>    option type 'tls'</span></span>
+<span class="line"><span>    option server_group 'passwall'</span></span>
+<span class="line"><span>    option exclude_default_group '1'</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>如何验证？</h2>
 <p>登录路由器 使用 dig 或者 nslookup 检查下各端口的DNS以及分流情况</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>nslookup www.taobao.com 127.0.0.1:7913 返回的是节点对应淘宝最快的IP</span></span>
@@ -844,19 +1751,22 @@ crontab的基本格式：</p>
     <title type="text">检测鉴定</title>
     <id>https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html</id>
     <link href="https://jiange1236.github.io/work/%E6%A3%80%E6%B5%8B%E9%89%B4%E5%AE%9A.html"/>
-    <updated>2024-08-04T11:55:20.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[
+<p><strong>围护系统承重部分</strong></p>
+<p>危标5.7.1 ：围护结构承重构件主要包括围护系统中砌体自承重墙、承担水平荷载的填充墙、门窗洞口过梁、挑梁、雨篷板及女儿墙等。</p>
+<h1>检测、鉴定依据</h1>
 <h2>检测依据</h2>
 <p><strong>通用部分</strong></p>
 <p>《建筑结构检测技术标准》GB/T 50344-2019；</p>
 <p>《建筑变形测量规范》JGJ 8-2016；</p>
 <p><strong>砌体结构</strong></p>
 <p>《砌体工程现场检测技术标准》GB/T 50315-2011；</p>
-<p>《砌体结构工程施工质量验收规范》GB 50203-2011；</p>
-<p><strong>混凝土结构</strong></p>
-<p>《混凝土结构现场检测技术标准》GB/T 50784-2013；</p>
-<p>《回弹法检测混凝土抗压强度技术规程》JGJ/T 23-2011；</p>]]></summary>
+<p>《砌体结构工程施工质量验收规范》GB 50203-2011；</p>]]></summary>
     <content type="html"><![CDATA[
+<p><strong>围护系统承重部分</strong></p>
+<p>危标5.7.1 ：围护结构承重构件主要包括围护系统中砌体自承重墙、承担水平荷载的填充墙、门窗洞口过梁、挑梁、雨篷板及女儿墙等。</p>
+<h1>检测、鉴定依据</h1>
 <h2>检测依据</h2>
 <p><strong>通用部分</strong></p>
 <p>《建筑结构检测技术标准》GB/T 50344-2019；</p>
@@ -1029,22 +1939,28 @@ crontab的基本格式：</p>
     <title type="text">钢结构</title>
     <id>https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html</id>
     <link href="https://jiange1236.github.io/work/%E9%92%A2%E7%BB%93%E6%9E%84.html"/>
-    <updated>2024-11-26T03:08:35.000Z</updated>
-    <summary type="html"><![CDATA[<p>[toc]</p>
+    <updated>2025-01-23T08:59:28.000Z</updated>
+    <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>荷载组合</h1>
 <p>钢规3.1.5：按承载能力极限状态设计钢结构时，应考虑荷载效应的基本组合，必要时尚应考虑荷载效应的偶然组合。</p>
-<p>按正常使用极限状态设计钢结构时，应考虑荷载效应的标准组合	条文说明：对钢与混凝土组合梁，尚应考虑准永久组合。</p>
+<p>按正常使用极限状态设计钢结构时，应考虑荷载效应的标准组合    条文说明：对钢与混凝土组合梁，尚应考虑准永久组合。</p>
 <h1>材料</h1>
 <p>高钢规4.1.2-4：承重构件所用钢材的质量等级不宜低于B级；抗震等级为二级及以上的高层民用建筑钢结构，其框架梁、柱和抗侧力支撑等主要抗侧力构件钢材的质量等级不宜低于C级</p>
-<h1>螺栓</h1>
-<p><strong>普通螺栓</strong></p>
-<p>分为A、B、C三个等级 ，主要用C级</p>]]></summary>
-    <content type="html"><![CDATA[<p>[toc]</p>
+<h1>尺寸</h1>
+<p>主梁：跨度1/15~1/20</p>
+<p><strong>钢柱截面预估</strong></p>]]></summary>
+    <content type="html"><![CDATA[<p>[TOC]</p>
 <h1>荷载组合</h1>
 <p>钢规3.1.5：按承载能力极限状态设计钢结构时，应考虑荷载效应的基本组合，必要时尚应考虑荷载效应的偶然组合。</p>
-<p>按正常使用极限状态设计钢结构时，应考虑荷载效应的标准组合	条文说明：对钢与混凝土组合梁，尚应考虑准永久组合。</p>
+<p>按正常使用极限状态设计钢结构时，应考虑荷载效应的标准组合    条文说明：对钢与混凝土组合梁，尚应考虑准永久组合。</p>
 <h1>材料</h1>
 <p>高钢规4.1.2-4：承重构件所用钢材的质量等级不宜低于B级；抗震等级为二级及以上的高层民用建筑钢结构，其框架梁、柱和抗侧力支撑等主要抗侧力构件钢材的质量等级不宜低于C级</p>
+<h1>尺寸</h1>
+<p>主梁：跨度1/15~1/20</p>
+<p><strong>钢柱截面预估</strong></p>
+<p></p>
+<p>$A = \frac{N}{0.6 \times 0.8f} $</p>
+<p>$B = \frac{A}{t_{w}  \times 4}+(50\sim 100) $</p>
 <h1>螺栓</h1>
 <p><strong>普通螺栓</strong></p>
 <p>分为A、B、C三个等级 ，主要用C级</p>
@@ -1064,7 +1980,7 @@ crontab的基本格式：</p>
 <figure><figcaption>image-20220526094432320</figcaption></figure>
 <p>YJK需在参数设置中自行选择抗剪键形式和埋深</p>
 <p><strong>螺纹处有效截面面积Ae</strong></p>
-<p>|                   | M16   | M18   | M20   | M22   | M24   | M27   | M30   |
+<p>|          | M16   | M18   | M20   | M22   | M24   | M27   | M30   |
 |</p>
 ]]></content>
     <category term="工作"/>
@@ -2078,7 +2994,7 @@ crontab的基本格式：</p>
     <title type="text">硬链接</title>
     <id>https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html</id>
     <link href="https://jiange1236.github.io/tech/Blog%E6%90%AD%E5%BB%BA.html"/>
-    <updated>2024-11-26T03:08:35.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[
 <p><strong>Linux</strong></p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>mount --bind /data/home/zhou/'Nutstore Files'/我的坚果云/工作 /home/zhou/Documents/Blog/jiange1236.GitHub.io/notes/work</span></span></code></pre>
@@ -2096,7 +3012,36 @@ crontab的基本格式：</p>
 <span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\study E:\我的坚果云\学习</span></span>
 <span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\tech E:\我的坚果云\计算机</span></span>
 <span class="line"><span>mklink /J E:\GitHub\jiange1236.GitHub.io\notes\others E:\我的坚果云\其它</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>PNPM</h1>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1>NodeJS</h1>
+<h2>镜像源</h2>
+<p><strong>npm</strong></p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span># 查询当前使用的镜像源</span></span>
+<span class="line"><span>npm get registry</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span># 设置为淘宝镜像源</span></span>
+<span class="line"><span>npm config set registry https://registry.npmmirror.com/</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span># 还原为官方镜像源</span></span>
+<span class="line"><span>npm config set registry https://registry.npmjs.org/</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>yarn</strong></p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span># 查询当前使用的镜像源</span></span>
+<span class="line"><span>yarn config get registry</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span># 设置为淘宝镜像源</span></span>
+<span class="line"><span>yarn config set registry https://registry.npmmirror.com/</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span># 还原为官方镜像源</span></span>
+<span class="line"><span>yarn config set registry https://registry.yarnpkg.com/</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>pnpm</strong></p>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span># 查询当前使用的镜像源</span></span>
+<span class="line"><span>pnpm get registry</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span># 设置为淘宝镜像源</span></span>
+<span class="line"><span>pnpm config set registry https://registry.npmmirror.com/</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span># 还原为官方镜像源</span></span>
+<span class="line"><span>pnpm config set registry https://registry.npmjs.org/</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>PNPM</h2>
 <blockquote>
 <p>点击左下角开始，找到Windows PowerShell，点击右键找到更多，找到以管理员身份运行</p>
 </blockquote>
@@ -2173,14 +3118,14 @@ crontab的基本格式：</p>
     <title type="text">Deepin</title>
     <id>https://jiange1236.github.io/tech/Deepin_Ubuntu.html</id>
     <link href="https://jiange1236.github.io/tech/Deepin_Ubuntu.html"/>
-    <updated>2024-06-09T09:47:21.000Z</updated>
-    <summary type="html"><![CDATA[<p>[toc]</p>
+    <updated>2025-01-23T08:59:28.000Z</updated>
+    <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>Deepin</h1>
 <h2>系统</h2>
 <p>升级内核</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>sudo apt update &amp;&amp; sudo apt install linux-image-5.8.14-amd64-desktop linux-headers-5.8.14-amd64-desktop</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></summary>
-    <content type="html"><![CDATA[<p>[toc]</p>
+    <content type="html"><![CDATA[<p>[TOC]</p>
 <h1>Deepin</h1>
 <h2>系统</h2>
 <p>升级内核</p>
@@ -2202,11 +3147,12 @@ crontab的基本格式：</p>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>查看是否有大量dump-开头的文件，如果是，那么继续执行</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>rm /sys/firmware/efi/efivars/dump-*</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>网卡驱动</strong></p>
-<p><a href="https://bbs.deepin.org/zh/post/214079" target="_blank" rel="noopener noreferrer">https://bbs.deepin.org/zh/post/214079</a></p>
 <p><a href="https://bbs.deepin.org/zh/post/211628" target="_blank" rel="noopener noreferrer">https://bbs.deepin.org/zh/post/211628</a></p>
-<p>#卸载网卡驱动 sudo apt autopurge bcmwl-kernel-source broadcom-sta-*</p>
-<p>#下载网卡驱动 <a href="http://mirrors.ustc.edu.cn/debian/pool/non-free/b/broadcom-sta/broadcom-sta-source_6.30.223.271-17~bpo10%2B1_all.deb" target="_blank" rel="noopener noreferrer">http://mirrors.ustc.edu.cn/debian/pool/non-free/b/broadcom-sta/broadcom-sta-source_6.30.223.271-17~bpo10%2B1_all.deb</a></p>
-<p>#更新网卡驱动 sudo dpkg -i broadcom-sta*</p>
+<p>卸载网卡驱动 sudo apt autopurge bcmwl-kernel-source broadcom-sta-*</p>
+<p>下载网卡驱动 <a href="http://mirrors.ustc.edu.cn/debian/pool/non-free/b/broadcom-sta/broadcom-sta-source_6.30.223.271-17~bpo10%2B1_all.deb" target="_blank" rel="noopener noreferrer">http://mirrors.ustc.edu.cn/debian/pool/non-free/b/broadcom-sta/broadcom-sta-source_6.30.223.271-17~bpo10%2B1_all.deb</a></p>
+<p>更新网卡驱动 sudo dpkg -i broadcom-sta*</p>
+<p><strong>蓝牙驱动</strong></p>
+<p><a href="https://github.com/winterheart/broadcom-bt-firmware/releases" target="_blank" rel="noopener noreferrer">https://github.com/winterheart/broadcom-bt-firmware/releases</a></p>
 <p><strong>Selenium驱动</strong></p>
 <p>export PATH=$PATH:/home/zhou/Documents/chromedriver/</p>
 <p><strong>软件</strong></p>
@@ -2225,19 +3171,8 @@ crontab的基本格式：</p>
 <p>sudo apt install -y chromium chromium-driver</p>
 <p>sudo apt install telegram-desktop</p>
 <p>sudo dpkg -i deepin.com.ynote_6.10.0.1_i386.deb</p>
-<p><strong>notepadqq打不开</strong></p>
-<p>sudo apt install libqt5websockets5</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>sudo apt install nfs-common</span></span>
-<span class="line"><span>#显示远程主机共享文件 </span></span>
-<span class="line"><span>showmount -e 192.168.1.110 </span></span>
-<span class="line"><span>#创建本地目录 </span></span>
-<span class="line"><span>mkdir /NFSvideo </span></span>
-<span class="line"><span>#将远程文件夹挂载到本地目录 </span></span>
-<span class="line"><span>sudo mount -t nfs 192.168.1.110:/volume1/video /data/home/zhou/Videos/nasvideo </span></span>
-<span class="line"><span>#开启开机挂载 </span></span>
-<span class="line"><span>vi /etc/fstab </span></span>
-<span class="line"><span>192.168.1.15:/volume4/Swap  /NFSfile    nfs    defaults    0    0</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>deepin.com.ynote_6.10.0.1_i386.deb</p>
+<p><strong>残留图标</strong></p>
+<p>图标文件夹 <code>~/.local/share/applications</code></p>
 <h2>TUNA</h2>
 <p>The simple way:</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>wget https://tuna.moe/oh-my-tuna/oh-my-tuna.py </span></span>
@@ -2511,8 +3446,8 @@ crontab的基本格式：</p>
     <title type="text">Openwrt</title>
     <id>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</id>
     <link href="https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
-    <summary type="html"><![CDATA[<p>[toc]</p>
+    <updated>2025-01-23T08:59:28.000Z</updated>
+    <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>Openwrt</h1>
 <h2>OPKG</h2>
 <p>原版</p>
@@ -2523,7 +3458,7 @@ crontab的基本格式：</p>
 <span class="line"><span>src/gz openwrt_routing https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/routing</span></span>
 <span class="line"><span>src/gz openwrt_kiddin9 https://dl.openwrt.ai/23.05/packages/aarch64_cortex-a53/kiddin9</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
-    <content type="html"><![CDATA[<p>[toc]</p>
+    <content type="html"><![CDATA[<p>[TOC]</p>
 <h1>Openwrt</h1>
 <h2>OPKG</h2>
 <p>原版</p>
@@ -3026,8 +3961,8 @@ dnsmasq也是类似的工作方式。</p>
 <p>启用安全模式：√</p>
 <p>启用 IGDv1 模式：√</p>
 <p><strong>MiniUPnP 访问控制列表</strong></p>
-<p>|       备注       |  外部端口  | 内部地址  |  内部端口  | 操作  |
-| :</p>
+<p>| 备注               | 外部端口       | 内部地址      | 内部端口       | 操作    |
+|:</p>
 ]]></content>
     <published>2022-05-14T00:00:00.000Z</published>
   </entry>
@@ -3801,7 +4736,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">一注例题</title>
     <id>https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html</id>
     <link href="https://jiange1236.github.io/study/%E4%B8%80%E6%B3%A8%E4%BE%8B%E9%A2%98.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>科目</h1>
 <table>
@@ -4036,15 +4971,15 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">荷载</title>
     <id>https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html</id>
     <link href="https://jiange1236.github.io/work/1%E8%8D%B7%E8%BD%BD.html"/>
-    <updated>2024-06-12T10:18:49.000Z</updated>
-    <summary type="html"><![CDATA[<p>[toc]</p>
+    <updated>2025-01-23T08:59:28.000Z</updated>
+    <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>荷载组合</h1>
 <p><strong>承载力极限状态基本组合</strong></p>
 <p>注意书库、档案库、储藏室、机房、厂房屋面积灰荷载等的可变荷载组合值系数为0.9</p>
 <p>1.3(1.0)恒+1.3(1.0)预+1.5×γ<sub>L</sub>活+ψ<sub>c</sub>积灰+ψ<sub>c</sub>吊车</p>
 <p>1.3(1.0)恒+1.3(1.0)预+1.5×γ<sub>L</sub>活+1.5×0.6风+ψ<sub>c</sub>吊车</p>
 <p>1.3(1.0)恒+1.3(1.0)预+1.5风+1.5×0.7×γ<sub>L</sub>活+1.5×0.9×书</p>]]></summary>
-    <content type="html"><![CDATA[<p>[toc]</p>
+    <content type="html"><![CDATA[<p>[TOC]</p>
 <h1>荷载组合</h1>
 <p><strong>承载力极限状态基本组合</strong></p>
 <p>注意书库、档案库、储藏室、机房、厂房屋面积灰荷载等的可变荷载组合值系数为0.9</p>
@@ -4053,13 +4988,13 @@ dnsmasq也是类似的工作方式。</p>
 <p>1.3(1.0)恒+1.3(1.0)预+1.5风+1.5×0.7×γ<sub>L</sub>活+1.5×0.9×书</p>
 <p>γ<sub>L</sub>：为活荷载考虑设计使用年限的荷载调整系数，5年取0.9，50年取1.0，100年取1.1</p>
 <p>γ<sub>G</sub>： 为恒荷载分项系数，1)当永久荷载效应对结构不利时，对由可变荷载效应控制的组合应取1.3，对由永久荷载效应控制的组合应取1．35；2)当永久荷载效应对结构有利时，不应大于1．0。</p>
-<p>γ<sub>Q</sub>： 为活荷载分项系数，1)对标准值大于4kN／m2的工业房屋楼面结构的活荷载，应取1．3；		2)其他情况，应取1.5。</p>
+<p>γ<sub>Q</sub>： 为活荷载分项系数，1)对标准值大于4kN／m<sup>2</sup>的工业房屋楼面结构的活荷载，应取1．3；        2)其他情况，应取1.5。</p>
 <p>ψ<sub>W</sub>： 为风荷载组合值系数，取0.6 （荷规 8.1.4）</p>
 <p><strong>地震作用效应基本组合</strong></p>
 <p>抗规5.4.1   高规5.6.1</p>
 <p>一般情况，S=1.2x重力荷载代表值+1.3x水平地震作用</p>
 <p>S=γ<sub>G</sub>S<sub>G</sub>+γ<sub>Eh</sub>S<sub>Eh</sub>+γ<sub>Ev</sub>S<sub>Evk</sub>+ψ<sub>w</sub>γ<sub>w</sub>S<sub>wE</sub></p>
-<p>| <strong>参与组合的荷载和作用</strong>                     | γ<sub>G</sub>                | γ<sub>Eh</sub>      | γ<sub>Ev</sub>      | γ<sub>w</sub> | ψ<sub>w</sub> |
+<p>| <strong>参与组合的荷载和作用</strong>         | γ<sub>G</sub>   | γ<sub>Eh</sub> | γ<sub>Ev</sub> | γ<sub>W</sub> | ψ<sub>W</sub> |
 |</p>
 ]]></content>
     <category term="工作"/>
@@ -4069,7 +5004,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">设计</title>
     <id>https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html</id>
     <link href="https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html"/>
-    <updated>2024-06-11T06:11:19.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <hr>
 <h1>注意事项</h1>
@@ -4090,7 +5025,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">施工图</title>
     <id>https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html</id>
     <link href="https://jiange1236.github.io/work/3%E6%96%BD%E5%B7%A5%E5%9B%BE.html"/>
-    <updated>2024-08-04T11:55:20.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <p><strong>总说明</strong></p>
 <ol>
@@ -4214,7 +5149,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">基础</title>
     <id>https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html</id>
     <link href="https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <p><strong>基础设计值安全储备10%~20%</strong></p>
 <p>地基规6.3.7-2：填土压实系数取不小于0.94</p>
@@ -4251,7 +5186,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">结构笔记-理论篇</title>
     <id>https://jiange1236.github.io/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html</id>
     <link href="https://jiange1236.github.io/work/5%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0-%E7%90%86%E8%AE%BA%E7%AF%87.html"/>
-    <updated>2024-06-11T06:11:19.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>楼板计算模型</h1>
 <p>1、刚性板：平面内刚度无穷大，平面外刚度为0。 其主要用于大部分有梁体系的板，一般的非特别厚的板，平面内刚度无穷大和平面外刚度为0，相对的都是梁的刚度。</p>
@@ -4310,7 +5245,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">PKPM设置</title>
     <id>https://jiange1236.github.io/work/PKPM%E8%AE%BE%E7%BD%AE.html</id>
     <link href="https://jiange1236.github.io/work/PKPM%E8%AE%BE%E7%BD%AE.html"/>
-    <updated>2024-06-11T06:11:19.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>注意事项</h1>
 <p>地库子项：</p>
@@ -4351,13 +5286,13 @@ dnsmasq也是类似的工作方式。</p>
 <p><strong>最大适用高度</strong>：抗规 6.1.1   装规 6.1.1</p>
 <p>房屋高度指：室外地面到主要屋面板板顶的高度</p>
 <p><strong>环境类别</strong>：混规 3.5.2</p>
-<p><strong>结构安全等级</strong>：可靠性 3.2.1：房屋建筑结构抗震设计中的甲类建筑和乙类建筑，其安全等级宜规定为一级；丙类建筑，其安全等级宜规定为二级；丁类建筑，其安全等级宜规定为三级。</p>
-<p><strong>重要性系数</strong>：砼规 3.3.2：在持久设计状况和短暂设计状况下，对安全等级为一级的结构构件不应小于1.1，对安全等级为二级的结构构件不应小于1.0，对安全等级为三级的结构构件不应小于0.9；对地震设计状况下应取1.0	钢规3.3.1条文说明：对设计寿命为25年的结构构件取0.95</p>
+<p><strong>结构安全等级</strong>：可靠性 3.2.1 条文：房屋建筑结构抗震设计中的甲类建筑和乙类建筑，其安全等级宜规定为一级；丙类建筑，其安全等级宜规定为二级；丁类建筑，其安全等级宜规定为三级。</p>
+<p><strong>重要性系数</strong>：砼规 3.3.2：在持久设计状况和短暂设计状况下，对安全等级为一级的结构构件不应小于1.1，对安全等级为二级的结构构件不应小于1.0，对安全等级为三级的结构构件不应小于0.9；对地震设计状况下应取1.0    钢规3.3.1条文说明：对设计寿命为25年的结构构件取0.95</p>
 <p><strong>水平力与整体坐标夹角</strong>：一般不变。该参数为地震作用、风荷载计算时的 X 正向与结构整体坐标系下 X 轴的夹角，逆时针方向为正，单位为度。取值时取0°和&gt;15°的斜交方向</p>
 <p>查看WZQ.OUT中地震作用最大的方向，当大于15°时回填入参数栏中。可在”地震信息“中选择”程序自动考虑最不利水平地震作用“</p>
 <p><strong>嵌固端所在层号</strong>：软件默认嵌固层号=地下室层数，如果在基础顶嵌固，则该参数填 (YJK取0，PKPM取1)，如果修改了地下室层号，应注意确认嵌固端所在层号是否需要修改。地下室顶板面嵌固（一层全埋地下室）参数填 (YJK取1，PKPM取2)</p>
-<p>​		根据《抗规》6.1.14的规定，以及《高规》5.3.7的规定，当首层的Ratx和Raty小于0.5时，地下室可作为上部结构的嵌固端。Ratx=Ki/Ki-1 (剪切刚度之比)</p>
-<p>​		试算时，将嵌固部位设在基础底板上，且扣除地下n层的回填土约束，若算出地下1层与其上层的侧向刚度比为2倍，则可将嵌固部位设在地下室顶板，此时回填土约束层数为 -n</p>
+<p>​        根据《抗规》6.1.14的规定，以及《高规》5.3.7的规定，当首层的Ratx和Raty小于0.5时，地下室可作为上部结构的嵌固端。Ratx=Ki/Ki-1 (剪切刚度之比)</p>
+<p>​        试算时，将嵌固部位设在基础底板上，且扣除地下n层的回填土约束，若算出地下1层与其上层的侧向刚度比为2倍，则可将嵌固部位设在地下室顶板，此时回填土约束层数为 -n</p>
 <p><strong>裙房层数</strong>：地面裙房层数+<a href="http://bbs.co188.com/forum-2412-1.html" target="_blank" rel="noopener noreferrer">地下室</a>层数</p>
 <p><strong>模拟施工加载3</strong>：采用分层刚度分层加载模型。 第 n 层加载时，按只有 1~n 层模型生成结构</p>
 <p>刚度并计算，与施工模拟 1 相比更接近于施工过程。</p>
@@ -4368,18 +5303,21 @@ dnsmasq也是类似的工作方式。</p>
 <p><strong>生成传给基础的刚度</strong>：地基规5.3.12，多塔大底盘结构基础考虑</p>
 <p><strong>考虑P-△效应</strong>：首次分析暂不选择，经计算不满足规范要求时再选择此项，重新进行分析。通常混凝土结构不考虑，高层钢结构宜考虑。在WMASS.OUT文件中查看，考虑后水平位移增大5%~10%，且呈两头小中间大分布</p>
 <p>高规 5.4.1  5.4.2   混规 5.3.4   抗规 3.6.3</p>
+<p>钢规 5.1.6：二阶效应系数&gt;0.1时采用二阶P-Δ弹性分析</p>
+<p><strong>考虑整体缺陷</strong>：最大缺陷值250mm，计算长度系数为1</p>
 <p><strong>计算吊车荷载</strong>：布置移动荷载或吊车荷载时，均需点选此项</p>
 <h1>折减系数</h1>
 <p><strong>连梁按墙元计算控制跨高比</strong> ：对于按框架梁建模的连梁（杆单元），当跨高比小于输入的数值时，软件自动将该梁转换为壳元模型计算，并进行更细的网格划分。（默认数值为4）</p>
 <p><strong>中梁刚度放大系数</strong></p>
-<p>​		软件在计算梁抗弯刚度时，只按照建模时输入的梁的截面尺寸及材料信息计算。而实际情况是，对于现浇楼板，在采用刚性楼板假定时，楼板作为梁的翼缘，是梁的一部分，因此软件采用此系数来考虑楼板对梁刚度的贡献。 叠合梁体系中，中梁刚度放大系数取1.8。</p>
-<p>​		抗规5.2.2条文说明：通常现浇楼面的边框架梁可取1.5，中框架梁可取2.0；有现浇面层的装配式楼面梁的刚度增大系数可适当减小。</p>
-<p>​		砼规5.2.4：刚度增大系数应根据梁有效翼缘尺寸与梁截面尺寸的相对比例确定。</p>
+<p>​        软件在计算梁抗弯刚度时，只按照建模时输入的梁的截面尺寸及材料信息计算。而实际情况是，对于现浇楼板，在采用刚性楼板假定时，楼板作为梁的翼缘，是梁的一部分，因此软件采用此系数来考虑楼板对梁刚度的贡献。 叠合梁体系中，中梁刚度放大系数取1.8。</p>
+<p>​        抗规5.2.2条文说明：通常现浇楼面的边框架梁可取1.5，中框架梁可取2.0；有现浇面层的装配式楼面梁的刚度增大系数可适当减小。</p>
+<p>​        砼规5.2.4：刚度增大系数应根据梁有效翼缘尺寸与梁截面尺寸的相对比例确定。</p>
+<p>​        高钢规6.1.3：两侧有楼板的钢梁取1.5，仅一侧有楼板的钢梁取1.2</p>
 <p><strong>梁端负弯矩调幅系数</strong> 0.8~0.9 一般取0.85   高规 5.2.3-2   砼规  5.4.1  5.4.3</p>
 <p><strong>梁活荷载内力放大系数</strong> 《高规》 5.1.8 条规定：“高层建筑结构内力计算中，当楼面活荷载大于 4kN/m2 时，应考虑楼面活荷载不利布置引起的结构内力的增大；当整体计算中未考虑楼面活荷载不利布置时，应适当增大楼面梁的计算弯矩。 ”该放大系数通常可取为 1.1~1.3，活载大时选用较大数值。除工业厂房外，一般活载不大于4kN/m2，该系数取为1</p>
 <p><strong>梁扭矩折减系数</strong> 高规 5.2.4：高层建筑结构楼面梁受扭计算时应考虑现浇楼盖对梁的约束作用。当计算中未考虑现浇楼盖对梁扭转的约束作用时，可对梁的计算扭矩予以折减。一般取0.4</p>
 <p><strong>周期折减系数</strong></p>
-<p>​	《高规》 4.3.17 ：“当非承重墙体为砌体墙时，高层建筑结构的计算自振周期折减系数可按下列规定取值：框架结构可取 0.6~0.7；框架-剪力墙结构可取 0.7~0.8；框架-核心筒结构可取 0.8~0.9；剪力墙结构可取 0.8~1.0；短肢剪力墙结构取0.8～0.9</p>
+<p>​    《高规》 4.3.17 ：“当非承重墙体为砌体墙时，高层建筑结构的计算自振周期折减系数可按下列规定取值：框架结构可取 0.6~0.7；框架-剪力墙结构可取 0.7~0.8；框架-核心筒结构可取 0.8~0.9；剪力墙结构可取 0.8~1.0；短肢剪力墙结构取0.8～0.9</p>
 <p>| <strong>结构类型 朱抗 3.6.6</strong> | <strong>填充墙较多</strong> | <strong>填充墙较少</strong> |
 |</p>
 ]]></content>
@@ -4390,7 +5328,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">PKPM输出</title>
     <id>https://jiange1236.github.io/work/PKPM%E8%BE%93%E5%87%BA.html</id>
     <link href="https://jiange1236.github.io/work/PKPM%E8%BE%93%E5%87%BA.html"/>
-    <updated>2024-06-11T06:11:19.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>应送审的技术资料</h1>
 <p>1.电算总信息设置 2.形参平面图 3.荷载布置平面图 4.主要电算书（周期、振型、有效质量系数、轴压比、剪重比、刚度比、位移比、周期比、刚重比、层间受剪承载力比、抗浮锚杆计算书等） 5.主要电算图（配筋图、尺寸图、荷载图、挠度图(应在梁施工图中导出)、裂缝图（梁应采用T形截面计算，勾选了参数“考虑支座宽度对裂缝的影响”）、超筋图、剪力包络图、底层墙柱轴力图、组合剪力墙和边缘构件配筋图、剪力墙稳定性验算、剪力墙偏拉验算） 6.基础电算结果 7.地下室外墙计算 8.人防计算 9.水池计算</p>
@@ -4441,7 +5379,7 @@ dnsmasq也是类似的工作方式。</p>
 <p>对照计算内力图进行分析（弯矩不大加截面，主次梁点铰）</p>
 <p><strong>梁超筋</strong></p>
 <p>1）当梁的弯矩设计值 M大于梁的极限承载弯矩 Mu时，提示超筋；</p>
-<p>2）规范对混凝土受压区高度限制：四级及非抗震：ξ≤ξb		二、三级：ξ≤0.35（ 计算时取 AS ’＝0.3 AS ）		一级： ξ≤0.25（ 计算时取 AS ’＝0.5 AS ）	当ξ不满足以上要求时，程序提示超筋；</p>
+<p>2）规范对混凝土受压区高度限制：四级及非抗震：ξ≤ξb        二、三级：ξ≤0.35（ 计算时取 AS ’＝0.3 AS ）        一级： ξ≤0.25（ 计算时取 AS ’＝0.5 AS ）    当ξ不满足以上要求时，程序提示超筋；</p>
 <p>3)《抗震规范》要求梁端纵向受拉钢筋的最大配筋率 2.5%，当大于此值时，提示超筋；软件按经验值4%控制跨中截面配筋率</p>
 <p>4）混凝土梁斜截面计算要满足最小截面的要求，如不满足则提示超筋。</p>
 <p><strong>措施</strong>：提高材料强度、竖向力控制时加截面、地震工况控制时减截面（减小刚度）、梁端点铰、连梁刚度折减、设后浇带、设伸缩缝、调整为井字梁系</p>
@@ -4467,14 +5405,14 @@ dnsmasq也是类似的工作方式。</p>
 <p>（4）改变柱子方向，使之与梁正交；</p>
 <p>（5）对个别节点，按框架梁铰接在框架柱上进行设计。</p>
 <p><strong>梁与剪力墙墙肢平面外相交时锚固长度不足</strong></p>
-<p>①大直径钢筋改小	②相接区域设小直径钢筋然后与梁底大直径钢筋搭接	③设梁头（高规7.1.6-5）		④钢筋末端应附加机械锚固，详16G101-1第59页。</p>
+<p>①大直径钢筋改小    ②相接区域设小直径钢筋然后与梁底大直径钢筋搭接    ③设梁头（高规7.1.6-5）        ④钢筋末端应附加机械锚固，详16G101-1第59页。</p>
 <p><strong>柱超筋（&gt;5%）</strong></p>
 <p>①加大柱截面尺寸或提高混凝土强度等级；   ②配置高强度钢筋；   ③改变传力途径或方式，减少构件内力（加剪力墙）；   ④改变梁柱连接方式，如涉及成梁与柱的连接为铰接等。</p>
 <p><strong>剪力墙抗剪超筋</strong></p>
 <p>一般是局部剪力墙刚度过大，吸收地震力偏大所致。</p>
 <p>对于强连梁引起的，则减小强连梁截面。</p>
 <p><strong>剪力墙稳定验算超限</strong></p>
-<p>①墙体加厚		②提高砼等级		③直线墙加端柱		④一字墙→L形墙→C形墙→工字墙</p>
+<p>①墙体加厚        ②提高砼等级        ③直线墙加端柱        ④一字墙→L形墙→C形墙→工字墙</p>
 <p><strong>剪力墙偏心受拉</strong></p>
 <p>抗规6.2.7、高规7.2.4：双肢抗震墙中，墙肢不宜出现小偏心受拉；当任一墙肢为偏心受拉时，另一墙肢的剪力设计值、弯矩设计值应乘以增大系数 1.25。</p>
 <p>出现PL时，应返回前处理指定双肢墙定义，且双肢墙的两个墙肢均宜指定。</p>
@@ -4482,7 +5420,7 @@ dnsmasq也是类似的工作方式。</p>
 <p><strong>非正交边框柱建模配筋较大</strong></p>
 <p>按照“取轴线角”方式布置</p>
 <p><strong>节点核心区抗剪超限</strong></p>
-<p>①加大梁高度（加腋）（竖向力控制工况）    ②加大柱截面    ③加大柱混凝土等级    ④在建筑允许的情况下，调整结构布置	⑤减小梁高度（地震控制工况）	⑥加大梁宽	⑦减小梁柱中心偏心距</p>
+<p>①加大梁高度（加腋）（竖向力控制工况）    ②加大柱截面    ③加大柱混凝土等级    ④在建筑允许的情况下，调整结构布置    ⑤减小梁高度（地震控制工况）    ⑥加大梁宽    ⑦减小梁柱中心偏心距</p>
 <p><strong>局部振动</strong></p>
 <p>（1）低阶振型存在局部振动（一般为前9阶）</p>
 <p>振型从整体层面反映结构的相对刚度，局部振动一定是模型中刚度较弱的地方。低阶振型出现局部振动，说明局部振动处的结构布置不合理，应该分析原因并做相应调整。这种不合理可能是建模错误导致的（构件没连上、设置多余铰接等），也可能是局部构件刚度较弱导致的。</p>
@@ -4507,7 +5445,7 @@ dnsmasq也是类似的工作方式。</p>
 <p>水浮力默认基本组合系数为1.2</p>
 <p>\2. 采取加强抗浮措施</p>
 <p>典型措施有：增加基础自重或覆土重、增加抗拔桩或者抗拔锚杆来满足抗浮要求、或者采取其他合理有效的抗浮措施</p>
-<pre><code>3. 修改控制计算模型的判断准则
+<pre><code> 3. 修改控制计算模型的判断准则
 </code></pre>
 <p>修改“非线性计算控制误差”（仅适用于1.0恒-1.2浮工况下）</p>
 <h1>建模过程出错</h1>
@@ -4556,22 +5494,22 @@ dnsmasq也是类似的工作方式。</p>
 <p>一般软件设置的间距为：梁箍筋100、板钢筋1000、柱箍筋100、墙分布筋200</p>
 <p><strong>梁箍筋</strong></p>
 <p>G0.6-0.5</p>
-<p>加密区0.6：8@100(2)=50.3<em>2肢/100cm2</em>@100/@100=1.01&gt;0.6</p>
-<p>非加密区0.5：8@200(2)=50.3<em>2肢/100cm2</em>@100/@200=0.50≥0.5</p>
+<p>加密区0.6：8@100(2)=50.3<em>2肢/100cm<sup>2</sup></em>@100/@100=1.01&gt;0.6</p>
+<p>非加密区0.5：8@200(2)=50.3<em>2肢/100cm<sup>2</sup></em>@100/@200=0.50≥0.5</p>
 <p><strong>板钢筋</strong></p>
 <p>8@150=50.3*1000/150=335</p>
 <p><strong>柱箍筋</strong></p>
 <p>G0.6-0.5</p>
-<p>加密区0.6：8@100(3)=50.3<em>3肢/100cm2</em>@100/@100=1.51&gt;0.6</p>
-<p>非加密区0.5：8@200(3)=50.3<em>3肢/100cm2</em>@100/@200=0.75≥0.5</p>
+<p>加密区0.6：8@100(3)=50.3<em>3肢/100cm<sup>2</sup></em>@100/@100=1.51&gt;0.6</p>
+<p>非加密区0.5：8@200(3)=50.3<em>3肢/100cm<sup>2</sup></em>@100/@200=0.75≥0.5</p>
 <p><strong>节点域钢筋</strong></p>
 <p>在梁高范围内配置柱箍筋</p>
 <p>面积2.2：10@100(4)=78.5<em>4肢/100</em>@100/@100=3.14&gt;2.2</p>
 <p><strong>墙分布筋</strong></p>
 <p>默认间距200 H0.8</p>
 <p>8@150=50.3<em>2排/100</em>@200/@150=1.34&gt;0.8</p>
-<p>分布筋=面积/100000<em>2排</em>@200 (200距)		面积/100000<em>2排</em>@150(150距)</p>
-<p>换算成配筋率：配筋率=分布筋/(2h<sub>墙厚</sub>) (200距)	分布筋/(1.5h<sub>墙厚</sub>)(150距)</p>
+<p>分布筋=面积/100000<em>2排</em>@200 (200距)        面积/100000<em>2排</em>@150(150距)</p>
+<p>换算成配筋率：配筋率=分布筋/(2h<sub>墙厚</sub>) (200距)    分布筋/(1.5h<sub>墙厚</sub>)(150距)</p>
 <h1>轴压比</h1>
 <p>抗规6.3.6、6.4.2 高规6.4.2、7.2.13 影响墙柱抗震性能的主要因素之一，为了使柱墙具有很好的延性和耗能能力</p>
 <p>软件自行调整项：四类场地较高建筑、加强层及其相邻层，轴压比限值减0.05</p>
@@ -4605,7 +5543,7 @@ dnsmasq也是类似的工作方式。</p>
 <p>（1）剪切刚度，高规 附录E.0.1；（2）剪弯刚度，高规 附录E.0.3；（3）楼层剪力与层间位移的比值法，高规 3.5.2-1；（4）考虑层高修正的楼层剪力与层间位移的比值法，抗规3.4.3   高规3.5.2-2</p>
 <p>程序自动计算剪切刚度、层剪力与层间位移的比值两种刚度计算方法的计算结果，当结构中设置了转换层且转换层设置在第 2 层以上时，程序自动按《高规》附录 E 计算剪弯刚度，并给出刚度比。</p>
 <p>层刚度比计算方法的选择</p>
-<p>| 层刚度比计算方法的选择 | &lt;&lt;               | &lt;&lt;                   |
+<p>| 层刚度比计算方法的选择 | &lt;&lt;       | &lt;&lt;         |
 |</p>
 ]]></content>
     <category term="工作"/>
@@ -5238,7 +6176,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">装配式设计</title>
     <id>https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html</id>
     <link href="https://jiange1236.github.io/work/%E8%A3%85%E9%85%8D%E5%BC%8F%E8%AE%BE%E8%AE%A1.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
+    <updated>2025-01-23T08:59:28.000Z</updated>
     <summary type="html"><![CDATA[<p>[toc]</p>
 <h1>装配式专利企业</h1>
 <p>ti,ab:(楼梯) AND ti,ab:(连接) NOT ti,ab:(装置)</p>
@@ -5374,28 +6312,25 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">设计指标&amp;产值</title>
     <id>https://jiange1236.github.io/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html</id>
     <link href="https://jiange1236.github.io/work/%E8%AE%BE%E8%AE%A1%E6%8C%87%E6%A0%87_%E4%BA%A7%E5%80%BC.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
+    <updated>2025-01-23T11:28:01.000Z</updated>
     <summary type="html"><![CDATA[<p>[TOC]</p>
 <h1>产值</h1>
-<p>设计费15元/m2</p>
-<p>结构设计费4.05元/m2</p>
-<p>给到个人设计费=4.05x0.8x0.33=1.07元/m2</p>
+<p>设计费15元/m<sup>2</sup></p>
+<p>结构设计费4.05元/m<sup>2</sup></p>
+<p>给到个人设计费=4.05x0.8x0.33=1.07元/m<sup>2</sup></p>
 <p>专负7%  校对12%  审核7%  设计74%</p>
-<p>单设计，个人设计费=1.07*74%=0.79元/m2</p>
+<p>单设计，个人设计费=1.07*74%=0.79元/m<sup>2</sup></p>
 <p>个人产值=收入/0.8/0.33=收入/0.264=收入*3.787</p>
-<p>单设计，个人产值=画图量<em>4.05</em>74%=画图量*3元/m2</p>
-<p>平均百米高层1.2w方</p>
-<h1>设计指标</h1>
-<h2>成本分析</h2>]]></summary>
+<p>单设计，个人产值=画图量<em>4.05</em>74%=画图量*3元/m<sup>2</sup></p>]]></summary>
     <content type="html"><![CDATA[<p>[TOC]</p>
 <h1>产值</h1>
-<p>设计费15元/m2</p>
-<p>结构设计费4.05元/m2</p>
-<p>给到个人设计费=4.05x0.8x0.33=1.07元/m2</p>
+<p>设计费15元/m<sup>2</sup></p>
+<p>结构设计费4.05元/m<sup>2</sup></p>
+<p>给到个人设计费=4.05x0.8x0.33=1.07元/m<sup>2</sup></p>
 <p>专负7%  校对12%  审核7%  设计74%</p>
-<p>单设计，个人设计费=1.07*74%=0.79元/m2</p>
+<p>单设计，个人设计费=1.07*74%=0.79元/m<sup>2</sup></p>
 <p>个人产值=收入/0.8/0.33=收入/0.264=收入*3.787</p>
-<p>单设计，个人产值=画图量<em>4.05</em>74%=画图量*3元/m2</p>
+<p>单设计，个人产值=画图量<em>4.05</em>74%=画图量*3元/m<sup>2</sup></p>
 <p>平均百米高层1.2w方</p>
 <h1>设计指标</h1>
 <h2>成本分析</h2>
@@ -5420,10 +6355,10 @@ dnsmasq也是类似的工作方式。</p>
 <p>在相同装配率情况下，若减少预制构件数量，将使单个预制构件体积增大，可能造成的影响：</p>
 <ol>
 <li>
-<p>增加吊装难度，人工降效，总体工期是否会缩减，若工期缩减1个月，设备租赁和项目管理费降低约15-21元/m²；</p>
+<p>增加吊装难度，人工降效，总体工期是否会缩减，若工期缩减1个月，设备租赁和项目管理费降低约15-21元/m<sup>2</sup>；</p>
 </li>
 <li>
-<p>塔吊型号等级是否增加，塔吊型号由TC6517增加至TC7035单位面积增加8-10元/m²；</p>
+<p>塔吊型号等级是否增加，塔吊型号由TC6517增加至TC7035单位面积增加8-10元/m<sup>2</sup>；</p>
 </li>
 <li>
 <p>预制构件预埋吊钉数量增加；</p>
@@ -5443,7 +6378,16 @@ dnsmasq也是类似的工作方式。</p>
 <p>以上数据按抗震7度区规则结构设计</p>
 <h2>二、装配式建筑混凝土用量和用钢量</h2>
 <p>钢筋52kg/平方米，混凝土0.42立方米/平方米</p>
-<p>成本1800元/m2</p>
+<p>成本1800元/m<sup>2</sup></p>
+<h2>三、钢结构用钢量</h2>
+<h3>钢结构框架</h3>
+<p>6度区 60~70kg/平方米</p>
+<p>7度区 70~80kg/平方米</p>
+<p>8度区 80~90kg/平方米</p>
+<h3>门式刚架</h3>
+<p>20~30kg/平方米</p>
+<h3>网架</h3>
+<p>30~50kg/平方米</p>
 <h2>普通多层住宅楼施工预算经济指标</h2>
 <p>室外门窗（不包括单元门、防盗门）面积占建筑面积的0.2%～0.24%；</p>
 <p>模板面积占建筑面积的2.2%左右</p>
