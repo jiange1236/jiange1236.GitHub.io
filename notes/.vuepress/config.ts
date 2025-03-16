@@ -15,7 +15,6 @@ export default defineUserConfig({
       name: "algolia-site-verification",
       content: "B111614CD27AC444"
     }],
-  [
     // 百度统计
     [
       "script",{},
