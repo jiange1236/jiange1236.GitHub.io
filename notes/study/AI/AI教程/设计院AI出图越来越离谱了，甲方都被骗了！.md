@@ -1,4 +1,5 @@
 ---
+date: 2025-03-16
 title: "设计院AI出图越来越离谱了，甲方都被骗了！"
 source: "https://mp.weixin.qq.com/s/xJnOix7hM8bknUNX6iAtzw"
 author:

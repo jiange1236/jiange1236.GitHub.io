@@ -1,4 +1,5 @@
 ---
+date: 2025-03-16
 title: "新文发布 | AIstructure-Copilot: 人工智能驱动的建筑结构生成式智能设计助手"
 source: "https://mp.weixin.qq.com/s/_8pDaFb8gbcTwz90nWdDyw"
 author:

@@ -1,4 +1,5 @@
 ---
+date: 2025-03-16
 title: "AI+建筑：解锁行业新未来的5大场景与落地案例"
 source: "https://mp.weixin.qq.com/s/Q8DDxQDTCEZfNxK-ncZbSg"
 author:

@@ -1,3 +1,7 @@
+---
+date: 2025-03-16
+---
+
 ## Ollama
 
 ### [自定义Ollama安装路径](https://www.cnblogs.com/LaiYun/p/18696931 "发布于 2025-02-02 17:33")

@@ -1,4 +1,5 @@
 ---
+date: 2025-03-16
 title: "DeepSeek最强外挂！用知识库给AI喂数据，让它更懂你"
 source: "https://mp.weixin.qq.com/s/12BnoPVGYbn4d5hhDm8PWw"
 author:

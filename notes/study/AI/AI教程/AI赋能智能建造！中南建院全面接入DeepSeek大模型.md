@@ -1,4 +1,5 @@
 ---
+date: 2025-03-16
 title: "AI赋能智能建造！中南建院全面接入DeepSeek大模型"
 source: "https://mp.weixin.qq.com/s/uhQLQjlagXtfsY810RcRZw"
 author:
