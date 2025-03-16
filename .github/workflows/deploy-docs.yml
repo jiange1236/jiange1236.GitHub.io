@@ -24,7 +24,7 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           run_install: true
-
+          version: 10.6.3
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
@@ -34,6 +34,7 @@ jobs:
 
       - name: 安装依赖
         run: |
+          corepack prepare pnpm@10.6.3 --activate
           corepack enable
           pnpm install --frozen-lockfile
 
