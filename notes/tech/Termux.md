@@ -2,7 +2,7 @@
 date: 2024-11-25
 ---
 
-# 安装
+## 安装
 
 更换源
 
@@ -10,7 +10,7 @@ date: 2024-11-25
 change-termux-repo
 ```
 
-# Open SSH
+## Open SSH
 
 ```bash
 #安装OpenSSH
@@ -29,7 +29,7 @@ $ ifconfig
  $ ssh android_ip -p 8022
 ```
 
-# Root
+## Root
 
 你可以尝试使用 `tsu` 来提升到 root 权限。首先安装 `tsu`：
 

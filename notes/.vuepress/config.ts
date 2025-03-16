@@ -10,6 +10,12 @@ import theme from "./theme.ts";
 export default defineUserConfig({
   base: "/",
   head: [
+    // 新增 Algolia 验证 meta 标签
+    ["meta", { 
+      name: "algolia-site-verification",
+      content: "B111614CD27AC444"
+    }],
+  [
     // 百度统计
     [
       "script",{},

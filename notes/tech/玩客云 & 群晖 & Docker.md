@@ -1,8 +1,9 @@
 ---
 date: 2023-03-17
 ---
+# 玩客云 & 群晖 & Docker
 
-# 玩客云
+## 玩客云
 
 安装包
 
@@ -15,15 +16,15 @@ nano /etc/apt/sources.list
 删除原内容，然后把下面的内容粘贴进入，按CTRL+X 输入Y保存即可
 
 ```
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+## 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+## deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+## deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+## deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+## deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
 ```
 
 然后更新软件源
@@ -33,11 +34,11 @@ apt update
 apt upgrade
 sudo apt-get install  gcc automake autoconf libtool make zip unzip build-essential net-tools iptables
 sudo apt-get install --fix-missing
-# apt --fix-broken install
-# sudo apt autoclean
+## apt --fix-broken install
+## sudo apt autoclean
 ```
 
-[**Docker安装**](#Docker安装)
+[Docker安装](#Docker安装)
 
 **Docker镜像**
 
@@ -54,7 +55,7 @@ systemctl daemon-reload
 systemctl restart docker
 ```
 
-## 连接WiFi
+### 连接WiFi
 
 ```
 iw wlx00367667a64b scan | grep SSID    #扫描附近的wifi
@@ -69,10 +70,10 @@ nmcli d wifi connect CMCC-U3UC password FTWS4FZX
 
 ```
 #!/bin/sh
-### BEGIN INIT INFO
-# Default-Start:  2 3 4 5
-# Default-Stop: 0 1 6
-### END INIT INFO
+#### BEGIN INIT INFO
+## Default-Start:  2 3 4 5
+## Default-Stop: 0 1 6
+#### END INIT INFO
 sleep 30s
 
 nmcli d wifi connect MaLanShanCDong password qaz1234560
@@ -90,7 +91,7 @@ exit 0
 0 * * * * /etc/init.d/mywifi
 ```
 
-## [Debian 使用 cron 执行定时任务](https://www.cnblogs.com/mouseleo/p/8585979.html)
+### [Debian 使用 cron 执行定时任务](https://www.cnblogs.com/mouseleo/p/8585979.html)
 
 在linux下有两种方法来让一个命令或者脚本执行:
 
@@ -135,41 +136,41 @@ crontab的基本格式：
 - 关闭/etc/init.d/cron stop
 - 重启/etc/init.d/cron restart
 
-## 设置u盘自动挂载
+### 设置u盘自动挂载
 
 1.插入u盘
 
 ```shell
-# 查看u盘路径/大小/type
+## 查看u盘路径/大小/type
 fdisk -l
-# 如/dev/mmcblk0p1
+## 如/dev/mmcblk0p1
 ```
 
 2. 格式化u盘为exc4，保持默认，等待完成
 
 ```shell
-# 举例
+## 举例
 mkfs.ext4 /dev/mmcblk0p1
 ```
 
 3.创建挂载目录
 
 ```shell
-# 举例
+## 举例
 mkdir /mnt/sd
 ```
 
 4. 查看u盘UUID
 
 ```shell
-# 举例
+## 举例
 blkid /dev/mmcblk0p1
 ```
 
 5. 修改配置文件，在/etc/fstab后追加
 
 ```shell
-# 例子，uuid和路径改成自己的
+## 例子，uuid和路径改成自己的
 UUID=a63dfbda-29c8-478f-a88e-55796514c961   /mnt/sd/   ext4    defaults    0 0
 ```
 
@@ -189,7 +190,7 @@ reboot -n
 
 挂载目录下存在lost+found目录即为成功
 
-## Docker 迁移
+### Docker 迁移
 
 1. 停止服务 
 
@@ -215,9 +216,9 @@ sudo mv /var/lib/docker /mnt/sd/docker
 systemctl start docker
 ```
 
-# 群晖
+## 群晖
 
-## OPKG
+### OPKG
 
 ssh 进入群晖后, sudo -i 获取管理员权限, 运行下面的命令:
 
@@ -235,16 +236,16 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:
 
 /opt/etc/init.d/rc.unslung start
 
-# Docker
+## Docker
 
-## Docker安装
+### Docker安装
 
 **Docker**
 
 ```
 #使用清华镜像
 export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
-# 如您使用 curl
+## 如您使用 curl
 curl -fsSL https://get.docker.com/ | sh
 ```
 
@@ -267,7 +268,7 @@ systemctl daemon-reload
 systemctl restart docker
 ```
 
-## Docker基本命令
+### Docker基本命令
 
 启动 Docker 服务
 
@@ -380,7 +381,7 @@ docker tag docker.lixd.xyz/natpierce/natpierce:latest natpierce/natpierce:latest
 docker rmi docker.lixd.xyz/natpierce/natpierce:latest
 ```
 
-## 清理空间
+### 清理空间
 
 查看空间占用
 
@@ -419,7 +420,7 @@ sh /var/lib/docker/clean.sh
 0 5 * * 1 /var/lib/docker/clean.sh
 ```
 
-## Docker代理
+### Docker代理
 
 1. Create a systemd drop-in directory for the `docker` service:
    
@@ -455,39 +456,39 @@ echo "185.199.109.133   raw.githubusercontent.com" >> /etc/hosts
 docker exec -it homeassistant /bin/bash
 ```
 
-## 重建Docker网络
+### 重建Docker网络
 
 ```
-# 安装brctl 
+## 安装brctl 
 apt-get install bridge-utils
 yum install bridge-utils
 
-# 停止docker服务
+## 停止docker服务
 systemctl stop docker
 
-# 重建 docker 网络
+## 重建 docker 网络
 ifconfig docker0 down
 brctl delbr docker0
 
-# 重启docker服务
+## 重启docker服务
 systemctl start docker
 
-# 查看IP转发
+## 查看IP转发
 cat /proc/sys/net/ipv4/ip_forward
-# IP 转发需要进行开启
+## IP 转发需要进行开启
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 使用上述任何一种方法都不会使更改持久。为了确保新设置在重新启动后仍然有效，您需要编辑 /etc/sysctl.conf 文件。
-# sudo nano /etc/sysctl.conf
+## sudo nano /etc/sysctl.conf
 将以下行之一添加到文件底部，具体取决于您想要关闭还是打开 Linux IP 转发。然后，保存对此文件的更改。该设置在重新启动后将是永久的。 net.ipv4.ip_forward 设置控制是否为 IPv4 打开或关闭 IP 转发。
 net.ipv4.ip_forward = 0
 OR
 net.ipv4.ip_forward = 1
 编辑文件后，您可以运行以下命令以使更改立即生效。
-# sysctl -p
+## sysctl -p
 ```
 
-## Docker镜像
+### Docker镜像
 
 | 项目名称     | 项目地址                                            | 加速地址                                                          |
 | -------- | ----------------------------------------------- | ------------------------------------------------------------- |
@@ -509,25 +510,31 @@ docker tag dockerproxy.net/stilleshan/frpc:latest stilleshan/frpc:latest
 
 docker rmi dockerproxy.net/stilleshan/frpc:latest
 
-## Docker Compose
+### Docker Desktop
 
-# **[Home Assistant](https://www.home-assistant.io/) **
+安装到 D 盘
 
-## Home Assistant Container
+```
+Start-Process -FilePath "Docker Desktop Installer.exe" -ArgumentList 'install', '-accept-license', '--installation-dir="D:\Program Files\Docker"', '--wsl-default-data-root="D:\Program Files\Docker\data"', '--windows-containers-default-data-root="D:\Program Files\Docker"' -Wait
+```
+
+## **[Home Assistant](https://www.home-assistant.io/) **
+
+### Home Assistant Container
 
 https://github.com/home-assistant/core/pkgs/container/armv7-homeassistant/versions
 
 ```
-# docker pull 05f073ad3c0010ea0f4bc00b7105ec20.mirror.swr.myhuaweicloud.com/homeassistant/armv7-homeassistant
+## docker pull 05f073ad3c0010ea0f4bc00b7105ec20.mirror.swr.myhuaweicloud.com/homeassistant/armv7-homeassistant
 docker pull dockerproxy.com/homeassistant/armv7-homeassistant:latest
 docker tag dockerproxy.com/homeassistant/armv7-homeassistant:latest homeassistant/armv7-homeassistant:latest
 docker rmi dockerproxy.com/homeassistant/armv7-homeassistant:latest
-# docker run -d --privileged --restart=unless-stopped --name="homeassistant" -v /data/homeassistant/config:/config --net=host homeassistant/armv7-homeassistant
+## docker run -d --privileged --restart=unless-stopped --name="homeassistant" -v /data/homeassistant/config:/config --net=host homeassistant/armv7-homeassistant
 
 docker run -d --privileged --restart=unless-stopped --name="homeassistant" -v /data/homeassistant/config:/config --net=host ghcr.io/home-assistant/armv7-homeassistant:2024.12.5
 ```
 
-## HACS
+### HACS
 
 ```
 docker exec -it homeassistant bash
@@ -535,7 +542,7 @@ wget -O - https://hacs.vip/get | bash -
 或wget -O - https://hacs.vip/get | HUB_DOMAIN=ghproxy.com/github.com bash -
 ```
 
-## Supervisor
+### Supervisor
 
 **Install Home Assistant Supervised**
 
@@ -595,7 +602,7 @@ sudo systemctl stop hassio-apparmor.service
 docker ps | grep -E 'hassio'| awk '{print $1}' | xargs docker rm -f
 ```
 
-## HAOS
+### HAOS
 
 ```bash
 ha network update enp0s18 --ipv4-address 192.168.10.48 --ipv4-gateway 192.168.10.46
@@ -608,7 +615,7 @@ https://gitee.com/hassio/addons
 https://gitee.com/jiange1236/hassio-addons
 ```
 
-# Watchtower
+## Watchtower
 
 一次性运行
 
@@ -632,33 +639,33 @@ docker run -d --restart=unless-stopped \
   --cleanup
 ```
 
-# Dockge
+## Dockge
 
 ```bash
-# Create directories that store your stacks and stores Dockge's stack
+## Create directories that store your stacks and stores Dockge's stack
 mkdir -p /opt/stacks /opt/dockge
 cd /opt/dockge
 
-# Download the compose.yaml
+## Download the compose.yaml
 curl https://raw.githubusercontent.com/louislam/dockge/master/compose.yaml --output compose.yaml
 
-# Start the server
+## Start the server
 docker compose up -d
 ```
 
-# Uptime Kuma
+## Uptime Kuma
 
 ```bash
 docker run -d --restart=unless-stopped --network=host -v /data/uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
 ```
 
-# Easynode
+## Easynode
 
 ```bash
 docker run -d -p 8082:8082 --restart=unless-stopped -v /data/easynode/db:/easynode/app/db chaoszhu/easynode
 ```
 
-# OpenWrt
+## OpenWrt
 
 🔵打开网卡混杂模式
 
@@ -733,7 +740,7 @@ docker images
 docker rmi [镜像ID]
 ```
 
-# Alist
+## Alist
 
 ```
 docker run -d --restart=unless-stopped -v /data/alist:/opt/alist/data -v /tmp:/opt/alist/tmp --network=host --name="alist" xhofe/alist:latest
@@ -747,7 +754,7 @@ docker exec -it alist ./alist admin
 
 使用[http://ip:5244](http://ip:5244/)    来登录alist点击下面的管理输入管理员的账号和密码
 
-## 小雅Alist
+### 小雅Alist
 
 **小雅Alist的相关周边**
 
@@ -775,7 +782,7 @@ bash -c "$(curl http://docker.xiaoya.pro/update_new.sh)"
 bash -c "$(curl http://docker.xiaoya.pro/update_new.sh)" -s host
 ```
 
-# Filebrowser
+## Filebrowser
 
 ```
 docker run \
@@ -788,7 +795,7 @@ docker run \
     filebrowser/filebrowser:latest
 ```
 
-# Homepage
+## Homepage
 
 **Homepage**
 
@@ -824,7 +831,7 @@ docker run -d --restart=always -p 3002:3002 \
 hslr/sun-panel:latest
 ```
 
-# V2rayA
+## V2rayA
 
 ~~Docker安装~~
 
@@ -861,25 +868,25 @@ echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf && sysctl -p
 
 http://ip:2017
 
-# CFnat-Docker
+## CFnat-Docker
 
 ```
 docker run -d -e colo="HKG" -e delay=160 -e ips=6 --name mycfnat --restart=unless-stopped -p 1234:1234 cmliu/cfnat:latest
 ```
 
-# wireproxy
+## wireproxy
 
 ```
 docker run --expose 20173 -p 0.0.0.0:20173:20173 -v /etc/wireguard:/etc/wireproxy --env wireproxyconfigpath=/etc/wireproxy/wireproxy.conf daycat/wireproxy-docker
 ```
 
-# Portainer
+## Portainer
 
 ```
 docker run -d -p 8000:8000 -p 9000:9000 -p 9443:9443 --name portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v /data/portainer:/data portainer/portainer-ce:latest
 ```
 
-# 青龙面板
+## 青龙面板
 
 青龙面板:5700
 
@@ -913,7 +920,7 @@ export WX_ADDRESS="周子健@15116155426@@湖南省@长沙市@开福区@珠江�
 export jd_jinggeng_address="周子健@15116155426@湖南省@长沙市@开福区@珠江郦城"
 ```
 
-## 京东脚本
+### 京东脚本
 
 1
 
@@ -1005,27 +1012,27 @@ ql repo https://github.com/smiek2121/scripts.git "jd_|gua_" "" "^jd[^_]|USER|uti
 ql repo https://github.com/HarbourJ/HarbourToulu.git "jd_" "activity|backUp|jd_sign" "^jd[^_]|USER|utils|ZooFaker_Necklace|JDJR
 ```
 
-## DailyCheckIn
+### DailyCheckIn
 
 https://sitoi.github.io/dailycheckin/
 
-## BiliOutils
+### BiliOutils
 
 https://bilioutils.js.org/
 
-# WOL
+## WOL
 
 ```
 docker run -d --net=host --restart=unless-stopped chishin/wol-go-web
 ```
 
-# DDNS-GO
+## DDNS-GO
 
 ```
 docker run -d --name ddns-go --restart=unless-stopped --net=host -v /data/ddns-go:/root jeessy/ddns-go
 ```
 
-# Lucky
+## Lucky
 
 ```
 docker run -d --name lucky --restart=unless-stopped --net=host -v /data/lucky:/goodluck gdy666/lucky
@@ -1033,7 +1040,7 @@ docker run -d --name lucky --restart=unless-stopped --net=host -v /data/lucky:/g
 
 http://ip:16601
 
-# Cron
+## Cron
 
 ```
 apt install cron
@@ -1061,7 +1068,7 @@ crontab -e
 /etc/init.d/cron start
 ```
 
-# Diun
+## Diun
 
 ```
 docker run -d --name diun --restart=always\
@@ -1082,7 +1089,7 @@ docker run -d --name diun --restart=always\
 docker exec -it diun sh
 ```
 
-# 皎月连
+## 皎月连
 
 ###### OpenWrt安装包
 
@@ -1100,7 +1107,7 @@ sh -c "$(curl -sSL https://natpierce.oss-cn-beijing.aliyuncs.com/ipk/install.sh)
 docker run -it --name natpierce --restart=always --privileged=true --net=host -d natpierce/natpierce:arm32
 ```
 
-# Cloudflare Tunnel
+## Cloudflare Tunnel
 
 ```bash
 curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-armhf.deb
@@ -1126,9 +1133,9 @@ docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token
 docker run -d --device=/dev/net/tun --net=host --cap-add=NET_ADMIN --env PGY_USERNAME="xxx" --env PGY_PASSWORD="xxx" bestoray/pgyvpn
 ```
 
-# PVE
+## PVE
 
-## ssh
+### ssh
 
 修改/etc/ssh/sshd_config
 
@@ -1140,22 +1147,22 @@ PermitRootLogin yes
 sudo systemctl restart sshd
 ```
 
-## 时区设置
+### 时区设置
 
 默认情况下是0时区：
 
 ```bash
-root@docker:~# date 
+root@docker:~## date 
 Sun Mar 24 07:04:09 UTC 2024
-root@docker:~# date -R
+root@docker:~## date -R
 Sun, 24 Mar 2024 07:04:11 +0000
 ```
 
 改为北京时间：
 
 ```bash
-root@docker:~# timedatectl set-timezone Asia/Shanghai
-root@docker:~# timedatectl
+root@docker:~## timedatectl set-timezone Asia/Shanghai
+root@docker:~## timedatectl
  Local time: Sun 2024-03-24 15:06:22 CST
  Universal time: Sun 2024-03-24 07:06:22 UTC
  RTC time: n/a
@@ -1167,7 +1174,7 @@ System clock synchronized: yes
 
 可以看到已成功设置为北京时间了。
 
-## Wireguard
+### Wireguard
 
 要使位于PVE中的宿主机通过WireGuard连接上网，然后让位于LXC容器中的应用程序也能正常上网，您需要按照以下步骤进行设置：
 
@@ -1197,9 +1204,9 @@ lxc.net.0.gateway = <宿主机IP地址>
 
 通过以上步骤，您应该能够使位于PVE中的宿主机通过WireGuard连接上网，并让位于LXC容器中的应用程序也能正常上网。如果遇到问题，可以尝试调整网络配置或查看日志以调试。
 
-# Iptables
+## Iptables
 
-### 保存 iptables 规则
+#### 保存 iptables 规则
 
 为了确保上述规则在系统重启后仍然有效，你需要将规则保存下来。根据你的发行版，可以使用 `iptables-persistent` 或其他工具。
 

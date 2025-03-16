@@ -5,9 +5,9 @@ tags: []
 source: https://docs.bestrui.top/Learn/Docker/BaiduYun.html
 ---
 
-# 百度网盘Docker | RUI
+## 百度网盘Docker | RUI
 
-> ## Excerpt
+> ### Excerpt
 > 百度网盘群晖套件版提取版 群晖套件版就是一个docker容器 网上竟然没有人分享这个docker容器 我自己提取出来了 ，可以在非群晖机器上直接运行 说明 baiduapp 这个是解包提取出来的 baiduappdata 不在群晖上，直接使用docker部署时需要用到 安装 解压baiduappdata.zip到`baidu/data文件夹 ; Doc...
 
 ---
@@ -23,12 +23,12 @@ source: https://docs.bestrui.top/Learn/Docker/BaiduYun.html
 网上竟然没有人分享这个docker容器  
 我自己提取出来了 ，可以在非群晖机器上直接运行
 
-## 说明
+### 说明
 
 `baiduapp` 这个是解包提取出来的  
 `baiduappdata` 不在群晖上，直接使用docker部署时需要用到
 
-## 安装
+### 安装
 
 -   解压`baiduappdata.zip`到`baidu/data`文件夹
 -   Docker直接部署
@@ -39,7 +39,7 @@ docker run -d --name baiduapp -v ./baidu/data:/data -v ./baidu/download:/sdkpath
 
 镜像是`baiduapp`里面文件直接构建的，如不放心，也可以自己构建
 
-## 构建
+### 构建
 
 -   解压`baiduapp.zip`到`baidu/src`文件夹
 -   进入`baidu/src/baiduapp`文件夹
@@ -54,17 +54,17 @@ docker build -t baidu:latest .
 docker run -d --name baiduapp -v ./baidu/data:/data -v ./baidu/download:/sdkpath/volume1/docker baidu:latest
 ```
 
-## 下载链接
+### 下载链接
 
 [百度网盘 | AList (bestrui.top)open in new window](https://alist.bestrui.top/OneDrive/Download/Share/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98)
 
-## 运行命令
+### 运行命令
 
 ```
 docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 ```
 
-##### OPTIONS说明
+###### OPTIONS说明
 
 -   `-d` : 后台运行
 -   `-it` : 交互模式运行
@@ -83,7 +83,7 @@ docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 -   on-failure 若容器的退出状态非0，则docker自动重启容器
 -   unless-stopped 容器退出时总是重启，但不考虑Docker守护进程启动时就已经停止的容器
 
-## 启动命令
+### 启动命令
 
 ```
 docker start     name //普通的启动命令
@@ -91,15 +91,15 @@ docker start -i  name //启动并进入交互
 docker start -a  name //在前端显示日志
 ```
 
-## 构建容器
+### 构建容器
 
 ```
 docker build -t name:tag .
 ```
 
-## 创建网络
+### 创建网络
 
--   #### macvlan网络
+-   ##### macvlan网络
     
 
 ```
@@ -112,7 +112,7 @@ docker network create -d \
        --ipv6 --subnet=fe80::/8
 ```
 
-## 清理日志
+### 清理日志
 
 ```
 <span>#!/bin/sh</span>

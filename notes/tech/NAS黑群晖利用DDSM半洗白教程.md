@@ -8,7 +8,7 @@ apollolake
 
 https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_access_files_on_Synology_NAS_within_the_local_network_NFS
 
-# 半洗白原理
+## 半洗白原理
 
 半洗白原理：DSM6 以上的系统。群晖Docker中会增加一个叫做DSM的功能。简单来说，就是利用Docker在你的群晖系统中，虚拟一个群晖系统。
 
@@ -16,7 +16,7 @@ https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_acc
 
 所以，我们只需要将这个小群晖的序列号和MAC 提取出来。替换到你物理机安装的群晖引导当中，就可以实现半洗白咯！
 
-# 何为半洗白
+## 何为半洗白
 
 黑群晖毕竟是黑群晖，是没有经过群晖验证的机器。所以有一些功能上的限制。
 
@@ -26,7 +26,7 @@ https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_acc
 
 **Video Station 有缩略图、可以转码 等等等~**
 
-# 值得注意的事
+## 值得注意的事
 
 本方法仅适用于DSM6+ 的系统。因为DSM5还没有这个功能
 
@@ -34,7 +34,7 @@ https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_acc
 
 安装 Docker 的 DSM 需要 btrfs 格式的硬盘分区
 
-# 正式开始吧
+## 正式开始吧
 
 **一、Docker中安装DSM**
 
@@ -82,7 +82,7 @@ https://www.synology.cn/zh-cn/knowledgebase/DSM/tutorial/File_Sharing/How_to_acc
 
 通过以上步骤，我们拿到SN 及MAC 之后，我们就可以将系统中的DDSM删除，然后系统关机。引导U盘拿下来插到电脑上。通过DiskGenius更改引导盘中的SN及MAC。然后重新插到群晖中，引导开机即为半洗白群晖咯！
 
-# 附：黑群晖各版本引导下载
+## 附：黑群晖各版本引导下载
 
 [ds3617xs1.03b支持6.2~6.22.img](https://tutu.bid/i/2297/ds3617xs1.03b支持6.2~6.22.img)
 
@@ -120,7 +120,7 @@ SSH 登录到群晖,输入 ls /dev/dri,如果查询到目录下存在 renderD128
 
  
 
-# Docker
+## Docker
 
 docker save -o jellyfin1064.tar jellyfin/jellyfin:10.6.4-amd64
 
@@ -162,7 +162,7 @@ docker images		docker rmi xxx
 
  
 
-# filebrowser
+## filebrowser
 
 IMAGE_NAME=80x86/filebrowser
 
@@ -194,7 +194,7 @@ ${IMAGE_NAME}:2.9.1-amd64
 
  
 
-# jellyfin
+## jellyfin
 
 https://post.smzdm.com/p/akmgnkdk/
 
@@ -202,7 +202,7 @@ docker run --name=jellyfinyj --device=/dev/dri:/dev/dri jellyfin/jellyfin:latest
 
  
 
-# tmm
+## tmm
 
 104.16.61.155 image.tmdb.org
 
@@ -214,11 +214,11 @@ docker run --name=jellyfinyj --device=/dev/dri:/dev/dri jellyfin/jellyfin:latest
 
  
 
-# firefox
+## firefox
 
 
 
-# Emby
+## Emby
 
 https://synology.emby.media/packages/synology/stable/4.4.3.0-1/EmbyServer_4.4.3.0-1_apollolake.spk
 
@@ -234,13 +234,13 @@ https://synology.emby.media/packages/synology/stable/4.4.3.0-1/EmbyServer_4.4.3.
 
 wget -N --no-check-certificate "https://raw.githubusercontent.com/s1oz/embyonekey/master/embyonekey.sh" && chmod +x embyonekey.sh && ./embyonekey.sh
 
-# 阿里云盘
+## 阿里云盘
 
 打开[阿里云盘](https://www.aliyundrive.com/)的官网 登录后按F12 进入找到tokan里面的refresh_token复制存着备用
 
 ![](./NAS%E9%BB%91%E7%BE%A4%E6%99%96%E5%88%A9%E7%94%A8DDSM%E5%8D%8A%E6%B4%97%E7%99%BD%E6%95%99%E7%A8%8B.assets/6199d08327.png)
 
-# NAS CPU
+## NAS CPU
 
 | 代数 | CPU       | GPU     | CPU Mark | GPU Mark | Price | 性价比 |
 | ---- | --------- | ------- | -------- | -------- | ----- | ------ |

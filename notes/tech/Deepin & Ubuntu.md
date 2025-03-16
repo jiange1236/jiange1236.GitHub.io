@@ -1,12 +1,15 @@
 ---
+
 date: 2022-05-14
 ---
 
+# Deepin & Ubuntu
+
 [TOC]
 
-# Deepin
+## Deepin
 
-## 系统
+### 系统
 
 升级内核
 
@@ -104,11 +107,15 @@ sudo apt install telegram-desktop
 
 sudo dpkg -i deepin.com.ynote_6.10.0.1_i386.deb
 
+**更新系统**
+
+`sudo apt dist-upgrade`
+
 **残留图标**
 
 图标文件夹 `~/.local/share/applications` 
 
-## TUNA
+### TUNA
 
 The simple way:
 
@@ -129,13 +136,13 @@ Get help:
 python oh-my-tuna.py -h              
 ```
 
-## 安卓
+### 安卓
 
  anbox
 
 sudo apt install android-tools-adb
 
-## VS Code
+### VS Code
 
 Code runner
 
@@ -149,7 +156,7 @@ Edit in settings.json.
 
 Within the "code-runner.executorMap", go to "python": "python -u" and change it to "python": "python3 -u"
 
-## V2RAY
+### V2RAY
 
 sudo -i
 
@@ -173,7 +180,7 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
 bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) --remove
 ```
 
-## v2rayA
+### v2rayA
 
 - 启动 v2rayA
   
@@ -193,7 +200,7 @@ bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/
   sudo systemctl restart v2raya.service
   ```
 
-## Flatpak
+### Flatpak
 
 Deepin Quick Setup
 
@@ -228,7 +235,7 @@ Follow these simple steps to start using Flatpak
    
    To complete setup, restart your system. Now all you have to do is [install some apps](https://flathub.org/)!
 
-## Fstab
+### Fstab
 
 ```
 vi /etc/fstab
@@ -244,7 +251,7 @@ UUID=47FA-4071     /home/username/Camera\040Pictures   vfat  defaults,noatime   
 /dev/sda7          /media/100\040GB\040(Storage)       ext4  defaults,noatime,user  0  0
 ```
 
-# Ubuntu
+## Ubuntu
 
 ```bash
 sudo add-apt-repository universe
@@ -258,7 +265,7 @@ sudo apt update
 sudo apt install ubuntu-restricted-extras
 ```
 
-# Python插件
+## Python插件
 
 pyinstxtractor
 

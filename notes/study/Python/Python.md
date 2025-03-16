@@ -11,25 +11,25 @@ article: true
 
 [toc]
 
-# 变量
+## 变量
 
-\# 整数转成浮点数	float(a) 
+\## 整数转成浮点数	float(a) 
 
-\# 浮点型转成字符串 (输出字符串时不会看到引号哟)	str(b)
+\## 浮点型转成字符串 (输出字符串时不会看到引号哟)	str(b)
 
-\# 字符串转成布尔型 (有内容的字符串都会变成True)	bool(c)
+\## 字符串转成布尔型 (有内容的字符串都会变成True)	bool(c)
 
-\# 布尔型转成整数 (True会转成1，False会转成0)		int(d)
+\## 布尔型转成整数 (True会转成1，False会转成0)		int(d)
 
-\# 将整数变成对应的字符 (97刚好对应字符表中的字母a)		chr(97)
+\## 将整数变成对应的字符 (97刚好对应字符表中的字母a)		chr(97)
 
-\# 将字符转成整数 (Python中字符和字符串表示法相同)		ord('a')
+\## 将字符转成整数 (Python中字符和字符串表示法相同)		ord('a')
 
 **关键字 keyword.kwlist**
 
 'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
 
-# 运算符
+## 运算符
 
 | **运算符**                    | **描述**                             |
 | ----------------------------- | ------------------------------------ |
@@ -94,7 +94,7 @@ total = ['item_one', 'item_two', 'item_three',
         'item_four', 'item_five']
 ```
 
-# 判断
+## 判断
 
 在Python中，要构造分支结构可以使用if、elif和else关键字
 
@@ -115,7 +115,7 @@ print((username == 'admin') and '身份验证成功!' or '身份验证失败!')
 
 如果要构造出更多的分支，可以使用if...elif...else...结构或者嵌套的if...else...结构
 
-# 循环
+## 循环
 
 ```python
 for i in range(1, 10):
@@ -150,7 +150,7 @@ else:
 	raise ValueError("no found")
 ```
 
-# 字符
+## 字符
 
 **运算**
 
@@ -199,10 +199,10 @@ https://docs.python.org/zh-cn/3/library/stdtypes.html#string-methods
 
 ```
 print(f'{name}的成绩 ===>{scores:.2f}')
-'tea for too'.replace('too', 'two')    # 字符串替换
+'tea for too'.replace('too', 'two')    ## 字符串替换
 ```
 
-# 列表 list[]
+## 列表 list[]
 
 **运算**
 
@@ -215,12 +215,12 @@ print(f'{name}的成绩 ===>{scores:.2f}')
 排序 s.sort()		反转 s.reverse()
 
 ```python
-items.append('i')    # 使用append方法在列表尾部添加元素
-items.insert(2, 'i')    # 使用insert方法在列表指定索引位置插入元素
-items.remove('i')    # 删除指定的元素（仅删除第一个）
-items.pop(0)    # 删除指定索引位置的元素，返回删除的元素
+items.append('i')    ## 使用append方法在列表尾部添加元素
+items.insert(2, 'i')    ## 使用insert方法在列表指定索引位置插入元素
+items.remove('i')    ## 删除指定的元素（仅删除第一个）
+items.pop(0)    ## 删除指定索引位置的元素，返回删除的元素
 items.pop(len(items) - 1) 
-items.clear()    # 清空列表中的元素
+items.clear()    ## 清空列表中的元素
 ```
 
 **切片**
@@ -228,7 +228,7 @@ items.clear()    # 清空列表中的元素
 运算符是[i:j:k]，其中i是开始索引，索引对应的字符可以取到；j是结束索引，索引对应的字符不能取到；k是步长，默认值为1，表示从前向后获取相邻字符的连续切片，所以:k部分可以省略
 
 ```python
-  def fib(n): # 通过yield将普通函数改造成生成器函数，fib(n)即生成一个n个元素的列表    
+  def fib(n): ## 通过yield将普通函数改造成生成器函数，fib(n)即生成一个n个元素的列表    
   	a, b = 0, 1    
 	for _ in range(n):        
 		a, b = b, a + b        
@@ -243,30 +243,30 @@ b = [i[0] for i in s]    #二元列表取第一列
 **生成式**
 
 ```python
-\# 创建一个由'hello world'中除空格和元音字母外的字符构成的列表
+\## 创建一个由'hello world'中除空格和元音字母外的字符构成的列表
 items2 = [x for x in 'hello world' if x not in ' aeiou']
-# 创建一个二元组列表 items3 = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y] 
-# 转置行列 
+## 创建一个二元组列表 items3 = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y] 
+## 转置行列 
 matrix = [[1, 2, 3, 4],[5, 6, 7, 8],[9, 10, 11, 12]] 
 transposed_matrix= [[row[i] for row in matrix] for i in range(4)] 
 '''transposed_matrix=[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]'''
 ```
 
-# 元祖（不可变）tuple()
+## 元祖（不可变）tuple()
 
 ```python
-a, b, *c = range(1, 10) # 元祖解包 
-print(a, b, c) # 1 2 [3, 4, 5, 6, 7, 8, 9] 
-a = (1,) # 单元素元祖末尾需加逗号 
-a, b, c = [1, 10, 100] # 列表解包 
-print(a, b, c) # 1 10 100 
-a, *b, c = 'hello' # 字符串解包 
-print(a, b, c) # h ['e', 'l', 'l'] o 
-L = [('Italy', 'Rome'), ('France', 'Paris')] # 列表转换为字典 
-dict(iter(L)) # {'Italy': 'Rome', 'US': 'Washington DC'}  
+a, b, *c = range(1, 10) ## 元祖解包 
+print(a, b, c) ## 1 2 [3, 4, 5, 6, 7, 8, 9] 
+a = (1,) ## 单元素元祖末尾需加逗号 
+a, b, c = [1, 10, 100] ## 列表解包 
+print(a, b, c) ## 1 10 100 
+a, *b, c = 'hello' ## 字符串解包 
+print(a, b, c) ## h ['e', 'l', 'l'] o 
+L = [('Italy', 'Rome'), ('France', 'Paris')] ## 列表转换为字典 
+dict(iter(L)) ## {'Italy': 'Rome', 'US': 'Washington DC'}  
 ```
 
-# 集合（无序，无重复）set()
+## 集合（无序，无重复）set()
 
 **运算**
 
@@ -280,21 +280,21 @@ dict(iter(L)) # {'Italy': 'Rome', 'US': 'Washington DC'}
 
 对称差① s1 ^ s2	对称差② s1.symmetric_difference(s2)	对称差③ (s1 | s2) - (s1 & s2)
 
-​                set1.add(55)    # 通过add方法添加元素 set1.update({1, 10, 100, 1000})    # 通过update方法添加元素 set1.discard(99)    # 通过discard方法删除指定元素 if 10 in set1:    # 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常    set1.remove(10) print(set1.pop())    # pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear()    # clear方法可以清空整个集合              
+​                set1.add(55)    ## 通过add方法添加元素 set1.update({1, 10, 100, 1000})    ## 通过update方法添加元素 set1.discard(99)    ## 通过discard方法删除指定元素 if 10 in set1:    ## 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常    set1.remove(10) print(set1.pop())    ## pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear()    ## clear方法可以清空整个集合              
 
 **空集合/不可变集合**
 
 ```python
-set1.add(55)    # 通过add方法添加元素
-set1.update({1, 10, 100, 1000})    # 通过update方法添加元素
-set1.discard(99)    # 通过discard方法删除指定元素
-if 10 in set1:    # 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常
+set1.add(55)    ## 通过add方法添加元素
+set1.update({1, 10, 100, 1000})    ## 通过update方法添加元素
+set1.discard(99)    ## 通过discard方法删除指定元素
+if 10 in set1:    ## 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常
     set1.remove(10)
-print(set1.pop())    # pop方法可以从集合中随机删除一个元素并返回该元素
-set1.clear()    # clear方法可以清空整个集合
+print(set1.pop())    ## pop方法可以从集合中随机删除一个元素并返回该元素
+set1.clear()    ## clear方法可以清空整个集合
 ```
 
-# 字典（无序）dict{}
+## 字典（无序）dict{}
 
 ```python
 s = {'i':'x1','j':'y1'}    #{}字面量语法
@@ -306,26 +306,26 @@ s = dict(i='x1', j='y1')    #内置函数dict
 成员运算 in/not in	键值对数量 len(s)
 
 ```python
-s.get(key, α)    # 按照键值key取值，如果取不到返回None或设定的默认值α
-s[key]    # 按照键值key取值，如果取不到会报错
-s.keys()      # 获取字典中所有的键
-s.values()    # 获取字典中所有的值
-s.items()     # 获取字典中所有的键值对
-for key, value in s.items():    # 对字典中所有的键值对进行循环遍历
-del s['i']    # 删除对应的键值，如果没有则报KeyError异常
-s2 = s1.pop(i)    # 删除对应的键值对并返回该值，如果没有则报KeyError异常
-key, value = s.popitem() # 删除字典中最后一组键值对并返回对应的二元组，
-# 如果字典中没有元素，调用该方法将引发KeyError异常
+s.get(key, α)    ## 按照键值key取值，如果取不到返回None或设定的默认值α
+s[key]    ## 按照键值key取值，如果取不到会报错
+s.keys()      ## 获取字典中所有的键
+s.values()    ## 获取字典中所有的值
+s.items()     ## 获取字典中所有的键值对
+for key, value in s.items():    ## 对字典中所有的键值对进行循环遍历
+del s['i']    ## 删除对应的键值，如果没有则报KeyError异常
+s2 = s1.pop(i)    ## 删除对应的键值对并返回该值，如果没有则报KeyError异常
+key, value = s.popitem() ## 删除字典中最后一组键值对并返回对应的二元组，
+## 如果字典中没有元素，调用该方法将引发KeyError异常
 ```
 
 ```python
-s[key] = α    # 相同的键会用新值覆盖掉旧值，不同的键会添加到字典中
-s.update(key, α)    # 相同的键会用新值覆盖掉旧值，不同的键会添加到字典中
+s[key] = α    ## 相同的键会用新值覆盖掉旧值，不同的键会添加到字典中
+s.update(key, α)    ## 相同的键会用新值覆盖掉旧值，不同的键会添加到字典中
 
-# setdefault可以更新字典中的键对应的值或向字典中存入新的键值对
-# setdefault方法的第一个参数是键，第二个参数是键对应的值
-# 如果这个键在字典中存在，更新这个键之后会返回原来与这个键对应的值
-# 如果这个键在字典中不存在，方法将返回第二个参数的值，默认为None
+## setdefault可以更新字典中的键对应的值或向字典中存入新的键值对
+## setdefault方法的第一个参数是键，第二个参数是键对应的值
+## 如果这个键在字典中存在，更新这个键之后会返回原来与这个键对应的值
+## 如果这个键在字典中不存在，方法将返回第二个参数的值，默认为None
 r = s.setdefault(key, {'name': '方启鹤', 'sex': True})
 ```
 
@@ -336,7 +336,7 @@ s = {x: x ** 3 for x in range(1, 6)}    #生成式语法，x的3次方
 s2 = {key: value for key, value in s1.items() if value > α}    #生成式遍历
 ```
 
-# 面向对象
+## 面向对象
 
 - 单一职责原则 （SRP）- 一个类只做该做的事情（类的设计要高内聚）
 - 开闭原则 （OCP）- 软件实体应该对扩展开发对修改关闭
@@ -350,18 +350,18 @@ s2 = {key: value for key, value in s1.items() if value > α}    #生成式遍历
 
 ```python
 class c1:
-    __slots__ = ('x', 'y')    # 限制动态添加对象，如c1.z或o1.z
-    def __init__(self, x, y):    # 实例化时自动初始化，为对象绑定x和y两个属性
-        self.x = x    # 公有对象x
-        self.__x = x    # 私有对象x，无法通过外部访问c1.__x或o1.__x
-        self._y = y    # 受保护对象y，它仅仅是提示成员受保护，但可以被更改
-    def study(self, course_name):    ### 对于类的属性，调用时需加self.
+    __slots__ = ('x', 'y')    ## 限制动态添加对象，如c1.z或o1.z
+    def __init__(self, x, y):    ## 实例化时自动初始化，为对象绑定x和y两个属性
+        self.x = x    ## 公有对象x
+        self.__x = x    ## 私有对象x，无法通过外部访问c1.__x或o1.__x
+        self._y = y    ## 受保护对象y，它仅仅是提示成员受保护，但可以被更改
+    def study(self, course_name):    #### 对于类的属性，调用时需加self.
         print('%s正在学习%s.' % (self.x, course_name))
             
-    @staticmethod    # 判断三条边长能否构成三角形(静态方法)，不需要引用形参self
+    @staticmethod    ## 判断三条边长能否构成三角形(静态方法)，不需要引用形参self
     def is_valid(a, b, c):
         return a + b > c and b + c > a and a + c > b
-    @classmethod    # 判断三条边长能否构成三角形(类方法)
+    @classmethod    ## 判断三条边长能否构成三角形(类方法)
     def is_valid(cls, a, b, c):
         return a + b > c and b + c > a and a + c > b
     @abstractmethod #抽象方法：只有声明没有实现的方法，可以让子类去重写这个方法
@@ -369,25 +369,25 @@ class c1:
         """结算月薪"""
         pass        
     
-    def s1(self, z1, z2):    # 定义带参函数....
-    def s2(self):    # 定义不带参函数....
-    def __repr__(self):    # 在打印对象的时候只能看到我们自定义返回的信息
+    def s1(self, z1, z2):    ## 定义带参函数....
+    def s2(self):    ## 定义不带参函数....
+    def __repr__(self):    ## 在打印对象的时候只能看到我们自定义返回的信息
         return f'{self.x}: {self.y}'    #返回对象
-class c2(c1):    # 继承父类c1
+class c2(c1):    ## 继承父类c1
     def __init__(self, x, y, z):
-        super().__init__(x, y, z)    # 调用父类c1初始化方法
-    super().study(course_name)    # 调用父类c1的study函数    
-class c3(c1):    # 完全继承父类c1
+        super().__init__(x, y, z)    ## 调用父类c1初始化方法
+    super().study(course_name)    ## 调用父类c1的study函数    
+class c3(c1):    ## 完全继承父类c1
     pass        
-class c4(c1,c11):    # 多重继承父类c1,c11
+class c4(c1,c11):    ## 多重继承父类c1,c11
     def __init__(self,n,a,w,g,t):
         c1.__init__(self,n,a,w,g)
         c11.__init__(self,n,t)    
 o1 = c1(α, β)    #创建o1对象，α,β对应x,y，c1属性即为α和β
 o1.s1(i1, i2)    o1.s2()    #“对象.方法”调用方法，只需要传入二参
-c1.s1(o1, i1, i2)    c1.s2(o1)    # “类.方法”调用方法，一参是消息对象，二参是i
+c1.s1(o1, i1, i2)    c1.s2(o1)    ## “类.方法”调用方法，一参是消息对象，二参是i
 print(o1)    print(o1.x)    #打印对象
-o1.z = γ    # 动态添加对象γ
+o1.z = γ    ## 动态添加对象γ
 ```
 
 **@property 装饰器**
@@ -415,13 +415,13 @@ class Student:
         print('删除属性时执行的代码')
         del self._age
 student = Student()
-# 设置属性
+## 设置属性
 student.age = 18
 """设置属性时执行的代码"""<无需括号>
-# 获取属性
+## 获取属性
 print('学生年龄为：' + str(student.age))
 """获取属性时执行的代码 学生年龄为：18"""
-# 删除属性
+## 删除属性
 del student.age
 """删除属性时执行的代码"""
 ```
@@ -450,9 +450,9 @@ def singleton(cls):
 我们可以对类的代码稍作修改，使得两个对象可以直接用<进行大小的比较。这里用到技术叫运算符重载，Python中要实现对<运算符的重载，需要在类中添加一个名为__lt__的魔术方法。很显然，魔术方法__lt__中的lt是英文单词“less than”的缩写，以此类推，魔术方法__gt__对应>运算符，魔术方法__le__对应<=运算符，__ge__对应>=运算符，__eq__对应==运算符，__ne__对应!=运算符。
 
 ```python
-def __lt__(self, other):    # 花色相同比较点数的大小
+def __lt__(self, other):    ## 花色相同比较点数的大小
     if self.suite == other.suite:
-        return self.face < other.face    # 花色不同比较花色对应的值
+        return self.face < other.face    ## 花色不同比较花色对应的值
     return self.suite.value < other.suite.value
 ```
 
@@ -480,7 +480,7 @@ class Suite(Enum):    """花色(枚举)"""
     SPADE, HEART, CLUB, DIAMOND = range(4)
 ```
 
-# 函数
+## 函数
 
 def func(x, y, z) -> str:
 
@@ -495,14 +495,14 @@ str表示函数返回值为str类型
 - 对于 API 来说，使用仅限位置形参可以防止形参名称在未来被修改时造成破坏性的 API 变动。
 
 ```python
-def c1(*args):    # 可接受0或n个位置/关键字参数，参数变成一个元组 → (a,b,c)
-def c2(**kwargs):   # 可接受0或n个关键字参数，参数变成一个字典 → 关键字x:实参值a
-def c3(*args, **kwargs): # 可同时使用位置参数和关键字参数
+def c1(*args):    ## 可接受0或n个位置/关键字参数，参数变成一个元组 → (a,b,c)
+def c2(**kwargs):   ## 可接受0或n个关键字参数，参数变成一个字典 → 关键字x:实参值a
+def c3(*args, **kwargs): ## 可同时使用位置参数和关键字参数
     for arg in args:
         print(arg)
     for kw in kwargs:
         print(kw,':',kwargs[kw]])
-c3(1, 2, 3, 4, k=1, t=2, o=3)    # (1,2,3,4) {'k': 1, 't': 2, 'o': 3}
+c3(1, 2, 3, 4, k=1, t=2, o=3)    ## (1,2,3,4) {'k': 1, 't': 2, 'o': 3}
 def f(pos1, pos2,/, pos_or_kwd, *, kwd1, kwd2):
 '''  -----------    ----------     ----------
         |               |                |
@@ -512,17 +512,17 @@ def f(pos1, pos2,/, pos_or_kwd, *, kwd1, kwd2):
 ```
 
 ```python
-    for _ in range(code_len):    # 产生0到字符串长度减1范围的随机数作为索引
+    for _ in range(code_len):    ## 产生0到字符串长度减1范围的随机数作为索引
         code += ALL_CHARS[random.randint(0,len(ALL_CHARS)-1)]
-def generate_code(code_len=4):    # 随机取出指定数量字符，再将选中字符拼接起来
+def generate_code(code_len=4):    ## 随机取出指定数量字符，再将选中字符拼接起来
     return ''.join(random.choices(ALL_CHARS, k=code_len))
 ```
 
 **函数导入**
 
 ```python
-# 在module1.py中：# __name__是Python中一个隐含的变量它代表了模块的名字
-# 只有被Python解释器直接执行的模块的名字才是__main__
+## 在module1.py中：## __name__是Python中一个隐含的变量它代表了模块的名字
+## 只有被Python解释器直接执行的模块的名字才是__main__
 def c100():
     ...
 if __name__ == '__main__':
@@ -531,9 +531,9 @@ if __name__ == '__main__':
 ```
 
 ```python
-from module1 import c100 as c1    # 导入函数c1 
-# 导入module1时 不会执行模块中if条件代码 因为模块的名字是module1而不是__main__
-from modname import *    # 把一个模块的所有内容全都导入到当前的命名空间
+from module1 import c100 as c1    ## 导入函数c1 
+## 导入module1时 不会执行模块中if条件代码 因为模块的名字是module1而不是__main__
+from modname import *    ## 把一个模块的所有内容全都导入到当前的命名空间
 ```
 
 内置的函数 dir() 可以找到模块内定义的所有名称。以一个字符串列表的形式返回:
@@ -553,23 +553,23 @@ def c1(*args, init_value, op, **kwargs):
     for value in b.values():
         result = op(result, value)
     return result
-print(c1(1, 2, 3, init_value=0, op=add, x=4, y=5))      # 15
-print(c1(1, 2, x=3, y=4, z=5, init_value=1, op=mul))    # 120
+print(c1(1, 2, 3, init_value=0, op=add, x=4, y=5))      ## 15
+print(c1(1, 2, x=3, y=4, z=5, init_value=1, op=mul))    ## 120
 ```
 
 **装饰器**
 
 ```python
 import time
-# 定义装饰器函数，它的参数是被装饰的函数
-def record_time(func):    # 定义一个带装饰功能（记录被装饰函数的执行时间）的函数
-    def wrapper(*args, **kwargs):    # 使用*args和**kwargs接收所有参数
-        start = time.time()    # 在执行被装饰的函数之前记录开始时间
-        result = func(*args, **kwargs)    # 执行被装饰的函数并获取返回值
-        end = time.time()    # 在执行被装饰的函数之后记录结束时间
+## 定义装饰器函数，它的参数是被装饰的函数
+def record_time(func):    ## 定义一个带装饰功能（记录被装饰函数的执行时间）的函数
+    def wrapper(*args, **kwargs):    ## 使用*args和**kwargs接收所有参数
+        start = time.time()    ## 在执行被装饰的函数之前记录开始时间
+        result = func(*args, **kwargs)    ## 执行被装饰的函数并获取返回值
+        end = time.time()    ## 在执行被装饰的函数之后记录结束时间
         print(f'{func.__name__}执行时间: {end - start:.3f}秒')
         return result
-    return wrapper    # 返回带装饰功能的wrapper函数
+    return wrapper    ## 返回带装饰功能的wrapper函数
     
 @record_time    #语法糖，将download带入record_time中执行
 def download(filename):
@@ -582,7 +582,7 @@ download('MySQL从删库到跑路.avi')
 
 ```python
 class RecordTime:
-# 定义装饰器函数，它的参数是被装饰的类
+## 定义装饰器函数，它的参数是被装饰的类
     def __call__(self, func):
         @wraps(func)
         def wrapper(*args, **kwargs):
@@ -592,7 +592,7 @@ class RecordTime:
             print(f'{func.__name__}执行时间: {end - start:.3f}秒')
             return result
         return wrapper
-# 使用装饰器语法糖添加装饰器
+## 使用装饰器语法糖添加装饰器
 @RecordTime()
 def download(filename):
     print(f'开始下载{filename}.')
@@ -602,13 +602,13 @@ def upload(filename):
     print(f'开始上传{filename}.')
     time.sleep(random.randint(4, 8))
     print(f'{filename}上传完成.')
-# 直接创建对象并调用对象传入被装饰的函数
+## 直接创建对象并调用对象传入被装饰的函数
 upload = RecordTime()(upload)
 download('MySQL从删库到跑路.avi')
 upload('Python从入门到住院.pdf')
 ```
 
-# 迭代器与生成器
+## 迭代器与生成器
 
 **迭代器**
 
@@ -649,7 +649,7 @@ class Fib(object):
         self.idx = 0   
     def __iter__(self):
         return self
-# 如果想要一个对象为可迭代的对象，即可以使用for，那么必须实现__iter__方法
+## 如果想要一个对象为可迭代的对象，即可以使用for，那么必须实现__iter__方法
     def __next__(self):
         if self.idx < self.num:
             self.a, self.b = self.b, self.a + self.b
@@ -682,7 +682,7 @@ while True:
         ret = next(fib)
         print(ret)
     except Exception as ret:
-    # 想要得到return的值需要 在except跑出结果的值
+    ## 想要得到return的值需要 在except跑出结果的值
         print(ret.value)
         break
 ```
@@ -698,15 +698,15 @@ def calc_avg():
         avg_value = total/ counter
 gen = calc_avg()
 print(next(gen)) 
-# print(gen.send(None))
-# 这里是两步：①next(gen)或gen.send(None)初始化生成器；
-# ②打印 yield返回的初始avg_value即None
-print(gen.send(10)) # 10作为avg_value输入，经过一轮循环再yield跳出返回结果
+## print(gen.send(None))
+## 这里是两步：①next(gen)或gen.send(None)初始化生成器；
+## ②打印 yield返回的初始avg_value即None
+print(gen.send(10)) ## 10作为avg_value输入，经过一轮循环再yield跳出返回结果
 print(gen.send(20))
 print(gen.send(30))
 ```
 
-# 多进程、多线程
+## 多进程、多线程
 
 **多进程**
 
@@ -778,7 +778,7 @@ if __name__ == '__main__':
     main()
 ```
 
-# 异常处理
+## 异常处理
 
 ```python
 BaseException
@@ -855,7 +855,7 @@ BaseException
 
 ![](./Python.assets/raise.png)
 
-# 图形用户界面GUI
+## 图形用户界面GUI
 
 Python默认的GUI开发模块是tkinter，如果真的需要使用Python开发GUI应用，wxPython、PyQt、PyGTK等模块都是不错的选择
 
@@ -887,25 +887,25 @@ splitext(path)：将路径path拆分为一对，即(root, ext)，使得root + ex
 
 ```python
 import os
-os.getcwd()      # 返回当前的工作目录
-os.chdir('/server/accesslogs')   # 修改当前的工作目录
-os.system('mkdir today')   # 执行系统命令 mkdir 
+os.getcwd()      ## 返回当前的工作目录
+os.chdir('/server/accesslogs')   ## 修改当前的工作目录
+os.system('mkdir today')   ## 执行系统命令 mkdir 
 ```
 
 ```python
 lines = ['标题：《致橡树》', '作者：舒婷', '时间：1977年3月']
-file = open('tmp.txt', 'a', encoding='utf-8')    # # 文件打开后不会被关闭
+file = open('tmp.txt', 'a', encoding='utf-8')    ## ## 文件打开后不会被关闭
 for line in lines:
-    file.write(f'\n{line}')    # 写入文本
+    file.write(f'\n{line}')    ## 写入文本
 file.close()
-file = open('tmp.text', 'r')    # 读取文本
+file = open('tmp.text', 'r')    ## 读取文本
 print(file.read())
 ```
 
 ```python
-try:    # 复制图片
+try:    ## 复制图片
     with open('guido.jpg', 'rb') as file1, \
-        open('吉多.jpg', 'wb') as file2:    # 文件打开后会被关闭
+        open('吉多.jpg', 'wb') as file2:    ## 文件打开后会被关闭
         data = file1.read(512)
         while data:
             file2.write(data)
@@ -933,22 +933,22 @@ with open('scores.csv', 'r') as file:
         print()
 ```
 
-# 图像处理
+## 图像处理
 
 ```python
 from PIL import Image
 image1 = Image.open('guido.jpg')
-image1.format    # 图片格式
-width1, height1 = image1.size    # 图片大小
-print(image1.mode)    # 图片模式（RGB）
-print(image1.show)    # 显示图像
-image1.crop((80, 20, 310, 360)).show()    # 指定剪裁区域剪裁图像
-image1.thumbnail((128, 128))    # 生成略缩图
+image1.format    ## 图片格式
+width1, height1 = image1.size    ## 图片大小
+print(image1.mode)    ## 图片模式（RGB）
+print(image1.show)    ## 显示图像
+image1.crop((80, 20, 310, 360)).show()    ## 指定剪裁区域剪裁图像
+image1.thumbnail((128, 128))    ## 生成略缩图
 image2=image1.resize((int(width/ 1.5), int(height/ 1.5)))
-image1.paste(image2, (172, 40))    # image2贴到image1上
-image1.rotate(45).show()    # 旋转图像
+image1.paste(image2, (172, 40))    ## image2贴到image1上
+image1.rotate(45).show()    ## 旋转图像
 i2=i1.transpose(Image.FLIP_LEFT_RIGHT) #水平翻转 Image.FLIP_TOP_BOTTOM #垂直翻转
-image1.filter(ImageFilter.CONTOUR).show()    # 图片滤镜
+image1.filter(ImageFilter.CONTOUR).show()    ## 图片滤镜
 ```
 
 **绘制图像**
@@ -956,39 +956,39 @@ image1.filter(ImageFilter.CONTOUR).show()    # 图片滤镜
 ```python
 import random
 from PIL import Image, ImageDraw, ImageFont
-def random_color():    # 生成随机颜色
+def random_color():    ## 生成随机颜色
     red = random.randint(0, 255)
     green = random.randint(0, 255)
     blue = random.randint(0, 255)
     return red, green, blue
-width, height = 800, 600    # 创建一个800*600的图像，背景色为白色
+width, height = 800, 600    ## 创建一个800*600的图像，背景色为白色
 image = Image.new(mode='RGB', size=(width, height), color=(255, 255, 255))
-# 创建一个ImageDraw对象
+## 创建一个ImageDraw对象
 drawer = ImageDraw.Draw(image)
-# 通过指定字体和大小获得ImageFont对象
+## 通过指定字体和大小获得ImageFont对象
 font = ImageFont.truetype('Kongxin.ttf', 32)
-drawer.text((300, 50), 'Hello, world!', fill=(255, 0, 0), font=font)  # 绘制文字
-drawer.line((0, 0, width, height), fill=(0, 0, 255), width=2)    # 绘制对角直线
-xy=width//2-60, height//2-60, width//2+60, height//2+60    # 绘制矩形
-drawer.rectangle(xy, outline=(255, 0, 0), width=2)    # 绘制椭圆
+drawer.text((300, 50), 'Hello, world!', fill=(255, 0, 0), font=font)  ## 绘制文字
+drawer.line((0, 0, width, height), fill=(0, 0, 255), width=2)    ## 绘制对角直线
+xy=width//2-60, height//2-60, width//2+60, height//2+60    ## 绘制矩形
+drawer.rectangle(xy, outline=(255, 0, 0), width=2)    ## 绘制椭圆
 for i in range(4):
     left, top, right, bottom = 150 + i * 120, 220, 310 + i * 120, 380
     drawer.ellipse((left, top, right, bottom), outline=random_color(), width=8)
-image.show()    # 显示图像
-image.save('result.png')    # 保存图像
+image.show()    ## 显示图像
+image.save('result.png')    ## 保存图像
 ```
 
-# 网络资源
+## 网络资源
 
 **JSON**
 
 ```python
 import json
 my_dict = {'X'}
-json_str = json.dumps(my_dict)    # 通过dumps函数将字典处理成JSON字符串
-with open('data.json', 'w') as file:    # 写入JSON
+json_str = json.dumps(my_dict)    ## 通过dumps函数将字典处理成JSON字符串
+with open('data.json', 'w') as file:    ## 写入JSON
     json.dump(my_dict, file)
-with open('data.json', 'r') as file:    # 读取JSON
+with open('data.json', 'r') as file:    ## 读取JSON
     my_dict = json.load(file)
     print(type(my_dict))
 ```
@@ -1003,15 +1003,15 @@ resp = requests.get(
     'http://api.tianapi.com/guonei/?key=5d1ec825cc34d4702ccb66d30768d8d9&num=10')
 def main():
     if resp.status_code == 200:
-        data_model = json.loads(resp.text)    # 把str转化为字典
-# data_model = resp.json()   # 将API页面的json转化为字典，若API页面不为json则报错
+        data_model = json.loads(resp.text)    ## 把str转化为字典
+## data_model = resp.json()   ## 将API页面的json转化为字典，若API页面不为json则报错
         for news in data_model['newslist']:
             print(news['title'])
             print(news['url'])
             img1 = urllib.request.urlopen(news['picUrl'])
             bytes_io = BytesIO()
-            bytes_io.write(img1.read())  # 写入bytes，把它当作文件读取
-            img = Image.open(bytes_io)  # 读取'图片'文件
+            bytes_io.write(img1.read())  ## 写入bytes，把它当作文件读取
+            img = Image.open(bytes_io)  ## 读取'图片'文件
             img.show()
             print('-' * 60)
 if __name__ == '__main__':
@@ -1037,7 +1037,7 @@ Python提供了re模块来支持正则表达式相关操作，下面是re模块�
 | re.M/ re.MULTILINE                           | 多行匹配标记                                                 |
 
 ```python
-import re    # 验证输入用户名和QQ号是否有效并给出对应的提示信息
+import re    ## 验证输入用户名和QQ号是否有效并给出对应的提示信息
 username = input('请输入用户名: ')
 m1 = re.match(r'^[0-9a-zA-Z_]{6,20}$', username)
 m2 = re.fullmatch(r'[0-9a-zA-Z_]{6,20}', username)
@@ -1046,31 +1046,31 @@ if not m1:
 ```
 
 ```python
-import re    # 从一段文字中提取出国内手机号码
+import re    ## 从一段文字中提取出国内手机号码
 pattern = re.compile(r'(?<=\D)1[34578]\d{9}(?=\D)')    
 sentence = '''重要的事情说8130123456789遍，我的手机号是13512346789这个。'''
-# 方法一：查找所有匹配并保存到一个列表中
+## 方法一：查找所有匹配并保存到一个列表中
 tels_list = re.findall(pattern, sentence)
 for tel in tels_list:
     print(tel)
-# 方法二：通过迭代器取出匹配对象并获得匹配的内容
+## 方法二：通过迭代器取出匹配对象并获得匹配的内容
 for temp in pattern.finditer(sentence):
     print(temp.group())
-# 方法三：通过search函数指定搜索位置找出所有匹配
+## 方法三：通过search函数指定搜索位置找出所有匹配
 m = pattern.search(sentence)
 while m:
     print(m.group())
 ```
 
 ```python
-import re    # 替换字符串中的不良内容
+import re    ## 替换字符串中的不良内容
 sentence = 'Oh, shit! 你丫是傻叉吗? Fuck you.'
 purified = re.sub('fuck|shit','*', sentence, flags=re.IGNORECASE)
 print(purified)
 ```
 
 ```python
-import re    # 拆分长字符串
+import re    ## 拆分长字符串
 poem = '窗前明月光，疑是地上霜。举头望明月，低头思故乡。'
 sentences_list = re.split(r'[，。, .]', poem)
 sentences_list = [sentence for sentence in sentences_list if sentence]
@@ -1078,7 +1078,7 @@ for sentence in sentences_list:
     print(sentence)
 ```
 
-# 爬虫
+## 爬虫
 
 https://zhuanlan.zhihu.com/p/33542626
 
@@ -1092,13 +1092,13 @@ https://zhuanlan.zhihu.com/p/33542626
 **正则表达式法**
 
 ```python
-import random, time, re, requests    # 正则表达式解析
+import random, time, re, requests    ## 正则表达式解析
 for page in range(1, 11):
     resp = requests.get(
         url=f'https://movie.douban.com/top250?start={(page - 1) * 25}',
-        # 如果不设置HTTP请求头中的User-Agent，豆瓣会检测出爬虫程序而阻止我们的请求
-        # User-Agent可以设置为浏览器的标识（可以在浏览器的开发者工具查看HTTP请求头找到）
-        # 由于豆瓣网允许百度爬虫获取它的数据，因此直接将我们的爬虫伪装成百度的爬虫
+        ## 如果不设置HTTP请求头中的User-Agent，豆瓣会检测出爬虫程序而阻止我们的请求
+        ## User-Agent可以设置为浏览器的标识（可以在浏览器的开发者工具查看HTTP请求头找到）
+        ## 由于豆瓣网允许百度爬虫获取它的数据，因此直接将我们的爬虫伪装成百度的爬虫
         headers={
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) '
                           'AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -1108,30 +1108,30 @@ for page in range(1, 11):
                       'q=0.8,application/signed-exchange;v=b3;q=0.9',
             'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
         },)
-    # 创建正则表达式对象，通过捕获组捕获span标签中的电影标题
+    ## 创建正则表达式对象，通过捕获组捕获span标签中的电影标题
     pattern = re.compile(r'\<span class="title"\>([^&]*?)\<\/span\>')
-    # 通过正则表达式获取class属性为title且标签内容不以&符号开头的span标签
+    ## 通过正则表达式获取class属性为title且标签内容不以&符号开头的span标签
     results = pattern.findall(resp.text)
-    # 循环变量列表中所有的电影标题
+    ## 循环变量列表中所有的电影标题
     for result in results:
         print(result)
-    # 随机休眠1-3秒，避免获取页面过于频繁
+    ## 随机休眠1-3秒，避免获取页面过于频繁
     time.sleep(random.randint(1, 3))
 ```
 
 **Xpath解析法**
 
 ```python
-# https://www.runoob.com/xpath/xpath-tutorial.html
-import random, time, requests    # XPath解析
+## https://www.runoob.com/xpath/xpath-tutorial.html
+import random, time, requests    ## XPath解析
 from lxml import etree
 for page in range(1, 11):
     resp = requests.get(
         url=f'https://movie.douban.com/top250?start={(page - 1) * 25}',
         headers={'User-Agent': 'BaiduSpider'})
     tree = etree.HTML(resp.text)
-    # 通过XPath语法从页面中提取需要的数据
-    # 可通过Chrome浏览器中F12调试工具右键选择查看元素的完整的XPath★★★
+    ## 通过XPath语法从页面中提取需要的数据
+    ## 可通过Chrome浏览器中F12调试工具右键选择查看元素的完整的XPath★★★
     spans = tree.xpath('/html/body/div[3]/div[1]/div/div[1]/ol/li[2]/div/div[2]/div[1]/a/span[1]')
     for span in spans:
         print(span.text)
@@ -1142,13 +1142,13 @@ for page in range(1, 11):
 
 ```python
 https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
-import random, time, bs4, requests    # CSS选择器解析
+import random, time, bs4, requests    ## CSS选择器解析
 for page in range(1, 11):
     resp = requests.get(
         url=f'https://movie.douban.com/top250?start={(page - 1) * 25}',
         headers={'User-Agent': 'BaiduSpider'})
     soup = bs4.BeautifulSoup(resp.text, 'lxml')
-    # 通过CSS选择器从页面中提取需要的数据
+    ## 通过CSS选择器从页面中提取需要的数据
     spans = soup.select('div.info > div.hd > a > span:nth-child(1)')
     for span in spans:
         print(span.text)
@@ -1180,7 +1180,7 @@ if __name__ == '__main__':
     main()
 ```
 
-# 文档测试
+## 文档测试
 
 **help()函数**
 
@@ -1233,7 +1233,7 @@ class my_cla:
 doctest.testmod()
 ```
 
-# 数据结构和算法
+## 数据结构和算法
 
 算法：解决问题的方法和步骤
 
@@ -1257,7 +1257,7 @@ doctest.testmod()
 
  \- 阶乘时间复杂度 - 旅行经销商问题 - NPC
 
-# 插件
+## 插件
 
 Auto Rename Tag
 
@@ -1305,11 +1305,11 @@ vscode-icons
 
 vscode-fileheader
 
-# Conda
+## Conda
 
 \#安装 conda install ...
 
-# pip
+## pip
 
 **Linux**
 
@@ -1324,8 +1324,8 @@ pip3 install pillow -i https://pypi.doubanio.com/simple
 pip3 install --upgrade pip
 
 ```bash
-# Linux更新所有pip包
-# -*- coding: utf-8 -*-
+## Linux更新所有pip包
+## -*- coding: utf-8 -*-
 import pip
 import time
 from pip._internal.utils.misc import get_installed_distributions
@@ -1355,7 +1355,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ```python
-# Windows更新所有pip包
+## Windows更新所有pip包
 import subprocess
 import os
 

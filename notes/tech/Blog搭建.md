@@ -2,7 +2,7 @@
 date: 2022-05-15
 ---
 
-# 硬链接
+## 硬链接
 
 **Linux**
 
@@ -28,44 +28,44 @@ mklink /J E:\GitHub\jiange1236.GitHub.io\notes\tech E:\我的坚果云\计算机
 mklink /J E:\GitHub\jiange1236.GitHub.io\notes\others E:\我的坚果云\其它
 ```
 
-# NodeJS
-## 镜像源
+## NodeJS
+### 镜像源
 
 **npm**
 ```
-# 查询当前使用的镜像源
+## 查询当前使用的镜像源
 npm get registry
  
-# 设置为淘宝镜像源
+## 设置为淘宝镜像源
 npm config set registry https://registry.npmmirror.com/
  
-# 还原为官方镜像源
+## 还原为官方镜像源
 npm config set registry https://registry.npmjs.org/
 ```
 **yarn**
 ```
-# 查询当前使用的镜像源
+## 查询当前使用的镜像源
 yarn config get registry
  
-# 设置为淘宝镜像源
+## 设置为淘宝镜像源
 yarn config set registry https://registry.npmmirror.com/
  
-# 还原为官方镜像源
+## 还原为官方镜像源
 yarn config set registry https://registry.yarnpkg.com/
 ```
 **pnpm**
 ```
-# 查询当前使用的镜像源
+## 查询当前使用的镜像源
 pnpm get registry
  
-# 设置为淘宝镜像源
+## 设置为淘宝镜像源
 pnpm config set registry https://registry.npmmirror.com/
  
-# 还原为官方镜像源
+## 还原为官方镜像源
 pnpm config set registry https://registry.npmjs.org/
 ```
 
-## PNPM
+### PNPM
 
 > 点击左下角开始，找到Windows PowerShell，点击右键找到更多，找到以管理员身份运行
 
@@ -89,9 +89,9 @@ pnpm update --latest
 
 **清理存储**：如果使用pnpm，可以通过执行`pnpm store prune`来清理存储，移除过时的包
 
-# Git
+## Git
 
-## 清除Github提交历史记录
+### 清除Github提交历史记录
 
 1.将Repository使用git clone到本地，在终端使用"git log"查看提交记录。Github会为每一次commit操作生成哈希值，用这个哈希值来记录你的提交记录。
 
@@ -101,7 +101,7 @@ pnpm update --latest
 
 4.使用"git push origin HEAD —force"，PUSH到github。
 
-## 代理
+### 代理
 
 **只对Github代理（推荐）**
 

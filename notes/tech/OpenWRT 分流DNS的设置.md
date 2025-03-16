@@ -16,18 +16,18 @@ source: https://github.com/luckyyyyy/blog/issues/57#issue-1198960406
 
 同时请注意，删除你电脑，手机上的DNS（不要设置任何DNS）
 
-## 注意事项
+### 注意事项
 
 建议小白用户使用 Clash 更稳定且方便 此教程仅针对有特殊需求的用户
 
-## 涉及到的组件
+### 涉及到的组件
 
 - Passwall
 - AdGuard Home（可选）
 - Dnsmasq （无需进行任何设置）
 - SmartDNS （分流+主DNS服务器）
 
-## AdGuard Home（可选）
+### AdGuard Home（可选）
 
 主要是起到记录的作用，对需要查看记录的同学有帮助，至于DNS广告屏蔽，虽然有用但会误伤，慎重选择。
 同时由于记录文件较大，请一定要注意`把记录时间改小，或者设置到有足够空间的目录中，否则会导致时间久了将磁盘撑满`
@@ -38,7 +38,7 @@ source: https://github.com/luckyyyyy/blog/issues/57#issue-1198960406
 
 注意：设置了重定向后，所有DNS结果都将应答非权威记录，如果不了解DNS协议请无视，这条并不会影响什么。
 
-## SmartDNS
+### SmartDNS
 
 主要用于分流和DNS查询，国外走 Cloudflare DNS ove TLS/HTTPS ，国内延迟优先（但可能影响P2P下载，实测实际还好）。
 
@@ -57,13 +57,13 @@ source: https://github.com/luckyyyyy/blog/issues/57#issue-1198960406
   - 国内上游填写你的运营商，额外填写一些国内常用的，例如阿里云，DNSPod等等，可以参考文末的配置，分组信息填写cn。
   - 国外上游填写1.1.1.1端口853，协议填写tls，分组信息填写passwall，额外的服务参数填写 -exclude-default-group
 
-## Passwall
+### Passwall
 
 - DNS分流 smartdns
 - 国内分组名 cn
 - 过滤模式 通过UDP请求DNS 127.0.0.1:7913
 
-## Dnsmasq
+### Dnsmasq
 
 无需任何设置，如果有设置请改回，除了上游服务器是127.0.0.1:6053。
 
@@ -74,7 +74,7 @@ iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
 ```
 
-## 一些配置
+### 一些配置
 
 smartdns 部分直接 vim 编辑 /etc/config/smartdns 照抄即可，无需手动设置，配置完记得界面上点击保存应用，或者uci命令刷新配置，我里面有杭州电信的DNS服务器，不是杭州的记得自己改掉，否则可能有负面效果。
 
@@ -150,7 +150,7 @@ config server
     option exclude_default_group '1'
 ```
 
-## 如何验证？
+### 如何验证？
 
 登录路由器 使用 dig 或者 nslookup 检查下各端口的DNS以及分流情况
 

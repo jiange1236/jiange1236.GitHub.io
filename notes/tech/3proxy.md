@@ -2,7 +2,7 @@
 date: 2025-01-23
 ---
 
-# 3proxy.cfg
+## 3proxy.cfg
 
 ```
 #代理如果需要服务器解析，那么使用该dns解析并代理，我看官方的解释，默认是使用第一个的，如果第一个挂了才会使用第二个。如果不配置dns，则会使用服务器配置的dns地址，所以这里不是必须的，你可以注释掉
@@ -28,49 +28,49 @@ service
 #rotate 10
 
 
-# 代理认证的用户名和密码，这里定义了两个用户，zdw的密码是777，user的密码是pass，CL代表明文密码，多条之间空格分隔
+## 代理认证的用户名和密码，这里定义了两个用户，zdw的密码是777，user的密码是pass，CL代表明文密码，多条之间空格分隔
 #users zdw:CL:777 user:CL:pass
-# CL：代表明文密码
-# CR：密码使用密文加密
-# NT：密文加密
+## CL：代表明文密码
+## CR：密码使用密文加密
+## NT：密文加密
 
 
 #代理认证类型
 auth none
-# none：不需要认证（默认类型）
-# iponly：根据源IP地址进行ACL控制
-# username：只验证用户名，用于Socks4代理
-# nbname：认证基于NetBIOS （Windows系统）
-# strong：基于弹窗用户名/密码认证，支持HTTP/POP3/FTP/SOCKSv5的代理类型
-# cache：认证缓存，依赖authcache选项
-#####  auth strong / auth iponly atrong  可以同时开启多项认证方式
+## none：不需要认证（默认类型）
+## iponly：根据源IP地址进行ACL控制
+## username：只验证用户名，用于Socks4代理
+## nbname：认证基于NetBIOS （Windows系统）
+## strong：基于弹窗用户名/密码认证，支持HTTP/POP3/FTP/SOCKSv5的代理类型
+## cache：认证缓存，依赖authcache选项
+######  auth strong / auth iponly atrong  可以同时开启多项认证方式
 
 
 #allow选项，允许这两个用户通过认证，用英文的逗号分隔
 allow *
 
-# allow <userlist> <sourcelist> <targetlist> <targetportlist> operationlist> <weekdayslist> <timeperiodslist>  allow选项的参数，选项支持 *匹配
-# deny <userlist> <sourcelist> <targetlist> <targetportlist> <operationlist> <weekdayslist> <timeperiodslist>    deny选项的参数，选项支持 *匹配
+## allow <userlist> <sourcelist> <targetlist> <targetportlist> operationlist> <weekdayslist> <timeperiodslist>  allow选项的参数，选项支持 *匹配
+## deny <userlist> <sourcelist> <targetlist> <targetportlist> <operationlist> <weekdayslist> <timeperiodslist>    deny选项的参数，选项支持 *匹配
 #Operation is one of:  代理连接方式支持以下方式
-#        CONNECT - establish outgoing TCP connection
-#        BIND - bind TCP port for listening
-#        UDPASSOC - make UDP association
-#        ICMPASSOC - make ICMP association (for future use)
-#        HTTP_GET - HTTP GET request
-#        HTTP_PUT - HTTP PUT request
-#        HTTP_POST - HTTP POST request
-#        HTTP_HEAD - HTTP HEAD request
-#        HTTP_CONNECT - HTTP CONNECT request
-#        HTTP_OTHER - over HTTP request
-#        HTTP - matches any HTTP request except HTTP_CONNECT
-#        HTTPS - same as HTTP_CONNECT
-#        FTP_GET - FTP get request
-#        FTP_PUT - FTP put request
-#        FTP_LIST - FTP list request
-#        FTP_DATA - FTP data connection. Note: FTP_DATA requires access to dynamic
-#        non-ptivileged (1024-65535) ports on remote side.
-#        FTP - matches any FTP/FTP Data request
-#        ADMIN - access to administration interface
+##        CONNECT - establish outgoing TCP connection
+##        BIND - bind TCP port for listening
+##        UDPASSOC - make UDP association
+##        ICMPASSOC - make ICMP association (for future use)
+##        HTTP_GET - HTTP GET request
+##        HTTP_PUT - HTTP PUT request
+##        HTTP_POST - HTTP POST request
+##        HTTP_HEAD - HTTP HEAD request
+##        HTTP_CONNECT - HTTP CONNECT request
+##        HTTP_OTHER - over HTTP request
+##        HTTP - matches any HTTP request except HTTP_CONNECT
+##        HTTPS - same as HTTP_CONNECT
+##        FTP_GET - FTP get request
+##        FTP_PUT - FTP put request
+##        FTP_LIST - FTP list request
+##        FTP_DATA - FTP data connection. Note: FTP_DATA requires access to dynamic
+##        non-ptivileged (1024-65535) ports on remote side.
+##        FTP - matches any FTP/FTP Data request
+##        ADMIN - access to administration interface
 
 
 #开启一个HTTP代理 端口是20001  -n：关闭windows NTML验证（使用上面定义的账号密码认证）
@@ -105,7 +105,7 @@ flush
 
 
 
-# Powershell
+## Powershell
 
 **运行**
 

@@ -11,7 +11,7 @@ article: true
 
 [toc]
 
-# 内置函数
+## 内置函数
 
 | **函数**                                                     | **说明**                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -55,7 +55,7 @@ article: true
 | hasattr(object, name)                                        | 如果字符串是对象的属性之一的名称，则返回 True，否则返回 False |
 |                                                              |                                                              |
 
-## Enumerate(iterable, start=0) --返回一个枚举对象
+### Enumerate(iterable, start=0) --返回一个枚举对象
 
 ```
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
@@ -65,7 +65,7 @@ print(list(enumerate(seasons, start=1)))
 #[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
 
-## Filter、Map、Reduce和Enumerate函数  --筛选、代换、单个计算、累计计算
+### Filter、Map、Reduce和Enumerate函数  --筛选、代换、单个计算、累计计算
 
 **filter（fun，sequence）**
 
@@ -82,7 +82,7 @@ newlist = filter(is_odd, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 参数上map函数与filter是一样的，他们的差别就是函数是对每个元素做一个数学上的代换，而非条件的判断。这个函数返回的也是一个迭代器。即通过fun函数计算sequence中的单个元素。
 
 ```
-def square(x) :            # 计算平方数
+def square(x) :            ## 计算平方数
     return x ** 2
 map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])    
 ```
@@ -93,9 +93,9 @@ map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])
 
 ```
 from functools import reduce
-def add(x, y) :            # 两数相加
+def add(x, y) :            ## 两数相加
     return x + y
-sum1 = reduce(add, [1,2,3,4,5])   # 计算列表和：1+2+3+4+5
+sum1 = reduce(add, [1,2,3,4,5])   ## 计算列表和：1+2+3+4+5
 ```
 
 **enumerate（sequence）**
@@ -104,10 +104,10 @@ sum1 = reduce(add, [1,2,3,4,5])   # 计算列表和：1+2+3+4+5
 
 ```
 for item in enumerate(['subject', 'verb', 'object']):
-    print(item) # (0, 'subject') (1, 'verb') (2, 'object')
+    print(item) ## (0, 'subject') (1, 'verb') (2, 'object')
 ```
 
-## Format(value[, format_spec]) --格式化字符串
+### Format(value[, format_spec]) --格式化字符串
 
 ```
 print(f'我叫 {name:s} 今年 {age:d} 岁!')
@@ -158,9 +158,9 @@ print('我叫 {:s} 今年 {:d} 岁!'.format('小明', 10))
 | 11         | `{:#x}`   | 0xb        | 十六进制小写                 |
 | 11         | `{:#X}`   | 0XB        | 十六进制大写                 |
 
-# 常用函数
+## 常用函数
 
-## Collections --容器数据类型
+### Collections --容器数据类型
 
 collections模块提供了诸多非常好用的数据结构，主要包括：
 
@@ -182,11 +182,11 @@ counter = Counter(words)
 print(counter.most_common(3))
 ```
 
-## Decimal、Fractions --十进制定点和浮点运算、分数运算
+### Decimal、Fractions --十进制定点和浮点运算、分数运算
 
 
 
-## Hashlib --哈希函数模块
+### Hashlib --哈希函数模块
 
 ```
 import hashlib
@@ -199,30 +199,30 @@ with open('Python-3.7.1.tar.xz', 'rb') as file:
 print(hasher.hexdigest())
 ```
 
-## Heapq --堆排序模块
+### Heapq --堆排序模块
 
 ```
 import heapq
 list2 = [{'name': 'ACME', 'shares': 75, 'price': 115.65}]
-print(heapq.nsmallest(3, list1))    # 找出最小的三个值
-print(heapq.nlargest(3, list2, key=lambda x: x['price']))# 找出价格最高的三只股票
+print(heapq.nsmallest(3, list1))    ## 找出最小的三个值
+print(heapq.nlargest(3, list2, key=lambda x: x['price']))## 找出价格最高的三只股票
 ```
 
-## Lambda函数 --表达式
+### Lambda函数 --表达式
 
 定义Lambda函数的关键字是lambda，后面跟函数的参数，如果有多个参数用逗号进行分隔；冒号后面的部分就是函数的执行体，通常是一个表达式，表达式的运算结果就是Lambda函数的返回值，不需要写return 关键字
 
 ```
 numbers1 = [35, 12, 8, 99, 60, 52]
 numbers2 = list(map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, numbers1)))
-def c1(*args, in_v=0, op=lambda x, y: x + y, **kwargs):  # Lambda函数作为默认参数
+def c1(*args, in_v=0, op=lambda x, y: x + y, **kwargs):  ## Lambda函数作为默认参数
 ```
 
 ```
 import operator, functools
-# 一行代码定义求阶乘的函数
+## 一行代码定义求阶乘的函数
 fac = lambda num: functools.reduce(operator.mul, range(1, num + 1), 1)
-# 一行代码定义判断素数的函数
+## 一行代码定义判断素数的函数
 is_p = lambda x: x > 1 and all(map(lambda f: x % f, range(2, int(x ** 0.5) + 1)))
 #bool and a 即当bool为TRUE时取a，否则为FALSE
 ```
@@ -231,10 +231,10 @@ is_p = lambda x: x > 1 and all(map(lambda f: x % f, range(2, int(x ** 0.5) + 1))
  def make_incrementor(n):
      return lambda x: x + n
 f = make_incrementor(42)
-f(0) # 42
+f(0) ## 42
 ```
 
-## Itertools函数 --迭代
+### Itertools函数 --迭代
 
 **itertools 模块包含很多常用的迭代器以及用来组合迭代器的函数**
 
@@ -242,13 +242,13 @@ f(0) # 42
 import itertools
 s = itertools.count(10, 5)
 print(next(s))
-# 产生ABCD的全排列
+## 产生ABCD的全排列
 for value in itertools.permutations('ABCD'):
-# 产生ABCDE的五选三组合
+## 产生ABCDE的五选三组合
 for value in itertools.combinations('ABCDE', 3):
-# 产生ABCD和123的笛卡尔积
+## 产生ABCD和123的笛卡尔积
 for value in itertools.product('ABCD', '123'):
-# 产生ABC的无限循环序列
+## 产生ABC的无限循环序列
 for value in itertools.cycle(('A', 'B', 'C')):     
 ```
 
@@ -263,7 +263,7 @@ for value in itertools.cycle(('A', 'B', 'C')):
 | itertools.starmap(func, iter)                   | 假定可迭代对象能够返回一个元组的流，并且利用这些元组作为参数来调用 func | func(iter[0]), func(iter[1]), func(iter[2])... |
 | itertools.filterfalse(predicate, iter)          | 和 filter() 相反，返回所有让 predicate 返回 false 的元素     |                                                |
 
-## Operator函数 --表达式
+### Operator函数 --表达式
 
 **对于常见的操作符，例如乘法操作符，使用 operator 模块中的函数以代替lambda函数. 例如, 推荐使用 operator.mul , 而不是 lambda x, y: x \* y .**
 
@@ -333,7 +333,7 @@ print(operator.mul(a, b))
 | operator.ilshift(a, b)                          | 迭代左移                                                     | a <<= b                                                      |
 | operator.irshift(a, b)                          | 迭代右移                                                     | a >>= b                                                      |
 
-## Random - 随机数和随机抽样模块
+### Random - 随机数和随机抽样模块
 
 getrandbits(k)：返回具有k个随机比特位的整数。
 
@@ -361,7 +361,7 @@ paretovariate(alpha)：帕累托分布。
 
 weibullvariate(alpha, beta)：威布尔分布。
 
-## Sorted函数 --排序
+### Sorted函数 --排序
 
 **升序**
 
@@ -378,7 +378,7 @@ student_tuples = [
     ('jane', 'B', 12),
     ('dave', 'B', 10),]
 #print(sorted(student_tuples, key=lambda student: student[2]))
-print(sorted(student_tuples, key=itemgetter(1,2))） # 按等级排序，再按年龄排序
+print(sorted(student_tuples, key=itemgetter(1,2))） ## 按等级排序，再按年龄排序
 ```
 
 ```
@@ -395,7 +395,7 @@ students = [
     Student('jane', 'B', 12),
     Student('dave', 'B', 10),]
 #print(sorted(student_objects, key=lambda student: Student.age))
-print(sorted(students, key=attrgetter('grade','age'))) # 按等级排序，再按年龄排序        
+print(sorted(students, key=attrgetter('grade','age'))) ## 按等级排序，再按年龄排序        
 ```
 
 **降序**
@@ -408,22 +408,22 @@ sorted(student_objects, key=attrgetter('age'), reverse=True)
 **多重排序**
 
 ```
-def multisort(xs, specs): # student_objects沿用升序中对象
+def multisort(xs, specs): ## student_objects沿用升序中对象
     for key, reverse in reversed(specs):
         xs.sort(key=attrgetter(key), reverse=reverse)
     return xs
 print(multisort(student_objects, (('grade', True), ('age', False))))                 
 ```
 
-## Zip函数 --按序合并成组，返回列表
+### Zip函数 --按序合并成组，返回列表
 
 zip(iterA, iterB, ...) 从每个可迭代对象中选取单个元素组成列表并返回:
 
 ```
-zip(['a', 'b', 'c'], (1, 2, 3)) # ('a', 1), ('b', 2), ('c', 3)     
+zip(['a', 'b', 'c'], (1, 2, 3)) ## ('a', 1), ('b', 2), ('c', 3)     
 ```
 
-# 数据分析
+## 数据分析
 
 **三大神器**
 
@@ -443,7 +443,7 @@ zip(['a', 'b', 'c'], (1, 2, 3)) # ('a', 1), ('b', 2), ('c', 3)
 
 [Statsmodels](https://www.statsmodels.org/stable/index.html)：包含了经典统计学和经济计量学算法的库。
 
-## NumPy
+### NumPy
 
 **运算**
 
@@ -458,32 +458,32 @@ zip(['a', 'b', 'c'], (1, 2, 3)) # ('a', 1), ('b', 2), ('c', 3)
 **一维数组**
 
 ```
-array1 = np.array([1, 2, 3, 4, 5])    # 指定列表
-array2 = np.arange(0, 20, 2)    # 指定取值范围
+array1 = np.array([1, 2, 3, 4, 5])    ## 指定列表
+array2 = np.arange(0, 20, 2)    ## 指定取值范围
 array3 = np.linspace(-5, 5, 101)    #指定范围均匀间隔的数字，起点，终点，数量
-array4 = np.random.randint(1, 101, 10)    # 生成随机数
-array5 = np.random.normal(50, 10, 20)    # 正态分布随机数       
+array4 = np.random.randint(1, 101, 10)    ## 生成随机数
+array5 = np.random.normal(50, 10, 20)    ## 正态分布随机数       
 ```
 
 **二维数组**
 
 ```
-array6 = np.array([[1, 2, 3], [4, 5, 6]])    # 指定列表
-array7 = np.zeros((3, 4))    # 3行4列，用0初始化
-array8 = np.ones((3, 4))    # 3行4列，用1初始化
-array9 = np.full((3, 4), 10)    # 3行4列，用10初始化
-array10 = np.eye(4)    # 创建单位矩阵
-array11 = np.array([1, 2, 3, 4, 5, 6]).reshape(2, 3)    # 将一维数组变成二维数组
-array12 = np.random.rand(3, 4)    # 生成随机数
-array13 = np.random.randint(1, 100, (3, 4))    # 随机整数构成的3行4列的二维数组
+array6 = np.array([[1, 2, 3], [4, 5, 6]])    ## 指定列表
+array7 = np.zeros((3, 4))    ## 3行4列，用0初始化
+array8 = np.ones((3, 4))    ## 3行4列，用1初始化
+array9 = np.full((3, 4), 10)    ## 3行4列，用10初始化
+array10 = np.eye(4)    ## 创建单位矩阵
+array11 = np.array([1, 2, 3, 4, 5, 6]).reshape(2, 3)    ## 将一维数组变成二维数组
+array12 = np.random.rand(3, 4)    ## 生成随机数
+array13 = np.random.randint(1, 100, (3, 4))    ## 随机整数构成的3行4列的二维数组
 ```
 
 **多维数组**
 
 ```
-array14 = np.random.randint(1, 100, (3, 4, 5)) # 随机整数构成的2个4行5列的多维数组
-array15 = np.arange(1, 25).reshape((2, 3, 4))  # 将一维的数组调形为多维数组
-array16 = np.random.randint(1, 100, (4, 6)).reshape((4, 3, 2))  # 将二维的数组调形为多维数组
+array14 = np.random.randint(1, 100, (3, 4, 5)) ## 随机整数构成的2个4行5列的多维数组
+array15 = np.arange(1, 25).reshape((2, 3, 4))  ## 将一维的数组调形为多维数组
+array16 = np.random.randint(1, 100, (4, 6)).reshape((4, 3, 2))  ## 将二维的数组调形为多维数组
 array18 = plt.imread('guido.jpg')    #图片转换为三维数组
 ```
 
@@ -491,6 +491,6 @@ array18 = plt.imread('guido.jpg')    #图片转换为三维数组
 
 ndarray对象的统计方法主要包括：sum、mean、std、var、min、max、argmin、argmax、cumsum等，分别用于对数组中的元素求和、求平均、求标准差、求方差、找最大、找最小、求累积和等
 
-## Pandas
+### Pandas
 
 **语法**

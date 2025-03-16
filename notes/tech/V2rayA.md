@@ -2,13 +2,13 @@
 date: 2022-05-14
 ---
 
-# RoutingA
+## RoutingA
 
 ```
 default: direct
-# Write your own rules below
-# domain(geosite:geolocation-!cn) -> proxy
-# ip(geoip:hk, geoip:mo) -> proxy
+## Write your own rules below
+## domain(geosite:geolocation-!cn) -> proxy
+## ip(geoip:hk, geoip:mo) -> proxy
 
 source(100.0.0.0/8) -> direct
 port(6881-6889) -> direct
@@ -16,10 +16,10 @@ sourcePort(6881-6889) -> direct
 domain(geosite:cn) -> direct
 ip(geoip:private, geoip:cn) -> direct
 domain(geosite:category-scholar-!cn, geosite:category-scholar-cn) -> direct
-# domain(ext:"LoyalsoldierSite.dat:china-list", ext:"LoyalsoldierSite.dat:cn") -> direct
+## domain(ext:"LoyalsoldierSite.dat:china-list", ext:"LoyalsoldierSite.dat:cn") -> direct
 
-# domain(geosite:google-scholar) -> proxy
-# domain(geosite:google, geosite:github, geosite:facebook, geosite:greatfire) -> proxy
+## domain(geosite:google-scholar) -> proxy
+## domain(geosite:google, geosite:github, geosite:facebook, geosite:greatfire) -> proxy
 domain(regexp: v2ray.*) -> proxy
 domain(regexp: v2fly.*) -> proxy
 domain(domain: singlelogin.se) -> proxy
@@ -28,8 +28,8 @@ domain(contains: z-library) -> proxy
 domain(geosite:z-library) -> proxy
 domain(ext:"LoyalsoldierSite.dat:gfw") -> proxy
 
-# domain(geosite:category-ads) -> block
-# domain(ext:"LoyalsoldierSite.dat:category-ads-all") -> block
+## domain(geosite:category-ads) -> block
+## domain(ext:"LoyalsoldierSite.dat:category-ads-all") -> block
 
 domain(geosite:category-porn, geosite:javdb) -> proxy
 domain(regexp: thz.*) -> proxy
@@ -41,19 +41,19 @@ domain(regexp: madouqu.*) -> proxy
 domain(domain: u3c3.com, domain: u9a9.cc) -> proxy
 ```
 
-# GeoIP、GeoSite
+## GeoIP、GeoSite
 
-## GeoIP
+### GeoIP
 
 源文件：https://github.com/v2fly/geoip
 
-## GeoSite
+### GeoSite
 
 源文件：https://github.com/v2fly/domain-list-community
 
-## Loyalsoldier
+### Loyalsoldier
 
-### GeoIP
+#### GeoIP
 
 geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text
 
@@ -67,7 +67,7 @@ geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text
   - `geoip:telegram`
   - `geoip:twitter`
 
-### GeoSite
+#### GeoSite
 
  geosite.dat 类别：https://github.com/v2fly/domain-list-community/tree/master/data
 

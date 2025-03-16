@@ -9,7 +9,7 @@ article: true
 source: https://mp.weixin.qq.com/s/yjlNCuqwDqXD9Kb4gfRYWw
 ---
 
-# 这才是预制建筑该有的样子——更省、更快、更好！LOFT装配式超薄夹层系统来了！
+## 这才是预制建筑该有的样子——更省、更快、更好！LOFT装配式超薄夹层系统来了！
 
 > Excerpt
 >
