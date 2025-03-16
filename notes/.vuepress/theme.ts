@@ -132,7 +132,7 @@ export default hopeTheme({
       include: true,
       component: true,
       demo: true,
-      chart: true,
+      chartjs: true,
 	  echarts: true,
       flowchart: true,
 	  mermaid: true,
