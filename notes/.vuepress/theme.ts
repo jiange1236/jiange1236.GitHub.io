@@ -191,7 +191,7 @@ export default hopeTheme({
     // },
     docsearch: {
         appId: "I7SASQM4UK",
-        apiKey: "a20baaa964754c629bf5a7d027ffe7b7",
+        apiKey: "1a95f0db9c24dd6b9f5799cc6618a65f",
         indexName: "zeblog",
     },
 
