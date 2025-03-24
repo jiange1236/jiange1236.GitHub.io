@@ -1,13 +1,14 @@
 ---
 title: LOFT装配式超薄夹层系统
-date: 2020-12-23
+source: https://mp.weixin.qq.com/s/yjlNCuqwDqXD9Kb4gfRYWw
+date: 2025/03/17
 category:
   - 工作
-tag:
+tags:
   - 工作
 article: true
-source: https://mp.weixin.qq.com/s/yjlNCuqwDqXD9Kb4gfRYWw
 ---
+# LOFT装配式超薄夹层系统
 
 ## 这才是预制建筑该有的样子——更省、更快、更好！LOFT装配式超薄夹层系统来了！
 

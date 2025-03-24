@@ -1,18 +1,16 @@
 ---
-date: 2022-05-13
----
-
----
-sticky: true
-title: 理财
+title: README
+date: 2025/03/17
 description: 理财分类
 category:
   - 理财
-tag:
-  - 理财
+tags:
+  - README
 article: false
+sticky: true
 timeline: false
 ---
+# README
 
 ```component VPBanner
 title: 理财

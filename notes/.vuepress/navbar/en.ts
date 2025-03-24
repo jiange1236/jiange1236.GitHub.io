@@ -21,7 +21,7 @@ export const enNavbar = navbar([
 	icon: "cube",
 	children: [
 		{ text: "CloudflareYes", link: "https://stock.hostmonit.com/CloudFlareYes" ,icon:"fa-brands fa-github"},
-		{ text: "Github Mirror", link: "http://lib.zuotiyi.cn/tool/github.html" ,icon:"archway"},
+		{ text: "Github Mirror", link: "https://xiake.pro" ,icon:"archway"},
 		{ 
 			text:"Blog Mirror",
 			icon:"network",

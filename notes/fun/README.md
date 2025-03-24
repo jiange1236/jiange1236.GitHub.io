@@ -1,18 +1,16 @@
 ---
-date: 2022-05-13
----
-
----
-sticky: true
-title: 娱乐
+title: README
+date: 2025/03/17
 description: 娱乐分类
 category:
   - 娱乐
-tag:
-  - 娱乐
+tags:
+  - README
 article: false
+sticky: true
 timeline: false
 ---
+# README
 
 ```component VPBanner
 title: 娱乐

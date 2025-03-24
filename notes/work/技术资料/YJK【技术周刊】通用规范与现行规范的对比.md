@@ -1,13 +1,14 @@
 ---
-title: 【技术周刊】通用规范与现行规范的对比
-date: 2022-01-21
+title: YJK【技术周刊】通用规范与现行规范的对比
+source: https://mp.weixin.qq.com/s/Kiq2_c4ISDel4X_qosJFwg
+date: 2025/03/17
 category:
   - 工作
-tag:
+tags:
   - 工作
 article: true
-source: https://mp.weixin.qq.com/s/Kiq2_c4ISDel4X_qosJFwg
 ---
+# YJK【技术周刊】通用规范与现行规范的对比
 
 【技术周刊】通用规范与现行规范的对比
 

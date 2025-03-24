@@ -21,7 +21,7 @@ export const zhNavbar = navbar([
 	icon: "cube",
 	children: [
 		{ text: "CloudflareYes", link: "https://stock.hostmonit.com/CloudFlareYes" ,icon:"fa-brands fa-github"},
-		{ text: "Github镜像", link: "http://lib.zuotiyi.cn/tool/github.html" ,icon:"archway"},
+		{ text: "Github镜像", link: "https://xiake.pro" ,icon:"archway"},
 		{ 
 			text:"本站镜像",
 			icon:"network",

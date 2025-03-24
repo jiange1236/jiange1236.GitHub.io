@@ -1,6 +1,11 @@
 ---
-date: 2022-05-18
+title: iPad
+date: 2025/03/17
+category: 
+tags: 
+article: true
 ---
+# iPad
 
 Bioshock（生化奇兵）
 

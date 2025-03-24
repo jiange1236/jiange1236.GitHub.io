@@ -1,9 +1,15 @@
 ---
-date: 2024-06-09
-created: 2024-06-02
-tags: [zotero translator]
+title: 文献管理软件Zotero的常用插件——Zotero translators知网下载知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客
 source: https://blog.csdn.net/qq_43210428/article/details/120377475
+date: 2025/03/17
+category:
+  - 学习
+tags:
+  - zotero
+  - translator
+article: true
 ---
+# 文献管理软件Zotero的常用插件——Zotero translators知网下载知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客
 
 ## 文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客
 
