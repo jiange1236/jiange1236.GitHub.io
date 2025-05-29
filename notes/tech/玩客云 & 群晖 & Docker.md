@@ -1,5 +1,9 @@
 ---
-date: 2023-03-17
+title: 玩客云 & 群晖 & Docker
+date: 2025/05/19
+category:
+tags: 
+article: true
 ---
 # 玩客云 & 群晖 & Docker
 
@@ -153,7 +157,7 @@ fdisk -l
 mkfs.ext4 /dev/mmcblk0p1
 ```
 
-3.创建挂载目录
+3.创建挂载目录 
 
 ```shell
 ## 举例
@@ -397,7 +401,7 @@ du -sh *
 
 清理脚本 clean.sh
 
-```
+```bash
 #!/bin/bash
 echo "======== start clean docker containers logs ========"
 logs=$(find /var/lib/docker/containers/ -name *-json.log)
@@ -411,7 +415,8 @@ echo "======== end clean docker containers logs ========"
 
 ```
 chmod +x /var/lib/docker/clean.sh
-sh /var/lib/docker/clean.sh
+sed -i 's/\r$//' /var/lib/docker/clean.sh
+bash /var/lib/docker/clean.sh
 ```
 
 编辑crontab `crontab -e`
@@ -518,7 +523,7 @@ docker rmi dockerproxy.net/stilleshan/frpc:latest
 Start-Process -FilePath "Docker Desktop Installer.exe" -ArgumentList 'install', '-accept-license', '--installation-dir="D:\Program Files\Docker"', '--wsl-default-data-root="D:\Program Files\Docker\data"', '--windows-containers-default-data-root="D:\Program Files\Docker"' -Wait
 ```
 
-## **[Home Assistant](https://www.home-assistant.io/) **
+## Home Assistant](https://www.home-assistant.io/) 
 
 ### Home Assistant Container
 
@@ -605,7 +610,8 @@ docker ps | grep -E 'hassio'| awk '{print $1}' | xargs docker rm -f
 ### HAOS
 
 ```bash
-ha network update enp0s18 --ipv4-address 192.168.10.48 --ipv4-gateway 192.168.10.46
+qm importdisk 103 /tmp/haos_ova-15.1.qcow2 local
+ha network update enp0s18 --ipv4-address 192.168.10.48 --ipv4-gateway 192.168.10.46 --ipv4-nameserver 1.2.4.8
 ```
 
 Addons 镜像
@@ -1190,6 +1196,12 @@ sysctl -w net.ipv4.ip_forward=1
 
 ```
 iptables -t nat -A POSTROUTING -o wg0 -j MASQUERADE
+
+# 允许从 vmbr0 到 wg0 的新连接和已建立连接
+iptables -A FORWARD -i vmbr0 -o wg0 -j ACCEPT
+
+# 允许从 wg0 返回到 vmbr0 的已建立或相关的连接
+iptables -A FORWARD -i wg0 -o vmbr0 -m state --state RELATED,ESTABLISHED -j ACCEPT
 ```
 
 在LXC容器中配置网络。在LXC配置文件中指定宿主机的IP地址作为默认网关。您可以编辑LXC配置文件并添加以下配置：
@@ -1199,6 +1211,8 @@ lxc.net.0.gateway = <宿主机IP地址>
 ```
 
 配置LXC容器的DNS。确保LXC容器中的/etc/resolv.conf文件正确指向可用的DNS服务器，以便容器中的应用程序能够解析域名。
+
+使用 `wg-quick up wg0` 启动 WireGuard，它默认会尝试修改路由表（除非你在 `wg0.conf` 的 `[Interface]` 部分添加了 `Table = off`）。它通常会添加指向 VPN Peer 的路由，并可能根据 `AllowedIPs = 0.0.0.0/0` 来设置默认路由。
 
 验证网络连接。在LXC容器中运行ping命令或访问一个网站，确保容器中的应用程序能够正常访问互联网。
 
@@ -1212,8 +1226,6 @@ lxc.net.0.gateway = <宿主机IP地址>
 
 1. **安装 iptables-persistent**:
    
-    bash
-   
     `apt-get install iptables-persistent`
    
     安装过程中，会要求您保存当前的 iptables 规则，选择 “是”。
@@ -1221,7 +1233,5 @@ lxc.net.0.gateway = <宿主机IP地址>
 2. **手动保存规则**:
    
     你可以手动保存规则，使用以下命令：
-   
-    bash
    
     `iptables-save > /etc/iptables/rules.v4`

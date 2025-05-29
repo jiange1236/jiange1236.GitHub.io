@@ -1,6 +1,11 @@
 ---
-date: 2022-05-14
+title: Openwrt&电视
+date: 2025/05/14
+category:
+tags: 
+article: true
 ---
+# Openwrt&电视
 
 [TOC]
 
@@ -28,8 +33,9 @@ find / -type f -size +5120b
 定制软件包
 
 ```context
-luci-app-wechatpush luci-app-smartdns luci-app-watchcat luci-app-tailscale luci-app-ttyd luci-app-ddns luci-app-ap-modem tailscale smartdns watchcat ttyd ddns
+luci-app-wechatpush luci-app-smartdns luci-app-watchcat luci-app-tailscale luci-app-ttyd luci-app-ddns luci-app-ap-modem luci-app-turboacc tailscale smartdns watchcat ttyd ddns wireguard-tools kmod-wireguard
 coreutils-base64 ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap v2ray-core v2raya luci-app-v2raya
+syscontrol advancedplus
 ```
 
 **备份软件包列表**
@@ -380,10 +386,10 @@ pushplus_token `5dfff495415c445e8466c3f894d926f2`
 ```
 opkg update
 opkg install tailscale
-tailscale up
+tailscale up --accept-dns=false 
 ```
 
-开启子路由
+**开启子路由**
 
 https://tailscale.com/kb/1019/subnets/?q=subnet
 
@@ -393,6 +399,17 @@ tailscale up --advertise-routes=10.0.0.0/24 --accept-routes  --accept-dns=false
 
 1. 接口创建 `Tailscale`不配置协议，防火墙创建 `Tailscale`，保存并应用
 2. 防火墙 `Tailscale`区域设置，全部接受，开启IP 动态伪装、MSS 钳制，允许转发到 `Lan`、`Wan`，允许源区域 `Lan`，
+
+**确认并启用 WireGuard 内核模块 (最重要的优化)**
+ 
+- **原理：** Tailscale 可以使用两种模式运行：用户空间模式（userspace mode）和内核模式（kernel mode）。内核模式利用 Linux 内核内置的 WireGuard 模块，性能远高于用户空间模式，因为它减少了数据在内核空间和用户空间之间的复制，并且通常能更好地利用硬件特性。
+
+- **检查：** 登录 OpenWrt 的 SSH，运行 `tailscale status`。查看输出信息，或者检查 Tailscale 的日志 (`logread | grep tailscale`)，看是否有关于使用内核模块或用户空间模式的信息。较新版本的 Tailscale 可能会明确指出。也可以通过查看是否有 `wg0` (或其他 `wgX`) 的内核网络接口来判断 (`ip link show type wireguard`)。
+
+- **启用：**
+   - 确保已安装 WireGuard 内核模块：`opkg update && opkg install kmod-wireguard wireguard-tools`
+   - 重启 Tailscale 服务：`/etc/init.d/tailscale restart`
+   - 如果 Tailscale 之前因为缺少内核模块而运行在用户空间模式，安装模块并重启服务后，它应该会自动切换到内核模式。
 
 ### Vsftpd
 
@@ -590,7 +607,7 @@ https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
 #### 计划任务
 
 ```
-30 5 * * * /etc/init.d/tailscale restart
+30 5 * * * /etc/init.d/tailscale restart && /etc/init.d/smartdns restart
 0 5 * * 6 sleep 30 && touch /etc/banner && reboot
 0 5 * * 0 /etc/init.d/smartdns updatefiles
 0 3 * * * cd /root/cfipopw/ && bash cdnip.sh

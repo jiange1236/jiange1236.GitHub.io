@@ -1,6 +1,10 @@
 ---
+title: Deepin & Ubuntu
 
-date: 2022-05-14
+date: 2025/05/15
+category:
+tags: 
+article: true
 ---
 
 # Deepin & Ubuntu
@@ -299,3 +303,39 @@ python pyinstxtractor.py xx.exe
 ncompyle6 xx.pyc > xx.py              
 decompyle3 xx.pyc > xx.py             
 ```
+
+## Debian
+
+### 一键换源
+
+- ### GNU/Linux 更换系统软件源脚本
+
+```shell
+bash <(curl -sSL https://linuxmirrors.cn/main.sh)
+```
+
+- ### Docker 安装脚本
+
+```shell
+bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
+```
+
+### 清理空间
+
+- **手动执行 TRIM：** 可以使用 `fstrim` 命令手动执行 TRIM。
+
+```BASH
+sudo fstrim -av
+```
+
+这个命令会 TRIM 所有支持的文件系统。
+
+**编辑 root 用户的 crontab：** 因为这个脚本在 `/root/` 目录下，并且可能需要 root 权限来检查 LVM，所以通常会将其添加到 root 用户的 cron 任务中。
+
+```BASH
+crontab -e
+15 3 * * * /root/check_lvm_thin_usage.sh
+crontab -l
+```
+
+

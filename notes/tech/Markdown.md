@@ -1,6 +1,11 @@
 ---
-date: 2022-05-14
+title: Markdown
+date: 2025/03/24
+category:
+tags: 
+article: true
 ---
+# Markdown
 
 [toc]
 
@@ -56,12 +61,25 @@ ___粗斜体文本___
 ## 区块
 
 
-
 ```
 > 最外层
 > > 第一层嵌套
 > > > 第二层嵌套
 ```
+
+###### 折叠文本
+
+```markdown
+<details>
+  <summary>折叠时展示的文字</summary>
+  展开内容。可以嵌套 markdown 语法。
+</details>
+```
+
+<details>
+  <summary>折叠时展示的文字</summary>
+  展开内容。可以嵌套 markdown 语法。
+</details>
 
 ## 表格
 
@@ -1034,7 +1052,7 @@ journey
   | 开启循环播放                                 | `loop=true`                                         |
   | 开启预加载                                   | `preload=true`                                      |
 
-  ### 视频
+### 视频
 
   语法与 Mardown 的插入图片完全一致！
 
