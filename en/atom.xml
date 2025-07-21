@@ -4,7 +4,7 @@
   <title>Zeblog</title>
   <subtitle>Zine⁶ personal blog</subtitle>
   <rights>MIT Licensed, © 2019-present Zine⁶ | &amp;lt;a href=&amp;quot;/en/about/site.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;About Site&amp;lt;/a&amp;gt;</rights>
-  <updated>2025-05-29T06:56:45.371Z</updated>
+  <updated>2025-07-21T02:11:31.251Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://jiange1236.github.io/en/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/en/"/>
@@ -12,7 +12,7 @@
     <title type="text">Zine⁶ Intro</title>
     <id>https://jiange1236.github.io/en/about/</id>
     <link href="https://jiange1236.github.io/en/about/"/>
-    <updated>2024-11-25T03:31:20.000Z</updated>
+    <updated>2025-07-21T01:29:50.000Z</updated>
     <published>2022-01-07T00:00:00.000Z</published>
   </entry>
 </feed>
