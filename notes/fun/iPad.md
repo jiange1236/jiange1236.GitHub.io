@@ -1,8 +1,11 @@
 ---
 title: iPad
-date: 2025/03/17
-category: 
-tags: 
+date: 2025-03-17
+category:
+  - 娱乐
+tags:
+  - 娱乐
+  - Apple
 article: true
 ---
 # iPad

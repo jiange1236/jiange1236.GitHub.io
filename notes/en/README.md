@@ -1,7 +1,7 @@
 ---
 date: 2022-05-13
 home: true
-layout: BlogHome
+layout: Blog
 icon: home
 title: 主页
 bgImage: https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images

@@ -1,6 +1,6 @@
 ---
 title: 玩客云 & 群晖 & Docker
-date: 2025/05/19
+date: 2025-05-19
 category:
 tags: 
 article: true
@@ -503,7 +503,7 @@ net.ipv4.ip_forward = 1
 
 https://github.com/cmliu/CF-Workers-docker.io?tab=readme-ov-file#%E7%AC%AC%E4%B8%89%E6%96%B9-dockerhub-%E9%95%9C%E5%83%8F%E6%9C%8D%E5%8A%A1
 
-第一步：代理拉取镜像
+第一步：代理拉取镜像 
 
 docker pull dockerproxy.net/stilleshan/frpc:latest
 
@@ -514,6 +514,12 @@ docker tag dockerproxy.net/stilleshan/frpc:latest stilleshan/frpc:latest
 第三步：删除代理镜像
 
 docker rmi dockerproxy.net/stilleshan/frpc:latest
+
+### DPanel
+
+```
+docker run -d --name dpanel --restart=always -p 8807:8080 -e APP_NAME=dpanel -v /var/run/docker.sock:/var/run/docker.sock -v dpanel:/dpanel -v /opt/stacks:/dpanel/compose dpanel/dpanel:lite
+```
 
 ### Docker Desktop
 

@@ -1,7 +1,7 @@
 ---
 title: LOFT装配式超薄夹层系统
 source: https://mp.weixin.qq.com/s/yjlNCuqwDqXD9Kb4gfRYWw
-date: 2025/03/17
+date: 2025-03-17
 category:
   - 工作
 tags:

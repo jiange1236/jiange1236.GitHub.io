@@ -1,6 +1,6 @@
 ---
 title: Markdown
-date: 2025/03/24
+date: 2025-03-24
 category:
 tags: 
 article: true

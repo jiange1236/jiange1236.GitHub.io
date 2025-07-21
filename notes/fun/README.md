@@ -1,6 +1,6 @@
 ---
 title: README
-date: 2025/03/17
+date: 2025-03-17
 description: 娱乐分类
 category:
   - 娱乐

@@ -2,7 +2,7 @@
 title: 基于 MPC-HC 和 madVR 的播放器配置入门  VCB-Studio
 source: https://vcb-s.com/archives/16609
 published: 2025-05-13
-date: 2025/05/18
+date: 2025-05-18
 category:
   - 计算机
 tags:
@@ -135,12 +135,6 @@ NVIDIA 控制面板屏蔽了 MPC-HC 默认的主程序文件名 mpc-hc64.exe，�
 ![](./基于%20MPC-HC%20和%20madVR%20的播放器配置入门%20%20VCB-Studio.assets/madvr_3dlut.png)
 
 然后保存设置即可。
-
-- [下一篇](https://vcb-s.com/archives/16639)
-
-[Page 2](https://vcb-s.com/archives/16639 "当前页")
-
-(Image Credit: [しおん@pixiv](https://www.pixiv.net/artworks/65204496))
 
 目前我们推荐的播放器可以分成两大阵营：mpv 和 MPC。前者跨平台，后者仅限 Windows。
 

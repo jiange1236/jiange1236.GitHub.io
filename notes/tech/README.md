@@ -1,6 +1,6 @@
 ---
 title: README
-date: 2025/03/17
+date: 2025-03-17
 description: 计算机分类
 category:
   - 计算机

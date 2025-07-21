@@ -1,10 +1,21 @@
 ---
-date: 2025-03-16
+title: AI软件部署
+date: 2025-07-21
+category:
+  - AI
+tags:
+  - AI
+  - Ollama
+  - Dify
+  - MinerU
+  - ComfyUI
+article: true
 ---
+# AI软件部署
 
 ## Ollama
 
-### [自定义Ollama安装路径](https://www.cnblogs.com/LaiYun/p/18696931 "发布于 2025-02-02 17:33")
+### [自定义Ollama安装路径](https://www.cnblogs.com/LaiYun/p/18696931)
 
 　　由于Ollama的exe安装软件双击安装的时候默认是在C盘，以及后续的模型数据下载也在C盘，导致会占用C盘空间，所以这里单独写了一个自定义安装Ollama安装目录的教程。
 
@@ -58,3 +69,74 @@ ollama run modelscope.cn/unsloth/DeepSeek-R1-Distill-Qwen-7B-GGUF
 ```
 mklink /J "C:\Users\JKYDesk\AppData\Roaming\CherryStudio" "D:\AppData\CherryStudio"
 ```
+
+## Dify
+
+env 文件
+
+```
+PIP_MIRROR_URL=https://pypi.tuna.tsinghua.edu.cn/simple/
+
+# Dify的知识库默认上传文件大小限制为15M，对于我们要上传的文件有点小了，这里改为150M，可以根据实际情况做调整。
+# 上传文件大小改为150M
+UPLOAD_FILE_SIZE_LIMIT=150
+# 上传图片大小改为150M
+UPLOAD_IMAGE_FILE_SIZE_LIMIT=150
+# 上传视频大小改为1000M
+UPLOAD_VIDEO_FILE_SIZE_LIMIT=1000
+# 上传音频大小改为500M
+UPLOAD_AUDIO_FILE_SIZE_LIMIT=500
+#NGINX上传限制改为150M，跟上面有没有冲突没有试，大概率是有的
+NGINX_CLIENT_MAX_BODY_SIZE=150M
+```
+
+依赖安装
+
+```
+sudo apt install python3-pip build-essential libssl-dev libffi-dev python3-dev pipx libopenblas-dev liblapack-dev
+```
+
+安装 UV
+
+```
+pipx install --pip-args="-i https://pypi.tuna.tsinghua.edu.cn/simple" uv
+pipx ensurepath
+```
+
+### Dify Chat
+
+修改 Dockerfile
+
+```
+RUN sed -i 's@deb.debian.org@mirrors.aliyun.com@g' /etc/apt/sources.list.d/debian.sources
+```
+
+```
+docker build . -t difyv1/dify-chat
+docker run -itd -p 3000:80 --name dify-chat --env-file ./docker/.env difyv1/dify-chat
+```
+
+## MinerU
+
+安装
+
+```
+git clone https://github.com/opendatalab/MinerU.git
+cd MinerU
+uv venv
+uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+uv pip install -e .[core] -i https://mirrors.aliyun.com/pypi/simple
+```
+
+使用
+
+```
+source .venv/bin/activate
+mineru -p /root/MinerU.pdf -o /root/ -d cpu --source modelscope
+```
+
+## ComfyUI
+
+### Flux. 1 Kontext Dev
+
+模型保存位置

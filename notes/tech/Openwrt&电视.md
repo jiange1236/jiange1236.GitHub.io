@@ -1,6 +1,6 @@
 ---
 title: Openwrt&电视
-date: 2025/05/14
+date: 2025-05-14
 category:
 tags: 
 article: true
@@ -33,9 +33,9 @@ find / -type f -size +5120b
 定制软件包
 
 ```context
-luci-app-wechatpush luci-app-smartdns luci-app-watchcat luci-app-tailscale luci-app-ttyd luci-app-ddns luci-app-ap-modem luci-app-turboacc tailscale smartdns watchcat ttyd ddns wireguard-tools kmod-wireguard
-coreutils-base64 ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap v2ray-core v2raya luci-app-v2raya
-syscontrol advancedplus
+luci-app-wechatpush luci-app-watchcat luci-app-ttyd luci-app-ddns luci-app-ap-modem luci-app-turboacc watchcat ttyd ddns wireguard-tools kmod-wireguard
+smartdns luci-app-smartdns coreutils-base64 ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap v2ray-core v2raya luci-app-v2raya
+syscontrol advancedplus 
 ```
 
 **备份软件包列表**
@@ -135,7 +135,6 @@ https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/fil
 
 https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt
 
-https://gitee.com/cjx82630/cjxlist/raw/master/cjx-annoyance.txt
 
 ~~https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt~~
 
@@ -611,6 +610,7 @@ https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
 0 5 * * 6 sleep 30 && touch /etc/banner && reboot
 0 5 * * 0 /etc/init.d/smartdns updatefiles
 0 3 * * * cd /root/cfipopw/ && bash cdnip.sh
+0 2 * * * /usr/share/mosdns/mosdns.sh geodata
 ```
 
 ### 服务

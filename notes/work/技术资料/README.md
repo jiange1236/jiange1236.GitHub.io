@@ -1,6 +1,6 @@
 ---
 title: README
-date: 2025/03/17
+date: 2025-03-17
 description: 技术资料分类
 category:
   - 工作

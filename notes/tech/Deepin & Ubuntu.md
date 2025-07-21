@@ -1,7 +1,7 @@
 ---
 title: Deepin & Ubuntu
 
-date: 2025/05/15
+date: 2025-05-15
 category:
 tags: 
 article: true
@@ -339,3 +339,33 @@ crontab -l
 ```
 
 
+## Nodejs
+
+NPM
+
+```cmd
+npm config set registry https://registry.npmmirror.com
+npm cache clean --force
+npm config set prefix "D:\Nodejs\node_global"
+npm config set cache "D:\Nodejs\node_cache"
+```
+
+设置系统环境变量 `D:\Nodejs\node_global\`
+
+PNPM
+
+```
+pnpm config set global-bin-dir "D:\Nodejs"
+pnpm config set cache-dir "D:\Nodejs\cache"
+pnpm config set state-dir "D:\Nodejs\state"
+pnpm config set global-dir "D:\Nodejs\global"
+pnpm config set registry https://registry.npmmirror.com
+pnpm c get
+```
+
+Powershell
+
+```
+$env:https_proxy="http://127.0.0.1:20171"
+$env:http_proxy="http://127.0.0.1:20171"
+```
