@@ -1,9 +1,11 @@
 ---
 title: Deepin & Ubuntu
-
-date: 2025-05-15
+date: 2025-07-21
 category:
-tags: 
+  - 计算机
+tags:
+  - Deepin
+  - Ubuntu
 article: true
 ---
 

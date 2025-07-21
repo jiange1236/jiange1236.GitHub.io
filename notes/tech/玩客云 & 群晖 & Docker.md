@@ -1,8 +1,10 @@
 ---
 title: 玩客云 & 群晖 & Docker
-date: 2025-05-19
+date: 2025-07-21
 category:
-tags: 
+  - 计算机
+tags:
+  - 玩客云
 article: true
 ---
 # 玩客云 & 群晖 & Docker

@@ -1,14 +1,17 @@
 ---
-title: "ComfyUI FLUX.1 Kontext （Dev、Pro、Max）完整使用指南：原生工作流、API调用与提示词优化 | ComfyUI Wiki"
-source: "https://comfyui-wiki.com/zh/tutorial/advanced/image/flux/flux-1-kontext#%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9E%8B%E4%BF%9D%E5%AD%98%E4%BD%8D%E7%BD%AE"
-author:
+title: ComfyUI FLUX.1 Kontext （Dev、Pro、Max）完整使用指南：原生工作流、API调用与提示词优化 _ ComfyUI Wiki
+source: https://comfyui-wiki.com/zh/tutorial/advanced/image/flux/flux-1-kontext#%E7%9B%B8%E5%85%B3%E6%A8%A1%E5%9E%8B%E4%BF%9D%E5%AD%98%E4%BD%8D%E7%BD%AE
+author: 
 published: 2025-07-15
-created: 2025-07-18
-description: "全面掌握FLUX.1 Kontext 各版本在ComfyUI中的图像编辑技术：涵盖原生工作流配置、GGUF/FP8多版本模型使用、API节点调用、多轮编辑技巧、角色一致性保持、提示词优化策略等核心技能，从基础入门到高级应用的完整实战指南"
+date: 2025-07-21
+description: 全面掌握FLUX.1 Kontext 各版本在ComfyUI中的图像编辑技术：涵盖原生工作流配置、GGUF/FP8多版本模型使用、API节点调用、多轮编辑技巧、角色一致性保持、提示词优化策略等核心技能，从基础入门到高级应用的完整实战指南
+category:
+  - AI
 tags:
-  - "clippings"
+  - AI
+article: true
 ---
-## ComfyUI FLUX.1 Kontext （Dev、Pro、Max）完整使用指南：原生工作流、API调用与提示词优化
+# ComfyUI FLUX.1 Kontext （Dev、Pro、Max）完整使用指南：原生工作流、API调用与提示词优化 _ ComfyUI Wiki
 
 ComfyUI Flux.1 Kontext Dev Native Support
 
@@ -164,12 +167,6 @@ Nunchaku 加速推理版是 MIT-HAN-LAB 提供的一个加速推理版本，这�
 - **其它显卡** ： [svdq-int4\_r32-flux.1-kontext-dev.safetensors](https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/resolve/main/svdq-int4_r32-flux.1-kontext-dev.safetensors)
 
 对应模型同样需要安装下载至 `ComfyUI/models/diffusion_models/` 目录下。
-
-你可以参考这个视频完成相应的工作流教程：
-
-Nunchaku 加速推理版安装演示
-
-![](./ComfyUI%20FLUX.1%20Kontext%20%EF%BC%88Dev%E3%80%81Pro%E3%80%81Max%EF%BC%89%E5%AE%8C%E6%95%B4%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%EF%BC%9A%E5%8E%9F%E7%94%9F%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81API%E8%B0%83%E7%94%A8%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96%20_%20ComfyUI%20Wiki.assets/97618286720696af3e94941f91582ffc_MD5.unknown)
 
 > 视频里加载工作流是从我的自定义节点 [ComfyUI-Wiki-Workflows](https://github.com/comfyui-wiki/ComfyUI-Wiki-Workflows) 中加载的这是一个仅有工作流的自定义节点不会有任何的依赖冲突。
 

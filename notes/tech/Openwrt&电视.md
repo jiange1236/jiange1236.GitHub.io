@@ -1,8 +1,10 @@
 ---
 title: Openwrt&电视
-date: 2025-05-14
+date: 2025-07-21
 category:
-tags: 
+  - 计算机
+tags:
+  - Openwrt
 article: true
 ---
 # Openwrt&电视

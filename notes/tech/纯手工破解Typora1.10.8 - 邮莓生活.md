@@ -1,4 +1,5 @@
 ---
+date: 2025-07-21
 title: 纯手工破解Typora1.10.8 - 邮莓生活
 source: https://mailberry.com.cn/2025/06/manual-crack-typora1-10-8/
 author: 

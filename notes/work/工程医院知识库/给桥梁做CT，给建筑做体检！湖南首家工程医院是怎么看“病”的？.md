@@ -1,4 +1,5 @@
 ---
+date: 2025-07-21
 title: "给桥梁做CT，给建筑做体检！湖南首家工程医院是怎么看“病”的？"
 source: "https://mp.weixin.qq.com/s/NHVWStXyHRcDfs2IwJgzfg"
 author:

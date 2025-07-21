@@ -1,4 +1,15 @@
 ---
+title: ai-structure.com：新开源 GAN to PKPMYJK的自动化建模程序
+date: 2025-07-21
+category:
+  - 计算机
+tags:
+  - AI
+article: true
+---
+# ai-structure.com：新开源 GAN to PKPMYJK的自动化建模程序
+
+---
 title: "ai-structure.com：新开源 GAN to PKPM/YJK的自动化建模程序"
 source: "https://zhuanlan.zhihu.com/p/630300430"
 author:

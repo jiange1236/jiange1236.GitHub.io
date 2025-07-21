@@ -1,4 +1,5 @@
 ---
+date: 2025-07-21
 title: 在高分屏正确显示CHM文件
 source: https://www.cnblogs.com/cielosun/p/7136725.html
 author:
