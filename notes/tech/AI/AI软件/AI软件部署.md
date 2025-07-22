@@ -72,6 +72,15 @@ mklink /J "C:\Users\JKYDesk\AppData\Roaming\CherryStudio" "D:\AppData\CherryStud
 
 ## Dify
 
+**部署**
+
+```bash
+cd /opt/dify/docker
+docker compose -p dify up -d # Dify 容器会是 dify-redis-1
+cd /opt/ragflow/docker
+docker compose -p ragflow up -d # Ragflow 容器会是 ragflow-redis-1
+```
+
 env 文件
 
 ```
