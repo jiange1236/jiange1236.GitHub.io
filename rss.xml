@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 21 Jul 2025 02:11:31 GMT</pubDate>
-    <lastBuildDate>Mon, 21 Jul 2025 02:11:31 GMT</lastBuildDate>
+    <pubDate>Tue, 22 Jul 2025 03:46:50 GMT</pubDate>
+    <lastBuildDate>Tue, 22 Jul 2025 03:46:50 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</copyright>
@@ -3514,7 +3514,12 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>Cherry Studio</h2>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>mklink /J "C:\Users\JKYDesk\AppData\Roaming\CherryStudio" "D:\AppData\CherryStudio"</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>Dify</h2>
-<p>env 文件</p>
+<p><strong>部署</strong></p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-bash"><span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">cd</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /opt/dify/docker</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> compose</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> dify</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> up</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -d</span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"> # Dify 容器会是 dify-redis-1</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">cd</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /opt/ragflow/docker</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">docker</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> compose</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -p</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ragflow</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> up</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -d</span><span style="--shiki-light:#A0A1A7;--shiki-light-font-style:italic;--shiki-dark:#7F848E;--shiki-dark-font-style:italic"> # Ragflow 容器会是 ragflow-redis-1</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>env 文件</p>
 <div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>PIP_MIRROR_URL=https://pypi.tuna.tsinghua.edu.cn/simple/</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># Dify的知识库默认上传文件大小限制为15M，对于我们要上传的文件有点小了，这里改为150M，可以根据实际情况做调整。</span></span>
@@ -7746,7 +7751,7 @@ dnsmasq也是类似的工作方式。</p>
       <source url="https://jiange1236.github.io/rss.xml">4基础</source>
       <description>4基础 [toc] 基础设计值安全储备10%~20% 地基规6.3.7-2：填土压实系数取不小于0.94 荷载折减 覆土荷载施加 筏板保护层50(底) 20(面) 地勘报告 持力层土质、地基承载力特征值（地下室单桩竖向承载力特征值应取试验值扣除地下室深度范围内的桩侧阻力）、地基类型、基础建议砌筑标高 地质剖面图-确定基础埋置标高 饱和软土（粉土和砂土）...</description>
       <category>工作</category>
-      <pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <p>[toc]</p>
 <p><strong>基础设计值安全储备10%~20%</strong></p>
@@ -7762,8 +7767,9 @@ dnsmasq也是类似的工作方式。</p>
 <p>最高水位、抗浮水位</p>
 <p>场地类别、场地类型、覆盖层厚度、地面下平均剪切波速</p>
 <p>是否存在软卧下卧层</p>
-<h6>地基基础设计等级</h6>
-<p>| 设计等级 | 建筑和地基类型（地基基础设计规范 3.0.1）                     |
+<h3>土分类</h3>
+<h6>黏性土软硬状态的划分</h6>
+<p>| 状态       | 坚硬 | 硬塑    | 可塑       | 软塑      | 流塑   |
 |</p>
 ]]></content:encoded>
     </item>
