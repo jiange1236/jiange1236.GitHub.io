@@ -1,6 +1,6 @@
 ---
 title: AI软件部署
-date: 2025-07-21
+date: 2025-08-28
 category:
   - AI
 tags:
@@ -121,8 +121,7 @@ RUN sed -i 's@deb.debian.org@mirrors.aliyun.com@g' /etc/apt/sources.list.d/debia
 ```
 
 ```
-docker build . -t difyv1/dify-chat
-docker run -itd -p 3000:80 --name dify-chat --env-file ./docker/.env difyv1/dify-chat
+docker compose up -d --build
 ```
 
 ## MinerU
@@ -149,3 +148,12 @@ mineru -p /root/MinerU.pdf -o /root/ -d cpu --source modelscope
 ### Flux. 1 Kontext Dev
 
 模型保存位置
+
+## Claude Code
+
+```
+npm install -g @anthropic-ai/claude-code
+
+$ENV:HTTP_PROXY = "http://127.0.0.1:20171"
+$ENV:HTTPS_PROXY = "http://127.0.0.1:20171"
+```

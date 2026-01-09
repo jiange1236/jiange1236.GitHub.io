@@ -25,9 +25,10 @@ dist/
 coverage/
 
 筑友项目/
-
 天华项目/
+Rime/
 
+*.exe
 *.key
 *.key.pub
 *.ppk

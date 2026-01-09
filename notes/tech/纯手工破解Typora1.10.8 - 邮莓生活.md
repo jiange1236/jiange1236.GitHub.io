@@ -1,5 +1,5 @@
 ---
-date: 2025-07-21
+date: 2025-07-29
 title: 纯手工破解Typora1.10.8 - 邮莓生活
 source: https://mailberry.com.cn/2025/06/manual-crack-typora1-10-8/
 author: 
@@ -33,7 +33,7 @@ tags:
 
 编辑——查找e.hasActivated值失成true
 
-原e.hasActivated="true"==e.hasActivated改成e.hasActivated="true"=="true"
+原 `e.hasActivated="true"==e.hasActivated` 改成 `e.hasActivated="true"=="true"`
 
 ![image-20250604165112617](./%E7%BA%AF%E6%89%8B%E5%B7%A5%E7%A0%B4%E8%A7%A3Typora1.10.8%20-%20%E9%82%AE%E8%8E%93%E7%94%9F%E6%B4%BB.assets/1abe149e844d7d377d4237bb453cb004_MD5.webp)
 
@@ -61,7 +61,7 @@ setTimeout(() => {window.close();}, 100);
 
 修改试用日期
 
-计算机\\HKEY\_CURRENT\_USER\\SOFTWARE\\Typora复制到注册表地址栏快速定位到当前位置
+`计算机\HKEY_CURRENT_USER\SOFTWARE\Typora` 复制到注册表地址栏快速定位到当前位置
 
 修改IDate的日期，这个是安装日期，试用日期是根据它来推算的
 

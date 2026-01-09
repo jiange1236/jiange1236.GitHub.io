@@ -1,6 +1,6 @@
 ---
 title: Deepin & Ubuntu
-date: 2025-07-21
+date: 2025-09-01
 category:
   - 计算机
 tags:
@@ -83,6 +83,7 @@ export PATH=$PATH:/home/zhou/Documents/chromedriver/
 
 **软件**
 
+```
 sudo apt purge unattended-upgrades
 
 sudo apt autoclean
@@ -112,6 +113,7 @@ sudo apt install -y chromium chromium-driver
 sudo apt install telegram-desktop
 
 sudo dpkg -i deepin.com.ynote_6.10.0.1_i386.deb
+```
 
 **更新系统**
 
@@ -310,16 +312,30 @@ decompyle3 xx.pyc > xx.py
 
 ### 一键换源
 
-- ### GNU/Linux 更换系统软件源脚本
+- **GNU/Linux 更换系统软件源脚本**
 
 ```shell
 bash <(curl -sSL https://linuxmirrors.cn/main.sh)
 ```
 
-- ### Docker 安装脚本
+- **Docker 安装脚本**
 
 ```shell
 bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
+```
+
+- **Dockerfile**
+
+```
+#Debian
+RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list.d/debian.sources
+
+#Ubuntu 
+RUN sed -i 's@archive.ubuntu.com@mirrors.tuna.tsinghua.edu.cn/ubuntu@g' /etc/apt/sources.list
+
+#Alpinelinux
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+
 ```
 
 ### 清理空间
@@ -365,9 +381,11 @@ pnpm config set registry https://registry.npmmirror.com
 pnpm c get
 ```
 
-Powershell
+## Powershell
 
 ```
 $env:https_proxy="http://127.0.0.1:20171"
 $env:http_proxy="http://127.0.0.1:20171"
 ```
+
+

@@ -1,6 +1,6 @@
 ---
 title: 玩客云 & 群晖 & Docker
-date: 2025-07-21
+date: 2025-09-01
 category:
   - 计算机
 tags:
@@ -241,6 +241,27 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:
 2. /etc/rc:
 
 /opt/etc/init.d/rc.unslung start
+
+## 飞牛
+
+```
+lvs #显示逻辑卷的信息
+btrfs restore /dev/vg3/volume_4 /vol2/1000/backup/ #将volume_4的内容换到新的文件夹
+```
+
+**使用 `nohup` 和 `&`：** 这是最常见和推荐的方法，因为 `nohup` 可以防止进程在终端关闭时收到 SIGHUP 信号而终止。
+```
+nohup btrfs restore /dev/vg2/volume_1 /vol1/1000/backup > restore_log.txt 2>&1 &
+```
+- `nohup`: 防止进程在终端关闭时被终止。
+- `btrfs restore ...`: 你的实际命令。
+- `> restore_log.txt`: 将标准输出重定向到 `restore_log.txt` 文件。这样你可以在以后查看命令的输出，包括恢复进度和遇到的错误。
+- `2>&1`: 将标准错误（stderr）也重定向到与标准输出（stdout）相同的文件。
+- `&`: 将整个命令放到后台执行。
+
+执行后，你会看到类似 `[1] 12345` 的输出，其中 `12345` 是后台进程的 PID。
+
+**如何查看进度：** 你可以随时使用 `tail -f restore_log.txt` 命令来实时查看 `restore_log.txt` 文件的内容，从而了解 `btrfs restore` 的执行进度和日志信息。
 
 ## Docker
 
@@ -507,15 +528,103 @@ https://github.com/cmliu/CF-Workers-docker.io?tab=readme-ov-file#%E7%AC%AC%E4%B8
 
 第一步：代理拉取镜像 
 
+```
 docker pull dockerproxy.net/stilleshan/frpc:latest
+```
 
 第二步：重命名镜像
 
+```
 docker tag dockerproxy.net/stilleshan/frpc:latest stilleshan/frpc:latest
+```
 
 第三步：删除代理镜像
 
+```
 docker rmi dockerproxy.net/stilleshan/frpc:latest
+```
+
+#### 各平台配置教程（附截图指引）
+
+##### 1. 在 Linux 上为 Docker 配置镜像服务器
+
+**1. 编辑 Docker 配置文件**
+
+对于使用 systemd 的系统（Ubuntu 16.04+、Debian 8+、Rocky Linux），Docker 的配置文件通常位于 `/etc/docker/daemon.json`。如果该文件不存在，可以创建一个新的。
+
+使用你喜欢的文本编辑器打开或创建该文件：
+
+```
+sudo nano /etc/docker/daemon.json
+```
+
+**2. 配置镜像服务器**
+
+在 `daemon.json` 文件中，添加 `registry-mirrors` 字段并指定你希望使用的镜像服务器地址。例如，使用kspeeder的镜像服务器：
+
+```
+{
+  "registry-mirrors": ["https://registry.linkease.net:5443"]
+}
+```
+
+保存并关闭文件。
+
+**3. 重启 Docker 服务**
+
+为了使配置生效，需要重启 Docker 服务：
+
+```
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+**4. 验证配置**
+
+运行以下命令以验证镜像服务器是否配置成功：
+
+```
+docker info
+```
+
+在输出中，你应该能看到你配置的镜像服务器地址。
+
+##### 2. 在 Windows 上为 Docker 配置镜像服务器
+
+**1. 打开 Docker 客户端**
+
+确保 Docker 已经在你的 Windows 上安装并运行。点击任务栏中的 Docker 图标以启动 Docker 客户端。
+
+**2. 进入 Docker 设置**
+
+在 Docker 客户端中，右键点击系统托盘中的 Docker 图标，选择“Settings”（设置）。
+
+**3. 配置镜像服务器**
+
+1. 在“Settings”窗口中，选择“Docker Engine”选项卡。
+2. 在“Registry mirrors”字段中，添加你希望使用的镜像服务器地址。例如，使用kspeeder的镜像服务器：
+
+```
+{
+  "registry-mirrors": ["https://registry.linkease.net:5443"]
+}
+```
+
+3. 点击“Apply & Restart”按钮以保存设置并重启 Docker。
+
+**4. 验证配置**
+
+打开命令提示符或 PowerShell，运行以下命令以验证镜像服务器是否配置成功：
+
+```
+docker info
+```
+
+在输出中，你应该能看到你配置的镜像服务器地址。
+
+**5. 查看镜像源状态**
+
+- 打开浏览器，访问[http://部署Kspeeder的机器IP:5003](http://xn--kspeederip-9q1rx82n0s2bfe0ayz8c:5003/)（或您设置的管理端口），进入kspeeder的管理界面。在管理界面中，您可以查看当前配置的镜像源状态，包括下载速度、可用性等。
 
 ### DPanel
 
