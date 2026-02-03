@@ -4,7 +4,7 @@
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
   <rights>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</rights>
-  <updated>2026-01-09T07:33:06.528Z</updated>
+  <updated>2026-02-03T07:32:00.811Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
@@ -5663,7 +5663,7 @@ tags:</li>
     <title type="text">加固</title>
     <id>https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html</id>
     <link href="https://jiange1236.github.io/work/%E5%8A%A0%E5%9B%BA.html"/>
-    <updated>2026-01-09T07:31:51.000Z</updated>
+    <updated>2026-02-03T07:30:42.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>基础加固</h2>
 <p>《既有建筑地基基础加固技术规范》第6.2.1条：建筑物增层时，可根据既有建筑原基底压力值、建筑使用年限、地基土的类别，并结合当地建筑物增层改造的工程经验确定，但其值不宜超过原地基承载力特征值的1.2倍。</p>
@@ -5783,7 +5783,7 @@ tags:</li>
 |</p>
 ]]></content>
     <category term="工作"/>
-    <published>2025-12-08T00:00:00.000Z</published>
+    <published>2026-02-03T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text"></title>
@@ -8205,7 +8205,7 @@ crontab的基本格式：</p>
     <title type="text">Openwrt&amp;电视</title>
     <id>https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html</id>
     <link href="https://jiange1236.github.io/tech/Openwrt_%E7%94%B5%E8%A7%86.html"/>
-    <updated>2025-07-21T02:10:06.000Z</updated>
+    <updated>2026-02-03T07:30:42.000Z</updated>
     <summary type="html"><![CDATA[
 <p>[TOC]</p>
 <h2>Openwrt</h2>
@@ -8744,7 +8744,7 @@ dnsmasq也是类似的工作方式。</p>
 |:</p>
 ]]></content>
     <category term="计算机"/>
-    <published>2025-07-21T00:00:00.000Z</published>
+    <published>2026-01-15T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text"></title>

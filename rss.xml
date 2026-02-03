@@ -6,8 +6,8 @@
     <link>https://jiange1236.github.io/</link>
     <description>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 09 Jan 2026 07:33:06 GMT</pubDate>
-    <lastBuildDate>Fri, 09 Jan 2026 07:33:06 GMT</lastBuildDate>
+    <pubDate>Tue, 03 Feb 2026 07:32:00 GMT</pubDate>
+    <lastBuildDate>Tue, 03 Feb 2026 07:32:00 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</copyright>
@@ -4739,7 +4739,7 @@
       <source url="https://jiange1236.github.io/rss.xml">加固</source>
       <description>加固 基础加固 《既有建筑地基基础加固技术规范》第6.2.1条：建筑物增层时，可根据既有建筑原基底压力值、建筑使用年限、地基土的类别，并结合当地建筑物增层改造的工程经验确定，但其值不宜超过原地基承载力特征值的1.2倍。 《建筑抗震鉴定标准》GB50023-2009 第 4.2.7 条：天然地基的竖向承载力，可按现行国家标准《建筑抗震设计规范》GB500...</description>
       <category>工作</category>
-      <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <h2>基础加固</h2>
 <p>《既有建筑地基基础加固技术规范》第6.2.1条：建筑物增层时，可根据既有建筑原基底压力值、建筑使用年限、地基土的类别，并结合当地建筑物增层改造的工程经验确定，但其值不宜超过原地基承载力特征值的1.2倍。</p>
@@ -6932,7 +6932,7 @@ crontab的基本格式：</p>
       <source url="https://jiange1236.github.io/rss.xml">Openwrt&amp;电视</source>
       <description>Openwrt&amp;电视 [TOC] Openwrt OPKG 原版 查找大文件 定制软件包 备份软件包列表 SSH登录到OpenWrt，并执行如下命令，备份当前已安装的软件包列表。 保存路径为 /etc/config ，可以在系统更新后仍保留下来。 在更新完系统后，再次SSH登录到OpenWrt，执行如下命令，可以批量安装备份下来的软件包。（执行前记得要...</description>
       <category>计算机</category>
-      <pubDate>Mon, 21 Jul 2025 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <p>[TOC]</p>
 <h2>Openwrt</h2>
