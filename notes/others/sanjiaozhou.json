@@ -1,0 +1,265 @@
+{
+  "switchKey": "Key_QuoteLeft",
+  "mouseMoveMap": {
+    "type": "KMT_MOUSE_MOVE",
+    "startPos": {
+      "x": 0.597,
+      "y": 0.258
+    },
+    "speedRatioX": 3.25,
+    "speedRatioY": 1.25,
+    "smallEyes": {
+      "enabled": true,
+      "type": "KMT_CLICK",
+      "switchMap": false,
+      "key": "Key_Alt",
+      "pos": {
+        "x": 0.739,
+        "y": 0.215
+      }
+    },
+    "speedRatio": 25
+  },
+  "keyMapNodes": [
+    {
+      "comment": "方向盘",
+      "type": "KMT_STEER_WHEEL",
+      "centerPos": {
+        "x": 0.1907,
+        "y": 0.7373
+      },
+      "leftOffset": 0.1,
+      "rightOffset": 0.1,
+      "upOffset": 0.27,
+      "downOffset": 0.2,
+      "leftKey": "Key_A",
+      "rightKey": "Key_D",
+      "upKey": "Key_W",
+      "downKey": "Key_S",
+      "switchMap": false,
+      "opacity": 1
+    },
+    {
+      "comment": "左探头",
+      "type": "KMT_CLICK_TWICE",
+      "key": "Key_Q",
+      "pos": {
+        "x": 0.2164,
+        "y": 0.2579
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "右探头",
+      "type": "KMT_CLICK_TWICE",
+      "key": "Key_E",
+      "pos": {
+        "x": 0.3086,
+        "y": 0.2642
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "道具2",
+      "type": "KMT_CLICK",
+      "key": "Key_X",
+      "pos": {
+        "x": 0.8793,
+        "y": 0.2552
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "跳",
+      "type": "KMT_CLICK",
+      "key": "Key_Space",
+      "pos": {
+        "x": 0.9236,
+        "y": 0.6302
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "地图",
+      "type": "KMT_CLICK",
+      "key": "Key_M",
+      "pos": {
+        "x": 0.935,
+        "y": 0.0538
+      },
+      "switchMap": true
+    },
+    {
+      "comment": "背包",
+      "type": "KMT_CLICK",
+      "key": "Key_Tab",
+      "pos": {
+        "x": 0.0921,
+        "y": 0.1857
+      },
+      "switchMap": true
+    },
+    {
+      "comment": "趴",
+      "type": "KMT_CLICK",
+      "key": "Key_Z",
+      "pos": {
+        "x": 0.8936,
+        "y": 0.8746
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "蹲",
+      "type": "KMT_CLICK",
+      "key": "Key_C",
+      "pos": {
+        "x": 0.7464,
+        "y": 0.8708
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "换弹",
+      "type": "KMT_CLICK",
+      "key": "Key_R",
+      "pos": {
+        "x": 0.6879,
+        "y": 0.7014
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "捡东西1",
+      "type": "KMT_CLICK",
+      "key": "Key_F",
+      "pos": {
+        "x": 0.6957,
+        "y": 0.4987
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "近战",
+      "type": "KMT_CLICK",
+      "key": "Key_H",
+      "pos": {
+        "x": 0.6214,
+        "y": 0.6733
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "换枪1",
+      "type": "KMT_CLICK",
+      "key": "Key_1",
+      "pos": {
+        "x": 0.4479,
+        "y": 0.9111
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "换枪2",
+      "type": "KMT_CLICK",
+      "key": "Key_2",
+      "pos": {
+        "x": 0.535,
+        "y": 0.9127
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "手雷",
+      "type": "KMT_CLICK",
+      "key": "Key_3",
+      "pos": {
+        "x": 0.5936,
+        "y": 0.9105
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "快速打药",
+      "type": "KMT_CLICK",
+      "key": "Key_5",
+      "pos": {
+        "x": 0.35,
+        "y": 0.8754
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "道具1",
+      "type": "KMT_CLICK",
+      "key": "Key_G",
+      "pos": {
+        "x": 0.6514,
+        "y": 0.8914
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "投掷物菜单",
+      "type": "KMT_CLICK",
+      "key": "Key_F1",
+      "pos": {
+        "x": 0.69,
+        "y": 0.88
+      },
+      "switchMap": true
+    },
+    {
+      "comment": "道具1",
+      "type": "KMT_CLICK",
+      "key": "Key_V",
+      "pos": {
+        "x": 0.8036,
+        "y": 0.2571
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "舔包",
+      "type": "KMT_CLICK",
+      "key": "Key_T",
+      "pos": {
+        "x": 0.76,
+        "y": 0.36
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "开枪",
+      "type": "KMT_CLICK",
+      "key": "LeftButton",
+      "pos": {
+        "x": 0.8136,
+        "y": 0.6787
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "开镜",
+      "type": "KMT_CLICK",
+      "key": "RightButton",
+      "pos": {
+        "x": 0.8707,
+        "y": 0.439
+      },
+      "switchMap": false
+    },
+    {
+      "comment": "补给",
+      "type": "KMT_CLICK",
+      "pos": {
+        "x": 0.3593,
+        "y": 0.7016
+      },
+      "key": "Key_4",
+      "switchMap": false
+    }
+  ],
+  "width": 2400,
+  "height": 1080
+}
