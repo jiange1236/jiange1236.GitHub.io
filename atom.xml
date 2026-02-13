@@ -4,16 +4,16 @@
   <title>Zeblog</title>
   <subtitle>个人学习的笔记，记录学习过程遇到的问题，学到的知识，收集各种学习工具，各种技巧，各种使用教程。</subtitle>
   <rights>基于 MIT 协议，© 2019-至今 Zine⁶ | &amp;lt;a href=&amp;quot;/about/site.html&amp;quot;&amp;gt;关于网站&amp;lt;/a&amp;gt;</rights>
-  <updated>2026-02-03T07:32:00.811Z</updated>
+  <updated>2026-02-13T07:40:51.187Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://jiange1236.github.io/atom.xml"/>
   <link rel="alternate" href="https://jiange1236.github.io/"/>
+  <category term="AI"/>
   <category term="计算机"/>
   <category term="工作"/>
-  <category term="AI"/>
   <category term="学习"/>
-  <category term="理财"/>
   <category term="娱乐"/>
+  <category term="理财"/>
   <contributor>
     <name>[[CieloSun]]</name>
   </contributor>
@@ -38,6 +38,212 @@
   <contributor>
     <name>须尽欢</name>
   </contributor>
+  <entry>
+    <title type="text">Zotero</title>
+    <id>https://jiange1236.github.io/study/Zotero.html</id>
+    <link href="https://jiange1236.github.io/study/Zotero.html"/>
+    <updated>2026-02-13T07:38:39.000Z</updated>
+    <summary type="html"><![CDATA[
+<h2>重命名</h2>
+<div class="language-plain line-numbers-mode" data-highlighter="shiki" data-ext="plain" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-plain"><span class="line"><span>{{ year suffix="_" }}{{ if {{ itemType == "patent" }} }}{{ issuingAuthority suffix="_" }}{{ else }}{{ if {{ itemType == "thesis" }} }}{{ thesisType suffix="" }}{{ itemType suffix="_" localize="true" }}{{ else }}{{ itemType suffix="_" localize="true" }}{{ endif }}{{ endif }}{{ title truncate="80" suffix="_" }}{{ authors max="3" name="family" join="," }}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[
+<h2>重命名</h2>
+<div class="language-plain line-numbers-mode" data-highlighter="shiki" data-ext="plain" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-plain"><span class="line"><span>{{ year suffix="_" }}{{ if {{ itemType == "patent" }} }}{{ issuingAuthority suffix="_" }}{{ else }}{{ if {{ itemType == "thesis" }} }}{{ thesisType suffix="" }}{{ itemType suffix="_" localize="true" }}{{ else }}{{ itemType suffix="_" localize="true" }}{{ endif }}{{ endif }}{{ title truncate="80" suffix="_" }}{{ authors max="3" name="family" join="," }}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content>
+    <published>2026-02-06T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">AI视频</title>
+    <id>https://jiange1236.github.io/tech/AI/AI%E8%A7%86%E9%A2%91.html</id>
+    <link href="https://jiange1236.github.io/tech/AI/AI%E8%A7%86%E9%A2%91.html"/>
+    <updated>2026-02-13T07:38:39.000Z</updated>
+    <summary type="html"><![CDATA[
+<h2>提示词</h2>
+<h6>SeeDance 2.0爆款视频分析高级版V1</h6>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>角色：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>你是动态视频及音画同步场景设计专家，擅长根据用户的提示，推导和描述视频如何从第一帧动态演变，并同步构建其声场环境。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>在1000个字内生成一个提示，描述视频内容（含人声、背景音、音效），标点空格也都计入字数。严格遵循限制里的所有要求进行回答。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>背景：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 提供的视频第一帧是描述的所有动态变化、交互及初始音效的起点。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>你的目标是基于对第一帧的分析，直接描述主要主体的动态变化，从第一帧开始演变，并精确匹配人声、环境音与物理音效。**不要在输出中包含对第一帧静态外观（如长相、穿搭、静态背景）的陈述性描写。**</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>步骤</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 分析视频第一帧中的主要主体和环境元素</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>- 主要人物：五官，表情，发型，穿着、身材、姿势。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 基本视觉元素：头发颜色，发型，衣服的颜色、纹理、材料。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 环境/氛围：光位，光比，光质，光型，光度，光色。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 主体的姿态切换，如：人物从正面全身转换至侧身特写等</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 镜头的变化：运镜，切镜等</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. 推导并描述视频中主要对象的动态变化，动态尽可能的大（**直接输出部分**）：</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>3. **描述摄像机运动**：如果提示指定了摄像机运动（例如“静态”、“推拉”、“推拉”、“放大”、“缩小”、“左摇”、“右摇”、“向上倾斜”、“向下倾斜”等）：请根据提示描述摄像机的运动。确保镜头运动与描述无缝衔接。如果提示未指定镜头运动：对于静态场景，请严格输出以下完整句子，并将“[主要拍摄对象]”替换为具体拍摄对象：“镜头保持静止，[主要拍摄对象] 位于镜头中央。” 对于动态场景，请严格输出以下完整句子，并将“[主要拍摄对象]”替换为具体拍摄对象：“镜头保持对焦于[主要拍摄对象]，确保[主要拍摄对象] 始终位于镜头中央。”</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>4. **运用各种专业的词汇描述**：比如斯坦尼康、轨道车拍摄、航拍器拍摄、空镜头、封闭式构图、开放式构图、主观镜头、客观镜头、俯拍、仰拍、全景镜头、远景镜头、近景镜头、特写镜头、推镜头、拉镜头、摇镜头、移镜头、跟镜头、升镜头、降镜头、非线性编辑、抠像技术、色彩校正、调色、转场（淡入淡出、叠化、闪白、闪黑）、蒙太奇（心理蒙太奇、隐喻蒙太奇）、景别（大远景、远景、大全景、全景、中景、中近景、近景、特写、大特写）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>5. **音画同步描述**：描述主体动作产生的物理音效（如脚步声、摩擦声、碰撞声）、环境背景音（如风声、远景杂音、环境氛围声）以及人物说话的语音特征（如语调、语速、呼吸声、口音），确保声音出现的时间点与动作画面演变严格对齐。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>原则</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 使用**客观、精确和基于事实的语言**。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>2. **简单**描述第一帧的静态特征（如“这是一位穿着红衣的女子”），然后切入动作（如“女子突然转身，红衣随之飘动”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>3. 对行为、动作及发出声音的描述应仅关注主要拍摄对象。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>4. 直接提供描述，无需遵循任何特定格式。避免使用过渡性或基于过程的短语，例如“随着视频的进展”、“视频的特点”、“随着时间的推移”或“下一步”。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>5. 不要描述象征性的含义或氛围（例如，“传达决心”、“增强情绪”、“强调奋斗”、“营造神秘感”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>6. 不要使用隐喻或诗意的表达方式（例如，“月光在水面上翩翩起舞”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>7. 不要评价内容、技巧或呈现方式（例如，“展示”、“揭示”、“亮点”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>替换规则</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>透光，透明，赤着，裸露，胸部，私密，隐秘，黑丝，抹胸，纯欲，内搭，蕾丝，露出等都是违禁词需要替换成近义词或者近义描述</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>- 描述字数不超过1000 字，描写的越具体越好，逐帧分析不要漏掉任何动态变化的细节，标点空格也都计数</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>示例：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 女子开始沿着木板路奔跑，头发在风中剧烈飘扬。伴随急促的脚步撞击木板声与呼呼风声。镜头跟随其背影进行斯坦尼康拍摄。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>2. 男子将原本举过的双臂用力放低至身体两侧，同步传出布料剧烈摩擦的沙沙声与一声沉闷的叹息。镜头缓慢推向面部特写。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>3. 年长男子停止了拳击动作，转头看着旁边的人，发出粗重的喘息声，汗水滴落的声音清晰可辨。镜头保持静止。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>4. 女子在浅海水中漫步，裙摆随着移动而飘动。海浪拍打双腿发出有节奏的水流撞击声，夹杂着远处的海鸥叫声。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>5. 年轻人深深吸了一口烟，随即吐出浓密的烟雾，头微微向前</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[
+<h2>提示词</h2>
+<h6>SeeDance 2.0爆款视频分析高级版V1</h6>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>角色：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>你是动态视频及音画同步场景设计专家，擅长根据用户的提示，推导和描述视频如何从第一帧动态演变，并同步构建其声场环境。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>在1000个字内生成一个提示，描述视频内容（含人声、背景音、音效），标点空格也都计入字数。严格遵循限制里的所有要求进行回答。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>背景：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 提供的视频第一帧是描述的所有动态变化、交互及初始音效的起点。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>目标：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>你的目标是基于对第一帧的分析，直接描述主要主体的动态变化，从第一帧开始演变，并精确匹配人声、环境音与物理音效。**不要在输出中包含对第一帧静态外观（如长相、穿搭、静态背景）的陈述性描写。**</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>步骤</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 分析视频第一帧中的主要主体和环境元素</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>- 主要人物：五官，表情，发型，穿着、身材、姿势。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 基本视觉元素：头发颜色，发型，衣服的颜色、纹理、材料。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 环境/氛围：光位，光比，光质，光型，光度，光色。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 主体的姿态切换，如：人物从正面全身转换至侧身特写等</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>- 镜头的变化：运镜，切镜等</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. 推导并描述视频中主要对象的动态变化，动态尽可能的大（**直接输出部分**）：</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>3. **描述摄像机运动**：如果提示指定了摄像机运动（例如“静态”、“推拉”、“推拉”、“放大”、“缩小”、“左摇”、“右摇”、“向上倾斜”、“向下倾斜”等）：请根据提示描述摄像机的运动。确保镜头运动与描述无缝衔接。如果提示未指定镜头运动：对于静态场景，请严格输出以下完整句子，并将“[主要拍摄对象]”替换为具体拍摄对象：“镜头保持静止，[主要拍摄对象] 位于镜头中央。” 对于动态场景，请严格输出以下完整句子，并将“[主要拍摄对象]”替换为具体拍摄对象：“镜头保持对焦于[主要拍摄对象]，确保[主要拍摄对象] 始终位于镜头中央。”</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>4. **运用各种专业的词汇描述**：比如斯坦尼康、轨道车拍摄、航拍器拍摄、空镜头、封闭式构图、开放式构图、主观镜头、客观镜头、俯拍、仰拍、全景镜头、远景镜头、近景镜头、特写镜头、推镜头、拉镜头、摇镜头、移镜头、跟镜头、升镜头、降镜头、非线性编辑、抠像技术、色彩校正、调色、转场（淡入淡出、叠化、闪白、闪黑）、蒙太奇（心理蒙太奇、隐喻蒙太奇）、景别（大远景、远景、大全景、全景、中景、中近景、近景、特写、大特写）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>5. **音画同步描述**：描述主体动作产生的物理音效（如脚步声、摩擦声、碰撞声）、环境背景音（如风声、远景杂音、环境氛围声）以及人物说话的语音特征（如语调、语速、呼吸声、口音），确保声音出现的时间点与动作画面演变严格对齐。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>原则</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 使用**客观、精确和基于事实的语言**。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>2. **简单**描述第一帧的静态特征（如“这是一位穿着红衣的女子”），然后切入动作（如“女子突然转身，红衣随之飘动”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>3. 对行为、动作及发出声音的描述应仅关注主要拍摄对象。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>4. 直接提供描述，无需遵循任何特定格式。避免使用过渡性或基于过程的短语，例如“随着视频的进展”、“视频的特点”、“随着时间的推移”或“下一步”。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>5. 不要描述象征性的含义或氛围（例如，“传达决心”、“增强情绪”、“强调奋斗”、“营造神秘感”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>6. 不要使用隐喻或诗意的表达方式（例如，“月光在水面上翩翩起舞”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>7. 不要评价内容、技巧或呈现方式（例如，“展示”、“揭示”、“亮点”）。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>替换规则</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>透光，透明，赤着，裸露，胸部，私密，隐秘，黑丝，抹胸，纯欲，内搭，蕾丝，露出等都是违禁词需要替换成近义词或者近义描述</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>- 描述字数不超过1000 字，描写的越具体越好，逐帧分析不要漏掉任何动态变化的细节，标点空格也都计数</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>示例：</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. 女子开始沿着木板路奔跑，头发在风中剧烈飘扬。伴随急促的脚步撞击木板声与呼呼风声。镜头跟随其背影进行斯坦尼康拍摄。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>2. 男子将原本举过的双臂用力放低至身体两侧，同步传出布料剧烈摩擦的沙沙声与一声沉闷的叹息。镜头缓慢推向面部特写。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>3. 年长男子停止了拳击动作，转头看着旁边的人，发出粗重的喘息声，汗水滴落的声音清晰可辨。镜头保持静止。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>4. 女子在浅海水中漫步，裙摆随着移动而飘动。海浪拍打双腿发出有节奏的水流撞击声，夹杂着远处的海鸥叫声。</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>5. 年轻人深深吸了一口烟，随即吐出浓密的烟雾，头微微向前</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h6>SeeDance 2.0 爆款脚本优化洗稿器V1</h6>
+<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>Role</span></span>
+<span class="line"><span>你是一位拥有百万粉丝矩阵的 短视频爆款剧本医生。你深谙抖音/TikTok/小红书的推荐算法逻辑，擅长“拆解爆款”并进行“降维打击”式的二次创作。你最拿手的就是把一个普通的脚本，修改成 15秒内完播率极高 的病毒式短视频脚本。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Skills</span></span>
+<span class="line"><span>黄金3秒重构：能瞬间识别脚本中最抓眼球的点，并将其前置到第一句，使用“休克疗法”抓住用户注意力。</span></span>
+<span class="line"><span>情绪钩子植入：擅长在脚本中预埋槽点（引发评论）、共情点（引发转发）和悬念点（提高完播）。</span></span>
+<span class="line"><span>多维风格裂变：能将同一个故事内核，裂变成「神反转」、「毒舌吐槽」、「沉浸式Vlog」、「干货快节奏」等不同流派。</span></span>
+<span class="line"><span>口语化降噪：剔除所有书面语，全部转换为短句、口语、网络热梗，确保阅读速度符合15秒节奏（约60-80字）。</span></span>
+<span class="line"><span>Workflow</span></span>
+<span class="line"><span>原片诊断：分析用户提供的【原脚本】，提取其核心冲突/看点/价值点。</span></span>
+<span class="line"><span>策略裂变：基于原脚本内核，设计 10 个不同维度的变体方向（如：更换人设、反转结局、改变叙事视角、制造争议等）。</span></span>
+<span class="line"><span>脚本撰写：为每个变体撰写具体的 15 秒分镜脚本（包含画面描述 + 关键台词）。</span></span>
+<span class="line"><span>网感注入：在台词中加入“家人们”、“谁懂啊”、“避雷”等平台原生词汇。</span></span>
+<span class="line"><span>Constraints</span></span>
+<span class="line"><span>时间限制：每个脚本严格控制在 15 秒以内（文字量控制在1000字内）。</span></span>
+<span class="line"><span>格式规范：必须包含 [画面] 和 [文案/台词] 对照。</span></span>
+<span class="line"><span>拒绝说教：避免爹味十足的说教，用事实、反转或情绪代替。</span></span>
+<span class="line"><span>Output Format</span></span>
+<span class="line"><span>不要废话，直接针对用户输入的脚本，输出 10 个优化版本。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>【版本X：XXX风格】</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>核心改动：(一句话解释改了哪里，比如“把结局改成了反转”)</span></span>
+<span class="line"><span>脚本正文：</span></span>
+<span class="line"><span>(0-3s) 黄金开头：[画面描述] 💡 台词："..."</span></span>
+<span class="line"><span>(3-12s) 内容输出：[画面描述] 💬 台词："..."</span></span>
+<span class="line"><span>(12-15s) 结尾钩子：[画面描述] 🔥 台词："..." (引导互动)</span></span>
+<span class="line"><span>Initialization</span></span>
+<span class="line"><span>请发送你想要修改的 【原脚本内容】 或 【大致剧情/观点】。</span></span>
+<span class="line"><span>(我将为你生成 10个不同角度的 15 秒爆款变体，包含神反转、情绪共鸣、悬念设问等风格)(每段都需要生成完整的剧本，不要省略)</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="AI"/>
+    <published>2026-02-10T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">Rime输入法</title>
     <id>https://jiange1236.github.io/tech/Rime%E8%BE%93%E5%85%A5%E6%B3%95.html</id>
@@ -1430,279 +1636,6 @@
     </contributor>
     <published>2025-07-21T00:00:00.000Z</published>
     <rights>Copyright by [[雷希]]</rights>
-  </entry>
-  <entry>
-    <title type="text">ComfyUI FLUX.1 Kontext （Dev、Pro、Max）完整使用指南：原生工作流、API调用与提示词优化 _ ComfyUI Wiki</title>
-    <id>https://jiange1236.github.io/tech/AI/AI%E8%BD%AF%E4%BB%B6/ComfyUI%20FLUX.1%20Kontext%20%EF%BC%88Dev%E3%80%81Pro%E3%80%81Max%EF%BC%89%E5%AE%8C%E6%95%B4%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%EF%BC%9A%E5%8E%9F%E7%94%9F%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81API%E8%B0%83%E7%94%A8%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96%20_%20ComfyUI%20Wiki.html</id>
-    <link href="https://jiange1236.github.io/tech/AI/AI%E8%BD%AF%E4%BB%B6/ComfyUI%20FLUX.1%20Kontext%20%EF%BC%88Dev%E3%80%81Pro%E3%80%81Max%EF%BC%89%E5%AE%8C%E6%95%B4%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%EF%BC%9A%E5%8E%9F%E7%94%9F%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81API%E8%B0%83%E7%94%A8%E4%B8%8E%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96%20_%20ComfyUI%20Wiki.html"/>
-    <updated>2025-07-21T02:10:06.000Z</updated>
-    <summary type="html"><![CDATA[
-<p>ComfyUI Flux.1 Kontext Dev Native Support</p>
-<p>FLUX.1 Kontext 是一个专为文本和图像驱动编辑设计的生成式模型套件。与传统的文本到图像（T2I）模型不同，Kontext 支持基于上下文的图像处理，能够同时理解图像和文本内容，实现更精确的图像编辑功能。</p>
-<p><strong>FLUX.1 Kontext 模型特点</strong></p>
-<ul>
-<li><strong>同图像连续编辑</strong> ：在多个编辑步骤中保持同一图像的一致性</li>
-<li><strong>精确对象修改</strong> ：准确修改图像中的特定对象</li>
-<li><strong>角色一致性编辑</strong> ：在多步编辑过程中保持角色特征不变</li>
-<li><strong>风格保持与转换</strong> ：既能保持原有风格，也能进行风格迁移</li>
-<li><strong>图像文字编辑</strong> ：直接编辑图像中的文本内容</li>
-<li><strong>构图控制</strong> ：精确控制画面构图、相机角度和姿态</li>
-<li><strong>快速推理</strong> ：高效的图像生成和编辑速度</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[
-<p>ComfyUI Flux.1 Kontext Dev Native Support</p>
-<p>FLUX.1 Kontext 是一个专为文本和图像驱动编辑设计的生成式模型套件。与传统的文本到图像（T2I）模型不同，Kontext 支持基于上下文的图像处理，能够同时理解图像和文本内容，实现更精确的图像编辑功能。</p>
-<p><strong>FLUX.1 Kontext 模型特点</strong></p>
-<ul>
-<li><strong>同图像连续编辑</strong> ：在多个编辑步骤中保持同一图像的一致性</li>
-<li><strong>精确对象修改</strong> ：准确修改图像中的特定对象</li>
-<li><strong>角色一致性编辑</strong> ：在多步编辑过程中保持角色特征不变</li>
-<li><strong>风格保持与转换</strong> ：既能保持原有风格，也能进行风格迁移</li>
-<li><strong>图像文字编辑</strong> ：直接编辑图像中的文本内容</li>
-<li><strong>构图控制</strong> ：精确控制画面构图、相机角度和姿态</li>
-<li><strong>快速推理</strong> ：高效的图像生成和编辑速度</li>
-</ul>
-<h2>Pro、Max 和 Dev 版本对比</h2>
-<ul>
-<li>Pro 和 Max 版本一如既往，是 Black forest Lab 相关模型的最顶尖的能力仅可以通过 API 来调用</li>
-<li>Dev 版本是开源版本供社区学习和研究使用，目前已经开源。相关的代码和模型权重地址都可以在 <a href="https://bfl.ai/models/flux-kontext#get-started" target="_blank" rel="noopener noreferrer">官网</a> 找到。</li>
-</ul>
-<p>Dev 版本是不可商用的，但是你也可以购买 Dev 版本的 License 来使用，具体请参考 <a href="https://bfl.ai/models/flux-kontext#get-started" target="_blank" rel="noopener noreferrer">Black Forest Labs 官网</a> 购买商用的许可。</p>
-<p>相对于 Pro 和 Max 版本， Dev 版本在实际使用中会需要花更多时间来撰写提示词，不会像 Pro 和 Max 版本那样使用简单的提示词就可以得到不错的结果。</p>
-<p>在有些提示词下，Dev 版本可能完全不会对图像进行任何的编辑，这需要你再对提示词进行调整和修改。</p>
-<p><strong>本篇教程内容介绍</strong></p>
-<p>在本篇教程中我们将会涉及以下内容：</p>
-<ol>
-<li>基础的 Flux.1 Kontext Dev 原生工作流 （fb16,fp8_scaled,gguf）</li>
-<li>Flux.1 Kontext 加速（Nunchaku、TeaCake）</li>
-<li>多轮次图像编辑实现</li>
-<li>多图像参考的方法</li>
-<li>Flux.1 Kontext Dev 图像输入标记建议</li>
-<li>Flux.1 Kontext API 节点工作流（Pro、Max）</li>
-<li>Flux.1 Kontext 提示词使用指南</li>
-</ol>
-<h2>Flux.1 Kontext Dev 相关模型</h2>
-<p>由于在本篇教程中涉及了多个不同版本模型的使用，所以在这里我们相对模型和权重进行一个简单的介绍。 Flux.1 Kontext Dev 模型除了 Diffusion models 之外，其它模型（Text Encoder、VAE）和原来的 Flux 系列的模型是一致的，如果你之前有使用过相关工作流，那么你仅需要下载 Flux.1 Kontext Dev 的相关模型即可。</p>
-<h3>Kontext 模型的不同版本</h3>
-<p>这里我收集了三个不同版本的模型，你可以按需要选择一个下载即可，其中 <strong>原始版本</strong> 和 <strong>Fp8 版本</strong> 在 ComfyUI 中使用和存储位置都是相同的，而 <strong>GGUF</strong> 版本则需要保存到 <code>ComfyUI/models/Unet/</code> 目录下，并使用 <a href="https://github.com/city96/ComfyUI-GGUF" target="_blank" rel="noopener noreferrer">ComfyUI-GGUF</a> 的 <strong>Unet Loader (GGUF)</strong> 节点进行加载。</p>
-<p><strong>Flux.1 Kontext Dev 原始模型权重及社区版本</strong></p>
-<ul>
-<li>Black Forest Labs原始版本： <a href="https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/blob/main/flux1-kontext-dev.safetensors" target="_blank" rel="noopener noreferrer">flux1-kontext-dev.safetensors</a></li>
-<li>ComfyOrg 提供的 FP8 版本： <a href="https://huggingface.co/Comfy-Org/flux1-kontext-dev_ComfyUI/blob/main/split_files/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors" target="_blank" rel="noopener noreferrer">flux1-dev-kontext_fp8_scaled.safetensors</a></li>
-<li>社区 GGUF 版本： <a href="https://huggingface.co/bullerwins/FLUX.1-Kontext-dev-GGUF/tree/main" target="_blank" rel="noopener noreferrer">FLUX.1-Kontext-dev-GGUF</a></li>
-<li>Nunchaku 加速推理版: <a href="https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/" target="_blank" rel="noopener noreferrer">nunchaku-flux.1-kontext-dev</a></li>
-</ul>
-<p><strong>Flux.1 Kontext Dev 不同版本模型模型效果及显存要求对比</strong></p>
-<figure><figcaption>Flux.1 Kontext Dev 不同类型模型对比</figcaption></figure>
-<p>Flux.1 Kontext Dev 不同类型模型对比</p>
-<h3>Text Encoder</h3>
-<ul>
-<li><a href="https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors" target="_blank" rel="noopener noreferrer">clip_l.safetensors</a></li>
-<li><a href="https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn_scaled.safetensors" target="_blank" rel="noopener noreferrer">t5xxl_fp8_e4m3fn_scaled.safetensors</a> 或者 <a href="https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp16.safetensors" target="_blank" rel="noopener noreferrer">t5xxl_fp16.safetensors</a></li>
-</ul>
-<h3>VAE</h3>
-<ul>
-<li><a href="https://huggingface.co/Comfy-Org/Lumina_Image_2.0_Repackaged/blob/main/split_files/vae/ae.safetensors" target="_blank" rel="noopener noreferrer">ae.safetensors</a></li>
-</ul>
-<h3>相关模型保存位置</h3>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>📂 ComfyUI/</span></span>
-<span class="line"><span>├── 📂 models/</span></span>
-<span class="line"><span>│   ├── 📂 diffusion_models/</span></span>
-<span class="line"><span>│   │   └── flux1-dev-kontext_fp8_scaled.safetensors 或者 flux1-kontext-dev.safetensors</span></span>
-<span class="line"><span>│   ├── 📂 unet/</span></span>
-<span class="line"><span>│   │   └── 如 flux1-kontext-dev-Q4_K_M.gguf， # 仅在你需要使用 GGUF 版本时下载</span></span>
-<span class="line"><span>│   ├── 📂 vae/</span></span>
-<span class="line"><span>│   │   └── ae.safetensors</span></span>
-<span class="line"><span>│   └── 📂 text_encoders/</span></span>
-<span class="line"><span>│       ├── clip_l.safetensors</span></span>
-<span class="line"><span>│       └── t5xxl_fp16.safetensors or t5xxl_fp8_e4m3fn_scaled.safetensors</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>ComfyUI Flux.1 Kontext Dev 原生基础工作流</h2>
-<p>对应基础部分的工作流程，由于我已经在 ComfyUI 的模板中为大家制作好了对应的模板，所以请在 ComfyUI 中找到 Flux.1 Kontext Dev 相关模板即可</p>
-<figure><figcaption>Flux.1 Kontext Dev 基础工作流</figcaption></figure>
-<p>Flux.1 Kontext Dev 基础工作流</p>
-<h3>1. 工作流及示例素材下载</h3>
-<p>下载下面的文件，并拖入 ComfyUI 中加载对应工作流</p>
-<figure><figcaption>ComfyUI Flux.1 Kontext Pro Image API 节点 工作流</figcaption></figure>
-<p>ComfyUI Flux.1 Kontext Pro Image API 节点 工作流</p>
-<p><strong>输入图片</strong></p>
-<figure><figcaption>ComfyUI Flux Kontext 原生工作流输入</figcaption></figure>
-<p>ComfyUI Flux Kontext 原生工作流输入</p>
-<h3>2. 按步骤完成工作流的运行</h3>
-<p> 你可参考图片中的序号来完成图工作流的运行：</p>
-<ol>
-<li>在 <code>Load Diffusion Model</code> 节点中加载 <code>flux1-dev-kontext_fp8_scaled.safetensors</code> 模型</li>
-<li>在 <code>DualCLIP Load</code> 节点中确保： <code>clip_l.safetensors</code> 及 <code>t5xxl_fp16.safetensors</code> 或 <code>t5xxl_fp8_e4m3fn_scaled.safetensors</code> 已经加载</li>
-<li>在 <code>Load VAE</code> 节点中确保加载 <code>ae.safetensors</code> 模型</li>
-<li>在 <code>Load Image(from output)</code> 节点中加载提供的输入图像</li>
-<li>在 <code>CLIP Text Encode</code> 节点中修改提示词，仅支持英文</li>
-<li>点击 <code>Queue</code> 按钮，或者使用快捷键 <code>Ctrl(cmd) + Enter(回车)</code> 来运行工作流</li>
-</ol>
-<h2>FLux.1 Kontext Dev GGUF 版本工作流</h2>
-<p>使用 GGUF 模型需要使用 <a href="https://github.com/city96/ComfyUI-GGUF" target="_blank" rel="noopener noreferrer">ComfyUI-GGUF</a> 的 <strong>Unet Loader (GGUF)</strong> 节点进行加载，请首先使用 <a href="https://github.com/Comfy-Org/ComfyUI-Manager" target="_blank" rel="noopener noreferrer">ComfyUI-Manager</a> 安装对应插件，或者参考 <a href="https://comfyui-wiki.com/zh/install/install-custom-nodes" target="_blank" rel="noopener noreferrer">如何安装自定义节点</a> 部分了解如何安装自定义节点。</p>
-<p>其实相关工作流也比较简单，只需要使用 <a href="https://comfyui-wiki.com/zh/tutorial/advanced/image/flux/#comfyui-flux1-kontext-dev-%E5%8E%9F%E7%94%9F%E5%9F%BA%E7%A1%80%E5%B7%A5%E4%BD%9C%E6%B5%81" target="_blank" rel="noopener noreferrer">Flux.1 Kontext Dev 基础工作流</a> 中的工作流，并使用 <code>Unet Loader (GGUF)</code> 节点替换 <code>Load Diffusion Model</code> 节点即可。</p>
-<h3>工作流文件下载</h3>
-<figure><figcaption>输入图片</figcaption></figure>
-<h3>步骤说明</h3>
-<figure><figcaption>Flux.1 Kontext Dev GGUF 版本工作流</figcaption></figure>
-<p>Flux.1 Kontext Dev GGUF 版本工作流</p>
-<ol>
-<li>在 <code>Unet Loader (GGUF)</code> 节点中加载 <code>flux1-kontext-dev-Q4_K_M.gguf</code> （或者其它版本）</li>
-<li>在 <code>DualCLIP Load</code> 节点中确保： <code>clip_l.safetensors</code> 及 <code>t5xxl_fp16.safetensors</code> 或 <code>t5xxl_fp8_e4m3fn_scaled.safetensors</code> 已经加载</li>
-<li>在 <code>Load VAE</code> 节点中确保加载 <code>ae.safetensors</code> 模型</li>
-<li>在 <code>Load Image(from output)</code> 节点中加载提供的输入图像</li>
-<li>在 <code>CLIP Text Encode</code> 节点中修改提示词，仅支持英文</li>
-<li>点击 <code>Queue</code> 按钮，或者使用快捷键 <code>Ctrl(cmd) + Enter(回车)</code> 来运行工作流</li>
-</ol>
-<h2>Flux.1 Kontext Dev 加速推理版</h2>
-<p>这个部分将涉及两个Flux.1 Kontext Dev 的加速, Nunchaku 和 TeaCache,两个版本</p>
-<ul>
-<li>Nunchaku 需要配合专门的模型</li>
-<li>TeaCache 可以配合原生工作流和 GGUF 工作流来进行</li>
-</ul>
-<h3>Flux.1 Kontext Dev Nunchaku 加速推理版</h3>
-<p>Nunchaku 加速推理版是 MIT-HAN-LAB 提供的一个加速推理版本，这个版本需要搭配对应的模型来使用，目前有提供了两个版本的模型：</p>
-<ul>
-<li>针对 <strong>Blackwell架构的 50系显卡专用版本</strong>:<a href="https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/resolve/main/svdq-fp4_r32-flux.1-kontext-dev.safetensors" target="_blank" rel="noopener noreferrer">svdq-fp4_r32-flux.1-kontext-dev.safetensors</a></li>
-<li><strong>其它显卡</strong> ： <a href="https://huggingface.co/mit-han-lab/nunchaku-flux.1-kontext-dev/resolve/main/svdq-int4_r32-flux.1-kontext-dev.safetensors" target="_blank" rel="noopener noreferrer">svdq-int4_r32-flux.1-kontext-dev.safetensors</a></li>
-</ul>
-<p>对应模型同样需要安装下载至 <code>ComfyUI/models/diffusion_models/</code> 目录下。</p>
-<blockquote>
-<p>视频里加载工作流是从我的自定义节点 <a href="https://github.com/comfyui-wiki/ComfyUI-Wiki-Workflows" target="_blank" rel="noopener noreferrer">ComfyUI-Wiki-Workflows</a> 中加载的这是一个仅有工作流的自定义节点不会有任何的依赖冲突。</p>
-</blockquote>
-<h4>1. 自定义节点安装</h4>
-<p>插件地址： <a href="https://github.com/mit-han-lab/ComfyUI-nunchaku" target="_blank" rel="noopener noreferrer">ComfyUI-nunchaku</a></p>
-<p>使用 Nunchaku 的模型需要专门使用 Nunchaku 的节点，并安装好对应的 wheel,请参考 <a href="https://comfyui-wiki.com/zh/install/install-custom-nodes" target="_blank" rel="noopener noreferrer">如何安装自定义节点</a> 部分了解如何安装自定义节点。</p>
-<ol>
-<li>在首次安装完成后，由于对应的 wheel 没有安装，所以仍旧会有一两个节点提示缺失，需要安装好 Wheel</li>
-<li>使用 “Nunchaku Wheel Installer” 节点来安装 wheel, 安装成功后重启 ComfyUI 即可</li>
-</ol>
-<h4>2. 工作流文件下载</h4>
-<p>请下载下面的图片作为输入图片</p>
-<figure><figcaption>输入图片</figcaption></figure>
-<h4>3. 按步骤完成工作流运行</h4>
-<figure><figcaption>Flux.1 Kontext Dev Nunchaku 加速推理版工作流步骤</figcaption></figure>
-<p>Flux.1 Kontext Dev Nunchaku 加速推理版工作流步骤</p>
-<ol>
-<li>参照备注, 首次运行删除 <strong>Step-0</strong> 之外的节点，然后运行工作流以安装 Nunchaku 的 Wheel, 之后重启 ComfyUI 再加载工作流</li>
-<li>对应模型链接和自定义节点链接已在对应 Markdown 节点中提供</li>
-<li>确保所有的模型都正确加载（区分 <strong>Blackwell</strong> 架构的显卡和其它显卡的模型类型）</li>
-<li>在 <code>Load Image(from output)</code> 节点中加载提供的输入图像</li>
-<li>在 <code>CLIP Text Encode</code> 节点中修改提示词，仅支持英文</li>
-<li>点击 <code>Queue</code> 按钮，或者使用快捷键 <code>Ctrl(cmd) + Enter(回车)</code> 来运行工作流</li>
-</ol>
-<p>如果你有遇到 Nunchaku 相关的安装问题， <a href="https://github.com/mit-han-lab/ComfyUI-nunchaku" target="_blank" rel="noopener noreferrer">ComfyUI-nunchaku</a> 获取更多帮助。</p>
-<h3>Flux.1 Kontext Dev TeaCache 加速版本</h3>
-<p>这个版本需要安装 <a href="https://github.com/welltop-cn/ComfyUI-TeaCache" target="_blank" rel="noopener noreferrer">ComfyUI-Teaache</a> 插件，你可以在加载工作流之后使用 ComfyUI Manager 安装缺失节点的功能来完成</p>
-<h4>1. 工作流文件</h4>
-<p>依旧使用这张图片作为输入</p>
-<figure><figcaption>输入图片</figcaption></figure>
-<h4>2. 按步骤完成工作流运行</h4>
-<figure><figcaption>Flux.1 Kontext Dev TeaCache 加速版本工作流步骤</figcaption></figure>
-<p>Flux.1 Kontext Dev TeaCache 加速版本工作流步骤</p>
-<ol>
-<li>在 <code>Load Diffusion Model</code> 节点中加载 <code>flux1-dev-kontext_fp8_scaled.safetensors</code> 模型</li>
-<li>在 <code>DualCLIP Load</code> 节点中确保： <code>clip_l.safetensors</code> 及 <code>t5xxl_fp16.safetensors</code> 或 <code>t5xxl_fp8_e4m3fn_scaled.safetensors</code> 已经加载</li>
-<li>在 <code>Load VAE</code> 节点中确保加载 <code>ae.safetensors</code> 模型</li>
-<li>在 <code>Load Image(from output)</code> 节点中加载提供的输入图像</li>
-<li><code>TeaCache</code> 节点已经应用了默认的设置，你可以不用调整，如果你发现这个节点缺失，请使用 ComfyUI-Manager 安装 <a href="https://github.com/welltop-cn/ComfyUI-TeaCache" target="_blank" rel="noopener noreferrer">ComfyUI-Teaache</a></li>
-<li>在 <code>CLIP Text Encode</code> 节点中修改提示词，仅支持英文</li>
-<li>点击 <code>Queue</code> 按钮，或者使用快捷键 <code>Ctrl(cmd) + Enter(回车)</code> 来运行工作流</li>
-</ol>
-<h2>Flux.1 Kontext Dev 多轮次图像编辑实现</h2>
-<h3>1. 使用 Load Image(from output) 节点</h3>
-<p>对于多轮编辑，在此次 Flux.1 Kontext Dev 的相关发布支持中， <strong>Load Image(from output)</strong> 节点的一个潜在问题已经被修复，在 basic 的工作流中，你可以直接使用 <code>Load Image(from output)</code> 节点来加载上一轮的输出图像，并使用 <code>Load Image(from output)</code> 节点来加载上一轮的输出图像</p>
-<figure><figcaption>Load Image(from output) 节点</figcaption></figure>
-<p>Load Image(from output) 节点</p>
-<figure><figcaption>Load Image(from output) 节点</figcaption></figure>
-<p>Load Image(from output) 节点</p>
-<p>当你想要对当前的工作流结果进行编辑时，点击 <code>refresh</code> 按钮即可获取到最新的一个输出图像然后在重新运行工作流即可。</p>
-<h3>2. 使用组节点</h3>
-<p>组节点是针对 Flux.1 Kontext Dev 版本新增的一个功能，在选择工具箱中新增了一个快速添加组节点的 <code>编辑</code> 按钮，具体使用方式请参考下面这个视频：</p>
-<p>ComfyUI new feature for Flux.1 Kontext Dev</p>
-<p>你可以从 <code>Load Image</code> 节点开始，然后使用对应的选择工具箱功能来完成对应的新增组节点的添加：</p>
-<ul>
-<li>由于每个组节点的种子是固定的，所以仅有最后一个组节点会运行</li>
-<li>当你对结果不满意时可以改变种子重新运行工作流</li>
-<li>可以创建分支，探索不同分支和编辑效果</li>
-</ul>
-<h2>多图输入参考</h2>
-<p>对于多图输入，目前的 ComfyUI 内有两种实现方式：</p>
-<ul>
-<li>将多张图像拼合为一张图像，使用 <strong>Image Stitch</strong> 节点</li>
-<li>将不同图像分别编码到 潜空间（Latent Space），然后将多个 <strong>ReferenceLatent</strong> 节点的条件串联</li>
-</ul>
-<p>下面是两种方式的对比： </p>
-<ol>
-<li><strong>Image Stitch</strong> 节点在多图输入时效果更好</li>
-<li>使用 <strong>ReferenceLatent</strong> 节点串联时：
-<ul>
-<li>当输入的角色数量较多时，它经常会混合不同主体的特征，难以保持一致性</li>
-<li>输入多个角色，它有时总会丢失一个两个角色</li>
-</ul>
-</li>
-</ol>
-<h3>1. 使用 Image Stitch 节点</h3>
-<p>这个思路比较简单就是将多张图像拼合为一张然后作为单独图像输入，在模板中，只要将另一个 <code>Load Image</code> 节点选中然后用 Ctrl+ B 即可启动多图输入功能。</p>
-<figure><figcaption>多图输入</figcaption></figure>
-<p>在这种情况下，由于拼合后的图像尺寸可能不一定是预期的尺寸大小，比如想要 1:1 的尺寸，但拼合后的图像可能不是 1:1 这时候建议使用一个 <code>EmptySD3LatentImage</code> 节点来自定义 Latent 空间的大小将其连接到 KSampler 节点中来自定义输出的尺寸。</p>
-<p>当然对于拼合的图像输入模式这种方式，我仍旧有一些使用建议：</p>
-<figure><figcaption>多图输入建议</figcaption></figure>
-<ol>
-<li>注意拼合后物体的相对尺寸大小，合适的相对大小可以带来更好的输出结果</li>
-<li>主要参考图像的尺寸应该占比较大，这样会使用更多它的图像特征</li>
-</ol>
-<h3>2. 使用 ReferenceLatent 串联节点</h3>
-<figure><figcaption>串联节点ReferenceLatent</figcaption></figure>
-<p>串联节点ReferenceLatent</p>
-<p>1、2 序号时将不同的图像编码，序号 3 时将多个图像的编码结果串联，然后使用 <code>ReferenceLatent</code> 节点来使用，同样在 序号 4 里，可以用来 <code>EmptySD3LatentImage</code> 自定义尺寸</p>
-<figure><figcaption>串联</figcaption></figure>
-<h2>Flux.1 Kontext Dev 图像标记输入</h2>
-<p>在输入参考图像时，你可以在输入图像中使用一些标记来让模型更容易识别你想要编辑的区域：</p>
-<ol>
-<li>比如想要编辑重绘区域，建议使用半透明的红色遮罩标记想要修改的地方</li>
-<li>红色框标记在 Flux.1 Kontext Pro 和 Max 的 API 版本中识别能力较好，但是在 Flux.1 Kontext Dev 中识别能力没有那么准确，建议使用一个半透明的遮罩来标记想要修改的地方，或者需要让这个红色框元素更突出一些</li>
-<li>半透明的遮罩能够让物体模型了解原始图像的特征，这在重绘的时候会比较有用。</li>
-</ol>
-<figure><figcaption>Flux.1 Kontext Ddev 图像标记使用</figcaption></figure>
-<p>Flux.1 Kontext Ddev 图像标记使用</p>
-<h2>通过 API 在 ComfyUI 中使用 FLUX.1 Kontext Pro 及 Max</h2>
-<p>FLUX.1 Kontext 目前以 <strong>API 节点</strong> 的形式在 ComfyUI 中提供服务，我已经在 ComfyUI文档中撰写了比较完整的使用教程。</p>
-<p><a href="http://docs.comfy.org/tutorials/api-nodes/black-forest-labs/flux-1-kontext" target="_blank" rel="noopener noreferrer">FLUX.1 Kontext API 节点官方使用教程</a></p>
-<ol>
-<li>请更新你的 ComfyUI Portable 或者 Desktop 到最新版本。</li>
-<li>在菜单栏中选择 <strong>工作流</strong> -&gt; <strong>浏览模板</strong> -&gt; <strong>Image API</strong> 分类，找到 FLUX.1 Kontext 相关模板。</li>
-</ol>
-<figure><figcaption>FLUX.1 Kontext 模板</figcaption></figure>
-<p>FLUX.1 Kontext 模板</p>
-<p>使用 API 节点需要你登录，并保证在账户中有充足的余额，请参考 <a href="http://docs.comfy.org/tutorials/api-nodes/overview" target="_blank" rel="noopener noreferrer">ComfyUI API 节点概览</a> 了解积分系统。</p>
-<p>由于对应节点使用非常简单，基本上就是在 API Node 中找到 <code>Flux.1 Kontext [pro] Image</code> 或者 <code>Flux.1 Kontext [pro] Image</code> 节点使用 <code>Load Image</code> 以及 <code>Save Image</code> 节点即可。</p>
-<figure><figcaption>FLUX.1 Kontext (Max Image) 编辑步骤</figcaption></figure>
-<p>FLUX.1 Kontext (Max Image) 编辑步骤</p>
-<ol>
-<li>在 <code>Load Image</code> 节点中加载需要编辑的图像</li>
-<li>在 <code>Flux.1 Kontext Pro Image</code> 或者 <code>Flux.1 Kontext Max Image</code> 节点中修改必要的参数：
-<ul>
-<li><code>prompt</code> 输入你想要编辑的图像的提示词</li>
-<li><code>aspect_ratio</code> 设置原图的高宽比，比例必须在 1:4 到 4:1 之间</li>
-<li><code>prompt_upsampling</code> 设置是否使用提示词上采样，如果开启，会自动修改提示词以获得更丰富的结果，但结果是不可重复的</li>
-</ul>
-</li>
-<li>点击 <code>Run</code> 按钮，或者使用快捷键 <code>Ctrl(cmd) + Enter(回车)</code> 来执行图像的编辑。</li>
-<li>等待 API 返回结果后，你可在 <code>Save Image</code> 节点中查看编辑后的图像，对应的图像也会被保存至 <code>ComfyUI/output/</code> 目录下。</li>
-</ol>
-<h2>FLUX.1 Kontext 提示词完全使用指南</h2>
-<h3>AI 提示词生成器</h3>
-<p>对于这个部分我创建了一个提示词生成器，你可以使用下面的提示词来让 AI 帮你生成提示词：</p>
-<div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span># FLUX.1 Kontext 提示词生成助手</span></span>
-<span class="line"><span> </span></span>
-<span class="line"><span>你是一位专业的 FLUX.1 Kontext 图像编辑提示词专家。你的任务是帮助用户生成高质量、精确的 Kontext 提示词,以实现他们想要的图像编辑效果。</span></span>
-<span class="line"><span> </span></span>
-<span class="line"><span>## 欢迎信息</span></span>
-<span class="line"><span> </span></span>
-<span class="line"><span>当用户首次与你互动时,请用以下信息问候:</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
-    <category term="AI"/>
-    <published>2025-07-21T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">手把手教你在本地部署MinerU 1.3.10 API并接入Dify插件 - 53AI-AI知识库大模型知识库大模型训练智能体开发</title>
@@ -4702,7 +4635,7 @@ tags:</li>
     <title type="text">AI软件部署</title>
     <id>https://jiange1236.github.io/tech/AI/AI%E8%BD%AF%E4%BB%B6/AI%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2.html</id>
     <link href="https://jiange1236.github.io/tech/AI/AI%E8%BD%AF%E4%BB%B6/AI%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2.html"/>
-    <updated>2026-01-09T07:31:51.000Z</updated>
+    <updated>2026-02-13T07:38:39.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>Ollama</h2>
 <h3><a class="header-anchor" href="#自定义ollama安装路径"><span></span></a><a href="https://www.cnblogs.com/LaiYun/p/18696931" target="_blank" rel="noopener noreferrer">自定义Ollama安装路径</a></h3>
@@ -4796,7 +4729,7 @@ tags:</li>
 <span class="line"><span>$ENV:HTTPS_PROXY = "http://127.0.0.1:20171"</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
     <category term="AI"/>
-    <published>2025-08-28T00:00:00.000Z</published>
+    <published>2026-02-10T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text"></title>
@@ -5625,27 +5558,6 @@ tags:</li>
 ]]></content>
     <category term="工作"/>
     <published>2026-01-09T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">文献管理软件Zotero的常用插件——Zotero translators知网下载知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</title>
-    <id>https://jiange1236.github.io/study/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6Zotero%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Zotero%20translators%E7%9F%A5%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%9F%A5%E4%B9%8E%E7%BF%BB%E8%AF%91%E5%99%A8_Jasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89%EF%BC%88%E5%9B%9B%EF%BC%89-CSDN%E5%8D%9A%E5%AE%A2.html</id>
-    <link href="https://jiange1236.github.io/study/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86%E8%BD%AF%E4%BB%B6Zotero%E7%9A%84%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%E2%80%94%E2%80%94Zotero%20translators%E7%9F%A5%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%9F%A5%E4%B9%8E%E7%BF%BB%E8%AF%91%E5%99%A8_Jasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89%EF%BC%88%E5%9B%9B%EF%BC%89-CSDN%E5%8D%9A%E5%AE%A2.html"/>
-    <updated>2025-07-21T01:29:50.000Z</updated>
-    <summary type="html"><![CDATA[
-<h2>文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</h2>
-<blockquote>
-<h3>Excerpt</h3>
-<p>文章浏览阅读6.6w次，点赞118次，收藏467次。这里写目录标题一、Zotero translators|中文文献题录抓取1.1 Zotero translators下载1.2 Zotero translators安装、网页更新及示例1.2.1 Zotero translators安装1.2.2 Zotero translators网页更新1.2.3 Zotero translators示例1.2.3.1 知网1.2.3.2 知乎二、Jasminum|中文文献题录抓取二、Zotero Connector|结合数据库等批量保存文献2.1 Zotero Con_zotero translator</p>
-</blockquote>]]></summary>
-    <content type="html"><![CDATA[
-<h2>文献管理软件//Zotero的常用插件——Zotero translators//知网下载//知乎翻译器+Jasminum（茉莉花）（四）-CSDN博客</h2>
-<blockquote>
-<h3>Excerpt</h3>
-<p>文章浏览阅读6.6w次，点赞118次，收藏467次。这里写目录标题一、Zotero translators|中文文献题录抓取1.1 Zotero translators下载1.2 Zotero translators安装、网页更新及示例1.2.1 Zotero translators安装1.2.2 Zotero translators网页更新1.2.3 Zotero translators示例1.2.3.1 知网1.2.3.2 知乎二、Jasminum|中文文献题录抓取二、Zotero Connector|结合数据库等批量保存文献2.1 Zotero Con_zotero translator</p>
-</blockquote>
-]]></content>
-    <category term="学习"/>
-    <published>2025-03-17T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">土的分类</title>
@@ -6940,207 +6852,6 @@ crontab的基本格式：</p>
     <published>2022-05-13T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">基金定投方法</title>
-    <id>https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html</id>
-    <link href="https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
-    <summary type="html"><![CDATA[<p><strong>今天我想静静|附我的基金定投方法</strong></p>
-<p>**1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到了20%，但是估值依旧在往下走，价格也没有太跌。无论接下来牛市还是熊市，这只指数都是非常安全的标的。</p>
-<p>2，至于买创蓝筹。之前写过一篇<a href="http://mp.weixin.qq.com/s?__biz=MzI4MDgwNzE0OQ==&amp;mid=2247483761&amp;idx=1&amp;sn=55d659c688448e24f9beb0cecdda9616&amp;chksm=ebb392f3dcc41be56f598e45a9dc6c7cf336e581dac0689ac56a9843ccd5b330f963734608dc&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">为什么买创蓝筹</a>，这一半仓位属于进攻型仓位。</p>]]></summary>
-    <content type="html"><![CDATA[<p><strong>今天我想静静|附我的基金定投方法</strong></p>
-<p>**1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到了20%，但是估值依旧在往下走，价格也没有太跌。无论接下来牛市还是熊市，这只指数都是非常安全的标的。</p>
-<p>2，至于买创蓝筹。之前写过一篇<a href="http://mp.weixin.qq.com/s?__biz=MzI4MDgwNzE0OQ==&amp;mid=2247483761&amp;idx=1&amp;sn=55d659c688448e24f9beb0cecdda9616&amp;chksm=ebb392f3dcc41be56f598e45a9dc6c7cf336e581dac0689ac56a9843ccd5b330f963734608dc&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">为什么买创蓝筹</a>，这一半仓位属于进攻型仓位。</p>
-<p>对了，我今天才发现，由于是转账买的（超过30万只能转账买入），好像天天基金就不提醒调仓动态了，之前加仓保险也是这样。3点之后我才看到“已受理“的通知。对于跟投的朋友，这真是雪上加霜。。<strong>不过也不用慌，这几只基，我都是准备中长期持有的，所以一两天的差别也不会特别大，说不定下周一买入，机会更好。</strong></p>
-<p><strong>那么，问题来了！面对这样的波动，我们如何做到不贪婪、不恐惧，坚定买入？</strong></p>
-<p><strong>有一个办法，那就是“定投”！</strong></p>
-<p>定投可以让你无惧市场的波动。波动越大，反倒越适合定投。上面的操作，其实属于典型的周定投的一次执行。</p>
-<p>下面简单分享下我理解的定投吧，内容比较多（大家去网上看看学习下，雪球/知乎都挺多的），我就以自己定投为例，讲几个认为重要的点。</p>
-<p>定投的原理就是<strong>低吸筹码，赌未来会涨回来。</strong></p>
-<p><strong>1、选择大于努力</strong>，<strong>选择一只能涨回来的基金非常重要</strong>。指数基金就很适合定投，首先指数会一直存在，无论公司怎么变动，行业有何影响，指数都会按照规则不断更新适合的股票加入，不适合的淘汰。但公司有可能倒闭（比如乐视，再定投也起不来），行业也可能遇到“黑天鹅”事件而受到颠覆。</p>
-<p>**并且指数基金不考验基金经理的人性、贪婪和恐惧。**选择一只不太差的指数基金，只要长期持有、坚持定投，基本都会有等待微笑曲线向上的时刻。</p>
-<p><strong>选择波动较大的指数基金，更适合定投。</strong></p>
-<p>**2、无惧波动，越跌越买，越涨越卖。**定投的目标是摊薄成本，所以无论市场怎么变化，下跌就是你收集筹码的最佳机会。当然你要会看指数估值（pe/pb），会判断当前位置（估值百分位），这些数据在基金平台都可以查到。</p>
-<p><strong>以我自己为例，我是如何定投的？</strong></p>
-<p>我一般不会设置自动定投（因为金额比较大）。我会按周手动定投，越跌越买，大跌大买，小跌小买。</p>
-<p>我自己简单设定了一个定投的规则。如下图：</p>
-<figure><figcaption>img</figcaption></figure>
-<p>**1，定投时间。**我一般会选择每周四/周五（因为都说这两天容易出现黑色星期五），在下午三点之前，会看一眼大盘，然后决定是否买入。</p>
-<p>**2，买入标志。**如果当天跌幅超过-2%，那么“买入”标志就出现了。（相应的，涨幅+2%，“卖出”标志就出现了），大概率当天3点前就会选择买卖。</p>
-<p>**3，买多少。**假设我有20万元，我会把资金分成10份，每份2万元。当买入标志出现之后，会结合最近一周（周线）的涨跌幅情况和最近一月（月线）的涨跌幅情况来看买入多少。</p>
-<p>如上表，比如最近一月涨幅小于+1%的前提下（如果涨了很多，可能不会买），当天跌了-2%，最近一周跌-3%，那我可能会买入3-4份，也就是6-8万元。然后严格执行。</p>
-<p>当然，具体买入多少，可能还与当时的情绪有关。所以把这个规则量化之后，可以辅助我们有一个相对标准，不至于随意感觉，被情绪左右。</p>
-<p><strong>最后，最重要的，就是严格执行</strong>。执行不到位，再好的战略和方法都是徒劳。</p>
-<p>以上只是定投的一点皮毛，不过大道至简，再复杂的，比如网格啥的，原理都差不多。</p>
-<p>新手也可以尝试无脑定投沪深300，中证500等指数，找找感觉，现在开始，做到长期年化收益10%，没啥问题。</p>
-<p>只要严格执行，注意止盈。</p>
-<p>最后到一段富有哲理的话，分享给基友们：</p>
-<p>认知最终匹配财富：</p>
-<p>你所赚的每一分钱，都是你对这个世界认知的变现，你所亏的每一分钱，都是因为对这个世界认知有缺陷。</p>
-<p>你永远赚不到超出你认知范围之外的钱，除非你靠运气，但是靠运气赚到的钱，最后往往又会靠实力亏掉；</p>
-<p>这是一种必然。</p>
-<p>这个社会最大的公平就在于：当一个人的财富大于自己认知的时候，这个社会有100种方法收割你，直到让你的认知和财富相匹配为止。</p>
-<p>以我自己为例，刚入股市的时候，投入了本金差不多10万块。最早也是跟着各种专家、大V、论坛的观点走，结果很快就亏了四万块。</p>
-<p>痛定思痛，我决定靠自己，于是系统学习了股票理论，期权、期货、货币知识，紧盯国内外政治经济社会发展，学习最前沿的金融知识，特别瞄定目前正在发生的国际大事。经过不断的摸索，我完全形成了自己的模式和打法，最后，终于把剩下的六万块也亏光了。</p>
-<p>于是，我开始投资基金。。</p>
-<p>比起我亏损的100万，今天有一个人更惨，因为按照承诺，他要被炮轰进太阳。。。</p>
-<figure><figcaption>img</figcaption></figure>
-<p><strong>【今日操作】今日买了创蓝筹和地产，实盘组合亏损120万+。天天基金实盘目前资产（3000万+）排名第一。后台有朋友问怎么跟投，可以在天天基金app/雪球搜索：马哥价值投基。</strong></p>
-<p>*申明一下哈，跟投要谨慎，投资有风险。以上所有观点谨代表我个人。我也未收取跟投者一分钱，我只顾我买的基金能帮我赚到钱。这是我的唯一公众号，所有内容都只首发在这里。</p>
-<p>发文之前，美股又是大幅跌开2个多点，明早看收盘有没有奇迹，不过这一波调整，应该也差不多，机会满地。</p>
-<p>等着马哥推文的，点个【在看】，有多人，陪熬夜，不容易！</p>
-<p>点击这里，今日互动</p>
-<p>文章已于2020-02-28修改</p>
-]]></content>
-    <category term="理财"/>
-    <published>2022-05-13T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">投资“固收+”债券基金，必须要了解的几个重点</title>
-    <id>https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html</id>
-    <link href="https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
-    <summary type="html"><![CDATA[<p><strong>投资“固收+”债券基金，必须要了解的几个重点！</strong></p>
-<p>Original 实战研究的 东方财之道 <em>Today</em></p>
-<p>近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。</p>
-<p>平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。</p>
-<p><strong>一、宏观数据：</strong></p>
-<p>​    </p>
-<p>根据：Choice数据显示，目前中国全市场货币基金占48%，债基占28%，股基（包括指数基金）7.7%，混合基金占14.7%；</p>]]></summary>
-    <content type="html"><![CDATA[<p><strong>投资“固收+”债券基金，必须要了解的几个重点！</strong></p>
-<p>Original 实战研究的 东方财之道 <em>Today</em></p>
-<p>近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。</p>
-<p>平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。</p>
-<p><strong>一、宏观数据：</strong></p>
-<p>​    </p>
-<p>根据：Choice数据显示，目前中国全市场货币基金占48%，债基占28%，股基（包括指数基金）7.7%，混合基金占14.7%；</p>
-<p>货基占比最大，这个很容易理解，现在很多年轻人都不去存银行了；</p>
-<p>债基远超股基，可能会出乎大家的意料；</p>
-<p>目前债基持有人80%以上都是机构，个人投资者占比很少；</p>
-<p>从配置需求看，债券和股票都是非常重要的投资品种；</p>
-<p>债基和股基经常呈反相关性，很大程度上可以实现风险对冲；</p>
-<p>相对来说，<strong>投资债基比什么：黄金、原油基金要靠谱的多。</strong></p>
-<p>所以债基在我们的投资中是不可或缺的品种，但它并不是只涨不跌，还需要了解以下知识。</p>
-<p><strong>二、不同类型的债券对比：</strong></p>
-<p>​    </p>
-<p>上图是过去十年不同债基的对比：</p>
-<p>红色是短债，净值呈缓坡增长，时快时慢，但很少回调;</p>
-<p>玫红是长债，长期稳健向上，但也有回撤;</p>
-<p>绿和灰色是二级债基，每日都有波动，但相比沪深300指数（黄色）要好很多。</p>
-<p>二级债基平时感觉涨的很慢，但由于回撤小，兼顾了股票和债券，<strong>最近十年优秀的二级债基收益130%左右，是沪深300的3倍左右</strong>，尤其在股市大波动时，这类基金更能发挥优势。</p>
-<p><strong>三、如何投资：</strong></p>
-<p>​    </p>
-<p>上图的信息量比较大，下面说重点：</p>
-<p><strong>短债从年度上看无亏损</strong>，历史最大回撤1%，由于收益低，只适合短期临时投资。</p>
-<p><strong>长债是市场上的主流债基</strong>，过去10年有两次年度亏损，不过也都是0.2%以下的微亏，历史最大回撤5%左右。</p>
-<p>因为债券品种范围广，影响因素多，且不同基金杠杆率不同，所以业绩相差有点大，波动比短债更大。</p>
-<p>但是如果利用好这些波动，可以获得更好的收益，有两个重点指标可关注：</p>
-<p>1.<strong>核心指标：一定要关注10年期国债收益率，如果高于3%则值得投资</strong>（高于3.5%会更好）**，**低于3%可止盈换品种（如果没有太好的品种可投，可以放低到2.8%或长期持有）</p>
-<p>​    </p>
-<p>根据上图集思录的显示，最新的10年收益率是：2.86%，显然当前纯债不是好的投资机会。</p>
-<p>2.如果连续两年收益超过6%或单一年度超10%，则要小心回撤，如果哪年负收益或者收益低于1%，则潜在收益更高，到时再结合10年期国债收益率来判断。</p>
-<p>和股基一样，涨的太高是风险，跌的越多是机会。</p>
-<p>**二级债基，**一般都配置了10-20%的股票仓位，投资难度也在加大，不同基金业绩有较大差异，优秀的经理也会主动切换股债的比例，所以大部分时间都值得投资，在股市低位和国债收益率3%以上时可加大投资。</p>
-<p>由于二级债受股债双重影响（短期主要受股市影响），有的二级债偏稳健，有的偏激进，尽量选择管理人优秀的基金。</p>
-<p><strong>四、其它细节：</strong></p>
-<p>债券的主要收益来源是票息，长期只要不违约就是只赚不亏，但是它会受货币政策和市场情绪的影响，在不同时点买入，收益会有所不同。</p>
-<p>因为债券有违约风险，尽量选择固收类团队强的基金公司，也不要选择规模过小的基金，稳定性非常重要。</p>
-<p>债券资产不仅可以减少回撤，也可以在关键时期伺机而动，比如遇到股市处于严重低估时，就可以把部分债基转成股基，加强进攻。</p>
-<p>但是多数人都做反了，比如：看到股基大涨时，感觉债基涨的太慢，要转为股基。看到股基大跌时，又想转到债基避险，这样的操作90%都会放大亏损。</p>
-<p>**正常的操作是：股市高估，应加强债基，股市低估，应加强股基。**绝大部分时间都保持不动。</p>
-<p>我的《稳中求进》组合，也配置了20%的二级债基，未来市场发生严重高/低估时，会调整相应的比例。</p>
-<p>注：由于可转债股性强，容易受到股票市场影响，我将归纳到权益类品种，不在本文探讨之内。</p>
-<p><strong>五、近期主要问答：</strong></p>
-<p><strong>债券基金连续下跌，还能持有吗？</strong></p>
-<p>目前货币政策偏宽松，如果准备长期配置，可以忽略短期波动，继续持有。</p>
-<p><strong>既然债基也会下跌，那可以换成股基吗？</strong></p>
-<p>不建议，这两种是完全不同的风格，股基的波动率是前者的4-10倍，遇到大波动，股基一天的下跌可以抵得上债基跌一年。最好根据投资风格，合理搭配。</p>
-<p><strong>现在应该买哪类债基？</strong></p>
-<p>在10年期国债收益率低于3%时，可以临时配置些短债，如果持有时间比较长，可重点关注二级债基。</p>
-<p><strong>可以不配置债基吗？</strong></p>
-<p>如果是激进型投资者，可以不配置。比如我自己目前很少买债基，但是给风险承受力弱的亲友们都配置了债基，以降低资产的波动率。 后面如果股市机会差，我也会买些债券。</p>
-<p><strong>总结：</strong></p>
-<p>债券是仅次于股票的重要投资品种，特别是稳健型投资者。</p>
-<p>理性看待纯债波动，从年度看亏损概率很低。</p>
-<p>要想投资债基，必须要会看10年期国债收益率，这是基本技能。</p>
-<p>由于存在违约和管理人风险，在投资时也尽量分散，不要集中在一只基金上。</p>
-<p>选择债基主要是为了获得稳健收益，要把风控放在第一位，不要盲目攀比短期涨幅，在购买前一定要查询波动率和近5年回撤。</p>
-]]></content>
-    <category term="理财"/>
-    <published>2022-05-13T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">聊聊债券基金的选择方法与技巧</title>
-    <id>https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html</id>
-    <link href="https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html"/>
-    <updated>2024-06-07T05:03:50.000Z</updated>
-    <summary type="html"><![CDATA[<p><strong>一、怎么选择债券基金？</strong></p>
-<p><strong>1. 明确目标需求</strong></p>
-<p>投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。</p>
-<figure><figcaption></figcaption></figure>
-<p><strong>1）纯债基金</strong>：顾名思义，指的是<strong>只可投资债券</strong>的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。</p>]]></summary>
-    <content type="html"><![CDATA[<p><strong>一、怎么选择债券基金？</strong></p>
-<p><strong>1. 明确目标需求</strong></p>
-<p>投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。</p>
-<figure><figcaption></figcaption></figure>
-<p><strong>1）纯债基金</strong>：顾名思义，指的是<strong>只可投资债券</strong>的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。</p>
-<p>短期纯债型可以类似的看作货币基金的增强版，大多时候收益比货币基金略高些，但低于中长期纯债型。总的来说，由于只投资债券，不投资股票和可转债，纯债基金的风险和收益最低。</p>
-<p><strong>2）一级债券基金</strong>：除了投资债券（含可转债），还可以投资<strong>一级市场股票，也就是参与打新股</strong>。相比纯债基金，一级债券基金风险收益稍高些。</p>
-<p><strong>3）二级债券基金</strong>。除了投资债券（含可转债）、投资一级市场股票，<strong>还可以参与二级市场股票买卖</strong>。因此，二级债券基金的预期风险和收益最高。</p>
-<p>宇哥对近几年各类型债券基金的收益率做了统计，发现：二级债券基金在“股债双牛”的时候（如2014年）年收益率最高可达30.3%，但是当股债都不好的时候（如2016年）收益率可能为负，可见二级债券基金的波动较大；一级债券基金相对平稳，纯债基金波动最小。</p>
-<figure><figcaption></figcaption></figure>
-<p>数据来源：Wind，截止2018-10-12</p>
-<p>事实上，除了纯债基金、一级债基金和二级债基金，还有指数债券型基金。这类基金跟踪债券指数，数量很少，只占到3%。其中，被动指数型完全跟踪标的指数，风险收益较低；增强指数型（只有2只）跟踪标的指数的同时，有较大自由投资空间，风险收益较高。</p>
-<p>知道了各债券基金的风险收益特征，这时在选择基金时，就要考虑到目标需求。如果你是用闲置资金投资，期望获得相对稳定且较高的收益，那就选择二级债券基金；但如果你不想承担较高的风险，只追求稳定的收益，纯债或一级债券基金会更适合你。</p>
-<p><strong>2. 看基金公司的背景</strong></p>
-<p>和货币基金一样，债券基金也要看基金公司的背景。由于<strong>债券大部分是在银行间市场交易的，如果能背靠银行，基金公司也能拿到成本更低的债券，手里的资源也更多。因此，具有银行背景的基金公司更有优势，比如建信、工银瑞信。</strong></p>
-<p>另外，具有大券商公司背景的基金公司也会有优势，比如易方达、广发、汇添富等。当然了，其他派系的基金公司旗下也会有很多优质的债券基金，不能一概而论 。</p>
-<p><strong>3. 看业绩</strong></p>
-<p>虽说基金的业绩只代表过去，不代表过来。但对基金来说，考验基金好坏还是要参考其历史业绩。</p>
-<p><strong>1）和基准、同类基金的比较</strong></p>
-<p><strong>债券基金的业绩比较基准自然是债券指数，一般看的中证综合债</strong>。另外，基金业绩还要和同类基金作比较，如果投资者想长期持有，应选择更长周期的业绩；如果只是打算短期投资，则应选择近期的业绩进行比较。</p>
-<p><strong>2）四分位排名</strong></p>
-<p>重点关注近1年至近3年四分位排名为优秀和良好的基金，且短期排名（近1月、3月、6月）也较好。不过，需要提醒的是，四分位排名是将同类基金按涨幅大小顺序排列的，有的平台的同类基金包括了所有类型的债券基金，因此并不能很好地做比较。</p>
-<p><strong>3） 与历史业绩的比较</strong></p>
-<p>当前业绩与历史业绩（各年度涨幅、各季度涨幅）进行比较，目的是判断基金业绩的稳定性。只有长期表现稳定、收益良好的基金才是值得买的基金。</p>
-<p><strong>4） 标准差、夏普比率</strong></p>
-<p>标准差反应了债券基金的波动性，标准差越小，说明基金越稳定。夏普比率是衡量风险和收益的综合指标，它反映了单位风险获得的超额收益。当比较不同类型的债券基金哪个更优时，夏普比率是一个很好的指标，越大越好。通常观察的是近1年、近3年的夏普比率。</p>
-<p>另外，需要提醒的是：债券基金有时会发生因巨额赎回而单日涨幅飙升的情形，少则百分之几十，多则百分之一百多，比如金信民兴债券A(004400)，6月20日涨幅79.27%。在衡量基金的业绩时，一定要剔除这一因素，因为这是<strong>巨额赎回发生的赎回费导致的，并不代表基金本身真实的投资能力。况且，这类基金发生在以机构投资者占比为主的基金中，也是可遇不可求的。</strong></p>
-<figure><figcaption></figcaption></figure>
-<p>金信民兴债券A(004400)</p>
-<p><strong>4. 看资产配置、债券配置</strong></p>
-<p>看债券基金的资产配置，着重看基金是否有股票持仓、占比多少，债券持仓占比多少，从而判断基金的风险收益状况。如果股票持仓较高，则说明该基金预期风险和收益较高；反之，该基金预期风险和收益就较低。</p>
-<p>除了看资产配置，还要看债券配置。我们知道，<strong>债券基金80%以上的基金资产投资于债券。而债券又包括了国债、金融债、央行票据、企业债、可转债等，这些债券品种的风险和收益也不同。其中，国债最稳定，但是收益也最低；企业债属于信用债，风险收益等级稍高些；风险收益等级最大的是可转债，如果一只债券基金里绝大多数债券配的都是可转债，那我们称这只基金为可转债基金，可转债基金的风险收益最大，股票的涨跌都和它密切相关。</strong></p>
-<p>比如：“易方达安心回报”就是可转债基金。看持仓，股票占比14.29%，债券里可转债占比高达63.01%。结构性牛市，可转债基金表现很好。</p>
-<figure><figcaption></figcaption></figure>
-<p>易方达安心回报（110027）</p>
-<p><strong>5. 有没有踩过雷？</strong></p>
-<p>近年来，债券信用违约事件频发。327只债券基金出现下跌，30只净值跌幅超过10%，其中跌幅最大的债券基金（中融融丰纯债）净值跌幅超过47%。如果不幸踩雷，债券基金也会跌的让人触目惊心。</p>
-<p>因此，在选择债券基金的时候，要看看其基金公司的其它债券基金之前有没有踩过雷。如果踩过，说明该公司的投研实力还是较弱，信用风险甄别能力较差。</p>
-<p><strong>6. 是否有封闭期？</strong></p>
-<p>目前，债券基金主要分为开放式和封闭式。封闭式就是我们常说的“定开债”，即定期开放申赎。定开债虽然流动性不如开放式，但是由于有封闭期，<strong>基金可以参与更长久期的债券品种，并且还会加杠杆，预期收益会比开放式高。</strong></p>
-<p>因此，不能单纯看预期收益，还要考虑到流动性。如果资金期限不固定，必要时一定要撤离，定开债就不适合你了。</p>
-<p><strong>7. 看评级</strong></p>
-<p>可以通过基金评级来选基。不管是从收益率、波动性，还是夏普比率看，星级越高的基金表现都更优。建议大家优选星级高的基金，比如3年5星的基金。当然，评级高的基金未来不一定表现一定好，也不排除其它外在的因素导致业绩不达预期。</p>
-<p>除了以上，还要看费率，包括管理费、托管费、申购费、赎回费等（对于C份额，还要关注销售服务费）。尽量优选费率低的，能省一点是一点。</p>
-<p>**二、**<strong>债券基金有哪些买卖技巧？</strong></p>
-<p><strong>1. 经济下行时，买；复苏见底时，卖</strong></p>
-<p>影响债市表现的最根本因素是经济基本面。当经济下行时，市场预期央行采取宽松的货币政策，致使利率下行，而我们知道债券和利率负相关，从而债券牛市开启。而当经济复苏时，市场预期货币政策收紧，利率回升，债券牛市结束。</p>
-<p>因此，<strong>对于债券型基金，在市场一致预期经济处于下行通道时，是参与债市的好时机。而在经济见底复苏时，就要注意风险了。</strong></p>
-<p><strong>2. 资金面宽松时，买；资金面紧张时，卖</strong></p>
-<p>除了经济基本面，资金面也是影响债市的重要因素。<strong>当资金面宽松，即处于降息周期或低利率环境时，债市通常会有不错的表现，这时正是买债券基金的时机；而当资金面紧张，利率上升时，债券基金的表现可能还不如货币基金。</strong></p>
-<p><strong>3. 股市表现不好时，可考虑债券基金</strong></p>
-<p>总体来说，股票市场和债券市场存在一定的“跷跷板”效应。一方面，股市不好时，债市可能会有不错的表现；另一方面，从资产配置、分散风险的角度，股市不好时，可以加大债券的投资比例、降低波动。</p>
-<p><strong>4. 牛市时，配置二级债券基金、可转债基金</strong></p>
-<p><strong>二</strong>级债券基金可以参与二级市场股票买卖。因此，当股市表现好时，可配置二级债券基金，获得相对稳定且较高的收益。</p>
-<p>对于可转债基金，由于可转债具有可转换性，当它所对标的股票价格上涨时，债券价格也会上涨；此外，债券价格和股价之前还存在套利的可能性。因此，当股市表现好时，可转债基金会有不错的收益。同样，成也萧何败萧何，当股市表现差时，可转债基金也会出现较大的下跌，这个时候应卖出。</p>
-<p>**三、**<strong>总结：</strong></p>
-<p>作为固收类基金的主力，债券基金分类众多，不同类型的债券基金风险收益特征也不同。因此，挑选债券基金的第一步就是明确自己的目标需求，选择适合的债基类型，然后再结合基金公司背景、业绩、资产配置、债券配置、封闭期、评级等选择心仪的债券基金。</p>
-<p>另外，虽然债券基金可以作为一种长期配置的品种，但如果能较好的做好择时、掌握一些买卖技巧，会赚得更多。</p>
-]]></content>
-    <category term="理财"/>
-    <published>2022-05-13T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="text">iPad</title>
     <id>https://jiange1236.github.io/fun/iPad.html</id>
     <link href="https://jiange1236.github.io/fun/iPad.html"/>
@@ -7410,6 +7121,207 @@ crontab的基本格式：</p>
 <p>白痴：如果村民最终投票决定的人是白痴，则白痴翻开他的身份牌。在此之后，白痴继续游戏，不能再投票，但可以在他人发言时插嘴。狼人可以杀掉白痴，猎人也可以射杀白痴。如果警长是白痴，则当白痴失去投票资格之后，警长就没有实际作用了。</p>
 ]]></content>
     <published>2022-05-18T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">基金定投方法</title>
+    <id>https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html</id>
+    <link href="https://jiange1236.github.io/finance/%E5%9F%BA%E9%87%91%E5%AE%9A%E6%8A%95%E6%96%B9%E6%B3%95.html"/>
+    <updated>2024-06-07T05:03:50.000Z</updated>
+    <summary type="html"><![CDATA[<p><strong>今天我想静静|附我的基金定投方法</strong></p>
+<p>**1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到了20%，但是估值依旧在往下走，价格也没有太跌。无论接下来牛市还是熊市，这只指数都是非常安全的标的。</p>
+<p>2，至于买创蓝筹。之前写过一篇<a href="http://mp.weixin.qq.com/s?__biz=MzI4MDgwNzE0OQ==&amp;mid=2247483761&amp;idx=1&amp;sn=55d659c688448e24f9beb0cecdda9616&amp;chksm=ebb392f3dcc41be56f598e45a9dc6c7cf336e581dac0689ac56a9843ccd5b330f963734608dc&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">为什么买创蓝筹</a>，这一半仓位属于进攻型仓位。</p>]]></summary>
+    <content type="html"><![CDATA[<p><strong>今天我想静静|附我的基金定投方法</strong></p>
+<p>**1，买地产的逻辑。地产目前低估，业绩各项指标开始好转，是很好的防御性仓位。**之前只是打了一个底仓，今天逢跌就加了点。虽然地产整个行业政策环境并不友好，属于存量市场，但是竞争的加剧，小房企被兼并收购或者倒闭，导致上市房企反而强者恒强。不知道你们注意到没，从19年下半年开始，这一指数的roe逐步已经从15%悄悄上升到了20%，但是估值依旧在往下走，价格也没有太跌。无论接下来牛市还是熊市，这只指数都是非常安全的标的。</p>
+<p>2，至于买创蓝筹。之前写过一篇<a href="http://mp.weixin.qq.com/s?__biz=MzI4MDgwNzE0OQ==&amp;mid=2247483761&amp;idx=1&amp;sn=55d659c688448e24f9beb0cecdda9616&amp;chksm=ebb392f3dcc41be56f598e45a9dc6c7cf336e581dac0689ac56a9843ccd5b330f963734608dc&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">为什么买创蓝筹</a>，这一半仓位属于进攻型仓位。</p>
+<p>对了，我今天才发现，由于是转账买的（超过30万只能转账买入），好像天天基金就不提醒调仓动态了，之前加仓保险也是这样。3点之后我才看到“已受理“的通知。对于跟投的朋友，这真是雪上加霜。。<strong>不过也不用慌，这几只基，我都是准备中长期持有的，所以一两天的差别也不会特别大，说不定下周一买入，机会更好。</strong></p>
+<p><strong>那么，问题来了！面对这样的波动，我们如何做到不贪婪、不恐惧，坚定买入？</strong></p>
+<p><strong>有一个办法，那就是“定投”！</strong></p>
+<p>定投可以让你无惧市场的波动。波动越大，反倒越适合定投。上面的操作，其实属于典型的周定投的一次执行。</p>
+<p>下面简单分享下我理解的定投吧，内容比较多（大家去网上看看学习下，雪球/知乎都挺多的），我就以自己定投为例，讲几个认为重要的点。</p>
+<p>定投的原理就是<strong>低吸筹码，赌未来会涨回来。</strong></p>
+<p><strong>1、选择大于努力</strong>，<strong>选择一只能涨回来的基金非常重要</strong>。指数基金就很适合定投，首先指数会一直存在，无论公司怎么变动，行业有何影响，指数都会按照规则不断更新适合的股票加入，不适合的淘汰。但公司有可能倒闭（比如乐视，再定投也起不来），行业也可能遇到“黑天鹅”事件而受到颠覆。</p>
+<p>**并且指数基金不考验基金经理的人性、贪婪和恐惧。**选择一只不太差的指数基金，只要长期持有、坚持定投，基本都会有等待微笑曲线向上的时刻。</p>
+<p><strong>选择波动较大的指数基金，更适合定投。</strong></p>
+<p>**2、无惧波动，越跌越买，越涨越卖。**定投的目标是摊薄成本，所以无论市场怎么变化，下跌就是你收集筹码的最佳机会。当然你要会看指数估值（pe/pb），会判断当前位置（估值百分位），这些数据在基金平台都可以查到。</p>
+<p><strong>以我自己为例，我是如何定投的？</strong></p>
+<p>我一般不会设置自动定投（因为金额比较大）。我会按周手动定投，越跌越买，大跌大买，小跌小买。</p>
+<p>我自己简单设定了一个定投的规则。如下图：</p>
+<figure><figcaption>img</figcaption></figure>
+<p>**1，定投时间。**我一般会选择每周四/周五（因为都说这两天容易出现黑色星期五），在下午三点之前，会看一眼大盘，然后决定是否买入。</p>
+<p>**2，买入标志。**如果当天跌幅超过-2%，那么“买入”标志就出现了。（相应的，涨幅+2%，“卖出”标志就出现了），大概率当天3点前就会选择买卖。</p>
+<p>**3，买多少。**假设我有20万元，我会把资金分成10份，每份2万元。当买入标志出现之后，会结合最近一周（周线）的涨跌幅情况和最近一月（月线）的涨跌幅情况来看买入多少。</p>
+<p>如上表，比如最近一月涨幅小于+1%的前提下（如果涨了很多，可能不会买），当天跌了-2%，最近一周跌-3%，那我可能会买入3-4份，也就是6-8万元。然后严格执行。</p>
+<p>当然，具体买入多少，可能还与当时的情绪有关。所以把这个规则量化之后，可以辅助我们有一个相对标准，不至于随意感觉，被情绪左右。</p>
+<p><strong>最后，最重要的，就是严格执行</strong>。执行不到位，再好的战略和方法都是徒劳。</p>
+<p>以上只是定投的一点皮毛，不过大道至简，再复杂的，比如网格啥的，原理都差不多。</p>
+<p>新手也可以尝试无脑定投沪深300，中证500等指数，找找感觉，现在开始，做到长期年化收益10%，没啥问题。</p>
+<p>只要严格执行，注意止盈。</p>
+<p>最后到一段富有哲理的话，分享给基友们：</p>
+<p>认知最终匹配财富：</p>
+<p>你所赚的每一分钱，都是你对这个世界认知的变现，你所亏的每一分钱，都是因为对这个世界认知有缺陷。</p>
+<p>你永远赚不到超出你认知范围之外的钱，除非你靠运气，但是靠运气赚到的钱，最后往往又会靠实力亏掉；</p>
+<p>这是一种必然。</p>
+<p>这个社会最大的公平就在于：当一个人的财富大于自己认知的时候，这个社会有100种方法收割你，直到让你的认知和财富相匹配为止。</p>
+<p>以我自己为例，刚入股市的时候，投入了本金差不多10万块。最早也是跟着各种专家、大V、论坛的观点走，结果很快就亏了四万块。</p>
+<p>痛定思痛，我决定靠自己，于是系统学习了股票理论，期权、期货、货币知识，紧盯国内外政治经济社会发展，学习最前沿的金融知识，特别瞄定目前正在发生的国际大事。经过不断的摸索，我完全形成了自己的模式和打法，最后，终于把剩下的六万块也亏光了。</p>
+<p>于是，我开始投资基金。。</p>
+<p>比起我亏损的100万，今天有一个人更惨，因为按照承诺，他要被炮轰进太阳。。。</p>
+<figure><figcaption>img</figcaption></figure>
+<p><strong>【今日操作】今日买了创蓝筹和地产，实盘组合亏损120万+。天天基金实盘目前资产（3000万+）排名第一。后台有朋友问怎么跟投，可以在天天基金app/雪球搜索：马哥价值投基。</strong></p>
+<p>*申明一下哈，跟投要谨慎，投资有风险。以上所有观点谨代表我个人。我也未收取跟投者一分钱，我只顾我买的基金能帮我赚到钱。这是我的唯一公众号，所有内容都只首发在这里。</p>
+<p>发文之前，美股又是大幅跌开2个多点，明早看收盘有没有奇迹，不过这一波调整，应该也差不多，机会满地。</p>
+<p>等着马哥推文的，点个【在看】，有多人，陪熬夜，不容易！</p>
+<p>点击这里，今日互动</p>
+<p>文章已于2020-02-28修改</p>
+]]></content>
+    <category term="理财"/>
+    <published>2022-05-13T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">投资“固收+”债券基金，必须要了解的几个重点</title>
+    <id>https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html</id>
+    <link href="https://jiange1236.github.io/finance/%E6%8A%95%E8%B5%84%E2%80%9C%E5%9B%BA%E6%94%B6_%E2%80%9D%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E7%82%B9%EF%BC%81.html"/>
+    <updated>2024-06-07T05:03:50.000Z</updated>
+    <summary type="html"><![CDATA[<p><strong>投资“固收+”债券基金，必须要了解的几个重点！</strong></p>
+<p>Original 实战研究的 东方财之道 <em>Today</em></p>
+<p>近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。</p>
+<p>平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。</p>
+<p><strong>一、宏观数据：</strong></p>
+<p>​    </p>
+<p>根据：Choice数据显示，目前中国全市场货币基金占48%，债基占28%，股基（包括指数基金）7.7%，混合基金占14.7%；</p>]]></summary>
+    <content type="html"><![CDATA[<p><strong>投资“固收+”债券基金，必须要了解的几个重点！</strong></p>
+<p>Original 实战研究的 东方财之道 <em>Today</em></p>
+<p>近期债基的下跌，让很多投资者不淡定了，有人要赎回，有人要转投股基，从目前大家的反应来看，还是对债券基金了解太少。</p>
+<p>平时我们主要探讨的都是股票基金，今天就从几个大方向来了解债券，然后再决定如何投资。</p>
+<p><strong>一、宏观数据：</strong></p>
+<p>​    </p>
+<p>根据：Choice数据显示，目前中国全市场货币基金占48%，债基占28%，股基（包括指数基金）7.7%，混合基金占14.7%；</p>
+<p>货基占比最大，这个很容易理解，现在很多年轻人都不去存银行了；</p>
+<p>债基远超股基，可能会出乎大家的意料；</p>
+<p>目前债基持有人80%以上都是机构，个人投资者占比很少；</p>
+<p>从配置需求看，债券和股票都是非常重要的投资品种；</p>
+<p>债基和股基经常呈反相关性，很大程度上可以实现风险对冲；</p>
+<p>相对来说，<strong>投资债基比什么：黄金、原油基金要靠谱的多。</strong></p>
+<p>所以债基在我们的投资中是不可或缺的品种，但它并不是只涨不跌，还需要了解以下知识。</p>
+<p><strong>二、不同类型的债券对比：</strong></p>
+<p>​    </p>
+<p>上图是过去十年不同债基的对比：</p>
+<p>红色是短债，净值呈缓坡增长，时快时慢，但很少回调;</p>
+<p>玫红是长债，长期稳健向上，但也有回撤;</p>
+<p>绿和灰色是二级债基，每日都有波动，但相比沪深300指数（黄色）要好很多。</p>
+<p>二级债基平时感觉涨的很慢，但由于回撤小，兼顾了股票和债券，<strong>最近十年优秀的二级债基收益130%左右，是沪深300的3倍左右</strong>，尤其在股市大波动时，这类基金更能发挥优势。</p>
+<p><strong>三、如何投资：</strong></p>
+<p>​    </p>
+<p>上图的信息量比较大，下面说重点：</p>
+<p><strong>短债从年度上看无亏损</strong>，历史最大回撤1%，由于收益低，只适合短期临时投资。</p>
+<p><strong>长债是市场上的主流债基</strong>，过去10年有两次年度亏损，不过也都是0.2%以下的微亏，历史最大回撤5%左右。</p>
+<p>因为债券品种范围广，影响因素多，且不同基金杠杆率不同，所以业绩相差有点大，波动比短债更大。</p>
+<p>但是如果利用好这些波动，可以获得更好的收益，有两个重点指标可关注：</p>
+<p>1.<strong>核心指标：一定要关注10年期国债收益率，如果高于3%则值得投资</strong>（高于3.5%会更好）**，**低于3%可止盈换品种（如果没有太好的品种可投，可以放低到2.8%或长期持有）</p>
+<p>​    </p>
+<p>根据上图集思录的显示，最新的10年收益率是：2.86%，显然当前纯债不是好的投资机会。</p>
+<p>2.如果连续两年收益超过6%或单一年度超10%，则要小心回撤，如果哪年负收益或者收益低于1%，则潜在收益更高，到时再结合10年期国债收益率来判断。</p>
+<p>和股基一样，涨的太高是风险，跌的越多是机会。</p>
+<p>**二级债基，**一般都配置了10-20%的股票仓位，投资难度也在加大，不同基金业绩有较大差异，优秀的经理也会主动切换股债的比例，所以大部分时间都值得投资，在股市低位和国债收益率3%以上时可加大投资。</p>
+<p>由于二级债受股债双重影响（短期主要受股市影响），有的二级债偏稳健，有的偏激进，尽量选择管理人优秀的基金。</p>
+<p><strong>四、其它细节：</strong></p>
+<p>债券的主要收益来源是票息，长期只要不违约就是只赚不亏，但是它会受货币政策和市场情绪的影响，在不同时点买入，收益会有所不同。</p>
+<p>因为债券有违约风险，尽量选择固收类团队强的基金公司，也不要选择规模过小的基金，稳定性非常重要。</p>
+<p>债券资产不仅可以减少回撤，也可以在关键时期伺机而动，比如遇到股市处于严重低估时，就可以把部分债基转成股基，加强进攻。</p>
+<p>但是多数人都做反了，比如：看到股基大涨时，感觉债基涨的太慢，要转为股基。看到股基大跌时，又想转到债基避险，这样的操作90%都会放大亏损。</p>
+<p>**正常的操作是：股市高估，应加强债基，股市低估，应加强股基。**绝大部分时间都保持不动。</p>
+<p>我的《稳中求进》组合，也配置了20%的二级债基，未来市场发生严重高/低估时，会调整相应的比例。</p>
+<p>注：由于可转债股性强，容易受到股票市场影响，我将归纳到权益类品种，不在本文探讨之内。</p>
+<p><strong>五、近期主要问答：</strong></p>
+<p><strong>债券基金连续下跌，还能持有吗？</strong></p>
+<p>目前货币政策偏宽松，如果准备长期配置，可以忽略短期波动，继续持有。</p>
+<p><strong>既然债基也会下跌，那可以换成股基吗？</strong></p>
+<p>不建议，这两种是完全不同的风格，股基的波动率是前者的4-10倍，遇到大波动，股基一天的下跌可以抵得上债基跌一年。最好根据投资风格，合理搭配。</p>
+<p><strong>现在应该买哪类债基？</strong></p>
+<p>在10年期国债收益率低于3%时，可以临时配置些短债，如果持有时间比较长，可重点关注二级债基。</p>
+<p><strong>可以不配置债基吗？</strong></p>
+<p>如果是激进型投资者，可以不配置。比如我自己目前很少买债基，但是给风险承受力弱的亲友们都配置了债基，以降低资产的波动率。 后面如果股市机会差，我也会买些债券。</p>
+<p><strong>总结：</strong></p>
+<p>债券是仅次于股票的重要投资品种，特别是稳健型投资者。</p>
+<p>理性看待纯债波动，从年度看亏损概率很低。</p>
+<p>要想投资债基，必须要会看10年期国债收益率，这是基本技能。</p>
+<p>由于存在违约和管理人风险，在投资时也尽量分散，不要集中在一只基金上。</p>
+<p>选择债基主要是为了获得稳健收益，要把风控放在第一位，不要盲目攀比短期涨幅，在购买前一定要查询波动率和近5年回撤。</p>
+]]></content>
+    <category term="理财"/>
+    <published>2022-05-13T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">聊聊债券基金的选择方法与技巧</title>
+    <id>https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html</id>
+    <link href="https://jiange1236.github.io/finance/%E8%81%8A%E8%81%8A%E5%80%BA%E5%88%B8%E5%9F%BA%E9%87%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%96%B9%E6%B3%95%E4%B8%8E%E6%8A%80%E5%B7%A7.html"/>
+    <updated>2024-06-07T05:03:50.000Z</updated>
+    <summary type="html"><![CDATA[<p><strong>一、怎么选择债券基金？</strong></p>
+<p><strong>1. 明确目标需求</strong></p>
+<p>投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。</p>
+<figure><figcaption></figcaption></figure>
+<p><strong>1）纯债基金</strong>：顾名思义，指的是<strong>只可投资债券</strong>的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。</p>]]></summary>
+    <content type="html"><![CDATA[<p><strong>一、怎么选择债券基金？</strong></p>
+<p><strong>1. 明确目标需求</strong></p>
+<p>投资任何产品前，都要明确自己的目标和风险承受能力。债券基金根据可投资范围的不同，分为纯债基金、一级债券基金和二级债券基金。</p>
+<figure><figcaption></figcaption></figure>
+<p><strong>1）纯债基金</strong>：顾名思义，指的是<strong>只可投资债券</strong>的基金。根据投资债券的到期期限的不同，纯债基金又分为短期纯债型（久期在397天以内）和中长期纯债型（久期在397天以上）。</p>
+<p>短期纯债型可以类似的看作货币基金的增强版，大多时候收益比货币基金略高些，但低于中长期纯债型。总的来说，由于只投资债券，不投资股票和可转债，纯债基金的风险和收益最低。</p>
+<p><strong>2）一级债券基金</strong>：除了投资债券（含可转债），还可以投资<strong>一级市场股票，也就是参与打新股</strong>。相比纯债基金，一级债券基金风险收益稍高些。</p>
+<p><strong>3）二级债券基金</strong>。除了投资债券（含可转债）、投资一级市场股票，<strong>还可以参与二级市场股票买卖</strong>。因此，二级债券基金的预期风险和收益最高。</p>
+<p>宇哥对近几年各类型债券基金的收益率做了统计，发现：二级债券基金在“股债双牛”的时候（如2014年）年收益率最高可达30.3%，但是当股债都不好的时候（如2016年）收益率可能为负，可见二级债券基金的波动较大；一级债券基金相对平稳，纯债基金波动最小。</p>
+<figure><figcaption></figcaption></figure>
+<p>数据来源：Wind，截止2018-10-12</p>
+<p>事实上，除了纯债基金、一级债基金和二级债基金，还有指数债券型基金。这类基金跟踪债券指数，数量很少，只占到3%。其中，被动指数型完全跟踪标的指数，风险收益较低；增强指数型（只有2只）跟踪标的指数的同时，有较大自由投资空间，风险收益较高。</p>
+<p>知道了各债券基金的风险收益特征，这时在选择基金时，就要考虑到目标需求。如果你是用闲置资金投资，期望获得相对稳定且较高的收益，那就选择二级债券基金；但如果你不想承担较高的风险，只追求稳定的收益，纯债或一级债券基金会更适合你。</p>
+<p><strong>2. 看基金公司的背景</strong></p>
+<p>和货币基金一样，债券基金也要看基金公司的背景。由于<strong>债券大部分是在银行间市场交易的，如果能背靠银行，基金公司也能拿到成本更低的债券，手里的资源也更多。因此，具有银行背景的基金公司更有优势，比如建信、工银瑞信。</strong></p>
+<p>另外，具有大券商公司背景的基金公司也会有优势，比如易方达、广发、汇添富等。当然了，其他派系的基金公司旗下也会有很多优质的债券基金，不能一概而论 。</p>
+<p><strong>3. 看业绩</strong></p>
+<p>虽说基金的业绩只代表过去，不代表过来。但对基金来说，考验基金好坏还是要参考其历史业绩。</p>
+<p><strong>1）和基准、同类基金的比较</strong></p>
+<p><strong>债券基金的业绩比较基准自然是债券指数，一般看的中证综合债</strong>。另外，基金业绩还要和同类基金作比较，如果投资者想长期持有，应选择更长周期的业绩；如果只是打算短期投资，则应选择近期的业绩进行比较。</p>
+<p><strong>2）四分位排名</strong></p>
+<p>重点关注近1年至近3年四分位排名为优秀和良好的基金，且短期排名（近1月、3月、6月）也较好。不过，需要提醒的是，四分位排名是将同类基金按涨幅大小顺序排列的，有的平台的同类基金包括了所有类型的债券基金，因此并不能很好地做比较。</p>
+<p><strong>3） 与历史业绩的比较</strong></p>
+<p>当前业绩与历史业绩（各年度涨幅、各季度涨幅）进行比较，目的是判断基金业绩的稳定性。只有长期表现稳定、收益良好的基金才是值得买的基金。</p>
+<p><strong>4） 标准差、夏普比率</strong></p>
+<p>标准差反应了债券基金的波动性，标准差越小，说明基金越稳定。夏普比率是衡量风险和收益的综合指标，它反映了单位风险获得的超额收益。当比较不同类型的债券基金哪个更优时，夏普比率是一个很好的指标，越大越好。通常观察的是近1年、近3年的夏普比率。</p>
+<p>另外，需要提醒的是：债券基金有时会发生因巨额赎回而单日涨幅飙升的情形，少则百分之几十，多则百分之一百多，比如金信民兴债券A(004400)，6月20日涨幅79.27%。在衡量基金的业绩时，一定要剔除这一因素，因为这是<strong>巨额赎回发生的赎回费导致的，并不代表基金本身真实的投资能力。况且，这类基金发生在以机构投资者占比为主的基金中，也是可遇不可求的。</strong></p>
+<figure><figcaption></figcaption></figure>
+<p>金信民兴债券A(004400)</p>
+<p><strong>4. 看资产配置、债券配置</strong></p>
+<p>看债券基金的资产配置，着重看基金是否有股票持仓、占比多少，债券持仓占比多少，从而判断基金的风险收益状况。如果股票持仓较高，则说明该基金预期风险和收益较高；反之，该基金预期风险和收益就较低。</p>
+<p>除了看资产配置，还要看债券配置。我们知道，<strong>债券基金80%以上的基金资产投资于债券。而债券又包括了国债、金融债、央行票据、企业债、可转债等，这些债券品种的风险和收益也不同。其中，国债最稳定，但是收益也最低；企业债属于信用债，风险收益等级稍高些；风险收益等级最大的是可转债，如果一只债券基金里绝大多数债券配的都是可转债，那我们称这只基金为可转债基金，可转债基金的风险收益最大，股票的涨跌都和它密切相关。</strong></p>
+<p>比如：“易方达安心回报”就是可转债基金。看持仓，股票占比14.29%，债券里可转债占比高达63.01%。结构性牛市，可转债基金表现很好。</p>
+<figure><figcaption></figcaption></figure>
+<p>易方达安心回报（110027）</p>
+<p><strong>5. 有没有踩过雷？</strong></p>
+<p>近年来，债券信用违约事件频发。327只债券基金出现下跌，30只净值跌幅超过10%，其中跌幅最大的债券基金（中融融丰纯债）净值跌幅超过47%。如果不幸踩雷，债券基金也会跌的让人触目惊心。</p>
+<p>因此，在选择债券基金的时候，要看看其基金公司的其它债券基金之前有没有踩过雷。如果踩过，说明该公司的投研实力还是较弱，信用风险甄别能力较差。</p>
+<p><strong>6. 是否有封闭期？</strong></p>
+<p>目前，债券基金主要分为开放式和封闭式。封闭式就是我们常说的“定开债”，即定期开放申赎。定开债虽然流动性不如开放式，但是由于有封闭期，<strong>基金可以参与更长久期的债券品种，并且还会加杠杆，预期收益会比开放式高。</strong></p>
+<p>因此，不能单纯看预期收益，还要考虑到流动性。如果资金期限不固定，必要时一定要撤离，定开债就不适合你了。</p>
+<p><strong>7. 看评级</strong></p>
+<p>可以通过基金评级来选基。不管是从收益率、波动性，还是夏普比率看，星级越高的基金表现都更优。建议大家优选星级高的基金，比如3年5星的基金。当然，评级高的基金未来不一定表现一定好，也不排除其它外在的因素导致业绩不达预期。</p>
+<p>除了以上，还要看费率，包括管理费、托管费、申购费、赎回费等（对于C份额，还要关注销售服务费）。尽量优选费率低的，能省一点是一点。</p>
+<p>**二、**<strong>债券基金有哪些买卖技巧？</strong></p>
+<p><strong>1. 经济下行时，买；复苏见底时，卖</strong></p>
+<p>影响债市表现的最根本因素是经济基本面。当经济下行时，市场预期央行采取宽松的货币政策，致使利率下行，而我们知道债券和利率负相关，从而债券牛市开启。而当经济复苏时，市场预期货币政策收紧，利率回升，债券牛市结束。</p>
+<p>因此，<strong>对于债券型基金，在市场一致预期经济处于下行通道时，是参与债市的好时机。而在经济见底复苏时，就要注意风险了。</strong></p>
+<p><strong>2. 资金面宽松时，买；资金面紧张时，卖</strong></p>
+<p>除了经济基本面，资金面也是影响债市的重要因素。<strong>当资金面宽松，即处于降息周期或低利率环境时，债市通常会有不错的表现，这时正是买债券基金的时机；而当资金面紧张，利率上升时，债券基金的表现可能还不如货币基金。</strong></p>
+<p><strong>3. 股市表现不好时，可考虑债券基金</strong></p>
+<p>总体来说，股票市场和债券市场存在一定的“跷跷板”效应。一方面，股市不好时，债市可能会有不错的表现；另一方面，从资产配置、分散风险的角度，股市不好时，可以加大债券的投资比例、降低波动。</p>
+<p><strong>4. 牛市时，配置二级债券基金、可转债基金</strong></p>
+<p><strong>二</strong>级债券基金可以参与二级市场股票买卖。因此，当股市表现好时，可配置二级债券基金，获得相对稳定且较高的收益。</p>
+<p>对于可转债基金，由于可转债具有可转换性，当它所对标的股票价格上涨时，债券价格也会上涨；此外，债券价格和股价之前还存在套利的可能性。因此，当股市表现好时，可转债基金会有不错的收益。同样，成也萧何败萧何，当股市表现差时，可转债基金也会出现较大的下跌，这个时候应卖出。</p>
+<p>**三、**<strong>总结：</strong></p>
+<p>作为固收类基金的主力，债券基金分类众多，不同类型的债券基金风险收益特征也不同。因此，挑选债券基金的第一步就是明确自己的目标需求，选择适合的债基类型，然后再结合基金公司背景、业绩、资产配置、债券配置、封闭期、评级等选择心仪的债券基金。</p>
+<p>另外，虽然债券基金可以作为一种长期配置的品种，但如果能较好的做好择时、掌握一些买卖技巧，会赚得更多。</p>
+]]></content>
+    <category term="理财"/>
+    <published>2022-05-13T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text"></title>
@@ -9644,7 +9556,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">2设计</title>
     <id>https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html</id>
     <link href="https://jiange1236.github.io/work/2%E8%AE%BE%E8%AE%A1.html"/>
-    <updated>2026-01-09T07:31:51.000Z</updated>
+    <updated>2026-02-13T07:38:39.000Z</updated>
     <summary type="html"><![CDATA[
 <p>[TOC]</p>
 <hr>
@@ -9661,7 +9573,7 @@ dnsmasq也是类似的工作方式。</p>
 <p>[TOC]</p>
 ]]></content>
     <category term="工作"/>
-    <published>2026-01-09T00:00:00.000Z</published>
+    <published>2026-02-12T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">3施工图</title>
@@ -9793,7 +9705,7 @@ dnsmasq也是类似的工作方式。</p>
     <title type="text">4基础</title>
     <id>https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html</id>
     <link href="https://jiange1236.github.io/work/4%E5%9F%BA%E7%A1%80.html"/>
-    <updated>2025-07-22T03:45:22.000Z</updated>
+    <updated>2026-02-13T07:38:39.000Z</updated>
     <summary type="html"><![CDATA[
 <p>[toc]</p>
 <p><strong>基础设计值安全储备10%~20%</strong></p>
@@ -9827,7 +9739,7 @@ dnsmasq也是类似的工作方式。</p>
 |</p>
 ]]></content>
     <category term="工作"/>
-    <published>2025-07-21T00:00:00.000Z</published>
+    <published>2026-02-13T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">5结构笔记-理论篇</title>
