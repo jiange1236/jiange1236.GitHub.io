@@ -1,6 +1,6 @@
 ---
 title: AI软件部署
-date: 2025-08-28
+date: 2026-02-10
 category:
   - AI
 tags:
