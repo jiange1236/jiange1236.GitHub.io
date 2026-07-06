@@ -221,7 +221,7 @@ star: true
 
 **特征周期**：抗规 5.1.4
 
-![](./PKPM%E8%AE%BE%E7%BD%AE.assets/clipboard.png)
+![](./attachments/PKPM设置.assets/clipboard.png)
 
 **设防烈度、基本地震加速度**：抗规 附录A 1.0.4  1.0.5  3.2.4  3.3.2  3.3.3
 
@@ -311,9 +311,9 @@ star: true
 
 **最大适用高度**：高规 3.3.1
 
-![](./PKPM%E8%AE%BE%E7%BD%AE.assets/clipboard-163843131681215.png)
+![](./attachments/PKPM设置.assets/clipboard-163843131681215.png)
 
-![](./PKPM%E8%AE%BE%E7%BD%AE.assets/clipboard-163843135671116.png)
+![](./attachments/PKPM设置.assets/clipboard-163843135671116.png)
 
 ## 活荷信息
 

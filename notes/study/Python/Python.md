@@ -849,11 +849,11 @@ BaseException
 
 **try/except...else...finally**
 
-![](./Python.assets/try_except_else_finally.png)
+![](./attachments/Python.assets/try_except_else_finally.png)
 
 **raise**
 
-![](./Python.assets/raise.png)
+![](./attachments/Python.assets/raise.png)
 
 ## 图形用户界面GUI
 

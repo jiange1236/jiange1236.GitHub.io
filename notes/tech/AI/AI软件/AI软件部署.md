@@ -1,6 +1,6 @@
 ---
 title: AI软件部署
-date: 2026-02-10
+date: 2026-07-01
 category:
   - AI
 tags:
@@ -9,6 +9,7 @@ tags:
   - Dify
   - MinerU
   - ComfyUI
+  - Opencode
 article: true
 ---
 # AI软件部署
@@ -156,4 +157,10 @@ npm install -g @anthropic-ai/claude-code
 
 $ENV:HTTP_PROXY = "http://127.0.0.1:20171"
 $ENV:HTTPS_PROXY = "http://127.0.0.1:20171"
+```
+
+## Opencode
+
+```
+.\opencode-desktop-win-x64.exe /S /D="D:\Program Files\OpenCode"
 ```

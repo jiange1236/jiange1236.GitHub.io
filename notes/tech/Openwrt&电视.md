@@ -1,6 +1,6 @@
 ---
 title: Openwrt&电视
-date: 2026-01-15
+date: 2026-07-06
 category:
   - 计算机
 tags:
@@ -273,80 +273,27 @@ https://gitee.com/xiaominglei001/forMarkdown/raw/master/FireShot Capture 044 - 2
 
 最好选择private加入，否则30天不登录会被删除。
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
+![img](./attachments/Openwrt&电视.assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
+![img](./attachments/Openwrt&电视.assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
+![img](./attachments/Openwrt&电视.assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
+![img](./attachments/Openwrt&电视.assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
 
 三行举例：应该每个networkID其z开头的这串字母是固定的
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
+![img](./attachments/Openwrt&电视.assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
+![img](./attachments/Openwrt&电视.assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
+![img](./attachments/Openwrt&电视.assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
+![img](./attachments/Openwrt&电视.assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
 
-![img](./Openwrt&%E7%94%B5%E8%A7%86.assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
+![img](./attachments/Openwrt&电视.assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
 
 要连openwrt里的SSH最好用putty或者shell，不要用访问openwrt网页然后用其网页里的TTYD访问其SSH的方式，因为很可能访问不到。
-
-### DDNSTO
-
-OpenWrt固件开发者众多，部分固件不自带ddnsto，可通过以下任一脚本轻松安装：
-
-via curl
-
-```text
-sh -c "$(curl -sSL http://fw.koolcenter.com/binary/ddnsto/openwrt/install_ddnsto.sh)"
-```
-
-via wget
-
-```text
-sh -c "$(wget --no-check-certificate -qO- http://fw.koolcenter.com/binary/ddnsto/openwrt/install_ddnsto.sh)"
-```
-
-others
-
-```text
-cd /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/ddnsto/openwrt/install_ddnsto.sh; sh ./install_ddnsto.sh
-```
-
-在OpenWrt TTYD终端中输入任一上述命令，会自动安装完成。
-
-![image-2021022400000003](https://doc.linkease.com/assets/img/image-2021022400000003.536613b5.png)
-
-![image-2021022400000004](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-2021022400000004.13ea60fa.png)
-
-或者putty、MobaXterm等软件登陆SSH，输入任一上述命令，会自动安装完成。
-
-![image-2021022400000005](https://doc.linkease.com/assets/img/image-2021022400000005.6379d721.png)
-
-![image-2021022400000006](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-2021022400000006.d94bda31.png)
-
-![image-2021022400000007](https://doc.linkease.com/assets/img/image-2021022400000007.90bb45d5.png)
-
-然后找到DDNS.to内网穿透，启用并设置token。
-
-![image-2021022400000008](./Openwrt&%E7%94%B5%E8%A7%86.assets/image-2021022400000008.c70860e9.png)
-
-**Openwrt 常见问题解决思路**
-
-*安装好ddnsto之后无法启用配置
-
-因为 Openwrt 15 版本跟最新的插件不兼容导致，解决办法尝试一：
-
-```text
-/etc/init.d/ddnsto disable
-/etc/init.d/ddnsto enable
-```
-
-如果不行则尝试二：重启路由器
 
 ### DDNS
 

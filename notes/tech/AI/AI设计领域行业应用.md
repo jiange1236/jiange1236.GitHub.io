@@ -8,7 +8,7 @@ https://mp.weixin.qq.com/s/iycSYmfvX8JONERcFcgV5w
 
 依托 DeepSeek 大模型的多模态处理能力与卓越的逻辑推理优势，整合涵盖数干项国家及行业标准的专项数据库，精心打造出一套覆盖建筑设计、施工安全、材料规范等多元领域的智能知识库系统。用户可通过自然语言输入，快速获取规范条文解读、技术标准应用场景分析等精准答案，支持“全库检索”或“单一规范定向查询”两种模式，极大提升了设计效率与决策科学性。系统可结合规范条文自动生成结构化解答，并附依据来源，有效解决了传统人工查阅耗时、易遗漏的痛点。
 
-![](AI设计领域行业应用.assets/Pasted%20image%2020250305195259.png)
+![](attachments/AI设计领域行业应用.assets/Pasted%20image%2020250305195259.png)
 
 ### 智能助手
 
@@ -22,19 +22,19 @@ https://mp.weixin.qq.com/s/iycSYmfvX8JONERcFcgV5w
 
 一键生成建筑室内景观方案效果图
 
-![](AI设计领域行业应用.assets/Pasted%20image%2020250305194514.png)
+![](attachments/AI设计领域行业应用.assets/Pasted%20image%2020250305194514.png)
 
 ### AI图转三维模型
 
 一键将物体图片转换为3D格式模型，可导入到SU2024、3Dmax、C4D、Blender等软件中使用
 
-![](AI设计领域行业应用.assets/Pasted%20image%2020250305194619.png)
+![](attachments/AI设计领域行业应用.assets/Pasted%20image%2020250305194619.png)
 
 ### AI图转视频
 
 建筑室内景观-漫游视频生成工具
 
-![](AI设计领域行业应用.assets/Pasted%20image%2020250305194638.png)
+![](attachments/AI设计领域行业应用.assets/Pasted%20image%2020250305194638.png)
 
 ## 岩土勘察
 
@@ -48,14 +48,14 @@ https://ai-structure.com/
 
 基于生成对抗网络、图生成网络等生成式AI技术，通过输入建筑平面布置图，AI自动生成对应剪力墙结构布置设计图
 
-![](AI设计领域行业应用.assets/Pasted%20image%2020250305201305.png)
-![](AI设计领域行业应用.assets/Pasted%20image%2020250305201444.png)
+![](attachments/AI设计领域行业应用.assets/Pasted%20image%2020250305201305.png)
+![](attachments/AI设计领域行业应用.assets/Pasted%20image%2020250305201444.png)
 
 ## 工程造价
 
 AI 造价智能编制清单计价
 
-![](AI设计领域行业应用.assets/Pasted%20image%2020250305202001.png)
+![](attachments/AI设计领域行业应用.assets/Pasted%20image%2020250305202001.png)
 
 ## 检测领域
 

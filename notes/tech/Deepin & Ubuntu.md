@@ -1,6 +1,6 @@
 ---
 title: Deepin & Ubuntu
-date: 2025-09-01
+date: 2026-04-05
 category:
   - 计算机
 tags:
@@ -258,6 +258,26 @@ vi /etc/fstab
 UUID=47FA-4071     /home/username/Camera\040Pictures   vfat  defaults,noatime      0  2
 /dev/sda7          /media/100\040GB\040(Storage)       ext4  defaults,noatime,user  0  0
 ```
+
+### 软件
+
+1. Rime
+2. CAD 快速看图（Wine）
+3. Motrix
+4. Firefox
+5. Localsend
+6. Cherrystudio
+7. SunnyCapturer
+8. v2rayA
+9. Stacer
+10. 坚果云
+11. Fsearch
+12. PUTTY
+13. UTools
+14. Obsidian
+15. Marktext
+16. Notepad--
+17. WPS
 
 ## Ubuntu
 

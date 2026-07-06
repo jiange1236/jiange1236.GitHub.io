@@ -19,7 +19,7 @@ tags:
 
 ## 效果
 
-![image-20250604180228012](./%E7%BA%AF%E6%89%8B%E5%B7%A5%E7%A0%B4%E8%A7%A3Typora1.10.8%20-%20%E9%82%AE%E8%8E%93%E7%94%9F%E6%B4%BB.assets/ba11bd34874ae28597825fde6b935624_MD5.webp)
+![image-20250604180228012](./attachments/纯手工破解Typora1.10.8%20-%20邮莓生活.assets/ba11bd34874ae28597825fde6b935624_MD5.webp)
 
 ## 过程
 
@@ -29,13 +29,13 @@ tags:
 
 文件名LicenseIndex开头的，后面可能不一样，大概是这样子
 
-![image-20250604164828882](./%E7%BA%AF%E6%89%8B%E5%B7%A5%E7%A0%B4%E8%A7%A3Typora1.10.8%20-%20%E9%82%AE%E8%8E%93%E7%94%9F%E6%B4%BB.assets/934bc105d4ba76c84913a923dce1c4bb_MD5.webp)
+![image-20250604164828882](./attachments/纯手工破解Typora1.10.8%20-%20邮莓生活.assets/934bc105d4ba76c84913a923dce1c4bb_MD5.webp)
 
 编辑——查找e.hasActivated值失成true
 
 原 `e.hasActivated="true"==e.hasActivated` 改成 `e.hasActivated="true"=="true"`
 
-![image-20250604165112617](./%E7%BA%AF%E6%89%8B%E5%B7%A5%E7%A0%B4%E8%A7%A3Typora1.10.8%20-%20%E9%82%AE%E8%8E%93%E7%94%9F%E6%B4%BB.assets/1abe149e844d7d377d4237bb453cb004_MD5.webp)
+![image-20250604165112617](./attachments/纯手工破解Typora1.10.8%20-%20邮莓生活.assets/1abe149e844d7d377d4237bb453cb004_MD5.webp)
 
 第二步，关闭弹窗
 
@@ -55,7 +55,7 @@ setTimeout(() => {window.close();}, 100);
 
 编辑——查找"未激活"并修改成”已激活“
 
-![image-20250604175912703](./%E7%BA%AF%E6%89%8B%E5%B7%A5%E7%A0%B4%E8%A7%A3Typora1.10.8%20-%20%E9%82%AE%E8%8E%93%E7%94%9F%E6%B4%BB.assets/822546d51f41fb21dea097eeae2a234d_MD5.webp)
+![image-20250604175912703](./attachments/纯手工破解Typora1.10.8%20-%20邮莓生活.assets/822546d51f41fb21dea097eeae2a234d_MD5.webp)
 
 ## 修改注册表
 
@@ -65,7 +65,7 @@ setTimeout(() => {window.close();}, 100);
 
 修改IDate的日期，这个是安装日期，试用日期是根据它来推算的
 
-![image-20250604162810776](./%E7%BA%AF%E6%89%8B%E5%B7%A5%E7%A0%B4%E8%A7%A3Typora1.10.8%20-%20%E9%82%AE%E8%8E%93%E7%94%9F%E6%B4%BB.assets/ed8eae50548575bf4b9b8413b7c49e14_MD5.webp)
+![image-20250604162810776](./attachments/纯手工破解Typora1.10.8%20-%20邮莓生活.assets/ed8eae50548575bf4b9b8413b7c49e14_MD5.webp)
 
 我先把它改到6/4/2035年吧，先来十年
 
@@ -73,7 +73,7 @@ setTimeout(() => {window.close();}, 100);
 
 右健“Typora”——权限——选择“Administrators”用户——拒绝
 
-![image-20250604163658984](./%E7%BA%AF%E6%89%8B%E5%B7%A5%E7%A0%B4%E8%A7%A3Typora1.10.8%20-%20%E9%82%AE%E8%8E%93%E7%94%9F%E6%B4%BB.assets/a17411897cac52d574abda95c78769c3_MD5.webp)
+![image-20250604163658984](./attachments/纯手工破解Typora1.10.8%20-%20邮莓生活.assets/a17411897cac52d574abda95c78769c3_MD5.webp)
 
 意思不给它权限修改我的注册表了，防止破解失效
 
