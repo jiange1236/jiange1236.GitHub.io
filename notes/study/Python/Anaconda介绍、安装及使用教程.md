@@ -1,6 +1,6 @@
 ---
 title: Anaconda介绍、安装及使用教程
-date: 2022-05-13
+date: 2026-07-06
 category:
   - 学习
 tag:
