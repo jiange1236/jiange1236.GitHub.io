@@ -1,15 +1,16 @@
 ---
 title: Openwrt&电视
-date: 2026-07-06
+date: 2026-07-06T00:00:00.000Z
 category:
   - 计算机
+article: true
 tags:
   - Openwrt
-article: true
 ---
+
 # Openwrt&电视
 
-[TOC]
+\[TOC]
 
 ## Openwrt
 
@@ -65,7 +66,7 @@ https://github.com/fanck0605/friendlywrt-nanopi-r2s
 
 https://github.com/klever1988/nanopi-openwrt
 
-https://github.com/kiddin9/OpenWrt_x86-r2s-r4s
+https://github.com/kiddin9/OpenWrt\_x86-r2s-r4s
 
 https://github.com/QiuSimons/YAOF
 
@@ -86,32 +87,28 @@ https://xtrojan.pro/bgfw/v2ray/v2ray-dns-streaming.html
 一、基本设置
 
 1. 下载页面设置需自动下载的要分流的域名列表文件（也可上传）。(格式为一行一个域名，需要分流的域名)
-2. 设置上游服务器，设置国外的DOT，DOH等服务器，并设置`服务器组`：比如oversea。可选勾选‘从默认组中排除’
-   也可以设置一个上游服务器，通过代理走转发程序，设置`服务器组`用于专门分流查询，这样查询DNS的出口和数据出口一样，DNS结果的亲和度和更好。
+2. 设置上游服务器，设置国外的DOT，DOH等服务器，并设置`服务器组`：比如oversea。可选勾选‘从默认组中排除’ 也可以设置一个上游服务器，通过代理走转发程序，设置`服务器组`用于专门分流查询，这样查询DNS的出口和数据出口一样，DNS结果的亲和度和更好。
 3. 域名规则->域名分流设置：
-   - 设置`域名分组`，名称为第二步的名称：比如'oversea'
-   - 选择`跳过测速`
-   - 选择`停用IPV6地址解析`
-   - 选择`域名列表文件`，文件为第一步设置的自动下载的文件，此文件为需要分流的域名列表。
-   - 对于临时个别要分流的域名，可以在`域名列表`文本框中输入。
+   * 设置`域名分组`，名称为第二步的名称：比如'oversea'
+   * 选择`跳过测速`
+   * 选择`停用IPV6地址解析`
+   * 选择`域名列表文件`，文件为第一步设置的自动下载的文件，此文件为需要分流的域名列表。
+   * 对于临时个别要分流的域名，可以在`域名列表`文本框中输入。
 
 二、最简单的按域名的透明代理：
 
-如果smartdns运行在主路由上，那么可以使用REDIRECT模式对TCP进行透明代理。下面举例对TCP进行透明转发，其中的[ipsetname]是IP集合的名称，比如可以设置`proxy-list`：
+如果smartdns运行在主路由上，那么可以使用REDIRECT模式对TCP进行透明代理。下面举例对TCP进行透明转发，其中的\[ipsetname]是IP集合的名称，比如可以设置`proxy-list`：
 
-1. shell命令，创建ipset集合
-   `ipset create proxy-list hash:net timeout 600`
-2. shell命令，iptable设置对应ipset集合中域名的TCP请求使用TPROXY重定向转发到本机2018的转发程序。
-   `iptables -t nat -I PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018`
-3. smartdns设置页面的`域名分流设置`->`ipset名称`设置为上述步骤中[ipsetname]的名称，比如`proxy-list`
+1. shell命令，创建ipset集合 `ipset create proxy-list hash:net timeout 600`
+2. shell命令，iptable设置对应ipset集合中域名的TCP请求使用TPROXY重定向转发到本机2018的转发程序。 `iptables -t nat -I PREROUTING -p tcp -m set --match-set proxy-list dst -j REDIRECT --to-ports 2018`
+3. smartdns设置页面的`域名分流设置`->`ipset名称`设置为上述步骤中\[ipsetname]的名称，比如`proxy-list`
 4. 在主路由的2018端口，开启REDIRECT模式的转发程序。
 5. 应用smartdns设置。
 6. 结束。
 
 对于udp，nfttable也是类似的步骤，上述透明代理github上有现成的脚本，PW也有类似的能力，只要选择好转发模式，和设置好正确的ipset名称或nftset名称即可。
 
-原理上，smartdns和转发软件的结合点，为ipset名称或nftset名称，那两个参数和转发软件匹配就可以做到按需转发。
-dnsmasq也是类似的工作方式。
+原理上，smartdns和转发软件的结合点，为ipset名称或nftset名称，那两个参数和转发软件匹配就可以做到按需转发。 dnsmasq也是类似的工作方式。
 
 **删除规则**
 
@@ -125,18 +122,17 @@ geoip.dat 所有类别：https://github.com/Loyalsoldier/geoip/tree/release/text
 
 ### 广告规则
 
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter\_2\_English/filter.txt
 
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter\_3\_Spyware/filter.txt
 
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter\_11\_Mobile/filter.txt
 
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter\_14\_Annoyances/filter.txt
 
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter\_17\_TrackParam/filter.txt
 
-https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt
-
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter\_224\_Chinese/filter.txt
 
 ~~https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt~~
 
@@ -156,15 +152,13 @@ https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 
 ### AdGuard Home
 
-最近128m的小闪存运行AdGuardHome几天后，空间就爆了，改成只记录一天的日志还是爆，后来发现即使设置成一天，AdGuardHome也不是覆写，而是把旧的日志文件重命名继续保存了。
-所以用到了以下代码，自动删除旧的日志文件。直接计划任务里面添加以下代码
+最近128m的小闪存运行AdGuardHome几天后，空间就爆了，改成只记录一天的日志还是爆，后来发现即使设置成一天，AdGuardHome也不是覆写，而是把旧的日志文件重命名继续保存了。 所以用到了以下代码，自动删除旧的日志文件。直接计划任务里面添加以下代码
 
 ```
 50 5 * * * [ -f /etc/AdGuardHome/data/querylog.json.1 ] && rm /etc/AdGuardHome/data/querylog.json.1
 ```
 
-我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
-此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
+我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。 此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
 
 ```
 [/csdn.net/]quic://dns.alidns.com
@@ -258,8 +252,7 @@ quic://dns.nextdns.io
 h3://dns.nextdns.io/dns-query
 ```
 
-我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。
-此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
+我的路由器AdGuardHome的日志是默认保存在/etc/AdGuardHome/data/目录中的querylog.json文件。如果你设置日志保存时间为3天，那么3天后AdGuardHome其实并不会把日志删除，而是把当前的querylog.json改成querylog.json.1，然后再生成新的querylog.json记录日志。 此代码就是，每天的5点50分，检测是否存在querylog.json.1，存在就会删除它。这样在闪存空间有限的情况下，得以保留AdGuardHome的日志记录功能。
 
 ### SSH
 
@@ -273,25 +266,25 @@ https://gitee.com/xiaominglei001/forMarkdown/raw/master/FireShot Capture 044 - 2
 
 最好选择private加入，否则30天不登录会被删除。
 
-![img](./attachments/Openwrt&电视.assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
+![img](../.gitbook/assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
 
-![img](./attachments/Openwrt&电视.assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
+![img](../.gitbook/assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
 
-![img](./attachments/Openwrt&电视.assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
+![img](../.gitbook/assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
 
-![img](./attachments/Openwrt&电视.assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
+![img](../.gitbook/assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
 
 三行举例：应该每个networkID其z开头的这串字母是固定的
 
-![img](./attachments/Openwrt&电视.assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
+![img](../.gitbook/assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
 
-![img](./attachments/Openwrt&电视.assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
+![img](../.gitbook/assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
 
-![img](./attachments/Openwrt&电视.assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
+![img](../.gitbook/assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
 
-![img](./attachments/Openwrt&电视.assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
+![img](../.gitbook/assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
 
-![img](./attachments/Openwrt&电视.assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
+![img](../.gitbook/assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
 
 要连openwrt里的SSH最好用putty或者shell，不要用访问openwrt网页然后用其网页里的TTYD访问其SSH的方式，因为很可能访问不到。
 
@@ -307,7 +300,7 @@ https://gitee.com/xiaominglei001/forMarkdown/raw/master/FireShot Capture 044 - 2
 
 目标区域 **lan**
 
-目标地址  `::0000:0000:0000:0001`
+目标地址 `::0000:0000:0000:0001`
 
 目标端口 80
 
@@ -327,7 +320,7 @@ https://www.right.com.cn/forum/thread-4051426-1-1.html
 
 ### 微信推送（wechatpush）
 
-pushplus_token `5dfff495415c445e8466c3f894d926f2`
+pushplus\_token `5dfff495415c445e8466c3f894d926f2`
 
 ### Tailscale
 
@@ -349,15 +342,13 @@ tailscale up --advertise-routes=10.0.0.0/24 --accept-routes  --accept-dns=false
 2. 防火墙 `Tailscale`区域设置，全部接受，开启IP 动态伪装、MSS 钳制，允许转发到 `Lan`、`Wan`，允许源区域 `Lan`，
 
 **确认并启用 WireGuard 内核模块 (最重要的优化)**
- 
-- **原理：** Tailscale 可以使用两种模式运行：用户空间模式（userspace mode）和内核模式（kernel mode）。内核模式利用 Linux 内核内置的 WireGuard 模块，性能远高于用户空间模式，因为它减少了数据在内核空间和用户空间之间的复制，并且通常能更好地利用硬件特性。
 
-- **检查：** 登录 OpenWrt 的 SSH，运行 `tailscale status`。查看输出信息，或者检查 Tailscale 的日志 (`logread | grep tailscale`)，看是否有关于使用内核模块或用户空间模式的信息。较新版本的 Tailscale 可能会明确指出。也可以通过查看是否有 `wg0` (或其他 `wgX`) 的内核网络接口来判断 (`ip link show type wireguard`)。
-
-- **启用：**
-   - 确保已安装 WireGuard 内核模块：`opkg update && opkg install kmod-wireguard wireguard-tools`
-   - 重启 Tailscale 服务：`/etc/init.d/tailscale restart`
-   - 如果 Tailscale 之前因为缺少内核模块而运行在用户空间模式，安装模块并重启服务后，它应该会自动切换到内核模式。
+* **原理：** Tailscale 可以使用两种模式运行：用户空间模式（userspace mode）和内核模式（kernel mode）。内核模式利用 Linux 内核内置的 WireGuard 模块，性能远高于用户空间模式，因为它减少了数据在内核空间和用户空间之间的复制，并且通常能更好地利用硬件特性。
+* **检查：** 登录 OpenWrt 的 SSH，运行 `tailscale status`。查看输出信息，或者检查 Tailscale 的日志 (`logread | grep tailscale`)，看是否有关于使用内核模块或用户空间模式的信息。较新版本的 Tailscale 可能会明确指出。也可以通过查看是否有 `wg0` (或其他 `wgX`) 的内核网络接口来判断 (`ip link show type wireguard`)。
+* **启用：**
+  * 确保已安装 WireGuard 内核模块：`opkg update && opkg install kmod-wireguard wireguard-tools`
+  * 重启 Tailscale 服务：`/etc/init.d/tailscale restart`
+  * 如果 Tailscale 之前因为缺少内核模块而运行在用户空间模式，安装模块并重启服务后，它应该会自动切换到内核模式。
 
 ### Vsftpd
 
@@ -420,8 +411,7 @@ opkg install luci-app-transmission
 
 随系统启动`/etc/init.d/transmission enable` ,
 
-启动`/etc/init.d/transmission start`,
-停止`/etc/init.d/transmission stop`，
+启动`/etc/init.d/transmission start`, 停止`/etc/init.d/transmission stop`，
 
 状态`/etc/init.d/transmission status`
 
@@ -437,7 +427,7 @@ opkg install luci-app-transmission
 
 ### qBittorrent
 
-https://op.supes.top/packages/aarch64_generic/
+https://op.supes.top/packages/aarch64\_generic/
 
 rblibtorrent
 
@@ -455,9 +445,7 @@ luci-app-qbittorrent
 
 **IP子网**
 
-192.168.1.0/24
-10.147.17.0/24
-100.0.0.0/8
+192.168.1.0/24 10.147.17.0/24 100.0.0.0/8
 
 ### Watchcat
 
@@ -469,9 +457,9 @@ luci-i18n-watchcat-zh-cn
 
 ### 高级设置
 
-https://op.dllkids.xyz/packages/aarch64_generic/
+https://op.dllkids.xyz/packages/aarch64\_generic/
 
-luci-app-advanced_1.20-26_all
+luci-app-advanced\_1.20-26\_all
 
 **hosts**
 
@@ -501,8 +489,7 @@ luci-app-advanced_1.20-26_all
 
 ## V2raya
 
-v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少geosite.dat, geoip.dat.
-其根本原因是缺少了整个v2ray核心.
+v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少geosite.dat, geoip.dat. 其根本原因是缺少了整个v2ray核心.
 
 安装v2ray-core插件即可
 
@@ -518,7 +505,7 @@ v2raya根本就没有带v2ray-core核心的任何文件, 因此会报错缺少ge
 
 ### Cloudflare优选IP
 
-https://github.com/yonggekkk/openwrt_win64-ddns-cdnip
+https://github.com/yonggekkk/openwrt\_win64-ddns-cdnip
 
 ## V2ray
 
@@ -578,9 +565,9 @@ https://github.com/felix-fly/v2ray-dnsmasq-dnscrypt?tab=readme-ov-file
 
 TCP 默认代理模式：GFW列表
 
-UDP 默认代理模式：不代理 
+UDP 默认代理模式：不代理
 
-路由器自身 TCP 代理模式：与 TCP 默认代理模式相同 
+路由器自身 TCP 代理模式：与 TCP 默认代理模式相同
 
 路由器自身 UDP 代理模式：与 UDP 默认代理模式相同
 
@@ -650,7 +637,7 @@ hsck.us
 
 启用：√
 
-MosDNS 配置文件：选择内置预设 
+MosDNS 配置文件：选择内置预设
 
 日志等级：error
 
@@ -666,9 +653,7 @@ MosDNS 日志文件：/dev/null
 
 解决方法：
 
-1、卸载包含 **mosdns** 字符的所有软件包
-2、删除数据 `rm -rf /etc/config/mosdns /etc/mosdns`
-3、重新安装 mosdns
+1、卸载包含 **mosdns** 字符的所有软件包 2、删除数据 `rm -rf /etc/config/mosdns /etc/mosdns` 3、重新安装 mosdns
 
 #### 全能推送
 
@@ -676,7 +661,7 @@ MosDNS 日志文件：/dev/null
 
 启用 ： √
 
-推送模式：钉钉 
+推送模式：钉钉
 
 Webhook：7002438326f5a29c3c8fcf6fa5d1e8ac8bfe21bd96b6a9db8394730604092e2f
 
@@ -750,9 +735,9 @@ SSH 错误尝试提醒：√
 
 免打扰开始时间：每天1点
 
-免打扰结束时间：每天6点 
+免打扰结束时间：每天6点
 
-MAC过滤：忽略列表内设备 
+MAC过滤：忽略列表内设备
 
 忽略列表：BE:96:14:10:EE:19 (ZeR2S.lan)
 
@@ -808,10 +793,10 @@ ZeroTier Network ID：8bd5124fd6f3b844
 
 **MiniUPnP 访问控制列表**
 
-| 备注               | 外部端口       | 内部地址      | 内部端口       | 操作    |
-|:----------------:|:----------:|:---------:|:----------:|:-----:|
+|        备注        |    外部端口    |    内部地址   |    内部端口    |   操作  |
+| :--------------: | :--------: | :-------: | :--------: | :---: |
 | Allow high ports | 1024-65535 | 0.0.0.0/0 | 1024-65535 | allow |
-| Default deny     | 0-65535    | 0.0.0.0/0 | 0-65535    | deny  |
+|   Default deny   |   0-65535  | 0.0.0.0/0 |   0-65535  |  deny |
 
 #### Watchcat
 
@@ -843,7 +828,7 @@ ModemManager 接口的名称：wan
 
 #### 接口
 
-##### 接口
+**接口**
 
 **tailscale**
 
@@ -875,24 +860,23 @@ DHCPv6 服务：混合模式
 
 设备：ztyqb6d54s
 
-##### 全局网络选项
+**全局网络选项**
 
-IPv6 ULA 前缀：
-~~fdc0:0e88:a625::/48~~
+IPv6 ULA 前缀： ~~fdc0:0e88:a625::/48~~
 
 #### DHCP/DNS
 
-##### 高级设置
+**高级设置**
 
 过滤 IPv6 记录：□
 
-##### 静态地址分配
+**静态地址分配**
 
-| 主机名     | MAC 地址            | IPv4 地址       | 租期  | DUID                 | IPv6 后缀（十六进制） |       |
-|:-------:|:-----------------:|:-------------:|:---:|:--------------------:|:-------------:|:-----:|
-| MiWiFi  | 5C:02:14:B1:B5:D6 | 192.168.2.176 | 12h | *无*                  | *无*           | ☰编辑删除 |
-| ZeNote8 | 28:16:7F:3A:03:BF | 192.168.2.227 | 12h | *无*                  | *无*           | ☰编辑删除 |
-| ZeNas   | 02:11:32:1F:38:6C | 192.168.2.110 | 12h | 000300010211321f386c | *无*           | ☰编辑删除 |
+|   主机名   |       MAC 地址      |    IPv4 地址    |  租期 |         DUID         | IPv6 后缀（十六进制） |       |
+| :-----: | :---------------: | :-----------: | :-: | :------------------: | :-----------: | :---: |
+|  MiWiFi | 5C:02:14:B1:B5:D6 | 192.168.2.176 | 12h |          _无_         |      _无_      | ☰编辑删除 |
+| ZeNote8 | 28:16:7F:3A:03:BF | 192.168.2.227 | 12h |          _无_         |      _无_      | ☰编辑删除 |
+|  ZeNas  | 02:11:32:1F:38:6C | 192.168.2.110 | 12h | 000300010211321f386c |      _无_      | ☰编辑删除 |
 
 ### IOT 兼容模式
 
