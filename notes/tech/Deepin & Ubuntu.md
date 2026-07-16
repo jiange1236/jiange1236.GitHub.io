@@ -1,6 +1,6 @@
 ---
 title: Deepin & Ubuntu
-date: 2026-04-05
+date: 2026-07-06
 category:
   - 计算机
 tags:
@@ -382,24 +382,53 @@ crontab -l
 NPM
 
 ```cmd
-npm config set registry https://registry.npmmirror.com
-npm cache clean --force
 npm config set prefix "D:\Nodejs\node_global"
 npm config set cache "D:\Nodejs\node_cache"
+npm config set registry https://registry.npmmirror.com
+npm cache clean --force
+npm config list
 ```
 
-设置系统环境变量 `D:\Nodejs\node_global\`
+设置系统环境变量 PATH `D:\Nodejs\node_global\` `D:\Nodejs\pnpm_bin`
 
 PNPM
 
 ```
-pnpm config set global-bin-dir "D:\Nodejs"
-pnpm config set cache-dir "D:\Nodejs\cache"
-pnpm config set state-dir "D:\Nodejs\state"
-pnpm config set global-dir "D:\Nodejs\global"
+pnpm config set global-bin-dir "D:\Nodejs\pnpm_bin"
+pnpm config set cache-dir "D:\Nodejs\pnpm_cache"
+pnpm config set state-dir "D:\Nodejs\pnpm_state"
+pnpm config set global-dir "D:\Nodejs\pnpm_global"
 pnpm config set registry https://registry.npmmirror.com
-pnpm c get
+pnpm config list
 ```
+
+UV
+
+设置系统环境变量
+
+| 变量名                   | 变量值                      | 作用                 |
+| --------------------- | ------------------------ | ------------------ |
+| UV_BIN_DIR            | D:\Nodejs\uv_bin         | 全局安装脚本 / 工具存放      |
+| UV_CACHE_DIR          | D:\Nodejs\uv_cache       | 依赖缓存               |
+| UV_PYTHON_INSTALL_DIR | D:\Nodejs\uv_python      | uv 自动下载的 Python 版本 |
+| UV_VENV_DIR           | D:\Nodejs\uv_virtualenvs | 全局虚拟环境默认目录         |
+Yarn
+
+```
+yarn config set global-folder "D:\Nodejs\yarn_global"
+yarn config set cache-folder "D:\Nodejs\yarn_cache"
+yarn config set prefix "D:\Nodejs\yarn_bin"
+```
+
+Bun
+
+设置系统环境变量
+
+| 变量名           | 变量值                  | 作用            |
+| ------------- | -------------------- | ------------- |
+| BUN_INSTALL   | D:\Nodejs\bun_global | 全局安装脚本 / 工具存放 |
+| BUN_CACHE_DIR | D:\Nodejs\bun_cache  | 依赖缓存          |
+
 
 ## Powershell
 
