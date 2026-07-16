@@ -1,6 +1,6 @@
 ---
 title: Python
-date: 2022-05-13
+date: 2022-05-13T00:00:00.000Z
 category:
   - 学习
 tag:
@@ -9,47 +9,49 @@ tag:
 article: true
 ---
 
-[toc]
+# Python
 
-## 变量
+\[toc]
 
-\## 整数转成浮点数	float(a) 
+### 变量
 
-\## 浮点型转成字符串 (输出字符串时不会看到引号哟)	str(b)
+\## 整数转成浮点数 float(a)
 
-\## 字符串转成布尔型 (有内容的字符串都会变成True)	bool(c)
+\## 浮点型转成字符串 (输出字符串时不会看到引号哟) str(b)
 
-\## 布尔型转成整数 (True会转成1，False会转成0)		int(d)
+\## 字符串转成布尔型 (有内容的字符串都会变成True) bool(c)
 
-\## 将整数变成对应的字符 (97刚好对应字符表中的字母a)		chr(97)
+\## 布尔型转成整数 (True会转成1，False会转成0) int(d)
 
-\## 将字符转成整数 (Python中字符和字符串表示法相同)		ord('a')
+\## 将整数变成对应的字符 (97刚好对应字符表中的字母a) chr(97)
+
+\## 将字符转成整数 (Python中字符和字符串表示法相同) ord('a')
 
 **关键字 keyword.kwlist**
 
 'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
 
-## 运算符
+### 运算符
 
-| **运算符**                    | **描述**                             |
-| ----------------------------- | ------------------------------------ |
-| [] [:]                        | 下标，切片                           |
-| **                            | 指数                                 |
-| ~ + -                         | 按位取反, 正负号                     |
-| */ %//                      | 乘，除，模，整除                     |
-| + -                           | 加，减                               |
-| >> <<                         | 右移，左移                           |
-| &                             | 按位与                               |
-| ^ \|                          | 按位异或，按位或                     |
-| <= < > >=                     | 小于等于，小于，大于，大于等于       |
-| == !=                         | 等于，不等于                         |
-| is is not                     | 身份运算符                           |
-| in not in                     | 成员运算符                           |
-| not and or                    | 逻辑运算符，优先级not > and >or      |
-| = += -= *=/= %=//= **= &= `                        |= ^= >>= <<=` ||
-| :=                            | 海象运算符，可在表达式内部为变量赋值 |
+| **运算符**                         | **描述**                 |
+| ------------------------------- | ---------------------- |
+| \[] \[:]                        | 下标，切片                  |
+| \*\*                            | 指数                     |
+| \~ + -                          | 按位取反, 正负号              |
+| \*/ %//                         | 乘，除，模，整除               |
+| + -                             | 加，减                    |
+| >> <<                           | 右移，左移                  |
+| &                               | 按位与                    |
+| ^ \|                            | 按位异或，按位或               |
+| <= < > >=                       | 小于等于，小于，大于，大于等于        |
+| == !=                           | 等于，不等于                 |
+| is is not                       | 身份运算符                  |
+| in not in                       | 成员运算符                  |
+| not and or                      | 逻辑运算符，优先级not > and >or |
+| = += -= \*=/= %=//= \*\*= &= \` | = ^= >>= <<=\`         |
+| :=                              | 海象运算符，可在表达式内部为变量赋值     |
 
-%.1f 一位小数浮点数	%d 整数		%s 字符串
+%.1f 一位小数浮点数 %d 整数 %s 字符串
 
 ```python
 print('%.1f华氏度 = %.1f摄氏度' % (f, c)) 
@@ -57,29 +59,29 @@ print(f'{f:.1f}华氏度 = {c:.1f}摄氏度')
 radius = float(input('请输入圆的半径: ')) 
 ```
 
-| **函数** | **说明**                                                     |
-| -------- | ------------------------------------------------------------ |
-| abs      | 返回一个数的绝对值，例如：abs(-1.3)会返回1.3。               |
-| bin      | 把一个整数转换成以'0b'开头的二进制字符串，例如：bin(123)会返回'0b1111011'。 |
-| chr      | 将Unicode编码转换成对应的字符，例如：chr(8364)会返回'€'。    |
-| hex      | 将一个整数转换成以'0x'开头的十六进制字符串，例如：hex(123)会返回'0x7b'。 |
-| input    | 从输入中读取一行，返回读到的字符串。                         |
-| len      | 获取字符串、列表等的长度。                                   |
-| max      | 返回多个参数或一个可迭代对象中的最大值，例如：max(12, 95, 37)会返回95。 |
-| min      | 返回多个参数或一个可迭代对象中的最小值，例如：min(12, 95, 37)会返回12。 |
-| oct      | 把一个整数转换成以'0o'开头的八进制字符串，例如：oct(123)会返回'0o173'。 |
-| open     | 打开一个文件并返回文件对象（后面会讲）。                     |
-| ord      | 将字符转换成对应的Unicode编码，例如：ord('€')会返回8364。    |
-| pow      | 求幂运算，例如：pow(2, 3)会返回8；pow(2, 0.5)会返回1.4142135623730951。 |
-| print    | 打印输出。                                                   |
-| range    | 构造一个范围序列，例如：range(100)会产生0到99的整数序列。    |
-| round    | 按照指定的精度对数值进行四舍五入，例如：round(1.23456, 4)会返回1.2346。 |
-| sum      | 对一个序列中的项从左到右进行求和运算，例如：sum(range(1, 101))会返回5050。 |
-| type     | 返回对象的类型，例如：type(10)会返回int；而 type('hello')会返回str。 |
+| **函数** | **说明**                                                  |
+| ------ | ------------------------------------------------------- |
+| abs    | 返回一个数的绝对值，例如：abs(-1.3)会返回1.3。                           |
+| bin    | 把一个整数转换成以'0b'开头的二进制字符串，例如：bin(123)会返回'0b1111011'。       |
+| chr    | 将Unicode编码转换成对应的字符，例如：chr(8364)会返回'€'。                  |
+| hex    | 将一个整数转换成以'0x'开头的十六进制字符串，例如：hex(123)会返回'0x7b'。           |
+| input  | 从输入中读取一行，返回读到的字符串。                                      |
+| len    | 获取字符串、列表等的长度。                                           |
+| max    | 返回多个参数或一个可迭代对象中的最大值，例如：max(12, 95, 37)会返回95。            |
+| min    | 返回多个参数或一个可迭代对象中的最小值，例如：min(12, 95, 37)会返回12。            |
+| oct    | 把一个整数转换成以'0o'开头的八进制字符串，例如：oct(123)会返回'0o173'。           |
+| open   | 打开一个文件并返回文件对象（后面会讲）。                                    |
+| ord    | 将字符转换成对应的Unicode编码，例如：ord('€')会返回8364。                  |
+| pow    | 求幂运算，例如：pow(2, 3)会返回8；pow(2, 0.5)会返回1.4142135623730951。 |
+| print  | 打印输出。                                                   |
+| range  | 构造一个范围序列，例如：range(100)会产生0到99的整数序列。                     |
+| round  | 按照指定的精度对数值进行四舍五入，例如：round(1.23456, 4)会返回1.2346。         |
+| sum    | 对一个序列中的项从左到右进行求和运算，例如：sum(range(1, 101))会返回5050。        |
+| type   | 返回对象的类型，例如：type(10)会返回int；而 type('hello')会返回str。        |
 
 **多行语句**
 
-如果语句很长，我们可以使用反斜杠(\)来实现多行语句
+如果语句很长，我们可以使用反斜杠()来实现多行语句
 
 ```python
 total = item_one + \ 
@@ -87,14 +89,14 @@ total = item_one + \
         item_three  
 ```
 
-在 [], {}, 或 () 中的多行语句，不需要使用反斜杠(\)，例如：
+在 \[], {}, 或 () 中的多行语句，不需要使用反斜杠()，例如：
 
 ```python
 total = ['item_one', 'item_two', 'item_three',
         'item_four', 'item_five']
 ```
 
-## 判断
+### 判断
 
 在Python中，要构造分支结构可以使用if、elif和else关键字
 
@@ -115,7 +117,7 @@ print((username == 'admin') and '身份验证成功!' or '身份验证失败!')
 
 如果要构造出更多的分支，可以使用if...elif...else...结构或者嵌套的if...else...结构
 
-## 循环
+### 循环
 
 ```python
 for i in range(1, 10):
@@ -150,69 +152,69 @@ else:
 	raise ValueError("no found")
 ```
 
-## 字符
+### 字符
 
 **运算**
 
-拼接 +	用,拼接字符串列表 ','.join([s])		重复3次 *3	
+拼接 + 用,拼接字符串列表 ','.join(\[s]) 重复3次 \*3
 
-成员运算 in/not in	索引 s[i]	切片 s[i:j:k]	长度 len(s)	比较 >=
+成员运算 in/not in 索引 s\[i] 切片 s\[i:j:k] 长度 len(s) 比较 >=
 
-遍历 for ch in s		查找 s.find('i')		索引位置 s.index('i')
+遍历 for ch in s 查找 s.find('i') 索引位置 s.index('i')
 
-首字母大写 s.capitalize()		所有首字母大写 s.title	所有字符大写 s.upper
+首字母大写 s.capitalize() 所有首字母大写 s.title 所有字符大写 s.upper
 
-开头 s.startswith('i')		结尾 s.endswith('i')
+开头 s.startswith('i') 结尾 s.endswith('i')
 
-是否数字 s.isdigit()		是否字母 s.isalpha()		是否数字和字母 s.isalnum()
+是否数字 s.isdigit() 是否字母 s.isalpha() 是否数字和字母 s.isalnum()
 
 https://docs.python.org/zh-cn/3/library/stdtypes.html#string-methods
 
 **转义字符**
 
-| **转义字符** | **描述**                  |
-| ------------ | ------------------------- |
-| \n           | 换行                      |
-| \t           | 水平制表符                |
-| \'           | 单引号                    |
-| \"           | 双引号                    |
-| \\           | 反斜杠                    |
-| \uXXXX       | XXXX表示一个4位的16进制数 |
+| **转义字符** | **描述**           |
+| -------- | ---------------- |
+| \n       | 换行               |
+| \t       | 水平制表符            |
+| '        | 单引号              |
+| "        | 双引号              |
+| \\       | 反斜杠              |
+| \uXXXX   | XXXX表示一个4位的16进制数 |
 
 **使用r可以让反斜杠不发生转义：如 r"this is a line with \n" 则\n会显示，并不是换行**
 
 **字符串格式化**
 
-| **变量值** | **占位符** | **格式化结果** | **说明**               |
-| ---------- | ---------- | -------------- | ---------------------- |
-| 3.1415926  | `{:.2f}`   | '3.14'         | 保留小数点后两位       |
-| 3.1415926  | `{:+.2f}`  | '+3.14'        | 带符号保留小数点后两位 |
-| -1         | `{:+.2f}`  | '-1.00'        | 带符号保留小数点后两位 |
-| 3.1415926  | `{:.0f}`   | '3'            | 不带小数               |
-| 123        | `{:0>10d}` | 0000000123     | 左边补0，补够10位      |
-| 123        | `{:x<10d}` | 123xxxxxxx     | 右边补x ，补够10位     |
-| 123        | `{:>10d}`  | ' 123'         | 左边补空格，补够10位   |
-| 123        | `{:<10d}`  | '123 '         | 右边补空格，补够10位   |
-| 123456789  | `{:,}`     | '123,456,789'  | 逗号分隔格式           |
-| 0.123      | `{:.2%}`   | '12.30%'       | 百分比格式             |
-| 123456789  | `{:.2e}`   | '1.23e+08'     | 科学计数法格式         |
+| **变量值**   | **占位符**    | **格式化结果**     | **说明**      |
+| --------- | ---------- | ------------- | ----------- |
+| 3.1415926 | `{:.2f}`   | '3.14'        | 保留小数点后两位    |
+| 3.1415926 | `{:+.2f}`  | '+3.14'       | 带符号保留小数点后两位 |
+| -1        | `{:+.2f}`  | '-1.00'       | 带符号保留小数点后两位 |
+| 3.1415926 | `{:.0f}`   | '3'           | 不带小数        |
+| 123       | `{:0>10d}` | 0000000123    | 左边补0，补够10位  |
+| 123       | `{:x<10d}` | 123xxxxxxx    | 右边补x ，补够10位 |
+| 123       | `{:>10d}`  | ' 123'        | 左边补空格，补够10位 |
+| 123       | `{:<10d}`  | '123 '        | 右边补空格，补够10位 |
+| 123456789 | `{:,}`     | '123,456,789' | 逗号分隔格式      |
+| 0.123     | `{:.2%}`   | '12.30%'      | 百分比格式       |
+| 123456789 | `{:.2e}`   | '1.23e+08'    | 科学计数法格式     |
 
 ```
 print(f'{name}的成绩 ===>{scores:.2f}')
 'tea for too'.replace('too', 'two')    ## 字符串替换
 ```
 
-## 列表 list[]
+### 列表 list\[]
 
 **运算**
 
-拼接 +	重复3次 *3	
+拼接 + 重复3次 \*3
 
-成员运算 in/not in	索引 s[i]	切片 s[i:j:k]	长度 len(s)	比较 >=
+成员运算 in/not in 索引 s\[i] 切片 s\[i:j:k] 长度 len(s) 比较 >=
 
-遍历 for ch in s		索引位置 s.index('i',n)	查找出现次数 s.count('i')
+遍历 for ch in s 索引位置 s.index('i',n) 查找出现次数 s.count('i')
 
-排序 s.sort()		反转 s.reverse()
+排序 s.sort() 反转 s.reverse()
 
 ```python
 items.append('i')    ## 使用append方法在列表尾部添加元素
@@ -225,7 +227,7 @@ items.clear()    ## 清空列表中的元素
 
 **切片**
 
-运算符是[i:j:k]，其中i是开始索引，索引对应的字符可以取到；j是结束索引，索引对应的字符不能取到；k是步长，默认值为1，表示从前向后获取相邻字符的连续切片，所以:k部分可以省略
+运算符是\[i:j:k]，其中i是开始索引，索引对应的字符可以取到；j是结束索引，索引对应的字符不能取到；k是步长，默认值为1，表示从前向后获取相邻字符的连续切片，所以:k部分可以省略
 
 ```python
   def fib(n): ## 通过yield将普通函数改造成生成器函数，fib(n)即生成一个n个元素的列表    
@@ -252,7 +254,7 @@ transposed_matrix= [[row[i] for row in matrix] for i in range(4)]
 '''transposed_matrix=[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]'''
 ```
 
-## 元祖（不可变）tuple()
+### 元祖（不可变）tuple()
 
 ```python
 a, b, *c = range(1, 10) ## 元祖解包 
@@ -266,21 +268,21 @@ L = [('Italy', 'Rome'), ('France', 'Paris')] ## 列表转换为字典
 dict(iter(L)) ## {'Italy': 'Rome', 'US': 'Washington DC'}  
 ```
 
-## 集合（无序，无重复）set()
+### 集合（无序，无重复）set()
 
 **运算**
 
-成员运算 in/not in	比较（子集/包含） >=
+成员运算 in/not in 比较（子集/包含） >=
 
-交集① s1 & s2		交集② s1.intersection(s2)	判断是否有交集 s1.isdisjoint(s2)
+交集① s1 & s2 交集② s1.intersection(s2) 判断是否有交集 s1.isdisjoint(s2)
 
-并集① s1 | s2		并集② s1.union(s2)
+并集① s1 | s2 并集② s1.union(s2)
 
-差集① s1 - s2		差集② s1.difference(s2)
+差集① s1 - s2 差集② s1.difference(s2)
 
-对称差① s1 ^ s2	对称差② s1.symmetric_difference(s2)	对称差③ (s1 | s2) - (s1 & s2)
+对称差① s1 ^ s2 对称差② s1.symmetric\_difference(s2) 对称差③ (s1 | s2) - (s1 & s2)
 
-​                set1.add(55)    ## 通过add方法添加元素 set1.update({1, 10, 100, 1000})    ## 通过update方法添加元素 set1.discard(99)    ## 通过discard方法删除指定元素 if 10 in set1:    ## 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常    set1.remove(10) print(set1.pop())    ## pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear()    ## clear方法可以清空整个集合              
+​ set1.add(55) ## 通过add方法添加元素 set1.update({1, 10, 100, 1000}) ## 通过update方法添加元素 set1.discard(99) ## 通过discard方法删除指定元素 if 10 in set1: ## 通过remove方法删除指定元素，元素不在集合中会引发KeyError异常 set1.remove(10) print(set1.pop()) ## pop方法可以从集合中随机删除一个元素并返回该元素 set1.clear() ## clear方法可以清空整个集合
 
 **空集合/不可变集合**
 
@@ -294,7 +296,7 @@ print(set1.pop())    ## pop方法可以从集合中随机删除一个元素并�
 set1.clear()    ## clear方法可以清空整个集合
 ```
 
-## 字典（无序）dict{}
+### 字典（无序）dict{}
 
 ```python
 s = {'i':'x1','j':'y1'}    #{}字面量语法
@@ -303,7 +305,7 @@ s = dict(i='x1', j='y1')    #内置函数dict
 
 **运算**
 
-成员运算 in/not in	键值对数量 len(s)
+成员运算 in/not in 键值对数量 len(s)
 
 ```python
 s.get(key, α)    ## 按照键值key取值，如果取不到返回None或设定的默认值α
@@ -336,15 +338,15 @@ s = {x: x ** 3 for x in range(1, 6)}    #生成式语法，x的3次方
 s2 = {key: value for key, value in s1.items() if value > α}    #生成式遍历
 ```
 
-## 面向对象
+### 面向对象
 
-- 单一职责原则 （SRP）- 一个类只做该做的事情（类的设计要高内聚）
-- 开闭原则 （OCP）- 软件实体应该对扩展开发对修改关闭
-- 依赖倒转原则（DIP）- 面向抽象编程（在弱类型语言中已经被弱化）
-- 里氏替换原则（LSP） - 任何时候可以用子类对象替换掉父类对象
-- 接口隔离原则（ISP）- 接口要小而专不要大而全（Python中没有接口的概念）
-- 合成聚合复用原则（CARP） - 优先使用强关联关系而不是继承关系复用代码
-- 最少知识原则（迪米特法则，LoD）- 不要给没有必然联系的对象发消息
+* 单一职责原则 （SRP）- 一个类只做该做的事情（类的设计要高内聚）
+* 开闭原则 （OCP）- 软件实体应该对扩展开发对修改关闭
+* 依赖倒转原则（DIP）- 面向抽象编程（在弱类型语言中已经被弱化）
+* 里氏替换原则（LSP） - 任何时候可以用子类对象替换掉父类对象
+* 接口隔离原则（ISP）- 接口要小而专不要大而全（Python中没有接口的概念）
+* 合成聚合复用原则（CARP） - 优先使用强关联关系而不是继承关系复用代码
+* 最少知识原则（迪米特法则，LoD）- 不要给没有必然联系的对象发消息
 
 **类**
 
@@ -447,7 +449,7 @@ def singleton(cls):
 
 **运算符重载**
 
-我们可以对类的代码稍作修改，使得两个对象可以直接用<进行大小的比较。这里用到技术叫运算符重载，Python中要实现对<运算符的重载，需要在类中添加一个名为__lt__的魔术方法。很显然，魔术方法__lt__中的lt是英文单词“less than”的缩写，以此类推，魔术方法__gt__对应>运算符，魔术方法__le__对应<=运算符，__ge__对应>=运算符，__eq__对应==运算符，__ne__对应!=运算符。
+我们可以对类的代码稍作修改，使得两个对象可以直接用<进行大小的比较。这里用到技术叫运算符重载，Python中要实现对<运算符的重载，需要在类中添加一个名为\_\_lt\_\_的魔术方法。很显然，魔术方法\_\_lt\_\_中的lt是英文单词“less than”的缩写，以此类推，魔术方法\_\_gt\_\_对应>运算符，魔术方法\_\_le\_\_对应<=运算符，\_\_ge\_\_对应>=运算符，\_\_eq\_\_对应==运算符，\_\_ne\_\_对应!=运算符。
 
 ```python
 def __lt__(self, other):    ## 花色相同比较点数的大小
@@ -480,19 +482,17 @@ class Suite(Enum):    """花色(枚举)"""
     SPADE, HEART, CLUB, DIAMOND = range(4)
 ```
 
-## 函数
+### 函数
 
 def func(x, y, z) -> str:
 
 str表示函数返回值为str类型
 
-位置参数 func(a, b, c)    关键字参数 func(x=a, y=b, z=c)    命名关键字函数 func(*, a, b, c)
+位置参数 func(a, b, c) 关键字参数 func(x=a, y=b, z=c) 命名关键字函数 func(\*, a, b, c)
 
-- 如果你希望形参名称对用户来说不可用，则使用仅限位置形参。 这适用于形参名称没有实际意义，以及当你希望强制规定调用时的参数顺序，或是需要同时收受一些位置形参和任意关键字形参等情况。
-
-- 当形参名称有实际意义，以及显式指定形参名称可使函数定义更易理解，或者当你想要防止用户过于依赖传入参数的位置时，则使用仅限关键字形参。
-
-- 对于 API 来说，使用仅限位置形参可以防止形参名称在未来被修改时造成破坏性的 API 变动。
+* 如果你希望形参名称对用户来说不可用，则使用仅限位置形参。 这适用于形参名称没有实际意义，以及当你希望强制规定调用时的参数顺序，或是需要同时收受一些位置形参和任意关键字形参等情况。
+* 当形参名称有实际意义，以及显式指定形参名称可使函数定义更易理解，或者当你想要防止用户过于依赖传入参数的位置时，则使用仅限关键字形参。
+* 对于 API 来说，使用仅限位置形参可以防止形参名称在未来被修改时造成破坏性的 API 变动。
 
 ```python
 def c1(*args):    ## 可接受0或n个位置/关键字参数，参数变成一个元组 → (a,b,c)
@@ -608,7 +608,7 @@ download('MySQL从删库到跑路.avi')
 upload('Python从入门到住院.pdf')
 ```
 
-## 迭代器与生成器
+### 迭代器与生成器
 
 **迭代器**
 
@@ -666,7 +666,7 @@ for i in fib:
 
 生成器是一个返回迭代器的函数，只能用于迭代操作，更简单点理解生成器就是语法简化版的迭代器。
 
-yield 和 return 最大的区别在于，到达 yield 的时候生成器的执行状态会挂起并保留局部变量。在下一次调用生成器 __next__() 方法的时候，函数会恢复执行。
+yield 和 return 最大的区别在于，到达 yield 的时候生成器的执行状态会挂起并保留局部变量。在下一次调用生成器 **next**() 方法的时候，函数会恢复执行。
 
 ```python
 def Fib(num):
@@ -706,7 +706,7 @@ print(gen.send(20))
 print(gen.send(30))
 ```
 
-## 多进程、多线程
+### 多进程、多线程
 
 **多进程**
 
@@ -778,7 +778,7 @@ if __name__ == '__main__':
     main()
 ```
 
-## 异常处理
+### 异常处理
 
 ```python
 BaseException
@@ -849,21 +849,21 @@ BaseException
 
 **try/except...else...finally**
 
-![](./attachments/Python.assets/try_except_else_finally.png)
+![](../../.gitbook/assets/try_except_else_finally.png)
 
 **raise**
 
-![](./attachments/Python.assets/raise.png)
+![](../../.gitbook/assets/raise.png)
 
-## 图形用户界面GUI
+### 图形用户界面GUI
 
 Python默认的GUI开发模块是tkinter，如果真的需要使用Python开发GUI应用，wxPython、PyQt、PyGTK等模块都是不错的选择
 
 **文件读写**
 
-'r' 读取 （默认）	'w' 写入（会先截断之前的内容）	'x' 写入，如果文件已经存在会产生异常
+'r' 读取 （默认） 'w' 写入（会先截断之前的内容） 'x' 写入，如果文件已经存在会产生异常
 
-'a' 追加，将内容写入到已有文件的末尾		'b' 二进制模式		't' 文本模式（默认）
+'a' 追加，将内容写入到已有文件的末尾 'b' 二进制模式 't' 文本模式（默认）
 
 '+' 更新（既可以读又可以写）
 
@@ -881,7 +881,7 @@ isfile(path)：如果path是普通文件，则返回 True。
 
 isdir(path)：如果path是目录（文件夹），则返回True。
 
-join(path, *paths)：合理地拼接一个或多个路径部分。返回值是path和paths所有值的连接，每个非空部分后面都紧跟一个目录分隔符 (os.sep)，除了最后一部分。这意味着如果最后一部分为空，则结果将以分隔符结尾。如果参数中某个部分是绝对路径，则绝对路径前的路径都将被丢弃，并从绝对路径部分开始连接。
+join(path, \*paths)：合理地拼接一个或多个路径部分。返回值是path和paths所有值的连接，每个非空部分后面都紧跟一个目录分隔符 (os.sep)，除了最后一部分。这意味着如果最后一部分为空，则结果将以分隔符结尾。如果参数中某个部分是绝对路径，则绝对路径前的路径都将被丢弃，并从绝对路径部分开始连接。
 
 splitext(path)：将路径path拆分为一对，即(root, ext)，使得root + ext == path，其中ext为空或以英文句点开头，且最多包含一个句点。
 
@@ -933,7 +933,7 @@ with open('scores.csv', 'r') as file:
         print()
 ```
 
-## 图像处理
+### 图像处理
 
 ```python
 from PIL import Image
@@ -978,7 +978,7 @@ image.show()    ## 显示图像
 image.save('result.png')    ## 保存图像
 ```
 
-## 网络资源
+### 网络资源
 
 **JSON**
 
@@ -1022,19 +1022,19 @@ if __name__ == '__main__':
 
 Python提供了re模块来支持正则表达式相关操作，下面是re模块中的核心函数
 
-| **函数**                                     | **说明**                                                     |
-| -------------------------------------------- | ------------------------------------------------------------ |
-| compile(pattern, flags=0)                    | 编译正则表达式返回正则表达式对象                             |
-| match(pattern, string, flags=0)              | 用正则表达式匹配字符串 成功返回匹配对象 否则返回None         |
-| search(pattern, string, flags=0)             | 搜索字符串中第一次出现正则表达式的模式 成功返回匹配对象 否则返回None |
-| split(pattern, string, maxsplit=0, flags=0)  | 用正则表达式指定的模式分隔符拆分字符串 返回列表              |
+| **函数**                                       | **说明**                                    |
+| -------------------------------------------- | ----------------------------------------- |
+| compile(pattern, flags=0)                    | 编译正则表达式返回正则表达式对象                          |
+| match(pattern, string, flags=0)              | 用正则表达式匹配字符串 成功返回匹配对象 否则返回None             |
+| search(pattern, string, flags=0)             | 搜索字符串中第一次出现正则表达式的模式 成功返回匹配对象 否则返回None     |
+| split(pattern, string, maxsplit=0, flags=0)  | 用正则表达式指定的模式分隔符拆分字符串 返回列表                  |
 | sub(pattern, repl, string, count=0, flags=0) | 用指定的字符串替换原字符串中与正则表达式匹配的模式 可以用count指定替换的次数 |
-| fullmatch(pattern, string, flags=0)          | match函数的完全匹配（从字符串开头到结尾）版本                |
-| findall(pattern, string, flags=0)            | 查找字符串所有与正则表达式匹配的模式 返回字符串列表          |
-| finditer(pattern, string, flags=0)           | 查找字符串所有与正则表达式匹配的模式 返回一个迭代器          |
-| purge()                                      | 清除隐式编译的正则表达式的缓存                               |
-| re.I/ re.IGNORECASE                          | 忽略大小写匹配标记                                           |
-| re.M/ re.MULTILINE                           | 多行匹配标记                                                 |
+| fullmatch(pattern, string, flags=0)          | match函数的完全匹配（从字符串开头到结尾）版本                 |
+| findall(pattern, string, flags=0)            | 查找字符串所有与正则表达式匹配的模式 返回字符串列表                |
+| finditer(pattern, string, flags=0)           | 查找字符串所有与正则表达式匹配的模式 返回一个迭代器                |
+| purge()                                      | 清除隐式编译的正则表达式的缓存                           |
+| re.I/ re.IGNORECASE                          | 忽略大小写匹配标记                                 |
+| re.M/ re.MULTILINE                           | 多行匹配标记                                    |
 
 ```python
 import re    ## 验证输入用户名和QQ号是否有效并给出对应的提示信息
@@ -1078,16 +1078,16 @@ for sentence in sentences_list:
     print(sentence)
 ```
 
-## 爬虫
+### 爬虫
 
 https://zhuanlan.zhihu.com/p/33542626
 
-- 下载数据 - urllib/ requests/ aiohttp/ httpx/ Selenium/ Scrapy。
-- 解析数据 - re/ lxml/ beautifulsoup4/ pyquery。
-- 缓存和持久化 - mysqlclient/ sqlalchemy/ peewee/ redis/ pymongo。
-- 生成数字签名 - hashlib。
-- 序列化和压缩 - pickle/ json/ zlib。
-- 调度器 - multiprocessing/ threading/ concurrent.futures。
+* 下载数据 - urllib/ requests/ aiohttp/ httpx/ Selenium/ Scrapy。
+* 解析数据 - re/ lxml/ beautifulsoup4/ pyquery。
+* 缓存和持久化 - mysqlclient/ sqlalchemy/ peewee/ redis/ pymongo。
+* 生成数字签名 - hashlib。
+* 序列化和压缩 - pickle/ json/ zlib。
+* 调度器 - multiprocessing/ threading/ concurrent.futures。
 
 **正则表达式法**
 
@@ -1180,7 +1180,7 @@ if __name__ == '__main__':
     main()
 ```
 
-## 文档测试
+### 文档测试
 
 **help()函数**
 
@@ -1233,7 +1233,7 @@ class my_cla:
 doctest.testmod()
 ```
 
-## 数据结构和算法
+### 数据结构和算法
 
 算法：解决问题的方法和步骤
 
@@ -1241,23 +1241,23 @@ doctest.testmod()
 
 渐近时间复杂度的大O标记：
 
- \- 常量时间复杂度 - 布隆过滤器/ 哈希存储
+\- 常量时间复杂度 - 布隆过滤器/ 哈希存储
 
- \- 对数时间复杂度 - 折半查找（二分查找）
+\- 对数时间复杂度 - 折半查找（二分查找）
 
- \- 线性时间复杂度 - 顺序查找/ 计数排序
+\- 线性时间复杂度 - 顺序查找/ 计数排序
 
- \- 对数线性时间复杂度 - 高级排序算法（归并排序、快速排序）
+\- 对数线性时间复杂度 - 高级排序算法（归并排序、快速排序）
 
- \- 平方时间复杂度 - 简单排序算法（选择排序、插入排序、冒泡排序）
+\- 平方时间复杂度 - 简单排序算法（选择排序、插入排序、冒泡排序）
 
- \- 立方时间复杂度 - Floyd算法/ 矩阵乘法运算
+\- 立方时间复杂度 - Floyd算法/ 矩阵乘法运算
 
- \- 几何级数时间复杂度 - 汉诺塔
+\- 几何级数时间复杂度 - 汉诺塔
 
- \- 阶乘时间复杂度 - 旅行经销商问题 - NPC
+\- 阶乘时间复杂度 - 旅行经销商问题 - NPC
 
-## 插件
+### 插件
 
 Auto Rename Tag
 
@@ -1305,11 +1305,11 @@ vscode-icons
 
 vscode-fileheader
 
-## Conda
+### Conda
 
 \#安装 conda install ...
 
-## pip
+### pip
 
 **Linux**
 
@@ -1416,7 +1416,7 @@ PS:附上一些 Python 相关的好文：
 
 二、Python 社区
 
-1．Python Tip 社区｜ http://www.pythontip.com/coding/code_oj
+1．Python Tip 社区｜ http://www.pythontip.com/coding/code\_oj
 
 强烈推荐 Python Tip, 有刷题挑战赛，同时，也有很多在线教程！练手实操必备！
 
@@ -1428,7 +1428,7 @@ PS:附上一些 Python 相关的好文：
 
 介绍一些入门的资料，对于有编程经验的同学来讲，入门资料学习并不是很费力。
 
-1．简明教程｜ http://itlab.idcquan.com/linux/manual/python_chinese/index.html
+1．简明教程｜ http://itlab.idcquan.com/linux/manual/python\_chinese/index.html
 
 入门教程里，简明教程算是细节介绍相对详细的了，知识面也覆盖得挺全，入门资料的好选择。
 
@@ -1454,7 +1454,7 @@ github 版本，教程内容覆盖很全，也有实战项目介绍。
 
 7．Vamei 的 Python 快速教程｜ http://www.cnblogs.com/vamei/archive/2012/09/13/2682778.html
 
-话说，我还加入了博主的粉丝群，后来加入了微信群，逗比一枚啊，现在好像去新加坡深造去了！博客文章还是很详细的~
+话说，我还加入了博主的粉丝群，后来加入了微信群，逗比一枚啊，现在好像去新加坡深造去了！博客文章还是很详细的\~
 
 总结到这儿我已经有乱花渐欲迷人眼的感觉了！光是入门就这么多资料，看得过来吗？看完得到猴年马月啊！所以必须痛下决心，选择自己觉得好的就 OK！青菜萝卜，各有所爱，别人觉得好的，可能在你这儿就是看着不舒服！好吧，自己就选择简明，笨办法，Crossin，还有，Codecademy!Ok, 暂时就这样了！
 
@@ -1532,7 +1532,7 @@ Python 制图的入门资料，强烈推荐！在线版的资料，作者排版�
 
 语法：我怎样用某种编程语言表达这些算法，让计算机能够理解。
 
-系统基础：为什么 while(1) 时线程永远无法结束？为什么 int *foo() { int x = 0 ; return &x; } 是不可行的？
+系统基础：为什么 while(1) 时线程永远无法结束？为什么 int \*foo() { int x = 0 ; return \&x; } 是不可行的？
 
 启蒙阶段的初学者若选择 C 语言作为第一门语言会很困难并且枯燥，这是因为他们被迫要同时学习这三个部分，在能做出东西前要花费很多时间。
 
@@ -1542,7 +1542,7 @@ Python 制图的入门资料，强烈推荐！在线版的资料，作者排版�
 
 \1. 完成 Learn Python The Hard Way ｜ http://learnpythonthehardway.org/book/ 或者《「笨办法」学 Python（第 3 版））｜ http://book.douban.com/subject/26264642/
 
-\2. 完成 MIT 计算机导论课｜https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-6#.VNL-zlWUdQ0 （如果你英语不过关：麻省理工学院公开课：计算机科学及编程导论｜ http://www.xuetangx.com/courses/MITx/6_00_1x/2014_T2/about ）。MOOC 是学习编程的一个有效途径。虽然该课程的教学语言为 Python，但作为一门优秀的导论课，它强调学习计算机科学领域里的重要概念和范式，而不仅仅是教你特定的语言。如果你不是科班生，这能让你在自学时开阔眼界；课程内容：计算概念，Python 编程语言，一些简单的数据结构与算法，测试与调试。支线任务：完成《Python 核心编程》｜ http://book.douban.com/subject/3112503/
+\2. 完成 MIT 计算机导论课｜https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-6#.VNL-zlWUdQ0 （如果你英语不过关：麻省理工学院公开课：计算机科学及编程导论｜ http://www.xuetangx.com/courses/MITx/6\_00\_1x/2014\_T2/about ）。MOOC 是学习编程的一个有效途径。虽然该课程的教学语言为 Python，但作为一门优秀的导论课，它强调学习计算机科学领域里的重要概念和范式，而不仅仅是教你特定的语言。如果你不是科班生，这能让你在自学时开阔眼界；课程内容：计算概念，Python 编程语言，一些简单的数据结构与算法，测试与调试。支线任务：完成《Python 核心编程》｜ http://book.douban.com/subject/3112503/
 
 \3. 完成 Harvard CS 50｜ https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#.VNyhfFWUdQ1 （如果你英语不过关：完成哈佛大学公开课：计算机科学 cs50｜ http://v.163.com/special/opencourse/cs50.html ）。同样是导论课，但这门课与 MIT 的导论课互补。教学语言涉及 C, PHP, JavaScript + SQL, HTML + CSS，内容的广度与深度十分合理，还能够了解到最新的一些科技成果，可以很好激发学习计算机的兴趣。支线任务：
 
@@ -1550,7 +1550,7 @@ Python 制图的入门资料，强烈推荐！在线版的资料，作者排版�
 
 完成《C 语言编程》｜ http://book.douban.com/subject/1786294/
 
-[可选] 如果你的目标是成为一名 Hacker：阅读 Hacker's Delight ｜ http://book.douban.com/subject/1784887/
+\[可选] 如果你的目标是成为一名 Hacker：阅读 Hacker's Delight ｜ http://book.douban.com/subject/1784887/
 
 PS：如果教育对象还是一个孩子，以下的资源会很有帮助（年龄供参考）：
 
@@ -1576,7 +1576,7 @@ Y = 用于实现代码的时间，即「利用计算机」部分」
 
 要想提高编程能力，就得优化 X，Y 与函数 F(X, Y)，很少有书的内容能同时着重集中在这三点上，但有一本书做到了—— Structure and Interpretation of Computer Programs(SICP) 《计算机程序的构造和解释》｜ http:// mitpress.mit.edu/sicp/full-text/book/ book.html ，它为你指明了这三个变量的方向。在阅读 SICP 之前，你也许能通过调用几个函数解决一个简单问题。但阅读完 SICP 之后，你会学会如何将问题抽象并且分解，从而处理更复杂更庞大的问题，这是编程能力巨大的飞跃，这会在本质上改变你思考问题以及用代码解决问题的方式。此外，SICP 的教学语言为 Scheme，可以让你初步了解函数式编程。更重要的是，他的语法十分简单，你可以很快学会它，从而把更多的时间用于学习书中的编程思想以及复杂问题的解决之道上。
 
-Peter Norvig 曾经写过一篇非常精彩的 SICP书评｜ http://www.amazon.com/review/R403HR4VL71K8/ref=cm_cr_rdp_perm ，其中有这样一段：
+Peter Norvig 曾经写过一篇非常精彩的 SICP书评｜ http://www.amazon.com/review/R403HR4VL71K8/ref=cm\_cr\_rdp\_perm ，其中有这样一段：
 
 To use an analogy, if SICP were about automobiles, it would be for the person who wants to know how cars work, how they are built, and how one might design fuel-efficient, safe, reliable vehicles for the 21 st century. The people who hate SICP are the ones who just want to know how to drive their car on the highway, just like everyone else.
 
