@@ -1,6 +1,6 @@
 ---
 title: Anaconda介绍、安装及使用教程
-date: 2026-07-06T00:00:00.000Z
+date: 2026-07-17
 category:
   - 学习
 tag:
@@ -22,7 +22,7 @@ pip install pyopenssl
 
 打开这个主的Anaconda Prompt，
 
-![3C6B41BE970B42EC83654EA0ECB4E0C2](../../.gitbook/assets/3C6B41BE970B42EC83654EA0ECB4E0C2.jpeg)
+![3C6B41BE970B42EC83654EA0ECB4E0C2](./attachments/Anaconda介绍、安装及使用教程.assets/3C6B41BE970B42EC83654EA0ECB4E0C2.jpeg)
 
 先执行，conda update conda，先把conda更新到最新版
 
@@ -30,15 +30,15 @@ pip install pyopenssl
 
 Anaconda已经更新完毕，启动anaconda-navigator，发现在配置的环境中，只有base这个环境更新到最新。
 
-![5FB51640E34C4D75AD9357A355FB5858](../../.gitbook/assets/5FB51640E34C4D75AD9357A355FB5858.jpeg)
+![5FB51640E34C4D75AD9357A355FB5858](./attachments/Anaconda介绍、安装及使用教程.assets/5FB51640E34C4D75AD9357A355FB5858.jpeg)
 
 而自己常用的自定义配置的环境还是以前的版本
 
-![](../../.gitbook/assets/43C30E546EF74EF597149B56330AD525.jpeg)
+![](./attachments/Anaconda介绍、安装及使用教程.assets/43C30E546EF74EF597149B56330AD525.jpeg)
 
 进入到需要升级的配置环境
 
-![](../../.gitbook/assets/8E72F456C609436EB4D05F1EAE10EF4A.jpeg)
+![](./attachments/Anaconda介绍、安装及使用教程.assets/8E72F456C609436EB4D05F1EAE10EF4A.jpeg)
 
 输入conda update --all
 
@@ -77,7 +77,7 @@ conda config --set show_channel_urls yes
 conda config --show
 ```
 
-![](../../.gitbook/assets/D812C5AE9D3C4898B3DDCC7F51F13E5B.jpeg)
+![](./attachments/Anaconda介绍、安装及使用教程.assets/D812C5AE9D3C4898B3DDCC7F51F13E5B.jpeg)
 
 这个是默认的，如果你添加成功了，会在上面出现两个刚才添加的地址
 
@@ -263,19 +263,19 @@ Linux（x86 / Power8）
 
 注意：若有错误提示信息“You cannot install Anaconda in this location”则重新选择“Install for me only”并点击下一步。
 
-![img](../../.gitbook/assets/wps6BE4.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BE4.tmp.jpg)
 
 4.“Installation Type”部分，可以点击“Change Install Location”来改变安装位置。标准的安装路径是在用户的家目录下。在这一步我没有改变安装位置。若选择默认安装路径，则直接点击“Install”进行安装。
 
-![img](../../.gitbook/assets/wps6BE5.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BE5.tmp.jpg)
 
 5.待“Installation”部分结束，在“Summary”部分若看到“The installation was completed successfully.”则安装成功，直接点击“Close”关闭对话框。
 
-![img](../../.gitbook/assets/wps6BE6.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BE6.tmp.jpg)
 
 6.在mac的Launchpad中可以找到名为“Anaconda-Navigator”的图标，点击打开。
 
-![img](../../.gitbook/assets/wps6BE7.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BE7.tmp.jpg)
 
 7.若“Anaconda-Navigator”成功启动，则说明真正成功地安装了Anaconda；如果未成功，请务必仔细检查以上安装步骤。
 
@@ -327,11 +327,11 @@ Linux（x86 / Power8）
 
 在终端中输入命令condal list，如果Anaconda被成功安装，则会显示已经安装的包名和版本号。
 
-![img](../../.gitbook/assets/wps6BE8.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BE8.tmp.jpg)
 
 在终端中输入python。这条命令将会启动Python交互界面，如果Anaconda被成功安装并且可以运行，则将会在Python版本号的右边显示“Anaconda custom (64-bit)”。退出Python交互界面则输入exit()或quit()即可。
 
-![img](../../.gitbook/assets/wps6BE9.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BE9.tmp.jpg)
 
 在终端中输入anaconda-navigator。如果Anaconda被成功安装，则Anaconda Navigator的图形界面将会被启动。
 
@@ -361,7 +361,7 @@ Linux（x86 / Power8）
 
 除非被要求以管理员权限安装，否则不要以管理员身份安装。
 
-![img](../../.gitbook/assets/wps6BEA.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BEA.tmp.jpg)
 
 7.在“Advanced Installation Options”中不要勾选“Add Anaconda to my PATH environment variable.”（“添加Anaconda至我的环境变量。”）。因为如果勾选，则将会影响其他程序的使用。如果使用Anaconda，则通过打开Anaconda Navigator或者在开始菜单中的“Anaconda Prompt”（类似macOS中的“终端”）中进行使用。
 
@@ -369,7 +369,7 @@ Linux（x86 / Power8）
 
 然后点击“Install”开始安装。如果想要查看安装细节，则可以点击“Show Details”。
 
-![img](../../.gitbook/assets/wps6BEB.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BEB.tmp.jpg)
 
 8.点击“Next”。
 
@@ -377,7 +377,7 @@ Linux（x86 / Power8）
 
 注意：如果你不想了解“Anaconda云”和“Anaconda支持”，则可以不勾选“Learn more about Anaconda Cloud”和“Learn more about Anaconda Support”。
 
-![img](../../.gitbook/assets/wps6BEC.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BEC.tmp.jpg)
 
 10.验证安装结果。可选以下任意方法：
 
@@ -565,7 +565,7 @@ conda env list
 
 例如：
 
-![img](../../.gitbook/assets/wps6BFC.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BFC.tmp.jpg)
 
 结果中星号“\*”所在行即为当前所在环境。macOS系统中默认创建的环境名为“base”。
 
@@ -681,17 +681,17 @@ pip可以安装一些conda无法安装的包；conda也可以安装一些pip无�
 
 在新页面“Anaconda Cloud”的上方搜索框中输入要安装的包名，然后点击右边“放大镜”标志。
 
-![img](../../.gitbook/assets/wps6BFD.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BFD.tmp.jpg)
 
 搜索结果中有数以千计的包可供选择，此时点击“Downloads”可根据下载量进行排序，最上面的为下载最多的包。（图中以搜索bottleneck包为例）
 
-![img](../../.gitbook/assets/wps6BFE.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BFE.tmp.jpg)
 
 选择满足需求的包或下载量最多的包，点击包名。
 
 复制“To install this package with conda run:”下方的命令，并粘贴在终端中执行。
 
-![img](../../.gitbook/assets/wps6BFF.tmp.jpg)
+![img](./attachments/Anaconda介绍、安装及使用教程.assets/wps6BFF.tmp.jpg)
 
 完成安装。
 

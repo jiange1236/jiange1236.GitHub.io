@@ -1,6 +1,6 @@
 ---
 title: Sausage
-date: 2022-05-13T00:00:00.000Z
+date: 2026-07-17
 category:
   - 学习
 tag:
@@ -17,7 +17,7 @@ article: true
 
 工作目录，点击“应用”
 
-![](<../.gitbook/assets/clipboard (1).png>)
+![](<./attachments/Sausage.assets/clipboard.png>)
 
 **2、检查模型**
 

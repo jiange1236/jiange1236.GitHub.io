@@ -1,6 +1,6 @@
 ---
 title: Python
-date: 2022-05-13T00:00:00.000Z
+date: 2026-07-17
 category:
   - 学习
 tag:
@@ -849,11 +849,11 @@ BaseException
 
 **try/except...else...finally**
 
-![](../../.gitbook/assets/try_except_else_finally.png)
+![](./attachments/Python.assets/try_except_else_finally.png)
 
 **raise**
 
-![](../../.gitbook/assets/raise.png)
+![](./attachments/Python.assets/raise.png)
 
 ### 图形用户界面GUI
 

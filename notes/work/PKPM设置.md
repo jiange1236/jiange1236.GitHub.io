@@ -1,6 +1,6 @@
 ---
 title: PKPM设置
-date: 2022-05-13T00:00:00.000Z
+date: 2026-07-17
 isOriginal: true
 category:
   - 工作
@@ -218,7 +218,7 @@ star: true
 
 **特征周期**：抗规 5.1.4
 
-![](<../.gitbook/assets/clipboard (4).png>)
+![](<./attachments/PKPM设置.assets/clipboard.png>)
 
 **设防烈度、基本地震加速度**：抗规 附录A 1.0.4 1.0.5 3.2.4 3.3.2 3.3.3
 
@@ -308,9 +308,9 @@ star: true
 
 **最大适用高度**：高规 3.3.1
 
-![](../.gitbook/assets/clipboard-163843131681215.png)
+![](./attachments/PKPM设置.assets/clipboard-163843131681215.png)
 
-![](../.gitbook/assets/clipboard-163843135671116.png)
+![](./attachments/PKPM设置.assets/clipboard-163843135671116.png)
 
 ### 活荷信息
 

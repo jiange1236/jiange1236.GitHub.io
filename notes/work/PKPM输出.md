@@ -1,14 +1,15 @@
 ---
 title: PKPM输出
-date: 2026-05-30T00:00:00.000Z
-isOriginal: true
+date: 2026-07-17
 category:
   - 工作
+tags: 
+article: true
+isOriginal: true
+star: true
 tag:
   - 工作
   - PKPM
-article: true
-star: true
 ---
 
 # PKPM输出
@@ -135,11 +136,11 @@ Xs Ys为该层的刚度中心坐标 Xm Ym为该层的质心坐标
 
 否则：1.点连梁 2.柱加牛腿 3.增大梁截面（加腋、加宽）
 
-![](<../.gitbook/assets/clipboard (3).png>)
+![](<./attachments/PKPM输出.assets/clipboard.png>)
 
 正确做法：
 
-![](../.gitbook/assets/clipboard-164275848027311.png)
+![](./attachments/PKPM输出.assets/clipboard-164275848027311.png)
 
 错误做法：加大柱截面、改为双柱、设置梁端铰接
 
@@ -377,7 +378,7 @@ G0.6-0.5
 
 计算需计入抗震组合，柱轴压比不应超过1.05
 
-![](../.gitbook/assets/clipboard-164275861657912.png)
+![](./attachments/PKPM输出.assets/clipboard-164275861657912.png)
 
 **墙轴压比**
 
@@ -401,7 +402,7 @@ WZQ.OUT查看 Vx 和 Vy 抗规5.2.5、高规4.3.12。基本周期为计算方向
 
 防止长周期下结构效应太小，结构位移过大。
 
-![](../.gitbook/assets/clipboard-164275868088813.png)
+![](./attachments/PKPM输出.assets/clipboard-164275868088813.png)
 
 括号内为设计基本地震加速度为0.30g的地区。
 
@@ -506,7 +507,7 @@ WDIDP.OUT查看Max-Dx/h和Max-Dy/h。控制结构整体刚度和不规则性。1
 
 （高规3.7.3注：抗震设计工况下层间位移角不需要考虑偶然偏心）
 
-![](../.gitbook/assets/clipboard-16429913274091.png)
+![](./attachments/PKPM输出.assets/clipboard-16429913274091.png)
 
 2 高度不小于250m的高层建筑，其楼层层间最大位移与层高之比△u／h不宜大于1／500。
 
@@ -521,15 +522,15 @@ WDIDP.OUT查看Max-Dx/h和Max-Dy/h。控制结构整体刚度和不规则性。1
 | 中等损坏  | 性能水准4    |        | 3倍弹性位移限值 | 4倍弹性位移限值   |
 | 不严重破坏 |          |        |          | 0.9倍塑性变形限值 |
 
-![](../.gitbook/assets/clipboard-16429913643642.png)
+![](./attachments/PKPM输出.assets/clipboard-16429913643642.png)
 
 ### 刚重比、整体稳定
 
 WMASS.OUT查看 高规5.4.4。防止结构的P-Δ效应过大
 
-![](../.gitbook/assets/clipboard-16429913917313.png)
+![](./attachments/PKPM输出.assets/clipboard-16429913917313.png)
 
-![](../.gitbook/assets/clipboard-16429914033784.png)
+![](./attachments/PKPM输出.assets/clipboard-16429914033784.png)
 
 YJK刚重比计算到设置的嵌固端，PKPM刚重比计算到基础顶
 
@@ -605,7 +606,7 @@ WV02Q.OUT 抗规6.1.3
 
 ​ 砼规3.4.3：钢筋混凝土受弯构件的最大挠度应按荷载的准永久组合，预应力混凝土受弯构件的最大挠度应按荷载的标准组合，并均应考虑荷载长期作用的影响进行计算，其计算值不应超过表3．4．3规定的挠度限值。
 
-![](../.gitbook/assets/clipboard-16429916010955.png)
+![](./attachments/PKPM输出.assets/clipboard-16429916010955.png)
 
 （表中l0为构件的计算跨度；计算悬臂构件的挠度限值时，其计算跨度l0按实际悬臂长度的2倍取用）
 
@@ -613,7 +614,7 @@ WV02Q.OUT 抗规6.1.3
 
 ​ 砼规3.4.4：三级——允许出现裂缝的构件：对钢筋混凝土构件，按荷载准永久组合并考虑长期作用影响计算时，构件的最大裂缝宽度不应超过本规范表3．4．5规定的最大裂缝宽度限值。对预应力混凝土构件，按荷载标准组合并考虑长期作用的影响计算时，构件的最大裂缝宽度不应超过本规范第3．4．5条规定的最大裂缝宽度限值；对二a类环境的预应力混凝土构件，尚应按荷载准永久组合计算，且构件受拉边缘混凝土的拉应力不应大于混凝土的抗拉强度标准值。
 
-![](../.gitbook/assets/clipboard-16429916242286.png)
+![](./attachments/PKPM输出.assets/clipboard-16429916242286.png)
 
 ​ 框架梁端部验算裂缝宽度时，弯矩应取柱边值而不应取柱中值，柱边值一般比柱中值减小25%以上。现在多数分析软件计算出的支座弯矩是柱中值，取柱边值应手算补充，不应由于软件计算结果裂缝宽度不满足规定就增加钢筋，而不顾强柱弱梁、强节点的抗震延性要求。
 
@@ -623,9 +624,9 @@ WV02Q.OUT 抗规6.1.3
 
 技术措施5.3.3：当墙厚不小于下表中最小厚度经验值时，一般建筑可不进行墙体稳定验算；当层高较大时则应按《高层建筑混凝土结构技术规程》JGJ 3-2010附录D进行墙体稳定验算。
 
-![](../.gitbook/assets/clipboard-16429916522217.png)
+![](./attachments/PKPM输出.assets/clipboard-16429916522217.png)
 
-![](../.gitbook/assets/clipboard-16429916643078.png)
+![](./attachments/PKPM输出.assets/clipboard-16429916643078.png)
 
 ### 弹塑性动力时程分析
 
@@ -643,13 +644,13 @@ WV02Q.OUT 抗规6.1.3
 
 ### 主次梁的判断（线刚度法）
 
-![](../.gitbook/assets/clipboard-16429917213719.png)
+![](./attachments/PKPM输出.assets/clipboard-16429917213719.png)
 
 ​ 红圈部分，它们梁梁交接处，水平梁产生了负弯矩，那么竖直的梁就可以视为水平梁的支座。所以，水平梁在这里其实是两跨，也就是说，它会把集中力传导在竖直梁段上。因此，竖直梁在此处需要加设附加箍筋。当然竖直梁并不能作为水平梁的完全刚性支座，其本身是有挠度变形的，所以才叫相对刚度。
 
 ### 配筋结果查看
 
-![](../.gitbook/assets/clipboard-164299174686410.png)
+![](./attachments/PKPM输出.assets/clipboard-164299174686410.png)
 
 Ast一般沿梁高三等分，上部纵筋、中部抗扭筋、下部纵筋都加1/3Ast
 
@@ -657,12 +658,12 @@ Asv1则按下图配置，箍筋直径=Ast
 
 梁施工图模块中，显示的配筋面积=原纵筋计算面积+（计算所需抗扭钢筋面积Ast-已有构造腰筋面积）/2
 
-![](../.gitbook/assets/clipboard-164299188873611.png)
+![](./attachments/PKPM输出.assets/clipboard-164299188873611.png)
 
-![](../.gitbook/assets/clipboard-164299190256712.png)
+![](./attachments/PKPM输出.assets/clipboard-164299190256712.png)
 
-![](../.gitbook/assets/clipboard-164299191564613.png)
+![](./attachments/PKPM输出.assets/clipboard-164299191564613.png)
 
-![](../.gitbook/assets/clipboard-164299192904514.png)
+![](./attachments/PKPM输出.assets/clipboard-164299192904514.png)
 
-![](../.gitbook/assets/clipboard-164299194112215.png)
+![](./attachments/PKPM输出.assets/clipboard-164299194112215.png)

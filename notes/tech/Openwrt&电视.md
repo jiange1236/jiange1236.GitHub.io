@@ -1,6 +1,6 @@
 ---
 title: Openwrt&电视
-date: 2026-07-06T00:00:00.000Z
+date: 2026-07-17
 category:
   - 计算机
 article: true
@@ -266,25 +266,25 @@ https://gitee.com/xiaominglei001/forMarkdown/raw/master/FireShot Capture 044 - 2
 
 最好选择private加入，否则30天不登录会被删除。
 
-![img](../.gitbook/assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
+![img](./attachments/Openwrt&电视.assets/aed40a1d-18d8-4a85-b808-51ae3eca2ea0.png)
 
-![img](../.gitbook/assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
+![img](./attachments/Openwrt&电视.assets/f246539a-9236-465b-941c-fc3d0284b97c.png)
 
-![img](../.gitbook/assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
+![img](./attachments/Openwrt&电视.assets/821eab95-9461-4cf4-91a7-b83add3a9ddf.png)
 
-![img](../.gitbook/assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
+![img](./attachments/Openwrt&电视.assets/7ae57cb6-645a-4d6e-8b19-bb56bd16c0d9.png)
 
 三行举例：应该每个networkID其z开头的这串字母是固定的
 
-![img](../.gitbook/assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
+![img](./attachments/Openwrt&电视.assets/e2f1bdb1-98a0-428e-9ac0-380e8a92bb13.png)
 
-![img](../.gitbook/assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
+![img](./attachments/Openwrt&电视.assets/553bbe27-b3ec-4c72-afe9-4e7707e2fb8b.png)
 
-![img](../.gitbook/assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
+![img](./attachments/Openwrt&电视.assets/966087b4-c53e-4848-a8a3-903ae43d64bb.png)
 
-![img](../.gitbook/assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
+![img](./attachments/Openwrt&电视.assets/1490e63c-e1c8-4aee-880d-5995fa6c38dc.png)
 
-![img](../.gitbook/assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
+![img](./attachments/Openwrt&电视.assets/c93a809b-b792-4b6f-9aec-ba6fb82a43ee.png)
 
 要连openwrt里的SSH最好用putty或者shell，不要用访问openwrt网页然后用其网页里的TTYD访问其SSH的方式，因为很可能访问不到。
 
