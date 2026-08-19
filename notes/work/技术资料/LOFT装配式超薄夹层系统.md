@@ -17,7 +17,7 @@ article: true
 > 标准化设计、工厂化生产、装配化施工、一体化装修、\x0a信息化管理~
 
 ---
-![图片](attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/9ea4a0dfc201eb3b2b8ce2aec7245c11_MD5.png)
+![图片](./attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/9ea4a0dfc201eb3b2b8ce2aec7245c11_MD5.png)
 
 **什么是装配式建筑？  
 **
@@ -38,7 +38,7 @@ article: true
 
 **运到工地后“组装”。**
 
-![图片](attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/3d060e37d98d128eb5fa868ab388b924_MD5.png)
+![图片](./attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/3d060e37d98d128eb5fa868ab388b924_MD5.png)
 
 **注意是“组装”不只是“搭”，**
 
@@ -48,7 +48,7 @@ article: true
 
 **所以这样的装配式建筑安全得很。**
 
-![图片](attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/f2568bf922f00261348c0d382933a9d3_MD5.png)
+![图片](./attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/f2568bf922f00261348c0d382933a9d3_MD5.png)
 
 这种 “产业化”、“工业化”的建筑
 
@@ -109,7 +109,7 @@ article: true
 
 在充分调研了全国的LOFT夹层项目的开间尺寸后，**将TD板的波高统一为91mm，标准化的版型设计涵盖了市面上住宅、公寓、办公的常规需求，可根据不同的跨度选择不同的版型。标准化板的波高基本上能满足国内95%的loft夹层需要，这样就降低了成本。**
 
-![图片](attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/831a6cd66bb1e3f79611a80446731f39_MD5.png)
+![图片](./attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/831a6cd66bb1e3f79611a80446731f39_MD5.png)
 
  图1 TD-LOFT夹层楼板典型剖面
 
@@ -117,7 +117,7 @@ article: true
 
 目前国内的预制装配式构件生产厂家很多，可满足各类预制构件的工业化生产要求。**TD楼板与卫生间底盘均按照相应的模数工厂化生产，**相较于传统的建造方式，装配式建筑无需受制于现场工人的个人素质，构件产品质量可以得到很好的保证。
 
-![图片](attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/6d0e22240389ad39a5b9358bb8c0299f_MD5.png)
+![图片](./attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/6d0e22240389ad39a5b9358bb8c0299f_MD5.png)
 
    **装配化施工**
 
@@ -125,7 +125,7 @@ article: true
 
 下图为TD-LOFT夹层楼板的施工过程图示，现场焊接量很少，所有连接均为干连接，装配化程度高，可以看出施工流程简单，非常适用于整体结构完工后进行。
 
-![图片](attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/3d3ab8dddc1b411bf2a28121cca2ad7e_MD5.png)
+![图片](./attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/3d3ab8dddc1b411bf2a28121cca2ad7e_MD5.png)
 
 图4 TD-LOFT夹层楼板施工过程
 
@@ -135,7 +135,7 @@ article: true
 
 装配式建筑在标准化设计与工厂化生产的过程之中就可将装修的一部分事项同时解决，避免资源浪费，同时可以避免装修破坏结构或设计时未考虑装修而引起的使用功能损失。**TD-LOFT夹层楼板系统主要通过高强度TD板作为受力构件，TD板综合了钢梁、铺板、吊顶龙骨的三合一功能，还有专用的灯具安装槽，较大程度上降低了装修的成本与难度。**
 
-![图片](attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/e765bcf3c373e6ded429acaf3bc3423a_MD5.png)
+![图片](./attachments/LOFT%E8%A3%85%E9%85%8D%E5%BC%8F%E8%B6%85%E8%96%84%E5%A4%B9%E5%B1%82%E7%B3%BB%E7%BB%9F.assets/e765bcf3c373e6ded429acaf3bc3423a_MD5.png)
 
 图5 TD-LOFT夹层楼板3D效果图  
 

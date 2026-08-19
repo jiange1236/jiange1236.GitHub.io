@@ -1,3 +1,7 @@
+---
+date: 2026-08-19
+---
+
 USER.md 脱敏版 — 原始报告
 
 systemprompt-showcase · 用户认知 · 系统规则章

@@ -1,3 +1,7 @@
+---
+date: 2026-08-19
+---
+
 AGENTS.md 脱敏版 — 原始报告
 
 systemprompt-showcase · 行为规则 · 系统规则章

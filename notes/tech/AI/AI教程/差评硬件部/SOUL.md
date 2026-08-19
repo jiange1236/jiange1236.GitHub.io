@@ -1,3 +1,7 @@
+---
+date: 2026-08-19
+---
+
 SOUL.md 脱敏版 — 原始报告
 
 systemprompt-showcase · 风格价值观 · 系统规则章

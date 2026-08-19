@@ -1,3 +1,7 @@
+---
+date: 2026-08-19
+---
+
 IDENTITY.md 脱敏版 — 原始报告
 
 systemprompt-showcase · 身份职责 · 系统规则章
