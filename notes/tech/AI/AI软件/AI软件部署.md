@@ -1,9 +1,8 @@
 ---
 title: AI软件部署
-date: 2026-07-01T00:00:00.000Z
+date: 2026-08-03
 category:
   - AI
-article: true
 tags:
   - AI
   - Ollama
@@ -11,6 +10,7 @@ tags:
   - MinerU
   - ComfyUI
   - Opencode
+article: true
 ---
 
 # AI软件部署
@@ -161,4 +161,10 @@ $ENV:HTTPS_PROXY = "http://127.0.0.1:20171"
 
 ```
 .\opencode-desktop-win-x64.exe /S /D="D:\Program Files\OpenCode"
+```
+
+## Workbuddy
+
+```
+mklink /J C:\Users\JKYDesk\.workbuddy D:\Workbuddy\.workbuddy
 ```

@@ -1,6 +1,6 @@
 ---
 title: Openwrt&电视
-date: 2026-07-17
+date: 2026-08-08
 category:
   - 计算机
 article: true
@@ -37,8 +37,7 @@ find / -type f -size +5120b
 
 ```context
 luci-app-wechatpush luci-app-watchcat luci-app-ttyd luci-app-ddns luci-app-ap-modem luci-app-turboacc watchcat ttyd ddns wireguard-tools kmod-wireguard
-smartdns luci-app-smartdns coreutils-base64 ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap v2ray-core v2raya luci-app-v2raya
-syscontrol advancedplus 
+smartdns luci-app-smartdns coreutils-base64 ipset libipset13 iputils-arping jq bash libreadline8 ip-full ddns-scripts ddns-scripts-services ddns-scripts-aliyun bind-host bind-libs libatomic1 libuv1 openssl-util libopenssl-conf ddns-scripts-dnspod ddns-scripts-cloudflare libwebsockets-full libcap syscontrol advancedplus 
 ```
 
 **备份软件包列表**

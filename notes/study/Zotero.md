@@ -1,8 +1,9 @@
 ---
 title: Zotero
-date: 2026-02-06
+date: 2026-08-19
 category:
-tags: 
+  - 学习
+tags:
 article: true
 ---
 # Zotero
